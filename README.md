@@ -1,88 +1,101 @@
 # AI Daily Product Radar
 
-AI Daily Product Radar is a compact full-stack workbench for reviewing
-AI-native GitHub products, turning daily discovery runs into a board, and
-publishing the useful bits to a knowledge base and Lark/Feishu.
+[English](README.en.md)
 
-The first version is intentionally small: a local dashboard, a clear data
-contract, Yuque report archiving, and a Feishu Base-backed project board. It is
-built to make daily product judgment visible instead of leaving it buried in a
-chat transcript.
+一个面向 AI 原生产品发现的全栈工作台：把每日 GitHub 产品雷达从一次性的聊天记录，变成可以总览、归档、复盘和继续行动的产品池。
 
-## What It Helps With
+第一版目标很克制：先做一个本地看板，清晰保存每次 Radar Run 的结构化数据，把完整日报归档到语雀，并把项目卡片同步到飞书多维表格。重点不是“多抓一点项目”，而是把判断过程沉淀下来。
 
-- Review many AI product candidates at once.
-- Separate strong product-shaped repos from noisy demos, wrappers, and paper
-  reimplementations.
-- Preserve the reasoning behind each decision: audience, AI-native angle,
-  runnability, growth signal, and recommended action.
-- Publish a daily report to Yuque under `向26出发 / AI Daily Product Radar`.
-- Sync project cards into Feishu Base so they can become a real board.
+## 这个项目解决什么问题
 
-## MVP Scope
+每天看 AI 项目时，真正有价值的不是榜单本身，而是判断：
 
-The MVP focuses on a 90-minute demo loop:
+- 哪些项目已经有真实产品形态。
+- 哪些只是 demo、论文复现、SDK wrapper、prompt 集合或营销壳。
+- 这个项目面向谁，AI 原生点在哪里。
+- 是否能运行，是否值得复刻、跟踪或跳过。
+- 今天的趋势信号是什么，下一步该做什么。
 
-1. Load a structured Radar Run.
-2. Show projects across board columns:
+AI Daily Product Radar 把这些判断变成一套可展示、可存档、可持续扩展的数据结构。
+
+## MVP 范围
+
+第一版服务于一个 90 分钟内可以完成的演示闭环：
+
+1. 加载一份结构化 Radar Run。
+2. 在看板中一次性查看很多项目卡片。
+3. 按状态分组：
    - `Top Picks`
    - `Watchlist`
    - `Skip / Low Signal`
    - `Published`
-3. Open a project card and inspect the judgment details.
-4. Preview the Yuque daily report and Feishu Base records.
-5. Publish the report to Yuque.
-6. Sync project cards to Feishu Base.
-7. Show channel-level publish status and retry hints.
+4. 点击项目卡片，查看完整判断理由。
+5. 预览语雀日报和飞书多维表格同步内容。
+6. 将完整日报发布到语雀。
+7. 将项目卡片同步到飞书多维表格。
+8. 显示每个发布通道的状态、失败原因和重试提示。
 
-The MVP does not include realtime GitHub search, automatic scoring, complex
-permissions, scheduled jobs, drag-and-drop workflow, or statistical dashboards.
+第一版先不做实时 GitHub 搜索、自动评分、复杂权限、定时任务、拖拽流程和统计大盘。
 
-## Product Shape
+## 产品形态
 
 ```text
 Radar Run
-  ├─ Top Projects
-  ├─ Watchlist
-  ├─ Skip Reasons
-  ├─ Trend Observations
-  ├─ Yuque Report Preview
-  └─ Feishu Base Sync Preview
+  ├─ 项目看板
+  │  ├─ Top Picks
+  │  ├─ Watchlist
+  │  ├─ Skip / Low Signal
+  │  └─ Published
+  ├─ 项目详情
+  ├─ 趋势观察
+  ├─ 语雀日报预览
+  └─ 飞书多维表格同步预览
 ```
 
-Each project card keeps the fields that matter for product review:
+每张项目卡片会保留这些字段：
 
-- project name and GitHub URL
-- source date
-- category
-- score
-- status
-- one-line summary
-- target audience
-- AI-native angle
-- growth or activity signal
-- runnability judgment
-- recommended action
-- skip reason when applicable
+- 项目名和 GitHub 链接
+- 来源日期
+- 分类
+- 分数
+- 状态
+- 一句话摘要
+- 目标用户
+- AI 原生角度
+- 增长或活跃信号
+- 可运行判断
+- 建议动作
+- Skip Reason
+- 语雀日报链接
+- 备注
 
-## Tech Stack
+## 外部归档目标
 
-- Frontend: Vue 3, TypeScript, Less, Vite, Pinia, Vue Router
-- Backend: Node.js, Fastify, TypeScript, zod
-- Database: SQLite for local demo, PostgreSQL-ready through the existing DB
-  abstraction
-- Publishing targets: Yuque knowledge base and Feishu Base
+默认设计目标：
 
-The repo keeps frontend and backend as independent sub-projects:
+- 语雀知识库：`向26出发`
+- 语雀分组：`AI Daily Product Radar`
+- 飞书：多维表格项目看板
+
+语雀负责完整日报归档。飞书多维表格负责全局项目池，让项目可以按状态、日期、分数和行动建议继续流转。
+
+## 技术栈
+
+- 前端：Vue 3、TypeScript、Less、Vite、Pinia、Vue Router
+- 后端：Node.js、Fastify、TypeScript、zod
+- 数据库：本地 SQLite，保留 PostgreSQL 适配能力
+- 发布目标：语雀知识库、飞书多维表格
+
+项目由两个独立子项目组成：
 
 ```text
-frontend/   Vue app
+frontend/   Vue 前端
 backend/    Fastify API
 ```
 
-## Quickstart
+## 本地启动
 
-Backend:
+启动后端：
 
 ```bash
 cd backend
@@ -91,7 +104,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Frontend:
+启动前端：
 
 ```bash
 cd frontend
@@ -99,31 +112,19 @@ npm install
 npm run dev
 ```
 
-Then open:
+然后打开：
 
 ```text
 http://localhost:5173
 ```
 
-The frontend dev server proxies `/api` to `http://localhost:3000`.
+前端开发服务器会把 `/api` 代理到 `http://localhost:3000`。
 
-## External Publishing Targets
+## 开发工作流
 
-The intended production/demo targets are:
+这个仓库沿用 closed-loop module 结构。业务模块位于 `src/modules/<name>/`，模块只通过自己的 `index.ts` 暴露公共入口。
 
-- Yuque knowledge base: `向26出发`
-- Yuque section: `AI Daily Product Radar`
-- Feishu: Base table used as the global project board
-
-Secrets and IDs should live in backend environment variables. Do not commit
-tokens.
-
-## Development Workflow
-
-This project uses a closed-loop module structure. Business features live under
-`src/modules/<name>/` and expose a single `index.ts`.
-
-Before changing feature code, use the project skills in `.agents/skills/`:
+修改功能代码前，先使用项目内置技能：
 
 ```text
 $vibecoding-codex-workflow
@@ -131,12 +132,12 @@ $vibecoding-architecture-design
 $vibecoding-fullstack-module
 ```
 
-Run the architecture verification gate before considering work complete:
+完成模块、API、数据库或前后端契约改动后，运行架构验证：
 
 ```bash
 bash .agents/skills/vibecoding-verify/scripts/verify.sh
 ```
 
-## Roadmap
+## 路线图
 
-See [docs/roadmap.md](docs/roadmap.md) for the staged MVP plan.
+详见 [docs/roadmap.md](docs/roadmap.md)。
