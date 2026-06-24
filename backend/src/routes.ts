@@ -1,4 +1,5 @@
 import fp from 'fastify-plugin'
+import radarModule from './modules/radar'
 import todoModule from './modules/todo'
 
 /**
@@ -8,6 +9,7 @@ import todoModule from './modules/todo'
 export default fp(
   async (app) => {
     await app.register(todoModule)
+    await app.register(radarModule)
   },
   { name: 'app-routes' },
 )

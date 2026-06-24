@@ -1,86 +1,67 @@
 # AI Daily Product Radar
 
-AI Daily Product Radar is a compact full-stack workbench for reviewing
-AI-native GitHub products, turning daily discovery runs into a board, and
-publishing the useful bits to a knowledge base and Lark/Feishu.
+[![Deploy GitHub Pages](https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml/badge.svg)](https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml)
+[中文](README.md)
 
-The first version is intentionally small: a local dashboard, a clear data
-contract, Yuque report archiving, and a Feishu Base-backed project board. It is
-built to make daily product judgment visible instead of leaving it buried in a
-chat transcript.
+A public, reviewable project board built from historical Codex-generated AI product radar runs.
 
-## What It Helps With
+- **Live demo**: [brocademaple.github.io/ai-daily-product-radar](https://brocademaple.github.io/ai-daily-product-radar/)
+- **Current public dataset**: 31 historical runs, 407 deduplicated GitHub projects
+- **Full local mode**: Vue board + Fastify API + SQLite importer
+- **Public demo mode**: GitHub Pages static snapshot, no backend required
 
-- Review many AI product candidates at once.
-- Separate strong product-shaped repos from noisy demos, wrappers, and paper
-  reimplementations.
-- Preserve the reasoning behind each decision: audience, AI-native angle,
-  runnability, growth signal, and recommended action.
-- Publish a daily report to Yuque under `向26出发 / AI Daily Product Radar`.
-- Sync project cards into Feishu Base so they can become a real board.
+## Why It Exists
 
-## MVP Scope
+The valuable part of a daily AI product radar is not the list. It is the judgment:
 
-The MVP focuses on a 90-minute demo loop:
+- Is this repository shaped like a real product?
+- Who is it for, and what is the AI-native angle?
+- Is it runnable product, infrastructure, a demo, or low-signal noise?
+- Should it be cloned, watched, published, or skipped?
 
-1. Load a structured Radar Run.
-2. Show projects across board columns:
-   - `Top Picks`
-   - `Watchlist`
-   - `Skip / Low Signal`
-   - `Published`
-3. Open a project card and inspect the judgment details.
-4. Preview the Yuque daily report and Feishu Base records.
-5. Publish the report to Yuque.
-6. Sync project cards to Feishu Base.
-7. Show channel-level publish status and retry hints.
+AI Daily Product Radar turns those judgments from chat transcripts into a searchable, aggregated, public project pool.
 
-The MVP does not include realtime GitHub search, automatic scoring, complex
-permissions, scheduled jobs, drag-and-drop workflow, or statistical dashboards.
+## What You Can Inspect
 
-## Product Shape
+- **Global Project Pool**: one card per deduplicated GitHub repository.
+- **Top Picks / Watchlist / Skip**: board columns based on the latest judgment.
+- **Seen Count**: first seen date, latest seen date, and repeated appearances.
+- **Project History**: card details show previous radar entries for the same repo.
+- **Decision Fields**: score, category, audience, AI-native angle, growth signal, runnability, and recommended action.
+
+## Data Provenance
+
+The public board is not a frontend mock. It is generated from structured historical run JSON files:
 
 ```text
-Radar Run
-  ├─ Top Projects
-  ├─ Watchlist
-  ├─ Skip Reasons
-  ├─ Trend Observations
-  ├─ Yuque Report Preview
-  └─ Feishu Base Sync Preview
+data/runs/*.json
 ```
 
-Each project card keeps the fields that matter for product review:
+The importer skips sidecar files such as candidate search output, Feishu message drafts, and Yuque retry drafts. It only imports complete daily runs with `top_projects`, `watchlist`, and `skipped_projects`. The current static snapshot is aggregated from 31 valid runs.
 
-- project name and GitHub URL
-- source date
-- category
-- score
-- status
-- one-line summary
-- target audience
-- AI-native angle
-- growth or activity signal
-- runnability judgment
-- recommended action
-- skip reason when applicable
+These judgments come from historical Codex Daily Radar outputs. Live GitHub stars, READMEs, install steps, and activity may have changed, so serious decisions should re-audit the original repositories.
 
-## Tech Stack
+## Architecture
+
+```mermaid
+flowchart LR
+  A["Historical run JSON"] --> B["Fastify importer"]
+  B --> C["SQLite project pool"]
+  C --> D["Vue radar board"]
+  C --> E["Static snapshot"]
+  E --> F["GitHub Pages demo"]
+  C --> G["Yuque archive later"]
+  C --> H["Feishu Base later"]
+```
+
+Stack:
 
 - Frontend: Vue 3, TypeScript, Less, Vite, Pinia, Vue Router
 - Backend: Node.js, Fastify, TypeScript, zod
-- Database: SQLite for local demo, PostgreSQL-ready through the existing DB
-  abstraction
-- Publishing targets: Yuque knowledge base and Feishu Base
+- Database: SQLite for local demo, PostgreSQL-ready through the existing DB abstraction
+- Publishing: GitHub Pages static demo; Yuque and Feishu are follow-up archival/collaboration targets
 
-The repo keeps frontend and backend as independent sub-projects:
-
-```text
-frontend/   Vue app
-backend/    Fastify API
-```
-
-## Quickstart
+## Run Locally
 
 Backend:
 
@@ -99,44 +80,60 @@ npm install
 npm run dev
 ```
 
-Then open:
+Open:
 
 ```text
-http://localhost:5173
+http://127.0.0.1:5173/radar
 ```
 
-The frontend dev server proxies `/api` to `http://localhost:3000`.
-
-## External Publishing Targets
-
-The intended production/demo targets are:
-
-- Yuque knowledge base: `向26出发`
-- Yuque section: `AI Daily Product Radar`
-- Feishu: Base table used as the global project board
-
-Secrets and IDs should live in backend environment variables. Do not commit
-tokens.
-
-## Development Workflow
-
-This project uses a closed-loop module structure. Business features live under
-`src/modules/<name>/`, and each feature exposes a single `index.ts`.
-
-Before changing feature code, use the project skills in `.agents/skills/`:
-
-```text
-$vibecoding-codex-workflow
-$vibecoding-architecture-design
-$vibecoding-fullstack-module
-```
-
-Run the architecture verification gate before considering work complete:
+Import historical runs:
 
 ```bash
+curl -X POST http://127.0.0.1:3000/api/radar/import/local-runs
+```
+
+The default import directory is controlled by the backend `RADAR_RUNS_DIR` environment variable.
+
+## Deploy to GitHub Pages
+
+This repository includes `.github/workflows/pages.yml`.
+
+On every push to `main`, the workflow:
+
+1. Installs `frontend/` dependencies.
+2. Builds the frontend in static data mode.
+3. Uses `/ai-daily-product-radar/` as the Pages base path.
+4. Publishes `frontend/dist` to GitHub Pages.
+
+You can also simulate the static build locally:
+
+```bash
+cd frontend
+VITE_RADAR_DATA_MODE=static \
+VITE_ROUTER_MODE=hash \
+VITE_BASE_PATH=/ai-daily-product-radar/ \
+npm run build
+```
+
+## Development And Verification
+
+The project uses closed-loop modules under `src/modules/<name>/`. Backend contracts are zod schemas; frontend types mirror those response fields.
+
+Useful checks:
+
+```bash
+cd backend && npm test
+cd frontend && npm run type-check && npm run lint && npm run build
+cd ../backend && npm run type-check && npm run lint && npm run build
 bash .agents/skills/vibecoding-verify/scripts/verify.sh
 ```
 
 ## Roadmap
 
-See [docs/roadmap.md](docs/roadmap.md) for the staged MVP plan.
+- GitHub Pages static demo for the public project pool.
+- Local dynamic import from historical run JSON.
+- Yuque report archival under `向26出发 / AI Daily Product Radar`.
+- Feishu Base sync for a collaborative project board.
+- Later: live GitHub audit, scheduled runs, publish status, and review analytics.
+
+See [docs/roadmap.md](docs/roadmap.md).

@@ -1,6 +1,7 @@
-import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 
+import { radarRoutes } from '@/modules/radar'
 import { todoRoutes } from '@/modules/todo'
 
 const routes: RouteRecordRaw[] = [
@@ -11,8 +12,9 @@ const routes: RouteRecordRaw[] = [
       {
         path: '',
         name: 'home',
-        redirect: { name: 'todo-list' },
+        redirect: { name: 'radar-board' },
       },
+      ...radarRoutes,
       ...todoRoutes,
     ],
   },
@@ -24,6 +26,9 @@ const routes: RouteRecordRaw[] = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history:
+    import.meta.env.VITE_ROUTER_MODE === 'hash'
+      ? createWebHashHistory(import.meta.env.BASE_URL)
+      : createWebHistory(import.meta.env.BASE_URL),
   routes,
 })

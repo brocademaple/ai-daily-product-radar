@@ -14,6 +14,10 @@ const EnvSchema = z
     DB_DIALECT: z.enum(['sqlite', 'postgres']).default('sqlite'),
     DB_SQLITE_FILE: z.string().default('./data/dev.db'),
     DATABASE_URL: z.string().url().optional(),
+
+    RADAR_RUNS_DIR: z
+      .string()
+      .default('/Users/eee/Documents/Codex/2026-05-14/ai-fomo-github-ai-native-product/data/runs'),
   })
   .superRefine((value, ctx) => {
     if (value.DB_DIALECT === 'postgres' && !value.DATABASE_URL) {

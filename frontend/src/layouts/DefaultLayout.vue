@@ -5,8 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div class="layout">
     <header class="layout__header">
-      <RouterLink to="/" class="layout__brand">vibeCoding</RouterLink>
+      <RouterLink to="/" class="layout__brand">AI Product Radar</RouterLink>
       <nav class="layout__nav">
+        <RouterLink to="/radar" active-class="is-active">Radar</RouterLink>
         <RouterLink to="/todos" active-class="is-active">Todos</RouterLink>
       </nav>
     </header>
