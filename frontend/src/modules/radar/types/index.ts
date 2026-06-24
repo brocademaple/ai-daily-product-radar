@@ -1,3 +1,5 @@
+import type { LocalizedText } from '../i18n'
+
 export type RadarSection = 'top' | 'watchlist' | 'skip'
 export type RadarBoardStatus = 'top-picks' | 'watchlist' | 'skip-low-signal' | 'published'
 
@@ -10,15 +12,15 @@ export interface RadarProjectEntry {
   rank: number | null
   fullName: string
   url: string
-  category: string | null
+  category: LocalizedText | null
   score: number | null
-  summary: string | null
-  audience: string | null
-  aiNativeAngle: string | null
-  growthSignal: string | null
-  runnability: string | null
-  recommendedAction: string | null
-  skipReason: string | null
+  summary: LocalizedText | null
+  audience: LocalizedText | null
+  aiNativeAngle: LocalizedText | null
+  growthSignal: LocalizedText | null
+  runnability: LocalizedText | null
+  recommendedAction: LocalizedText | null
+  skipReason: LocalizedText | null
   rawJson: Record<string, unknown>
 }
 
@@ -32,14 +34,14 @@ export interface Radar {
   latestScore: number | null
   latestSection: RadarSection
   boardStatus: RadarBoardStatus
-  category: string | null
-  summary: string | null
-  audience: string | null
-  aiNativeAngle: string | null
-  growthSignal: string | null
-  runnability: string | null
-  recommendedAction: string | null
-  skipReason: string | null
+  category: LocalizedText | null
+  summary: LocalizedText | null
+  audience: LocalizedText | null
+  aiNativeAngle: LocalizedText | null
+  growthSignal: LocalizedText | null
+  runnability: LocalizedText | null
+  recommendedAction: LocalizedText | null
+  skipReason: LocalizedText | null
   history?: RadarProjectEntry[]
 }
 

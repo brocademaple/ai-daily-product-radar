@@ -78,6 +78,74 @@ describe('radar importer', () => {
     )
   })
 
+  it('keeps the latest status while backfilling sparse profile fields from history', () => {
+    const first = normalizeRadarRunPayload(
+      {
+        run_date: '2026-06-02',
+        generated_at: '2026-06-02T10:00:00Z',
+        data_window: '2026-06-01 to 2026-06-02',
+        source_summary: 'GitHub Search',
+        trend_observations: 'Coding agents are active.',
+        assumptions: 'Prefer runnable products.',
+        markdown_report: '# Radar 2026-06-02',
+        top_projects: [
+          {
+            rank: 1,
+            full_name: 'owner/agent',
+            url: 'https://github.com/owner/agent',
+            category: 'Code Agent CLI',
+            score: 92,
+            summary: 'Open-source terminal coding agent.',
+            audience: 'Developers comparing coding agents.',
+            ai_native_angle: 'Repository context and shell commands become one agent loop.',
+            growth_signal: 'Repeatedly visible in coding-agent discussions.',
+            runnability: 'README documents npm installation.',
+            recommended_action: 'Run locally and compare patch review flow.',
+          },
+        ],
+        watchlist: [],
+        skipped_projects: [],
+      },
+      '2026-06-02.json',
+    )
+    const second = normalizeRadarRunPayload(
+      {
+        run_date: '2026-06-23',
+        generated_at: '2026-06-23T10:00:00Z',
+        data_window: '2026-06-22 to 2026-06-23',
+        source_summary: 'GitHub Search',
+        trend_observations: 'Mature baselines are being skipped.',
+        assumptions: 'Prefer fresh surrounding product layers.',
+        markdown_report: '# Radar 2026-06-23',
+        top_projects: [],
+        watchlist: [],
+        skipped_projects: [
+          {
+            full_name: 'owner/agent',
+            url: 'https://github.com/owner/agent',
+            skip_reason: 'Mature coding-agent baseline; skip today.',
+          },
+        ],
+      },
+      '2026-06-23.json',
+    )
+
+    const [project] = buildProjectBoard([first, second])
+
+    assert.ok(project)
+    assert.equal(project.latestSection, 'skip')
+    assert.equal(project.latestScore, null)
+    assert.equal(project.boardStatus, 'skip-low-signal')
+    assert.equal(project.skipReason, 'Mature coding-agent baseline; skip today.')
+    assert.equal(project.category, 'Code Agent CLI')
+    assert.equal(project.summary, 'Open-source terminal coding agent.')
+    assert.equal(project.audience, 'Developers comparing coding agents.')
+    assert.equal(project.aiNativeAngle, 'Repository context and shell commands become one agent loop.')
+    assert.equal(project.growthSignal, 'Repeatedly visible in coding-agent discussions.')
+    assert.equal(project.runnability, 'README documents npm installation.')
+    assert.equal(project.recommendedAction, 'Run locally and compare patch review flow.')
+  })
+
   it('rejects payloads missing required arrays', () => {
     assert.throws(
       () =>

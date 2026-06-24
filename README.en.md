@@ -1,65 +1,72 @@
 # AI Daily Product Radar
 
-[![Deploy GitHub Pages](https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml/badge.svg)](https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml)
-[中文](README.md)
+<p align="center">
+  <a href="https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml">
+    <img alt="Deploy GitHub Pages" src="https://github.com/brocademaple/ai-daily-product-radar/actions/workflows/pages.yml/badge.svg">
+  </a>
+  <a href="README.md">中文</a>
+</p>
 
-A public, reviewable project board built from historical Codex-generated AI product radar runs.
+<p align="center">
+  A searchable, reviewable, public GitHub project pool built from daily AI-native product judgments.
+</p>
 
-- **Live demo**: [brocademaple.github.io/ai-daily-product-radar](https://brocademaple.github.io/ai-daily-product-radar/)
-- **Current public dataset**: 31 historical runs, 407 deduplicated GitHub projects
-- **Full local mode**: Vue board + Fastify API + SQLite importer
-- **Public demo mode**: GitHub Pages static snapshot, no backend required
+<p align="center">
+  <a href="https://brocademaple.github.io/ai-daily-product-radar/"><strong>Live demo</strong></a>
+  ·
+  <a href="#run-locally">Run locally</a>
+  ·
+  <a href="docs/roadmap.md">Roadmap</a>
+</p>
 
-## Why It Exists
+![AI Daily Product Radar preview](docs/assets/radar-pages-preview.png)
 
-The valuable part of a daily AI product radar is not the list. It is the judgment:
+## What It Is
 
-- Is this repository shaped like a real product?
-- Who is it for, and what is the AI-native angle?
-- Is it runnable product, infrastructure, a demo, or low-signal noise?
-- Should it be cloned, watched, published, or skipped?
+AI Daily Product Radar is an open-source radar board for organizing Codex-generated AI Native Product GitHub briefings.
 
-AI Daily Product Radar turns those judgments from chat transcripts into a searchable, aggregated, public project pool.
+It tracks whether a repository looks like a real product, who it serves, what makes it AI-native, and whether it deserves cloning, watching, publishing, or skipping. Repeated appearances of the same GitHub repository are merged into one project card, while every historical judgment remains inspectable.
 
-## What You Can Inspect
+## Live Demo
 
-- **Global Project Pool**: one card per deduplicated GitHub repository.
-- **Top Picks / Watchlist / Skip**: board columns based on the latest judgment.
-- **Seen Count**: first seen date, latest seen date, and repeated appearances.
-- **Project History**: card details show previous radar entries for the same repo.
-- **Decision Fields**: score, category, audience, AI-native angle, growth signal, runnability, and recommended action.
+- GitHub Pages: <https://brocademaple.github.io/ai-daily-product-radar/>
+- Current public dataset: 31 historical runs, 407 deduplicated GitHub projects, 505 history entries
+- Latest data window: 2026-06-24
+- Demo mode: static snapshot, no backend required
+
+## What You Can Do
+
+| Capability | Description |
+| --- | --- |
+| Global project pool | Merge the same GitHub repo into one card across daily runs |
+| Four judgment columns | Sort by the latest judgment: top picks, watchlist, low signal, or published |
+| History trail | Open a project to inspect dates, scores, categories, and reasons |
+| Decision fields | Keep audience, AI-native angle, growth signal, runnability, and recommended action |
+| Bilingual UI | Default to Chinese while preserving original English source text |
+| Static publishing | GitHub Pages reads `radar-snapshot.json` directly without an API server |
 
 ## Data Provenance
 
-The public board is not a frontend mock. It is generated from structured historical run JSON files:
+The public board is generated from historical daily run JSON:
 
 ```text
 data/runs/*.json
 ```
 
-The importer skips sidecar files such as candidate search output, Feishu message drafts, and Yuque retry drafts. It only imports complete daily runs with `top_projects`, `watchlist`, and `skipped_projects`. The current static snapshot is aggregated from 31 valid runs.
+The importer reads complete runs with `top_projects`, `watchlist`, and `skipped_projects`. Sidecar files such as candidate search output, Feishu message drafts, and Yuque retry notes are skipped.
 
-These judgments come from historical Codex Daily Radar outputs. Live GitHub stars, READMEs, install steps, and activity may have changed, so serious decisions should re-audit the original repositories.
-
-## Architecture
+Aggregation flow:
 
 ```mermaid
 flowchart LR
-  A["Historical run JSON"] --> B["Fastify importer"]
+  A["Daily radar JSON"] --> B["Fastify importer"]
   B --> C["SQLite project pool"]
   C --> D["Vue radar board"]
   C --> E["Static snapshot"]
-  E --> F["GitHub Pages demo"]
-  C --> G["Yuque archive later"]
-  C --> H["Feishu Base later"]
+  E --> F["GitHub Pages"]
 ```
 
-Stack:
-
-- Frontend: Vue 3, TypeScript, Less, Vite, Pinia, Vue Router
-- Backend: Node.js, Fastify, TypeScript, zod
-- Database: SQLite for local demo, PostgreSQL-ready through the existing DB abstraction
-- Publishing: GitHub Pages static demo; Yuque and Feishu are follow-up archival/collaboration targets
+These judgments come from historical Codex outputs. Stars, READMEs, install steps, and repository activity may have changed, so serious decisions should re-audit the original GitHub pages.
 
 ## Run Locally
 
@@ -92,20 +99,13 @@ Import historical runs:
 curl -X POST http://127.0.0.1:3000/api/radar/import/local-runs
 ```
 
-The default import directory is controlled by the backend `RADAR_RUNS_DIR` environment variable.
+The backend `RADAR_RUNS_DIR` environment variable controls the default import directory.
 
 ## Deploy to GitHub Pages
 
-This repository includes `.github/workflows/pages.yml`.
+The repository includes `.github/workflows/pages.yml`. On every push to `main`, GitHub Actions installs frontend dependencies, builds the static frontend, and publishes `frontend/dist`.
 
-On every push to `main`, the workflow:
-
-1. Installs `frontend/` dependencies.
-2. Builds the frontend in static data mode.
-3. Uses `/ai-daily-product-radar/` as the Pages base path.
-4. Publishes `frontend/dist` to GitHub Pages.
-
-You can also simulate the static build locally:
+Local Pages build:
 
 ```bash
 cd frontend
@@ -115,25 +115,42 @@ VITE_BASE_PATH=/ai-daily-product-radar/ \
 npm run build
 ```
 
-## Development And Verification
+## Project Structure
 
-The project uses closed-loop modules under `src/modules/<name>/`. Backend contracts are zod schemas; frontend types mirror those response fields.
-
-Useful checks:
-
-```bash
-cd backend && npm test
-cd frontend && npm run type-check && npm run lint && npm run build
-cd ../backend && npm run type-check && npm run lint && npm run build
-bash .agents/skills/vibecoding-verify/scripts/verify.sh
+```text
+frontend/
+  src/modules/radar/      # Vue board, static snapshot client, Chinese UI
+  public/                 # radar-snapshot.json and translation assets
+backend/
+  src/modules/radar/      # Fastify routes, zod schema, importer, repository
+.github/workflows/
+  pages.yml               # GitHub Pages deployment
+docs/
+  roadmap.md              # Product roadmap
 ```
 
-## Roadmap
+## Stack
 
-- GitHub Pages static demo for the public project pool.
-- Local dynamic import from historical run JSON.
-- Yuque report archival under `向26出发 / AI Daily Product Radar`.
-- Feishu Base sync for a collaborative project board.
-- Later: live GitHub audit, scheduled runs, publish status, and review analytics.
+- Frontend: Vue 3, TypeScript, Less, Vite, Pinia, Vue Router
+- Backend: Node.js, Fastify, TypeScript, zod
+- Database: SQLite for local demo, PostgreSQL-ready through the DB abstraction
+- Publishing: GitHub Pages static demo
 
-See [docs/roadmap.md](docs/roadmap.md).
+## Verification
+
+```bash
+cd frontend
+../backend/node_modules/.bin/tsx --test src/modules/radar/i18n/index.test.ts
+npm run type-check
+npm run lint
+npm run build
+
+cd ../backend
+npm test
+npm run type-check
+npm run lint
+npm run build
+
+cd ..
+bash .agents/skills/vibecoding-verify/scripts/verify.sh
+```

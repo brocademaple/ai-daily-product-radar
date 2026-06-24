@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENDOR="$ROOT/vendor/superpowers"
 SKILLS_LINK="$ROOT/.agents/skills/superpowers"
-REPO="https://github.com/obra/superpowers.git"
+REPO="https://githubfast.com/obra/superpowers.git"
 UPDATE=false
 
 for arg in "$@"; do

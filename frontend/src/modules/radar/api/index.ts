@@ -1,14 +1,30 @@
 import { http } from '@/utils/request'
 import type { Radar, RadarImportResult, RadarProjectEntry, RadarRun } from '../types'
-import { getSnapshotProjectHistory, loadRadarSnapshot, summarizeSnapshotImport, type RadarSnapshot } from './static-snapshot'
+import {
+  enhanceRadarHistory,
+  enhanceRadarProjects,
+  getSnapshotProjectHistory,
+  loadRadarSnapshot,
+  loadRadarTranslations,
+  summarizeSnapshotImport,
+  type RadarSnapshot,
+  type RadarTranslationAsset,
+} from './static-snapshot'
 
 const isStaticMode = import.meta.env.VITE_RADAR_DATA_MODE === 'static'
 const snapshotUrl = `${import.meta.env.BASE_URL}radar-snapshot.json`
+const translationsUrl = `${import.meta.env.BASE_URL}radar-translations.zh-CN.json`
 let snapshotPromise: Promise<RadarSnapshot> | null = null
+let translationsPromise: Promise<RadarTranslationAsset | null> | null = null
 
 function getSnapshot(signal?: AbortSignal) {
-  snapshotPromise ??= loadRadarSnapshot(snapshotUrl, signal)
+  snapshotPromise ??= loadRadarSnapshot(snapshotUrl, signal, translationsUrl)
   return snapshotPromise
+}
+
+function getTranslations(signal?: AbortSignal) {
+  translationsPromise ??= loadRadarTranslations(translationsUrl, signal)
+  return translationsPromise
 }
 
 export const radarApi = {
@@ -18,9 +34,14 @@ export const radarApi = {
   listRuns: async (signal?: AbortSignal) =>
     isStaticMode ? (await getSnapshot(signal)).runs : http.get<RadarRun[]>('/radar/runs', { signal }),
   listProjects: async (signal?: AbortSignal) =>
-    isStaticMode ? (await getSnapshot(signal)).projects : http.get<Radar[]>('/radar/projects', { signal }),
+    isStaticMode
+      ? (await getSnapshot(signal)).projects
+      : enhanceRadarProjects(await http.get<Radar[]>('/radar/projects', { signal }), await getTranslations(signal)),
   getProjectHistory: async (fullName: string, signal?: AbortSignal) =>
     isStaticMode
       ? getSnapshotProjectHistory(await getSnapshot(signal), fullName)
-      : http.get<RadarProjectEntry[]>('/radar/projects/history', { query: { fullName }, signal }),
+      : enhanceRadarHistory(
+          await http.get<RadarProjectEntry[]>('/radar/projects/history', { query: { fullName }, signal }),
+          await getTranslations(signal),
+        ),
 }

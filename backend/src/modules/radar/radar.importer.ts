@@ -82,6 +82,10 @@ function compareEntryDesc(a: Pick<NormalizedRadarEntry, 'generatedAt' | 'runDate
   return b.generatedAt.localeCompare(a.generatedAt) || b.runDate.localeCompare(a.runDate)
 }
 
+function firstPresent<T extends keyof RadarProjectEntry>(history: RadarProjectEntry[], field: T): RadarProjectEntry[T] {
+  return (history.find((entry) => entry[field] !== null)?.[field] ?? null) as RadarProjectEntry[T]
+}
+
 export function buildProjectBoard(runs: NormalizedRadarRun[]): Radar[] {
   const byRepo = new Map<string, NormalizedRadarEntry[]>()
   for (const run of runs) {
@@ -128,13 +132,13 @@ export function buildProjectBoard(runs: NormalizedRadarRun[]): Radar[] {
         latestScore: latest.score,
         latestSection: latest.section,
         boardStatus: sectionToBoardStatus(latest.section),
-        category: latest.category,
-        summary: latest.summary,
-        audience: latest.audience,
-        aiNativeAngle: latest.aiNativeAngle,
-        growthSignal: latest.growthSignal,
-        runnability: latest.runnability,
-        recommendedAction: latest.recommendedAction,
+        category: firstPresent(history, 'category'),
+        summary: firstPresent(history, 'summary'),
+        audience: firstPresent(history, 'audience'),
+        aiNativeAngle: firstPresent(history, 'aiNativeAngle'),
+        growthSignal: firstPresent(history, 'growthSignal'),
+        runnability: firstPresent(history, 'runnability'),
+        recommendedAction: firstPresent(history, 'recommendedAction'),
         skipReason: latest.skipReason,
         history,
       }

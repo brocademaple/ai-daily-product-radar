@@ -1,3 +1,5 @@
 export { radarRoutes } from './routes'
 export { useRadarStore } from './store'
+export { useRadarLocale } from './i18n'
+export type { Locale, LocalizedText } from './i18n'
 export type { Radar, RadarImportResult, RadarProjectEntry, RadarRun } from './types'

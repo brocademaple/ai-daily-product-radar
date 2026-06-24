@@ -1,10 +1,17 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { formatCardMeta, getLocalizedText, type Locale } from '../i18n'
 import type { Radar } from '../types'
 
-defineProps<{
+const props = defineProps<{
   project: Radar
   active?: boolean
+  locale: Locale
 }>()
+
+const category = computed(() => getLocalizedText(props.project.category, props.locale).text)
+const summary = computed(() => getLocalizedText(props.project.summary, props.locale).text)
+const meta = computed(() => formatCardMeta(props.locale, props.project.seenCount, props.project.lastSeenDate))
 </script>
 
 <template>
@@ -13,11 +20,9 @@ defineProps<{
       <span class="radar-card__name">{{ project.fullName }}</span>
       <span v-if="project.bestScore !== null" class="radar-card__score">{{ project.bestScore }}</span>
     </span>
-    <span v-if="project.category" class="radar-card__category">{{ project.category }}</span>
-    <span v-if="project.summary" class="radar-card__summary">{{ project.summary }}</span>
-    <span class="radar-card__meta">
-      Seen {{ project.seenCount }}x · latest {{ project.lastSeenDate }}
-    </span>
+    <span v-if="category" class="radar-card__category">{{ category }}</span>
+    <span v-if="summary" class="radar-card__summary">{{ summary }}</span>
+    <span class="radar-card__meta">{{ meta }}</span>
   </button>
 </template>
 
@@ -26,7 +31,7 @@ defineProps<{
   width: 100%;
   display: grid;
   gap: @space-xs;
-  padding: @space-md;
+  padding: @space-sm @space-md;
   border: 1px solid @color-border;
   border-radius: @radius-md;
   background: @color-bg-elevated;
@@ -74,6 +79,10 @@ defineProps<{
 
   &__summary {
     line-height: @line-height-base;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 </style>
