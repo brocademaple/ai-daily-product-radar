@@ -1,0 +1,192 @@
+{
+  "run_date": "2026-06-11",
+  "generated_at": "2026-06-11T18:18:22+08:00",
+  "data_window": "2026-06-08 18:18 to 2026-06-11 18:18 Asia/Shanghai; GitTrend AI Agent/AI Skills pages updated June 9, 2026, GitTrend AI Infrastructure page updated June 6, 2026, GitHub repository README pages, and targeted web search for AI agent, coding-agent, MCP, workflow, sandbox/runtime, RAG and LLM product repositories.",
+  "source_summary": "Live GitTrend topic pages, GitHub repository README pages, targeted web search, and automation memory to avoid repeating 2026-06-10 picks unless there was a clearer product or release signal. Local gh remains unavailable; no clone, install, Docker, or API audit was performed.",
+  "trend_observations": "The strongest fresh signal moved from vertical prompt/skill packs toward agent operations control planes and controlled execution layers: self-hosted orchestration dashboards, social-research agent skills with real source connectors, code knowledge graphs, sandboxed bash runtimes, lightweight SWE agents, LLM gateways, and type-safe app AI SDKs.",
+  "assumptions": "Prioritized repositories with visible product surface, runnable UI/CLI/API, install instructions, docs/examples/screenshots/demo assets, and recent growth or update signals. Downgraded pure guides, one-file prompt collections, model training/tutorial repos, abnormal star spikes, and projects without a durable user workflow. GitTrend star deltas are directional until GitHub API-verified.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-11\n\n数据窗口：2026-06-08 18:18 to 2026-06-11 18:18 Asia/Shanghai; GitTrend AI Agent/AI Skills pages updated June 9, 2026, GitTrend AI Infrastructure page updated June 6, 2026, GitHub repository README pages, and targeted web search for AI agent, coding-agent, MCP, workflow, sandbox/runtime, RAG and LLM product repositories.\n\n关键假设：Prioritized repositories with visible product surface, runnable UI/CLI/API, install instructions, docs/examples/screenshots/demo assets, and recent growth or update signals. Downgraded pure guides, one-file prompt collections, model training/tutorial repos, abnormal star spikes, and projects without a durable user workflow. GitTrend star deltas are directional until GitHub API-verified.\n\n## Top Projects\n\n1. [builderz-labs/mission-control](https://github.com/builderz-labs/mission-control) - Agent Operations Control Plane - Score 91\n   - 做什么：Self-hosted dashboard for dispatching AI agent tasks, coordinating multi-agent workflows, tracking spend, managing skills, and auditing security from one SQLite-backed control surface.\n   - 面向谁：Teams running multiple coding/research agents who need task queues, review gates, costs, logs, skills, schedules, and governance in one place.\n   - AI native 点：It treats agent work as an operated system: agents, tasks, skills, memory, MCP calls, evals, trust scores, cron schedules, webhooks, alerts, and quality gates are first-class product objects.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #4 with +372 stars today; GitHub showed 5.3k stars, 906 forks, 366 commits, 7 issues and 11 PRs, with docs, examples, tests, Docker, OpenAPI and screenshots.\n   - 可运行性判断：README documents one-command local install, manual pnpm dev, Docker compose, GHCR image, hardened compose profile, setup page, API examples and optional gateway mode.\n   - 建议动作：Run the Docker path and test whether Codex/Claude/OpenCode tasks can be registered, queued, reviewed and audited without custom glue.\n\n2. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) - Agent Research Skill / Social Intelligence - Score 88\n   - 做什么：AI agent skill that searches Reddit, X, YouTube, HN, Polymarket, GitHub and web sources, scores signals by real engagement, then synthesizes a grounded last-30-days brief.\n   - 面向谁：Operators, researchers, sales/product people and agent users who need recent community truth rather than stale web search summaries.\n   - AI native 点：It uses an agent as a cross-platform research engine with source-specific connectors, entity resolution, competitive comparison, HTML brief export and agent-judged synthesis.\n   - 增长/活跃信号：GitTrend AI Skills ranked it #1 with +3.5k stars today; GitHub showed 39.3k stars, 3.2k forks, 623 commits, 75 issues and 72 PRs.\n   - 可运行性判断：README documents Claude plugin install, npx skills add for Codex/Cursor/Copilot/Gemini-style hosts, zero-config sources for Reddit/HN/Polymarket/GitHub, and guided setup for X/YouTube/TikTok.\n   - 建议动作：Use it as a radar-source experiment on one topic and compare output quality, citation fidelity and auth friction against this current manual workflow.\n\n3. [safishamsi/graphify](https://github.com/safishamsi/graphify) - Code Knowledge Graph Skill - Score 85\n   - 做什么：Agent skill that turns code, schemas, scripts, docs, papers, images and videos into a queryable knowledge graph for Claude Code, Codex, OpenCode, Cursor and Gemini-style assistants.\n   - 面向谁：Developers onboarding to complex systems or trying to give coding agents richer project context.\n   - AI native 点：It creates a durable graph context layer that agents can query across app code, database schema, infrastructure and docs instead of relying only on current-context text.\n   - 增长/活跃信号：GitTrend AI Skills ranked it #3 with +1.5k stars today and 63.5k stars; GitHub README shows architecture docs, extraction pipeline, optional Docker MCP Toolkit and SQLite integrations.\n   - 可运行性判断：Repository includes skills, docs, tests and architecture references; this run did not clone it, so install/runtime friction still needs direct audit.\n   - 建议动作：Benchmark against Understand-Anything and CodeGraphContext on this repo; promote only if graph answers materially improve agent edits.\n\n4. [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) - Interactive Code Understanding UI - Score 83\n   - 做什么：Interactive knowledge graph and dashboard that turns code into searchable, askable architecture maps for multiple agent hosts.\n   - 面向谁：Developers, PMs and codebase reviewers who need visual exploration and question-answering over unfamiliar repositories.\n   - AI native 点：The product wraps code context in a persona-adaptive UI with architectural layers and language concepts, making agent comprehension inspectable rather than hidden in chat.\n   - 增长/活跃信号：GitTrend AI Skills ranked it #8 with +837 stars today; GitHub shows badges for Claude Code, Codex, Copilot, Gemini CLI, OpenCode, live demo and homepage links.\n   - 可运行性判断：Quick Start and live-demo assets are visible in README; no local run was performed today.\n   - 建议动作：Run side-by-side with Graphify on one known codebase; assess whether the UI helps humans validate agent context.\n\n5. [anthropic-experimental/sandbox-runtime](https://github.com/anthropic-experimental/sandbox-runtime) - Agent Process Sandbox - Score 81\n   - 做什么：Lightweight OS-level runtime for enforcing filesystem and network restrictions on arbitrary processes without requiring a container.\n   - 面向谁：Agent platform builders and tool authors who need local execution controls around shell commands, code interpreters or untrusted workflows.\n   - AI native 点：As agents gain more action tools, sandboxing becomes a core product primitive; this provides a focused runtime layer for constraining what agent-launched processes can touch.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #8 with +337 stars today; GitHub showed 4.3k stars and 316 forks under an Anthropic experimental org.\n   - 可运行性判断：README and repository surface indicate a lightweight runtime package; this run did not perform install or policy tests.\n   - 建议动作：Audit policy expressiveness and macOS/Linux behavior; consider as a dependency candidate for any local agent execution harness.\n\n6. [SWE-agent/mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) - Minimal Coding Agent CLI - Score 80\n   - 做什么：Small Python coding agent that solves GitHub issues or local command-line tasks using a deliberately simple bash-only loop.\n   - 面向谁：Researchers and developers who want a transparent coding-agent baseline, fast CLI workflow, or benchmarkable agent scaffold.\n   - AI native 点：It pushes product value into model capability plus a minimal, auditable execution loop, making trajectories easier to debug, benchmark and sandbox.\n   - 增长/活跃信号：GitTrend AI Coding Assistant ranked it #5 with +568 stars today; GitHub showed 5.1k stars, 693 forks, 995 commits and latest release v2.4.0 on June 10, 2026.\n   - 可运行性判断：README documents uvx/pipx one-shot CLI, pip install, source install, Python bindings, local/docker/podman/singularity/bubblewrap environments and docs.\n   - 建议动作：Use as a baseline in future code-agent evaluations; compare task success and observability against heavier agent shells.\n\n7. [vercel-labs/just-bash](https://github.com/vercel-labs/just-bash) - Virtual Bash Runtime for Agents - Score 78\n   - 做什么：TypeScript virtual bash environment with in-memory/overlay/read-write filesystems, many Unix commands, optional network, Python, JavaScript and SQLite support.\n   - 面向谁：AI app and agent developers who need safe, embeddable command execution without exposing the host shell directly.\n   - AI native 点：It productizes the shell as a controllable agent tool: virtual filesystem, allow-listed network, custom commands, execution limits and typed integration for JS/TS apps.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #9 with +264 stars today; GitHub showed 3.7k stars, 207 forks, examples and a 620-line package README.\n   - 可运行性判断：README documents npm install, import { Bash }, custom commands, supported Unix commands, filesystem modes, cancellation and network allow-list configuration.\n   - 建议动作：Prototype a safe mini execution tool for local agents and test whether command coverage is enough for real troubleshooting loops.\n\n8. [looplj/axonhub](https://github.com/looplj/axonhub) - LLM Gateway / AI Operations - Score 76\n   - 做什么：Open-source AI gateway for calling 100+ LLMs through existing SDKs with failover, load balancing, cost control and tracing.\n   - 面向谁：Teams juggling multiple model providers and relay accounts who need observability and routing without rewriting application SDK calls.\n   - AI native 点：It is infrastructure rather than an agent app, but it supports AI-native products by making model choice, cost, fallback and tracing operational controls.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #5 with +366 stars today; GitHub showed Docker readiness, multilingual README and docker-compose deployment.\n   - 可运行性判断：README includes config.example.yml, docker-compose.yml, render.yaml and Docker Compose deployment steps; TiDB DSN setup suggests some deployment friction.\n   - 建议动作：Keep as gateway watchlist-plus; run only if current projects need multi-provider routing or spend tracing.\n\n## Watchlist\n\n- [TanStack/ai](https://github.com/TanStack/ai) - Type-safe AI App SDK - Score 74 - Provider-agnostic TypeScript SDK for streaming chat, tool calls, structured outputs, realtime voice, media generation and framework-native AI apps. 建议：Watch for API stability and examples before adopting.\n- [openchamber/openchamber](https://github.com/openchamber/openchamber) - OpenCode Desktop/Web Interface - Score 73 - Desktop and web interface for OpenCode AI agent. 建议：Watch; avoid repeating unless releases show stronger integration depth.\n- [agentscope-ai/agentscope-java](https://github.com/agentscope-ai/agentscope-java) - Java Multi-agent Framework - Score 71 - Java framework for agent-oriented programming and LLM applications. 建议：Watch as Java-enterprise signal, but do not prioritize over product surfaces.\n- [qixing-jk/all-api-hub](https://github.com/qixing-jk/all-api-hub) - LLM Account/Relay Dashboard - Score 70 - Dashboard for New-API/Sub2API account balance, usage, auto check-in, key use, price comparison and health checks. 建议：Watch for China-market LLM operations patterns; not a Top product today.\n\n## Skip Reasons\n\n- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) - High GitTrend rank, but still reads primarily as taste/style skill guidance rather than durable product surface with auditable runtime.\n- [mattpocock/skills](https://github.com/mattpocock/skills) - Popular skills directory, but mostly reusable engineering habits; product shape is weaker than agent control planes or runnable tools.\n- [affaan-m/ECC](https://github.com/affaan-m/ECC) - Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion.\n- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) - Single CLAUDE.md/prompt-methodology style project; lacks runnable product workflow.\n- [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Educational build-from-scratch repository; useful learning content but outside product-shaped radar focus.\n\n## 今日趋势观察\n\n1. Agent 操作控制面变成今天最强的产品形态：Mission Control 把任务、agent、skills、成本、审计、质量门禁和调度集中到一个可运行 dashboard。\n2. “agent 能执行命令”之后，安全执行层开始升温：sandbox-runtime 和 just-bash 都在把 shell/process 变成可控、可审计、可嵌入的产品能力。\n3. 社交/社区研究 agent 开始产品化：last30days-skill 的价值不在单个来源，而在跨 Reddit/X/YouTube/HN/Polymarket/GitHub 的实体解析、评分和综合。\n4. 代码上下文工具继续分化：Graphify 偏 agent 可查询知识图谱，Understand-Anything 偏人可检查的交互式架构图。\n5. LLM 基础设施仍活跃，但要区分 agent-native 产品与通用 SDK/网关；今天只把 AxonHub、TanStack AI 放在“支撑层”视角评估。\n\n## 今日建议动作\n\n- 第一优先级：试跑 Mission Control 的 Docker 或本地安装路径，确认能否接入一个真实 agent task queue。\n- 第二优先级：用 last30days-skill 跑一个“AI Native Product Radar”主题，评估它能否减少人工找源成本。\n- 第三优先级：在同一个 repo 上比较 Graphify、Understand-Anything、CodeGraphContext，选一个作为代码上下文实验基线。\n- 安全实验：用 just-bash 做一个极小 agent shell tool，记录命令覆盖、网络 allow-list、文件系统隔离和失败模式。\n\n## 信息来源\n\n- GitTrend AI Agent: https://gittrend.io/trending/ai-agent\n- GitTrend AI Skills: https://gittrend.io/trending/ai-skills\n- GitTrend AI Coding Assistant: https://gittrend.io/trending/ai-coding-assistant\n- GitTrend AI Infrastructure: https://gittrend.io/trending/ai-infrastructure\n- GitHub README pages for all Top/Watchlist repositories listed above.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "builderz-labs/mission-control",
+      "url": "https://github.com/builderz-labs/mission-control",
+      "category": "Agent Operations Control Plane",
+      "score": 91,
+      "summary": "Self-hosted dashboard for dispatching AI agent tasks, coordinating multi-agent workflows, tracking spend, managing skills, and auditing security from one SQLite-backed control surface.",
+      "audience": "Teams running multiple coding/research agents who need task queues, review gates, costs, logs, skills, schedules, and governance in one place.",
+      "ai_native_angle": "It treats agent work as an operated system: agents, tasks, skills, memory, MCP calls, evals, trust scores, cron schedules, webhooks, alerts, and quality gates are first-class product objects.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #4 with +372 stars today; GitHub showed 5.3k stars, 906 forks, 366 commits, 7 issues and 11 PRs, with docs, examples, tests, Docker, OpenAPI and screenshots.",
+      "runnability": "README documents one-command local install, manual pnpm dev, Docker compose, GHCR image, hardened compose profile, setup page, API examples and optional gateway mode.",
+      "recommended_action": "Run the Docker path and test whether Codex/Claude/OpenCode tasks can be registered, queued, reviewed and audited without custom glue."
+    },
+    {
+      "rank": 2,
+      "full_name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "category": "Agent Research Skill / Social Intelligence",
+      "score": 88,
+      "summary": "AI agent skill that searches Reddit, X, YouTube, HN, Polymarket, GitHub and web sources, scores signals by real engagement, then synthesizes a grounded last-30-days brief.",
+      "audience": "Operators, researchers, sales/product people and agent users who need recent community truth rather than stale web search summaries.",
+      "ai_native_angle": "It uses an agent as a cross-platform research engine with source-specific connectors, entity resolution, competitive comparison, HTML brief export and agent-judged synthesis.",
+      "growth_signal": "GitTrend AI Skills ranked it #1 with +3.5k stars today; GitHub showed 39.3k stars, 3.2k forks, 623 commits, 75 issues and 72 PRs.",
+      "runnability": "README documents Claude plugin install, npx skills add for Codex/Cursor/Copilot/Gemini-style hosts, zero-config sources for Reddit/HN/Polymarket/GitHub, and guided setup for X/YouTube/TikTok.",
+      "recommended_action": "Use it as a radar-source experiment on one topic and compare output quality, citation fidelity and auth friction against this current manual workflow."
+    },
+    {
+      "rank": 3,
+      "full_name": "safishamsi/graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "category": "Code Knowledge Graph Skill",
+      "score": 85,
+      "summary": "Agent skill that turns code, schemas, scripts, docs, papers, images and videos into a queryable knowledge graph for Claude Code, Codex, OpenCode, Cursor and Gemini-style assistants.",
+      "audience": "Developers onboarding to complex systems or trying to give coding agents richer project context.",
+      "ai_native_angle": "It creates a durable graph context layer that agents can query across app code, database schema, infrastructure and docs instead of relying only on current-context text.",
+      "growth_signal": "GitTrend AI Skills ranked it #3 with +1.5k stars today and 63.5k stars; GitHub README shows architecture docs, extraction pipeline, optional Docker MCP Toolkit and SQLite integrations.",
+      "runnability": "Repository includes skills, docs, tests and architecture references; this run did not clone it, so install/runtime friction still needs direct audit.",
+      "recommended_action": "Benchmark against Understand-Anything and CodeGraphContext on this repo; promote only if graph answers materially improve agent edits."
+    },
+    {
+      "rank": 4,
+      "full_name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "category": "Interactive Code Understanding UI",
+      "score": 83,
+      "summary": "Interactive knowledge graph and dashboard that turns code into searchable, askable architecture maps for multiple agent hosts.",
+      "audience": "Developers, PMs and codebase reviewers who need visual exploration and question-answering over unfamiliar repositories.",
+      "ai_native_angle": "The product wraps code context in a persona-adaptive UI with architectural layers and language concepts, making agent comprehension inspectable rather than hidden in chat.",
+      "growth_signal": "GitTrend AI Skills ranked it #8 with +837 stars today; GitHub shows badges for Claude Code, Codex, Copilot, Gemini CLI, OpenCode, live demo and homepage links.",
+      "runnability": "Quick Start and live-demo assets are visible in README; no local run was performed today.",
+      "recommended_action": "Run side-by-side with Graphify on one known codebase; assess whether the UI helps humans validate agent context."
+    },
+    {
+      "rank": 5,
+      "full_name": "anthropic-experimental/sandbox-runtime",
+      "url": "https://github.com/anthropic-experimental/sandbox-runtime",
+      "category": "Agent Process Sandbox",
+      "score": 81,
+      "summary": "Lightweight OS-level runtime for enforcing filesystem and network restrictions on arbitrary processes without requiring a container.",
+      "audience": "Agent platform builders and tool authors who need local execution controls around shell commands, code interpreters or untrusted workflows.",
+      "ai_native_angle": "As agents gain more action tools, sandboxing becomes a core product primitive; this provides a focused runtime layer for constraining what agent-launched processes can touch.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #8 with +337 stars today; GitHub showed 4.3k stars and 316 forks under an Anthropic experimental org.",
+      "runnability": "README and repository surface indicate a lightweight runtime package; this run did not perform install or policy tests.",
+      "recommended_action": "Audit policy expressiveness and macOS/Linux behavior; consider as a dependency candidate for any local agent execution harness."
+    },
+    {
+      "rank": 6,
+      "full_name": "SWE-agent/mini-swe-agent",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "category": "Minimal Coding Agent CLI",
+      "score": 80,
+      "summary": "Small Python coding agent that solves GitHub issues or local command-line tasks using a deliberately simple bash-only loop.",
+      "audience": "Researchers and developers who want a transparent coding-agent baseline, fast CLI workflow, or benchmarkable agent scaffold.",
+      "ai_native_angle": "It pushes product value into model capability plus a minimal, auditable execution loop, making trajectories easier to debug, benchmark and sandbox.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #5 with +568 stars today; GitHub showed 5.1k stars, 693 forks, 995 commits and latest release v2.4.0 on June 10, 2026.",
+      "runnability": "README documents uvx/pipx one-shot CLI, pip install, source install, Python bindings, local/docker/podman/singularity/bubblewrap environments and docs.",
+      "recommended_action": "Use as a baseline in future code-agent evaluations; compare task success and observability against heavier agent shells."
+    },
+    {
+      "rank": 7,
+      "full_name": "vercel-labs/just-bash",
+      "url": "https://github.com/vercel-labs/just-bash",
+      "category": "Virtual Bash Runtime for Agents",
+      "score": 78,
+      "summary": "TypeScript virtual bash environment with in-memory/overlay/read-write filesystems, many Unix commands, optional network, Python, JavaScript and SQLite support.",
+      "audience": "AI app and agent developers who need safe, embeddable command execution without exposing the host shell directly.",
+      "ai_native_angle": "It productizes the shell as a controllable agent tool: virtual filesystem, allow-listed network, custom commands, execution limits and typed integration for JS/TS apps.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #9 with +264 stars today; GitHub showed 3.7k stars, 207 forks, examples and a 620-line package README.",
+      "runnability": "README documents npm install, import { Bash }, custom commands, supported Unix commands, filesystem modes, cancellation and network allow-list configuration.",
+      "recommended_action": "Prototype a safe mini execution tool for local agents and test whether command coverage is enough for real troubleshooting loops."
+    },
+    {
+      "rank": 8,
+      "full_name": "looplj/axonhub",
+      "url": "https://github.com/looplj/axonhub",
+      "category": "LLM Gateway / AI Operations",
+      "score": 76,
+      "summary": "Open-source AI gateway for calling 100+ LLMs through existing SDKs with failover, load balancing, cost control and tracing.",
+      "audience": "Teams juggling multiple model providers and relay accounts who need observability and routing without rewriting application SDK calls.",
+      "ai_native_angle": "It is infrastructure rather than an agent app, but it supports AI-native products by making model choice, cost, fallback and tracing operational controls.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #5 with +366 stars today; GitHub showed Docker readiness, multilingual README and docker-compose deployment.",
+      "runnability": "README includes config.example.yml, docker-compose.yml, render.yaml and Docker Compose deployment steps; TiDB DSN setup suggests some deployment friction.",
+      "recommended_action": "Keep as gateway watchlist-plus; run only if current projects need multi-provider routing or spend tracing."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "TanStack/ai",
+      "url": "https://github.com/TanStack/ai",
+      "category": "Type-safe AI App SDK",
+      "score": 74,
+      "summary": "Provider-agnostic TypeScript SDK for streaming chat, tool calls, structured outputs, realtime voice, media generation and framework-native AI apps.",
+      "audience": "Frontend/full-stack teams already using TanStack or TypeScript-heavy app stacks.",
+      "ai_native_angle": "Makes tools, streaming, multimodal and framework bindings first-class typed app primitives.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #10 with +158 stars today; GitHub README positions it across OpenAI, Anthropic, Gemini, React, Vue, Svelte and Solid.",
+      "runnability": "Docs link is available, but this run did not verify package maturity or examples.",
+      "recommended_action": "Watch for API stability and examples before adopting."
+    },
+    {
+      "full_name": "openchamber/openchamber",
+      "url": "https://github.com/openchamber/openchamber",
+      "category": "OpenCode Desktop/Web Interface",
+      "score": 73,
+      "summary": "Desktop and web interface for OpenCode AI agent.",
+      "audience": "Developers who like OpenCode but need a visible desktop, web or VS Code control surface.",
+      "ai_native_angle": "Turns a CLI coding agent into a user-facing operations surface.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #2 on June 6 with +977 stars today; carry-over signal from 2026-06-09.",
+      "runnability": "README points to desktop releases and VS Code Marketplace; requires OpenCode CLI.",
+      "recommended_action": "Watch; avoid repeating unless releases show stronger integration depth."
+    },
+    {
+      "full_name": "agentscope-ai/agentscope-java",
+      "url": "https://github.com/agentscope-ai/agentscope-java",
+      "category": "Java Multi-agent Framework",
+      "score": 71,
+      "summary": "Java framework for agent-oriented programming and LLM applications.",
+      "audience": "Java enterprise teams exploring multi-agent systems.",
+      "ai_native_angle": "Brings agent orchestration patterns into the Java ecosystem.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #2 with +546 stars today.",
+      "runnability": "Needs deeper README/install audit.",
+      "recommended_action": "Watch as Java-enterprise signal, but do not prioritize over product surfaces."
+    },
+    {
+      "full_name": "qixing-jk/all-api-hub",
+      "url": "https://github.com/qixing-jk/all-api-hub",
+      "category": "LLM Account/Relay Dashboard",
+      "score": 70,
+      "summary": "Dashboard for New-API/Sub2API account balance, usage, auto check-in, key use, price comparison and health checks.",
+      "audience": "Power users managing multiple relay providers or accounts.",
+      "ai_native_angle": "Operationalizes model-relay account management, but is less directly agent-native.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #3 with +475 stars today.",
+      "runnability": "README surface suggests product UI; deployment details need deeper audit.",
+      "recommended_action": "Watch for China-market LLM operations patterns; not a Top product today."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "skip_reason": "High GitTrend rank, but still reads primarily as taste/style skill guidance rather than durable product surface with auditable runtime."
+    },
+    {
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "skip_reason": "Popular skills directory, but mostly reusable engineering habits; product shape is weaker than agent control planes or runnable tools."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion."
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "skip_reason": "Single CLAUDE.md/prompt-methodology style project; lacks runnable product workflow."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "skip_reason": "Educational build-from-scratch repository; useful learning content but outside product-shaped radar focus."
+    }
+  ]
+}

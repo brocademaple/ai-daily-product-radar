@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-06-05",
+  "generated_at": "2026-06-05T10:21:27+08:00",
+  "data_window": "2026-06-02 10:21 to 2026-06-05 10:21 Asia/Shanghai; GitHub repositories recently updated, visibly active, or showing strong product traction in AI agents, voice agents, browser agents, RAG, agent governance, and AI workflows.",
+  "source_summary": "Live GitHub repository pages and README evidence; local GitHub API/gh access unavailable because gh is not installed and curl DNS resolution for api.github.com failed.",
+  "trend_observations": "Voice-agent stacks are moving from demo bots to self-hostable production platforms; desktop/browser/computer-use agents are adding repeatability, sandboxing, and background execution; RAG products are converging with agentic wiki, IM integration, and MCP approval; agent governance is emerging as a separate runtime layer.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, Docker or package install paths, examples, documentation, screenshots, or production deployment claims. Growth signals use visible GitHub stars, forks, commit counts, issues/PRs, release markers, and README update notes from live pages; no clone/run audit was performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-05\n\n数据窗口：2026-06-02 10:21 至 2026-06-05 10:21（Asia/Shanghai）。\n\n关键假设：GitHub API 在本地不可用（`gh` 未安装，`api.github.com` DNS 失败），因此本次采用实时 GitHub 仓库页/README 证据；未 clone 或实际运行仓库。分数偏向产品形态、可运行性、场景清晰度、近期活跃与可复刻价值。\n\n## Top Projects\n\n1. dograh-hq/dograh - Voice Agent Platform - Score 92\n   - GitHub: https://github.com/dograh-hq/dograh\n   - 做什么：开源、自托管的 Vapi/Retell 替代方案，用拖拽工作流构建生产级语音 agent。\n   - 面向谁：要部署客服、销售、电话自动化或语音交互流程的团队。\n   - AI native 点：LLM/STT/TTS/BYOK、MCP native、telephony、workflow builder 是核心产品面。\n   - 增长/活跃信号：约 4.2k stars、842 forks、535 commits、16 issues、12 PRs，README 有产品截图、文档、云端入口和对比表。\n   - 可运行性判断：有 `docker-compose.yaml`、`docker-compose-local.yaml`、API/UI/SDK/docs/examples；适合优先本地复刻。\n   - 建议动作：优先试跑本地 Docker，拆解 workflow builder + voice runtime 架构。\n\n2. Tencent/WeKnora - RAG Knowledge Agent Platform - Score 90\n   - GitHub: https://github.com/tencent/WeKnora\n   - 做什么：把文档转成可查询 RAG、自治推理 agent 和自维护 Wiki。\n   - 面向谁：企业知识库、内部问答、IM 知识助手、私有化 RAG 团队。\n   - AI native 点：ReAct agent、MCP 工具、web search、Wiki Mode、知识图谱、Feishu/Notion/Yuque 同步和 IM 渠道集成。\n   - 增长/活跃信号：约 15.1k stars、1.9k forks、1,670 commits、153 issues、30 PRs；v0.5.2 更新包含 MCP HITL approval、Wiki graph、Yuque connector、CLI preview。\n   - 可运行性判断：仓库包含 frontend、docker、helm、mcp-server、cli、docs、examples、docker-compose。\n   - 建议动作：跟踪 Yuque/Feishu connector + agentic wiki，抽取为内部知识库实验。\n\n3. github/gh-aw - Agentic Workflow CLI - Score 88\n   - GitHub: https://github.com/github/gh-aw\n   - 做什么：用自然语言 Markdown 编写 agentic workflow，并在 GitHub Actions 中运行。\n   - 面向谁：希望把 issue triage、代码维护、自动修复、仓库运营流程放进 CI 的工程团队。\n   - AI native 点：agent workflow 作为 repo 原生工件，支持 Copilot、Claude、Codex、Gemini，并带 guardrails 与 human approval。\n   - 增长/活跃信号：约 4.6k stars、415 forks、12,531 commits、192 issues、9 PRs；README 有近期版本退役提醒和安全架构说明。\n   - 可运行性判断：有 CLI、安装脚本、docs、actions、Dockerfile、quickstart。\n   - 建议动作：做一个“每日仓库维护/PR 评论处理”workflow 小实验。\n\n4. trycua/cua - Computer-Use Agent Infrastructure - Score 87\n   - GitHub: https://github.com/trycua/cua\n   - 做什么：为能控制完整桌面环境的 computer-use agents 提供 sandboxes、SDK、benchmarks 和 driver。\n   - 面向谁：构建桌面自动化、GUI agent、系统级评测环境的 AI infra 团队。\n   - AI native 点：agent 可在 macOS/Windows/Linux 桌面中后台点击、输入、验证，面向 Claude Code、Cursor、Codex、MCP/custom clients。\n   - 增长/活跃信号：约 17.6k stars、1.1k forks、3,478 commits、123 issues、230 PRs。\n   - 可运行性判断：有 docs、examples、demo、notebooks、Dockerfile、Package.swift、pyproject、tests。\n   - 建议动作：加入 Watch+实验，评估是否能支撑浏览器/桌面 agent benchmark。\n\n5. browserbase/stagehand - Browser Agent SDK - Score 86\n   - GitHub: https://github.com/browserbase/stagehand\n   - 做什么：用自然语言和代码共同控制浏览器，把 AI-driven 操作转成更可维护的自动化。\n   - 面向谁：生产环境 web 自动化、数据抽取、QA、运营流程自动化团队。\n   - AI native 点：`act`、`agent`、`extract`、preview、auto-caching、self-healing，把 LLM 灵活性和代码确定性结合。\n   - 增长/活跃信号：约 22.9k stars、1.5k forks、1,310 commits、95 issues、138 PRs；最新 release `@browserbasehq/browse-cli@0.6.1` 标注 Jun 3, 2026。\n   - 可运行性判断：`npx create-browser-app`、pnpm build、example script、docs、env example。\n   - 建议动作：复用作浏览器 agent baseline，比较 BrowserOperator/Webwright 路线。\n\n6. ShayneP/local-voice-ai - Local Voice Agent - Score 84\n   - GitHub: https://github.com/ShayneP/local-voice-ai\n   - 做什么：单容器本地实时语音 AI 助手，集成 STT、LLM、TTS、LiveKit 和 Next.js UI。\n   - 面向谁：想构建私有、本地或混合云语音助手的个人开发者和小团队。\n   - AI native 点：本地 supervisor 管理 LiveKit、llama.cpp、Nemotron/Whisper、Kokoro、LiveKit Agents worker，能按 URL 切换云服务。\n   - 增长/活跃信号：约 512 stars、162 forks、37 commits，README 给出架构图、Docker、GPU、Apple Silicon 和云 provider 替换路径。\n   - 可运行性判断：`docker compose up --build`，本地打开 `localhost:8080`；首次模型下载成本高。\n   - 建议动作：作为 voice-agent 最小可复刻样板，重点验证硬件成本与首启体验。\n\n7. macOS26/Agent - Desktop Agent App - Score 82\n   - GitHub: https://github.com/macOS26/Agent\n   - 做什么：macOS 26 桌面 agent harness，用于 computer use、automation、scripting、coding。\n   - 面向谁：希望让本地 Mac 桌面变成可代理操作环境的 power users 和开发者。\n   - AI native 点：支持 18+ 本地/云 LLM provider，面向桌面任务、脚本、代码和自动化。\n   - 增长/活跃信号：约 468 stars、36 forks、591 commits；有 Xcode project、helper、tests、docs、build.sh。\n   - 可运行性判断：需要 macOS 26.4.1+；可作为本地 app 源码构建，但系统版本门槛高。\n   - 建议动作：Watch，后续若出现稳定 release 或 demo 再做深度体验。\n\n8. DemonDamon/AgenticX - Multi-Agent Platform - Score 80\n   - GitHub: https://github.com/DemonDamon/AgenticX\n   - 做什么：统一多 agent 平台，包含 Python SDK、CLI、Studio server、Machi desktop app。\n   - 面向谁：想统一多 agent 编排、记忆、MCP Hub、IM gateway 和桌面形态的开发者。\n   - AI native 点：Meta-Agent、15+ LLM provider、hierarchical memory、avatar/group chat、skill ecosystem、safety sandbox、GUI agent reflection。\n   - 增长/活跃信号：约 132 stars、19 forks、2,127 commits；仓库结构完整，有 desktop、deploy、enterprise、examples、tests。\n   - 可运行性判断：可 `pip install agenticx`，按 feature extras 安装 memory/document/graph/llm/monitoring。\n   - 建议动作：加入长期跟踪；先验证 README 功能是否已稳定落地。\n\n## Watchlist\n\n- ag-ui-protocol/ag-ui - Agent UI Protocol - Score 74 - 14k stars、2,046 commits；`npx create-ag-ui-app` 很顺手，但更偏协议/SDK，等更多产品化 app 模板出现。\n- faramesh/faramesh-core - Agent Governance - Score 72 - 60 stars、250 commits、v0.2.0 on May 24；agent tool-call policy daemon 很有趋势价值，但当前更偏治理基础设施。\n- openai/codex - Coding Agent CLI - Score 78 - 88.6k stars、7,150 commits；产品影响力极强，但非今日新发现，作为生态基准观察。\n- humanlayer/12-factor-agents - Agent Engineering Reference - Score 68 - 原则型内容仓库，适合作为设计参考，不进入产品 Top。\n\n## Skip Reasons\n\n- Supersynergy/awesome-ai-agents-2025：awesome list/目录型内容，缺少单一可运行产品面。\n- G1o22/awesome-ai-agents-2026：聚合列表，存在大量二手描述，适合作为发现源，不适合作为 Top 项目。\n- VoltAgent/awesome-ai-agent-papers：论文列表，主要是研究导航，非可运行产品。\n- QAInsights/awesome-ai-tools：工具清单/目录，缺少可运行仓库产品形态。\n\n## 今日趋势观察\n\n1. Voice agent 开源栈开始从“demo assistant”走向“可部署平台”：Dograh 面向 Vapi/Retell 替代，local-voice-ai 面向单容器私有化。\n2. Desktop/browser agent 的主战场在可靠性：Cua 强调后台 computer-use，Stagehand 强调自然语言与代码混合、缓存、自愈。\n3. RAG 产品正在合并 agent、wiki、IM、连接器与 MCP 审批：WeKnora 的 v0.5.2 是比较清晰的企业知识产品样本。\n4. Agent governance 变成独立层：Faramesh 把每次 tool call 变成可审计政策决策，值得后续跟踪。\n\n## 今日建议动作\n\n- 先试跑 Dograh 或 local-voice-ai，建立 voice-agent 可运行样板。\n- 用 Stagehand/Cua 对比一个固定网页任务，观察“可重复执行”和“恢复失败”的工程设计。\n- 为 WeKnora 做一张 RAG+Wiki+IM+MCP approval 的产品拆解卡。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "dograh-hq/dograh",
+      "url": "https://github.com/dograh-hq/dograh",
+      "category": "Voice Agent Platform",
+      "score": 92,
+      "summary": "Open-source, self-hostable Vapi/Retell alternative for building production voice agents with a drag-and-drop workflow builder.",
+      "audience": "Teams building customer support, sales, phone automation, or voice-interaction workflows.",
+      "ai_native_angle": "LLM/STT/TTS orchestration, BYOK, MCP-native workflows, telephony, and workflow builder are the product core.",
+      "growth_signal": "Visible GitHub page shows about 4.2k stars, 842 forks, 535 commits, 16 issues, and 12 PRs.",
+      "runnability": "Has docker-compose files, API, UI, SDK, docs, examples, and product screenshots.",
+      "recommended_action": "Run the local Docker stack and study its voice workflow builder architecture."
+    },
+    {
+      "rank": 2,
+      "full_name": "Tencent/WeKnora",
+      "url": "https://github.com/tencent/WeKnora",
+      "category": "RAG Knowledge Agent Platform",
+      "score": 90,
+      "summary": "Open-source LLM knowledge platform that turns raw documents into RAG Q&A, autonomous reasoning agents, and self-maintaining Wikis.",
+      "audience": "Enterprise knowledge-base, private RAG, internal Q&A, and IM assistant teams.",
+      "ai_native_angle": "Combines ReAct agent, MCP tools, web search, Wiki Mode, graph exploration, IM channels, and Feishu/Notion/Yuque sync.",
+      "growth_signal": "Visible GitHub page shows about 15.1k stars, 1.9k forks, 1,670 commits, 153 issues, and 30 PRs; v0.5.2 notes include MCP HITL approval and Yuque connector.",
+      "runnability": "Repository includes frontend, docker, helm, mcp-server, cli, docs, examples, and docker-compose.",
+      "recommended_action": "Track and prototype the Yuque/Feishu connector plus agentic wiki flow."
+    },
+    {
+      "rank": 3,
+      "full_name": "github/gh-aw",
+      "url": "https://github.com/github/gh-aw",
+      "category": "Agentic Workflow CLI",
+      "score": 88,
+      "summary": "GitHub Agentic Workflows lets teams write natural-language Markdown workflows and run them in GitHub Actions.",
+      "audience": "Engineering teams automating repository maintenance, issue triage, and CI-side agent tasks.",
+      "ai_native_angle": "Treats agent workflows as repository-native artifacts with provider choice and security guardrails.",
+      "growth_signal": "Visible GitHub page shows about 4.6k stars, 415 forks, 12,531 commits, 192 issues, and 9 PRs.",
+      "runnability": "Has CLI, install script, docs, actions, Dockerfile, quickstart, and security architecture documentation.",
+      "recommended_action": "Create a small repo-maintenance workflow experiment for PR comment or issue triage automation."
+    },
+    {
+      "rank": 4,
+      "full_name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "category": "Computer-Use Agent Infrastructure",
+      "score": 87,
+      "summary": "Open-source infrastructure for computer-use agents that control full desktops across macOS, Linux, and Windows.",
+      "audience": "Teams building desktop automation agents, GUI benchmarks, or controlled computer-use environments.",
+      "ai_native_angle": "Enables agents to click, type, and verify in background desktop environments through CLI/MCP/custom clients.",
+      "growth_signal": "Visible GitHub page shows about 17.6k stars, 1.1k forks, 3,478 commits, 123 issues, and 230 PRs.",
+      "runnability": "Has docs, examples, demo, notebooks, Dockerfile, Package.swift, pyproject, and tests.",
+      "recommended_action": "Use as a benchmark substrate for browser and desktop agent reliability experiments."
+    },
+    {
+      "rank": 5,
+      "full_name": "browserbase/stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "category": "Browser Agent SDK",
+      "score": 86,
+      "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
+      "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
+      "ai_native_angle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
+      "growth_signal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
+      "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
+      "recommended_action": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches."
+    },
+    {
+      "rank": 6,
+      "full_name": "ShayneP/local-voice-ai",
+      "url": "https://github.com/ShayneP/local-voice-ai",
+      "category": "Local Voice Agent",
+      "score": 84,
+      "summary": "Single-container local real-time voice AI assistant with STT, LLM, TTS, LiveKit, and a Next.js UI.",
+      "audience": "Developers and small teams building private local or hybrid-cloud voice assistants.",
+      "ai_native_angle": "One supervisor manages LiveKit, llama.cpp, Nemotron/Whisper, Kokoro, and LiveKit Agents worker with cloud-provider escape hatches.",
+      "growth_signal": "Visible GitHub page shows about 512 stars, 162 forks, and 37 commits, with detailed Docker/GPU/Apple Silicon docs.",
+      "runnability": "Run with docker compose up --build and open localhost:8080; first boot downloads large model assets.",
+      "recommended_action": "Try as the minimal reproducible voice-agent stack and measure first-run hardware/model cost."
+    },
+    {
+      "rank": 7,
+      "full_name": "macOS26/Agent",
+      "url": "https://github.com/macOS26/Agent",
+      "category": "Desktop Agent App",
+      "score": 82,
+      "summary": "macOS desktop agent harness for computer use, automation, scripting, and coding.",
+      "audience": "Mac power users and developers exploring local desktop agents.",
+      "ai_native_angle": "Supports 18+ local/cloud AI providers and exposes a desktop harness for system-level tasks.",
+      "growth_signal": "Visible GitHub page shows about 468 stars, 36 forks, and 591 commits.",
+      "runnability": "Has Xcode project, helper app, tests, docs, and build.sh; requires macOS 26.4.1 or later.",
+      "recommended_action": "Watch for stable release/demo; revisit when target macOS version is available."
+    },
+    {
+      "rank": 8,
+      "full_name": "DemonDamon/AgenticX",
+      "url": "https://github.com/DemonDamon/AgenticX",
+      "category": "Multi-Agent Platform",
+      "score": 80,
+      "summary": "Unified multi-agent platform with Python SDK, CLI, Studio server, and Machi desktop app.",
+      "audience": "Developers exploring multi-agent orchestration, memory, MCP hubs, IM gateways, and desktop agent experiences.",
+      "ai_native_angle": "Meta-Agent orchestration, 15+ LLM providers, hierarchical memory, avatar/group chat, skill ecosystem, safety sandbox, and GUI reflection.",
+      "growth_signal": "Visible GitHub page shows about 132 stars, 19 forks, 2,127 commits, 8 issues, and complete repo structure.",
+      "runnability": "Install with pip install agenticx; optional extras cover memory, document, graph, LLM, and monitoring features.",
+      "recommended_action": "Track long term and verify which advertised platform components are stable."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "category": "Agent UI Protocol",
+      "score": 74,
+      "summary": "Event-based protocol for connecting AI agents to user-facing applications.",
+      "audience": "Frontend and agent-platform teams building in-app agent interactions.",
+      "ai_native_angle": "Positions AG-UI as the user-facing complement to MCP and A2A.",
+      "growth_signal": "Visible GitHub page shows about 14k stars, 1.3k forks, 2,046 commits, 181 issues, and 140 PRs.",
+      "runnability": "Has npx create-ag-ui-app, docs, Dojo, apps, integrations, middleware, and SDKs.",
+      "recommended_action": "Watch for richer product templates and evaluate for future agent UI surfaces."
+    },
+    {
+      "full_name": "faramesh/faramesh-core",
+      "url": "https://github.com/faramesh/faramesh-core",
+      "category": "Agent Governance",
+      "score": 72,
+      "summary": "Governance-as-code daemon that permits, defers, or denies each agent tool call before execution.",
+      "audience": "Teams shipping agents into environments that require policy, audit, and credential control.",
+      "ai_native_angle": "Moves agent safety from prompt evaluation into deterministic runtime enforcement.",
+      "growth_signal": "Visible GitHub page shows about 60 stars, 13 forks, 250 commits, 2 issues, 7 PRs, and v0.2.0 on May 24, 2026.",
+      "runnability": "Install script plus Homebrew/npx/Go install paths; docs and examples are present.",
+      "recommended_action": "Watch as a governance layer candidate; test once more adapters mature."
+    },
+    {
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "category": "Coding Agent CLI",
+      "score": 78,
+      "summary": "Lightweight coding agent that runs locally in the terminal.",
+      "audience": "Developers using terminal-based coding agents and automation loops.",
+      "ai_native_angle": "Local agent runtime for code editing, commands, SDKs, and desktop/app entry points.",
+      "growth_signal": "Visible GitHub page shows about 88.6k stars, 13k forks, 7,150 commits, 5k+ issues, and 357 PRs.",
+      "runnability": "Has codex CLI, Rust implementation, docs, SDK, scripts, package metadata, and app references.",
+      "recommended_action": "Keep as ecosystem baseline rather than treating as a fresh daily discovery."
+    },
+    {
+      "full_name": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "category": "Agent Engineering Reference",
+      "score": 68,
+      "summary": "Principles for building production-grade LLM-powered software.",
+      "audience": "Agent product engineers and platform architects.",
+      "ai_native_angle": "Encodes product and engineering principles for reliable LLM applications.",
+      "growth_signal": "Visible GitHub page was live during search; used as design reference, not product ranking.",
+      "runnability": "Mostly reference/documentation content rather than a runnable product.",
+      "recommended_action": "Use for design review checklist; do not prioritize as product radar Top item."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Supersynergy/awesome-ai-agents-2025",
+      "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+      "skip_reason": "Awesome list / directory of tools, not a single runnable AI native product."
+    },
+    {
+      "full_name": "G1o22/awesome-ai-agents-2026",
+      "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+      "skip_reason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped."
+    },
+    {
+      "full_name": "VoltAgent/awesome-ai-agent-papers",
+      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+      "skip_reason": "Research-paper list without runnable product surface."
+    },
+    {
+      "full_name": "QAInsights/awesome-ai-tools",
+      "url": "https://github.com/QAInsights/awesome-ai-tools",
+      "skip_reason": "Tool directory / list repository, not a standalone AI application, CLI, API, or workflow product."
+    }
+  ]
+}

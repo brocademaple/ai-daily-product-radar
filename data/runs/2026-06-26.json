@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-06-26",
+  "generated_at": "2026-06-26T10:28:00+08:00",
+  "data_window": "2026-06-24 10:28 to 2026-06-26 10:28 Asia/Shanghai; GitHub Search API recently created/pushed repositories plus README/root-content spot audit.",
+  "source_summary": "GitHub Search API queries for created/pushed 2026-06-24..2026-06-26 across agent/LLM/MCP/RAG/workflow/browser/code/voice terms; GitHub repo metadata, README API, and root contents audit for shortlisted repositories.",
+  "trend_observations": "Coding-agent products are moving toward multi-agent command centers, context/governance planes, and agent-facing visual surfaces; the most product-shaped fresh candidates expose CLI/Web/Docker install paths rather than only model code.",
+  "assumptions": "Scores prioritize runnable product surface, concrete user scenario, README/docs/install completeness, recent push activity, and non-duplication with recent radar picks. Star counts are GitHub API observations and may include abnormal promotional spikes; no clone/install/runtime execution was performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-26\n\n数据窗口：2026-06-24 10:28 to 2026-06-26 10:28 Asia/Shanghai; GitHub Search API recently created/pushed repositories plus README/root-content spot audit.\n\n关键假设：Scores prioritize runnable product surface, concrete user scenario, README/docs/install completeness, recent push activity, and non-duplication with recent radar picks. Star counts are GitHub API observations and may include abnormal promotional spikes; no clone/install/runtime execution was performed.\n\n## Top Projects\n\n1. [openclaw/openclaw](https://github.com/openclaw/openclaw) - Personal AI Assistant / Agent OS - Score 92\n   - 做什么：Cross-platform personal AI assistant with app/workspace structure, Dockerfile, CLI/web surfaces, MCP references, and broad model/provider positioning.\n   - 面向谁：Power users and teams wanting a local-first personal assistant spanning OS, apps, and agent workflows.\n   - AI native 点：AI is the operating surface: assistant shell, agent actions, workspace memory/process docs, and MCP-capable integrations are core rather than add-ons.\n   - 增长/活跃信号：GitHub API shows 380k stars, 79k forks, created 2025-11-24 and pushed 2026-06-26; README and root contain AGENTS.md, Dockerfile, apps, CHANGELOG, VISION, SECURITY.\n   - 可运行性判断：Root audit found Dockerfile, package manager config, apps directory, Quick Start/install mentions, CLI/web/MCP signals; no local run performed.\n   - 建议动作：Prioritize a controlled local install audit and verify whether the very high star count maps to real community usage.\n\n2. [Hmbown/CodeWhale](https://github.com/Hmbown/CodeWhale) - Terminal Coding Agent - Score 90\n   - 做什么：Rust TUI/CLI coding agent for multiple model backends, aimed at reading/editing/running code locally with self-correction loops.\n   - 面向谁：Developers who want an open-model-first terminal coding agent instead of a hosted IDE assistant.\n   - AI native 点：The product loop is agentic coding: inspect project, edit files, run commands, check failures, and revise through a terminal UI.\n   - 增长/活跃信号：GitHub API shows 39k stars, 3.3k forks, created 2026-01-19 and pushed 2026-06-26; root has Cargo workspace, Dockerfile, assets, localized READMEs, CI and docs.\n   - 可运行性判断：README/root expose Cargo/Rust, CLI, Docker, install, dashboard/screenshot and MCP/API signals; no build/run audit performed.\n   - 建议动作：Compare with Codex/OpenCode baselines on one small repo task and score latency, edit quality, and failure recovery.\n\n3. [multica-ai/multica](https://github.com/multica-ai/multica) - Managed Coding Agent Platform - Score 89\n   - 做什么：Open-source platform for assigning work to coding agents, tracking progress, self-hosting, and composing agent skills.\n   - 面向谁：Engineering teams trying to turn coding agents into managed teammates with task assignment and supervision.\n   - AI native 点：Agent management, skill compounding, task progress, daemon/CLI, and self-hosting docs are product primitives.\n   - 增长/活跃信号：GitHub API shows 38k stars, 4.7k forks, created 2026-01-13 and pushed 2026-06-26; root contains CLI/daemon docs, self-hosting docs, Dockerfiles, apps, deploy.\n   - 可运行性判断：Dockerfile/Dockerfile.web, Makefile, CLI install docs, self-hosting docs, apps/deploy directories; no runtime audit performed.\n   - 建议动作：Add to long-term coding-agent control-plane watch and test self-hosting if docs look stable.\n\n4. [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) - Agent Context Governance - Score 87\n   - 做什么：Local Rust context intelligence layer that controls what agents can read, remember, touch, and prove they saved.\n   - 面向谁：Teams running coding agents or MCP-heavy agents that need token control, memory, guardrails, and evidence receipts.\n   - AI native 点：It targets the agent context boundary itself: visibility, memory, permissioning, and proof are the product surface.\n   - 增长/活跃信号：GitHub API shows 2.9k stars, 285 forks, created 2026-03-23 and pushed 2026-06-26; README claims 76 MCP tools, 30+ agents, local-first.\n   - 可运行性判断：Root includes Cargo/Rust, Makefile, Docker/npm hints, CLI/dashboard/demo/install/MCP/API signals, extensive architecture/benchmark docs; no local run performed.\n   - 建议动作：Run a focused MCP/context-size experiment against a coding-agent workflow.\n\n5. [agent-of-empires/agent-of-empires](https://github.com/agent-of-empires/agent-of-empires) - Multi-Agent Coding Workbench - Score 86\n   - 做什么：Rust TUI/Web manager for multiple coding agents including Claude Code, OpenCode, Codex CLI, Gemini CLI, Copilot CLI and others.\n   - 面向谁：Developers managing parallel coding-agent sessions from desktop or mobile-accessible web UI.\n   - AI native 点：The core product is session orchestration across many agent CLIs with TUI/Web access, plugins, sounds, settings, and git/watch support.\n   - 增长/活跃信号：GitHub API shows 2.6k stars, 241 forks, created 2026-01-09 and pushed 2026-06-26; README has Trendshift badge and root has Cargo workspace, assets, plugin API.\n   - 可运行性判断：Cargo workspace, Quick Start/install/demo mentions, TUI/Web/dashboard signals, design docs; no local run performed.\n   - 建议动作：Try as a mobile-friendly multi-agent command center candidate.\n\n6. [modem-dev/sideshow](https://github.com/modem-dev/sideshow) - Agent Visual Surface - Score 84\n   - 做什么：Live multimodal render surface for terminal coding agents, showing diagrams, UI sketches, diffs, markdown, terminal output and images.\n   - 面向谁：Coding-agent users and tool builders who need agents to emit inspectable visual artifacts while working in terminal sessions.\n   - AI native 点：It gives text-first terminal agents a visual screen through MCP/plugin surfaces, making agent outputs easier to inspect and iterate.\n   - 增长/活跃信号：GitHub API shows 229 stars, 8 forks, created 2026-06-11 and pushed 2026-06-26; root includes plugin, mcp, examples, e2e, extensions, guide.\n   - 可运行性判断：README/root show npm package, CLI, quick start, screenshots/demo, MCP/API, Playwright config; no local run performed.\n   - 建议动作：Prototype with a coding-agent diagram/report task and compare against plain markdown artifacts.\n\n7. [axoviq-ai/synthadoc](https://github.com/axoviq-ai/synthadoc) - LLM Knowledge Compilation / RAG Alternative - Score 83\n   - 做什么：Local-first LLM knowledge compilation engine that turns raw documents into structured human-readable wikis.\n   - 面向谁：Teams building auditable knowledge bases, research archives, or document-to-wiki workflows as an alternative to opaque RAG.\n   - AI native 点：LLM processing is used to compile, maintain, and improve structured wikis from raw docs, with web UI and Obsidian/plugin surfaces.\n   - 增长/活跃信号：GitHub API shows 486 stars, 46 forks, created 2026-04-11 and pushed 2026-06-26; root includes docs, tests, web-ui, obsidian-plugin, wiki, pyproject.\n   - 可运行性判断：README/root show CLI, web/dashboard, demo, install, MCP/API signals; no local run performed.\n   - 建议动作：Use as a candidate for document-to-Yuque/wiki compilation experiments.\n\n8. [lyehe/porterminal](https://github.com/lyehe/porterminal) - Remote Agent Terminal / MCP Tunnel - Score 81\n   - 做什么：Web/MCP terminal tunneling tool for using a phone and PC together, positioned around vibe coding from anywhere.\n   - 面向谁：Developers wanting phone-accessible terminal/agent control and lightweight web terminal bridging.\n   - AI native 点：MCP terminal tunneling makes local command execution and agent interaction accessible across devices.\n   - 增长/活跃信号：GitHub API shows 289 stars, 8 forks, created 2025-12-30 and pushed 2026-06-26; root includes frontend, docs, tests, install scripts, pyproject and package.json.\n   - 可运行性判断：PyPI/package hints, install.sh/install.ps1, frontend, screenshots/demo, Docker/pip/uv/CLI/Web/MCP signals; no local run performed.\n   - 建议动作：Watch for security model; trial only in a sandboxed machine.\n\n9. [digitaldrywood/detent](https://github.com/digitaldrywood/detent) - Board-Driven Agentic Work Orchestration - Score 79\n   - 做什么：Single Go binary that watches GitHub Projects, runs ready issues through isolated worktrees, validation gates, and serialized merge trains with web/terminal dashboards.\n   - 面向谁：Small engineering teams running agentic issue queues and wanting deterministic merge gates.\n   - AI native 点：It turns a project board into an agent execution queue with validation gates and dashboards for agent-produced work.\n   - 增长/活跃信号：GitHub API shows 6 stars, 2 forks, created 2026-05-30 and pushed 2026-06-26; root has Go module, install scripts, docs, tests, CI, release config.\n   - 可运行性判断：Single-binary Go app with install scripts, Makefile, web/dashboard and CLI signals; no local run performed.\n   - 建议动作：High experiment value despite low stars; inspect issue-to-worktree flow for automation design patterns.\n\n10. [soapbucket/sbproxy](https://github.com/soapbucket/sbproxy) - AI Governance Gateway - Score 78\n   - 做什么：Self-hostable Rust gateway for AI traffic, APIs, MCP, and AI crawlers with proxy-style governance.\n   - 面向谁：Teams needing policy, routing, logging, and governance around LLM/MCP/API traffic.\n   - AI native 点：Governance is enforced at the AI traffic/proxy layer, including MCP and crawler surfaces, before agent actions hit downstream systems.\n   - 增长/活跃信号：GitHub API shows 42 stars, 0 forks, created 2026-04-08 and pushed 2026-06-26; README last modified 2026-06-24 and root includes Docker/cloudbuild, Makefile, supply-chain/security docs.\n   - 可运行性判断：Rust/Cargo, Docker, CLI/dashboard/quickstart/install/API signals; no local run performed.\n   - 建议动作：Watch as a governance-plane candidate; compare against Pipelock and broader MCP security tools.\n\n## Watchlist\n\n- [vercel/eve](https://github.com/vercel/eve) - Agent Framework - Score 76 - Vercel framework for building agents; strong docs/package posture but more framework than product app. 建议：Watch for product templates and reference apps.\n- [BuilderIO/agent-native](https://github.com/BuilderIO/agent-native) - Agent-Native App Framework - Score 75 - Framework for actions/state/identity/tools/jobs/observability shared across UI, agent, HTTP, MCP, A2A and CLI. 建议：Track for architectural patterns.\n- [vellum-ai/vellum-assistant](https://github.com/vellum-ai/vellum-assistant) - Personal AI Assistant - Score 74 - 24/7 assistant that learns preferences and does work, with CLI/assistant/benchmarking components. 建议：Watch for self-host clarity and examples.\n- [LIUTod/scream-code](https://github.com/LIUTod/scream-code) - Local AI Coding Assistant - Score 72 - Chinese local AI assistant with parallel agents, TUI, global memory logs, model customization and Feishu/WeChat claims. 建议：Watch and test in isolated repo.\n- [veritasfuji-japan/veritas_os](https://github.com/veritasfuji-japan/veritas_os) - Agent Decision Governance - Score 71 - Decision governance runtime for approval workflows, audit trails, replayable evidence, and bind-boundary control. 建议：Track with governance trend.\n- [zju-zhanglu/diagram-to-image](https://github.com/zju-zhanglu/diagram-to-image) - Agent Skill - Score 68 - Agent skill converting ASCII/Unicode diagrams in Markdown into draw.io PNG images. 建议：Watch as a small useful skill, not a full product.\n\n## Skip Reasons\n\n- [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)：Previously covered and star count remains abnormally high; avoid repeating without fresh product-shape change.\n- [langgenius/dify](https://github.com/langgenius/dify)：Mature platform and not a fresh discovery for today; useful baseline but outside today's novelty bar.\n- [openai/codex](https://github.com/openai/codex)：Major baseline coding agent, not a new radar candidate; include only for comparisons.\n- [BerriAI/litellm](https://github.com/BerriAI/litellm)：Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today.\n- [CorpusIQ/corpusiq-docs](https://github.com/CorpusIQ/corpusiq-docs)：Documentation/knowledge repository rather than a runnable product codebase.\n- [zju-zhanglu/diagram-to-image](https://github.com/zju-zhanglu/diagram-to-image)：Useful agent skill but narrow utility and dependent on external draw.io MCP; kept in watchlist rather than Top.\n- [writerslogic/scrivener-mcp](https://github.com/writerslogic/scrivener-mcp)：Domain-specific MCP connector for Scrivener; product surface is narrower than today's Top candidates.\n- [dignite-projects/vault-extract](https://github.com/dignite-projects/vault-extract)：Promising IDP/RAG channel layer, but README positions it as channel infrastructure, not an end-product.\n\n## 今日趋势观察\n\n1. 编码 Agent 工具继续从单个 CLI 走向“多 Agent 指挥台”：Multica、Agent of Empires、Detent 都把任务分派、会话管理、验证门和 dashboard 作为产品面。\n2. Agent 的上下文/权限/证据层正在独立成品类：LeanCTX、SBproxy、VERITAS OS 都在回答 agent 能看什么、能碰什么、如何留痕。\n3. 终端 Agent 正在获得更多可视化和跨设备界面：Sideshow 给 agent 输出一个实时视觉面，Porterminal 把终端/MCP 控制延展到手机/网页。\n4. RAG 正在被“知识编译/结构化 Wiki”替代部分场景：Synthadoc 代表从向量问答转向可读、可维护知识资产的路线。\n\n## 今日建议动作\n\n- 优先本地试跑 CodeWhale 或 Agent of Empires，用同一小型修复任务和 Codex/OpenCode 对比。\n- 用 Sideshow 做一次 agent 输出可视化实验，验证是否能减少人工读日志成本。\n- 把 LeanCTX/SBproxy/Pipelock 放在同一张治理层对照表里，拆分 context、network、policy、audit 四类边界。\n\n## 数据观察窗口与信息来源\n\n- GitHub Search API queries for created/pushed 2026-06-24..2026-06-26 across agent/LLM/MCP/RAG/workflow/browser/code/voice terms; GitHub repo metadata, README API, and root contents audit for shortlisted repositories.\n- 已做实时仓库审计：是，使用 GitHub API 元数据、README API、根目录内容抽样。\n- 未做：clone、install、Docker build、npm/pip/cargo/go build、浏览器或本地运行。",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "category": "Personal AI Assistant / Agent OS",
+      "score": 92,
+      "summary": "Cross-platform personal AI assistant with app/workspace structure, Dockerfile, CLI/web surfaces, MCP references, and broad model/provider positioning.",
+      "audience": "Power users and teams wanting a local-first personal assistant spanning OS, apps, and agent workflows.",
+      "ai_native_angle": "AI is the operating surface: assistant shell, agent actions, workspace memory/process docs, and MCP-capable integrations are core rather than add-ons.",
+      "growth_signal": "GitHub API shows 380k stars, 79k forks, created 2025-11-24 and pushed 2026-06-26; README and root contain AGENTS.md, Dockerfile, apps, CHANGELOG, VISION, SECURITY.",
+      "runnability": "Root audit found Dockerfile, package manager config, apps directory, Quick Start/install mentions, CLI/web/MCP signals; no local run performed.",
+      "recommended_action": "Prioritize a controlled local install audit and verify whether the very high star count maps to real community usage."
+    },
+    {
+      "rank": 2,
+      "full_name": "Hmbown/CodeWhale",
+      "url": "https://github.com/Hmbown/CodeWhale",
+      "category": "Terminal Coding Agent",
+      "score": 90,
+      "summary": "Rust TUI/CLI coding agent for multiple model backends, aimed at reading/editing/running code locally with self-correction loops.",
+      "audience": "Developers who want an open-model-first terminal coding agent instead of a hosted IDE assistant.",
+      "ai_native_angle": "The product loop is agentic coding: inspect project, edit files, run commands, check failures, and revise through a terminal UI.",
+      "growth_signal": "GitHub API shows 39k stars, 3.3k forks, created 2026-01-19 and pushed 2026-06-26; root has Cargo workspace, Dockerfile, assets, localized READMEs, CI and docs.",
+      "runnability": "README/root expose Cargo/Rust, CLI, Docker, install, dashboard/screenshot and MCP/API signals; no build/run audit performed.",
+      "recommended_action": "Compare with Codex/OpenCode baselines on one small repo task and score latency, edit quality, and failure recovery."
+    },
+    {
+      "rank": 3,
+      "full_name": "multica-ai/multica",
+      "url": "https://github.com/multica-ai/multica",
+      "category": "Managed Coding Agent Platform",
+      "score": 89,
+      "summary": "Open-source platform for assigning work to coding agents, tracking progress, self-hosting, and composing agent skills.",
+      "audience": "Engineering teams trying to turn coding agents into managed teammates with task assignment and supervision.",
+      "ai_native_angle": "Agent management, skill compounding, task progress, daemon/CLI, and self-hosting docs are product primitives.",
+      "growth_signal": "GitHub API shows 38k stars, 4.7k forks, created 2026-01-13 and pushed 2026-06-26; root contains CLI/daemon docs, self-hosting docs, Dockerfiles, apps, deploy.",
+      "runnability": "Dockerfile/Dockerfile.web, Makefile, CLI install docs, self-hosting docs, apps/deploy directories; no runtime audit performed.",
+      "recommended_action": "Add to long-term coding-agent control-plane watch and test self-hosting if docs look stable."
+    },
+    {
+      "rank": 4,
+      "full_name": "yvgude/lean-ctx",
+      "url": "https://github.com/yvgude/lean-ctx",
+      "category": "Agent Context Governance",
+      "score": 87,
+      "summary": "Local Rust context intelligence layer that controls what agents can read, remember, touch, and prove they saved.",
+      "audience": "Teams running coding agents or MCP-heavy agents that need token control, memory, guardrails, and evidence receipts.",
+      "ai_native_angle": "It targets the agent context boundary itself: visibility, memory, permissioning, and proof are the product surface.",
+      "growth_signal": "GitHub API shows 2.9k stars, 285 forks, created 2026-03-23 and pushed 2026-06-26; README claims 76 MCP tools, 30+ agents, local-first.",
+      "runnability": "Root includes Cargo/Rust, Makefile, Docker/npm hints, CLI/dashboard/demo/install/MCP/API signals, extensive architecture/benchmark docs; no local run performed.",
+      "recommended_action": "Run a focused MCP/context-size experiment against a coding-agent workflow."
+    },
+    {
+      "rank": 5,
+      "full_name": "agent-of-empires/agent-of-empires",
+      "url": "https://github.com/agent-of-empires/agent-of-empires",
+      "category": "Multi-Agent Coding Workbench",
+      "score": 86,
+      "summary": "Rust TUI/Web manager for multiple coding agents including Claude Code, OpenCode, Codex CLI, Gemini CLI, Copilot CLI and others.",
+      "audience": "Developers managing parallel coding-agent sessions from desktop or mobile-accessible web UI.",
+      "ai_native_angle": "The core product is session orchestration across many agent CLIs with TUI/Web access, plugins, sounds, settings, and git/watch support.",
+      "growth_signal": "GitHub API shows 2.6k stars, 241 forks, created 2026-01-09 and pushed 2026-06-26; README has Trendshift badge and root has Cargo workspace, assets, plugin API.",
+      "runnability": "Cargo workspace, Quick Start/install/demo mentions, TUI/Web/dashboard signals, design docs; no local run performed.",
+      "recommended_action": "Try as a mobile-friendly multi-agent command center candidate."
+    },
+    {
+      "rank": 6,
+      "full_name": "modem-dev/sideshow",
+      "url": "https://github.com/modem-dev/sideshow",
+      "category": "Agent Visual Surface",
+      "score": 84,
+      "summary": "Live multimodal render surface for terminal coding agents, showing diagrams, UI sketches, diffs, markdown, terminal output and images.",
+      "audience": "Coding-agent users and tool builders who need agents to emit inspectable visual artifacts while working in terminal sessions.",
+      "ai_native_angle": "It gives text-first terminal agents a visual screen through MCP/plugin surfaces, making agent outputs easier to inspect and iterate.",
+      "growth_signal": "GitHub API shows 229 stars, 8 forks, created 2026-06-11 and pushed 2026-06-26; root includes plugin, mcp, examples, e2e, extensions, guide.",
+      "runnability": "README/root show npm package, CLI, quick start, screenshots/demo, MCP/API, Playwright config; no local run performed.",
+      "recommended_action": "Prototype with a coding-agent diagram/report task and compare against plain markdown artifacts."
+    },
+    {
+      "rank": 7,
+      "full_name": "axoviq-ai/synthadoc",
+      "url": "https://github.com/axoviq-ai/synthadoc",
+      "category": "LLM Knowledge Compilation / RAG Alternative",
+      "score": 83,
+      "summary": "Local-first LLM knowledge compilation engine that turns raw documents into structured human-readable wikis.",
+      "audience": "Teams building auditable knowledge bases, research archives, or document-to-wiki workflows as an alternative to opaque RAG.",
+      "ai_native_angle": "LLM processing is used to compile, maintain, and improve structured wikis from raw docs, with web UI and Obsidian/plugin surfaces.",
+      "growth_signal": "GitHub API shows 486 stars, 46 forks, created 2026-04-11 and pushed 2026-06-26; root includes docs, tests, web-ui, obsidian-plugin, wiki, pyproject.",
+      "runnability": "README/root show CLI, web/dashboard, demo, install, MCP/API signals; no local run performed.",
+      "recommended_action": "Use as a candidate for document-to-Yuque/wiki compilation experiments."
+    },
+    {
+      "rank": 8,
+      "full_name": "lyehe/porterminal",
+      "url": "https://github.com/lyehe/porterminal",
+      "category": "Remote Agent Terminal / MCP Tunnel",
+      "score": 81,
+      "summary": "Web/MCP terminal tunneling tool for using a phone and PC together, positioned around vibe coding from anywhere.",
+      "audience": "Developers wanting phone-accessible terminal/agent control and lightweight web terminal bridging.",
+      "ai_native_angle": "MCP terminal tunneling makes local command execution and agent interaction accessible across devices.",
+      "growth_signal": "GitHub API shows 289 stars, 8 forks, created 2025-12-30 and pushed 2026-06-26; root includes frontend, docs, tests, install scripts, pyproject and package.json.",
+      "runnability": "PyPI/package hints, install.sh/install.ps1, frontend, screenshots/demo, Docker/pip/uv/CLI/Web/MCP signals; no local run performed.",
+      "recommended_action": "Watch for security model; trial only in a sandboxed machine."
+    },
+    {
+      "rank": 9,
+      "full_name": "digitaldrywood/detent",
+      "url": "https://github.com/digitaldrywood/detent",
+      "category": "Board-Driven Agentic Work Orchestration",
+      "score": 79,
+      "summary": "Single Go binary that watches GitHub Projects, runs ready issues through isolated worktrees, validation gates, and serialized merge trains with web/terminal dashboards.",
+      "audience": "Small engineering teams running agentic issue queues and wanting deterministic merge gates.",
+      "ai_native_angle": "It turns a project board into an agent execution queue with validation gates and dashboards for agent-produced work.",
+      "growth_signal": "GitHub API shows 6 stars, 2 forks, created 2026-05-30 and pushed 2026-06-26; root has Go module, install scripts, docs, tests, CI, release config.",
+      "runnability": "Single-binary Go app with install scripts, Makefile, web/dashboard and CLI signals; no local run performed.",
+      "recommended_action": "High experiment value despite low stars; inspect issue-to-worktree flow for automation design patterns."
+    },
+    {
+      "rank": 10,
+      "full_name": "soapbucket/sbproxy",
+      "url": "https://github.com/soapbucket/sbproxy",
+      "category": "AI Governance Gateway",
+      "score": 78,
+      "summary": "Self-hostable Rust gateway for AI traffic, APIs, MCP, and AI crawlers with proxy-style governance.",
+      "audience": "Teams needing policy, routing, logging, and governance around LLM/MCP/API traffic.",
+      "ai_native_angle": "Governance is enforced at the AI traffic/proxy layer, including MCP and crawler surfaces, before agent actions hit downstream systems.",
+      "growth_signal": "GitHub API shows 42 stars, 0 forks, created 2026-04-08 and pushed 2026-06-26; README last modified 2026-06-24 and root includes Docker/cloudbuild, Makefile, supply-chain/security docs.",
+      "runnability": "Rust/Cargo, Docker, CLI/dashboard/quickstart/install/API signals; no local run performed.",
+      "recommended_action": "Watch as a governance-plane candidate; compare against Pipelock and broader MCP security tools."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "vercel/eve",
+      "url": "https://github.com/vercel/eve",
+      "category": "Agent Framework",
+      "score": 76,
+      "summary": "Vercel framework for building agents; strong docs/package posture but more framework than product app.",
+      "audience": "Agent app developers on TypeScript/Vercel stacks.",
+      "ai_native_angle": "Provides framework primitives for agent builds.",
+      "growth_signal": "2.6k stars, created 2026-06-16, pushed 2026-06-26; Dockerfile, docs, e2e, apps.",
+      "runnability": "npm/pnpm, quick start, demo/API signals.",
+      "recommended_action": "Watch for product templates and reference apps."
+    },
+    {
+      "full_name": "BuilderIO/agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "category": "Agent-Native App Framework",
+      "score": 75,
+      "summary": "Framework for actions/state/identity/tools/jobs/observability shared across UI, agent, HTTP, MCP, A2A and CLI.",
+      "audience": "Product teams building agent-native apps.",
+      "ai_native_angle": "Agent and UI share product actions and state primitives.",
+      "growth_signal": "2.3k stars, pushed 2026-06-26; packages/docs/app structure.",
+      "runnability": "pnpm/npm, docs, packages; more framework than finished product.",
+      "recommended_action": "Track for architectural patterns."
+    },
+    {
+      "full_name": "vellum-ai/vellum-assistant",
+      "url": "https://github.com/vellum-ai/vellum-assistant",
+      "category": "Personal AI Assistant",
+      "score": 74,
+      "summary": "24/7 assistant that learns preferences and does work, with CLI/assistant/benchmarking components.",
+      "audience": "Users and teams evaluating persistent assistant patterns.",
+      "ai_native_angle": "Preference memory and autonomous work loop are core.",
+      "growth_signal": "770 stars, pushed 2026-06-26; Docker, CLI, web/demo/install/API signals.",
+      "runnability": "Looks runnable but needs Vellum ecosystem review.",
+      "recommended_action": "Watch for self-host clarity and examples."
+    },
+    {
+      "full_name": "LIUTod/scream-code",
+      "url": "https://github.com/LIUTod/scream-code",
+      "category": "Local AI Coding Assistant",
+      "score": 72,
+      "summary": "Chinese local AI assistant with parallel agents, TUI, global memory logs, model customization and Feishu/WeChat claims.",
+      "audience": "Chinese-speaking developers and enterprise users seeking local agent safety.",
+      "ai_native_angle": "Local multi-agent coding plus memory and messaging integrations.",
+      "growth_signal": "108 stars, pushed 2026-06-26; npm package, apps/packages/plugins.",
+      "runnability": "pnpm/npm install and CLI/Web/MCP signals; needs deeper trust audit.",
+      "recommended_action": "Watch and test in isolated repo."
+    },
+    {
+      "full_name": "veritasfuji-japan/veritas_os",
+      "url": "https://github.com/veritasfuji-japan/veritas_os",
+      "category": "Agent Decision Governance",
+      "score": 71,
+      "summary": "Decision governance runtime for approval workflows, audit trails, replayable evidence, and bind-boundary control.",
+      "audience": "Teams requiring reviewable and auditable AI decisions.",
+      "ai_native_angle": "Adds enforceable decision boundaries before real-world agent actions.",
+      "growth_signal": "34 stars, pushed 2026-06-26; Chainlit, Docker, CLI, verifier, alembic.",
+      "runnability": "Docker/Chainlit/API demo signals; more governance infra than product.",
+      "recommended_action": "Track with governance trend."
+    },
+    {
+      "full_name": "zju-zhanglu/diagram-to-image",
+      "url": "https://github.com/zju-zhanglu/diagram-to-image",
+      "category": "Agent Skill",
+      "score": 68,
+      "summary": "Agent skill converting ASCII/Unicode diagrams in Markdown into draw.io PNG images.",
+      "audience": "Agents and writers needing visual exports from text diagrams.",
+      "ai_native_angle": "Packaged as an agent skill with MCP draw.io dependency.",
+      "growth_signal": "Created 2026-06-25 and pushed 2026-06-26; SKILL.md, agents, scripts, tests.",
+      "runnability": "npm/CLI install with draw.io MCP prerequisite.",
+      "recommended_action": "Watch as a small useful skill, not a full product."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "skip_reason": "Previously covered and star count remains abnormally high; avoid repeating without fresh product-shape change."
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Mature platform and not a fresh discovery for today; useful baseline but outside today's novelty bar."
+    },
+    {
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "skip_reason": "Major baseline coding agent, not a new radar candidate; include only for comparisons."
+    },
+    {
+      "full_name": "BerriAI/litellm",
+      "url": "https://github.com/BerriAI/litellm",
+      "skip_reason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today."
+    },
+    {
+      "full_name": "CorpusIQ/corpusiq-docs",
+      "url": "https://github.com/CorpusIQ/corpusiq-docs",
+      "skip_reason": "Documentation/knowledge repository rather than a runnable product codebase."
+    },
+    {
+      "full_name": "zju-zhanglu/diagram-to-image",
+      "url": "https://github.com/zju-zhanglu/diagram-to-image",
+      "skip_reason": "Useful agent skill but narrow utility and dependent on external draw.io MCP; kept in watchlist rather than Top."
+    },
+    {
+      "full_name": "writerslogic/scrivener-mcp",
+      "url": "https://github.com/writerslogic/scrivener-mcp",
+      "skip_reason": "Domain-specific MCP connector for Scrivener; product surface is narrower than today's Top candidates."
+    },
+    {
+      "full_name": "dignite-projects/vault-extract",
+      "url": "https://github.com/dignite-projects/vault-extract",
+      "skip_reason": "Promising IDP/RAG channel layer, but README positions it as channel infrastructure, not an end-product."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "run_date": "2026-05-15",
+  "generated_at": "2026-05-15T09:13:44+08:00",
+  "data_window": "2026-05-12 to 2026-05-15 (past 72h), GitHub recently updated + trending AI/agent-runtime repositories",
+  "source_summary": "GitHub Topics (agent-runtime), GitHub Trending, GitHub Repository READMEs",
+  "trend_observations": "This window shows agent runtimes becoming \"product-shaped\": self-hosted dashboards, sandboxes, and governance firewalls; MCP is treated as the default tool surface; and shipping focuses on install scripts / one-command demos over code libraries.",
+  "assumptions": "Score favors runnable product surfaces (UI/CLI/API) with quickstart/demo/docker and clear user scenario; penalize skill/prompt collections and paper reproductions. Activity signals use GitHub topic \"Updated\" dates and visible stars/releases.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-15\n\n数据观察窗口：2026-05-12 to 2026-05-15 (past 72h), GitHub recently updated + trending AI/agent-runtime repositories\n生成时间：2026-05-15T09:13:44+08:00\n\n## Top Projects (8)\n\n### 1. crabtalk/crabtalk\n- GitHub: https://github.com/crabtalk/crabtalk\n- 分类: Agent Runtime (Daemon + TUI)\n- AI Native Product Score: 88/100\n- 做什么: 一个“隐藏不了任何东西”的 agent daemon：跑 agent、调工具、接 MCP server，并提供 TUI/daemon/apps 分层。\n- 面向谁: 想要自建可观测 agent runtime 的开发者/团队。\n- AI native 点: 把 agent 当成常驻服务：daemon + 可插拔 packages + MCP 工具面，强调可观测与扩展。\n- 增长/活跃信号: agent-runtime topic 显示近期更新（May 13, 2026）；仓库 Star ~660；有多个 release。\n- 可运行性判断: 提供 install.sh 一键安装；Quick Start 用 cargo/crabup 拉取 daemon+tui 并启动。\n- 建议动作: 本地跑一遍 quick start；重点评估 daemon 配置/插件模型与 MCP 连接体验。\n\n### 2. swarmclawai/swarmclaw\n- GitHub: https://github.com/swarmclawai/swarmclaw\n- 分类: Self-hosted Agent Orchestration (Dashboard)\n- AI Native Product Score: 86/100\n- 做什么: 自托管多 agent runtime/框架：编排、委派、日程、记忆、MCP 工具，带 dashboard/截图/桌面端下载。\n- 面向谁: 需要“平台式”多 agent 协作与可视化运维的团队。\n- AI native 点: 把多 agent 组织结构、长记忆与工具接入做成产品（dashboard + 安装器 + docker）。\n- 增长/活跃信号: agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。\n- 可运行性判断: 支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。\n- 建议动作: 优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。\n\n### 3. runtm-ai/runtm\n- GitHub: https://github.com/runtm-ai/runtm\n- 分类: Agent Sandbox (Local + Deploy)\n- AI Native Product Score: 84/100\n- 做什么: 给 coding agents 的隔离沙箱：本地 session + 部署到可访问 URL，带日志与可观测性。\n- 面向谁: 用 Claude Code/Codex/Cursor 等做“有权限但需隔离”的工程团队/个人。\n- AI native 点: 把 agent 的危险动作（写文件/跑命令/部署）放到隔离环境里，产品核心是 sandbox/session/deploy。\n- 增长/活跃信号: README 给出 uv tool 安装与 session start/deploy；也提供自托管 docker compose；Star ~118。\n- 可运行性判断: CLI quick start（uv tool install + runtm session start/deploy）；自托管需 docker compose。\n- 建议动作: 先在本机走通 session start + deploy 的 happy path；再评估自托管成本。\n\n### 4. skrun-dev/skrun\n- GitHub: https://github.com/skrun-dev/skrun\n- 分类: Agent Skill → API Runtime (+ Dashboard)\n- AI Native Product Score: 83/100\n- 做什么: 把任意“agent skill”变成 `POST /run` API 的开源 runtime，并自带 operator dashboard 与 SDK。\n- 面向谁: 想把 agent 能力做成可集成 API 的独立开发者/小团队/交付方。\n- AI native 点: 把“agent loop + 工具/MCP + 观测”平台化，用户只交付 skill，本体提供运行时与可视化运维。\n- 增长/活跃信号: README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。\n- 可运行性判断: npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。\n- 建议动作: 找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。\n\n### 5. FonaTech/Clouds-Coder\n- GitHub: https://github.com/FonaTech/Clouds-Coder\n- 分类: Coding Agent Platform (CLI exec plane × Web UI)\n- AI Native Product Score: 82/100\n- 做什么: 本地优先 coding agent 平台：把 CLI 执行面与 Web 交互面分离，强调长任务恢复、可观测与 Skills Studio。\n- 面向谁: 需要“可分发、可恢复”的 vibe-coding 工作台的个人/团队。\n- AI native 点: 把长任务可靠性（timeout/truncation/anti-drift/recovery）当成一等能力，而不只是一个脚本集合。\n- 增长/活跃信号: agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。\n- 可运行性判断: pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。\n- 建议动作: 本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。\n\n### 6. ucsandman/DashClaw\n- GitHub: https://github.com/ucsandman/DashClaw\n- 分类: Agent Governance / Policy Firewall\n- AI Native Product Score: 80/100\n- 做什么: AI agent 的决策/审批基础设施：拦截动作、执行策略、要求审批、产出可审计决策轨迹，并提供回放 UI。\n- 面向谁: 需要 HITL 审批/审计/政策控制的 agent 产品与企业团队。\n- AI native 点: 把 agent 行动治理做成“防火墙式产品”，核心是可审计的 decision trail 与回放。\n- 增长/活跃信号: 仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。\n- 可运行性判断: 可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。\n- 建议动作: 先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。\n\n### 7. holon-run/holon\n- GitHub: https://github.com/holon-run/holon\n- 分类: Local-first Agent Runtime (Long-running tasks)\n- AI Native Product Score: 78/100\n- 做什么: 面向本地工作区的长运行 agent runtime：任务/唤醒/daemon/队列/状态等原语，CLI 可 one-shot 或 serve。\n- 面向谁: 需要“跨时间持续工作”的本地 agent 执行层的开发者/团队。\n- AI native 点: 把 agent 的“持续性”和“边界/信任/状态”建模为 runtime 原语，而不是单次聊天。\n- 增长/活跃信号: agent-runtime topic 显示近期更新（May 12, 2026）；Star ~85；README 有安装与核心命令示例。\n- 可运行性判断: cargo install 或 brew 安装；提供 holon run/serve/daemon/tui 等命令。\n- 建议动作: 用一个真实 repo 做 holon run + holon serve；评估任务/唤醒模型是否可对接你现有自动化。\n\n### 8. rohitg00/agentmemory\n- GitHub: https://github.com/rohitg00/agentmemory\n- 分类: Agent Memory Server (MCP + Viewer)\n- AI Native Product Score: 77/100\n- 做什么: 给 coding agents 的持久化记忆服务：提供 server + MCP + 实时 viewer/回放，并可导入历史会话。\n- 面向谁: 使用多种 coding agent 的个人/团队（Claude Code/Cursor/Codex 等）希望统一“记忆层”。\n- AI native 点: 把“记忆/检索/回放”做成独立产品面（server + viewer + MCP tools），能跨不同 agent 宿主复用。\n- 增长/活跃信号: 仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。\n- 可运行性判断: npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。\n- 建议动作: 先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。\n\n## Watchlist (3)\n\n- tinyhumansai/openhuman (https://github.com/tinyhumansai/openhuman)\n  - 分类: Desktop AI Assistant (UI-first, integrations, voice)\n  - Score: 74\n  - 摘要: 桌面端个人 AI 助手（UI-first），强调本地数据/记忆树 + 大量第三方集成 + 原生语音能力。\n  - 面向谁: 想要“日常工作流助手 + 连接器 + 语音”的个人用户。\n  - AI native 点: 把多连接器、持续拉取、记忆树与本地 SQLite 作为默认形态，偏“产品”而非库。\n  - 信号: 仓库 Star ~7.6k；README 提供 install.sh/ps1 安装；标注 Early Beta。\n  - 可运行性: 提供 install.sh/ps1 脚本与官网安装；仓库结构较大，需进一步确认最小可运行路径。\n  - 建议动作: 关注其最小可运行路径与隐私/权限模型；有空在隔离环境试装。\n\n- CelestoAI/SmolVM (https://github.com/CelestoAI/SmolVM)\n  - 分类: Sandbox Infra (Code execution / browser use)\n  - Score: 71\n  - 摘要: 面向 AI agent 的沙箱基础设施（代码执行、browser use 等），偏底层组件。\n  - 建议动作: 若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。\n\n- trustgraph-ai/trustgraph (https://github.com/trustgraph-ai/trustgraph)\n  - 分类: Context Graph / Agent Runtime Platform\n  - Score: 70\n  - 摘要: 以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。\n  - 建议动作: 若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。\n\n## Skip Reasons\n- 纯 skills/prompt collection（没有独立可运行产品面）\n- 纯论文复现/训练代码/benchmark-only\n- 只有 README 缺少可运行代码或 demo 的营销仓库\n\n## 今日趋势观察\n- This window shows agent runtimes becoming \"product-shaped\": self-hosted dashboards, sandboxes, and governance firewalls; MCP is treated as the default tool surface; and shipping focuses on install scripts / one-command demos over code libraries.\n- 这 72 小时内，‘Agent Runtime’ 的差异化更多来自：sandbox、governance、可观测性与一键可运行，而不是再造一个 SDK。\n\n## 关键假设\n- Score favors runnable product surfaces (UI/CLI/API) with quickstart/demo/docker and clear user scenario; penalize skill/prompt collections and paper reproductions. Activity signals use GitHub topic \"Updated\" dates and visible stars/releases.\n- 由于未使用 GitHub API（rate/auth），活跃度以 topic 页面 ‘Updated’、仓库 stars/releases/quickstart 作为近似信号。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "crabtalk/crabtalk",
+      "url": "https://github.com/crabtalk/crabtalk",
+      "category": "Agent Runtime (Daemon + TUI)",
+      "score": 88,
+      "summary": "一个“隐藏不了任何东西”的 agent daemon：跑 agent、调工具、接 MCP server，并提供 TUI/daemon/apps 分层。",
+      "audience": "想要自建可观测 agent runtime 的开发者/团队。",
+      "ai_native_angle": "把 agent 当成常驻服务：daemon + 可插拔 packages + MCP 工具面，强调可观测与扩展。",
+      "growth_signal": "agent-runtime topic 显示近期更新（May 13, 2026）；仓库 Star ~660；有多个 release。",
+      "runnability": "提供 install.sh 一键安装；Quick Start 用 cargo/crabup 拉取 daemon+tui 并启动。",
+      "recommended_action": "本地跑一遍 quick start；重点评估 daemon 配置/插件模型与 MCP 连接体验。"
+    },
+    {
+      "rank": 2,
+      "full_name": "swarmclawai/swarmclaw",
+      "url": "https://github.com/swarmclawai/swarmclaw",
+      "category": "Self-hosted Agent Orchestration (Dashboard)",
+      "score": 86,
+      "summary": "自托管多 agent runtime/框架：编排、委派、日程、记忆、MCP 工具，带 dashboard/截图/桌面端下载。",
+      "audience": "需要“平台式”多 agent 协作与可视化运维的团队。",
+      "ai_native_angle": "把多 agent 组织结构、长记忆与工具接入做成产品（dashboard + 安装器 + docker）。",
+      "growth_signal": "agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。",
+      "runnability": "支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。",
+      "recommended_action": "优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。"
+    },
+    {
+      "rank": 3,
+      "full_name": "runtm-ai/runtm",
+      "url": "https://github.com/runtm-ai/runtm",
+      "category": "Agent Sandbox (Local + Deploy)",
+      "score": 84,
+      "summary": "给 coding agents 的隔离沙箱：本地 session + 部署到可访问 URL，带日志与可观测性。",
+      "audience": "用 Claude Code/Codex/Cursor 等做“有权限但需隔离”的工程团队/个人。",
+      "ai_native_angle": "把 agent 的危险动作（写文件/跑命令/部署）放到隔离环境里，产品核心是 sandbox/session/deploy。",
+      "growth_signal": "README 给出 uv tool 安装与 session start/deploy；也提供自托管 docker compose；Star ~118。",
+      "runnability": "CLI quick start（uv tool install + runtm session start/deploy）；自托管需 docker compose。",
+      "recommended_action": "先在本机走通 session start + deploy 的 happy path；再评估自托管成本。"
+    },
+    {
+      "rank": 4,
+      "full_name": "skrun-dev/skrun",
+      "url": "https://github.com/skrun-dev/skrun",
+      "category": "Agent Skill → API Runtime (+ Dashboard)",
+      "score": 83,
+      "summary": "把任意“agent skill”变成 `POST /run` API 的开源 runtime，并自带 operator dashboard 与 SDK。",
+      "audience": "想把 agent 能力做成可集成 API 的独立开发者/小团队/交付方。",
+      "ai_native_angle": "把“agent loop + 工具/MCP + 观测”平台化，用户只交付 skill，本体提供运行时与可视化运维。",
+      "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
+      "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
+      "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+    },
+    {
+      "rank": 5,
+      "full_name": "FonaTech/Clouds-Coder",
+      "url": "https://github.com/FonaTech/Clouds-Coder",
+      "category": "Coding Agent Platform (CLI exec plane × Web UI)",
+      "score": 82,
+      "summary": "本地优先 coding agent 平台：把 CLI 执行面与 Web 交互面分离，强调长任务恢复、可观测与 Skills Studio。",
+      "audience": "需要“可分发、可恢复”的 vibe-coding 工作台的个人/团队。",
+      "ai_native_angle": "把长任务可靠性（timeout/truncation/anti-drift/recovery）当成一等能力，而不只是一个脚本集合。",
+      "growth_signal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
+      "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
+      "recommended_action": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。"
+    },
+    {
+      "rank": 6,
+      "full_name": "ucsandman/DashClaw",
+      "url": "https://github.com/ucsandman/DashClaw",
+      "category": "Agent Governance / Policy Firewall",
+      "score": 80,
+      "summary": "AI agent 的决策/审批基础设施：拦截动作、执行策略、要求审批、产出可审计决策轨迹，并提供回放 UI。",
+      "audience": "需要 HITL 审批/审计/政策控制的 agent 产品与企业团队。",
+      "ai_native_angle": "把 agent 行动治理做成“防火墙式产品”，核心是可审计的 decision trail 与回放。",
+      "growth_signal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
+      "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
+      "recommended_action": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。"
+    },
+    {
+      "rank": 7,
+      "full_name": "holon-run/holon",
+      "url": "https://github.com/holon-run/holon",
+      "category": "Local-first Agent Runtime (Long-running tasks)",
+      "score": 78,
+      "summary": "面向本地工作区的长运行 agent runtime：任务/唤醒/daemon/队列/状态等原语，CLI 可 one-shot 或 serve。",
+      "audience": "需要“跨时间持续工作”的本地 agent 执行层的开发者/团队。",
+      "ai_native_angle": "把 agent 的“持续性”和“边界/信任/状态”建模为 runtime 原语，而不是单次聊天。",
+      "growth_signal": "agent-runtime topic 显示近期更新（May 12, 2026）；Star ~85；README 有安装与核心命令示例。",
+      "runnability": "cargo install 或 brew 安装；提供 holon run/serve/daemon/tui 等命令。",
+      "recommended_action": "用一个真实 repo 做 holon run + holon serve；评估任务/唤醒模型是否可对接你现有自动化。"
+    },
+    {
+      "rank": 8,
+      "full_name": "rohitg00/agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "category": "Agent Memory Server (MCP + Viewer)",
+      "score": 77,
+      "summary": "给 coding agents 的持久化记忆服务：提供 server + MCP + 实时 viewer/回放，并可导入历史会话。",
+      "audience": "使用多种 coding agent 的个人/团队（Claude Code/Cursor/Codex 等）希望统一“记忆层”。",
+      "ai_native_angle": "把“记忆/检索/回放”做成独立产品面（server + viewer + MCP tools），能跨不同 agent 宿主复用。",
+      "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
+      "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
+      "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "category": "Desktop AI Assistant (UI-first, integrations, voice)",
+      "score": 74,
+      "summary": "桌面端个人 AI 助手（UI-first），强调本地数据/记忆树 + 大量第三方集成 + 原生语音能力。",
+      "audience": "想要“日常工作流助手 + 连接器 + 语音”的个人用户。",
+      "ai_native_angle": "把多连接器、持续拉取、记忆树与本地 SQLite 作为默认形态，偏“产品”而非库。",
+      "growth_signal": "仓库 Star ~7.6k；README 提供 install.sh/ps1 安装；标注 Early Beta。",
+      "runnability": "提供 install.sh/ps1 脚本与官网安装；仓库结构较大，需进一步确认最小可运行路径。",
+      "recommended_action": "关注其最小可运行路径与隐私/权限模型；有空在隔离环境试装。"
+    },
+    {
+      "full_name": "CelestoAI/SmolVM",
+      "url": "https://github.com/CelestoAI/SmolVM",
+      "category": "Sandbox Infra (Code execution / browser use)",
+      "score": 71,
+      "summary": "面向 AI agent 的沙箱基础设施（代码执行、browser use 等），偏底层组件。",
+      "recommended_action": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。"
+    },
+    {
+      "full_name": "trustgraph-ai/trustgraph",
+      "url": "https://github.com/trustgraph-ai/trustgraph",
+      "category": "Context Graph / Agent Runtime Platform",
+      "score": 70,
+      "summary": "以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。",
+      "recommended_action": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "skip_reason": "更像“技能/指令集合 + 生态资源库”，产品面不够明确（可作为技能来源而非 AI Native Product 主体）。"
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "skip_reason": "更偏“方法论/技能框架 + 多宿主插件安装”，本简报更优先可独立运行的 UI/CLI/API 产品。"
+    }
+  ]
+}

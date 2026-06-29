@@ -1,0 +1,221 @@
+{
+  "run_date": "2026-06-23",
+  "generated_at": "2026-06-23T10:19:48+08:00",
+  "data_window": "2026-06-21T00:00:00Z to 2026-06-23T02:20:00Z; GitHub Search API for newly created/recently pushed AI repositories plus README/root-content spot checks.",
+  "source_summary": "GitHub Search API repository metadata; GitHub repository README and root contents API spot checks for selected candidates. No clone/install/runtime execution was performed.",
+  "trend_observations": "Fresh productized AI repositories are clustering around human-agent workspaces, real-browser control with login-state reuse, agent-ready local developer tools, and vertical AI workbenches. MCP is increasingly bundled inside end-user tools rather than shipped only as a standalone connector.",
+  "assumptions": "Prioritized repositories created or materially pushed in the last 24-72 hours with runnable UI/CLI/API, extension, desktop app, Docker, package, or documented quickstart evidence. Star counts are GitHub API snapshots, not verified time-series deltas. Repeated picks from 2026-06-22 were generally excluded unless useful as skip/watch context. Keyword-stuffed or implausibly inflated repositories were excluded from Top ranking.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-23\n\n数据窗口：2026-06-21T00:00:00Z to 2026-06-23T02:20:00Z; GitHub Search API for newly created/recently pushed AI repositories plus README/root-content spot checks.\n\n信息来源：GitHub Search API repository metadata; GitHub repository README and root contents API spot checks for selected candidates. No clone/install/runtime execution was performed.\n\n## Top Projects\n\n### 1. [HKUDS/AgentSpace](https://github.com/HKUDS/AgentSpace) - Human-Agent Workspace - Score 90\n- 做什么：A TypeScript workspace that positions humans and multiple coding agents as one shared team, with agent routing, app/packages split, deployment assets, and bilingual docs.\n- 面向谁：Teams experimenting with Claude Code, Codex, OpenClaw, Hermes, or other coding agents that need a common operating surface.\n- AI native 点：The product treats agents as workspace participants that can be routed, coordinated, and deployed inside a shared human-agent environment.\n- 增长/活跃信号：Created 2026-06-22; 227 stars, 24 forks, 3 open issues by the 2026-06-23 API snapshot; pushed 2026-06-22; README advertises Claude Code/Codex/OpenClaw/Hermes support and Node/PostgreSQL requirements.\n- 可运行性判断：Root includes .env.example, package.json, apps, packages, deploy, TypeScript config, README/README_ZH, and a packaged daemon tarball; no local install run was performed.\n- 建议动作：Put on high-priority watch; run a small local workspace trial if setup docs are stable, especially around agent routing and persistence.\n\n### 2. [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill) - Browser Agent Control - Score 87\n- 做什么：A Rust/TypeScript CLI plus browser extension that lets shell-capable agents borrow a user’s already logged-in browser tab without interrupting other browsing.\n- 面向谁：Developers using Codex, Claude Code, Cursor, OpenClaw, CodeBuddy, WorkBuddy or similar agents that need authenticated browser actions.\n- AI native 点：It exposes a real browser session as an explicit, permissioned agent tool surface, including tab borrowing/returning rather than a separate automation sandbox.\n- 增长/活跃信号：Created 2026-06-22; pushed 2026-06-22; modest 6-star early signal but from Tencent and with complete repo structure, bilingual docs, install script, Cargo/pnpm workspace, crates/apps/packages.\n- 可运行性判断：Root includes Cargo.toml/lock, rust-toolchain, pnpm workspace, apps, crates, packages, docs, skill, install.sh, AGENT_INSTALL.md; no extension or CLI runtime audit performed.\n- 建议动作：Experiment with one logged-in internal web workflow and compare safety/interruptibility against Playwright MCP or Chrome remote-debugging flows.\n\n### 3. [begin0808/LiveCaption](https://github.com/begin0808/LiveCaption) - Local Voice / Subtitle Assistant - Score 84\n- 做什么：A local offline browser-tab audio captioning and bilingual translation system using a Chrome extension, backend, SenseVoice, Ollama, and DeepSeek.\n- 面向谁：Online learners, accessibility users, meeting watchers, language learners, and privacy-sensitive users who need live captions for browser media.\n- AI native 点：ASR plus local LLM translation is the core user loop, turning tab audio into low-latency bilingual subtitles without cloud upload by default.\n- 增长/活跃信号：Created 2026-06-21; 50 stars, 14 forks by the 2026-06-23 API snapshot; pushed 2026-06-22; README has Chinese/English docs and live manual link.\n- 可运行性判断：Root includes backend, extension, docs, README/README_EN; product architecture references Chrome tabCapture/offscreen document and local ASR/LLM backends; no local extension test performed.\n- 建议动作：Run as a privacy-first caption workflow candidate; inspect latency, browser permission model, and local model setup friction.\n\n### 4. [jdilla1277/agentcad](https://github.com/jdilla1277/agentcad) - Agent CAD Tool / MCP - Score 83\n- 做什么：A local CAD CLI and MCP server that lets AI agents write CadQuery/build123d scripts, render previews, export STEP/STL/GLB/OBJ, validate geometry, diff models, and return structured JSON.\n- 面向谁：Hardware/product designers and coding-agent users who want agents to produce inspectable 3D artifacts.\n- AI native 点：It converts CAD execution, validation, rendering, metrics, and browser preview into tool calls suitable for agent loops.\n- 增长/活跃信号：Created 2026-06-02; pushed 2026-06-22; 50 stars, 7 forks, 4 open issues; README includes Product Hunt badge, demo video, docs, CLI/MCP positioning.\n- 可运行性判断：Python pyproject with src, scripts, tests, tests_b3d, GitHub workflow and README; no CAD dependency install or render run performed.\n- 建议动作：Try with a simple mechanical part prompt and measure whether structured JSON plus preview is enough for agent self-correction.\n\n### 5. [tstambulsky/auto-vlog-editor](https://github.com/tstambulsky/auto-vlog-editor) - Content Automation Agent - Score 82\n- 做什么：An AI agent that turns daily phone clips into narrated, captioned vertical videos, sends drafts to Telegram for approval, then publishes to X and optionally LinkedIn.\n- 面向谁：Solo creators and small content teams that want a review-gated daily vlog pipeline.\n- AI native 点：The workflow chains multimodal clip understanding, story writing, cloned-voice narration, video rendering, human approval, and publishing into one agentic production loop.\n- 增长/活跃信号：Created 2026-06-21; pushed 2026-06-22; 6 stars but unusually complete product evidence: Dockerfile, docker-compose, docs, prompts, tests, deploy folder, demo attachment in README.\n- 可运行性判断：Root includes .env.example, Dockerfile, docker-compose.yml, requirements.txt, app, prompts, scripts, tests, pytest.ini; no Google Drive/Telegram/publisher integration run performed.\n- 建议动作：Use as a replicable content-ops workflow reference; audit prompt chain and approval gate before connecting social accounts.\n\n### 6. [Intuned/selector-forge](https://github.com/Intuned/selector-forge) - AI Browser Testing Tool - Score 80\n- 做什么：A Chrome/Firefox extension that creates robust CSS/XPath selectors with AI and verifies generated selectors against the live DOM.\n- 面向谁：QA engineers, scraper builders, browser-agent developers, and teams maintaining flaky E2E tests.\n- AI native 点：AI proposes selectors while deterministic DOM re-verification filters brittle output before the user sees it.\n- 增长/活跃信号：Created 2026-06-16; pushed 2026-06-22; 43 stars, 1 fork, 1 issue; README links Chrome Web Store and Firefox Add-ons, plus architecture and tests.\n- 可运行性判断：TypeScript WXT extension project with package.json, e2e, tests, stories, Playwright/Vitest configs, assets, public, architecture doc; no extension install performed.\n- 建议动作：Test on one dynamic internal app and compare selector stability against Playwright codegen and hand-written locators.\n\n### 7. [getgantry/gantry](https://github.com/getgantry/gantry) - Agent-ready Developer Desktop App - Score 79\n- 做什么：A native macOS Docker manager for local and SSH hosts with built-in MCP server and App Intents, exposing container operations to agents.\n- 面向谁：Mac developers who want GUI monitoring plus agent/tool access to Docker and remote hosts.\n- AI native 点：It embeds MCP and App Intents into a conventional developer utility so agents can operate infrastructure through the same local control surface.\n- 增长/活跃信号：Created 2026-06-04; pushed 2026-06-22; 41 stars, 2 forks; README has release badge, CI, macOS 26+ target, assets, appcast, and security/contributing docs.\n- 可运行性判断：SwiftUI/Xcode project with Gantry.xcodeproj, App, Packages, Tools, scripts, assets, appcast.xml; no macOS build/run audit performed.\n- 建议动作：Watch for signed releases; test MCP operations against local Docker once macOS version compatibility is acceptable.\n\n### 8. [madeye/ds-input](https://github.com/madeye/ds-input) - LLM Native Input Method - Score 78\n- 做什么：A macOS/Windows whole-sentence pinyin input method where an OpenAI-compatible LLM converts toneless pinyin into inline Chinese without candidate picking.\n- 面向谁：Chinese writers and developers willing to trade classic IME candidate selection for sentence-level LLM completion.\n- AI native 点：The LLM is the input-method engine, choosing full-sentence Chinese output in the OS text pipeline rather than augmenting a separate writing app.\n- 增长/活跃信号：Created 2026-06-21; pushed 2026-06-22; 31 stars, 1 fork, 1 issue; README explains Rime-style split, Rust C ABI core, macOS and Windows frontends.\n- 可运行性判断：Root includes core, macos, windows, DESIGN.md, CLAUDE.md, README; README says core builds/tests and frontends have separate docs; no IME build/install performed.\n- 建议动作：Track closely as an AI-native UX pattern; test only in a disposable profile until privacy and latency behavior are clear.\n\n## Watchlist\n\n- [ferdinandobons/CodeDebrief](https://github.com/ferdinandobons/CodeDebrief) - Coding Agent Context / MCP - Score 76：Local-first static analysis that creates deterministic, source-grounded workflow maps for coding agents via MCP. 建议：Try on one medium codebase and compare usefulness against tree-sitter symbol search.\n- [norika1207-lab/Code-Duo](https://github.com/norika1207-lab/Code-Duo) - Dual Coding Agent UI - Score 74：A single-window UI for running Claude and Codex side-by-side, cross-reviewing work, monitoring cost, and detecting incomplete agent claims. 建议：Watch for real guardrail depth; test on a toy repo before trusting cost/watchdog claims.\n- [Mocha-Yuan/MoChord](https://github.com/Mocha-Yuan/MoChord) - AI Music Practice Workspace - Score 73：AI-powered guitar workspace for chord voicings, tuner pitch detection, tabs/staff notation, playback, metronome practice, and progression generation. 建议：Good vertical AI-workbench example; verify desktop/mobile build maturity.\n- [runapi-ai/mcp](https://github.com/runapi-ai/mcp) - Multimodal Model MCP - Score 72：MCP server for model discovery, pricing lookup, LLM chat, image/video/music/TTS task creation across 130+ hosted models. 建议：Watch for pricing/credential safety; useful for media-agent experiments.\n- [Pls-1q43/VibeCast](https://github.com/Pls-1q43/VibeCast) - Mobile Voice Prompt Input - Score 71：Mobile-first remote prompt input system that mirrors phone voice text into desktop coding or writing apps. 建议：Watch for stable pairing and target-app automation.\n- [7anX/AgentScan](https://github.com/7anX/AgentScan) - Agent Security Scanner - Score 70：Go CLI to discover exposed MCP servers, A2A Agent Cards and open LLM APIs with capability and auth-state output. 建议：Try in a controlled internal network; avoid scanning third-party hosts.\n\n## Skip Reasons\n\n- [FieldofStrawberries/claude-code-fable-5-free-app](https://github.com/FieldofStrawberries/claude-code-fable-5-free-app)：Description and topics are keyword-stuffed around nonexistent/ambiguous Claude/Fable/free-account claims; insufficient trust despite 83 stars.\n- [openclaw/openclaw](https://github.com/openclaw/openclaw)：GitHub API returned implausible 379k-star/79k-fork snapshot for a 2025 repository; excluded until verified by independent community/release evidence.\n- [affaan-m/ECC](https://github.com/affaan-m/ECC)：Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion.\n- [f/prompts.chat](https://github.com/f/prompts.chat)：Prompt/resource collection category, explicitly downgraded by the radar rules even though it is mature and active.\n- [lilialla/awesome-legal-ai-zh](https://github.com/lilialla/awesome-legal-ai-zh)：Useful curated legal-AI map, but it is an awesome list/resource index rather than a runnable AI-native product.\n- [Simpl3x3/ESEILANE](https://github.com/Simpl3x3/ESEILANE)：Potentially interesting GraphRAG database, but the current README/root read more like infrastructure/database launch than a user-facing AI product; keep as low-priority watch, not Top.\n\n## 今日趋势观察\n\nFresh productized AI repositories are clustering around human-agent workspaces, real-browser control with login-state reuse, agent-ready local developer tools, and vertical AI workbenches. MCP is increasingly bundled inside end-user tools rather than shipped only as a standalone connector.\n\n## 类型级降权说明\n\n今天继续降权纯 prompt/resource collection、论文/训练代码、模型权重/量化包、单一 SDK wrapper、只有 README 或营销文案没有可运行路径的仓库，以及 star/fork 信号明显异常但缺少独立验证的仓库。这些作为筛选假设记录，不伪造成 skipped_projects。\n\n## 关键假设\n\nPrioritized repositories created or materially pushed in the last 24-72 hours with runnable UI/CLI/API, extension, desktop app, Docker, package, or documented quickstart evidence. Star counts are GitHub API snapshots, not verified time-series deltas. Repeated picks from 2026-06-22 were generally excluded unless useful as skip/watch context. Keyword-stuffed or implausibly inflated repositories were excluded from Top ranking.\n\n## 实时仓库审计说明\n\n已做 GitHub Search API 元数据抓取，并对 Top/Watchlist 候选做 GitHub README 与根目录 API 抽查；未 clone、未安装依赖、未运行 Docker/npm/pip/go/cargo/Xcode，也未验证 demo 服务。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "HKUDS/AgentSpace",
+      "url": "https://github.com/HKUDS/AgentSpace",
+      "category": "Human-Agent Workspace",
+      "score": 90,
+      "summary": "A TypeScript workspace that positions humans and multiple coding agents as one shared team, with agent routing, app/packages split, deployment assets, and bilingual docs.",
+      "audience": "Teams experimenting with Claude Code, Codex, OpenClaw, Hermes, or other coding agents that need a common operating surface.",
+      "ai_native_angle": "The product treats agents as workspace participants that can be routed, coordinated, and deployed inside a shared human-agent environment.",
+      "growth_signal": "Created 2026-06-22; 227 stars, 24 forks, 3 open issues by the 2026-06-23 API snapshot; pushed 2026-06-22; README advertises Claude Code/Codex/OpenClaw/Hermes support and Node/PostgreSQL requirements.",
+      "runnability": "Root includes .env.example, package.json, apps, packages, deploy, TypeScript config, README/README_ZH, and a packaged daemon tarball; no local install run was performed.",
+      "recommended_action": "Put on high-priority watch; run a small local workspace trial if setup docs are stable, especially around agent routing and persistence."
+    },
+    {
+      "rank": 2,
+      "full_name": "Tencent/BrowserSkill",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "category": "Browser Agent Control",
+      "score": 87,
+      "summary": "A Rust/TypeScript CLI plus browser extension that lets shell-capable agents borrow a user’s already logged-in browser tab without interrupting other browsing.",
+      "audience": "Developers using Codex, Claude Code, Cursor, OpenClaw, CodeBuddy, WorkBuddy or similar agents that need authenticated browser actions.",
+      "ai_native_angle": "It exposes a real browser session as an explicit, permissioned agent tool surface, including tab borrowing/returning rather than a separate automation sandbox.",
+      "growth_signal": "Created 2026-06-22; pushed 2026-06-22; modest 6-star early signal but from Tencent and with complete repo structure, bilingual docs, install script, Cargo/pnpm workspace, crates/apps/packages.",
+      "runnability": "Root includes Cargo.toml/lock, rust-toolchain, pnpm workspace, apps, crates, packages, docs, skill, install.sh, AGENT_INSTALL.md; no extension or CLI runtime audit performed.",
+      "recommended_action": "Experiment with one logged-in internal web workflow and compare safety/interruptibility against Playwright MCP or Chrome remote-debugging flows."
+    },
+    {
+      "rank": 3,
+      "full_name": "begin0808/LiveCaption",
+      "url": "https://github.com/begin0808/LiveCaption",
+      "category": "Local Voice / Subtitle Assistant",
+      "score": 84,
+      "summary": "A local offline browser-tab audio captioning and bilingual translation system using a Chrome extension, backend, SenseVoice, Ollama, and DeepSeek.",
+      "audience": "Online learners, accessibility users, meeting watchers, language learners, and privacy-sensitive users who need live captions for browser media.",
+      "ai_native_angle": "ASR plus local LLM translation is the core user loop, turning tab audio into low-latency bilingual subtitles without cloud upload by default.",
+      "growth_signal": "Created 2026-06-21; 50 stars, 14 forks by the 2026-06-23 API snapshot; pushed 2026-06-22; README has Chinese/English docs and live manual link.",
+      "runnability": "Root includes backend, extension, docs, README/README_EN; product architecture references Chrome tabCapture/offscreen document and local ASR/LLM backends; no local extension test performed.",
+      "recommended_action": "Run as a privacy-first caption workflow candidate; inspect latency, browser permission model, and local model setup friction."
+    },
+    {
+      "rank": 4,
+      "full_name": "jdilla1277/agentcad",
+      "url": "https://github.com/jdilla1277/agentcad",
+      "category": "Agent CAD Tool / MCP",
+      "score": 83,
+      "summary": "A local CAD CLI and MCP server that lets AI agents write CadQuery/build123d scripts, render previews, export STEP/STL/GLB/OBJ, validate geometry, diff models, and return structured JSON.",
+      "audience": "Hardware/product designers and coding-agent users who want agents to produce inspectable 3D artifacts.",
+      "ai_native_angle": "It converts CAD execution, validation, rendering, metrics, and browser preview into tool calls suitable for agent loops.",
+      "growth_signal": "Created 2026-06-02; pushed 2026-06-22; 50 stars, 7 forks, 4 open issues; README includes Product Hunt badge, demo video, docs, CLI/MCP positioning.",
+      "runnability": "Python pyproject with src, scripts, tests, tests_b3d, GitHub workflow and README; no CAD dependency install or render run performed.",
+      "recommended_action": "Try with a simple mechanical part prompt and measure whether structured JSON plus preview is enough for agent self-correction."
+    },
+    {
+      "rank": 5,
+      "full_name": "tstambulsky/auto-vlog-editor",
+      "url": "https://github.com/tstambulsky/auto-vlog-editor",
+      "category": "Content Automation Agent",
+      "score": 82,
+      "summary": "An AI agent that turns daily phone clips into narrated, captioned vertical videos, sends drafts to Telegram for approval, then publishes to X and optionally LinkedIn.",
+      "audience": "Solo creators and small content teams that want a review-gated daily vlog pipeline.",
+      "ai_native_angle": "The workflow chains multimodal clip understanding, story writing, cloned-voice narration, video rendering, human approval, and publishing into one agentic production loop.",
+      "growth_signal": "Created 2026-06-21; pushed 2026-06-22; 6 stars but unusually complete product evidence: Dockerfile, docker-compose, docs, prompts, tests, deploy folder, demo attachment in README.",
+      "runnability": "Root includes .env.example, Dockerfile, docker-compose.yml, requirements.txt, app, prompts, scripts, tests, pytest.ini; no Google Drive/Telegram/publisher integration run performed.",
+      "recommended_action": "Use as a replicable content-ops workflow reference; audit prompt chain and approval gate before connecting social accounts."
+    },
+    {
+      "rank": 6,
+      "full_name": "Intuned/selector-forge",
+      "url": "https://github.com/Intuned/selector-forge",
+      "category": "AI Browser Testing Tool",
+      "score": 80,
+      "summary": "A Chrome/Firefox extension that creates robust CSS/XPath selectors with AI and verifies generated selectors against the live DOM.",
+      "audience": "QA engineers, scraper builders, browser-agent developers, and teams maintaining flaky E2E tests.",
+      "ai_native_angle": "AI proposes selectors while deterministic DOM re-verification filters brittle output before the user sees it.",
+      "growth_signal": "Created 2026-06-16; pushed 2026-06-22; 43 stars, 1 fork, 1 issue; README links Chrome Web Store and Firefox Add-ons, plus architecture and tests.",
+      "runnability": "TypeScript WXT extension project with package.json, e2e, tests, stories, Playwright/Vitest configs, assets, public, architecture doc; no extension install performed.",
+      "recommended_action": "Test on one dynamic internal app and compare selector stability against Playwright codegen and hand-written locators."
+    },
+    {
+      "rank": 7,
+      "full_name": "getgantry/gantry",
+      "url": "https://github.com/getgantry/gantry",
+      "category": "Agent-ready Developer Desktop App",
+      "score": 79,
+      "summary": "A native macOS Docker manager for local and SSH hosts with built-in MCP server and App Intents, exposing container operations to agents.",
+      "audience": "Mac developers who want GUI monitoring plus agent/tool access to Docker and remote hosts.",
+      "ai_native_angle": "It embeds MCP and App Intents into a conventional developer utility so agents can operate infrastructure through the same local control surface.",
+      "growth_signal": "Created 2026-06-04; pushed 2026-06-22; 41 stars, 2 forks; README has release badge, CI, macOS 26+ target, assets, appcast, and security/contributing docs.",
+      "runnability": "SwiftUI/Xcode project with Gantry.xcodeproj, App, Packages, Tools, scripts, assets, appcast.xml; no macOS build/run audit performed.",
+      "recommended_action": "Watch for signed releases; test MCP operations against local Docker once macOS version compatibility is acceptable."
+    },
+    {
+      "rank": 8,
+      "full_name": "madeye/ds-input",
+      "url": "https://github.com/madeye/ds-input",
+      "category": "LLM Native Input Method",
+      "score": 78,
+      "summary": "A macOS/Windows whole-sentence pinyin input method where an OpenAI-compatible LLM converts toneless pinyin into inline Chinese without candidate picking.",
+      "audience": "Chinese writers and developers willing to trade classic IME candidate selection for sentence-level LLM completion.",
+      "ai_native_angle": "The LLM is the input-method engine, choosing full-sentence Chinese output in the OS text pipeline rather than augmenting a separate writing app.",
+      "growth_signal": "Created 2026-06-21; pushed 2026-06-22; 31 stars, 1 fork, 1 issue; README explains Rime-style split, Rust C ABI core, macOS and Windows frontends.",
+      "runnability": "Root includes core, macos, windows, DESIGN.md, CLAUDE.md, README; README says core builds/tests and frontends have separate docs; no IME build/install performed.",
+      "recommended_action": "Track closely as an AI-native UX pattern; test only in a disposable profile until privacy and latency behavior are clear."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "ferdinandobons/CodeDebrief",
+      "url": "https://github.com/ferdinandobons/CodeDebrief",
+      "category": "Coding Agent Context / MCP",
+      "score": 76,
+      "summary": "Local-first static analysis that creates deterministic, source-grounded workflow maps for coding agents via MCP.",
+      "audience": "Developers who want agent-readable codebase maps and Mermaid-style workflow views.",
+      "ai_native_angle": "Gives coding agents grounded structural maps instead of relying only on embedding/search context.",
+      "growth_signal": "Created 2026-06-15; pushed 2026-06-22; 35 stars; README shows PyPI badge, quickstart, website, frontend, schema, tests.",
+      "runnability": "Python package plus frontend/package.json, pyproject, docs, tests, uv.lock.",
+      "recommended_action": "Try on one medium codebase and compare usefulness against tree-sitter symbol search."
+    },
+    {
+      "full_name": "norika1207-lab/Code-Duo",
+      "url": "https://github.com/norika1207-lab/Code-Duo",
+      "category": "Dual Coding Agent UI",
+      "score": 74,
+      "summary": "A single-window UI for running Claude and Codex side-by-side, cross-reviewing work, monitoring cost, and detecting incomplete agent claims.",
+      "audience": "Developers using paid CLI subscriptions who want visible multi-agent cross-checking.",
+      "ai_native_angle": "Turns two coding agents into a comparative workflow with streaming and watchdog behavior.",
+      "growth_signal": "Created 2026-06-21; 35 stars, 7 forks; README has cover asset, app.py, start script and docs.",
+      "runnability": "Small Python/web app with app.py, index.html, docs, start.sh.",
+      "recommended_action": "Watch for real guardrail depth; test on a toy repo before trusting cost/watchdog claims."
+    },
+    {
+      "full_name": "Mocha-Yuan/MoChord",
+      "url": "https://github.com/Mocha-Yuan/MoChord",
+      "category": "AI Music Practice Workspace",
+      "score": 73,
+      "summary": "AI-powered guitar workspace for chord voicings, tuner pitch detection, tabs/staff notation, playback, metronome practice, and progression generation.",
+      "audience": "Guitar learners, teachers, songwriters, and music-tech builders.",
+      "ai_native_angle": "Combines DeepSeek-assisted chord progression with practice loops and local fallback algorithms.",
+      "growth_signal": "Created 2026-06-03; pushed 2026-06-22; 51 stars; README has extensive Chinese/English product explanation.",
+      "runnability": "React/Vite plus Tauri app with Supabase, .env.example, package files and src-tauri.",
+      "recommended_action": "Good vertical AI-workbench example; verify desktop/mobile build maturity."
+    },
+    {
+      "full_name": "runapi-ai/mcp",
+      "url": "https://github.com/runapi-ai/mcp",
+      "category": "Multimodal Model MCP",
+      "score": 72,
+      "summary": "MCP server for model discovery, pricing lookup, LLM chat, image/video/music/TTS task creation across 130+ hosted models.",
+      "audience": "Codex/Claude/Cursor users who want one MCP surface for many generative media APIs.",
+      "ai_native_angle": "Puts model catalog, pricing and multimodal generation actions behind MCP for agent use.",
+      "growth_signal": "Created 2026-06-03; pushed 2026-06-22; 51 stars; npm badge, Dockerfile, examples, evals, tests, plugin metadata.",
+      "runnability": "TypeScript package with bin, src, tests, Dockerfile, examples and .codex-plugin.",
+      "recommended_action": "Watch for pricing/credential safety; useful for media-agent experiments."
+    },
+    {
+      "full_name": "Pls-1q43/VibeCast",
+      "url": "https://github.com/Pls-1q43/VibeCast",
+      "category": "Mobile Voice Prompt Input",
+      "score": 71,
+      "summary": "Mobile-first remote prompt input system that mirrors phone voice text into desktop coding or writing apps.",
+      "audience": "Vibe-coding users who compose prompts faster by speaking on a phone.",
+      "ai_native_angle": "Optimizes the human-to-agent prompt input loop using mobile voice transcription and desktop delivery.",
+      "growth_signal": "Created 2026-06-18; pushed 2026-06-23; 34 stars, 6 forks; README has screenshots and multilingual docs.",
+      "runnability": "Repo includes mac, web, shared, scripts, docs, brand and PRD/development plan.",
+      "recommended_action": "Watch for stable pairing and target-app automation."
+    },
+    {
+      "full_name": "7anX/AgentScan",
+      "url": "https://github.com/7anX/AgentScan",
+      "category": "Agent Security Scanner",
+      "score": 70,
+      "summary": "Go CLI to discover exposed MCP servers, A2A Agent Cards and open LLM APIs with capability and auth-state output.",
+      "audience": "Security engineers auditing AI protocol exposure.",
+      "ai_native_angle": "Treats MCP/A2A/LLM API endpoints as a new scan surface with protocol-aware checks.",
+      "growth_signal": "Created 2026-06-17; pushed 2026-06-22; 24 stars; README includes protocol matrix and build commands.",
+      "runnability": "Go module with internal/pkg, dicts, docs, tests, goreleaser config.",
+      "recommended_action": "Try in a controlled internal network; avoid scanning third-party hosts."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "FieldofStrawberries/claude-code-fable-5-free-app",
+      "url": "https://github.com/FieldofStrawberries/claude-code-fable-5-free-app",
+      "skip_reason": "Description and topics are keyword-stuffed around nonexistent/ambiguous Claude/Fable/free-account claims; insufficient trust despite 83 stars."
+    },
+    {
+      "full_name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "skip_reason": "GitHub API returned implausible 379k-star/79k-fork snapshot for a 2025 repository; excluded until verified by independent community/release evidence."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion."
+    },
+    {
+      "full_name": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "skip_reason": "Prompt/resource collection category, explicitly downgraded by the radar rules even though it is mature and active."
+    },
+    {
+      "full_name": "lilialla/awesome-legal-ai-zh",
+      "url": "https://github.com/lilialla/awesome-legal-ai-zh",
+      "skip_reason": "Useful curated legal-AI map, but it is an awesome list/resource index rather than a runnable AI-native product."
+    },
+    {
+      "full_name": "Simpl3x3/ESEILANE",
+      "url": "https://github.com/Simpl3x3/ESEILANE",
+      "skip_reason": "Potentially interesting GraphRAG database, but the current README/root read more like infrastructure/database launch than a user-facing AI product; keep as low-priority watch, not Top."
+    }
+  ]
+}

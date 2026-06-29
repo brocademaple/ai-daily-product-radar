@@ -1,0 +1,132 @@
+{
+  "run_date": "2026-05-27",
+  "generated_at": "2026-05-27T10:13:11+08:00",
+  "data_window": "2026-05-24T00:00:00Z to 2026-05-27T02:15:00Z; GitHub repositories created, pushed, or visibly active in the last 24-72 hours",
+  "source_summary": "GitHub Search/API snapshot for topic:ai-agent and recent pushed repositories, GitHub repository pages/README metadata, project homepages where linked, and prior radar memory to avoid repeating mature leaders without fresh signal.",
+  "trend_observations": "The strongest product-shaped activity clustered around terminal coding agents, agent sandboxes/runtimes, personal desktop/on-device agents, and web UI layers that turn agent frameworks into usable products. MCP remains noisy: many new repos are directories, wrappers, or example packs rather than complete end-user products.",
+  "assumptions": "Scoring prioritizes runnable UI/CLI/API, clear target user, documentation/examples, recent pushed activity, and visible star/fork/issue traction. Star counts and pushed timestamps are approximate GitHub snapshot values observed during the run; local Python DNS failed, so repository metadata was cross-checked with GitHub pages and the successful curl/API snapshot where available. Repos already covered in prior radar runs were only retained when the current window showed a distinct active/product signal.",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-05-27\n\n数据窗口：2026-05-24T00:00:00Z 到 2026-05-27T02:15:00Z。重点看最近 24-72 小时新建、活跃 pushed 或增长明显的 AI agent / LLM app / RAG / MCP / workflow / browser agent / code agent / voice agent / assistant / automation / copilot 项目。\n\n## Top Projects\n\n### 1. esengine/DeepSeek-Reasonix\n- GitHub: https://github.com/esengine/DeepSeek-Reasonix\n- 分类：Coding Agent / Terminal TUI\n- AI Native Product Score：91\n- 做什么：面向终端的 DeepSeek-native AI coding agent，强调 prefix-cache 稳定性和长会话运行。\n- 面向谁：希望用 DeepSeek/R1 系模型做低成本代码代理的开发者和团队。\n- AI native 点：核心体验不是补全，而是让 LLM 在终端里持续规划、调用工具、修改代码并利用缓存降低成本。\n- 增长/活跃信号：GitHub snapshot 显示约 10.2k stars、562 forks，2026-05-27 pushed，issues/discussions 活跃。\n- 可运行性判断：TypeScript/Ink TUI，README 与项目页提供安装/运行入口，属于可直接试用的 CLI 产品。\n- 建议动作：优先本地试跑，重点验证 DeepSeek API 成本、缓存命中、工具权限边界和长任务稳定性。\n\n### 2. vm0-ai/vm0\n- GitHub: https://github.com/vm0-ai/vm0\n- 分类：Agent Runtime / AI Teammate Sandbox\n- AI Native Product Score：88\n- 做什么：Zero，一个面向真实工作的 AI teammate，带 sandbox/runtime/workflow 取向。\n- 面向谁：想把 agent 放进真实任务环境里的工程团队、自动化团队和产品团队。\n- AI native 点：把 agent 执行环境、工具访问和任务工作流作为产品核心，而不是单纯聊天或 SDK。\n- 增长/活跃信号：GitHub snapshot 显示约 1.1k stars、63 forks，2026-05-27 pushed，open issues 较多说明试用反馈密集。\n- 可运行性判断：TypeScript 项目，带官网与仓库文档；需要进一步验证本地部署复杂度。\n- 建议动作：加入重点跟踪，试跑 sandbox demo，评估是否能作为 agent runtime/安全执行层参考。\n\n### 3. EKKOLearnAI/hermes-web-ui\n- GitHub: https://github.com/EKKOLearnAI/hermes-web-ui\n- 分类：Agent Web UI / LLM App Frontend\n- AI Native Product Score：82\n- 做什么：为 Hermes/agent 工作流提供 Web UI，使后端 agent 能被真实用户操作。\n- 面向谁：需要把 agent 能力包装成可视化产品的 indie hacker、教育/知识产品团队和内部工具团队。\n- AI native 点：把 agent 的运行、配置、交互过程前端化，降低非工程用户使用门槛。\n- 增长/活跃信号：GitHub snapshot 显示 2026-05-26/27 附近持续 pushed，属于近期活跃的新 Web UI 层。\n- 可运行性判断：仓库形态偏前端应用，预期具备本地 Web 启动路径；仍需人工验证 README 是否完整覆盖 env/API key 配置。\n- 建议动作：观察是否出现 screenshots/demo 和稳定部署说明；如果文档足够，纳入下一轮深测。\n\n### 4. VladoIvankovic/Codeep\n- GitHub: https://github.com/VladoIvankovic/Codeep\n- 分类：Code Review / Repository Intelligence\n- AI Native Product Score：80\n- 做什么：用 AI 分析代码库并生成更深的代码理解、审查或解释体验。\n- 面向谁：维护中大型代码库、需要快速 onboard 或做辅助 review 的开发者。\n- AI native 点：AI 不只是回答问题，而是围绕 repo 结构、代码上下文和审查流程形成产品体验。\n- 增长/活跃信号：外部站点 codeep.dev 指向 GitHub，项目在近期 AI coding 工具搜索中出现，具备产品页信号。\n- 可运行性判断：需要进一步确认本地安装路径；产品页存在但 GitHub README 可运行性需复核。\n- 建议动作：加入短名单，下一轮重点检查是否有 CLI/API、示例 repo 和权限模型。\n\n### 5. iBz-04/gloamy\n- GitHub: https://github.com/iBz-04/gloamy\n- 分类：On-device Personal Agent / Tauri App\n- AI Native Product Score：78\n- 做什么：安全的本地个人代理，目标是 on-device personal agents。\n- 面向谁：重视隐私、希望本地运行个人 AI assistant 的 power users 和桌面工具开发者。\n- AI native 点：强调本地、安全、个人代理操作系统式体验，AI 是核心执行主体。\n- 增长/活跃信号：GitHub snapshot 显示约 58 stars、10 forks，2026-05-27 pushed，topics 包含 tauri-app、personal-ai-assistant、secure-ai-agents。\n- 可运行性判断：Rust/Tauri 方向，具备桌面产品形态；当前 star 规模较小，README/安装成熟度需继续验证。\n- 建议动作：Watch，重点看是否补齐安装包、权限沙箱和真实工作流 demo。\n\n### 6. e2b-dev/E2B\n- GitHub: https://github.com/e2b-dev/E2B\n- 分类：Agent Sandbox / Code Interpreter Infrastructure\n- AI Native Product Score：77\n- 做什么：为 AI agent 提供安全 sandbox 和真实工具环境。\n- 面向谁：构建 code interpreter、automation agent、enterprise agent 的开发团队。\n- AI native 点：给 agent 一个可控执行环境，是 agent 产品从 demo 走向真实工作的关键底座。\n- 增长/活跃信号：GitHub snapshot 显示约 12.3k stars、922 forks，2026-05-27 pushed，成熟项目仍持续活跃。\n- 可运行性判断：文档和 SDK/示例成熟，产品化程度高；不是新项目，但当前窗口活跃。\n- 建议动作：作为基础设施基准跟踪，不占用过多每日新发现注意力，除非出现重要 release。\n\n## Watchlist\n\n### WingedGuardian/GENesis-AGI\n- GitHub: https://github.com/WingedGuardian/GENesis-AGI\n- 分类：Autonomous Personal Agent\n- Score：69\n- 简述：带 persistent memory、self-learning、earned autonomy 叙事的 Python autonomous agent。\n- 观察理由：2026-05-27 pushed，约 37 stars；概念贴近个人认知伙伴，但 AGI/自学习叙事偏重，需要验证真实任务能力。\n- 建议动作：观察 demo、任务边界、记忆持久化设计和失败处理。\n\n### swarm-ai-safety/swarm\n- GitHub: https://github.com/swarm-ai-safety/swarm\n- 分类：Multi-agent Safety / Evaluation\n- Score：66\n- 简述：用于多 agent 系统风险评估的 SWARM 项目。\n- 观察理由：2026-05-27 pushed，有站点与讨论区；但更像评估/研究框架，不是直接面向终端用户的产品。\n- 建议动作：关注其 multi-agent safety 指标是否被产品团队采用。\n\n## Skip Reasons\n\n- modelcontextprotocol/servers：https://github.com/modelcontextprotocol/servers。跳过原因：MCP server/example 聚合价值高，但更像目录/基础设施集合，不是单一 AI native 产品。\n- cline/mcp-marketplace：https://github.com/cline/mcp-marketplace。跳过原因：偏 marketplace submission/data repo，产品表面在 Cline 主产品内，不适合作为独立项目评分。\n- swarm-ai-safety/swarm：https://github.com/swarm-ai-safety/swarm。未进入 Top 的原因：安全评估价值明确，但当前更像研究/评估框架，终端用户产品形态弱。\n\n## 今日趋势观察\n\n1. Coding agent 的竞争点正在从“能改代码”转向“长会话、缓存、成本、权限和可恢复性”。DeepSeek-Reasonix 的 prefix-cache 叙事很典型。\n2. Agent runtime/sandbox 仍是高价值底座。vm0 和 E2B 都说明真实工作 agent 必须解决执行环境与安全边界。\n3. Web UI 壳和桌面本地代理在增多，但质量分化明显：有些是真产品，有些只是把 agent framework 包了一层前端。\n4. MCP 噪音继续升高。很多仓库是 registry、server collection 或单工具 wrapper，需要谨慎区分“生态组件”和“产品”。\n\n## 关键假设\n\n- 本期优先新近活跃和产品形态，成熟项目只有在当前窗口继续活跃且代表趋势时才保留。\n- 没有伪造跳过仓库；类型级跳过原因写在趋势和假设里，skipped_projects 只记录真实 GitHub repo。\n- 可运行性判断基于 README/仓库形态/项目页信号，未在本地 clone 全量执行。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "category": "Coding Agent / Terminal TUI",
+      "score": 91,
+      "summary": "DeepSeek-native AI coding agent for the terminal, designed around prefix-cache stability and long-running coding sessions.",
+      "audience": "Developers and teams that want a lower-cost terminal coding agent using DeepSeek/R1-style models.",
+      "ai_native_angle": "The core loop is LLM planning, tool use, terminal interaction, and code editing, with cache-aware economics as a product differentiator.",
+      "growth_signal": "Approximate GitHub snapshot: 10.2k stars, 562 forks, pushed on 2026-05-27, active issues/discussions.",
+      "runnability": "TypeScript/Ink terminal product with install/run documentation and a project site; appears directly runnable as a CLI/TUI.",
+      "recommended_action": "Try locally first; validate DeepSeek API cost, cache hit behavior, permission boundaries, and long-task stability."
+    },
+    {
+      "rank": 2,
+      "full_name": "vm0-ai/vm0",
+      "url": "https://github.com/vm0-ai/vm0",
+      "category": "Agent Runtime / AI Teammate Sandbox",
+      "score": 88,
+      "summary": "Zero is positioned as a trustworthy AI teammate for real work, with an agent runtime and sandbox/workflow orientation.",
+      "audience": "Engineering, automation, and product teams that want to put agents into real task environments.",
+      "ai_native_angle": "The product centers on agent execution environment, workflow, and tool access rather than a generic chat interface.",
+      "growth_signal": "Approximate GitHub snapshot: 1.1k stars, 63 forks, pushed on 2026-05-27, and many open issues indicating active trial/feedback.",
+      "runnability": "TypeScript repository with homepage and documentation signals; local deployment complexity still needs hands-on verification.",
+      "recommended_action": "Track closely and run the sandbox demo; evaluate whether its runtime model is useful for agent safety/execution architecture."
+    },
+    {
+      "rank": 3,
+      "full_name": "EKKOLearnAI/hermes-web-ui",
+      "url": "https://github.com/EKKOLearnAI/hermes-web-ui",
+      "category": "Agent Web UI / LLM App Frontend",
+      "score": 82,
+      "summary": "Web UI layer for Hermes/agent workflows, turning backend agent capabilities into a user-operable product surface.",
+      "audience": "Indie hackers, education/knowledge product builders, and internal tool teams wrapping agents for real users.",
+      "ai_native_angle": "It productizes agent operation, configuration, and interaction instead of exposing only a backend framework.",
+      "growth_signal": "Seen in the recent GitHub AI-agent pushed snapshot around 2026-05-26/27 as a newly active Web UI layer.",
+      "runnability": "Frontend app shape suggests local web startup path, but env/API-key setup and README completeness still need verification.",
+      "recommended_action": "Watch for screenshots, Docker/devcontainer support, and complete one-command setup before deep evaluation."
+    },
+    {
+      "rank": 4,
+      "full_name": "VladoIvankovic/Codeep",
+      "url": "https://github.com/VladoIvankovic/Codeep",
+      "category": "Code Review / Repository Intelligence",
+      "score": 80,
+      "summary": "AI-assisted repository analysis product for deeper code understanding, review, or explanation workflows.",
+      "audience": "Developers maintaining larger repositories, onboarding into unfamiliar codebases, or augmenting code review.",
+      "ai_native_angle": "The product experience is built around AI reading repository context and producing actionable code intelligence.",
+      "growth_signal": "Project homepage points to GitHub and appeared in recent AI coding-tool discovery; product-page signal is stronger than many raw repos.",
+      "runnability": "Needs a README/install pass; product page exists, but CLI/API/local-run path should be verified before adoption.",
+      "recommended_action": "Add to shortlist; next run should inspect CLI/API, example repositories, and permissions/data handling."
+    },
+    {
+      "rank": 5,
+      "full_name": "iBz-04/gloamy",
+      "url": "https://github.com/iBz-04/gloamy",
+      "category": "On-device Personal Agent / Tauri App",
+      "score": 78,
+      "summary": "Secure on-device personal agent project with a desktop/Tauri orientation.",
+      "audience": "Privacy-sensitive power users and desktop-agent builders who prefer local personal assistant workflows.",
+      "ai_native_angle": "The user value centers on local, secure, personal agent behavior rather than cloud chat alone.",
+      "growth_signal": "Approximate GitHub snapshot: 58 stars, 10 forks, pushed on 2026-05-27; topics include tauri-app, secure-ai-agents, and personal-ai-assistant.",
+      "runnability": "Rust/Tauri product shape is promising, but install packages, permissions, and workflow demos need more validation.",
+      "recommended_action": "Watch for packaged releases, permission sandbox docs, and concrete personal-agent demos."
+    },
+    {
+      "rank": 6,
+      "full_name": "e2b-dev/E2B",
+      "url": "https://github.com/e2b-dev/E2B",
+      "category": "Agent Sandbox / Code Interpreter Infrastructure",
+      "score": 77,
+      "summary": "Secure sandbox environment with real-world tools for enterprise-grade agents and code-interpreter products.",
+      "audience": "Teams building code interpreters, automation agents, and enterprise agent platforms.",
+      "ai_native_angle": "It provides the controlled execution substrate that lets AI agents perform real work safely.",
+      "growth_signal": "Approximate GitHub snapshot: 12.3k stars, 922 forks, pushed on 2026-05-27; mature but still active.",
+      "runnability": "Documentation, SDKs, and examples are mature; product is more infrastructure than end-user app.",
+      "recommended_action": "Use as an infrastructure benchmark; only resurface in future daily top lists on major release/product changes."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "WingedGuardian/GENesis-AGI",
+      "url": "https://github.com/WingedGuardian/GENesis-AGI",
+      "category": "Autonomous Personal Agent",
+      "score": 69,
+      "summary": "Python autonomous agent with persistent memory, self-learning, and earned autonomy positioning.",
+      "audience": "Experimenters building persistent personal AI agents and cognitive assistants.",
+      "ai_native_angle": "Memory and autonomy are positioned as the product core, but the repo needs stronger evidence of real task performance.",
+      "growth_signal": "Approximate GitHub snapshot: 37 stars, 9 forks, pushed on 2026-05-27.",
+      "runnability": "Python repo with product-like claims; demo depth and task boundaries need validation.",
+      "recommended_action": "Watch for real demos, persistence design, and failure-handling docs before promoting."
+    },
+    {
+      "full_name": "swarm-ai-safety/swarm",
+      "url": "https://github.com/swarm-ai-safety/swarm",
+      "category": "Multi-agent Safety / Evaluation",
+      "score": 66,
+      "summary": "System-wide assessment of risk in multi-agent systems.",
+      "audience": "Researchers and product teams evaluating risk in multi-agent deployments.",
+      "ai_native_angle": "Useful as a safety/evaluation layer around AI-native systems rather than as the user-facing product itself.",
+      "growth_signal": "Approximate GitHub snapshot: 30 stars, 5 forks, pushed on 2026-05-27, with website/discussion signals.",
+      "runnability": "Python project with docs/site signals; likely runnable as evaluation tooling, not a polished product.",
+      "recommended_action": "Track whether its safety metrics are adopted by agent product teams."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "skip_reason": "Valuable MCP server/example collection, but it is infrastructure/registry material rather than a single AI native product with its own user workflow."
+    },
+    {
+      "full_name": "cline/mcp-marketplace",
+      "url": "https://github.com/cline/mcp-marketplace",
+      "skip_reason": "Marketplace submission/data repository; product value belongs mainly to the parent Cline marketplace experience, not this repo as a standalone product."
+    },
+    {
+      "full_name": "swarm-ai-safety/swarm",
+      "url": "https://github.com/swarm-ai-safety/swarm",
+      "skip_reason": "Strong safety/evaluation value, but not promoted to Top because it currently looks more like a research/eval framework than a runnable end-user product."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "run_date": "2026-06-19",
+  "generated_at": "2026-06-19T13:55:00+08:00",
+  "data_window": "2026-06-16 00:00 UTC to 2026-06-19 05:55 UTC; GitHub recently created/updated AI agent, MCP, RAG, workflow, browser/code/voice agent repositories.",
+  "source_summary": "GitHub Search API batch result, GitHub repository pages, README/root-directory spot checks. No clone/install/runtime audit was performed.",
+  "trend_observations": "Codex/agent control planes, governance skills, local routing layers, and vertical agent skills are becoming productized surfaces around long-running AI work.",
+  "assumptions": "Prioritize product-shaped repositories with runnable UI/CLI/API/docs over prompt lists, pure papers, SDK wrappers, thin marketing repos, and duplicated projects already deeply covered in the prior run. Shell proxy failure limited follow-up API checks.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-19\n\n## 数据观察窗口\n\n- 窗口：2026-06-16 00:00 UTC 至 2026-06-19 05:55 UTC，重点看新创建仓库、近 24-72 小时更新和明显增长的 AI agent / MCP / RAG / workflow / coding-agent 项目。\n- 信息来源：GitHub Search API 首次返回结果、GitHub 仓库页面、README/根目录页面抽样审计。\n- 实时仓库审计：已做在线元数据与页面审计；未 clone、未安装依赖、未运行 Docker/CLI/UI。\n- 网络说明：当前 shell 默认代理 127.0.0.1:7890 不可用，后续 GitHub API 单仓库补查失败；本报告保守使用已成功抓取的 GitHub API 批量结果和可打开的 GitHub 页面证据。\n\n## Top Projects\n\n### 1. [aresyn/codex-control-plane-mcp](https://github.com/aresyn/codex-control-plane-mcp)\n\n- 分类：Codex/MCP control plane\n- AI Native Product Score：90\n- 做什么：为 Codex Desktop 长任务提供 durable async MCP 控制面，支持 operation/workflow 状态、Plan Mode、审批、恢复、诊断和本地 SQLite 历史。\n- 面向谁：需要把 Codex Desktop 纳入自动化编排、长任务队列或内部 agent ops 的工程团队。\n- AI native 点：把单次 Codex 会话抽象成可轮询、可恢复、可去重、可审批的 agent operation/workflow，是 agent orchestration 的基础设施层。\n- 增长/活跃信号：2026-06-17 创建；首次 GitHub API 返回约 201 stars、2 forks、7 issues，2026-06-18 push；页面显示 PyPI、CI、docs、examples、tests、app-server/SQLite/diagnostics 设计。\n- 可运行性判断：README 提供 pipx/uvx/pip install、MCP client config、admin init、hook install、pytest，本轮未本地安装运行。\n- 建议动作：优先试用：用一个长 Codex 任务验证 operationId 轮询、Plan Mode 审批和重试去重。\n\n### 2. [Plaer1/junction](https://github.com/Plaer1/junction)\n\n- 分类：Local coding-agent IDE sidebar\n- AI Native Product Score：88\n- 做什么：VS Code chat sidebar for local AI coding agents，把本地 coding agent 以 IDE 侧边栏方式接入。\n- 面向谁：使用本地 coding agents 且希望留在 VS Code 内操作的开发者。\n- AI native 点：把 agent 会话从终端迁到 IDE 控制面，强调本地 agent、代码上下文、可视化交互与持续会话。\n- 增长/活跃信号：2026-06-17 创建；首次 GitHub API 返回约 510 stars、6 forks，2026-06-17 push，2026-06-19 updated；昨天已入选但仍是窗口内最强产品信号。\n- 可运行性判断：TypeScript 项目，页面元数据指向 VS Code chat sidebar；本轮未 clone/安装，需补 VSIX 或 extension dev host 实测。\n- 建议动作：继续跟踪但避免重复投入；若要试验，重点看 OpenCode/Codex/Claude 等本地 agent 桥接深度。\n\n### 3. [luckeyfaraday/athena-loops](https://github.com/luckeyfaraday/athena-loops)\n\n- 分类：Agent orchestration loop / MCP + CLI\n- AI Native Product Score：84\n- 做什么：后端无关的 Python agent 编排循环，围绕 orchestrator -> worker -> reviewer 模式驱动 Claude、Codex、opencode、aider 等后端。\n- 面向谁：需要把多个 LLM/coding-agent 后端放入可重复执行 loop 的个人开发者和 agent 平台团队。\n- AI native 点：把 agent 执行过程显式拆成 orchestrator/worker/reviewer，并同时提供 MCP server 与 CLI，适合做自动化流程的控制骨架。\n- 增长/活跃信号：首次 GitHub API 输出显示 2026-06-17 创建，仓库描述明确包含 MCP server + CLI；星标较低但主题与产品形态集中。\n- 可运行性判断：Python 项目；由于后续 API/README 请求受代理影响，本轮只做页面/元数据审计，未安装运行。\n- 建议动作：加入复刻候选：用一个小型代码审查任务测试 loop 是否能稳定产出 review 与修复建议。\n\n### 4. [KongFangXun/sofagent](https://github.com/KongFangXun/sofagent)\n\n- 分类：Agent governance skill layer\n- AI Native Product Score：80\n- 做什么：为 AI Agent 增加纪律层、复杂任务拆解、loop 检查和反思沉淀，面向 OpenClaw、Codex、Claude Code、Hermes 等平台。\n- 面向谁：高频使用 coding/research agents、希望降低跑偏和重复错误的个人或团队。\n- AI native 点：把 agent 使用经验产品化成可安装 skill + scripts + constitution + reflection memory，强调治理、边界、闭环与平台适配。\n- 增长/活跃信号：2026-06-18 创建；GitHub 页面显示 17 commits、6 stars、docs/images/sofagent/scripts、Handbook/Developer/Design/Evidence/Testing 等完整文档。\n- 可运行性判断：README 给出 git clone、bash install.sh --platform codex、verify.sh smoke test、首次任务流程；本轮未执行安装。\n- 建议动作：适合做低成本实验：在隔离 Codex profile 中安装，观察是否提升复杂任务收口质量。\n\n### 5. [MacWulf/adaptive-zero-token-router](https://github.com/MacWulf/adaptive-zero-token-router)\n\n- 分类：Local intent router / model routing\n- AI Native Product Score：76\n- 做什么：本地 zero-token intent routing，用于 chat、tooling、coding、planning prompt 的轻量分类与路由。\n- 面向谁：想在调用大模型前做本地 prompt 路由、工具选择或多模型分流的 agent/app builders。\n- AI native 点：把是否需要模型、需要哪个模型/工具前移到本地路由层，可降低成本并改善 agent tool selection。\n- 增长/活跃信号：2026-06-17 创建；首次 GitHub API 返回 6 stars、1 fork，TypeScript，topics 包含 intent-classification、model-routing、offline-first、local-first、zero-token。\n- 可运行性判断：仓库体量很小，证据显示 TypeScript 项目；本轮未看到足够 demo/bench，需补实际准确率和 API 形态审计。\n- 建议动作：Watchlist-plus：先看是否补 benchmark 和集成示例，再决定是否纳入路由实验。\n\n### 6. [ColCh/paperless-ngx-skill](https://github.com/ColCh/paperless-ngx-skill)\n\n- 分类：Vertical agent skill / document ops\n- AI Native Product Score：72\n- 做什么：面向 Paperless-NGX REST API 的可复用 CLI + agent skill，用 openapi-to-cli 和 urllib helpers 管理文档上传与字段更新。\n- 面向谁：自建 Paperless-NGX、希望让 agent 管理票据/文档归档流程的个人和小团队。\n- AI native 点：把垂直 SaaS/自托管系统包装成 agent 可调用 skill，与通用 MCP connector 相比更贴近日常工作流。\n- 增长/活跃信号：2026-06-17 创建；首次 GitHub API 返回 6 stars、1 fork，Python，描述明确提到 env-driven、multipart upload、array-field PATCH。\n- 可运行性判断：应具备 CLI/skill 入口，但本轮未获取完整 README；需验证环境变量、认证和上传流程。\n- 建议动作：保留观察；如后续补 demo，可作为 agent 管个人文档库的垂直样板。\n\n## Watchlist\n\n- [Keljian/JSE](https://github.com/Keljian/JSE) - Local-first job-search automation - Score 70：本地优先求职自动化/ATS/RAG/selenium desktop app，昨天已入选，今天继续 active push。 建议：等待 demo/安装体验补强后再复审。\n- [leonardochalhoub/vozes-das-escrituras](https://github.com/leonardochalhoub/vozes-das-escrituras) - Vertical AI knowledge/voice assistant - Score 68：葡语 scripture/bible knowledge-base + LLM/AI agents 项目，垂直场景清楚但产品证据较早期。 建议：只观察场景，不进入 Top 复刻。\n- [nnecrkvenuOX/formcms](https://github.com/nnecrkvenuOX/formcms) - Headless CMS with AI-labeling signal - Score 64：ASP.NET Core + React headless CMS，描述中带 AI Agent，但核心更像 CMS。 建议：除非后续证明 agent 工作流，暂不投入。\n- [KongFangXun/sofagent](https://github.com/KongFangXun/sofagent) - Agent governance skill layer - Score 80：若社区 evidence 补齐，可从个人方法论升级为 agent governance 产品。 建议：一周后复查 Evidence.md 和第三方案例。\n\n## Skip Reasons\n\n- [TrenchesofChirac/claude-fable-5-free-desktop-app](https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app)：命名和关键词高度营销化，类似免费桌面 wrapper/下载导流，缺少可信 AI native 产品证据。\n- [nnecrkvenuOX/formcms](https://github.com/nnecrkvenuOX/formcms)：有 CMS 产品形态和 stars，但 AI Agent 只出现在描述中，未验证到 agent workflow 或 AI-native core。\n- [Plaer1/junction](https://github.com/Plaer1/junction)：已在 2026-06-18 Top 项目中重点覆盖；今天只保留为持续强信号，不重复创建深度复刻任务。\n\n## 今日趋势观察\n\n1. Codex/agent 的控制面正在产品化：从 IDE 侧边栏、MCP durable queue 到 Plan Mode/approval/polling，都在补多小时 agent 任务的可靠性。\n2. Agent governance 从提示词规范走向可安装 skill：sofagent 这种项目把宪法、安装脚本、验证脚本和反思日志组合起来，说明“让 agent 别跑偏”正在成为独立产品诉求。\n3. 轻量本地路由值得观察：zero-token router 代表在调用 LLM 前做 intent/model/tool routing 的低成本层，但需要 benchmark 和真实集成证明。\n4. 垂直 agent skill 比通用 wrapper 更有机会：paperless-ngx-skill 这类项目如果补齐 demo，可能比又一个 MCP server 更接近用户工作流。\n5. 昨日强项目仍在窗口内活跃，但今天不应机械重复；重复项目只在有新 release、产品面变化或复刻价值变化时再升入 Top。\n\n## 今日建议动作\n\n- 优先试 aresyn/codex-control-plane-mcp：这是今天最值得跑通的 agent ops/control-plane 项目。\n- 做一个小实验：用 athena-loops 或同类 loop，把一个代码审查任务拆成 orchestrator / worker / reviewer，再比较 Codex 原生单线程任务质量。\n- 对 sofagent 做隔离 profile 安装测试，重点看 verify.sh、任务日志、反思沉淀是否真的减少重复错误。\n- 暂缓 CMS/desktop-free 类高关键词仓库，除非后续出现可验证的 agent workflow。\n\n## 关键假设\n\n- GitHub stars/forks 是发现线索，不等于真实采用；新仓库尤其可能被营销和关键词污染。\n- Score 是 AI Native Product Score，优先看可运行入口、用户场景、agent-native 工作流和文档完整度。\n- 本轮未做本地 runtime audit，因此“可运行性判断”只到 README/结构层；需要二次任务补 clone/install/smoke test。\n- 与 2026-06-18 已覆盖的项目尽量避免重复深写，除非今天仍代表窗口内最强信号。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "aresyn/codex-control-plane-mcp",
+      "url": "https://github.com/aresyn/codex-control-plane-mcp",
+      "category": "Codex/MCP control plane",
+      "score": 90,
+      "summary": "为 Codex Desktop 长任务提供 durable async MCP 控制面，支持 operation/workflow 状态、Plan Mode、审批、恢复、诊断和本地 SQLite 历史。",
+      "audience": "需要把 Codex Desktop 纳入自动化编排、长任务队列或内部 agent ops 的工程团队。",
+      "ai_native_angle": "把单次 Codex 会话抽象成可轮询、可恢复、可去重、可审批的 agent operation/workflow，是 agent orchestration 的基础设施层。",
+      "growth_signal": "2026-06-17 创建；首次 GitHub API 返回约 201 stars、2 forks、7 issues，2026-06-18 push；页面显示 PyPI、CI、docs、examples、tests、app-server/SQLite/diagnostics 设计。",
+      "runnability": "README 提供 pipx/uvx/pip install、MCP client config、admin init、hook install、pytest，本轮未本地安装运行。",
+      "recommended_action": "优先试用：用一个长 Codex 任务验证 operationId 轮询、Plan Mode 审批和重试去重。"
+    },
+    {
+      "rank": 2,
+      "full_name": "Plaer1/junction",
+      "url": "https://github.com/Plaer1/junction",
+      "category": "Local coding-agent IDE sidebar",
+      "score": 88,
+      "summary": "VS Code chat sidebar for local AI coding agents，把本地 coding agent 以 IDE 侧边栏方式接入。",
+      "audience": "使用本地 coding agents 且希望留在 VS Code 内操作的开发者。",
+      "ai_native_angle": "把 agent 会话从终端迁到 IDE 控制面，强调本地 agent、代码上下文、可视化交互与持续会话。",
+      "growth_signal": "2026-06-17 创建；首次 GitHub API 返回约 510 stars、6 forks，2026-06-17 push，2026-06-19 updated；昨天已入选但仍是窗口内最强产品信号。",
+      "runnability": "TypeScript 项目，页面元数据指向 VS Code chat sidebar；本轮未 clone/安装，需补 VSIX 或 extension dev host 实测。",
+      "recommended_action": "继续跟踪但避免重复投入；若要试验，重点看 OpenCode/Codex/Claude 等本地 agent 桥接深度。"
+    },
+    {
+      "rank": 3,
+      "full_name": "luckeyfaraday/athena-loops",
+      "url": "https://github.com/luckeyfaraday/athena-loops",
+      "category": "Agent orchestration loop / MCP + CLI",
+      "score": 84,
+      "summary": "后端无关的 Python agent 编排循环，围绕 orchestrator -> worker -> reviewer 模式驱动 Claude、Codex、opencode、aider 等后端。",
+      "audience": "需要把多个 LLM/coding-agent 后端放入可重复执行 loop 的个人开发者和 agent 平台团队。",
+      "ai_native_angle": "把 agent 执行过程显式拆成 orchestrator/worker/reviewer，并同时提供 MCP server 与 CLI，适合做自动化流程的控制骨架。",
+      "growth_signal": "首次 GitHub API 输出显示 2026-06-17 创建，仓库描述明确包含 MCP server + CLI；星标较低但主题与产品形态集中。",
+      "runnability": "Python 项目；由于后续 API/README 请求受代理影响，本轮只做页面/元数据审计，未安装运行。",
+      "recommended_action": "加入复刻候选：用一个小型代码审查任务测试 loop 是否能稳定产出 review 与修复建议。"
+    },
+    {
+      "rank": 4,
+      "full_name": "KongFangXun/sofagent",
+      "url": "https://github.com/KongFangXun/sofagent",
+      "category": "Agent governance skill layer",
+      "score": 80,
+      "summary": "为 AI Agent 增加纪律层、复杂任务拆解、loop 检查和反思沉淀，面向 OpenClaw、Codex、Claude Code、Hermes 等平台。",
+      "audience": "高频使用 coding/research agents、希望降低跑偏和重复错误的个人或团队。",
+      "ai_native_angle": "把 agent 使用经验产品化成可安装 skill + scripts + constitution + reflection memory，强调治理、边界、闭环与平台适配。",
+      "growth_signal": "2026-06-18 创建；GitHub 页面显示 17 commits、6 stars、docs/images/sofagent/scripts、Handbook/Developer/Design/Evidence/Testing 等完整文档。",
+      "runnability": "README 给出 git clone、bash install.sh --platform codex、verify.sh smoke test、首次任务流程；本轮未执行安装。",
+      "recommended_action": "适合做低成本实验：在隔离 Codex profile 中安装，观察是否提升复杂任务收口质量。"
+    },
+    {
+      "rank": 5,
+      "full_name": "MacWulf/adaptive-zero-token-router",
+      "url": "https://github.com/MacWulf/adaptive-zero-token-router",
+      "category": "Local intent router / model routing",
+      "score": 76,
+      "summary": "本地 zero-token intent routing，用于 chat、tooling、coding、planning prompt 的轻量分类与路由。",
+      "audience": "想在调用大模型前做本地 prompt 路由、工具选择或多模型分流的 agent/app builders。",
+      "ai_native_angle": "把是否需要模型、需要哪个模型/工具前移到本地路由层，可降低成本并改善 agent tool selection。",
+      "growth_signal": "2026-06-17 创建；首次 GitHub API 返回 6 stars、1 fork，TypeScript，topics 包含 intent-classification、model-routing、offline-first、local-first、zero-token。",
+      "runnability": "仓库体量很小，证据显示 TypeScript 项目；本轮未看到足够 demo/bench，需补实际准确率和 API 形态审计。",
+      "recommended_action": "Watchlist-plus：先看是否补 benchmark 和集成示例，再决定是否纳入路由实验。"
+    },
+    {
+      "rank": 6,
+      "full_name": "ColCh/paperless-ngx-skill",
+      "url": "https://github.com/ColCh/paperless-ngx-skill",
+      "category": "Vertical agent skill / document ops",
+      "score": 72,
+      "summary": "面向 Paperless-NGX REST API 的可复用 CLI + agent skill，用 openapi-to-cli 和 urllib helpers 管理文档上传与字段更新。",
+      "audience": "自建 Paperless-NGX、希望让 agent 管理票据/文档归档流程的个人和小团队。",
+      "ai_native_angle": "把垂直 SaaS/自托管系统包装成 agent 可调用 skill，与通用 MCP connector 相比更贴近日常工作流。",
+      "growth_signal": "2026-06-17 创建；首次 GitHub API 返回 6 stars、1 fork，Python，描述明确提到 env-driven、multipart upload、array-field PATCH。",
+      "runnability": "应具备 CLI/skill 入口，但本轮未获取完整 README；需验证环境变量、认证和上传流程。",
+      "recommended_action": "保留观察；如后续补 demo，可作为 agent 管个人文档库的垂直样板。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "Keljian/JSE",
+      "url": "https://github.com/Keljian/JSE",
+      "category": "Local-first job-search automation",
+      "score": 70,
+      "summary": "本地优先求职自动化/ATS/RAG/selenium desktop app，昨天已入选，今天继续 active push。",
+      "audience": "求职者和职业服务自动化团队。",
+      "ai_native_angle": "把简历、职位、RAG、浏览器自动化和本地模型组合到求职流程。",
+      "growth_signal": "首次 API 显示 2026-06-17 创建、2026-06-19 push，5 stars。",
+      "runnability": "Python/Vite/desktop app 线索明确；已在前一日 Top 覆盖。",
+      "recommended_action": "等待 demo/安装体验补强后再复审。"
+    },
+    {
+      "full_name": "leonardochalhoub/vozes-das-escrituras",
+      "url": "https://github.com/leonardochalhoub/vozes-das-escrituras",
+      "category": "Vertical AI knowledge/voice assistant",
+      "score": 68,
+      "summary": "葡语 scripture/bible knowledge-base + LLM/AI agents 项目，垂直场景清楚但产品证据较早期。",
+      "audience": "宗教文本学习、葡语内容知识库和 voice/assistant 实验者。",
+      "ai_native_angle": "垂直知识库 + agent/LLM，可能演化成领域问答或语音陪伴。",
+      "growth_signal": "首次 API 显示 2026-06-17 创建、6 stars、1 fork、JavaScript。",
+      "runnability": "未完成 README/runtime 审计。",
+      "recommended_action": "只观察场景，不进入 Top 复刻。"
+    },
+    {
+      "full_name": "nnecrkvenuOX/formcms",
+      "url": "https://github.com/nnecrkvenuOX/formcms",
+      "category": "Headless CMS with AI-labeling signal",
+      "score": 64,
+      "summary": "ASP.NET Core + React headless CMS，描述中带 AI Agent，但核心更像 CMS。",
+      "audience": "需要 headless CMS/GraphQL/GrapesJS page designer 的开发者。",
+      "ai_native_angle": "AI native 证据不足，可能只是关键词包装。",
+      "growth_signal": "首次 API 显示 2026-06-17 创建、约 204 stars、homepage formcms.com。",
+      "runnability": "CMS 形态可能可运行，但 AI 产品性未证实。",
+      "recommended_action": "除非后续证明 agent 工作流，暂不投入。"
+    },
+    {
+      "full_name": "KongFangXun/sofagent",
+      "url": "https://github.com/KongFangXun/sofagent",
+      "category": "Agent governance skill layer",
+      "score": 80,
+      "summary": "若社区 evidence 补齐，可从个人方法论升级为 agent governance 产品。",
+      "audience": "agent 重度用户。",
+      "ai_native_angle": "治理 skill、反思记忆和安装脚本。",
+      "growth_signal": "v0.60、docs 完整，但效果指标仍待社区验证。",
+      "runnability": "有 install.sh 和 verify.sh。",
+      "recommended_action": "一周后复查 Evidence.md 和第三方案例。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "TrenchesofChirac/claude-fable-5-free-desktop-app",
+      "url": "https://github.com/TrenchesofChirac/claude-fable-5-free-desktop-app",
+      "skip_reason": "命名和关键词高度营销化，类似免费桌面 wrapper/下载导流，缺少可信 AI native 产品证据。"
+    },
+    {
+      "full_name": "nnecrkvenuOX/formcms",
+      "url": "https://github.com/nnecrkvenuOX/formcms",
+      "skip_reason": "有 CMS 产品形态和 stars，但 AI Agent 只出现在描述中，未验证到 agent workflow 或 AI-native core。"
+    },
+    {
+      "full_name": "Plaer1/junction",
+      "url": "https://github.com/Plaer1/junction",
+      "skip_reason": "已在 2026-06-18 Top 项目中重点覆盖；今天只保留为持续强信号，不重复创建深度复刻任务。"
+    }
+  ]
+}

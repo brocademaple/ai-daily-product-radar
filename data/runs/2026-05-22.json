@@ -1,0 +1,213 @@
+{
+  "run_date": "2026-05-22",
+  "generated_at": "2026-05-22T11:36:00+08:00",
+  "data_window": "2026-05-19 to 2026-05-22, GitHub repositories created, updated, or visibly gaining attention in AI agent, MCP, LLM app, RAG, workflow, browser/code/voice agent, assistant, automation, and copilot categories.",
+  "source_summary": "GitHub repository pages, GitHub topic/search snippets surfaced through web search, and README/release/run-surface checks where pages were reachable. Shell DNS for api.github.com remained unavailable, so exact API star deltas were not used.",
+  "trend_observations": "The strongest product-shaped signals are shifting from standalone demos to executable agent surfaces: terminal copilots, GitHub Actions agents, hosted MCP, reusable memory layers, and vertical workflow assistants. MCP remains the default integration vocabulary, while more projects are packaging agents as CLIs, web dashboards, chat bots, or deployable services rather than libraries only.",
+  "assumptions": "Scores prioritize runnable product surface, clear user workflow, README/demo quality, recent GitHub activity, and AI-native depth. Repositories highlighted on 2026-05-21 were not repeated unless they showed a distinct new product signal. Search quality is bounded by unauthenticated web access; activity labels such as updated/created are treated as directional signals, not audited star velocity.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-22\n\n## Top Projects\n\n1. [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) - AI Coding Agent CLI - Score 92\n   - Does: Terminal-first Gemini coding/automation agent with repo understanding, tool execution, and developer workflow integration.\n   - Audience: Developers and teams that want a local command-line AI pair programmer.\n   - AI native angle: The CLI is built around iterative LLM planning, tool use, code edits, and command execution rather than static code generation.\n   - Growth/activity signal: High-visibility Google repo; GitHub search/topic snippets showed a very recent 2026 creation/update window and rapid attention.\n   - Runnability: CLI-first surface with install/run documentation and examples; suitable for immediate local trial.\n   - Recommended action: Try on a non-critical repo and compare with existing coding-agent flows.\n\n2. [github/gh-aw](https://github.com/github/gh-aw) - Agentic Workflow Automation - Score 90\n   - Does: GitHub CLI extension for agentic workflows that can create, manage, and run repository automation tasks.\n   - Audience: Engineering teams already living in GitHub Issues, PRs, and Actions.\n   - AI native angle: Turns GitHub workflows into agent-executed tasks, bringing planning/execution loops into the developer platform.\n   - Growth/activity signal: GitHub-owned repo surfaced in recent AI-agent searches with active README/product positioning.\n   - Runnability: CLI extension surface; clearer product fit than one-off scripts.\n   - Recommended action: Watch closely; test against a small maintenance workflow once permissions and runner assumptions are understood.\n\n3. [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) - AI Agent Collaboration Hub - Score 86\n   - Does: Open-source platform for discovering, configuring, and orchestrating multiple AI agents.\n   - Audience: Builders experimenting with multi-agent workflows and reusable agent templates.\n   - AI native angle: Treats agents as first-class configurable product units with orchestration, rather than single prompt calls.\n   - Growth/activity signal: Search snippets indicate May 2026 creation and recent updates, with a product-like README.\n   - Runnability: Repo presents an app/platform shape; requires local verification before production use.\n   - Recommended action: Clone and inspect install path; benchmark against existing agent orchestration tools.\n\n4. [lobehub/lobehub](https://github.com/lobehub/lobehub) - AI Assistant Workspace - Score 85\n   - Does: Full-featured web assistant workspace with model/provider integrations, agents, plugins, and user-facing chat UI.\n   - Audience: Users and teams needing a self-hostable assistant frontend rather than a raw model API.\n   - AI native angle: Product value is in agent UX, provider routing, plugin/tool integration, and persistent assistant workflows.\n   - Growth/activity signal: Large active repository surfaced in recent AI topic searches; continued updates make it a durable benchmark.\n   - Runnability: Mature web app with deployment docs and self-hosting paths.\n   - Recommended action: Use as a UX/reference baseline for AI assistant product expectations.\n\n5. [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) - ChatOps AI Assistant Platform - Score 83\n   - Does: Multi-platform chatbot/assistant framework for IM channels with LLM-driven plugins and automation.\n   - Audience: Communities, operators, and teams building assistant bots inside chat platforms.\n   - AI native angle: Combines chat surface, LLM reasoning, plugins, and automation into a deployable assistant product.\n   - Growth/activity signal: Recent topic/search visibility and a substantial active repo footprint.\n   - Runnability: Product-shaped with bot runtime, plugin system, docs, and deployment examples.\n   - Recommended action: Track for chat-native automation patterns and plugin architecture.\n\n6. [safishamsi/graphify](https://github.com/safishamsi/graphify) - Graph RAG / Knowledge Workspace - Score 80\n   - Does: Converts documents into graph-backed knowledge representations for AI retrieval and question answering.\n   - Audience: Builders needing document intelligence, knowledge graph exploration, and RAG workflows.\n   - AI native angle: The product surface is organized around graph-enhanced retrieval and LLM usage, not just storage.\n   - Growth/activity signal: Search snippets surfaced it as a recently updated GitHub AI/RAG candidate.\n   - Runnability: README/product page suggests a runnable app or service; validate setup friction before adoption.\n   - Recommended action: Put into a RAG evaluation set and compare output quality against vector-only baselines.\n\n7. [github/copilot-sdk](https://github.com/github/copilot-sdk) - Copilot App SDK - Score 78\n   - Does: SDK and examples for building Copilot-enabled extensions and assistant experiences.\n   - Audience: Developers building products inside or adjacent to GitHub Copilot.\n   - AI native angle: Enables native Copilot surfaces and agent-like extension flows inside developer workflows.\n   - Growth/activity signal: Official GitHub repo surfaced in recent searches; ecosystem relevance is high despite SDK orientation.\n   - Runnability: Examples and integration docs are the main runnable surface.\n   - Recommended action: Watch APIs and examples; useful for product integrations rather than standalone adoption.\n\n8. [forcedotcom/mcp-hosted](https://github.com/forcedotcom/mcp-hosted) - Enterprise MCP Hosting - Score 76\n   - Does: Hosted MCP server/reference implementation for Salesforce-oriented AI tool access.\n   - Audience: Enterprise teams connecting LLM agents to Salesforce data and workflows.\n   - AI native angle: Exposes business-system capabilities as MCP tools for agents, making enterprise app actions agent-addressable.\n   - Growth/activity signal: Recent MCP search visibility from a major enterprise vendor.\n   - Runnability: Product/infrastructure shaped; likely requires Salesforce context and credentials for meaningful testing.\n   - Recommended action: Track as an enterprise MCP pattern, especially auth and governance choices.\n\n9. [ncz-os/mnemos](https://github.com/ncz-os/mnemos) - Agent Memory Infrastructure - Score 74\n   - Does: Production-grade memory layer for agentic AI applications.\n   - Audience: Agent developers who need persistent, reusable memory beyond chat history.\n   - AI native angle: Memory is becoming a core operating layer for multi-step agents and personalized assistants.\n   - Growth/activity signal: Recent GitHub AI-agent topic visibility; aligned with repeated memory/RAG trends from prior runs.\n   - Runnability: Infrastructure component; judge by API examples and integration docs before adoption.\n   - Recommended action: Watch for real app integrations and persistence/evaluation examples.\n\n10. [saminkhan1/real-estate-ai-agent](https://github.com/saminkhan1/real-estate-ai-agent) - Vertical AI Agent App - Score 71\n   - Does: Full-stack real-estate AI agent using LangGraph-style workflow patterns.\n   - Audience: Real-estate operators or developers building vertical lead/search assistants.\n   - AI native angle: Applies agent workflow orchestration to a concrete domain instead of presenting a generic chatbot.\n   - Growth/activity signal: Recent search/topic visibility; useful as an early vertical-agent example.\n   - Runnability: Promising full-stack shape, but maturity and setup depth need verification.\n   - Recommended action: Keep as a vertical product pattern; do not treat as mature infrastructure yet.\n\n## Watchlist\n\n- [GRCEngClub/claude-grc-engineering](https://github.com/GRCEngClub/claude-grc-engineering) - GRC/security engineering workflow assets around Claude. Watch because the domain is concrete, but verify executable product surface.\n- [dylibso/chicory](https://github.com/dylibso/chicory) - Not AI-specific, but useful if WASM sandboxing becomes a common agent tool-execution substrate.\n- [browser-use/workflow-use](https://github.com/browser-use/workflow-use) - Browser automation workflow extraction remains relevant, but prior-run overlap means it stays watchlist unless new releases land.\n- [menloresearch/jan](https://github.com/menloresearch/jan) - Mature local AI app; watch for product/release movement rather than daily novelty.\n\n## Skip Reasons\n\n- [codingmcp/cli](https://github.com/codingmcp/cli) - Messaging around free/proxy access and usage-limit bypass is a poor fit for product radar despite recent visibility.\n- [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) - Strong desktop-agent research direction, but current signal still reads more like model/demo infrastructure than a broadly runnable product.\n- [EmbraceAGI/LifeReloaded](https://github.com/EmbraceAGI/LifeReloaded) - Interesting personal AI concept, but insufficient verified runnable product evidence for today's Top list.\n- [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) - Mature and relevant, but excluded from Top today to avoid crowding out fresher 24-72 hour signals.\n\n## Trend Observations\n\n- Agent products are converging on executable surfaces: CLI, GitHub Actions, hosted MCP servers, and chat bots are stronger signals than notebooks or SDK-only repos.\n- MCP is becoming the enterprise integration default, especially for business systems where auth, tenancy, and governance matter.\n- Memory/RAG is moving from feature to substrate: new projects increasingly sell persistent context, graph retrieval, or reusable memory as the actual product layer.\n- Vertical agents are appearing in real-estate, GRC, and chat operations; most are still early, but they clarify user scenarios better than generic agent demos.\n\n## Data Window and Assumptions\n\n- Window: 2026-05-19 to 2026-05-22.\n- Sources: GitHub repository pages and GitHub topic/search snippets available through web search; unauthenticated shell access to api.github.com failed DNS resolution.\n- Assumption: recent web-search/update labels are directional, so scores emphasize product shape, runnable surface, documentation, and AI-native architecture over exact star delta.\n- Assumption: yesterday's highlighted repos were not repeated unless they showed a distinct new signal.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "category": "AI Coding Agent CLI",
+      "score": 92,
+      "summary": "Terminal-first Gemini coding and automation agent with repo understanding, tool execution, and developer workflow integration.",
+      "audience": "Developers and engineering teams that want a local command-line AI pair programmer.",
+      "ai_native_angle": "The CLI is built around iterative LLM planning, tool use, code edits, and command execution.",
+      "growth_signal": "High-visibility Google repo surfaced in recent 2026 creation/update searches with rapid attention.",
+      "runnability": "CLI-first surface with install/run documentation and examples.",
+      "recommended_action": "Try on a non-critical repo and compare with current coding-agent flows."
+    },
+    {
+      "rank": 2,
+      "full_name": "github/gh-aw",
+      "url": "https://github.com/github/gh-aw",
+      "category": "Agentic Workflow Automation",
+      "score": 90,
+      "summary": "GitHub CLI extension for agentic workflows that can create, manage, and run repository automation tasks.",
+      "audience": "Engineering teams already living in GitHub Issues, PRs, and Actions.",
+      "ai_native_angle": "Turns GitHub workflows into agent-executed tasks inside the developer platform.",
+      "growth_signal": "GitHub-owned repo surfaced in recent AI-agent searches with active README/product positioning.",
+      "runnability": "CLI extension surface with repository workflow fit.",
+      "recommended_action": "Test against a small maintenance workflow after reviewing permissions and runner assumptions."
+    },
+    {
+      "rank": 3,
+      "full_name": "code-yeongyu/oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "category": "AI Agent Collaboration Hub",
+      "score": 86,
+      "summary": "Open-source platform for discovering, configuring, and orchestrating multiple AI agents.",
+      "audience": "Builders experimenting with multi-agent workflows and reusable agent templates.",
+      "ai_native_angle": "Treats agents as first-class configurable product units with orchestration.",
+      "growth_signal": "Search snippets indicate May 2026 creation and recent updates with a product-like README.",
+      "runnability": "App/platform shape, but local setup needs verification.",
+      "recommended_action": "Clone and inspect install path; benchmark against existing orchestration tools."
+    },
+    {
+      "rank": 4,
+      "full_name": "lobehub/lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "category": "AI Assistant Workspace",
+      "score": 85,
+      "summary": "Full-featured web assistant workspace with model/provider integrations, agents, plugins, and user-facing chat UI.",
+      "audience": "Users and teams needing a self-hostable assistant frontend rather than a raw model API.",
+      "ai_native_angle": "Product value is in agent UX, provider routing, plugin/tool integration, and persistent assistant workflows.",
+      "growth_signal": "Large active repository surfaced in recent AI topic searches.",
+      "runnability": "Mature web app with deployment docs and self-hosting paths.",
+      "recommended_action": "Use as a UX/reference baseline for AI assistant product expectations."
+    },
+    {
+      "rank": 5,
+      "full_name": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "category": "ChatOps AI Assistant Platform",
+      "score": 83,
+      "summary": "Multi-platform chatbot/assistant framework for IM channels with LLM-driven plugins and automation.",
+      "audience": "Communities, operators, and teams building assistant bots inside chat platforms.",
+      "ai_native_angle": "Combines chat surface, LLM reasoning, plugins, and automation into a deployable assistant product.",
+      "growth_signal": "Recent topic/search visibility and substantial active repo footprint.",
+      "runnability": "Product-shaped bot runtime with plugin system, docs, and deployment examples.",
+      "recommended_action": "Track for chat-native automation patterns and plugin architecture."
+    },
+    {
+      "rank": 6,
+      "full_name": "safishamsi/graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "category": "Graph RAG / Knowledge Workspace",
+      "score": 80,
+      "summary": "Converts documents into graph-backed knowledge representations for AI retrieval and question answering.",
+      "audience": "Builders needing document intelligence, knowledge graph exploration, and RAG workflows.",
+      "ai_native_angle": "The product surface is organized around graph-enhanced retrieval and LLM usage.",
+      "growth_signal": "Search snippets surfaced it as a recently updated GitHub AI/RAG candidate.",
+      "runnability": "README/product page suggests a runnable app or service; setup friction needs validation.",
+      "recommended_action": "Put into a RAG evaluation set and compare output quality against vector-only baselines."
+    },
+    {
+      "rank": 7,
+      "full_name": "github/copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk",
+      "category": "Copilot App SDK",
+      "score": 78,
+      "summary": "SDK and examples for building Copilot-enabled extensions and assistant experiences.",
+      "audience": "Developers building products inside or adjacent to GitHub Copilot.",
+      "ai_native_angle": "Enables native Copilot surfaces and agent-like extension flows inside developer workflows.",
+      "growth_signal": "Official GitHub repo surfaced in recent searches; ecosystem relevance is high despite SDK orientation.",
+      "runnability": "Examples and integration docs are the main runnable surface.",
+      "recommended_action": "Watch APIs and examples for product integrations."
+    },
+    {
+      "rank": 8,
+      "full_name": "forcedotcom/mcp-hosted",
+      "url": "https://github.com/forcedotcom/mcp-hosted",
+      "category": "Enterprise MCP Hosting",
+      "score": 76,
+      "summary": "Hosted MCP server/reference implementation for Salesforce-oriented AI tool access.",
+      "audience": "Enterprise teams connecting LLM agents to Salesforce data and workflows.",
+      "ai_native_angle": "Exposes business-system capabilities as MCP tools for agents.",
+      "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
+      "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
+      "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+    },
+    {
+      "rank": 9,
+      "full_name": "ncz-os/mnemos",
+      "url": "https://github.com/ncz-os/mnemos",
+      "category": "Agent Memory Infrastructure",
+      "score": 74,
+      "summary": "Production-grade memory layer for agentic AI applications.",
+      "audience": "Agent developers who need persistent, reusable memory beyond chat history.",
+      "ai_native_angle": "Memory acts as a core operating layer for multi-step agents and personalized assistants.",
+      "growth_signal": "Recent GitHub AI-agent topic visibility aligned with repeated memory/RAG trends from prior runs.",
+      "runnability": "Infrastructure component; judge by API examples and integration docs before adoption.",
+      "recommended_action": "Watch for real app integrations and persistence/evaluation examples."
+    },
+    {
+      "rank": 10,
+      "full_name": "saminkhan1/real-estate-ai-agent",
+      "url": "https://github.com/saminkhan1/real-estate-ai-agent",
+      "category": "Vertical AI Agent App",
+      "score": 71,
+      "summary": "Full-stack real-estate AI agent using graph-style workflow orchestration.",
+      "audience": "Real-estate operators or developers building vertical lead/search assistants.",
+      "ai_native_angle": "Applies agent workflow orchestration to a concrete domain instead of presenting a generic chatbot.",
+      "growth_signal": "Recent search/topic visibility; useful as an early vertical-agent example.",
+      "runnability": "Promising full-stack shape, but maturity and setup depth need verification.",
+      "recommended_action": "Keep as a vertical product pattern; do not treat as mature infrastructure yet."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "GRCEngClub/claude-grc-engineering",
+      "url": "https://github.com/GRCEngClub/claude-grc-engineering",
+      "category": "GRC AI Workflow",
+      "score": 69,
+      "summary": "GRC/security engineering workflow assets around Claude.",
+      "audience": "Security, compliance, and governance teams exploring AI-assisted GRC workflows.",
+      "ai_native_angle": "Applies LLM workflow assistance to a concrete governance/security domain.",
+      "growth_signal": "Recent Claude/GRC search visibility.",
+      "runnability": "Executable product surface needs verification.",
+      "recommended_action": "Watch until demos, CLI, or workflow examples are clearer."
+    },
+    {
+      "full_name": "dylibso/chicory",
+      "url": "https://github.com/dylibso/chicory",
+      "category": "Agent Sandbox Substrate",
+      "score": 66,
+      "summary": "WASM runtime infrastructure that could support safer tool execution for agents.",
+      "audience": "Agent platform builders needing sandboxable execution components.",
+      "ai_native_angle": "Not AI-specific, but relevant to controlled agent tool execution.",
+      "growth_signal": "Recent visibility in adjacent infrastructure searches.",
+      "runnability": "Mature infrastructure repo, not an AI product by itself.",
+      "recommended_action": "Watch for adoption by agent runtimes."
+    },
+    {
+      "full_name": "browser-use/workflow-use",
+      "url": "https://github.com/browser-use/workflow-use",
+      "category": "Browser Workflow Agent",
+      "score": 70,
+      "summary": "Browser automation workflow extraction and replay tooling.",
+      "audience": "Teams automating browser workflows with agent-readable traces.",
+      "ai_native_angle": "Turns browser interactions into reusable agent workflows.",
+      "growth_signal": "Continues to appear in browser-agent searches, but overlaps prior runs.",
+      "runnability": "Runnable workflow tooling; verify current release changes.",
+      "recommended_action": "Keep on watchlist unless a distinct new release lands."
+    },
+    {
+      "full_name": "menloresearch/jan",
+      "url": "https://github.com/menloresearch/jan",
+      "category": "Local AI Assistant App",
+      "score": 68,
+      "summary": "Local AI assistant app with desktop product surface.",
+      "audience": "Users who want local-first AI chat and model control.",
+      "ai_native_angle": "AI assistant packaged as an end-user desktop app.",
+      "growth_signal": "Mature project with ongoing relevance, but not a fresh daily signal.",
+      "runnability": "Strong runnable desktop product surface.",
+      "recommended_action": "Watch releases rather than include in daily novelty Top list."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "codingmcp/cli",
+      "url": "https://github.com/codingmcp/cli",
+      "skip_reason": "Messaging around free/proxy access and usage-limit bypass is a poor fit for this product radar despite recent visibility."
+    },
+    {
+      "full_name": "bytedance/UI-TARS-desktop",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "skip_reason": "Strong desktop-agent research direction, but current signal still reads more like model/demo infrastructure than a broadly runnable product."
+    },
+    {
+      "full_name": "EmbraceAGI/LifeReloaded",
+      "url": "https://github.com/EmbraceAGI/LifeReloaded",
+      "skip_reason": "Interesting personal AI concept, but insufficient verified runnable product evidence for today's Top list."
+    },
+    {
+      "full_name": "Mintplex-Labs/anything-llm",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "skip_reason": "Mature and relevant, but excluded from Top today to avoid crowding out fresher 24-72 hour signals."
+    }
+  ]
+}

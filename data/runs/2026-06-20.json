@@ -1,0 +1,199 @@
+{
+  "run_date": "2026-06-20",
+  "generated_at": "2026-06-20T15:10:33+08:00",
+  "data_window": "2026-06-18T00:00:00Z to 2026-06-20T07:10:33Z; GitHub Search API queries for newly created and recently pushed AI/agent/MCP/RAG repositories, plus README/root metadata spot checks.",
+  "source_summary": "GitHub Search API repository metadata; GitHub repository README API spot checks for selected candidates; local SQLite history for dedupe against 2026-06-16..2026-06-19 picks.",
+  "trend_observations": "Coding-agent products are moving from single prompt execution into observable loops, review gates, state indicators, and safety/control planes. MCP projects are also shifting from simple connectors toward policy filters, local model gateways, evidence retrieval, and domain-specific tool surfaces.",
+  "assumptions": "Scores prioritize product-shaped repos with runnable CLI/UI/API/MCP surfaces, recent creation/update signals, README install/use guidance, and clear user scenario. This run did not clone, install, run Docker, execute tests, or verify demos locally; stars/forks are GitHub API point-in-time signals, not confirmed velocity deltas.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-20\n\n## Top 8 项目\n\n### 1. [ksimback/looper](https://github.com/ksimback/looper) - Coding Agent Control Plane - Score 88\n\n- 做什么：Visual planner for designing review-gated Claude Code/Codex agent loops before execution.\n- 面向谁：Developers running coding agents who need repeatable loop design and human review checkpoints.\n- AI native 点：Treats agent iteration itself as a designed workflow with gates, loops, and review points.\n- 增长/活跃信号：Created 2026-06-18; 60 stars, 5 forks; pushed 2026-06-19; README has CLI/examples and explicitly targets Claude Code/Codex loops.\n- 可运行性判断：Python project with install/use guidance and CLI-shaped workflow in README; no local run performed.\n- 建议动作：Try locally first; if the CLI flow is solid, add to control-plane experiment track.\n\n### 2. [abluva-research/mcp-trust-plane](https://github.com/abluva-research/mcp-trust-plane) - MCP Security / Policy Plane - Score 87\n\n- 做什么：Pluggable filter framework for MCP traffic that can allow, block, redact, modify, or truncate tool calls.\n- 面向谁：Teams exposing sensitive data/tools through MCP who need guardrails without rewriting upstream servers.\n- AI native 点：Adds a policy enforcement layer directly into agent tool-call traffic, covering PII, destructive SQL, response size, and abuse control.\n- 增长/活跃信号：Created 2026-06-18; 54 stars, 10 forks; pushed 2026-06-19; README includes quickstart, Docker, npm/API/CLI cues.\n- 可运行性判断：README indicates Docker/quickstart/demo/API paths; no live gateway run performed.\n- 建议动作：Promote to long-term watch and compare against existing MCP gateway/governance picks.\n\n### 3. [spronta/crawlie](https://github.com/spronta/crawlie) - Agent-Ready SEO/GEO Crawler - Score 84\n\n- 做什么：Local technical SEO and generative-engine optimization crawler with CLI and MCP server surfaces.\n- 面向谁：SEO/GEO operators and agents auditing websites for broken links, metadata, redirects, and AI-search readiness.\n- AI native 点：Turns crawler findings into agent-consumable checks and exposes an MCP server, making website audits callable from assistants.\n- 增长/活跃信号：Created 2026-06-18; 27 stars, 2 forks; pushed 2026-06-19; README advertises npm package, CLI, MCP server, setup docs and CI.\n- 可运行性判断：npm/CLI/MCP setup documented; no crawl was executed locally.\n- 建议动作：Run on one controlled site and evaluate whether the MCP output is usable for automated remediation.\n\n### 4. [joeseesun/qiaomu-llm-mcp](https://github.com/joeseesun/qiaomu-llm-mcp) - Local LLM Provider Gateway - Score 82\n\n- 做什么：Local MCP gateway for multi-provider LLM routing, secrets, and multi-model discussion workflows.\n- 面向谁：Codex/Claude/MCP users juggling multiple model providers and local API keys.\n- AI native 点：Makes model choice, key storage, multi-model comparison, and HeavySkill-style discussion callable as one MCP tool surface.\n- 增长/活跃信号：Created 2026-06-19; 36 stars, 1 fork; README describes local-first registry, macOS Keychain, provider routing and MCP client usage.\n- 可运行性判断：Python/pip/MCP/CLI examples present; no keychain or provider call was tested.\n- 建议动作：Watch closely; useful experiment for local model routing and secret-handling patterns.\n\n### 5. [ByteAsk/ByteAsk-Embedded-MCP](https://github.com/ByteAsk/ByteAsk-Embedded-MCP) - Domain RAG MCP - Score 80\n\n- 做什么：Source-grounded, page-cited retrieval MCP server for embedded and firmware reference docs.\n- 面向谁：Firmware, driver, protocol, and embedded developers using coding agents that need exact reference facts.\n- AI native 点：Narrows RAG to high-risk technical documentation and exposes cited retrieval to Claude Code, Codex, Cursor and MCP clients.\n- 增长/活跃信号：Created 2026-06-19; 17 stars; pushed 2026-06-19; README has quickstart, hosted badge, Python/uv, demo/API/CLI/MCP signals.\n- 可运行性判断：Python 3.10+/uv and MCP setup documented; no hosted endpoint or local server run tested.\n- 建议动作：Add to vertical RAG watchlist and test on one real datasheet/reference task.\n\n### 6. [browser-use/browser-agent-template](https://github.com/browser-use/browser-agent-template) - Browser Agent App Template - Score 78\n\n- 做什么：Fork-and-deploy Vercel template for a web-browsing agent backed by Browser Use cloud browser.\n- 面向谁：Builders who want a deployable browser-agent web app scaffold quickly.\n- AI native 点：Packages a browsing agent into a deployable product shell rather than a raw automation script.\n- 增长/活跃信号：Created 2026-06-18; 15 stars, 2 forks; README includes Vercel deploy button, env configuration, screenshot/banner and API key setup.\n- 可运行性判断：Vercel deployment path and npm-style app cues are present; no deployment performed.\n- 建议动作：Use as a reference scaffold for browser-agent UX and deployment ergonomics.\n\n### 7. [Gentleman-Programming/tmux-agent-state](https://github.com/Gentleman-Programming/tmux-agent-state) - Agent Runtime Observability - Score 76\n\n- 做什么：tmux tab-bar status indicator that shows whether coding agents are working, blocked, idle, or need attention.\n- 面向谁：Developers running multiple Codex/Claude/opencode sessions in tmux.\n- AI native 点：Makes concurrent agent state visible in the developer control surface and adds attention alerts for blocked/off-screen agents.\n- 增长/活跃信号：Created 2026-06-19; 20 stars, 1 fork; pushed minutes after creation; topics include ai-agents, claude-code, codex, tmux.\n- 可运行性判断：Shell/tmux install guidance in README; no tmux integration tested locally.\n- 建议动作：Prototype with concurrent local coding-agent sessions; small but practical workflow value.\n\n### 8. [ponikar/phone-for-ai-agent](https://github.com/ponikar/phone-for-ai-agent) - Device Control Agent Runtime - Score 74\n\n- 做什么：Android app plus Node.js server that lets an AI agent control a phone through accessibility/WebSocket commands.\n- 面向谁：Agent researchers and automation builders needing a real mobile-device action surface.\n- AI native 点：Gives an agent a phone-like actuator layer: tap, swipe, navigate, read UI, and operate apps through Android accessibility APIs.\n- 增长/活跃信号：Created 2026-06-18; 18 stars, 2 forks; README clearly describes architecture, network warning, Android app and Node server.\n- 可运行性判断：Native Android plus Node server path documented; high safety risk and no device run performed.\n- 建议动作：Track as a risky but important mobile-agent control surface; audit permissions before any hands-on test.\n\n## Watchlist\n\n- [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) (Coding Agent Security Skill, Score 73)：Agent skill for multi-phase security audits with machine-readable findings and independent verification. 活跃信号：Created 2026-06-18; 50 stars; Cloudflare provenance; README is strong but product surface is a skill rather than standalone app. 建议：Watch and borrow the six-phase audit structure for internal agent QA.\n- [Hanyuyuan6/remote-gpu-trainer](https://github.com/Hanyuyuan6/remote-gpu-trainer) (Agent Skill / Remote Training Ops, Score 72)：Agent skill for deploying, monitoring, and tearing down long GPU jobs across rented infrastructure. 活跃信号：Created 2026-06-18; 38 stars, 6 forks; README lists platform profiles and verification status. 建议：Watch for production proof and safety controls around teardown/cost limits.\n- [MikkoParkkola/trvl](https://github.com/MikkoParkkola/trvl) (Vertical MCP Travel Agent, Score 72)：Go CLI/MCP travel agent for Google Flights and Hotels with trip optimization tools. 活跃信号：Older repo, but pushed 2026-06-20; 40 stars, 5 forks; README has releases, CI, Go install, MCP, examples. 建议：Watch for reliability and legal/API stability; evaluate as vertical-agent case study.\n- [jaswanthsurya007-source/recall-mcp](https://github.com/jaswanthsurya007-source/recall-mcp) (Local Knowledge RAG MCP, Score 70)：Local private knowledge-base MCP server with semantic search for notes/documents. 活跃信号：Created 2026-06-18; 8 stars; README has quickstart, screenshots, demo and CI. 建议：Watch until more adoption or differentiated memory features appear.\n- [allen-hsu/hush](https://github.com/allen-hsu/hush) (Agent-Safe Secrets, Score 69)：Local per-worktree secret injector for keeping .env values out of agent-visible repositories. 活跃信号：Created 2026-06-19; 7 stars; README includes demo and concrete `hush run` workflow. 建议：Keep in safety watchlist; compare with existing secret-management flows.\n\n## Skip Reasons\n\n- [abdokhalil5555/AgenticDeFi-Trainer](https://github.com/abdokhalil5555/AgenticDeFi-Trainer)：Many near-identical forks appeared in search results; high marketing/crypto-agent claims, weak evidence of unique runnable product maturity in this pass.\n- [MADEVAL/MindFluence](https://github.com/MADEVAL/MindFluence)：Prompt-skill/copywriting playbook shape; useful content artifact but outside product-shaped AI app/agent priority.\n- [zyn26/minimax-m3-desktop-app-free-api](https://github.com/zyn26/minimax-m3-desktop-app-free-api)：Model/free-API desktop app claim looked too marketing/SEO-heavy from metadata; not enough trustworthy README/runtime evidence promoted today.\n- [preangelleo/workflow-design-bible](https://github.com/preangelleo/workflow-design-bible)：Meta prompt/constitution generator and skill-style artifact; lower than runnable UI/CLI/API products for this radar.\n\n## 今日趋势观察\n\n1. Coding-agent 周边正在从“启动一个 agent”转向“管理一组 agent loop”：可视化 loop、review gate、tmux 状态、审计 skill 都在解决人机协作控制问题。\n2. MCP 的新机会更偏安全、网关和领域工具面：trust plane、LLM provider gateway、embedded-doc RAG、travel MCP 都把工具调用治理或垂直数据接入做成产品。\n3. Mobile/device control surface 开始出现更直接的 agent actuator，价值高但安全边界更敏感，需要先审权限、网络暴露和可回滚机制。\n\n## 数据观察窗口和关键假设\n\n- 数据窗口：2026-06-18T00:00:00Z to 2026-06-20T07:10:33Z; GitHub Search API queries for newly created and recently pushed AI/agent/MCP/RAG repositories, plus README/root metadata spot checks.\n- 信息来源：GitHub Search API repository metadata; GitHub repository README API spot checks for selected candidates; local SQLite history for dedupe against 2026-06-16..2026-06-19 picks.\n- 关键假设：Scores prioritize product-shaped repos with runnable CLI/UI/API/MCP surfaces, recent creation/update signals, README install/use guidance, and clear user scenario. This run did not clone, install, run Docker, execute tests, or verify demos locally; stars/forks are GitHub API point-in-time signals, not confirmed velocity deltas.\n- 是否做过实时仓库审计：做过 GitHub API 元数据和 README API 抽查；未做 clone/install/Docker/npm/pytest/本地运行审计。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "ksimback/looper",
+      "url": "https://github.com/ksimback/looper",
+      "category": "Coding Agent Control Plane",
+      "score": 88,
+      "summary": "Visual planner for designing review-gated Claude Code/Codex agent loops before execution.",
+      "audience": "Developers running coding agents who need repeatable loop design and human review checkpoints.",
+      "ai_native_angle": "Treats agent iteration itself as a designed workflow with gates, loops, and review points.",
+      "growth_signal": "Created 2026-06-18; 60 stars, 5 forks; pushed 2026-06-19; README has CLI/examples and explicitly targets Claude Code/Codex loops.",
+      "runnability": "Python project with install/use guidance and CLI-shaped workflow in README; no local run performed.",
+      "recommended_action": "Try locally first; if the CLI flow is solid, add to control-plane experiment track."
+    },
+    {
+      "rank": 2,
+      "full_name": "abluva-research/mcp-trust-plane",
+      "url": "https://github.com/abluva-research/mcp-trust-plane",
+      "category": "MCP Security / Policy Plane",
+      "score": 87,
+      "summary": "Pluggable filter framework for MCP traffic that can allow, block, redact, modify, or truncate tool calls.",
+      "audience": "Teams exposing sensitive data/tools through MCP who need guardrails without rewriting upstream servers.",
+      "ai_native_angle": "Adds a policy enforcement layer directly into agent tool-call traffic, covering PII, destructive SQL, response size, and abuse control.",
+      "growth_signal": "Created 2026-06-18; 54 stars, 10 forks; pushed 2026-06-19; README includes quickstart, Docker, npm/API/CLI cues.",
+      "runnability": "README indicates Docker/quickstart/demo/API paths; no live gateway run performed.",
+      "recommended_action": "Promote to long-term watch and compare against existing MCP gateway/governance picks."
+    },
+    {
+      "rank": 3,
+      "full_name": "spronta/crawlie",
+      "url": "https://github.com/spronta/crawlie",
+      "category": "Agent-Ready SEO/GEO Crawler",
+      "score": 84,
+      "summary": "Local technical SEO and generative-engine optimization crawler with CLI and MCP server surfaces.",
+      "audience": "SEO/GEO operators and agents auditing websites for broken links, metadata, redirects, and AI-search readiness.",
+      "ai_native_angle": "Turns crawler findings into agent-consumable checks and exposes an MCP server, making website audits callable from assistants.",
+      "growth_signal": "Created 2026-06-18; 27 stars, 2 forks; pushed 2026-06-19; README advertises npm package, CLI, MCP server, setup docs and CI.",
+      "runnability": "npm/CLI/MCP setup documented; no crawl was executed locally.",
+      "recommended_action": "Run on one controlled site and evaluate whether the MCP output is usable for automated remediation."
+    },
+    {
+      "rank": 4,
+      "full_name": "joeseesun/qiaomu-llm-mcp",
+      "url": "https://github.com/joeseesun/qiaomu-llm-mcp",
+      "category": "Local LLM Provider Gateway",
+      "score": 82,
+      "summary": "Local MCP gateway for multi-provider LLM routing, secrets, and multi-model discussion workflows.",
+      "audience": "Codex/Claude/MCP users juggling multiple model providers and local API keys.",
+      "ai_native_angle": "Makes model choice, key storage, multi-model comparison, and HeavySkill-style discussion callable as one MCP tool surface.",
+      "growth_signal": "Created 2026-06-19; 36 stars, 1 fork; README describes local-first registry, macOS Keychain, provider routing and MCP client usage.",
+      "runnability": "Python/pip/MCP/CLI examples present; no keychain or provider call was tested.",
+      "recommended_action": "Watch closely; useful experiment for local model routing and secret-handling patterns."
+    },
+    {
+      "rank": 5,
+      "full_name": "ByteAsk/ByteAsk-Embedded-MCP",
+      "url": "https://github.com/ByteAsk/ByteAsk-Embedded-MCP",
+      "category": "Domain RAG MCP",
+      "score": 80,
+      "summary": "Source-grounded, page-cited retrieval MCP server for embedded and firmware reference docs.",
+      "audience": "Firmware, driver, protocol, and embedded developers using coding agents that need exact reference facts.",
+      "ai_native_angle": "Narrows RAG to high-risk technical documentation and exposes cited retrieval to Claude Code, Codex, Cursor and MCP clients.",
+      "growth_signal": "Created 2026-06-19; 17 stars; pushed 2026-06-19; README has quickstart, hosted badge, Python/uv, demo/API/CLI/MCP signals.",
+      "runnability": "Python 3.10+/uv and MCP setup documented; no hosted endpoint or local server run tested.",
+      "recommended_action": "Add to vertical RAG watchlist and test on one real datasheet/reference task."
+    },
+    {
+      "rank": 6,
+      "full_name": "browser-use/browser-agent-template",
+      "url": "https://github.com/browser-use/browser-agent-template",
+      "category": "Browser Agent App Template",
+      "score": 78,
+      "summary": "Fork-and-deploy Vercel template for a web-browsing agent backed by Browser Use cloud browser.",
+      "audience": "Builders who want a deployable browser-agent web app scaffold quickly.",
+      "ai_native_angle": "Packages a browsing agent into a deployable product shell rather than a raw automation script.",
+      "growth_signal": "Created 2026-06-18; 15 stars, 2 forks; README includes Vercel deploy button, env configuration, screenshot/banner and API key setup.",
+      "runnability": "Vercel deployment path and npm-style app cues are present; no deployment performed.",
+      "recommended_action": "Use as a reference scaffold for browser-agent UX and deployment ergonomics."
+    },
+    {
+      "rank": 7,
+      "full_name": "Gentleman-Programming/tmux-agent-state",
+      "url": "https://github.com/Gentleman-Programming/tmux-agent-state",
+      "category": "Agent Runtime Observability",
+      "score": 76,
+      "summary": "tmux tab-bar status indicator that shows whether coding agents are working, blocked, idle, or need attention.",
+      "audience": "Developers running multiple Codex/Claude/opencode sessions in tmux.",
+      "ai_native_angle": "Makes concurrent agent state visible in the developer control surface and adds attention alerts for blocked/off-screen agents.",
+      "growth_signal": "Created 2026-06-19; 20 stars, 1 fork; pushed minutes after creation; topics include ai-agents, claude-code, codex, tmux.",
+      "runnability": "Shell/tmux install guidance in README; no tmux integration tested locally.",
+      "recommended_action": "Prototype with concurrent local coding-agent sessions; small but practical workflow value."
+    },
+    {
+      "rank": 8,
+      "full_name": "ponikar/phone-for-ai-agent",
+      "url": "https://github.com/ponikar/phone-for-ai-agent",
+      "category": "Device Control Agent Runtime",
+      "score": 74,
+      "summary": "Android app plus Node.js server that lets an AI agent control a phone through accessibility/WebSocket commands.",
+      "audience": "Agent researchers and automation builders needing a real mobile-device action surface.",
+      "ai_native_angle": "Gives an agent a phone-like actuator layer: tap, swipe, navigate, read UI, and operate apps through Android accessibility APIs.",
+      "growth_signal": "Created 2026-06-18; 18 stars, 2 forks; README clearly describes architecture, network warning, Android app and Node server.",
+      "runnability": "Native Android plus Node server path documented; high safety risk and no device run performed.",
+      "recommended_action": "Track as a risky but important mobile-agent control surface; audit permissions before any hands-on test."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "category": "Coding Agent Security Skill",
+      "score": 73,
+      "summary": "Agent skill for multi-phase security audits with machine-readable findings and independent verification.",
+      "audience": "Security teams and coding-agent users auditing codebases.",
+      "ai_native_angle": "Turns vulnerability hunting into an orchestrated skill workflow.",
+      "growth_signal": "Created 2026-06-18; 50 stars; Cloudflare provenance; README is strong but product surface is a skill rather than standalone app.",
+      "runnability": "Skill install/usage documented; no audit run performed.",
+      "recommended_action": "Watch and borrow the six-phase audit structure for internal agent QA."
+    },
+    {
+      "full_name": "Hanyuyuan6/remote-gpu-trainer",
+      "url": "https://github.com/Hanyuyuan6/remote-gpu-trainer",
+      "category": "Agent Skill / Remote Training Ops",
+      "score": 72,
+      "summary": "Agent skill for deploying, monitoring, and tearing down long GPU jobs across rented infrastructure.",
+      "audience": "ML builders using agents to operate AutoDL, RunPod, vast.ai, Slurm, Kubernetes, or bare SSH jobs.",
+      "ai_native_angle": "Gives coding agents an operational playbook for remote GPU lifecycle management.",
+      "growth_signal": "Created 2026-06-18; 38 stars, 6 forks; README lists platform profiles and verification status.",
+      "runnability": "Skill files and CLI/API provider cues; no remote provider credentials tested.",
+      "recommended_action": "Watch for production proof and safety controls around teardown/cost limits."
+    },
+    {
+      "full_name": "MikkoParkkola/trvl",
+      "url": "https://github.com/MikkoParkkola/trvl",
+      "category": "Vertical MCP Travel Agent",
+      "score": 72,
+      "summary": "Go CLI/MCP travel agent for Google Flights and Hotels with trip optimization tools.",
+      "audience": "Travel hackers and agent users who want flight/hotel search from terminal or MCP clients.",
+      "ai_native_angle": "Presents travel search and optimization as 43 MCP tools behind a single binary.",
+      "growth_signal": "Older repo, but pushed 2026-06-20; 40 stars, 5 forks; README has releases, CI, Go install, MCP, examples.",
+      "runnability": "Single-binary/Go install and MCP docs present; no API behavior tested.",
+      "recommended_action": "Watch for reliability and legal/API stability; evaluate as vertical-agent case study."
+    },
+    {
+      "full_name": "jaswanthsurya007-source/recall-mcp",
+      "url": "https://github.com/jaswanthsurya007-source/recall-mcp",
+      "category": "Local Knowledge RAG MCP",
+      "score": 70,
+      "summary": "Local private knowledge-base MCP server with semantic search for notes/documents.",
+      "audience": "Claude/Codex users wanting private searchable memory over local files.",
+      "ai_native_angle": "Exposes search/read/add memory tools to assistants over MCP.",
+      "growth_signal": "Created 2026-06-18; 8 stars; README has quickstart, screenshots, demo and CI.",
+      "runnability": "Python/pip/MCP setup documented; no index/search run performed.",
+      "recommended_action": "Watch until more adoption or differentiated memory features appear."
+    },
+    {
+      "full_name": "allen-hsu/hush",
+      "url": "https://github.com/allen-hsu/hush",
+      "category": "Agent-Safe Secrets",
+      "score": 69,
+      "summary": "Local per-worktree secret injector for keeping .env values out of agent-visible repositories.",
+      "audience": "Developers using coding agents in repos with sensitive local secrets.",
+      "ai_native_angle": "Addresses a practical agent safety failure mode: secrets leaking into model context or commits.",
+      "growth_signal": "Created 2026-06-19; 7 stars; README includes demo and concrete `hush run` workflow.",
+      "runnability": "Go tool with install/run patterns; no macOS secret flow tested.",
+      "recommended_action": "Keep in safety watchlist; compare with existing secret-management flows."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "abdokhalil5555/AgenticDeFi-Trainer",
+      "url": "https://github.com/abdokhalil5555/AgenticDeFi-Trainer",
+      "skip_reason": "Many near-identical forks appeared in search results; high marketing/crypto-agent claims, weak evidence of unique runnable product maturity in this pass."
+    },
+    {
+      "full_name": "MADEVAL/MindFluence",
+      "url": "https://github.com/MADEVAL/MindFluence",
+      "skip_reason": "Prompt-skill/copywriting playbook shape; useful content artifact but outside product-shaped AI app/agent priority."
+    },
+    {
+      "full_name": "zyn26/minimax-m3-desktop-app-free-api",
+      "url": "https://github.com/zyn26/minimax-m3-desktop-app-free-api",
+      "skip_reason": "Model/free-API desktop app claim looked too marketing/SEO-heavy from metadata; not enough trustworthy README/runtime evidence promoted today."
+    },
+    {
+      "full_name": "preangelleo/workflow-design-bible",
+      "url": "https://github.com/preangelleo/workflow-design-bible",
+      "skip_reason": "Meta prompt/constitution generator and skill-style artifact; lower than runnable UI/CLI/API products for this radar."
+    }
+  ]
+}

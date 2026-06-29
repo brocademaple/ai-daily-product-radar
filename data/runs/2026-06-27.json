@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-06-27",
+  "generated_at": "2026-06-27T10:38:00+08:00",
+  "data_window": "2026-06-24 00:00 UTC to 2026-06-27 02:30 UTC; GitHub Search API for recently created/pushed AI agent, MCP, Codex/Claude, browser-agent, workflow and RAG repositories; README and root-content audit for shortlisted repositories.",
+  "source_summary": "GitHub Search API result files in /tmp/radar_created_agent.json, /tmp/radar_mcp_simple.json, /tmp/radar_coding_simple.json, /tmp/radar_claude_simple.json, /tmp/radar_browser_simple.json; GitHub repository metadata, README, and root contents via GitHub API for shortlisted projects.",
+  "trend_observations": "Agent-native work is moving toward work-thread mentions, local/remote coding-agent control surfaces, sandboxed tool execution, durable memory, browser automation, and vertical AI workflows with explicit UI/CLI/API surfaces.",
+  "assumptions": "Prioritized repositories created or pushed in the last 24-72 hours with product-shaped UI/CLI/API, docs, examples, screenshots, Docker or release paths. Stars are directional discovery signals; no repositories were cloned or run locally. Pure lists, prompt/methodology repos, training/book repos, and thin SDK/wrapper repos were downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-27\n\n## 数据观察窗口\n\n- 窗口：2026-06-24 00:00 UTC to 2026-06-27 02:30 UTC; GitHub Search API for recently created/pushed AI agent, MCP, Codex/Claude, browser-agent, workflow and RAG repositories; README and root-content audit for shortlisted repositories.\n- 信息来源：GitHub Search API result files in /tmp/radar_created_agent.json, /tmp/radar_mcp_simple.json, /tmp/radar_coding_simple.json, /tmp/radar_claude_simple.json, /tmp/radar_browser_simple.json; GitHub repository metadata, README, and root contents via GitHub API for shortlisted projects.\n- 实时仓库审计：已做 GitHub API 元数据、README 与根目录文件审计；未 clone、未安装依赖、未运行 Docker/CLI/UI。\n- 关键假设：Prioritized repositories created or pushed in the last 24-72 hours with product-shaped UI/CLI/API, docs, examples, screenshots, Docker or release paths. Stars are directional discovery signals; no repositories were cloned or run locally. Pure lists, prompt/methodology repos, training/book repos, and thin SDK/wrapper repos were downgraded or skipped.\n\n## Top Projects\n\n### 1. [amplifthq/opentag](https://github.com/amplifthq/opentag)\n- 分类：Agent Mentions / Work-thread Automation\n- AI Native Product Score：92\n- 做什么：Open-source @agent mention layer for GitHub and Slack that routes scoped work requests to local or hosted runners for Claude Code, Codex, or custom agents, then posts results back to the thread.\n- 面向谁：Engineering teams that want agents to operate inside existing GitHub issue, PR, and Slack workflows with audit trails and approvals.\n- AI native 点：It turns a work-thread mention into a bounded agent run with scoped dispatch, leases, callbacks, audit events, approvals, and executor adapters for Claude Code/Codex.\n- 增长/活跃信号：Created 2026-06-24; GitHub API showed about 297 stars, 28 forks, TypeScript monorepo, pushed 2026-06-26, release/npm badges, apps/packages/examples/docs/skills and smoke tests.\n- 可运行性判断：README documents Node 22 + pnpm, pnpm install/test/smoke/build, .env setup, GitHub-to-echo and GitHub-to-PR examples, local runner via opentagd, and validated GitHub/Slack smoke flows.\n- 建议动作：High priority experiment: run the GitHub-to-PR example and test a Codex runner against one real issue with approval callbacks.\n### 2. [kevin333353/jobsmith](https://github.com/kevin333353/jobsmith)\n- 分类：Vertical Multi-agent Job-search Copilot\n- AI Native Product Score：90\n- 做什么：Taiwan-market multi-agent job-search copilot that finds jobs, reviews resumes, creates tailored application packages, researches companies, and runs interview practice.\n- 面向谁：Job seekers in Taiwan and builders of vertical AI workflow apps that need an end-to-end local assistant pattern.\n- AI native 点：Multi-agent orchestration is embedded in a concrete user workflow: job discovery, matching, application package generation, company intelligence, and interview preparation.\n- 增长/活跃信号：Created 2026-06-24; about 44 stars, 4 forks, pushed 2026-06-27; Python/React/TypeScript app with docs, frontend, desktop launcher, tests, setup scripts, releases and privacy docs.\n- 可运行性判断：README points to a Windows release .exe, local source quickstart, setup.bat/setup.sh, desktop.py, requirements.txt, pyproject.toml, and support for local Claude Code/Codex CLI or BYOK OpenAI-compatible models.\n- 建议动作：Create a vertical-agent product card and inspect the LangGraph/work queue implementation as a reusable pattern for application-package workflows.\n### 3. [lxcshine/nexusbox](https://github.com/lxcshine/nexusbox)\n- 分类：Agent Sandbox / MCP Tool Runtime\n- AI Native Product Score：88\n- 做什么：Secure sandbox platform that exposes shell, file, code, browser, port proxy and Jupyter/VS Code style capabilities to AI agents through MCP.\n- 面向谁：Agent platform builders and teams that need controlled execution for local or multi-tenant AI tools.\n- AI native 点：It treats sandboxed execution as a first-class agent runtime primitive, with MCP tools, workspace isolation, path traversal protection, network policy and tenant boundaries.\n- 增长/活跃信号：Created 2026-06-24; about 30 stars, 4 forks, pushed 2026-06-27; Go repo with Makefile, cmd/pkg/deploy/docs/monitoring/tests, architecture image and quick-start docs.\n- 可运行性判断：README advertises one-command Docker deploy, Kubernetes/CRI compatibility, 18 MCP tools, quick-start guides, Docker deployment and API reference; this run did not execute the container.\n- 建议动作：Run Docker quick start and test whether Codex can safely execute file/shell/browser tools inside the sandbox without host leakage.\n### 4. [parsehawk/parsehawk](https://github.com/parsehawk/parsehawk)\n- 分类：Local-first Document AI / API CLI Web UI\n- AI Native Product Score：86\n- 做什么：Local-first document AI for PDFs/scans with API, CLI and Web UI, designed to run fully locally by default.\n- 面向谁：Knowledge workers, compliance teams and developers who need private document extraction and local AI workflows.\n- AI native 点：AI document understanding is packaged as a full product surface across CLI, API and Web UI, not a notebook-only extraction demo.\n- 增长/活跃信号：Created 2026-06-25; about 27 stars, 4 forks, pushed 2026-06-26; Python monorepo with apps, docker, docs, tests, pnpm workspace, pyproject and uv lock.\n- 可运行性判断：README includes quickstart, first extraction, API/CLI/Web UI sections, Python 3.11/3.12 support and local-by-default positioning; no local extraction smoke test was run today.\n- 建议动作：Add to document-AI watchlist and run one real PDF extraction through CLI plus Web UI before promoting to adoption.\n### 5. [FishCodeTech/muteki](https://github.com/FishCodeTech/muteki)\n- 分类：Security Agent Swarm / CTF Automation\n- AI Native Product Score：84\n- 做什么：Autonomous multi-model CTF-solving AI agent swarm for offensive and defensive security automation.\n- 面向谁：Security researchers, CTF teams and agent builders exploring benchmarkable multi-agent task solving.\n- AI native 点：The core product is a coordinated agent swarm with model diversity, scheduling, tools, evals and CTF task automation rather than a passive security guide.\n- 增长/活跃信号：Created 2026-06-24; about 109 stars, 15 forks, pushed 2026-06-25; Python repo with apps, cmd, docker, docs, examples, evals, skills, tests, run.sh and init.sh.\n- 可运行性判断：README advertises Python >=3.13, Claude Code/Codex/Cursor engines, .env/mcp examples, docker directory, run scripts and benchmark claims; security scope requires cautious isolated audit.\n- 建议动作：Track as security-agent experiment, but only run in an isolated environment and verify benchmark claims before citing capability.\n### 6. [Gitlawb/memlawb](https://github.com/Gitlawb/memlawb)\n- 分类：Zero-knowledge Agent Memory / MCP\n- AI Native Product Score：83\n- 做什么：Self-hostable, end-to-end encrypted memory layer for AI agents where the server stores only ciphertext and agents access memory through MCP/CLI flows.\n- 面向谁：Claude/Codex/opencode users and agent teams that need durable memory without exposing private project facts to a hosted service.\n- AI native 点：Agent memory becomes a portable encrypted product primitive: local key derivation, delta sync, provider-neutral MCP, self-hosted storage and client/server boundaries.\n- 增长/活跃信号：Created 2026-06-25; about 20 stars, 4 forks, pushed 2026-06-26; TypeScript repo with Dockerfile, migrations, client, skills, src, tests, npm badge and CI.\n- 可运行性判断：README shows npm package, Bun requirement, CLI push flow, Docker/self-hostable positioning and built-in MCP server; direct install was not performed.\n- 建议动作：Compare against prior memory candidates on privacy model, schema, MCP tools and local key handling; valuable for long-running agent workflows.\n### 7. [rickicode/patchright-browser](https://github.com/rickicode/patchright-browser)\n- 分类：Browser Automation MCP / Multi-profile Agent Browser\n- AI Native Product Score：81\n- 做什么：Patchright-based MCP server that gives agents a real Chromium browser plus profile dashboard for navigation, clicking, typing, screenshots and extraction.\n- 面向谁：Agent builders who need browser automation with persistent profiles, headed/headless modes and inspectable account/profile management.\n- AI native 点：Browser state and profiles are exposed as agent tools over MCP with a management dashboard, turning web browsing into a reusable agent runtime surface.\n- 增长/活跃信号：Created 2026-06-24; about 18 stars, 2 forks; Python repo with install/uninstall scripts, dashboard.py, dashboard screenshot, login screenshot, skills and lib/bin folders.\n- 可运行性判断：README has MCP Streamable HTTP setup snippets for Claude Code, Claude Desktop, Cursor, Hermes and Codex plus a password-protected profile dashboard; no live browser test today.\n- 建议动作：Run a local profile-isolation audit and check permission boundaries before using it for logged-in browsing tasks.\n### 8. [burakgon/remote-coder](https://github.com/burakgon/remote-coder)\n- 分类：Remote Coding-agent Control / PWA\n- AI Native Product Score：80\n- 做什么：Self-hosted web/PWA surface that runs the real Claude Code CLI on your machine and lets you drive sessions, answer prompts and move files from phone or browser.\n- 面向谁：Developers who want mobile or LAN access to their local coding-agent sessions without moving code to a hosted workspace.\n- AI native 点：It closes a practical agent-control loop: remote session start, prompt answering, streaming chat, file transfer, stop/resume/rewind and token-gated access to a host-native CLI.\n- 增长/活跃信号：Created 2026-06-25; about 18 stars, pushed 2026-06-26; TypeScript pnpm workspace with packages, docs, tests and mobile screenshots.\n- 可运行性判断：README describes self-hosted server, installable PWA, mandatory access token, macOS/Linux support and use of the real local claude CLI; no server run was performed.\n- 建议动作：Watch for Codex support or fork pattern; test only on a trusted LAN with strict token and process-boundary review.\n### 9. [hchcx/manage-my-skills](https://github.com/hchcx/manage-my-skills)\n- 分类：Agent Skills Manager / Desktop Workbench\n- AI Native Product Score：78\n- 做什么：Cross-platform desktop workbench for discovering, comparing, syncing, backing up and health-checking AI agent skills across Claude Code, Cursor, Windsurf, Zed, Trae, Codex and other tools.\n- 面向谁：Power users and teams whose reusable agent skills are spread across multiple coding assistants and project/global locations.\n- AI native 点：It treats agent skills as managed local assets with discovery, preview, safe sync, backup/rename, health diagnostics and multi-tool compatibility.\n- 增长/活跃信号：Created 2026-06-24; about 16 stars, 2 forks, pushed 2026-06-26; TypeScript/Tauri repo with screenshots, Rust backend, Vite app, scripts and design QA.\n- 可运行性判断：README shows 11 feature screenshots and package/Tauri structure; needs hands-on build audit for macOS/Windows packaging and filesystem safety.\n- 建议动作：Watch and compare with local skill-routing needs; promote if sync conflict handling and backups are robust.\n### 10. [Maouv/ForkFlow](https://github.com/Maouv/ForkFlow)\n- 分类：Visual Agent Workflow Orchestration\n- AI Native Product Score：76\n- 做什么：Self-hosted visual node-based agent orchestration platform with React Flow frontend, FastAPI backend, SQLite, WebSockets and Docker Compose.\n- 面向谁：Builders who want to design and run multi-node agent workflows with visible execution logs and provider-specific agent profiles.\n- AI native 点：Agent workflows become editable product objects: node types, conditional routing, agent profiles, tool whitelists, execution history, auth, encrypted provider keys and logs.\n- 增长/活跃信号：Created 2026-06-24; about 15 stars, pushed 2026-06-25; repo includes frontend/backend, docker-compose, setup/start scripts, product/design/implementation docs.\n- 可运行性判断：README includes Docker Compose quick start and feature list; no browser or API smoke test was run.\n- 建议动作：Put in experiment queue after OpenTag/NexusBox; evaluate whether the visual editor is stable enough for internal agent-workflow prototyping.\n\n## Watchlist\n\n### [pexni/smails](https://github.com/pexni/smails)\n- 分类：Agent-native Disposable Email / MCP\n- Score：74\n- 简述：Cloudflare Workers + Durable Objects disposable inbox with web, REST API, CLI and MCP so agents can receive verification codes and magic links.\n- 面向谁：Agent builders automating signup/test workflows.\n- AI native 点：Email inbox becomes an agent tool through MCP and CLI, useful for closed-loop web automation.\n- 增长/活跃信号：Created 2026-06-24; about 28 stars, 2 forks, pushed 2026-06-26; npm CLI and live smails.dev link.\n- 可运行性判断：README documents npx @smails/cli create/inbox/read and MCP command setup.\n- 建议动作：Watch; test with a browser-agent signup flow and review abuse controls.\n### [lambda-alpha-labs/Graphenium](https://github.com/lambda-alpha-labs/Graphenium)\n- 分类：Code Graph Memory / MCP\n- Score：73\n- 简述：Rust provenance-aware structural memory for AI coding agents, turning a repo into a persistent queryable graph with confidence and source provenance.\n- 面向谁：Coding-agent users on large repos.\n- AI native 点：Gives agents durable structural orientation, blast-radius queries and CI trust gates.\n- 增长/活跃信号：Created 2026-06-24; about 12 stars, 1 fork, pushed 2026-06-26; Rust repo with docs, tests, install.sh and skills.\n- 可运行性判断：README references demo gif, gm check and MCP-first workflows.\n- 建议动作：Watch and compare to prior graph/context-memory candidates before running.\n### [ofekron/better-agent](https://github.com/ofekron/better-agent)\n- 分类：Local Coding-agent Workspace\n- Score：72\n- 简述：Local web workspace for Claude, Codex, Gemini and compatible providers with sessions, traces, browser access and LAN/mobile surfaces.\n- 面向谁：Developers wanting one local hub for multiple coding-agent providers.\n- AI native 点：Aggregates local provider sessions, tool traces and project context into one inspectable workspace.\n- 增长/活跃信号：Created 2026-06-24; about 10 stars, 2 forks, pushed 2026-06-27; frontend/backend/desktop/extensions/sdk structure.\n- 可运行性判断：README and INSTALL/SPEC docs exist, but product is broad and needs verification.\n- 建议动作：Watch for install stability; avoid prioritizing before OpenTag/Remote Coder.\n### [EOSKILLZ/LocalOwl](https://github.com/EOSKILLZ/LocalOwl)\n- 分类：Local AI PR Reviewer\n- Score：70\n- 简述：Self-hosted GitHub PR reviewer that uses a local LM Studio model and comments approve/deny review findings on pull requests.\n- 面向谁：Teams that want local LLM code review without sending code to cloud services.\n- AI native 点：Turns local model review into a GitHub bot workflow with webhook and comment commands.\n- 增长/活跃信号：Created 2026-06-24; about 12 stars, 1 fork; Python repo with .env, requirements, main.py and src.\n- 可运行性判断：README documents venv install, LM Studio dependency, GitHub App/PAT setup and webhook mode.\n- 建议动作：Watch as simple local-review baseline; compare against mature review agents.\n### [therealm-tech/oas2mcp](https://github.com/therealm-tech/oas2mcp)\n- 分类：OpenAPI to MCP Tool Generator\n- Score：69\n- 简述：Rust server that turns any OpenAPI document into MCP tools over stdio, streamable-http or SSE-compatible modes.\n- 面向谁：Teams converting internal APIs into agent-accessible tools.\n- AI native 点：Reduces glue code for agent tool creation and supports reloading authenticated OpenAPI specs.\n- 增长/活跃信号：Created 2026-06-25; about 9 stars; Rust repo with Dockerfile, charts, examples, tests and Cargo.lock.\n- 可运行性判断：README describes file/URL OpenAPI input, auth headers, periodic reload and MCP transports.\n- 建议动作：Watch; run against one internal OpenAPI spec when permissioning is solved.\n### [EASYHOME-DOORVERSE/dw-mcp-ai-permission-center](https://github.com/EASYHOME-DOORVERSE/dw-mcp-ai-permission-center)\n- 分类：MCP Permission Center / RBAC\n- Score：68\n- 简述：Java/Spring AI RBAC permission center for MCP tools, dynamic JDBC/HTTP tool exposure, API keys and admin UI.\n- 面向谁：Enterprise teams worried about MCP tool visibility, SQL/API access control and multi-client permissions.\n- AI native 点：Permissioning and tool visibility become central MCP product functions.\n- 增长/活跃信号：Created 2026-06-26; about 7 stars; Java repo with API/server/UI modules, README_EN and changelog.\n- 可运行性判断：README has architecture, tech stack and module structure; no deployment audit yet.\n- 建议动作：Watch as enterprise MCP governance signal.\n\n## Skip Reasons\n\n- [benchflow-ai/awesome-evals](https://github.com/benchflow-ai/awesome-evals)：High stars and relevant to agent evaluation, but it is a curated resource/list rather than runnable AI-native product software.\n- [Pluviobyte/video-production-skills](https://github.com/Pluviobyte/video-production-skills)：Skill library for content creation; useful as agent capability material, but weaker independent product/runtime surface than UI/CLI/API tools today.\n- [htooayelwinict/Agentic-AI-Book](https://github.com/htooayelwinict/Agentic-AI-Book)：Book/learning repository with little product runtime evidence.\n- [HiyuCat/deepseek-v4-pro-flash-desktop-app](https://github.com/HiyuCat/deepseek-v4-pro-flash-desktop-app)：Keyword-heavy desktop-app wrapper naming and model-marketing description; insufficient credible runnable product evidence from surfaced metadata.\n- [codertesla/ai-coding-deals](https://github.com/codertesla/ai-coding-deals)：Savings/discount guide for AI coding tools, not a productized AI-native runtime.\n- [itshen/xs_vibe_rules](https://github.com/itshen/xs_vibe_rules)：Rules/prompt guidance for AI coding assistants, useful but outside product-shaped radar focus.\n- [Cuimao777/eterna-image2image-skill](https://github.com/Cuimao777/eterna-image2image-skill)：Codex skill for image style workflow; creative skill asset rather than durable user-facing product or infrastructure surface.\n- [winsznx/theeleven](https://github.com/winsznx/theeleven)：High-star and product-like AI-agent betting/prop-market project, but domain risk and hackathon/crypto market mechanics make it less actionable for current radar experiments.\n\n## 今日趋势观察\n\n1. Agent 从“聊天窗口”继续外移到真实工作线程：OpenTag 把 GitHub/Slack mention 变成可审计、可审批、可回调的 agent run，是今天最强产品信号。\n2. Coding-agent 的本地控制面正在分化：Remote Coder、Better Agent、Manage My Skills 分别覆盖远程操作、多 provider workspace 和技能资产管理。\n3. Agent tool runtime 的安全层更具体了：NexusBox、Patchright Browser、DW MCP Permission Center 都在围绕执行隔离、浏览器 profile、RBAC 和工具可见性做产品化。\n4. 记忆层从简单 session notes 走向可验证基础设施：memlawb 强调零知识同步，Agent Memory Engine 和 Graphenium 强调 evidence/provenance-backed project memory。\n5. 垂直 AI app 仍然有更高复刻价值：Jobsmith 和 ParseHawk 都有明确用户场景、桌面/Web/CLI/API 路径和本地优先叙事，比泛 agent 框架更容易验证。\n\n## 今日建议动作\n\n- 第一优先级：试跑 OpenTag 的 GitHub-to-PR 示例，把一个 GitHub issue 路由给 Codex/Claude executor，验证 approval/callback/audit trail。\n- 第二优先级：用 NexusBox 做一个 agent sandbox smoke test，确认 shell/file/browser MCP 工具是否真的限制在 workspace 内。\n- 第三优先级：给 Jobsmith 建项目卡并拆解其多 agent 求职工作包流水线，作为垂直 AI workflow 参考。\n- 安全跟踪：Patchright Browser、Remote Coder、memlawb 都涉及浏览器 profile、远程控制或持久私密记忆，进入实验前先审权限和密钥边界。\n\n## 信息来源与假设\n\n- GitHub Search API：`created:>=2026-06-24` 与 `pushed:>=2026-06-24` 的 agent/MCP/Codex/Claude/browser-agent/workflow/RAG 查询。\n- README/root audit：短名单项目使用 GitHub API 读取 repo metadata、README 和 root contents。\n- Score 是 AI Native Product Score，偏向可运行产品面、明确用户场景、README/文档完整度、近 24-72 小时新建或活跃、可复刻价值。\n- 今天没有本地 runtime audit；所有“可运行性判断”均为 README/目录层判断，需后续 clone/install 验证。\n- 类型级跳过原因：awesome/list、book/learning、prompt/rules、纯 skill collection、模型营销 wrapper、折扣信息站、论文/训练代码，即使增长高也不进入 Top。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "amplifthq/opentag",
+      "url": "https://github.com/amplifthq/opentag",
+      "category": "Agent Mentions / Work-thread Automation",
+      "score": 92,
+      "summary": "Open-source @agent mention layer for GitHub and Slack that routes scoped work requests to local or hosted runners for Claude Code, Codex, or custom agents, then posts results back to the thread.",
+      "audience": "Engineering teams that want agents to operate inside existing GitHub issue, PR, and Slack workflows with audit trails and approvals.",
+      "ai_native_angle": "It turns a work-thread mention into a bounded agent run with scoped dispatch, leases, callbacks, audit events, approvals, and executor adapters for Claude Code/Codex.",
+      "growth_signal": "Created 2026-06-24; GitHub API showed about 297 stars, 28 forks, TypeScript monorepo, pushed 2026-06-26, release/npm badges, apps/packages/examples/docs/skills and smoke tests.",
+      "runnability": "README documents Node 22 + pnpm, pnpm install/test/smoke/build, .env setup, GitHub-to-echo and GitHub-to-PR examples, local runner via opentagd, and validated GitHub/Slack smoke flows.",
+      "recommended_action": "High priority experiment: run the GitHub-to-PR example and test a Codex runner against one real issue with approval callbacks."
+    },
+    {
+      "rank": 2,
+      "full_name": "kevin333353/jobsmith",
+      "url": "https://github.com/kevin333353/jobsmith",
+      "category": "Vertical Multi-agent Job-search Copilot",
+      "score": 90,
+      "summary": "Taiwan-market multi-agent job-search copilot that finds jobs, reviews resumes, creates tailored application packages, researches companies, and runs interview practice.",
+      "audience": "Job seekers in Taiwan and builders of vertical AI workflow apps that need an end-to-end local assistant pattern.",
+      "ai_native_angle": "Multi-agent orchestration is embedded in a concrete user workflow: job discovery, matching, application package generation, company intelligence, and interview preparation.",
+      "growth_signal": "Created 2026-06-24; about 44 stars, 4 forks, pushed 2026-06-27; Python/React/TypeScript app with docs, frontend, desktop launcher, tests, setup scripts, releases and privacy docs.",
+      "runnability": "README points to a Windows release .exe, local source quickstart, setup.bat/setup.sh, desktop.py, requirements.txt, pyproject.toml, and support for local Claude Code/Codex CLI or BYOK OpenAI-compatible models.",
+      "recommended_action": "Create a vertical-agent product card and inspect the LangGraph/work queue implementation as a reusable pattern for application-package workflows."
+    },
+    {
+      "rank": 3,
+      "full_name": "lxcshine/nexusbox",
+      "url": "https://github.com/lxcshine/nexusbox",
+      "category": "Agent Sandbox / MCP Tool Runtime",
+      "score": 88,
+      "summary": "Secure sandbox platform that exposes shell, file, code, browser, port proxy and Jupyter/VS Code style capabilities to AI agents through MCP.",
+      "audience": "Agent platform builders and teams that need controlled execution for local or multi-tenant AI tools.",
+      "ai_native_angle": "It treats sandboxed execution as a first-class agent runtime primitive, with MCP tools, workspace isolation, path traversal protection, network policy and tenant boundaries.",
+      "growth_signal": "Created 2026-06-24; about 30 stars, 4 forks, pushed 2026-06-27; Go repo with Makefile, cmd/pkg/deploy/docs/monitoring/tests, architecture image and quick-start docs.",
+      "runnability": "README advertises one-command Docker deploy, Kubernetes/CRI compatibility, 18 MCP tools, quick-start guides, Docker deployment and API reference; this run did not execute the container.",
+      "recommended_action": "Run Docker quick start and test whether Codex can safely execute file/shell/browser tools inside the sandbox without host leakage."
+    },
+    {
+      "rank": 4,
+      "full_name": "parsehawk/parsehawk",
+      "url": "https://github.com/parsehawk/parsehawk",
+      "category": "Local-first Document AI / API CLI Web UI",
+      "score": 86,
+      "summary": "Local-first document AI for PDFs/scans with API, CLI and Web UI, designed to run fully locally by default.",
+      "audience": "Knowledge workers, compliance teams and developers who need private document extraction and local AI workflows.",
+      "ai_native_angle": "AI document understanding is packaged as a full product surface across CLI, API and Web UI, not a notebook-only extraction demo.",
+      "growth_signal": "Created 2026-06-25; about 27 stars, 4 forks, pushed 2026-06-26; Python monorepo with apps, docker, docs, tests, pnpm workspace, pyproject and uv lock.",
+      "runnability": "README includes quickstart, first extraction, API/CLI/Web UI sections, Python 3.11/3.12 support and local-by-default positioning; no local extraction smoke test was run today.",
+      "recommended_action": "Add to document-AI watchlist and run one real PDF extraction through CLI plus Web UI before promoting to adoption."
+    },
+    {
+      "rank": 5,
+      "full_name": "FishCodeTech/muteki",
+      "url": "https://github.com/FishCodeTech/muteki",
+      "category": "Security Agent Swarm / CTF Automation",
+      "score": 84,
+      "summary": "Autonomous multi-model CTF-solving AI agent swarm for offensive and defensive security automation.",
+      "audience": "Security researchers, CTF teams and agent builders exploring benchmarkable multi-agent task solving.",
+      "ai_native_angle": "The core product is a coordinated agent swarm with model diversity, scheduling, tools, evals and CTF task automation rather than a passive security guide.",
+      "growth_signal": "Created 2026-06-24; about 109 stars, 15 forks, pushed 2026-06-25; Python repo with apps, cmd, docker, docs, examples, evals, skills, tests, run.sh and init.sh.",
+      "runnability": "README advertises Python >=3.13, Claude Code/Codex/Cursor engines, .env/mcp examples, docker directory, run scripts and benchmark claims; security scope requires cautious isolated audit.",
+      "recommended_action": "Track as security-agent experiment, but only run in an isolated environment and verify benchmark claims before citing capability."
+    },
+    {
+      "rank": 6,
+      "full_name": "Gitlawb/memlawb",
+      "url": "https://github.com/Gitlawb/memlawb",
+      "category": "Zero-knowledge Agent Memory / MCP",
+      "score": 83,
+      "summary": "Self-hostable, end-to-end encrypted memory layer for AI agents where the server stores only ciphertext and agents access memory through MCP/CLI flows.",
+      "audience": "Claude/Codex/opencode users and agent teams that need durable memory without exposing private project facts to a hosted service.",
+      "ai_native_angle": "Agent memory becomes a portable encrypted product primitive: local key derivation, delta sync, provider-neutral MCP, self-hosted storage and client/server boundaries.",
+      "growth_signal": "Created 2026-06-25; about 20 stars, 4 forks, pushed 2026-06-26; TypeScript repo with Dockerfile, migrations, client, skills, src, tests, npm badge and CI.",
+      "runnability": "README shows npm package, Bun requirement, CLI push flow, Docker/self-hostable positioning and built-in MCP server; direct install was not performed.",
+      "recommended_action": "Compare against prior memory candidates on privacy model, schema, MCP tools and local key handling; valuable for long-running agent workflows."
+    },
+    {
+      "rank": 7,
+      "full_name": "rickicode/patchright-browser",
+      "url": "https://github.com/rickicode/patchright-browser",
+      "category": "Browser Automation MCP / Multi-profile Agent Browser",
+      "score": 81,
+      "summary": "Patchright-based MCP server that gives agents a real Chromium browser plus profile dashboard for navigation, clicking, typing, screenshots and extraction.",
+      "audience": "Agent builders who need browser automation with persistent profiles, headed/headless modes and inspectable account/profile management.",
+      "ai_native_angle": "Browser state and profiles are exposed as agent tools over MCP with a management dashboard, turning web browsing into a reusable agent runtime surface.",
+      "growth_signal": "Created 2026-06-24; about 18 stars, 2 forks; Python repo with install/uninstall scripts, dashboard.py, dashboard screenshot, login screenshot, skills and lib/bin folders.",
+      "runnability": "README has MCP Streamable HTTP setup snippets for Claude Code, Claude Desktop, Cursor, Hermes and Codex plus a password-protected profile dashboard; no live browser test today.",
+      "recommended_action": "Run a local profile-isolation audit and check permission boundaries before using it for logged-in browsing tasks."
+    },
+    {
+      "rank": 8,
+      "full_name": "burakgon/remote-coder",
+      "url": "https://github.com/burakgon/remote-coder",
+      "category": "Remote Coding-agent Control / PWA",
+      "score": 80,
+      "summary": "Self-hosted web/PWA surface that runs the real Claude Code CLI on your machine and lets you drive sessions, answer prompts and move files from phone or browser.",
+      "audience": "Developers who want mobile or LAN access to their local coding-agent sessions without moving code to a hosted workspace.",
+      "ai_native_angle": "It closes a practical agent-control loop: remote session start, prompt answering, streaming chat, file transfer, stop/resume/rewind and token-gated access to a host-native CLI.",
+      "growth_signal": "Created 2026-06-25; about 18 stars, pushed 2026-06-26; TypeScript pnpm workspace with packages, docs, tests and mobile screenshots.",
+      "runnability": "README describes self-hosted server, installable PWA, mandatory access token, macOS/Linux support and use of the real local claude CLI; no server run was performed.",
+      "recommended_action": "Watch for Codex support or fork pattern; test only on a trusted LAN with strict token and process-boundary review."
+    },
+    {
+      "rank": 9,
+      "full_name": "hchcx/manage-my-skills",
+      "url": "https://github.com/hchcx/manage-my-skills",
+      "category": "Agent Skills Manager / Desktop Workbench",
+      "score": 78,
+      "summary": "Cross-platform desktop workbench for discovering, comparing, syncing, backing up and health-checking AI agent skills across Claude Code, Cursor, Windsurf, Zed, Trae, Codex and other tools.",
+      "audience": "Power users and teams whose reusable agent skills are spread across multiple coding assistants and project/global locations.",
+      "ai_native_angle": "It treats agent skills as managed local assets with discovery, preview, safe sync, backup/rename, health diagnostics and multi-tool compatibility.",
+      "growth_signal": "Created 2026-06-24; about 16 stars, 2 forks, pushed 2026-06-26; TypeScript/Tauri repo with screenshots, Rust backend, Vite app, scripts and design QA.",
+      "runnability": "README shows 11 feature screenshots and package/Tauri structure; needs hands-on build audit for macOS/Windows packaging and filesystem safety.",
+      "recommended_action": "Watch and compare with local skill-routing needs; promote if sync conflict handling and backups are robust."
+    },
+    {
+      "rank": 10,
+      "full_name": "Maouv/ForkFlow",
+      "url": "https://github.com/Maouv/ForkFlow",
+      "category": "Visual Agent Workflow Orchestration",
+      "score": 76,
+      "summary": "Self-hosted visual node-based agent orchestration platform with React Flow frontend, FastAPI backend, SQLite, WebSockets and Docker Compose.",
+      "audience": "Builders who want to design and run multi-node agent workflows with visible execution logs and provider-specific agent profiles.",
+      "ai_native_angle": "Agent workflows become editable product objects: node types, conditional routing, agent profiles, tool whitelists, execution history, auth, encrypted provider keys and logs.",
+      "growth_signal": "Created 2026-06-24; about 15 stars, pushed 2026-06-25; repo includes frontend/backend, docker-compose, setup/start scripts, product/design/implementation docs.",
+      "runnability": "README includes Docker Compose quick start and feature list; no browser or API smoke test was run.",
+      "recommended_action": "Put in experiment queue after OpenTag/NexusBox; evaluate whether the visual editor is stable enough for internal agent-workflow prototyping."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "pexni/smails",
+      "url": "https://github.com/pexni/smails",
+      "category": "Agent-native Disposable Email / MCP",
+      "score": 74,
+      "summary": "Cloudflare Workers + Durable Objects disposable inbox with web, REST API, CLI and MCP so agents can receive verification codes and magic links.",
+      "audience": "Agent builders automating signup/test workflows.",
+      "ai_native_angle": "Email inbox becomes an agent tool through MCP and CLI, useful for closed-loop web automation.",
+      "growth_signal": "Created 2026-06-24; about 28 stars, 2 forks, pushed 2026-06-26; npm CLI and live smails.dev link.",
+      "runnability": "README documents npx @smails/cli create/inbox/read and MCP command setup.",
+      "recommended_action": "Watch; test with a browser-agent signup flow and review abuse controls."
+    },
+    {
+      "full_name": "lambda-alpha-labs/Graphenium",
+      "url": "https://github.com/lambda-alpha-labs/Graphenium",
+      "category": "Code Graph Memory / MCP",
+      "score": 73,
+      "summary": "Rust provenance-aware structural memory for AI coding agents, turning a repo into a persistent queryable graph with confidence and source provenance.",
+      "audience": "Coding-agent users on large repos.",
+      "ai_native_angle": "Gives agents durable structural orientation, blast-radius queries and CI trust gates.",
+      "growth_signal": "Created 2026-06-24; about 12 stars, 1 fork, pushed 2026-06-26; Rust repo with docs, tests, install.sh and skills.",
+      "runnability": "README references demo gif, gm check and MCP-first workflows.",
+      "recommended_action": "Watch and compare to prior graph/context-memory candidates before running."
+    },
+    {
+      "full_name": "ofekron/better-agent",
+      "url": "https://github.com/ofekron/better-agent",
+      "category": "Local Coding-agent Workspace",
+      "score": 72,
+      "summary": "Local web workspace for Claude, Codex, Gemini and compatible providers with sessions, traces, browser access and LAN/mobile surfaces.",
+      "audience": "Developers wanting one local hub for multiple coding-agent providers.",
+      "ai_native_angle": "Aggregates local provider sessions, tool traces and project context into one inspectable workspace.",
+      "growth_signal": "Created 2026-06-24; about 10 stars, 2 forks, pushed 2026-06-27; frontend/backend/desktop/extensions/sdk structure.",
+      "runnability": "README and INSTALL/SPEC docs exist, but product is broad and needs verification.",
+      "recommended_action": "Watch for install stability; avoid prioritizing before OpenTag/Remote Coder."
+    },
+    {
+      "full_name": "EOSKILLZ/LocalOwl",
+      "url": "https://github.com/EOSKILLZ/LocalOwl",
+      "category": "Local AI PR Reviewer",
+      "score": 70,
+      "summary": "Self-hosted GitHub PR reviewer that uses a local LM Studio model and comments approve/deny review findings on pull requests.",
+      "audience": "Teams that want local LLM code review without sending code to cloud services.",
+      "ai_native_angle": "Turns local model review into a GitHub bot workflow with webhook and comment commands.",
+      "growth_signal": "Created 2026-06-24; about 12 stars, 1 fork; Python repo with .env, requirements, main.py and src.",
+      "runnability": "README documents venv install, LM Studio dependency, GitHub App/PAT setup and webhook mode.",
+      "recommended_action": "Watch as simple local-review baseline; compare against mature review agents."
+    },
+    {
+      "full_name": "therealm-tech/oas2mcp",
+      "url": "https://github.com/therealm-tech/oas2mcp",
+      "category": "OpenAPI to MCP Tool Generator",
+      "score": 69,
+      "summary": "Rust server that turns any OpenAPI document into MCP tools over stdio, streamable-http or SSE-compatible modes.",
+      "audience": "Teams converting internal APIs into agent-accessible tools.",
+      "ai_native_angle": "Reduces glue code for agent tool creation and supports reloading authenticated OpenAPI specs.",
+      "growth_signal": "Created 2026-06-25; about 9 stars; Rust repo with Dockerfile, charts, examples, tests and Cargo.lock.",
+      "runnability": "README describes file/URL OpenAPI input, auth headers, periodic reload and MCP transports.",
+      "recommended_action": "Watch; run against one internal OpenAPI spec when permissioning is solved."
+    },
+    {
+      "full_name": "EASYHOME-DOORVERSE/dw-mcp-ai-permission-center",
+      "url": "https://github.com/EASYHOME-DOORVERSE/dw-mcp-ai-permission-center",
+      "category": "MCP Permission Center / RBAC",
+      "score": 68,
+      "summary": "Java/Spring AI RBAC permission center for MCP tools, dynamic JDBC/HTTP tool exposure, API keys and admin UI.",
+      "audience": "Enterprise teams worried about MCP tool visibility, SQL/API access control and multi-client permissions.",
+      "ai_native_angle": "Permissioning and tool visibility become central MCP product functions.",
+      "growth_signal": "Created 2026-06-26; about 7 stars; Java repo with API/server/UI modules, README_EN and changelog.",
+      "runnability": "README has architecture, tech stack and module structure; no deployment audit yet.",
+      "recommended_action": "Watch as enterprise MCP governance signal."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "benchflow-ai/awesome-evals",
+      "url": "https://github.com/benchflow-ai/awesome-evals",
+      "skip_reason": "High stars and relevant to agent evaluation, but it is a curated resource/list rather than runnable AI-native product software."
+    },
+    {
+      "full_name": "Pluviobyte/video-production-skills",
+      "url": "https://github.com/Pluviobyte/video-production-skills",
+      "skip_reason": "Skill library for content creation; useful as agent capability material, but weaker independent product/runtime surface than UI/CLI/API tools today."
+    },
+    {
+      "full_name": "htooayelwinict/Agentic-AI-Book",
+      "url": "https://github.com/htooayelwinict/Agentic-AI-Book",
+      "skip_reason": "Book/learning repository with little product runtime evidence."
+    },
+    {
+      "full_name": "HiyuCat/deepseek-v4-pro-flash-desktop-app",
+      "url": "https://github.com/HiyuCat/deepseek-v4-pro-flash-desktop-app",
+      "skip_reason": "Keyword-heavy desktop-app wrapper naming and model-marketing description; insufficient credible runnable product evidence from surfaced metadata."
+    },
+    {
+      "full_name": "codertesla/ai-coding-deals",
+      "url": "https://github.com/codertesla/ai-coding-deals",
+      "skip_reason": "Savings/discount guide for AI coding tools, not a productized AI-native runtime."
+    },
+    {
+      "full_name": "itshen/xs_vibe_rules",
+      "url": "https://github.com/itshen/xs_vibe_rules",
+      "skip_reason": "Rules/prompt guidance for AI coding assistants, useful but outside product-shaped radar focus."
+    },
+    {
+      "full_name": "Cuimao777/eterna-image2image-skill",
+      "url": "https://github.com/Cuimao777/eterna-image2image-skill",
+      "skip_reason": "Codex skill for image style workflow; creative skill asset rather than durable user-facing product or infrastructure surface."
+    },
+    {
+      "full_name": "winsznx/theeleven",
+      "url": "https://github.com/winsznx/theeleven",
+      "skip_reason": "High-star and product-like AI-agent betting/prop-market project, but domain risk and hackathon/crypto market mechanics make it less actionable for current radar experiments."
+    }
+  ]
+}

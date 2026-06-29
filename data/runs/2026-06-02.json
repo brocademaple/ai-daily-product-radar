@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-06-02",
+  "generated_at": "2026-06-02T10:28:40+08:00",
+  "data_window": "2026-05-30T02:24:19Z to 2026-06-02T02:28:40Z; GitHub repositories newly surfaced, recently updated, released, or showing visible product-shaped growth in AI agent, coding agent, browser agent, MCP, workflow automation, RAG, and assistant infrastructure categories.",
+  "source_summary": "Real-time GitHub repository pages and web/GitHub search results opened during this run; local memory from 2026-05-31 was checked to avoid repeating the prior control-plane/execution-substrate focus without a new signal. No repositories were cloned or executed locally; runnable status is judged from README, release, directory, Docker, CLI, example, and demo signals visible on GitHub/search pages.",
+  "trend_observations": "The strongest new signal is the convergence of terminal coding agents with external tool planes: Gemini CLI and opencode push the terminal as an agent surface, GitHub MCP Server and Context7-like documentation MCPs make repository/docs context callable by agents, and browser/code-review agents continue turning formerly manual QA/review workflows into supervisable AI-native products.",
+  "assumptions": "Scores prioritize product-shaped repositories with runnable UI/CLI/API, clear user workflow, concrete install path, examples/demo/docs, and recent visible activity. Star/release/update counts are approximate snapshots from GitHub and search result pages at run time and may change quickly. Projects already covered in previous runs were only promoted again if they had a fresh release, a new ecosystem role, or a newly relevant comparison angle. Pure paper repos, prompt collections, awesome lists, benchmark-only repos, and thin SDK wrappers are downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-06-02\n\n数据窗口：2026-05-30T02:24:19Z to 2026-06-02T02:28:40Z\n\n信息来源：实时 GitHub 仓库页 / GitHub 搜索 / Web 搜索；参考本地 2026-05-31 自动化记忆，避免重复上一轮“agent control plane + execution substrate”主线。未做本地 clone 或运行，运行性基于 README、release、目录结构、Docker/CLI/API/demo 信号判断。\n\n## Top Projects\n\n### 1. google-gemini/gemini-cli\n- GitHub: https://github.com/google-gemini/gemini-cli\n- 分类：Code Agent CLI / Terminal Agent\n- AI Native Product Score：93\n- 做什么：Google Gemini 的开源终端 AI agent，用命令行完成代码理解、编辑、执行和开发辅助任务。\n- 面向谁：已经在终端和 GitHub 仓库里工作的开发者、希望比较 Codex/Claude Code/Gemini 的工程团队。\n- AI native 点：入口不是聊天页，而是把仓库、shell、文件编辑和模型推理合成 terminal-native agent loop。\n- 增长/活跃信号：本轮搜索中作为 Gemini CLI 重点新仓库出现，GitHub 页面显示已有 CLI 产品 README、认证和安装路径；近期关注度明显高于普通 SDK wrapper。\n- 可运行性判断：README 提供 npx / npm 安装、登录认证、CLI 使用示例和配置说明；无需服务端即可先跑本地 CLI。\n- 建议动作：优先本地试跑，记录它与 Codex CLI 在权限、上下文压缩、patch review、工具调用边界上的差异。\n\n### 2. anomalyco/opencode\n- GitHub: https://github.com/anomalyco/opencode\n- 分类：Open-source Code Agent CLI\n- AI Native Product Score：90\n- 做什么：开源 coding agent，强调 terminal-based、provider-agnostic 的代码协作体验。\n- 面向谁：想要可替代/可自托管 coding agent CLI 的开发者和团队。\n- AI native 点：把多模型 provider、仓库上下文、命令执行和代码编辑组织成一个可运行的本地 agent 产品。\n- 增长/活跃信号：在本轮 code-agent 搜索中反复出现，并与 Gemini CLI / Codex / Claude Code 构成同类对照；近期 release 与社区讨论信号较强。\n- 可运行性判断：README 提供安装和 CLI 使用路径，产品形态明确；本轮未本地执行。\n- 建议动作：列入 coding-agent 横评；重点看多 provider、session 管理、diff 展示和恢复能力。\n\n### 3. github/github-mcp-server\n- GitHub: https://github.com/github/github-mcp-server\n- 分类：MCP Server / Developer Platform Connector\n- AI Native Product Score：89\n- 做什么：GitHub 官方 MCP Server，让 AI agents 能通过 MCP 读取和操作 GitHub 仓库、Issue、PR 等开发对象。\n- 面向谁：构建 coding agent、DevOps agent、项目管理 agent 的开发者和团队。\n- AI native 点：把 GitHub 从网页/API 变成 agent 可直接调用的工具面，是开发型 AI 产品的关键外部上下文与行动接口。\n- 增长/活跃信号：GitHub 官方仓库，近期在 MCP/coding-agent 生态中持续被引用；与 Codex、Gemini CLI、Claude Desktop 等 agent 客户端存在直接组合价值。\n- 可运行性判断：README 提供 Docker/二进制/配置方式，仓库以 MCP server 为明确可运行交付物。\n- 建议动作：做一次最小实验：本地 agent + GitHub MCP server 查询 issue/PR，再生成可审查行动建议。\n\n### 4. upstash/context7\n- GitHub: https://github.com/upstash/context7\n- 分类：Documentation MCP / RAG for Agents\n- AI Native Product Score：87\n- 做什么：给 coding agents 提供最新文档上下文的 MCP server，减少模型使用过期 API 的问题。\n- 面向谁：使用 Cursor、Claude Desktop、Codex 类 coding assistant 的开发者。\n- AI native 点：把“查最新文档”包装成 agent 可调用的上下文服务，属于 RAG 在 coding workflow 中的产品化形态。\n- 增长/活跃信号：近期 MCP 与 coding-agent 搜索中热度高，定位清晰，解决强痛点。\n- 可运行性判断：README 提供 MCP client 配置和使用说明，适合快速接入现有 assistant。\n- 建议动作：加入 MCP 工具链评测，优先用 React/Next/Supabase 等易过期文档做对比实验。\n\n### 5. Skyvern-AI/Skyvern\n- GitHub: https://github.com/Skyvern-AI/Skyvern\n- 分类：Browser Agent / Workflow Automation\n- AI Native Product Score：86\n- 做什么：用 LLM 和计算机视觉自动化浏览器工作流，面向表单填写、网页操作和复杂业务流程。\n- 面向谁：运营、RPA、QA、业务流程自动化团队，以及需要让 agent 操作真实网站的开发者。\n- AI native 点：浏览器不是脚本执行器，而是由视觉理解、DOM/动作规划和任务目标驱动的 agent 环境。\n- 增长/活跃信号：成熟项目，近期仍在 browser-agent/RPA 搜索中持续出现；与 browser-use/Magentic-UI 形成产品层对照。\n- 可运行性判断：仓库有 Docker、自托管、API/worker/web UI 相关结构；本轮未本地运行。\n- 建议动作：作为 browser workflow 产品标杆保留；拆解它如何处理登录、验证码、失败恢复和任务审计。\n\n### 6. alibaba/open-code-review\n- GitHub: https://github.com/alibaba/open-code-review\n- 分类：AI Code Review Agent\n- AI Native Product Score：84\n- 做什么：阿里开源的 AI 代码评审工具，围绕 GitHub/GitLab 等代码平台做自动审查与反馈。\n- 面向谁：希望在 CI/PR 流程中引入 AI review 的开发团队。\n- AI native 点：把模型能力嵌入代码审查工作流，输出可追踪、可落地的 review comment，而不是一次性聊天建议。\n- 增长/活跃信号：本轮搜索中作为明确产品型 AI code review 仓库出现，组织背书强，场景清晰。\n- 可运行性判断：README/仓库结构指向可部署服务与平台集成；本轮未跑通实际 PR 评论。\n- 建议动作：加入复刻候选：最小化实现“PR diff -> AI review -> GitHub comment”的闭环。\n\n### 7. microsoft/playwright-mcp\n- GitHub: https://github.com/microsoft/playwright-mcp\n- 分类：MCP Browser Automation\n- AI Native Product Score：82\n- 做什么：把 Playwright 浏览器自动化能力作为 MCP server 暴露给 agents。\n- 面向谁：需要让 agent 操作网页、做测试、抽取信息或执行浏览器任务的开发者。\n- AI native 点：把浏览器动作标准化成协议层工具，便于不同 agent 客户端共享网页控制能力。\n- 增长/活跃信号：上一轮 watchlist 后，本轮 MCP/browser-agent 搜索仍高频相关；作为协议层基础设施价值上升。\n- 可运行性判断：MCP server 产品面明确，适合本地接入 agent client；本轮未执行端到端测试。\n- 建议动作：与 browser-use/Skyvern 做分层比较：协议工具层、agent runtime 层、业务产品层。\n\n### 8. crafter-station/agent-swarm\n- GitHub: https://github.com/crafter-station/agent-swarm\n- 分类：Multi-agent Orchestration / Swarm Runtime\n- AI Native Product Score：78\n- 做什么：面向多 agent 协作的编排/运行框架，目标是让多个角色 agent 分工完成任务。\n- 面向谁：想实验 multi-agent 工作流、角色分解和任务协作的开发者。\n- AI native 点：产品核心是 agent group 的任务拆解、协调和上下文流转，而不是单 assistant。\n- 增长/活跃信号：近期搜索中作为 agent-swarm 方向新候选出现，方向贴合当前 agent 编排趋势。\n- 可运行性判断：需要进一步审计 README 示例、安装路径和真实 demo；本轮先低分保留。\n- 建议动作：Watch；只有当示例和真实任务闭环清楚时再升级为项目卡片。\n\n## Watchlist\n\n### microsoft/magentic-ui\n- GitHub: https://github.com/microsoft/magentic-ui\n- 分类：Browser + Local Files Agent UI\n- Score：80\n- 简述：仍是 browser/file-system supervised agent UI 的关键参照；本轮无足够新信号进入 Top。\n- 建议动作：等待下一次 release 或 demo 级变化，再做深挖。\n\n### openai/codex\n- GitHub: https://github.com/openai/codex\n- 分类：Code Agent CLI\n- Score：79\n- 简述：继续作为 coding-agent CLI baseline；今天更适合把它用作 Gemini CLI/opencode 对照组。\n- 建议动作：对比 CLI 安装、sandbox、diff review、命令执行授权。\n\n### browser-use/browser-use\n- GitHub: https://github.com/browser-use/browser-use\n- 分类：Browser Agent Runtime\n- Score：77\n- 简述：browser-agent runtime 成熟基线，今天被 Skyvern / Playwright MCP 分别从产品层和协议层补足。\n- 建议动作：做三层对照表：browser-use、Skyvern、playwright-mcp。\n\n### HumanLayer/12-factor-agents\n- GitHub: https://github.com/HumanLayer/12-factor-agents\n- 分类：Agent Product Methodology\n- Score：70\n- 简述：不是可运行产品，但对判断 agent 产品工程质量很有价值。\n- 建议动作：用于修订评分 Rubric，不进入 Top 项目。\n\n## Skip Reasons\n\n- awesome/curated list：可作为发现源，但不是可运行产品。\n- prompt collection / system prompt pack：缺少独立 runtime 或清晰用户场景时跳过。\n- paper reproduction / benchmark-only：即使 star 增长快，也不符合 AI Native Product 口径。\n- thin SDK wrapper：只封装模型 API、没有 UI/CLI/API 工作流时降权。\n\n## 今日趋势观察\n\n1. Terminal coding agent 正在从单点产品进入横评期：Gemini CLI、opencode、Codex、Claude Code 的差异会落在权限、上下文、diff、shell 执行和恢复能力上。\n2. MCP 的产品价值开始从“接工具”变成“补上下文和接平台”：GitHub MCP Server 负责开发对象，Context7 负责最新文档，Playwright MCP 负责浏览器动作。\n3. Browser agent 正在分层：Playwright MCP 是协议工具层，browser-use 是 runtime 层，Skyvern 更接近可交付业务自动化产品。\n4. AI code review 是值得复刻的窄闭环：输入 PR diff，输出结构化 review comment，最容易形成可验证的产品体验。\n\n## 关键假设\n\n- GitHub star/release/update 信息为 2026-06-02 运行时页面和搜索结果快照。\n- 本轮未本地 clone/运行仓库；可运行性为 README 和仓库结构审计。\n- 评分优先产品形态、真实 workflow、安装路径、demo/docs 和最近活跃，而不是单纯 star 数。\n- 对已在 2026-05-31 Top 出现的项目，除非有新 release 或新角度，本轮只放入 Watchlist/对照组。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "category": "Code Agent CLI / Terminal Agent",
+      "score": 93,
+      "summary": "Open-source Gemini terminal AI agent for repository-aware coding, shell interaction, and developer assistance.",
+      "audience": "Developers and teams comparing Codex, Claude Code, Gemini, and other terminal coding agents.",
+      "ai_native_angle": "The terminal, repository, file edits, shell commands, and model reasoning become one agentic coding loop.",
+      "growth_signal": "Surfaced strongly in current code-agent searches with clear CLI product README, auth, and install paths.",
+      "runnability": "README documents npx/npm installation, authentication, CLI usage examples, and configuration.",
+      "recommended_action": "Run locally and compare permissions, context handling, patch review, and tool-call boundaries against Codex CLI."
+    },
+    {
+      "rank": 2,
+      "full_name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "category": "Open-source Code Agent CLI",
+      "score": 90,
+      "summary": "Open-source terminal coding agent with provider-agnostic local workflow ambitions.",
+      "audience": "Developers seeking an open, local, multi-provider coding-agent CLI.",
+      "ai_native_angle": "It organizes model providers, repository context, command execution, and code edits into a local agent product.",
+      "growth_signal": "Repeatedly surfaced in current coding-agent searches and comparison discussions around Gemini CLI/Codex/Claude Code.",
+      "runnability": "README provides installation and CLI usage path; not executed locally in this run.",
+      "recommended_action": "Add to coding-agent benchmark set; inspect provider support, sessions, diff UI, and recovery behavior."
+    },
+    {
+      "rank": 3,
+      "full_name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "category": "MCP Server / Developer Platform Connector",
+      "score": 89,
+      "summary": "Official GitHub MCP server exposing GitHub repositories, issues, pull requests, and related developer objects to AI agents.",
+      "audience": "Developers building coding, DevOps, project-management, and repository automation agents.",
+      "ai_native_angle": "GitHub becomes an agent-callable action and context plane rather than only a web/API destination.",
+      "growth_signal": "Official GitHub project and highly relevant in the current MCP/coding-agent ecosystem.",
+      "runnability": "README documents Docker/binary/configuration paths for running the MCP server.",
+      "recommended_action": "Run a minimal agent plus GitHub MCP test: query issues/PRs and generate reviewable actions."
+    },
+    {
+      "rank": 4,
+      "full_name": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "Documentation MCP / RAG for Agents",
+      "score": 87,
+      "summary": "MCP server that supplies coding agents with current documentation context to reduce outdated API usage.",
+      "audience": "Developers using Cursor, Claude Desktop, Codex-like assistants, and other MCP-capable coding tools.",
+      "ai_native_angle": "Documentation retrieval is productized as an agent-callable RAG/context service inside coding workflows.",
+      "growth_signal": "High current visibility in MCP and coding-agent searches, with a clear pain point and integration story.",
+      "runnability": "README provides MCP client configuration and usage instructions suitable for quick local evaluation.",
+      "recommended_action": "Test with APIs that change often, such as React, Next.js, Supabase, or Stripe documentation."
+    },
+    {
+      "rank": 5,
+      "full_name": "Skyvern-AI/Skyvern",
+      "url": "https://github.com/Skyvern-AI/Skyvern",
+      "category": "Browser Agent / Workflow Automation",
+      "score": 86,
+      "summary": "LLM and computer-vision powered browser workflow automation platform for operating real websites.",
+      "audience": "RPA teams, operations teams, QA teams, and developers building agents for web tasks.",
+      "ai_native_angle": "The browser is treated as an agent environment driven by visual understanding, task goals, and action planning.",
+      "growth_signal": "Continues to surface in browser-agent/RPA searches and remains a mature product-layer comparison target.",
+      "runnability": "Repository indicates Docker, self-hosting, API/worker/web UI structure; not executed locally this run.",
+      "recommended_action": "Audit handling of login, CAPTCHA boundaries, failure recovery, and task traces."
+    },
+    {
+      "rank": 6,
+      "full_name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "category": "AI Code Review Agent",
+      "score": 84,
+      "summary": "AI code review tool for automatically reviewing code changes and returning actionable feedback in development workflows.",
+      "audience": "Developer teams adding AI review to CI, pull requests, and code quality workflows.",
+      "ai_native_angle": "Model reasoning is embedded directly into the code-review loop, producing traceable review comments.",
+      "growth_signal": "Surfaced as a product-shaped AI code-review repository with strong organization backing and a narrow practical scenario.",
+      "runnability": "Repository/README point to deployable service and platform integration; actual PR comment loop was not executed.",
+      "recommended_action": "Build a minimal reproduction: PR diff to AI review to GitHub comment."
+    },
+    {
+      "rank": 7,
+      "full_name": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "category": "MCP Browser Automation",
+      "score": 82,
+      "summary": "MCP server exposing Playwright browser automation capabilities to AI agents.",
+      "audience": "Agent builders who need browser control for web tasks, testing, extraction, or automation.",
+      "ai_native_angle": "Browser actions are standardized as protocol-level tools that many agent clients can reuse.",
+      "growth_signal": "Carried over from watchlist and remains highly relevant in MCP/browser-agent searches.",
+      "runnability": "MCP server product surface is clear; not tested end to end in this run.",
+      "recommended_action": "Compare against browser-use and Skyvern as protocol layer versus runtime/product layer."
+    },
+    {
+      "rank": 8,
+      "full_name": "crafter-station/agent-swarm",
+      "url": "https://github.com/crafter-station/agent-swarm",
+      "category": "Multi-agent Orchestration / Swarm Runtime",
+      "score": 78,
+      "summary": "Multi-agent orchestration candidate focused on role-based agent collaboration.",
+      "audience": "Developers experimenting with multi-agent role decomposition and task collaboration.",
+      "ai_native_angle": "The product object is an agent group with task decomposition, coordination, and context flow.",
+      "growth_signal": "Recently surfaced in agent-swarm searches; direction fits current orchestration trend.",
+      "runnability": "Needs deeper README, example, install, and demo audit before promotion.",
+      "recommended_action": "Watch; promote only if examples show a real task loop and usable installation path."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "microsoft/magentic-ui",
+      "url": "https://github.com/microsoft/magentic-ui",
+      "category": "Browser + Local Files Agent UI",
+      "score": 80,
+      "summary": "Supervised browser/local-files agent UI remains an important comparison target.",
+      "audience": "Developers exploring human-supervised browser/file-system agents.",
+      "ai_native_angle": "Combines browser control, local context, and user supervision into an agent workbench.",
+      "growth_signal": "Important prior signal, but no new release-level change found in this run.",
+      "runnability": "Previously audited as installable via uv/PyPI with frontend/docs/tests.",
+      "recommended_action": "Wait for the next release or demo-level change before deep-diving again."
+    },
+    {
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "category": "Code Agent CLI",
+      "score": 79,
+      "summary": "Terminal coding-agent baseline for comparison with Gemini CLI and opencode.",
+      "audience": "Developers comparing coding-agent CLIs.",
+      "ai_native_angle": "Repository-aware agent loop for editing, commands, and patches.",
+      "growth_signal": "Strong existing baseline from previous radar; retained as comparison object.",
+      "runnability": "Known CLI install paths via npm/brew/binaries; not re-audited today.",
+      "recommended_action": "Use as baseline for CLI installation, sandbox, diff review, and command authorization comparison."
+    },
+    {
+      "full_name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "Browser Agent Runtime",
+      "score": 77,
+      "summary": "Mature browser-agent runtime baseline for comparing Skyvern and Playwright MCP.",
+      "audience": "Browser-agent builders and web automation developers.",
+      "ai_native_angle": "Turns websites into an environment agents can perceive and act in.",
+      "growth_signal": "Strong prior signal; today used as a layer comparison point.",
+      "runnability": "Previously audited with docker/examples/tests directories.",
+      "recommended_action": "Create a three-layer comparison: browser-use, Skyvern, and playwright-mcp."
+    },
+    {
+      "full_name": "HumanLayer/12-factor-agents",
+      "url": "https://github.com/HumanLayer/12-factor-agents",
+      "category": "Agent Product Methodology",
+      "score": 70,
+      "summary": "Methodology repo useful for evaluating agent product quality, but not a runnable product.",
+      "audience": "Agent product builders and engineering teams refining architecture standards.",
+      "ai_native_angle": "Frames design principles for durable agent systems rather than shipping a standalone runtime.",
+      "growth_signal": "Continues to be referenced around agent engineering quality.",
+      "runnability": "Documentation/methodology repository.",
+      "recommended_action": "Use to revise the radar scoring rubric, not as a Top product."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "skip_reason": "Awesome/list repository archetype; useful discovery source, but not product software."
+    },
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "skip_reason": "Educational curriculum; useful learning material but not an AI-native product runtime."
+    },
+    {
+      "full_name": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "skip_reason": "High-signal methodology/documentation repository; retained in watchlist/rubric context but excluded from Top product list."
+    },
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "skip_reason": "Important MCP reference/index, but too broad as a product candidate for today's project ranking."
+    }
+  ]
+}

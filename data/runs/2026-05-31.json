@@ -1,0 +1,170 @@
+{
+  "run_date": "2026-05-31",
+  "generated_at": "2026-05-31T10:20:44+08:00",
+  "data_window": "2026-05-28T00:00:00Z to 2026-05-31T02:20:44Z; GitHub repositories recently released, actively updated, or still showing strong product-shaped growth signals in AI agent, coding agent, browser agent, workflow, RAG, MCP, and agent runtime infrastructure categories",
+  "source_summary": "Real-time GitHub repository pages and GitHub/topic search results opened during this run; prior local radar JSON from 2026-05-30 was checked to avoid repeating yesterday's agent-memory-heavy focus. No repositories were cloned or executed locally; runnable status is judged from README, release, directory, Docker, CLI, example, and demo signals visible on GitHub.",
+  "trend_observations": "Today's strongest AI-native product signal moved from memory servers toward agent control planes and execution substrates: visual workflow builders, long-horizon super-agent harnesses, terminal/desktop coding agents, browser-operating agents, and secure sandboxes for AI-generated code. Mature projects are increasingly exposing multiple surfaces at once: UI plus CLI plus API plus MCP/extensions, which makes them more product-like than single SDK wrappers.",
+  "assumptions": "Scores prioritize product-shaped repositories with runnable UI/CLI/API, clear user workflow, concrete install path, examples/demo/docs, and recent release or visible activity. Star counts and release dates are approximate snapshots from GitHub pages at run time and may change quickly. For repos already covered in previous runs, inclusion requires a new angle or a recent release signal. Pure paper repos, prompt collections, awesome lists, benchmark-only repos, and thin SDK wrappers are downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-05-31\n\n数据窗口：2026-05-28T00:00:00Z to 2026-05-31T02:20:44Z\n\n信息来源：实时 GitHub 仓库页 / topic 搜索；参考本地 2026-05-30 run 避免重复 yesterday 的 agent-memory 聚类。未做本地 clone 或运行，运行性基于 README、release、目录结构、Docker/CLI/API/demo 信号判断。\n\n## Top Projects\n\n### 1. simstudioai/sim\n- GitHub: https://github.com/simstudioai/sim\n- 分类：AI Workflow Builder / Agent Workforce Platform\n- AI Native Product Score：94\n- 做什么：开源平台，用可视化画布编排 AI agents、工具、blocks、RAG 和集成工作流。\n- 面向谁：想把多步骤 agent 工作流产品化的开发者、自动化团队和 no-code/low-code AI 工具使用者。\n- AI native 点：核心不是聊天 UI，而是把 agent、tool、knowledge、trigger、workflow canvas 作为产品对象。\n- 增长/活跃信号：GitHub 显示约 28.7k stars、4,818 commits、295 releases，最新 release v0.6.97 在 2026-05-30。\n- 可运行性判断：README 提供 npx simstudio、Docker Compose、自托管和手动开发路径，带 demo/截图/文档。\n- 建议动作：优先本地试跑；拆解其 workflow canvas、Copilot 生成节点和 RAG 上传体验。\n\n### 2. bytedance/deer-flow\n- GitHub: https://github.com/bytedance/deer-flow\n- 分类：Long-horizon SuperAgent / Research-Code-Creation Harness\n- AI Native Product Score：93\n- 做什么：面向分钟到小时级任务的 SuperAgent harness，覆盖 research、coding、creation、sandbox、memory、skills、subagents 和消息入口。\n- 面向谁：需要长任务 agent 自动化的产品团队、研究团队、工程自动化团队。\n- AI native 点：把 agent 长任务拆成运行时、沙箱、技能、记忆、子 agent、消息通道，而不只是单次 prompt 调用。\n- 增长/活跃信号：GitHub 显示约 70k stars、2,186 commits，仓库结构包含 backend、frontend、docker、docs、skills。\n- 可运行性判断：README 提供 make docker-start、make up、make dev、localhost:2026、MCP Server Guide 和 IM Channels 配置。\n- 建议动作：作为“长任务 agent 产品架构”标杆跟踪，优先审计其 Lark/Slack/WeChat 任务入口。\n\n### 3. openai/codex\n- GitHub: https://github.com/openai/codex\n- 分类：Code Agent CLI / Terminal Agent\n- AI Native Product Score：92\n- 做什么：运行在终端里的轻量 coding agent，可通过 CLI/binary 使用。\n- 面向谁：希望把 AI agent 放进真实代码仓库和命令行 workflow 的开发者。\n- AI native 点：产品入口是 agentic coding loop：读仓库、改文件、执行命令、生成 patch，而不是 IDE 补全。\n- 增长/活跃信号：GitHub 显示约 87.1k stars、6,984 commits、804 releases，最新 0.135.0 在 2026-05-28。\n- 可运行性判断：README 给出 npm/brew/二进制 release 使用路径，仓库包含 CLI、Rust core、SDK、docs。\n- 建议动作：持续作为 coding-agent UX 与 release cadence 参照；跟踪 CLI 配置、sandbox、patch 交互。\n\n### 4. aaif-goose/goose\n- GitHub: https://github.com/aaif-goose/goose\n- 分类：Extensible Desktop/CLI AI Agent\n- AI Native Product Score：91\n- 做什么：可扩展 AI agent，支持安装、执行、编辑、测试，提供桌面 App、CLI 和可嵌入 API。\n- 面向谁：希望用任意 LLM 和 MCP 扩展完成本地任务、开发任务和自动化任务的 power users / dev teams。\n- AI native 点：把 provider、MCP extension、桌面 UI、CLI、API 统一成 agent runtime，而不是单模型客户端。\n- 增长/活跃信号：GitHub 显示约 46.1k stars、4,639 commits、136 releases，最新 v1.36.0 在 2026-05-27。\n- 可运行性判断：README 提供桌面下载、CLI 安装脚本、Quickstart、Installation、Tutorials、Docs。\n- 建议动作：做一次桌面版与 CLI 的双路径体验记录，比较 Codex/OpenHands 的权限边界。\n\n### 5. daytonaio/daytona\n- GitHub: https://github.com/daytonaio/daytona\n- 分类：AI-generated Code Sandbox / Agent Infrastructure\n- AI Native Product Score：89\n- 做什么：为 AI 生成代码提供安全、弹性的执行基础设施和 sandbox。\n- 面向谁：构建 coding agent、自动化代码执行、preview environment、remote dev environment 的团队。\n- AI native 点：解决 agent 生成代码后的运行、隔离、验证和环境生命周期问题，是 agent 产品的底层能力。\n- 增长/活跃信号：GitHub 显示 2,614 commits、198 releases，最新 v0.183.0 在 2026-05-29。\n- 可运行性判断：仓库包含 apps、docker、examples、guides、charts、SDK/infra 目录，产品形态明确。\n- 建议动作：加入复刻候选：做一个最小“agent 生成代码 -> Daytona sandbox 执行 -> 回传结果”的实验。\n\n### 6. browser-use/browser-use\n- GitHub: https://github.com/browser-use/browser-use\n- 分类：Browser Agent / Web Automation Runtime\n- AI Native Product Score：88\n- 做什么：让网站可被 AI agents 操作，用于自动完成在线任务。\n- 面向谁：browser agent、RPA、个人助理、网页任务自动化开发者。\n- AI native 点：把网页浏览器抽象成 agent 可感知和可行动的运行环境，而不是传统脚本录制。\n- 增长/活跃信号：GitHub 显示约 96.3k stars、9,287 commits、126 releases，最新 0.12.9 在 2026-05-26。\n- 可运行性判断：仓库包含 browser_use、docker、examples、tests 和技能目录，生态成熟。\n- 建议动作：继续观察是否从库演进成更完整产品；用于对比 CloakBrowser / Magentic-UI 的浏览器控制边界。\n\n### 7. OpenHands/OpenHands\n- GitHub: https://github.com/OpenHands/OpenHands\n- 分类：AI Software Engineering Agent / Web IDE Agent\n- AI Native Product Score：87\n- 做什么：AI-driven development 平台，面向代码修改、执行、调试和软件工程任务。\n- 面向谁：希望把 agent 放进软件工程全流程的开发者和团队。\n- AI native 点：将前端工作台、后端 agent runtime、容器环境和仓库操作合成一个工程 agent 产品。\n- 增长/活跃信号：GitHub 显示约 75.4k stars、6,801 commits，仓库包含 frontend、openhands-ui、containers、enterprise、skills。\n- 可运行性判断：产品目录完整，具备 UI 与容器执行面；本轮未做本地运行。\n- 建议动作：保持在 coding-agent 对照组；重点看它与 Codex/Goose 在“人审 patch”上的差异。\n\n### 8. microsoft/magentic-ui\n- GitHub: https://github.com/microsoft/magentic-ui\n- 分类：Browser + Local Files Agent UI\n- AI Native Product Score：84\n- 做什么：实验性 agent UI，能跨浏览器和本地文件系统工作。\n- 面向谁：研究 browser/file-system 协同 agent、人机协作界面和 Microsoft AutoGen 生态的开发者。\n- AI native 点：把浏览器操作、本地文件上下文、用户可视化监督合在一个 agent 工作台中。\n- 增长/活跃信号：GitHub 显示约 9.9k stars、786 commits，最新 Magentic-UI 0.2 release 在 2026-05-21。\n- 可运行性判断：README 有 uv / PyPI 安装流程，仓库包含 frontend、src/magentic_ui、docs、tests。\n- 建议动作：Watch + 小实验；适合拆解“agent 可控浏览器操作 UI”。\n\n## Watchlist\n\n### google-gemini/gemini-cli\n- GitHub: https://github.com/google-gemini/gemini-cli\n- 分类：Code Agent CLI\n- Score：78\n- 简述：Google Gemini 终端 coding-agent 入口，若 release cadence 稳定，会成为 Codex 的直接对照物。\n- 建议动作：下轮重点查 release、安装路径、repo editing 能力和 sandbox 行为。\n\n### microsoft/playwright-mcp\n- GitHub: https://github.com/microsoft/playwright-mcp\n- 分类：MCP Browser Automation\n- Score：76\n- 简述：把 Playwright 浏览器自动化作为 MCP server 暴露给 agents，是 browser-use 类产品的重要底层接口。\n- 建议动作：观察其与 browser-use / Magentic-UI 的边界：协议层 vs 产品层。\n\n### getzep/graphiti\n- GitHub: https://github.com/getzep/graphiti\n- 分类：Temporal Knowledge Graph / Agent Memory\n- Score：74\n- 简述：上一轮 memory trend 的延伸，但更偏长期知识图谱和 temporal context。\n- 建议动作：暂列观察，不抢占今天的 coding-agent/control-plane 主线。\n\n## Skip Reasons\n\n- awesome/curated list：可作为发现源，但不是可运行产品。\n- prompt collection / skill collection：缺少独立 runtime 或清晰用户场景时跳过。\n- paper reproduction / benchmark-only：即使 star 增长快，也不符合 AI Native Product 口径。\n- thin SDK wrapper：只封装模型 API、没有 UI/CLI/API 工作流时降权。\n\n## 今日趋势观察\n\n1. Agent 产品正在从“单 agent demo”转成“control plane + execution substrate”：Sim 负责流程编排，DeerFlow 负责长任务 harness，Daytona 负责代码执行隔离。\n2. Coding agent 的竞争维度不再只是模型能力，而是 CLI/桌面/UI、sandbox、patch review、MCP/extensions、provider 多样性。\n3. Browser agent 进入基础设施化阶段：browser-use、Magentic-UI、Playwright MCP 分别占据库、工作台、协议层位置。\n4. 昨天的 memory-server 热点没有消失，但今天更应把注意力放在 agent 如何“跑起来、被控制、被验证”。\n\n## 关键假设\n\n- GitHub star/release/commit 信息为 2026-05-31 运行时页面快照。\n- 本轮未本地 clone/运行仓库；可运行性为 README 和仓库结构审计。\n- 评分优先产品形态、真实 workflow、安装路径、demo/docs 和最近 release，而不是单纯 star 数。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "simstudioai/sim",
+      "url": "https://github.com/simstudioai/sim",
+      "category": "AI Workflow Builder / Agent Workforce Platform",
+      "score": 94,
+      "summary": "Open-source platform for visually building, deploying, and orchestrating AI agents, tools, RAG, and workflow blocks.",
+      "audience": "Developers, automation teams, and low-code AI builders who need productized multi-step agent workflows.",
+      "ai_native_angle": "The core product object is an agent workflow canvas with tools, knowledge, integrations, and copilot-assisted flow editing.",
+      "growth_signal": "GitHub snapshot showed about 28.7k stars, 4,818 commits, 295 releases, and latest v0.6.97 on 2026-05-30.",
+      "runnability": "README documents npx simstudio, Docker Compose, hosted cloud, manual self-hosting, demos, screenshots, and docs.",
+      "recommended_action": "Run locally and dissect workflow canvas, Copilot-generated nodes, and RAG upload flow."
+    },
+    {
+      "rank": 2,
+      "full_name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "category": "Long-horizon SuperAgent / Research-Code-Creation Harness",
+      "score": 93,
+      "summary": "Long-horizon SuperAgent harness for research, coding, and creation tasks using sandboxes, memories, tools, skills, subagents, and message gateways.",
+      "audience": "Teams building long-running research, coding, and automation agents.",
+      "ai_native_angle": "It treats multi-hour agent execution as a full runtime made of sandboxing, skills, memory, subagents, and messaging channels.",
+      "growth_signal": "GitHub snapshot showed about 70k stars, 2,186 commits, and product directories for backend, frontend, docker, docs, and skills.",
+      "runnability": "README documents make docker-start, make up, make dev, localhost:2026, MCP server configuration, and IM channel setup.",
+      "recommended_action": "Track as a long-task agent architecture benchmark; audit its Lark/Slack/WeChat task gateways."
+    },
+    {
+      "rank": 3,
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "category": "Code Agent CLI / Terminal Agent",
+      "score": 92,
+      "summary": "Lightweight coding agent that runs in the terminal and supports repository-aware code changes.",
+      "audience": "Developers who want an AI agent inside real command-line and repository workflows.",
+      "ai_native_angle": "The product loop is agentic coding: inspect repo, edit files, run commands, and produce reviewable patches.",
+      "growth_signal": "GitHub snapshot showed about 87.1k stars, 6,984 commits, 804 releases, and latest 0.135.0 on 2026-05-28.",
+      "runnability": "README documents npm, brew, and downloadable binary release paths; repo contains CLI, Rust core, SDK, and docs.",
+      "recommended_action": "Use as coding-agent UX baseline; track CLI config, sandboxing, and patch interaction changes."
+    },
+    {
+      "rank": 4,
+      "full_name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "category": "Extensible Desktop/CLI AI Agent",
+      "score": 91,
+      "summary": "Open-source extensible AI agent with desktop app, terminal CLI, API, multi-provider support, and MCP extensions.",
+      "audience": "Power users and developer teams that want a local agent across desktop, terminal, and embedded workflows.",
+      "ai_native_angle": "It unifies providers, MCP extensions, desktop UI, CLI, and API into one agent runtime.",
+      "growth_signal": "GitHub snapshot showed about 46.1k stars, 4,639 commits, 136 releases, and latest v1.36.0 on 2026-05-27.",
+      "runnability": "README links desktop downloads, CLI install script, quickstart, installation, tutorials, and docs.",
+      "recommended_action": "Run desktop and CLI paths; compare permission boundaries with Codex and OpenHands."
+    },
+    {
+      "rank": 5,
+      "full_name": "daytonaio/daytona",
+      "url": "https://github.com/daytonaio/daytona",
+      "category": "AI-generated Code Sandbox / Agent Infrastructure",
+      "score": 89,
+      "summary": "Secure and elastic infrastructure for running AI-generated code.",
+      "audience": "Teams building coding agents, automated code execution, previews, and remote dev environments.",
+      "ai_native_angle": "It solves the post-generation runtime problem: safely execute, isolate, validate, and lifecycle-manage agent-written code.",
+      "growth_signal": "GitHub snapshot showed 2,614 commits, 198 releases, and latest v0.183.0 on 2026-05-29.",
+      "runnability": "Repository includes apps, docker, examples, guides, charts, and infrastructure-oriented product code.",
+      "recommended_action": "Add to experiment queue: agent-generated code to Daytona sandbox to execution result."
+    },
+    {
+      "rank": 6,
+      "full_name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "Browser Agent / Web Automation Runtime",
+      "score": 88,
+      "summary": "Runtime that makes websites accessible to AI agents and automates online tasks.",
+      "audience": "Browser-agent builders, RPA developers, personal-assistant builders, and web task automation teams.",
+      "ai_native_angle": "It turns the browser into an environment agents can perceive and act in rather than a traditional scripted recorder.",
+      "growth_signal": "GitHub snapshot showed about 96.3k stars, 9,287 commits, 126 releases, and latest 0.12.9 on 2026-05-26.",
+      "runnability": "Repository includes browser_use, docker, examples, tests, and skills directories.",
+      "recommended_action": "Use as browser-agent runtime benchmark; compare with Magentic-UI and Playwright MCP."
+    },
+    {
+      "rank": 7,
+      "full_name": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "category": "AI Software Engineering Agent / Web IDE Agent",
+      "score": 87,
+      "summary": "AI-driven development platform for code modification, execution, debugging, and software engineering tasks.",
+      "audience": "Developers and teams evaluating full-stack software engineering agents.",
+      "ai_native_angle": "It combines a frontend workspace, agent runtime, containers, repository operations, and reviewable engineering workflows.",
+      "growth_signal": "GitHub snapshot showed about 75.4k stars, 6,801 commits, and product directories such as frontend, openhands-ui, containers, enterprise, and skills.",
+      "runnability": "Repository presents a mature UI plus container execution surface; not executed locally in this run.",
+      "recommended_action": "Keep in coding-agent comparison set; focus on human review and patch handoff design."
+    },
+    {
+      "rank": 8,
+      "full_name": "microsoft/magentic-ui",
+      "url": "https://github.com/microsoft/magentic-ui",
+      "category": "Browser + Local Files Agent UI",
+      "score": 84,
+      "summary": "Experimental agent UI that works across the browser and local file system.",
+      "audience": "Developers exploring supervised browser/file-system agents and AutoGen-style agent UIs.",
+      "ai_native_angle": "It brings browser actions, local file context, and visible human supervision into a single agent workbench.",
+      "growth_signal": "GitHub snapshot showed about 9.9k stars, 786 commits, and Magentic-UI 0.2 release on 2026-05-21.",
+      "runnability": "README documents uv and PyPI install; repo includes frontend, src/magentic_ui, docs, and tests.",
+      "recommended_action": "Watch and run a small browser-plus-file workflow; inspect supervision and recovery UX."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "category": "Code Agent CLI",
+      "score": 78,
+      "summary": "Google Gemini terminal coding-agent entrypoint that may become a direct Codex comparison target.",
+      "audience": "Developers already using Gemini models or comparing coding-agent CLIs.",
+      "ai_native_angle": "If it exposes repo editing and tool execution cleanly, it becomes another terminal-native agent workflow.",
+      "growth_signal": "Surfaced in current coding-agent search; retained for next-cycle release and install audit.",
+      "runnability": "Needs direct README and local install audit next run.",
+      "recommended_action": "Check release cadence, install path, repository editing, and sandbox behavior in the next radar."
+    },
+    {
+      "full_name": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "category": "MCP Browser Automation",
+      "score": 76,
+      "summary": "MCP server layer for exposing Playwright browser automation to agents.",
+      "audience": "Agent builders who need browser control through a protocol rather than a full product UI.",
+      "ai_native_angle": "It can become the protocol substrate under browser-agent products.",
+      "growth_signal": "Surfaced in current browser-agent/MCP searches; relevant as infrastructure rather than standalone product.",
+      "runnability": "Likely runnable as MCP server, but not audited locally in this run.",
+      "recommended_action": "Compare against browser-use and Magentic-UI as protocol layer versus product layer."
+    },
+    {
+      "full_name": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "category": "Temporal Knowledge Graph / Agent Memory",
+      "score": 74,
+      "summary": "Temporal knowledge graph project relevant to persistent agent memory and long-term context.",
+      "audience": "Agent platform teams evaluating memory beyond vector retrieval.",
+      "ai_native_angle": "Temporal entity-relation memory can support durable, inspectable agent context.",
+      "growth_signal": "Kept as follow-on from the 2026-05-30 memory-infrastructure trend rather than today's main control-plane theme.",
+      "runnability": "Needs fresh examples and integration audit.",
+      "recommended_action": "Keep on watchlist; revisit when comparing memory layers."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "skip_reason": "High-signal methodology/documentation repository, but not a runnable product with UI/CLI/API surface for this radar rubric."
+    },
+    {
+      "full_name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "skip_reason": "Awesome/list repository archetype; useful discovery source, but not product software."
+    },
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "skip_reason": "Educational curriculum; useful learning material but not an AI-native product runtime."
+    }
+  ]
+}

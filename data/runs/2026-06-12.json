@@ -1,0 +1,192 @@
+{
+  "run_date": "2026-06-12",
+  "generated_at": "2026-06-12T18:25:00+08:00",
+  "data_window": "2026-06-09 18:25 to 2026-06-12 18:25 Asia/Shanghai; GitTrend AI Agent/AI Skills pages updated June 9, GitTrend AI Coding Assistant/AI Infrastructure pages updated June 6, GitHub repository README/release pages checked live on June 12, 2026, and targeted web search for AI agent, coding-agent, MCP, workflow, browser/voice/local AI repositories.",
+  "source_summary": "Live GitTrend topic pages, GitHub repository pages, release metadata visible on GitHub, targeted web search, and automation memory to avoid repeating 2026-06-11 picks unless there was a clearer new release or product signal. Shell GitHub API access still failed because proxy 127.0.0.1:7890 was unavailable and direct DNS could not resolve api.github.com; no clone, install, Docker, or local run audit was performed.",
+  "trend_observations": "Fresh signal clustered around agent-visible work surfaces and context/runtime substrate: local-first design workspaces that let existing coding agents generate artifacts, mature desktop/CLI agent runtimes with MCP extension ecosystems, code graph context tools, IDE-native Codex/Claude GUIs, and local model servers that make agent tools cheaper and more private.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, install instructions, docs/examples/screenshots/releases, visible workflow, and recent GitTrend/GitHub activity. Downgraded prompt-only skill packs, guide repositories, model training/inference-only code without product workflow, repeated abnormal star spikes, and projects already promoted in the last run unless a new release changed their signal. GitTrend star deltas remain directional until GitHub API verification is available.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-12\n\n数据窗口：2026-06-09 18:25 to 2026-06-12 18:25 Asia/Shanghai; GitTrend AI Agent/AI Skills pages updated June 9, GitTrend AI Coding Assistant/AI Infrastructure pages updated June 6, GitHub repository README/release pages checked live on June 12, 2026, and targeted web search for AI agent, coding-agent, MCP, workflow, browser/voice/local AI repositories.\n\n关键假设：Prioritized product-shaped repositories with runnable UI/CLI/API, install instructions, docs/examples/screenshots/releases, visible workflow, and recent GitTrend/GitHub activity. Downgraded prompt-only skill packs, guide repositories, model training/inference-only code without product workflow, repeated abnormal star spikes, and projects already promoted in the last run unless a new release changed their signal. GitTrend star deltas remain directional until GitHub API verification is available.\n\n## Top Projects\n\n1. [nexu-io/open-design](https://github.com/nexu-io/open-design) - Agentic Design Workspace - Score 91\n   - 做什么：Local-first open-source Claude Design/Figma-era alternative that turns coding-agent CLIs into a desktop design studio for prototypes, dashboards, decks, images, video and exports.\n   - 面向谁：Design-minded product builders, PMs, founders, and coding-agent users who want artifact generation tied to local files, design systems and export workflows.\n   - AI native 点：It treats the coding agent as the design engine: skills, plugins, DESIGN.md systems, MCP install targets, BYOK model routing, sandboxed previews and artifact export are native product primitives.\n   - 增长/活跃信号：GitTrend AI Agent ranked it #5 with +774 stars today; GitHub showed 63.6k stars, 7.1k forks, 263 issues, 136 PRs, 2,228 commits, and release notes for Open Design 0.10.0.\n   - 可运行性判断：README documents desktop downloads for macOS/Windows/Linux, one-line agent install, MCP install for Codex/Claude/Cursor/OpenCode/Copilot/Gemini-style hosts, Vercel/self-host paths, screenshots and demo artifacts.\n   - 建议动作：Run the desktop app or one-line agent install; test whether a real Codex design-to-HTML handoff can replace today’s ad hoc visual artifact workflows.\n\n2. [aaif-goose/goose](https://github.com/aaif-goose/goose) - Desktop/CLI Agent Runtime - Score 88\n   - 做什么：Open-source extensible AI agent with native desktop app, CLI and embeddable API for installing, executing, editing and testing with many LLM providers.\n   - 面向谁：Developers and teams that want a durable agent runtime beyond editor autocomplete, especially where MCP extensions and provider choice matter.\n   - AI native 点：Goose makes the agent a local operating surface: desktop, terminal, API, 15+ model providers, ACP subscriptions, 70+ MCP extensions, custom distributions and governance under AAIF/Linux Foundation.\n   - 增长/活跃信号：GitTrend AI Agent ranked it #8 with +591 stars today; GitHub showed 49k stars, 5.2k forks, 4,697 commits, 175 issues, 171 PRs, and latest release v1.37.0 on June 3, 2026.\n   - 可运行性判断：README links desktop downloads for macOS/Linux/Windows, a curl installer for CLI, quickstart/tutorial docs, diagnostics, governance, custom distributions and extension docs.\n   - 建议动作：Use as a comparison baseline against Codex/OpenCode local workflows; specifically inspect extension management, task state, and MCP permission boundaries.\n\n3. [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) - Agentic Frontend / Generative UI - Score 86\n   - 做什么：Frontend stack for building full-stack agentic applications with chat UI, generative UI, shared state, tool rendering and human-in-the-loop workflows across web, mobile and chat surfaces.\n   - 面向谁：Frontend/full-stack teams embedding agents into real products rather than shipping standalone chat widgets.\n   - AI native 点：It makes agent-user interaction a UI protocol: shared state, tool-rendered components, HITL approvals, AG-UI, one backend powering web/mobile/Slack/Teams, and coding-agent setup skills.\n   - 增长/活跃信号：GitTrend AI Agent ranked it #10 with +468 stars today; GitHub showed 34.8k stars, 4.3k forks, 11,214 commits, 323 issues, 242 PRs, and latest release v1.60.0 on June 11, 2026.\n   - 可运行性判断：README has docs/examples links, npx create command, skills installer, framework support table, demo videos, SDK packages and AG-UI starter command.\n   - 建议动作：Prototype one thin agent workflow in an existing app; evaluate whether generative UI and shared state reduce custom glue versus plain chat.\n\n4. [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) - Code Graph MCP Context - Score 84\n   - 做什么：MCP server plus CLI that indexes local code into graph databases so AI assistants and developers can query call chains, relationships, complexity and code structure.\n   - 面向谁：Developers onboarding to complex repositories and agent builders who need persistent code context outside the prompt window.\n   - AI native 点：It turns repository structure into an MCP-accessible graph context layer with multi-language parsing, live file watching, embedded database options and standalone HTML graph visualization.\n   - 增长/活跃信号：GitTrend AI Coding Assistant ranked it #7 with +404 stars today; GitHub showed 3.7k stars, 694 forks, 1,551 commits, 151 issues, 25 PRs, docs, tests, website and Docker/K8s assets.\n   - 可运行性判断：README documents pip install, command verification, embedded DB defaults, codegraphcontext index/list/analyze/watch commands, MCP mode, 22 languages and interactive visualization.\n   - 建议动作：Run it on this radar repo and compare answer quality against Graphify/Understand-Anything before choosing a durable code-context tool.\n\n5. [zhukunpenglinyutong/jetbrains-cc-gui](https://github.com/zhukunpenglinyutong/jetbrains-cc-gui) - IDE Agent GUI - Score 82\n   - 做什么：IntelliJ IDEA plugin that provides a visual interface for Claude Code and OpenAI Codex with context-aware chat, file references, images, agents, MCP support, diffing and session management.\n   - 面向谁：JetBrains users who want Codex/Claude workflows inside their IDE with visible sessions and permission controls.\n   - AI native 点：It productizes coding agents as an IDE-native control panel: dual engines, @file context, built-in agent system, slash skills, MCP extension, security controls, diffs, exports and usage stats.\n   - 增长/活跃信号：GitTrend AI Coding Assistant ranked it #4 with +569 stars today; GitHub showed 4k stars, 506 forks, 1,446 commits and latest release v0.4.5 on June 12, 2026.\n   - 可运行性判断：README links JetBrains Marketplace install, local dev via npm/gradle runIde, buildPlugin, changelog, screenshots and active development notes.\n   - 建议动作：Track as a JetBrains-side Codex UX signal; install only if current work moves from VS Code/Codex desktop into IntelliJ-heavy projects.\n\n6. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) - Agent Internet Reach CLI - Score 80\n   - 做什么：CLI/skill package that gives AI agents read/search access across Twitter/X, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu and related channels with install health checks.\n   - 面向谁：Researchers, operators and agent users who need social/community search without wiring each platform manually.\n   - AI native 点：It packages internet reach as an installable agent capability, including platform-specific adapters, MCP/CLI glue, health checks, dry-run install, cookie-risk guidance and uninstall cleanup.\n   - 增长/活跃信号：GitTrend AI Agent ranked it #3 with +1.1k stars today; GitHub showed 26.5k stars, 2.2k forks, 282 commits, 27 issues and 14 PRs.\n   - 可运行性判断：README documents agent-reach install --env=auto, safe mode, dry-run, uninstall, platform guidance, tests/docs folders and security warnings for cookie-based sources.\n   - 建议动作：Use a throwaway account and test one low-risk GitHub/YouTube/Reddit research flow; avoid primary-account cookie paths.\n\n7. [lemonade-sdk/lemonade](https://github.com/lemonade-sdk/lemonade) - Local AI Server / Agent Model Substrate - Score 78\n   - 做什么：Local AI server and embeddable runtime for running chat, coding, speech, transcription and image models on user GPUs/NPUs through OpenAI/Anthropic/Ollama-compatible APIs.\n   - 面向谁：AI app developers and local-agent builders who need private, lower-cost local inference and model discovery across PCs.\n   - AI native 点：It makes local multimodal inference a product surface: model manager, API-compatible local server, embeddable binary, app marketplace integrations and hardware-optimized backends.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #7 with +348 stars today; GitHub showed 4.3k stars, 339 forks, 1,103 commits, 251 issues, 73 PRs and AMD-sponsored/community maintenance.\n   - 可运行性判断：README links Windows/Linux/macOS/Docker installs, model manager, CLI commands, OpenAI-compatible base URL, mobile clients, docs and supported backend matrix.\n   - 建议动作：Keep as local-model substrate candidate; test only after deciding a workflow needs private/offline model serving.\n\n8. [qixing-jk/all-api-hub](https://github.com/qixing-jk/all-api-hub) - AI API Account Operations - Score 75\n   - 做什么：Browser-extension dashboard for managing multiple New API/Sub2API relay accounts, balances, usage, price comparison, auto check-ins, credentials and health checks.\n   - 面向谁：Power users and small teams using many AI relay accounts or model gateways, especially China-market Claude/Codex/Cursor users.\n   - AI native 点：It operationalizes the messy account layer beneath AI-native tools: balance visibility, price routing, key reuse, station recognition, automated check-ins and tool integration.\n   - 增长/活跃信号：GitTrend AI Infrastructure ranked it #3 with +475 stars today; GitHub showed 4.1k stars, 281 forks, 37 issues, 4 PRs, Chrome/Edge/Firefox distribution and user-facing docs.\n   - 可运行性判断：README links Chrome/Edge/Firefox stores, stable/nightly GitHub packages, mobile/browser-specific guides, quickstart, supported sites and integration docs.\n   - 建议动作：Watch as an ops-pattern reference; do not adopt for core workflows until security and credential-storage model are reviewed.\n\n## Watchlist\n\n- [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) - Business Diagnosis Agent Skills - Score 73 - Business-diagnostics skill pack with strong GitTrend velocity, but product surface remains skill/workflow-centric. 建议：Watch; promote only if packaged UI/CLI or repeatable evidence workflow becomes clearer.\n- [tw93/Waza](https://github.com/tw93/Waza) - Engineering Habit Skills - Score 71 - Engineering habits converted into Claude-run skills. 建议：Watch for concrete workflows; likely skip if it remains guidance-only.\n- [agentscope-ai/agentscope-java](https://github.com/agentscope-ai/agentscope-java) - Java Multi-agent Framework - Score 70 - Java framework for agent-oriented programming and LLM applications. 建议：Watch as enterprise-language signal.\n- [TanStack/ai](https://github.com/TanStack/ai) - Type-safe AI App SDK - Score 70 - Provider-agnostic TypeScript AI SDK for streaming chat, tool calling, agents and multimodal apps. 建议：Keep watching for API stabilization and examples.\n\n## Skip Reasons\n\n- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) - Strong GitTrend rank, but still primarily taste/style guidance rather than durable product surface with auditable runtime.\n- [affaan-m/ECC](https://github.com/affaan-m/ECC) - Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion.\n- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) - Single CLAUDE.md/prompt-methodology style project; lacks runnable product workflow.\n- [yasasbanukaofficial/claude-code](https://github.com/yasasbanukaofficial/claude-code) - Claims to be open-source Claude Code CLI skeleton; high fork/star mismatch and unclear legitimacy/product originality, so not promoted.\n- [FlorianBruniaux/claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) - Guide/template repository; useful education material but outside product-shaped radar focus.\n\n## 今日趋势观察\n\n1. Agent 产品开始明显转向“可见工作台”：Open Design、Goose、CopilotKit、JetBrains CC GUI 都在把 agent 的工作过程从聊天框抽象成桌面、IDE、前端协议或 artifact studio。\n2. 代码上下文图谱继续升温，但今天更适合区分 Graphify/Understand-Anything/CodeGraphContext：前两者偏 agent skill 和可视化理解，CGC 偏 pip 可装、MCP 可接、CLI 可验的工程工具。\n3. 本地模型和执行基础设施仍在补位：Lemonade 代表“本地多模态 OpenAI-compatible server”，与 sandbox-runtime/just-bash 代表的安全执行层可以组成下一阶段 agent runtime substrate。\n4. 中国市场的 AI 运维需求更可见：All API Hub、Agent Reach 都围绕账号、渠道、平台登录态、成本和连接器可靠性，是真实痛点，但也带来凭据和封号风险。\n5. GitTrend 的异常高星项目仍多，今天继续把 prompt-only、guide-only、可疑源码复刻和异常星速项目放进 Skip，而不当作产品机会。\n\n## 今日建议动作\n\n- 第一优先级：试跑 Open Design 的桌面或 od mcp install codex 路径，验证能否稳定产出 HTML/PPTX/MP4 artifact。\n- 第二优先级：把 Goose 作为本地 agent runtime 对照组，比较它与 Codex/OpenCode 的 MCP、权限、任务状态和桌面 UX。\n- 第三优先级：用 CodeGraphContext 索引一个熟悉 repo，和 Graphify/Understand-Anything 做同题对比。\n- 风险动作：Agent Reach 只用小号/低风险平台测试，All API Hub 先做凭据存储和权限模型审计。\n\n## 信息来源\n\n- GitTrend AI Agent: https://gittrend.io/trending/ai-agent\n- GitTrend AI Coding Assistant: https://gittrend.io/trending/ai-coding-assistant\n- GitTrend AI Infrastructure: https://gittrend.io/trending/ai-infrastructure\n- GitTrend AI Skills: https://gittrend.io/trending/ai-skills\n- GitHub README/release pages for all Top/Watchlist repositories listed above.\n\n## 实时仓库审计说明\n\n本次做过实时网页仓库审计和 GitTrend 页面检查；没有 clone、install、Docker run、GitHub API 或本地功能试跑。Shell 里的 GitHub API 访问仍失败：代理 127.0.0.1:7890 不可用，直连 DNS 无法解析 api.github.com。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "category": "Agentic Design Workspace",
+      "score": 91,
+      "summary": "Local-first open-source Claude Design/Figma-era alternative that turns coding-agent CLIs into a desktop design studio for prototypes, dashboards, decks, images, video and exports.",
+      "audience": "Design-minded product builders, PMs, founders, and coding-agent users who want artifact generation tied to local files, design systems and export workflows.",
+      "ai_native_angle": "It treats the coding agent as the design engine: skills, plugins, DESIGN.md systems, MCP install targets, BYOK model routing, sandboxed previews and artifact export are native product primitives.",
+      "growth_signal": "GitTrend AI Agent ranked it #5 with +774 stars today; GitHub showed 63.6k stars, 7.1k forks, 263 issues, 136 PRs, 2,228 commits, and release notes for Open Design 0.10.0.",
+      "runnability": "README documents desktop downloads for macOS/Windows/Linux, one-line agent install, MCP install for Codex/Claude/Cursor/OpenCode/Copilot/Gemini-style hosts, Vercel/self-host paths, screenshots and demo artifacts.",
+      "recommended_action": "Run the desktop app or one-line agent install; test whether a real Codex design-to-HTML handoff can replace today’s ad hoc visual artifact workflows."
+    },
+    {
+      "rank": 2,
+      "full_name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "category": "Desktop/CLI Agent Runtime",
+      "score": 88,
+      "summary": "Open-source extensible AI agent with native desktop app, CLI and embeddable API for installing, executing, editing and testing with many LLM providers.",
+      "audience": "Developers and teams that want a durable agent runtime beyond editor autocomplete, especially where MCP extensions and provider choice matter.",
+      "ai_native_angle": "Goose makes the agent a local operating surface: desktop, terminal, API, 15+ model providers, ACP subscriptions, 70+ MCP extensions, custom distributions and governance under AAIF/Linux Foundation.",
+      "growth_signal": "GitTrend AI Agent ranked it #8 with +591 stars today; GitHub showed 49k stars, 5.2k forks, 4,697 commits, 175 issues, 171 PRs, and latest release v1.37.0 on June 3, 2026.",
+      "runnability": "README links desktop downloads for macOS/Linux/Windows, a curl installer for CLI, quickstart/tutorial docs, diagnostics, governance, custom distributions and extension docs.",
+      "recommended_action": "Use as a comparison baseline against Codex/OpenCode local workflows; specifically inspect extension management, task state, and MCP permission boundaries."
+    },
+    {
+      "rank": 3,
+      "full_name": "CopilotKit/CopilotKit",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "category": "Agentic Frontend / Generative UI",
+      "score": 86,
+      "summary": "Frontend stack for building full-stack agentic applications with chat UI, generative UI, shared state, tool rendering and human-in-the-loop workflows across web, mobile and chat surfaces.",
+      "audience": "Frontend/full-stack teams embedding agents into real products rather than shipping standalone chat widgets.",
+      "ai_native_angle": "It makes agent-user interaction a UI protocol: shared state, tool-rendered components, HITL approvals, AG-UI, one backend powering web/mobile/Slack/Teams, and coding-agent setup skills.",
+      "growth_signal": "GitTrend AI Agent ranked it #10 with +468 stars today; GitHub showed 34.8k stars, 4.3k forks, 11,214 commits, 323 issues, 242 PRs, and latest release v1.60.0 on June 11, 2026.",
+      "runnability": "README has docs/examples links, npx create command, skills installer, framework support table, demo videos, SDK packages and AG-UI starter command.",
+      "recommended_action": "Prototype one thin agent workflow in an existing app; evaluate whether generative UI and shared state reduce custom glue versus plain chat."
+    },
+    {
+      "rank": 4,
+      "full_name": "CodeGraphContext/CodeGraphContext",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext",
+      "category": "Code Graph MCP Context",
+      "score": 84,
+      "summary": "MCP server plus CLI that indexes local code into graph databases so AI assistants and developers can query call chains, relationships, complexity and code structure.",
+      "audience": "Developers onboarding to complex repositories and agent builders who need persistent code context outside the prompt window.",
+      "ai_native_angle": "It turns repository structure into an MCP-accessible graph context layer with multi-language parsing, live file watching, embedded database options and standalone HTML graph visualization.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #7 with +404 stars today; GitHub showed 3.7k stars, 694 forks, 1,551 commits, 151 issues, 25 PRs, docs, tests, website and Docker/K8s assets.",
+      "runnability": "README documents pip install, command verification, embedded DB defaults, codegraphcontext index/list/analyze/watch commands, MCP mode, 22 languages and interactive visualization.",
+      "recommended_action": "Run it on this radar repo and compare answer quality against Graphify/Understand-Anything before choosing a durable code-context tool."
+    },
+    {
+      "rank": 5,
+      "full_name": "zhukunpenglinyutong/jetbrains-cc-gui",
+      "url": "https://github.com/zhukunpenglinyutong/jetbrains-cc-gui",
+      "category": "IDE Agent GUI",
+      "score": 82,
+      "summary": "IntelliJ IDEA plugin that provides a visual interface for Claude Code and OpenAI Codex with context-aware chat, file references, images, agents, MCP support, diffing and session management.",
+      "audience": "JetBrains users who want Codex/Claude workflows inside their IDE with visible sessions and permission controls.",
+      "ai_native_angle": "It productizes coding agents as an IDE-native control panel: dual engines, @file context, built-in agent system, slash skills, MCP extension, security controls, diffs, exports and usage stats.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #4 with +569 stars today; GitHub showed 4k stars, 506 forks, 1,446 commits and latest release v0.4.5 on June 12, 2026.",
+      "runnability": "README links JetBrains Marketplace install, local dev via npm/gradle runIde, buildPlugin, changelog, screenshots and active development notes.",
+      "recommended_action": "Track as a JetBrains-side Codex UX signal; install only if current work moves from VS Code/Codex desktop into IntelliJ-heavy projects."
+    },
+    {
+      "rank": 6,
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "Agent Internet Reach CLI",
+      "score": 80,
+      "summary": "CLI/skill package that gives AI agents read/search access across Twitter/X, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu and related channels with install health checks.",
+      "audience": "Researchers, operators and agent users who need social/community search without wiring each platform manually.",
+      "ai_native_angle": "It packages internet reach as an installable agent capability, including platform-specific adapters, MCP/CLI glue, health checks, dry-run install, cookie-risk guidance and uninstall cleanup.",
+      "growth_signal": "GitTrend AI Agent ranked it #3 with +1.1k stars today; GitHub showed 26.5k stars, 2.2k forks, 282 commits, 27 issues and 14 PRs.",
+      "runnability": "README documents agent-reach install --env=auto, safe mode, dry-run, uninstall, platform guidance, tests/docs folders and security warnings for cookie-based sources.",
+      "recommended_action": "Use a throwaway account and test one low-risk GitHub/YouTube/Reddit research flow; avoid primary-account cookie paths."
+    },
+    {
+      "rank": 7,
+      "full_name": "lemonade-sdk/lemonade",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "category": "Local AI Server / Agent Model Substrate",
+      "score": 78,
+      "summary": "Local AI server and embeddable runtime for running chat, coding, speech, transcription and image models on user GPUs/NPUs through OpenAI/Anthropic/Ollama-compatible APIs.",
+      "audience": "AI app developers and local-agent builders who need private, lower-cost local inference and model discovery across PCs.",
+      "ai_native_angle": "It makes local multimodal inference a product surface: model manager, API-compatible local server, embeddable binary, app marketplace integrations and hardware-optimized backends.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #7 with +348 stars today; GitHub showed 4.3k stars, 339 forks, 1,103 commits, 251 issues, 73 PRs and AMD-sponsored/community maintenance.",
+      "runnability": "README links Windows/Linux/macOS/Docker installs, model manager, CLI commands, OpenAI-compatible base URL, mobile clients, docs and supported backend matrix.",
+      "recommended_action": "Keep as local-model substrate candidate; test only after deciding a workflow needs private/offline model serving."
+    },
+    {
+      "rank": 8,
+      "full_name": "qixing-jk/all-api-hub",
+      "url": "https://github.com/qixing-jk/all-api-hub",
+      "category": "AI API Account Operations",
+      "score": 75,
+      "summary": "Browser-extension dashboard for managing multiple New API/Sub2API relay accounts, balances, usage, price comparison, auto check-ins, credentials and health checks.",
+      "audience": "Power users and small teams using many AI relay accounts or model gateways, especially China-market Claude/Codex/Cursor users.",
+      "ai_native_angle": "It operationalizes the messy account layer beneath AI-native tools: balance visibility, price routing, key reuse, station recognition, automated check-ins and tool integration.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #3 with +475 stars today; GitHub showed 4.1k stars, 281 forks, 37 issues, 4 PRs, Chrome/Edge/Firefox distribution and user-facing docs.",
+      "runnability": "README links Chrome/Edge/Firefox stores, stable/nightly GitHub packages, mobile/browser-specific guides, quickstart, supported sites and integration docs.",
+      "recommended_action": "Watch as an ops-pattern reference; do not adopt for core workflows until security and credential-storage model are reviewed."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "dontbesilent2025/dbskill",
+      "url": "https://github.com/dontbesilent2025/dbskill",
+      "category": "Business Diagnosis Agent Skills",
+      "score": 73,
+      "summary": "Business-diagnostics skill pack with strong GitTrend velocity, but product surface remains skill/workflow-centric.",
+      "audience": "Business operators using Claude/Codex-style skill systems.",
+      "ai_native_angle": "Turns commercial diagnosis methods into agent-callable routines.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #1 with +1.7k stars today.",
+      "runnability": "Likely shell/skill install path; not re-audited today.",
+      "recommended_action": "Watch; promote only if packaged UI/CLI or repeatable evidence workflow becomes clearer."
+    },
+    {
+      "full_name": "tw93/Waza",
+      "url": "https://github.com/tw93/Waza",
+      "category": "Engineering Habit Skills",
+      "score": 71,
+      "summary": "Engineering habits converted into Claude-run skills.",
+      "audience": "Developers seeking opinionated coding-agent behavior packs.",
+      "ai_native_angle": "Encodes repeatable engineering practices for agent execution.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #3 with +953 stars today.",
+      "runnability": "Skill repository signal; no install audit today.",
+      "recommended_action": "Watch for concrete workflows; likely skip if it remains guidance-only."
+    },
+    {
+      "full_name": "agentscope-ai/agentscope-java",
+      "url": "https://github.com/agentscope-ai/agentscope-java",
+      "category": "Java Multi-agent Framework",
+      "score": 70,
+      "summary": "Java framework for agent-oriented programming and LLM applications.",
+      "audience": "Java enterprise teams exploring multi-agent systems.",
+      "ai_native_angle": "Brings multi-agent orchestration patterns into Java stacks.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #2 with +546 stars today.",
+      "runnability": "Needs deeper README/install audit before promotion.",
+      "recommended_action": "Watch as enterprise-language signal."
+    },
+    {
+      "full_name": "TanStack/ai",
+      "url": "https://github.com/TanStack/ai",
+      "category": "Type-safe AI App SDK",
+      "score": 70,
+      "summary": "Provider-agnostic TypeScript AI SDK for streaming chat, tool calling, agents and multimodal apps.",
+      "audience": "TanStack/TypeScript app teams.",
+      "ai_native_angle": "Makes AI app primitives framework-native and type-safe.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #10 with +158 stars today.",
+      "runnability": "Docs visible but package maturity not audited today.",
+      "recommended_action": "Keep watching for API stabilization and examples."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "skip_reason": "Strong GitTrend rank, but still primarily taste/style guidance rather than durable product surface with auditable runtime."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion."
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "skip_reason": "Single CLAUDE.md/prompt-methodology style project; lacks runnable product workflow."
+    },
+    {
+      "full_name": "yasasbanukaofficial/claude-code",
+      "url": "https://github.com/yasasbanukaofficial/claude-code",
+      "skip_reason": "Claims to be open-source Claude Code CLI skeleton; high fork/star mismatch and unclear legitimacy/product originality, so not promoted."
+    },
+    {
+      "full_name": "FlorianBruniaux/claude-code-ultimate-guide",
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "skip_reason": "Guide/template repository; useful education material but outside product-shaped radar focus."
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-06-07",
+  "generated_at": "2026-06-07T12:56:08+08:00",
+  "data_window": "2026-06-04 12:56 to 2026-06-07 12:56 Asia/Shanghai; GitHub repositories recently updated, newly visible, or showing product traction in AI agents, LLM apps, RAG, MCP, AI workflow, browser/desktop/code/voice agents, assistants, automation, and copilot-style tools.",
+  "source_summary": "Live GitHub topic/search/repository pages and README-level evidence; local gh/GitHub API access was not available, so no clone/run audit was performed.",
+  "trend_observations": "Agent products are splitting into runtime/CLI, workflow backend/automation, and UI/desktop assistant layers; IM-based agents remain a practical vertical entry; AI workflow platforms are converging with automation tools through MCP and agent actions; trend monitoring and memory layers are becoming reusable agent product infrastructure.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, explicit user scenarios, documentation, demos/examples/screenshots, and visible recent activity. Repeated projects from the 2026-06-05 radar were not re-ranked unless they provided new category context. Growth signals are qualitative page observations and should be API-verified before investment decisions.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-07\n\n数据窗口：2026-06-04 12:56 至 2026-06-07 12:56（Asia/Shanghai），重点查看 GitHub 近期更新、Topic 新鲜度、README 产品证据、安装路径、demo/examples、issues/PR/release 活跃度。\n\n关键假设：本地 `gh`/GitHub API 仍不可用，本次基于实时 GitHub 页面与 Topic/Search 页面审计；未 clone 或实际运行仓库。分数偏向真实产品形态、可运行 UI/CLI/API、文档完整度、近期活跃和可复刻价值。6 月 5 日已入选的 Dograh、WeKnora、Stagehand、Cua 等项目仅作为趋势背景，今天不重复进入 Top。\n\n## Top Projects\n\n1. NousResearch/hermes-agent - General AI Agent Runtime - Score 91\n   - GitHub: https://github.com/NousResearch/hermes-agent\n   - 做什么：NousResearch 的通用 agent 项目，围绕 Hermes 模型生态提供可执行 agent 能力。\n   - 面向谁：想基于开源模型构建 agent runtime、研究/产品化 agent 行为的开发者和实验团队。\n   - AI native 点：模型、agent loop、工具使用和可运行代码是主体，不只是模型权重说明。\n   - 增长/活跃信号：GitHub Topic 页面显示约 185k stars、31.8k forks，并在 2026-06-07 更新；体量异常高，需后续用 API 二次确认。\n   - 可运行性判断：仓库有 README 与代码入口，但本轮未 clone/run；建议先做依赖与示例审计。\n   - 建议动作：加入高优先级复核，确认 stars/README/许可/运行路径是否真实匹配。\n\n2. zhayujie/CowAgent - Agent Workflow / WeChat Assistant - Score 88\n   - GitHub: https://github.com/zhayujie/CowAgent\n   - 做什么：面向微信、企业微信和飞书的 AI agent 框架，支持任务自动化、上下文理解和工具集成。\n   - 面向谁：要把 AI assistant 接入 IM 场景、客服、个人助手或企业流程的开发者。\n   - AI native 点：IM 会话、agent 编排、上下文、插件/工具和自动化动作直接组成产品体验。\n   - 增长/活跃信号：GitHub Topic 页面显示约 8.1k stars、1.5k forks，2026-06-07 更新。\n   - 可运行性判断：项目形态明确，适合从 IM bot 到 workflow assistant 复刻；需要后续验证部署文档和渠道配置门槛。\n   - 建议动作：做一张 IM-agent 产品卡，重点看飞书/企微接入、插件机制和安全边界。\n\n3. iOfficeAI/AionUi - AI Agent Web UI - Score 87\n   - GitHub: https://github.com/iOfficeAI/AionUi\n   - 做什么：Web 端 AI agent UI/工作台，面向多 agent 或 assistant 操作界面。\n   - 面向谁：需要给 agent 能力提供桌面式 Web 操作台的产品团队。\n   - AI native 点：把 agent 操作、任务、会话和用户交互沉淀到 UI，而不是只提供后端 SDK。\n   - 增长/活跃信号：GitHub Topic 页面显示约 3k stars、536 forks，2026-06-07 更新。\n   - 可运行性判断：产品 UI 方向清晰；本轮未运行，需要下一步核对 Docker/前端启动方式和截图质量。\n   - 建议动作：纳入 UI 形态观察，拆解 agent workspace 的信息架构。\n\n4. jackwener/OpenCLI - AI CLI / Agent Shell - Score 85\n   - GitHub: https://github.com/jackwener/OpenCLI\n   - 做什么：开源 CLI agent/AI shell 项目，目标是在终端中提供 AI 辅助执行与自动化。\n   - 面向谁：命令行重度用户、DevOps、工程自动化和本地 agent 工具开发者。\n   - AI native 点：LLM 与 shell/workflow 执行路径结合，CLI 是核心交互面。\n   - 增长/活跃信号：GitHub Topic 页面显示约 2k stars、256 forks，2026-06-07 更新。\n   - 可运行性判断：CLI 产品形态明确；需要后续验证安装命令、权限模型和命令执行保护。\n   - 建议动作：作为 coding/ops agent CLI 候选，优先审计安全策略与任务恢复能力。\n\n5. activepieces/activepieces - AI Workflow Automation - Score 84\n   - GitHub: https://github.com/activepieces/activepieces\n   - 做什么：开源自动化平台，正在把 AI、MCP、agent workflows 和应用连接器合并到低代码流程里。\n   - 面向谁：运营、增长、内部工具、SaaS 自动化和 AI workflow 团队。\n   - AI native 点：AI agent/action 逐步成为 workflow 节点，与 280+ integrations 和自托管平台结合。\n   - 增长/活跃信号：GitHub Topic 页面显示约 18.7k stars、2.8k forks，2026-06-06 更新。\n   - 可运行性判断：成熟产品形态，通常具备 Docker/前后端/connector 结构；本轮未重复深跑。\n   - 建议动作：跟踪 AI workflow 节点和 MCP 连接器，作为 Zapier+n8n+agent 方向标杆。\n\n6. CherryHQ/cherry-studio - Desktop AI Assistant - Score 83\n   - GitHub: https://github.com/CherryHQ/cherry-studio\n   - 做什么：跨平台桌面 AI assistant，整合多模型、对话、知识和生产力工作流。\n   - 面向谁：重度 AI 用户、知识工作者和需要本地桌面 assistant 的团队。\n   - AI native 点：多模型、多会话、知识工作台和桌面入口构成完整 AI app，而非 SDK。\n   - 增长/活跃信号：GitHub Topic 页面显示约 31.9k stars、3k forks，2026-06-07 更新。\n   - 可运行性判断：桌面产品成熟，通常有 release/app 交付；本轮主要观察近期活跃，不重复审计基础功能。\n   - 建议动作：作为桌面 assistant 体验标杆，关注 plugin/MCP/本地知识库演进。\n\n7. santifer/career-ops - Vertical AI Workflow App - Score 80\n   - GitHub: https://github.com/santifer/career-ops\n   - 做什么：垂直职业运营/求职流程自动化项目，用 AI 支撑简历、申请和跟进流程。\n   - 面向谁：求职者、职业教练、个人效率工具开发者。\n   - AI native 点：把 LLM 放进具体业务流，产品价值来自端到端任务完成，而不是泛聊天。\n   - 增长/活跃信号：GitHub Topic 页面显示约 716 stars、105 forks，2026-06-07 更新。\n   - 可运行性判断：垂直场景明确，适合复刻；需要后续确认 UI、数据模型和第三方集成。\n   - 建议动作：作为“垂直 workflow agent”样本拆解，关注 onboarding 和任务闭环。\n\n8. MotiaDev/motia - Evented AI Workflow Backend - Score 79\n   - GitHub: https://github.com/MotiaDev/motia\n   - 做什么：面向 API、events、background jobs 和 agentic workflow 的统一后端框架。\n   - 面向谁：需要把 agent 步骤与生产后端事件流整合的工程团队。\n   - AI native 点：把 agent/workflow 运行纳入事件驱动 backend，而不是独立脚本。\n   - 增长/活跃信号：GitHub Topic 页面显示约 7.6k stars、556 forks，2026-06-06 更新。\n   - 可运行性判断：框架/平台形态较成熟，适合做 agent workflow backend 评估；需验证 AI examples 深度。\n   - 建议动作：观察其与 Mastra、Activepieces、LangGraph 类项目在 workflow runtime 上的分工。\n\n## Watchlist\n\n- sansan0/TrendRadar - Trend Monitoring Agent - Score 74 - GitHub Topic 页面显示约 3.6k stars、386 forks，2026-06-07 更新；方向契合“自动化雷达”，但需要确认数据源、调度和消息投递是否产品化。\n- supermemoryai/supermemory - Memory API / Knowledge Layer - Score 76 - 约 13.3k stars、1.2k forks，2026-06-07 更新；长期价值高，但更偏基础设施，等更多 agent app 样例。\n- upstash/context7 - MCP Documentation Context - Score 77 - 约 26.8k stars、1.4k forks，2026-06-07 更新；MCP 文档上下文很强，但更像 agent infra。\n- FlowiseAI/Flowise - Low-code LLM App Builder - Score 75 - 约 45.2k stars、24.1k forks，2026-06-06 更新；成熟度高，本次作为基准观察，避免每日重复入 Top。\n\n## Skip Reasons\n\n- zed-industries/zed：编辑器产品很强，虽然 AI 相关活跃，但本轮重点是 AI-native product 仓库，Zed 的主体仍是编辑器平台。\n- public-apis/public-apis：大型 API 列表，非 AI 产品、agent、RAG 或 workflow app。\n- drawdb-io/drawdb：数据库设计工具，产品形态清晰但 AI native 属性不足。\n- OpenBB-finance/OpenBB：金融平台成熟，但本轮没有足够信号说明近期 AI-native 功能是核心变化。\n\n## 今日趋势观察\n\n1. Agent 产品正在分化成三层：底层 agent runtime/CLI，中层 workflow backend/automation，上层 agent UI/desktop assistant。\n2. IM/飞书/企微类 agent 仍是最容易落地的垂直入口，因为输入、身份、通知和审批天然存在。\n3. AI workflow 平台正在靠近传统 automation 平台，MCP/agent action 会成为连接器市场的新增长点。\n4. “趋势监控/知识雷达/记忆层”开始变成 agent 产品的基础能力，值得和本自动化流程互相借鉴。\n\n## 今日建议动作\n\n- 优先复核 NousResearch/hermes-agent 的异常高 star/fork 信号，确认是否为真实产品增长。\n- 选 CowAgent 或 career-ops 做一次垂直 workflow agent 拆解，关注从触发到交付结果的闭环。\n- 把 AionUi、Cherry Studio、OpenCLI 放入“agent UI/CLI 交互形态”对比表。\n- 观察 Activepieces/Motia 如何把 agent 步骤接入生产 workflow runtime。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "General AI Agent Runtime",
+      "score": 91,
+      "summary": "NousResearch general agent project around the Hermes model ecosystem with executable agent capabilities.",
+      "audience": "Developers and experiment teams building open-model agent runtimes or productizing agent behavior.",
+      "ai_native_angle": "Model, agent loop, tool use, and executable code are the core product surface.",
+      "growth_signal": "GitHub topic page showed about 185k stars, 31.8k forks, and an update on 2026-06-07; this unusually high signal needs API re-verification.",
+      "runnability": "README and code entry points are present; no clone/run audit was performed in this run.",
+      "recommended_action": "High-priority follow-up audit: verify stars, README claims, license, install path, and runnable examples."
+    },
+    {
+      "rank": 2,
+      "full_name": "zhayujie/CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "category": "Agent Workflow / WeChat Assistant",
+      "score": 88,
+      "summary": "AI agent framework for WeChat, WeCom, and Feishu-style IM assistant and automation workflows.",
+      "audience": "Developers embedding AI assistants into IM, customer support, personal assistant, or enterprise workflow scenarios.",
+      "ai_native_angle": "Conversation context, agent orchestration, plugin/tool use, and automation actions form the user-facing product.",
+      "growth_signal": "GitHub topic page showed about 8.1k stars, 1.5k forks, and an update on 2026-06-07.",
+      "runnability": "Product direction is clear; deployment docs and channel configuration need a deeper follow-up audit.",
+      "recommended_action": "Create an IM-agent product card focused on Feishu/WeCom integration, plugin mechanics, and safety boundaries."
+    },
+    {
+      "rank": 3,
+      "full_name": "iOfficeAI/AionUi",
+      "url": "https://github.com/iOfficeAI/AionUi",
+      "category": "AI Agent Web UI",
+      "score": 87,
+      "summary": "Web-based AI agent workspace for user-facing agent operations and interaction management.",
+      "audience": "Product teams that need a web console or desktop-style workspace for agent capabilities.",
+      "ai_native_angle": "Agent tasks, sessions, operations, and user interaction are represented directly in UI.",
+      "growth_signal": "GitHub topic page showed about 3k stars, 536 forks, and an update on 2026-06-07.",
+      "runnability": "UI product shape is clear; Docker/frontend startup path and screenshot quality need follow-up verification.",
+      "recommended_action": "Track as an agent workspace UI reference and inspect its information architecture."
+    },
+    {
+      "rank": 4,
+      "full_name": "jackwener/OpenCLI",
+      "url": "https://github.com/jackwener/OpenCLI",
+      "category": "AI CLI / Agent Shell",
+      "score": 85,
+      "summary": "Open-source CLI agent or AI shell for terminal-based AI assistance and automation.",
+      "audience": "Command-line power users, DevOps teams, engineering automation builders, and local agent-tool developers.",
+      "ai_native_angle": "LLM-assisted execution is embedded into the shell/workflow interface.",
+      "growth_signal": "GitHub topic page showed about 2k stars, 256 forks, and an update on 2026-06-07.",
+      "runnability": "CLI product shape is clear; install path, permission model, and command execution protections require audit.",
+      "recommended_action": "Evaluate as a coding/ops CLI agent candidate with emphasis on safety and task recovery."
+    },
+    {
+      "rank": 5,
+      "full_name": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "category": "AI Workflow Automation",
+      "score": 84,
+      "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
+      "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
+      "ai_native_angle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
+      "growth_signal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
+      "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
+      "recommended_action": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark."
+    },
+    {
+      "rank": 6,
+      "full_name": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "category": "Desktop AI Assistant",
+      "score": 83,
+      "summary": "Cross-platform desktop AI assistant integrating multiple models, conversations, knowledge, and productivity workflows.",
+      "audience": "Power AI users, knowledge workers, and teams needing a local desktop assistant.",
+      "ai_native_angle": "Multi-model chat, knowledge workspace, and desktop entry point form a complete AI application.",
+      "growth_signal": "GitHub topic page showed about 31.9k stars, 3k forks, and an update on 2026-06-07.",
+      "runnability": "Mature desktop product with release/app delivery patterns; this run observed activity rather than re-auditing basics.",
+      "recommended_action": "Use as a desktop assistant experience benchmark and watch plugin/MCP/local-knowledge evolution."
+    },
+    {
+      "rank": 7,
+      "full_name": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "category": "Vertical AI Workflow App",
+      "score": 80,
+      "summary": "Vertical career-operations and job-search workflow automation project using AI for resume, application, and follow-up loops.",
+      "audience": "Job seekers, career coaches, and builders of personal productivity agents.",
+      "ai_native_angle": "LLM capability is embedded in a concrete end-to-end job-search workflow rather than generic chat.",
+      "growth_signal": "GitHub topic page showed about 716 stars, 105 forks, and an update on 2026-06-07.",
+      "runnability": "Vertical scenario is clear; UI, data model, and third-party integrations need follow-up verification.",
+      "recommended_action": "Decompose as a vertical workflow-agent sample, focusing on onboarding and task completion loop."
+    },
+    {
+      "rank": 8,
+      "full_name": "MotiaDev/motia",
+      "url": "https://github.com/MotiaDev/motia",
+      "category": "Evented AI Workflow Backend",
+      "score": 79,
+      "summary": "Backend framework unifying APIs, events, background jobs, and agentic workflows.",
+      "audience": "Engineering teams integrating agent steps into production backend event flows.",
+      "ai_native_angle": "Agent/workflow execution is treated as part of an event-driven backend runtime instead of a separate script.",
+      "growth_signal": "GitHub topic page showed about 7.6k stars, 556 forks, and an update on 2026-06-06.",
+      "runnability": "Framework/platform shape is mature; AI example depth still needs verification.",
+      "recommended_action": "Watch how its workflow runtime overlaps with Mastra, Activepieces, and LangGraph-style systems."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "sansan0/TrendRadar",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "category": "Trend Monitoring Agent",
+      "score": 74,
+      "summary": "Trend radar project relevant to automated monitoring and message delivery.",
+      "audience": "Operators and builders of automated trend intelligence workflows.",
+      "ai_native_angle": "Uses automation and AI-style summarization/monitoring patterns around trend detection.",
+      "growth_signal": "GitHub topic page showed about 3.6k stars, 386 forks, and an update on 2026-06-07.",
+      "runnability": "Needs follow-up audit of data sources, scheduler, and delivery productization.",
+      "recommended_action": "Compare with this automation as a reusable trend-radar architecture reference."
+    },
+    {
+      "full_name": "supermemoryai/supermemory",
+      "url": "https://github.com/supermemoryai/supermemory",
+      "category": "Memory API / Knowledge Layer",
+      "score": 76,
+      "summary": "Memory and knowledge layer for AI applications and agents.",
+      "audience": "Agent app teams needing persistent memory and retrieval context.",
+      "ai_native_angle": "Persistent memory becomes shared product infrastructure for agent applications.",
+      "growth_signal": "GitHub topic page showed about 13.3k stars, 1.2k forks, and an update on 2026-06-07.",
+      "runnability": "More infrastructure than end-user product; wait for more app examples.",
+      "recommended_action": "Watch for agent app templates and integration depth."
+    },
+    {
+      "full_name": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "MCP Documentation Context",
+      "score": 77,
+      "summary": "MCP-style documentation context provider for coding agents.",
+      "audience": "Coding-agent and developer-tool builders needing fresh library docs in prompts.",
+      "ai_native_angle": "Improves agent output by providing current docs/context through MCP-like workflow.",
+      "growth_signal": "GitHub topic page showed about 26.8k stars, 1.4k forks, and an update on 2026-06-07.",
+      "runnability": "Strong agent infrastructure; not ranked higher because it is less product-app shaped.",
+      "recommended_action": "Keep as a coding-agent infra baseline."
+    },
+    {
+      "full_name": "FlowiseAI/Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "category": "Low-code LLM App Builder",
+      "score": 75,
+      "summary": "Low-code builder for LLM apps, agent flows, and RAG applications.",
+      "audience": "Teams building visual LLM workflows and internal AI apps.",
+      "ai_native_angle": "Visual workflow builder makes LLM and agent chains editable as product workflows.",
+      "growth_signal": "GitHub topic page showed about 45.2k stars, 24.1k forks, and an update on 2026-06-06.",
+      "runnability": "Mature and runnable; kept as benchmark rather than fresh Top pick.",
+      "recommended_action": "Use as baseline for comparing newer workflow builders."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "skip_reason": "Strong editor product with AI relevance, but this cycle prioritized repositories whose primary surface is AI-native agent/workflow/RAG/product automation."
+    },
+    {
+      "full_name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "skip_reason": "Large API list, not an AI product, agent, RAG app, or workflow automation system."
+    },
+    {
+      "full_name": "drawdb-io/drawdb",
+      "url": "https://github.com/drawdb-io/drawdb",
+      "skip_reason": "Clear database design product but insufficient AI-native signal for this radar window."
+    },
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "url": "https://github.com/OpenBB-finance/OpenBB",
+      "skip_reason": "Mature finance platform, but no strong evidence in this window that AI-native functionality is the core recent change."
+    }
+  ]
+}

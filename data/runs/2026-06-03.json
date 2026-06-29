@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-06-03",
+  "generated_at": "2026-06-03T11:12:00+08:00",
+  "data_window": "2026-05-31T02:18:46Z to 2026-06-03T03:12:00Z; GitHub repositories newly surfaced, recently updated, released, or showing visible product-shaped growth in AI agent, browser agent, MCP, AI workflow, code agent, voice agent, assistant infrastructure, and automation categories.",
+  "source_summary": "Real-time web/GitHub search and public repository pages opened during this run; local 2026-06-02 radar was checked to reduce simple repetition. Shell network access to api.github.com was unavailable in the sandbox, so live GitHub API enrichment was not used. No repositories were cloned or executed locally; runnability is judged from public README/search snippets, repository product surface, Docker/CLI/API/demo/docs signals, and prior radar continuity.",
+  "trend_observations": "The strongest new signal is that agent products are becoming narrower and more operational: browser agents are moving from demo runtimes into governed enterprise web automation, MCP servers are appearing as vertical control planes for cloud/dev platforms, and voice agents are converging on self-hostable real-time infrastructure. Compared with 2026-06-02's terminal coding-agent focus, today's better opportunity is to test supervised web automation and platform MCP integrations as repeatable product loops.",
+  "assumptions": "Scores prioritize product-shaped repositories with a runnable UI/CLI/API, clear user scenario, real workflow, install/deploy path, examples/demo/docs, and recent visible activity. Star/release/update counts are approximate public snapshots from repository/search pages at run time and may change quickly. Projects already covered in previous runs were only promoted again when they added a fresh comparison angle. Pure paper reproductions, benchmarks, prompt collections, awesome lists, thin SDK wrappers, and documentation-only projects are downgraded or skipped. This run performed real-time repository/search audit but did not clone, build, or execute code.",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-06-03\n\n数据窗口：2026-05-31T02:18:46Z to 2026-06-03T03:12:00Z\n\n信息来源：实时 Web/GitHub 搜索与公开仓库页；参考本地 2026-06-02 radar，避免重复上一轮 terminal coding-agent 主线。当前 sandbox 无法解析 api.github.com，因此未使用 GitHub API 增强；本轮未 clone 或本地运行仓库，可运行性基于 README、repo product surface、Docker/CLI/API/demo/docs 信号判断。\n\n## Top Projects\n\n### 1. microsoft/Webwright\n- GitHub: https://github.com/microsoft/Webwright\n- 分类：Enterprise Browser Agent / Governed Web Automation\n- AI Native Product Score：91\n- 做什么：面向企业网页工作流的开源 browser agent，把自然语言任务转成可审计的浏览器操作。\n- 面向谁：需要让 AI 处理后台系统、Web 表单、运营流程、QA 流程的企业工程与自动化团队。\n- AI native 点：浏览器不是脚本录制器，而是由目标、页面理解、动作执行、人工监督和治理策略组成的 agent workbench。\n- 增长/活跃信号：本轮 browser-agent 搜索中作为 Microsoft 新项目反复出现；与 Skyvern、browser-use、Playwright MCP 构成清晰分层对照。\n- 可运行性判断：公开仓库以产品型 browser agent 为目标，具备微软组织背书；本轮未 clone，需下一步审计安装、认证、策略配置与 demo 完整度。\n- 建议动作：优先试跑。用同一个企业后台表单任务横评 Webwright、Skyvern、browser-use 与 Playwright MCP。\n\n### 2. VoltAgent/voltagent\n- GitHub: https://github.com/VoltAgent/voltagent\n- 分类：TypeScript Agent Framework / Workflow Runtime\n- AI Native Product Score：88\n- 做什么：TypeScript AI agent 框架，面向应用开发者提供 agents、tools、memory、workflow、observability 等工程化能力。\n- 面向谁：正在用 TS/Node 构建生产级 AI agent、SaaS 内嵌 assistant、自动化 workflow 的团队。\n- AI native 点：把 agent 的工具调用、状态、观察性和工作流组织成应用 runtime，而不只是一次性 LLM 调用。\n- 增长/活跃信号：本轮 agent framework 搜索中信号强，产品文档与开发者定位清晰；与 Mastra、LangGraph、OpenAI Agents SDK 属同一工程化赛道。\n- 可运行性判断：README/docs 指向 npm/TypeScript 开发体验与示例路径；本轮未本地执行。\n- 建议动作：做一个“issue triage agent + Slack/Lark 通知”的最小样例，看 workflow、memory、observability 是否比自写 glue code 更省。\n\n### 3. mastra-ai/mastra\n- GitHub: https://github.com/mastra-ai/mastra\n- 分类：Agent Workflow Framework / AI App Backend\n- AI Native Product Score：87\n- 做什么：用于构建 AI agents、workflow、RAG 和 eval 的 TypeScript 框架，强调从原型到生产的后端能力。\n- 面向谁：希望用 TS 统一管理 agent、RAG、tools、eval、deployment 的 AI 产品工程团队。\n- AI native 点：把 agentic workflow、检索、工具、评测与部署合在一个 AI app backend 中，是 AI-native app 的工程底座。\n- 增长/活跃信号：近期持续出现在 agent workflow/framework 搜索中，文档和生态定位明确；与 VoltAgent 构成 TS agent runtime 对照组。\n- 可运行性判断：公开文档/README 指向可安装 SDK、示例和生产化组件；本轮未执行。\n- 建议动作：与 VoltAgent 做同题实现：RAG + tool call + eval，把开发摩擦和可观测性列成对照表。\n\n### 4. block/goose\n- GitHub: https://github.com/block/goose\n- 分类：Code Agent / Desktop Automation Agent\n- AI Native Product Score：86\n- 做什么：Block 开源的本地 AI agent，可在开发环境中执行代码、调用工具、操作项目上下文并辅助软件工程任务。\n- 面向谁：需要更开放可扩展 coding agent、桌面开发 agent、内部工具 agent 的工程团队。\n- AI native 点：把本机工具、文件、命令、扩展能力和模型推理整合成可监督的开发 agent loop。\n- 增长/活跃信号：本轮 code-agent/automation 搜索中继续高频出现，且与 Codex、Gemini CLI、opencode 不同，强调扩展和桌面/工具生态。\n- 可运行性判断：仓库有明确安装与使用路径；本轮未本地运行。\n- 建议动作：纳入 coding-agent 横评的“可扩展本地 agent”样本，重点看 extension、权限和任务恢复。\n\n### 5. railwayapp/railway-mcp-server\n- GitHub: https://github.com/railwayapp/railway-mcp-server\n- 分类：Cloud Platform MCP / Deployment Agent Connector\n- AI Native Product Score：84\n- 做什么：Railway 的 MCP server，让 AI agent 能读取/操作 Railway 项目、部署和平台资源。\n- 面向谁：希望用 agent 管理部署、环境变量、服务状态和云平台运维任务的开发者。\n- AI native 点：把云平台控制面变成 agent 可调用工具，适合“代码修改 -> 部署 -> 观察状态 -> 修复”的闭环。\n- 增长/活跃信号：本轮 MCP 搜索中与 render-mcp-server 同时出现，说明 PaaS/部署平台开始集中补 agent 接口。\n- 可运行性判断：MCP server 形态明确，预期通过 token/config 接入 MCP 客户端；本轮未做凭证运行测试。\n- 建议动作：做一个最小 DevOps agent：查询 Railway 项目状态、读取最近部署、给出修复建议。\n\n### 6. render-oss/render-mcp-server\n- GitHub: https://github.com/render-oss/render-mcp-server\n- 分类：Cloud Platform MCP / DevOps Agent Connector\n- AI Native Product Score：83\n- 做什么：Render 官方/开源 MCP server，把 Render 服务、部署、资源管理能力暴露给 AI agents。\n- 面向谁：使用 Render 托管服务并想把部署/排障/状态查询接入 agent 的开发团队。\n- AI native 点：DevOps 控制面从人点控制台转向 agent tool call，适合自动排障与部署建议。\n- 增长/活跃信号：与 Railway MCP 同期进入搜索视野，体现云平台 MCP 化趋势；项目场景清晰、边界明确。\n- 可运行性判断：MCP server 产品形态明确，需 Render API 凭证配置；本轮未实际连接账户。\n- 建议动作：与 Railway MCP 组成 PaaS MCP 对照，评估权限粒度、可读/可写 API 覆盖和审计能力。\n\n### 7. livekit/agents\n- GitHub: https://github.com/livekit/agents\n- 分类：Realtime Voice Agent Framework\n- AI Native Product Score：82\n- 做什么：LiveKit 的实时语音/多模态 agent 框架，用于构建低延迟 voice assistant、客服、会议和交互式语音产品。\n- 面向谁：做实时语音 AI、客服机器人、会议助手、教育陪练、语音工作流的产品与工程团队。\n- AI native 点：产品核心是实时音频流、语音识别、LLM 推理、TTS、会话状态与工具调用的端到端 agent loop。\n- 增长/活跃信号：voice-agent 搜索中持续高相关；实时语音 agent 在产品化上明显比“聊天机器人”更接近新交互形态。\n- 可运行性判断：LiveKit 生态和 examples/docs 信号强，通常需要服务端 token、语音模型和部署配置；本轮未本地跑通。\n- 建议动作：保留长期跟踪。用“电话客服质检/会议行动项”做一个可测 demo。\n\n### 8. Defend-AI-Tech-Inc/agent-discover-scanner\n- GitHub: https://github.com/Defend-AI-Tech-Inc/agent-discover-scanner\n- 分类：Agent Security / Inventory Scanner\n- AI Native Product Score：79\n- 做什么：面向企业环境发现和盘点 AI agent / agentic workflow 的安全扫描工具。\n- 面向谁：安全团队、平台工程团队、需要治理内部 AI agent 使用的组织。\n- AI native 点：当 agent 从实验进入组织流程后，发现、盘点、风险识别和治理本身会成为 AI-native 基础设施的一部分。\n- 增长/活跃信号：本轮 agent security 搜索中作为少见的“agent 治理工具”出现，区别于普通开发框架。\n- 可运行性判断：仓库目标是 scanner/CLI 或安全工具形态；本轮未审计完整运行步骤。\n- 建议动作：Watch + 安全侧复刻候选。下一步审计它扫描哪些 agent footprint，以及能否输出 SBOM/风险清单。\n\n## Watchlist\n\n### pipecat-ai/pipecat\n- GitHub: https://github.com/pipecat-ai/pipecat\n- 分类：Realtime Voice/Multimodal Agent Runtime\n- Score：78\n- 简述：实时语音 agent runtime 的重要开源基线；今天 LiveKit Agents 更适合作为 Top 代表，Pipecat 保留做语音 agent 横评。\n- 建议动作：与 LiveKit Agents 做延迟、pipeline 编排、模型 provider、部署复杂度对比。\n\n### microsoft/playwright-mcp\n- GitHub: https://github.com/microsoft/playwright-mcp\n- 分类：MCP Browser Automation\n- Score：77\n- 简述：协议工具层仍然关键；今天用于支撑 Webwright/Skyvern/browser-use 的分层比较。\n- 建议动作：不要单独复刻，优先作为 browser-agent benchmark 的底层能力接入。\n\n### browser-use/browser-use\n- GitHub: https://github.com/browser-use/browser-use\n- 分类：Browser Agent Runtime\n- Score：76\n- 简述：成熟 browser-agent runtime，仍是 Webwright/Skyvern 的对照基线。\n- 建议动作：同任务横评三层：runtime、产品化平台、MCP 工具层。\n\n### open-multi-agent/open-multi-agent\n- GitHub: https://github.com/open-multi-agent/open-multi-agent\n- 分类：Multi-agent Orchestration\n- Score：72\n- 简述：多 agent 编排候选；需要确认示例是否有真实任务闭环。\n- 建议动作：先 watch，等安装路径、demo 和任务可观测性更明确再升 Top。\n\n## Skip Reasons\n\n- microsoft/ai-agents-for-beginners: 教程课程，适合学习但不是可运行产品 runtime。\n- sindresorhus/awesome: awesome/list 类型可作为发现源，不进入产品排名。\n- modelcontextprotocol/servers: MCP 参考/聚合价值高，但今天更关注 Render/Railway 这类垂直平台 MCP。\n- HumanLayer/12-factor-agents: 方法论文/工程原则价值高，适合修订 rubric，不作为产品型 Top 项目。\n- 纯 prompt collection、benchmark-only、paper reproduction、thin SDK wrapper：本轮统一降权或跳过。\n\n## 今日趋势观察\n\n1. Browser agent 正从“能点网页”进入“企业级可治理自动化”：Webwright/Skyvern/browser-use/Playwright MCP 的差异开始落在权限、监督、失败恢复、审计与部署形态上。\n2. MCP 进入垂直平台连接器阶段：GitHub MCP 之后，Render/Railway 这类 PaaS 控制面开始变成 agent 可调用工具。\n3. Voice agent 更接近真实 AI-native 产品形态：LiveKit Agents/Pipecat 把实时音频、LLM、TTS、工具和会话状态合成新的交互层。\n4. Agent 安全和治理开始出现产品位：agent-discover-scanner 说明企业会先问“我们到底部署了哪些 agent、它们能做什么”。\n5. TypeScript agent runtime 赛道开始拥挤：VoltAgent 与 Mastra 都在争夺“AI app backend”的开发者心智，值得用同一任务压测。\n\n## 今日建议动作\n\n- 优先复刻：企业后台表单 browser-agent benchmark。输入自然语言任务，比较 Webwright、Skyvern、browser-use、Playwright MCP 的成功率、审计轨迹和失败恢复。\n- 第二优先：PaaS MCP DevOps agent。用 Railway/Render MCP 做“读部署状态 -> 总结问题 -> 建议操作”的只读闭环。\n- 第三优先：语音 agent demo。用 LiveKit Agents 做一个低延迟会议行动项或客服质检原型。\n\n## 关键假设\n\n- GitHub star/update/release 为 2026-06-03 运行时公开页面和搜索结果快照，可能快速变化。\n- 本轮无法使用 api.github.com，因此增长信号偏定性；已在 source_summary 中标注。\n- 本轮未 clone/执行仓库；可运行性为 README、仓库结构、安装入口、demo/docs 的实时审计判断。\n- 已在 2026-06-02 Top 中出现的项目，今天只在有新对照价值时进入 Watchlist。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "microsoft/Webwright",
+      "url": "https://github.com/microsoft/Webwright",
+      "category": "Enterprise Browser Agent / Governed Web Automation",
+      "score": 91,
+      "summary": "Open-source browser agent for enterprise web workflows, translating natural-language tasks into auditable browser actions.",
+      "audience": "Enterprise automation, QA, operations, and engineering teams that need AI to operate web apps and internal admin systems.",
+      "ai_native_angle": "Combines task goals, page understanding, browser actions, human supervision, and governance into an agent workbench.",
+      "growth_signal": "Surfaced repeatedly in current browser-agent searches with Microsoft organization backing and a distinct enterprise-governance angle.",
+      "runnability": "Product-shaped public repository; install/demo depth still needs clone-level audit in a follow-up run.",
+      "recommended_action": "Run first; benchmark against Skyvern, browser-use, and Playwright MCP on the same enterprise form task."
+    },
+    {
+      "rank": 2,
+      "full_name": "VoltAgent/voltagent",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "category": "TypeScript Agent Framework / Workflow Runtime",
+      "score": 88,
+      "summary": "TypeScript agent framework for building agents, tools, memory, workflows, and observability into AI applications.",
+      "audience": "TS/Node teams building production AI agents, SaaS assistants, and automation workflows.",
+      "ai_native_angle": "Organizes tool calls, state, observability, and workflows as an application runtime rather than raw LLM calls.",
+      "growth_signal": "Strong current search visibility in the agent framework category with clear developer/product positioning.",
+      "runnability": "README/docs indicate npm/TypeScript developer path and examples; not executed locally this run.",
+      "recommended_action": "Build an issue triage agent plus Lark/Slack notification sample and compare against handwritten glue code."
+    },
+    {
+      "rank": 3,
+      "full_name": "mastra-ai/mastra",
+      "url": "https://github.com/mastra-ai/mastra",
+      "category": "Agent Workflow Framework / AI App Backend",
+      "score": 87,
+      "summary": "TypeScript framework for building AI agents, workflows, RAG, and eval-backed AI application backends.",
+      "audience": "AI product engineering teams standardizing agents, RAG, tools, evals, and deployment in TS.",
+      "ai_native_angle": "Treats agentic workflow, retrieval, tools, evaluation, and deployment as a unified AI app backend.",
+      "growth_signal": "Continues to appear in agent workflow/framework searches and is a clear comparison target for VoltAgent.",
+      "runnability": "Public docs/README point to installable SDK, examples, and production components; not executed locally.",
+      "recommended_action": "Implement the same RAG + tool call + eval task in Mastra and VoltAgent for friction comparison."
+    },
+    {
+      "rank": 4,
+      "full_name": "block/goose",
+      "url": "https://github.com/block/goose",
+      "category": "Code Agent / Desktop Automation Agent",
+      "score": 86,
+      "summary": "Local AI agent for software engineering and computer tasks with tool and extension support.",
+      "audience": "Engineering teams looking for an extensible local coding/development agent.",
+      "ai_native_angle": "Combines local files, commands, tools, extensions, and model reasoning into a supervised agent loop.",
+      "growth_signal": "High current visibility in code-agent and automation searches, distinct from CLI-only agents through its extension angle.",
+      "runnability": "Repository has clear installation and usage paths; not run locally in this automation.",
+      "recommended_action": "Include in coding-agent benchmark as the extensible local-agent sample; inspect extensions, permissions, and task recovery."
+    },
+    {
+      "rank": 5,
+      "full_name": "railwayapp/railway-mcp-server",
+      "url": "https://github.com/railwayapp/railway-mcp-server",
+      "category": "Cloud Platform MCP / Deployment Agent Connector",
+      "score": 84,
+      "summary": "Railway MCP server exposing Railway projects, deployments, and platform operations to AI agents.",
+      "audience": "Developers and platform teams using agents for deployment status, environment, and cloud operations.",
+      "ai_native_angle": "Turns a PaaS control plane into agent-callable tools for DevOps loops.",
+      "growth_signal": "Surfaced alongside Render MCP, suggesting cloud/PaaS platforms are adding agent interfaces.",
+      "runnability": "MCP server shape is clear and likely requires Railway token/config; credentials were not tested.",
+      "recommended_action": "Build a read-only DevOps agent that summarizes Railway project status and recent deployments."
+    },
+    {
+      "rank": 6,
+      "full_name": "render-oss/render-mcp-server",
+      "url": "https://github.com/render-oss/render-mcp-server",
+      "category": "Cloud Platform MCP / DevOps Agent Connector",
+      "score": 83,
+      "summary": "Render MCP server exposing Render services and deployment operations to agent clients.",
+      "audience": "Teams hosting on Render that want deployment, troubleshooting, and status workflows inside agents.",
+      "ai_native_angle": "Moves DevOps control-plane inspection and actions into model-mediated tool calls.",
+      "growth_signal": "Appeared with Railway MCP in current MCP searches, indicating vertical platform connectors are expanding.",
+      "runnability": "MCP server product surface is clear; requires Render API credentials and was not connected in this run.",
+      "recommended_action": "Compare with Railway MCP on permission granularity, read/write coverage, and auditability."
+    },
+    {
+      "rank": 7,
+      "full_name": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "category": "Realtime Voice Agent Framework",
+      "score": 82,
+      "summary": "Realtime voice/multimodal agent framework for low-latency assistants, customer service, meetings, and voice workflows.",
+      "audience": "Teams building real-time voice AI, support bots, meeting assistants, tutors, and conversational workflows.",
+      "ai_native_angle": "Combines audio streaming, STT, LLM reasoning, TTS, session state, and tool calls into an end-to-end agent loop.",
+      "growth_signal": "Strong recurring relevance in voice-agent searches; voice agent infrastructure is moving into product-grade use cases.",
+      "runnability": "LiveKit ecosystem provides docs/examples signals, usually requiring tokens, model providers, and deployment config.",
+      "recommended_action": "Track long term; prototype a meeting action-item or support-quality voice agent demo."
+    },
+    {
+      "rank": 8,
+      "full_name": "Defend-AI-Tech-Inc/agent-discover-scanner",
+      "url": "https://github.com/Defend-AI-Tech-Inc/agent-discover-scanner",
+      "category": "Agent Security / Inventory Scanner",
+      "score": 79,
+      "summary": "Security scanner candidate for discovering and inventorying AI agents and agentic workflows in an organization.",
+      "audience": "Security, governance, and platform teams managing internal AI agent adoption.",
+      "ai_native_angle": "Agent discovery and risk inventory become required infrastructure once organizations deploy multiple autonomous tools.",
+      "growth_signal": "Distinct agent-governance signal in this run, unlike the more common framework/runtime repositories.",
+      "runnability": "Appears to target scanner/CLI security workflow; full install and output schema require deeper audit.",
+      "recommended_action": "Watch and audit next: what footprints it scans, whether it outputs SBOM/risk inventory, and how actionable results are."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "pipecat-ai/pipecat",
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "category": "Realtime Voice/Multimodal Agent Runtime",
+      "score": 78,
+      "summary": "Realtime voice and multimodal agent runtime baseline for comparing LiveKit Agents.",
+      "audience": "Voice AI and multimodal agent builders.",
+      "ai_native_angle": "Pipeline-oriented runtime for audio, model, and tool orchestration.",
+      "growth_signal": "Continues to appear in voice-agent discovery as a serious infrastructure candidate.",
+      "runnability": "Known docs/examples ecosystem; not executed in this run.",
+      "recommended_action": "Compare against LiveKit Agents for latency, provider support, pipeline composition, and deployment complexity."
+    },
+    {
+      "full_name": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "category": "MCP Browser Automation",
+      "score": 77,
+      "summary": "MCP browser automation layer that remains important for browser-agent comparisons.",
+      "audience": "Agent builders needing browser control through MCP.",
+      "ai_native_angle": "Exposes browser actions as protocol-level tools for agents.",
+      "growth_signal": "Retained as the tool layer behind today's browser-agent trend.",
+      "runnability": "Previously identified as MCP server product surface; not re-run today.",
+      "recommended_action": "Use as a capability layer inside the browser-agent benchmark."
+    },
+    {
+      "full_name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "Browser Agent Runtime",
+      "score": 76,
+      "summary": "Mature browser-agent runtime baseline for comparing Webwright and Skyvern.",
+      "audience": "Browser-agent builders and web automation teams.",
+      "ai_native_angle": "Turns websites into an agent-operable environment.",
+      "growth_signal": "Strong prior signal; useful today as a benchmark baseline.",
+      "runnability": "Previously audited with examples and runtime signals; not re-run today.",
+      "recommended_action": "Benchmark with the same task used for Webwright and Skyvern."
+    },
+    {
+      "full_name": "open-multi-agent/open-multi-agent",
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "category": "Multi-agent Orchestration",
+      "score": 72,
+      "summary": "Multi-agent orchestration candidate that needs deeper validation of runnable examples.",
+      "audience": "Developers experimenting with multi-agent task decomposition.",
+      "ai_native_angle": "Focuses on coordinating multiple specialized agents.",
+      "growth_signal": "Surfaced in current multi-agent searches but has not yet shown enough product proof for Top.",
+      "runnability": "Needs follow-up audit of install path, demo, and task observability.",
+      "recommended_action": "Watch until examples show a real task loop."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "skip_reason": "Educational curriculum; useful learning material but not an AI-native product runtime."
+    },
+    {
+      "full_name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "skip_reason": "Awesome/list repository archetype; useful discovery source, but not product software."
+    },
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "skip_reason": "Important MCP reference/index, but today's ranking prioritizes vertical platform MCP products such as Railway and Render."
+    },
+    {
+      "full_name": "HumanLayer/12-factor-agents",
+      "url": "https://github.com/HumanLayer/12-factor-agents",
+      "skip_reason": "High-signal methodology/documentation repository; useful for rubric updates but not a runnable product candidate."
+    }
+  ]
+}

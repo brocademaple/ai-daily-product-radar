@@ -1,0 +1,131 @@
+{
+  "run_date": "2026-05-28",
+  "generated_at": "2026-05-28T11:33:38+08:00",
+  "data_window": "2026-05-25T00:00:00Z to 2026-05-28T03:33:38Z; GitHub repositories created, recently crawled, recently released, or visibly active in the last 24-72 hours",
+  "source_summary": "GitHub repository pages, GitHub release pages, GitHub search snippets crawled today, and prior run data from data/runs/2026-05-27.json to reduce duplicate coverage.",
+  "trend_observations": "The strongest product-shaped signal is shifting from standalone chat apps to operational layers around agents: context indexes, persistent memory, multi-agent orchestration, dashboards, and domain-specific MCP/CLI products. Recent repos that expose one-command install, MCP integration, Docker, Web UI, or dashboard flows scored higher than pure framework, skill collection, or benchmark repositories.",
+  "assumptions": "Scoring prioritizes runnable UI/CLI/API, clear user workflow, documentation/examples, recent release or crawl signal, and visible GitHub traction. Repository star/fork numbers are approximate snapshots from GitHub pages opened during the run. Local curl to api.github.com failed because DNS was unavailable in the shell sandbox, so metadata was cross-checked through browser-accessible GitHub pages and search snippets. Repos covered in the previous run were excluded unless they had a distinct new signal.",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-05-28\n\n数据窗口：2026-05-25T00:00:00Z 到 2026-05-28T03:33:38Z。重点看最近 24-72 小时新建、最近 crawled/released、活跃更新或增长明显的 AI agent / LLM app / RAG / MCP / workflow / browser agent / code agent / voice agent / assistant / automation / copilot 项目。\n\n## Top Projects\n\n### 1. colbymchenry/codegraph\n- GitHub: https://github.com/colbymchenry/codegraph\n- 分类：Code Agent Context / MCP Code Intelligence\n- AI Native Product Score：92\n- 做什么：为 Claude Code、Codex、Cursor、OpenCode、Gemini 等代码代理提供本地预索引代码知识图谱，减少文件扫描、token 和工具调用。\n- 面向谁：经常让 coding agent 读大型代码库的开发者、AI coding power users、工程团队。\n- AI native 点：核心价值直接服务 agent 的上下文获取路径，把 repo 结构、调用关系、影响分析做成 MCP/CLI 工具，而不是普通代码搜索。\n- 增长/活跃信号：GitHub 页面显示约 29.8k stars、1.7k forks、378 commits；搜索结果显示 2026-05-25 发布 v0.9.5，新增 shared MCP daemon，解决多代理同项目重复 watcher/SQLite/index 成本。\n- 可运行性判断：README 提供 macOS/Linux/Windows 一行安装、npx/npm 入口和 codegraph init；100% local，无需 API key。\n- 建议动作：优先试跑在本仓库和一个大型前端/Swift repo 上，验证 Codex/Claude Code 的工具调用减少是否稳定。\n\n### 2. ComposioHQ/agent-orchestrator\n- GitHub: https://github.com/ComposioHQ/agent-orchestrator\n- 分类：Parallel Coding Agent Orchestration\n- AI Native Product Score：90\n- 做什么：调度并行 AI coding agents，每个任务/issue 使用独立 git worktree、branch 和 PR，并自动处理 CI 失败、review comments、merge conflicts。\n- 面向谁：希望把 Claude Code/Codex/Aider 等代理放进真实工程流水线的工程团队和平台团队。\n- AI native 点：不是单个 agent，而是 agent fleet 的管理层，把计划、执行、反馈修复和 PR 生命周期做成产品。\n- 增长/活跃信号：GitHub 页面显示约 7.3k stars、989 forks、1,274 commits、数百 issues/PRs；搜索结果显示最近 5 天被爬取。\n- 可运行性判断：README 提供 npm 全局安装、source setup、ao start 启动 dashboard；依赖 Node、Git、gh CLI、tmux/ConPTY。\n- 建议动作：本地用一个小型 repo dry-run，重点看权限隔离、GitHub token 范围、失败回滚和人工审批点。\n\n### 3. HKUDS/Vibe-Trading\n- GitHub: https://github.com/HKUDS/Vibe-Trading\n- 分类：Domain AI Agent / Trading Workflow / MCP\n- AI Native Product Score：87\n- 做什么：面向交易和投研的个人 trading agent，包含 CLI/TUI、FastAPI Web UI、MCP server、回测、数据源、swarm presets 和量化 alpha zoo。\n- 面向谁：个人量化交易者、投研团队、需要把市场数据/回测/报告接入 agent 的金融技术用户。\n- AI native 点：将交易研究任务拆成工具、agent team preset、MCP 能力和 Web/CLI 交互，而不是简单金融聊天机器人。\n- 增长/活跃信号：GitHub 页面显示约 8.9k stars、1.8k forks、213 commits；README News 在 2026-05-27 和 2026-05-26 有功能更新。\n- 可运行性判断：支持 pip install vibe-trading-ai、vibe-trading serve、vibe-trading-mcp、Docker、Web UI、CLI；README 给出 demo 和 quick start。\n- 建议动作：只做沙盒评估，不接真实账户；重点检查数据源稳定性、策略回测可复现性和财务风险免责声明。\n\n### 4. builderz-labs/mission-control\n- GitHub: https://github.com/builderz-labs/mission-control\n- 分类：Agent Ops Dashboard / Self-hosted Control Plane\n- AI Native Product Score：84\n- 做什么：自托管 AI agent 编排和运维 dashboard，用于派发任务、监控 agent fleet、成本、日志、token、memory、安全、cron、webhooks 等。\n- 面向谁：运营多个 agent 工作流的工程团队、内部自动化平台和 AI ops 团队。\n- AI native 点：把 agent 运行、治理、安全、质量门禁、技能安装和多 gateway 连接做成控制台。\n- 增长/活跃信号：GitHub 页面显示约 5k stars、872 forks、365 commits、18 issues；README 明确 alpha 状态但功能面很完整。\n- 可运行性判断：提供 bash install.sh --local / --docker、pnpm dev、docker compose、GHCR image；SQLite local-first，无强制 Redis/Postgres。\n- 建议动作：加入重点 watch；先用 demo 数据评估 dashboard 信息架构和安全默认值，再考虑真实任务接入。\n\n### 5. vbcherepanov/total-agent-memory\n- GitHub: https://github.com/vbcherepanov/total-agent-memory\n- 分类：Agent Memory / Local MCP Memory Layer\n- AI Native Product Score：82\n- 做什么：为 Claude Code、Codex CLI、Cursor 和任意 MCP client 提供本地持久记忆层，含时间知识图谱、过程记忆、AST 代码库摄取、3D WebGL 可视化。\n- 面向谁：长期使用 coding agents、希望跨会话保留偏好/项目知识/过程记忆的开发者。\n- AI native 点：记忆层直接改变 agent 行为和跨会话能力，重点不是人类笔记，而是 agent 可召回、可巩固、可查询的上下文系统。\n- 增长/活跃信号：GitHub 页面显示约 42 stars、11 forks、47 commits；搜索结果显示 2 天内被爬取，README 标注 2026-05-24 v12.2.0 修复 Codex/env 对齐相关问题。\n- 可运行性判断：提供 npx、uvx、pipx、brew、Docker、manual install，多 IDE connect 路径；代码目录含 docs、examples、docker、tests。\n- 建议动作：Watch + 小范围试用；重点验证自动保存噪音、隐私边界、数据库迁移和 Codex/Claude Code 配置写入是否可控。\n\n## Watchlist\n\n### github/copilot-cli\n- GitHub: https://github.com/github/copilot-cli\n- 分类：Official Coding Agent CLI\n- Score：74\n- 简述：GitHub 官方 Copilot CLI changelog 近期出现 MCP、background agents、remote/session 等能力演进信号。\n- 观察理由：产品成熟且非新项目，但官方 CLI 对生态方向有强指示意义。\n- 建议动作：跟踪 MCP Tasks、background agents、remote control 是否影响第三方 agent orchestration 产品空间。\n\n### glebis/claude-skills\n- GitHub: https://github.com/glebis/claude-skills\n- 分类：Agent Skills Collection\n- Score：63\n- 简述：Claude Code skills 集合，含 deep-research 等工作流技能。\n- 观察理由：技能生态在增长，但更像 workflow/package collection，产品面弱。\n- 建议动作：观察是否演化成带 UI、registry、安装器或团队治理能力的产品。\n\n### eltociear/awesome-molt-ecosystem\n- GitHub: https://github.com/eltociear/awesome-molt-ecosystem\n- 分类：AI Agent Ecosystem Intelligence\n- Score：58\n- 简述：对 AI agent platforms / x402 economy / CVE / bounty 等做生态整理。\n- 观察理由：不是产品，但可作为后续雷达的线索源和风险信号源。\n- 建议动作：只作为情报源，不进入 Top 项目池。\n\n## Skip Reasons\n\n- glebis/claude-skills：https://github.com/glebis/claude-skills。跳过 Top 原因：技能集合/工作流包，文档有用，但不是独立可运行 AI native 产品。\n- eltociear/awesome-molt-ecosystem：https://github.com/eltociear/awesome-molt-ecosystem。跳过 Top 原因：awesome/list/研究型生态整理，不是可运行 UI/CLI/API 产品。\n- github/copilot-cli：https://github.com/github/copilot-cli。跳过 Top 原因：官方成熟产品仓库，本期作为趋势观察更合适，不适合作为新发现项目评分。\n\n## 今日趋势观察\n\n1. 代码代理的下一层竞争不只是模型/编辑能力，而是上下文经济：CodeGraph 这类本地索引工具直接用“更少 token/更少 tool calls”卖点打动 agent power user。\n2. 代理从个人工具走向 fleet/ops：Agent Orchestrator 和 Mission Control 都把 worktree、CI、PR、dashboard、安全、成本和质量门禁放进核心体验。\n3. Memory 重新升温，但好项目开始强调本地、MCP、可迁移和多 IDE，而不是单纯聊天历史。\n4. 垂直领域 agent 更容易产品化：Vibe-Trading 有清晰用户、工具链、数据源、Web UI、MCP 和一键安装，比泛 agent demo 更接近真实产品。\n5. Skill/prompt/list 类仓库仍很多，除非出现安装器、运行时、团队治理或可观测界面，否则继续降权。\n\n## 关键假设\n\n- 本期未使用 shell 里的 GitHub API，因为 api.github.com DNS 解析失败；浏览器侧 GitHub 页面和搜索片段可用。\n- 可运行性判断基于 README、目录结构、安装命令、Docker/Web UI/CLI/MCP 信号，未 clone 后本地执行。\n- Star/fork/commit 数是运行时页面快照，可能随时间变化。\n- Skip list 只记录真实 GitHub repo；类型级跳过规则写入趋势和假设，不伪造仓库。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "category": "Code Agent Context / MCP Code Intelligence",
+      "score": 92,
+      "summary": "Local pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, Gemini, and other coding agents.",
+      "audience": "Developers, AI coding power users, and engineering teams asking agents to work in large repositories.",
+      "ai_native_angle": "It directly changes agent context acquisition by exposing repository structure, semantic search, call graphs, and impact analysis through CLI/MCP tooling.",
+      "growth_signal": "GitHub page snapshot showed about 29.8k stars, 1.7k forks, 378 commits; release/search signal showed v0.9.5 on 2026-05-25 with shared MCP daemon work.",
+      "runnability": "README documents one-line macOS/Linux/Windows install, npx/npm usage, and codegraph init; runs locally without API keys.",
+      "recommended_action": "Try on this repo and one large codebase; measure Codex/Claude Code tool-call and token reduction."
+    },
+    {
+      "rank": 2,
+      "full_name": "ComposioHQ/agent-orchestrator",
+      "url": "https://github.com/ComposioHQ/agent-orchestrator",
+      "category": "Parallel Coding Agent Orchestration",
+      "score": 90,
+      "summary": "Orchestration layer for parallel coding agents that creates isolated worktrees, branches, PRs, and routes CI/review feedback back to agents.",
+      "audience": "Engineering teams and platform teams putting Claude Code, Codex, Aider, and similar agents into real software delivery loops.",
+      "ai_native_angle": "The product manages a fleet of agents rather than a single assistant, turning planning, execution, feedback repair, and PR lifecycle into an agent-native workflow.",
+      "growth_signal": "GitHub page snapshot showed about 7.3k stars, 989 forks, 1,274 commits, and hundreds of active issues/PRs; search result was crawled within the last 5 days.",
+      "runnability": "README provides npm global install, source setup, ao start, and dashboard launch; requires Node, Git, gh CLI, and tmux/ConPTY.",
+      "recommended_action": "Run a dry test on a small repository and inspect permissions, GitHub token scope, rollback behavior, and human approval points."
+    },
+    {
+      "rank": 3,
+      "full_name": "HKUDS/Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "category": "Domain AI Agent / Trading Workflow / MCP",
+      "score": 87,
+      "summary": "Personal trading agent with CLI/TUI, FastAPI Web UI, MCP server, backtesting, data loaders, swarm presets, and quant alpha tooling.",
+      "audience": "Individual quant traders, research teams, and finance users connecting market data, backtests, and reports to agents.",
+      "ai_native_angle": "Trading research is decomposed into tools, agent-team presets, MCP capabilities, and Web/CLI workflows rather than a generic finance chatbot.",
+      "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
+      "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
+      "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+    },
+    {
+      "rank": 4,
+      "full_name": "builderz-labs/mission-control",
+      "url": "https://github.com/builderz-labs/mission-control",
+      "category": "Agent Ops Dashboard / Self-hosted Control Plane",
+      "score": 84,
+      "summary": "Self-hosted AI agent orchestration dashboard for task dispatch, agent fleets, spend, logs, memory, security, cron, webhooks, and quality gates.",
+      "audience": "Teams operating multiple agent workflows and internal automation platforms.",
+      "ai_native_angle": "It productizes agent operations: run visibility, governance, security scanning, gateway connections, scheduling, and quality gates.",
+      "growth_signal": "GitHub page snapshot showed about 5k stars, 872 forks, 365 commits, and 18 open issues; README presents an active alpha with broad product surface.",
+      "runnability": "Provides bash install.sh --local/--docker, pnpm dev, docker compose, and GHCR image; SQLite local-first with no required Redis/Postgres.",
+      "recommended_action": "Watch closely; first evaluate with demo data and inspect default security posture before connecting real agents."
+    },
+    {
+      "rank": 5,
+      "full_name": "vbcherepanov/total-agent-memory",
+      "url": "https://github.com/vbcherepanov/total-agent-memory",
+      "category": "Agent Memory / Local MCP Memory Layer",
+      "score": 82,
+      "summary": "Local persistent memory layer for Claude Code, Codex CLI, Cursor, and MCP clients with temporal knowledge graph, procedural memory, AST ingest, and WebGL visualization.",
+      "audience": "Developers using coding agents over long sessions or across repeated project work.",
+      "ai_native_angle": "The repository changes cross-session agent behavior through recall, consolidation, local graph storage, and IDE/MCP integrations.",
+      "growth_signal": "GitHub page snapshot showed about 42 stars, 11 forks, 47 commits; search result was crawled 2 days ago and README lists a 2026-05-24 Codex/env alignment fix.",
+      "runnability": "Offers npx, uvx, pipx, brew, Docker, and manual install paths, with multi-IDE connect support and docs/examples/tests.",
+      "recommended_action": "Watch and run a limited trial; validate memory-save noise, privacy boundaries, migrations, and config writes."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "github/copilot-cli",
+      "url": "https://github.com/github/copilot-cli",
+      "category": "Official Coding Agent CLI",
+      "score": 74,
+      "summary": "GitHub's official Copilot CLI changelog shows ongoing MCP, background-agent, remote/session, and agent workflow evolution.",
+      "audience": "Developers and teams already in the GitHub Copilot ecosystem.",
+      "ai_native_angle": "Official CLI decisions can set expectations for MCP tasks, background agents, and remote coding sessions.",
+      "growth_signal": "Search result was published/crawled within the current window and showed multiple 2026 changelog entries around MCP and experimental agents.",
+      "runnability": "Mature official CLI; not evaluated as a new third-party product in this run.",
+      "recommended_action": "Track MCP Tasks and background agents because they may pressure third-party orchestration tools."
+    },
+    {
+      "full_name": "glebis/claude-skills",
+      "url": "https://github.com/glebis/claude-skills",
+      "category": "Agent Skills Collection",
+      "score": 63,
+      "summary": "Collection of Claude Code skills for enhanced AI workflows such as deep research.",
+      "audience": "Claude Code users looking for reusable workflow skills.",
+      "ai_native_angle": "Skills can package repeatable agent workflows, but this repo is not yet a full product surface.",
+      "growth_signal": "Search result was crawled today and README has configuration/docs for individual skills.",
+      "runnability": "Usable as skill files with environment configuration; no standalone UI/dashboard product.",
+      "recommended_action": "Watch for an installer, registry, governance layer, or team workflow productization."
+    },
+    {
+      "full_name": "eltociear/awesome-molt-ecosystem",
+      "url": "https://github.com/eltociear/awesome-molt-ecosystem",
+      "category": "AI Agent Ecosystem Intelligence",
+      "score": 58,
+      "summary": "Curated ecosystem intelligence around AI agent platforms, x402 economy, security, CVEs, and bounty opportunities.",
+      "audience": "Researchers and builders tracking the agent platform ecosystem.",
+      "ai_native_angle": "Useful as a source of market/security signals, but not an AI native product itself.",
+      "growth_signal": "Search result surfaced recent 2026 ecosystem updates and security/bounty tracking.",
+      "runnability": "Documentation/list repository rather than runnable software.",
+      "recommended_action": "Use only as an input source for future radar discovery."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "glebis/claude-skills",
+      "url": "https://github.com/glebis/claude-skills",
+      "skip_reason": "Skill/workflow collection with useful documentation, but not a standalone runnable AI native product with UI/CLI/API surface."
+    },
+    {
+      "full_name": "eltociear/awesome-molt-ecosystem",
+      "url": "https://github.com/eltociear/awesome-molt-ecosystem",
+      "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+    },
+    {
+      "full_name": "github/copilot-cli",
+      "url": "https://github.com/github/copilot-cli",
+      "skip_reason": "Official mature product repository; retained as watchlist trend signal rather than a new third-party discovery."
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "run_date": "2026-06-24",
+  "generated_at": "2026-06-24T10:35:00+08:00",
+  "data_window": "2026-06-21T00:00:00Z to 2026-06-24T02:20:00Z; GitHub repositories created, recently pushed, or showing visible product activity in AI agent, LLM app, RAG, MCP, browser agent, code agent, voice agent, AI workflow, and assistant directions.",
+  "source_summary": "Live GitHub Search API queries plus GitHub repository metadata, README, and root-content audits for shortlisted repositories. No clone, install, Docker, npm, pip, Go, Cargo, Xcode, Android, browser-extension, or local runtime audit was performed.",
+  "trend_observations": "Coding agents are moving into workbench/control-plane/mobile-companion products; MCP is shifting toward runtime reliability, gateways, hot reload, and vertical smart tools; private browser-native research/RAG and deployable enterprise agent platforms remain promising experiment tracks.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, clear users, README depth, examples/assets/Docker/CLI commands, and recent pushed activity. Star counts are GitHub API snapshots rather than precise time-series deltas. Mature baselines, pure templates, thin SDK/API wrappers, paper/training repos, prompt collections, and awesome lists were downgraded or skipped. Type-level exclusions are described in markdown_report and not fabricated as skipped repositories.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-24\n\n数据窗口：2026-06-21T00:00:00Z 至 2026-06-24T02:20:00Z；重点查看 GitHub Search API 中 `pushed:>2026-06-21` 的 AI agent、LLM app、RAG、MCP、browser agent、code agent、voice agent、AI workflow 方向仓库，并对入选候选做 GitHub API 元数据、README 和根目录文件抽样。\n\n关键假设：本轮做了实时 GitHub API/README/root-content 审计，但没有 clone、安装、Docker/npm/pip/go/cargo/Xcode/Android 构建或本地运行。Star 数是 API 快照，不是精确增量。优先保留真实产品形态、可运行 UI/CLI/API、明确用户场景和 demo/安装/截图/文档完整的仓库；成熟基线项目、纯模板集合、薄 MCP wrapper、论文/训练/awesome/prompt collection 继续降权。昨天已覆盖的 `jdilla1277/agentcad` 仅作为 Skip 记录，不重复进入 Top。\n\n## Top Projects\n\n### 1. stablyai/orca - Agentic Development Environment - Score 91\n- GitHub: https://github.com/stablyai/orca\n- 做什么：桌面与移动端并行 coding-agent 工作台，把 Codex、Claude Code、OpenCode、Pi 等 agent 放在不同 worktree/终端里统一管理。\n- 面向谁：同时运行多个 coding agent 的开发者和团队，尤其是希望移动端跟进、并行分支、统一审阅的 agent power user。\n- AI native 点：产品核心不是单次聊天，而是多 agent fleet、worktree、终端 split、移动 companion 和统一状态追踪。\n- 增长/活跃信号：GitHub API 显示 6,343 stars、466 forks、619 open issues，2026-06-24 继续 push；根目录含 Electron/Vite/mobile/native/tests/skills/previews。\n- 可运行性判断：README 明确支持多 coding agent 并行、移动 companion、parallel worktrees 和 terminal splits；未做本地安装审计。\n- 建议动作：高优先级试跑。重点看多 agent 输出归并、权限隔离、worktree 清理和移动端通知是否可靠。\n\n### 2. decocms/studio - Agent Control Plane / MCP Ops - Score 90\n- GitHub: https://github.com/decocms/studio\n- 做什么：开源 AI agent 控制面，用 Web UI 管理 agents、tools/MCP connections、OAuth、项目、token/cost/error/latency 观测。\n- 面向谁：想把 agent 从个人 CLI 推到团队工具连接和成本治理的开发团队、运营团队、agent platform builder。\n- AI native 点：把 MCP 连接、agent hiring、项目空间、token 成本和错误观测合成一个 agent ops 产品层。\n- 增长/活跃信号：381 stars、51 forks、87 open issues，2026-06-24 push；monorepo 含 apps/packages/plugins/deploy/tests，README 有 `bunx decostudio` 与本地 dev path。\n- 可运行性判断：`bunx decostudio`、`bun install`、`bun run dev` 和本地 4000 端口说明清晰；未运行。\n- 建议动作：作为 MCP/agent 控制台样板跟踪，重点评估 Virtual MCP、OAuth 连接、成本观测和本地/云同步边界。\n\n### 3. Tianzeyui/stardust - Desktop AI Agent Platform - Score 88\n- GitHub: https://github.com/Tianzeyui/stardust\n- 做什么：桌面 AI agent 平台，提供聊天、60+ 模型、React/TSX 与 HTML 插件模式、MCP gateway、沙箱代码执行和多项目管理。\n- 面向谁：想用插件和 MCP 扩展个人桌面 agent 的开发者、AI tool maker、agent hobbyist。\n- AI native 点：插件系统、MCP gateway、JS/Python 沙箱和多项目状态是核心运行时，不只是模型聊天壳。\n- 增长/活跃信号：41 stars、2026-04-22 创建、2026-06-24 push；根目录包含 electron、stardust-engine、supabase、docs、agent 与 Vite/TS 前端。\n- 可运行性判断：README 给出 Quick Start、npm prerequisites、clone/install/run path；未运行。\n- 建议动作：观察插件 ABI 与 sandbox 权限模型，适合做“桌面 agent 平台可扩展性”拆解。\n\n### 4. openwong2kim/wmux - Windows Agent Terminal / Browser MCP - Score 87\n- GitHub: https://github.com/openwong2kim/wmux\n- 做什么：Windows 原生 tmux 替代品，为 Claude Code、Codex CLI、Gemini CLI 提供 split panes、多 agent handoff、真实浏览器自动化和零配置 MCP。\n- 面向谁：不想使用 WSL、但要在 Windows 上并行跑 coding agents 的开发者。\n- AI native 点：终端 multiplexer 直接为 agent 读终端、驱动浏览器、并行执行和跨 agent 交接设计。\n- 增长/活跃信号：193 stars、35 forks，2026-06-24 push；根目录含 Electron/Vite configs、integrations、docs、examples、bench、installer。\n- 可运行性判断：README 提供 `winget install openwong2kim.wmux`、Chocolatey 和 Setup.exe；未在 Windows 环境验证。\n- 建议动作：如果有 Windows 测试机，优先验证 Codex/Claude 并行、browser automation 和 handoff 是否稳定。\n\n### 5. NakliTechie/LocalMind - Browser-native Private Research Agent - Score 85\n- GitHub: https://github.com/NakliTechie/LocalMind\n- 做什么：完全在浏览器运行的私有 AI research agent，支持 web search、文档摄取、RAG memory、WebGPU 本地模型和离线/PWA。\n- 面向谁：关注隐私、不想部署后端的研究型用户、知识工作者和本地 AI app builder。\n- AI native 点：浏览器就是 agent runtime，搜索、文档、记忆和模型执行都在本地/前端侧组织。\n- 增长/活跃信号：54 stars、5 forks，2026-06-24 push；根目录含 API/ARCHITECTURE/FEATURES/ROADMAP、demo、guide、单页 `index.html`。\n- 可运行性判断：README 写明 30 秒试用、浏览器 WebGPU、本地运行和离线安装方向；未浏览器实测。\n- 建议动作：适合做隐私型 research agent 轻量试验，重点看大文档摄取、浏览器存储和模型 fallback。\n\n### 6. MikkoParkkola/trvl - Travel MCP + CLI - Score 84\n- GitHub: https://github.com/MikkoParkkola/trvl\n- 做什么：给 Claude/Cursor/Windsurf/Codex 等 MCP 客户端使用的旅行搜索 CLI/MCP：航班、酒店、火车、租车、轮渡、价格提醒、天气、目的地信息。\n- 面向谁：旅行规划 assistant、个人出行 agent、需要真实垂直工具的 MCP 用户。\n- AI native 点：把 66 个旅行能力压成一个 smart MCP tool，让 agent 用自然语言完成真实查询和规划。\n- 增长/活跃信号：43 stars、5 forks，2026-06-24 push；根目录有 Dockerfile、Go 源码、demo.gif、examples、docs、npm/plugin、llms.txt。\n- 可运行性判断：README 有 live demo、brew install、`trvl mcp`、VS Code/Cursor 安装 badge；未运行。\n- 建议动作：作为“垂直 MCP 产品化”样本跟踪，重点审计数据源稳定性、免费无 key 的边界和工具 schema。\n\n### 7. mrobinson2/AzureAgentForge - Deployable Multi-agent Platform - Score 83\n- GitHub: https://github.com/mrobinson2/AzureAgentForge\n- 做什么：可自托管到 Azure 的多 agent 平台，集成 PaperClip orchestration、Hermes runtime、Honcho memory、OpenAI-compatible router 和 Terraform Container Apps 部署。\n- 面向谁：想把多 agent demo 推到 Azure 真实环境的企业/平台团队。\n- AI native 点：治理拒绝、agent roster、issue board、org chart、memory、router、IaC 和监控是面向生产的 agent system primitive。\n- 增长/活跃信号：2026-06-03 创建，12 stars、3 forks，2026-06-24 push；根目录有 Terraform infrastructure、docker-compose、apps/services/agents/demos/tests/docs。\n- 可运行性判断：README 有 orchestrator UI gif、governance demo、Terraform/IaC 标记；未部署。\n- 建议动作：加入复刻候选，用最小 Azure/devcontainer 路线验证“agent 平台模板”是否足够开箱。\n\n### 8. edimuj/callmux - MCP Hot-reload Multiplexer - Score 81\n- GitHub: https://github.com/edimuj/callmux\n- 做什么：MCP tool call multiplexer，支持下游 MCP server 热重载、自动重连、parallel execution、batching、caching、pipelining。\n- 面向谁：同时使用多个 MCP server 的 Codex/Claude Code/Cursor 用户，以及构建 MCP 控制面的开发者。\n- AI native 点：直接解决 agent 会话被 MCP server 重启打断的问题，让工具层更新不清空上下文。\n- 增长/活跃信号：8 stars，2026-04 创建、2026-06-24 push；根目录含 dashboard、docs、schema、src、tests、npm package。\n- 可运行性判断：README 有 npm badge、Node version、bridge/hot-reload 案例和 dashboard；未运行。\n- 建议动作：短期可本地试验，测 Codex session 在 MCP server 重启时是否真的不断线。\n\n### 9. VintLin/skill-flow - Cross-agent Skill Manager - Score 80\n- GitHub: https://github.com/VintLin/skill-flow\n- 做什么：跨 Claude Code、Cursor、Copilot、Kimi Code、WorkBuddy、CodeBuddy、ZCode 等 coding agent 的 skill 安装、管理和分享工具，含 macOS SwiftUI 桌面端。\n- 面向谁：需要管理多套 agent skills 的开发者和团队。\n- AI native 点：把 skill 从散落 prompt/目录变成可安装、可分享、可桌面管理的能力供应链。\n- 增长/活跃信号：245 stars、14 forks，2026-06-24 push；根目录含 apps、packages、skills、docs、releases、SwiftUI 桌面截图。\n- 可运行性判断：README 提供 `npm install -g skill-flow`、`npx skill-flow --help` 和桌面端 prerequisites；未运行。\n- 建议动作：和本地 Codex skill 安装流程对照，关注多 agent mapping、版本管理和安全校验是否足够。\n\n### 10. bagidea/bagidea-office - Desktop AI Agent Office - Score 78\n- GitHub: https://github.com/bagidea/bagidea-office\n- 做什么：把 Claude Code agents 做成桌面壁纸上的“AI-agent office”，支持多模型、工作流、插件、语音、Telegram/Discord/LINE。\n- 面向谁：喜欢可视化 agent workspace 的开发者、创作者和多 agent 实验者。\n- AI native 点：将 agent 协作、委派、学习、会议和跨渠道控制做成可见的桌面空间。\n- 增长/活跃信号：2026-06-03 创建，103 stars、33 forks，2026-06-23 push；根目录含 godot、daemon、cli、web、installer、tests、docs。\n- 可运行性判断：README 给出 `npx bagidea`、live demo、跨平台说明和可视化截图；未运行。\n- 建议动作：作为“可视化 agent workspace”观察样本，先看真实工作流深度，避免只被拟物化界面吸引。\n\n## Watchlist\n\n- [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) - macOS Agent Harness - Score 77：高星、Swift 原生、memory/autonomous execution/cryptographic identity 很强，但更像成熟活跃基线；等新 release 或可安装审计后再升级。\n- [koltyakov/browser-bridge](https://github.com/koltyakov/browser-bridge) - Browser Extension + MCP - Score 75：Chrome Web Store、MCP、CLI skill、docs 完整；star 仍低，适合下轮浏览器实测。\n- [phnx-labs/agents-cli](https://github.com/phnx-labs/agents-cli) - CLI Agent Toolchain - Score 74：npm 包、demo video、parallel teams、browser driving、Touch ID secrets；issues 多于 stars，先观察成熟度。\n- [boshu2/agentops](https://github.com/boshu2/agentops) - Coding Agent Validation Layer - Score 74：验证、memory、feedback loops、本地 `.agents/` 证据链有价值；需试跑验证是否轻量。\n- [nvk/agentnoise](https://github.com/nvk/agentnoise) - Phone Control Surface for Local Agents - Score 72：Rust-first 桌面 helper，用手机控制 Codex/Claude/White Noise；适合观察移动端 agent 控制面。\n- [mcpmux/mcp-mux](https://github.com/mcpmux/mcp-mux) - MCP Gateway Desktop App - Score 72：桌面 MCP gateway，把多个客户端接入同一配置；和 callmux 同题，等待差异化验证。\n- [racecraft-lab/Paddock](https://github.com/racecraft-lab/Paddock) - AI Software Factory Control Plane - Score 70：issue-driven workflows、isolated sandboxes、review/governance/artifacts，star 低但方向对。\n- [dragfly/dictare](https://github.com/dragfly/dictare) - Local Voice Layer for Coding Agents - Score 69：本地 voice interaction/OpenVIP，安装脚本与 UI 目录存在；等 demo/兼容性更明确。\n\n## Skip Reasons\n\n- [jdilla1277/agentcad](https://github.com/jdilla1277/agentcad)：昨天已进入 Top 并创建项目卡；今天仍活跃，但本轮避免重复覆盖同一 CAD/MCP 主题。\n- [langgenius/dify](https://github.com/langgenius/dify)：成熟 agent workflow 平台，活跃度高但不是本轮新发现；除非出现重大 release/增长信号，否则作为基线不重复。\n- [infiniflow/ragflow](https://github.com/infiniflow/ragflow)：成熟 RAG/agent context layer，高活跃但非新产品信号；暂不重复。\n- [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)：高质量 eval/red-team 工具，但已是成熟基线，本轮偏向更鲜明的 agent 产品形态。\n- [Empreiteiro/langflow-templates](https://github.com/Empreiteiro/langflow-templates)：模板集合，缺少独立产品运行时。\n- [justoneapi/justoneapi-mcp](https://github.com/justoneapi/justoneapi-mcp)：更像单 API 的 MCP wrapper，产品面和独立工作流不足。\n- [ZclassiC23/zclassic](https://github.com/ZclassiC23/zclassic)：虽带 MCP server，但主体是加密货币 full node，偏离 AI-native product 主题。\n- [NHID-Clinical/NHID-Clinical](https://github.com/NHID-Clinical/NHID-Clinical)：医疗 voice-agent conformance proposal 更偏规范/提案，缺少可运行产品面。\n\n## 今日趋势观察\n\n1. Coding agent 正在从“终端工具”进入“工作台/控制台/移动 companion”：Orca、wmux、agents-cli、agentnoise 都在围绕多 agent 并行、终端可视化、移动控制和会话持久化做产品。\n2. MCP 进入运行时可靠性阶段：callmux、McpMux、Browser Bridge、trvl 说明关注点从“多一个 server”转向 gateway、hot reload、工具压缩、真实领域数据和跨客户端配置。\n3. 桌面 agent 平台继续分化：Stardust 和 Osaurus 强调本地桌面 harness、插件、沙箱和记忆；BagIdea 走可视化 agent office，产品表达更强但需要验证真实任务深度。\n4. 私有 research/RAG 轻应用仍有空间：LocalMind 把 search、doc ingestion、RAG memory 和 WebGPU 放进浏览器，说明“不部署后端的 AI workspace”仍是可实验方向。\n5. 企业 agent 平台开始补治理/IaC：AzureAgentForge、Paddock、Deco Studio 都把治理、成本、审阅、artifact、部署路径写进 README，显示 demo 到生产的桥接需求在升温。\n\n## 今日建议动作\n\n- 优先试跑 Orca 或 wmux，验证多 agent 并行工作台是否真的降低上下文切换。\n- 用 callmux 做一个小 MCP 重启实验：让 downstream MCP server 热重启，观察 Codex/Claude 会话是否保持。\n- 把 Deco Studio 与 Stardust 作为两个 agent control plane 样本拆解，一个偏团队工具连接与成本观测，一个偏个人桌面插件/沙箱。\n- 对 LocalMind 做浏览器侧 privacy/RAG 试用，记录 WebGPU、文档摄取、离线缓存和引用质量。\n- 对 trvl 做一次真实旅行查询，评估垂直 MCP 是否比通用 web search agent 更稳定。\n\n## 信息来源\n\n- GitHub Search API：`AI agent MCP pushed:>2026-06-21 stars:>5`、`LLM app pushed:>2026-06-21 stars:>5`、`RAG agent pushed:>2026-06-21 stars:>5`、`browser agent pushed:>2026-06-21 stars:>5`、`code agent pushed:>2026-06-21 stars:>5`、`voice agent pushed:>2026-06-21 stars:>5`、`AI workflow pushed:>2026-06-21 stars:>5`、`MCP server pushed:>2026-06-21 stars:>5`。\n- GitHub repository metadata/README/root contents：stablyai/orca、decocms/studio、Tianzeyui/stardust、openwong2kim/wmux、NakliTechie/LocalMind、MikkoParkkola/trvl、mrobinson2/AzureAgentForge、edimuj/callmux、VintLin/skill-flow、bagidea/bagidea-office、以及 Watchlist/Skip 中列出的仓库。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "category": "Agentic Development Environment",
+      "score": 91,
+      "summary": "Desktop and mobile workbench for running Codex, Claude Code, OpenCode, Pi, and other coding agents side by side in isolated worktrees and terminals.",
+      "audience": "Developers and teams running multiple coding agents in parallel.",
+      "ai_native_angle": "Multi-agent fleet, worktree isolation, terminal splits, mobile companion, and unified agent state tracking are core product primitives.",
+      "growth_signal": "GitHub API snapshot: 6,343 stars, 466 forks, 619 open issues, pushed on 2026-06-24; repo includes Electron/Vite/mobile/native/tests/skills/previews.",
+      "runnability": "README describes parallel coding-agent workbench, mobile companion, worktrees, and terminal splits; no local install audit performed.",
+      "recommended_action": "High-priority trial; inspect multi-agent output merging, permissions, worktree cleanup, and mobile notifications."
+    },
+    {
+      "rank": 2,
+      "full_name": "decocms/studio",
+      "url": "https://github.com/decocms/studio",
+      "category": "Agent Control Plane / MCP Ops",
+      "score": 90,
+      "summary": "Open-source control plane for AI agents, tools/MCP connections, OAuth, projects, token/cost/error/latency observability.",
+      "audience": "Teams moving agents from personal CLI usage into managed tool connections and cost governance.",
+      "ai_native_angle": "Agent hiring, MCP connections, project spaces, OAuth, and token/cost/error observability become one agent operations product.",
+      "growth_signal": "381 stars, 51 forks, 87 open issues, pushed on 2026-06-24; monorepo with apps/packages/plugins/deploy/tests.",
+      "runnability": "README documents `bunx decostudio`, `bun install`, `bun run dev`, and local port 4000; no local run audit.",
+      "recommended_action": "Track as an MCP and agent control-plane sample; inspect Virtual MCP, OAuth, cost observability, and local/cloud sync."
+    },
+    {
+      "rank": 3,
+      "full_name": "Tianzeyui/stardust",
+      "url": "https://github.com/Tianzeyui/stardust",
+      "category": "Desktop AI Agent Platform",
+      "score": 88,
+      "summary": "Desktop agent platform with chat, 60+ models, React/TSX and HTML plugin modes, MCP gateway, sandboxed code execution, and multi-project management.",
+      "audience": "Developers, AI tool makers, and agent hobbyists who want a plugin-oriented desktop agent platform.",
+      "ai_native_angle": "Plugin system, MCP gateway, JS/Python sandbox, and multi-project state are core runtime surfaces rather than a chat wrapper.",
+      "growth_signal": "41 stars, created 2026-04-22, pushed on 2026-06-24; root includes electron, stardust-engine, supabase, docs, agent, and Vite/TS app.",
+      "runnability": "README includes Quick Start, npm prerequisite, clone/install/run path; no local run audit.",
+      "recommended_action": "Inspect plugin ABI and sandbox permission model as a desktop-agent extensibility case study."
+    },
+    {
+      "rank": 4,
+      "full_name": "openwong2kim/wmux",
+      "url": "https://github.com/openwong2kim/wmux",
+      "category": "Windows Agent Terminal / Browser MCP",
+      "score": 87,
+      "summary": "Native Windows tmux alternative for running Claude Code, Codex CLI, and Gemini CLI in split panes with agent handoff and browser automation.",
+      "audience": "Windows developers who need parallel coding agents without WSL.",
+      "ai_native_angle": "The terminal multiplexer is designed for agents to read terminals, drive a browser, run in parallel, and hand tasks to each other.",
+      "growth_signal": "193 stars, 35 forks, pushed on 2026-06-24; root includes Electron/Vite configs, integrations, docs, examples, bench, and installer assets.",
+      "runnability": "README documents winget, Chocolatey, and Setup.exe installation; no Windows runtime audit.",
+      "recommended_action": "Test on Windows for Codex/Claude parallelism, browser automation, and handoff stability."
+    },
+    {
+      "rank": 5,
+      "full_name": "NakliTechie/LocalMind",
+      "url": "https://github.com/NakliTechie/LocalMind",
+      "category": "Browser-native Private Research Agent",
+      "score": 85,
+      "summary": "Private AI research agent with web search, document ingestion, RAG memory, WebGPU local models, offline/PWA behavior, and no backend requirement.",
+      "audience": "Privacy-sensitive researchers, knowledge workers, and local AI app builders.",
+      "ai_native_angle": "Browser-side search, document ingestion, memory, and model execution make the browser the agent runtime.",
+      "growth_signal": "54 stars, 5 forks, pushed on 2026-06-24; root includes API, ARCHITECTURE, FEATURES, ROADMAP, demo, guide, and index.html.",
+      "runnability": "README describes 30-second trial, browser WebGPU, local execution, and offline install direction; no browser audit performed.",
+      "recommended_action": "Try as a privacy-first research-agent experiment; inspect document ingestion, browser storage, WebGPU, and fallback quality."
+    },
+    {
+      "rank": 6,
+      "full_name": "MikkoParkkola/trvl",
+      "url": "https://github.com/MikkoParkkola/trvl",
+      "category": "Travel MCP + CLI",
+      "score": 84,
+      "summary": "Travel search MCP/CLI for flights, hotels, trains, rental cars, ferries, price alerts, weather, and destination intelligence.",
+      "audience": "Travel planning assistants, personal agents, and MCP users who need real vertical tools.",
+      "ai_native_angle": "Sixty-six travel capabilities are compressed into one smart MCP tool that agents can use through natural language planning.",
+      "growth_signal": "43 stars, 5 forks, pushed on 2026-06-24; root includes Dockerfile, Go source, demo.gif, examples, docs, npm/plugin, and llms.txt.",
+      "runnability": "README includes live demo, brew install, `trvl mcp`, VS Code/Cursor install badges; no local run audit.",
+      "recommended_action": "Use as a vertical MCP productization sample; audit source reliability, free/no-key boundaries, and tool schema."
+    },
+    {
+      "rank": 7,
+      "full_name": "mrobinson2/AzureAgentForge",
+      "url": "https://github.com/mrobinson2/AzureAgentForge",
+      "category": "Deployable Multi-agent Platform",
+      "score": 83,
+      "summary": "Self-hostable Azure multi-agent platform combining orchestration, runtime, memory, model routing, and Terraform Container Apps deployment.",
+      "audience": "Enterprise and platform teams trying to move multi-agent demos into Azure environments.",
+      "ai_native_angle": "Governance refusals, agent roster, issue board, org chart, memory, routing, IaC, and monitoring are framed as production agent primitives.",
+      "growth_signal": "Created 2026-06-03, 12 stars, 3 forks, pushed on 2026-06-24; root includes infrastructure, docker-compose, apps, services, agents, demos, tests, and docs.",
+      "runnability": "README includes orchestrator UI gif, governance demo, and Terraform/IaC path; no deployment audit.",
+      "recommended_action": "Add to experiment candidates; verify whether the minimal Azure/devcontainer path is actually turnkey."
+    },
+    {
+      "rank": 8,
+      "full_name": "edimuj/callmux",
+      "url": "https://github.com/edimuj/callmux",
+      "category": "MCP Hot-reload Multiplexer",
+      "score": 81,
+      "summary": "MCP tool-call multiplexer for downstream server hot reload, reconnects, parallel execution, batching, caching, and pipelining.",
+      "audience": "Codex, Claude Code, Cursor, and MCP-heavy users running multiple local MCP servers.",
+      "ai_native_angle": "It targets agent runtime reliability directly by preventing MCP server restarts from wiping an active agent session.",
+      "growth_signal": "8 stars, created 2026-04, pushed on 2026-06-24; root includes dashboard, docs, schema, src, tests, and npm package metadata.",
+      "runnability": "README includes npm badge, Node version, bridge/hot-reload examples, and dashboard; no local run audit.",
+      "recommended_action": "Run a small MCP restart experiment and verify whether Codex/Claude sessions stay connected."
+    },
+    {
+      "rank": 9,
+      "full_name": "VintLin/skill-flow",
+      "url": "https://github.com/VintLin/skill-flow",
+      "category": "Cross-agent Skill Manager",
+      "score": 80,
+      "summary": "Skill installation, management, and sharing across Claude Code, Cursor, Copilot, Kimi Code, WorkBuddy, CodeBuddy, ZCode, and more, with a macOS SwiftUI desktop app.",
+      "audience": "Developers and teams managing skills across multiple coding agents.",
+      "ai_native_angle": "Turns skills from scattered prompt folders into an installable, shareable, desktop-managed capability supply chain.",
+      "growth_signal": "245 stars, 14 forks, pushed on 2026-06-24; root includes apps, packages, skills, docs, releases, and UI screenshots.",
+      "runnability": "README documents `npm install -g skill-flow`, `npx skill-flow --help`, and desktop prerequisites; no local run audit.",
+      "recommended_action": "Compare with local Codex skill installation; inspect multi-agent mapping, version management, and security checks."
+    },
+    {
+      "rank": 10,
+      "full_name": "bagidea/bagidea-office",
+      "url": "https://github.com/bagidea/bagidea-office",
+      "category": "Desktop AI Agent Office",
+      "score": 78,
+      "summary": "Visual desktop-wallpaper AI-agent office for Claude Code agents, with swappable models, workflows, plugins, voice, Telegram, Discord, and LINE.",
+      "audience": "Developers, creators, and multi-agent experimenters who want a visual agent workspace.",
+      "ai_native_angle": "Agent collaboration, delegation, learning, meetings, and cross-channel control are represented as a visible desktop workspace.",
+      "growth_signal": "Created 2026-06-03, 103 stars, 33 forks, pushed on 2026-06-23; root includes godot, daemon, cli, web, installer, tests, and docs.",
+      "runnability": "README offers `npx bagidea`, live demo, platform notes, and screenshots; no local run audit.",
+      "recommended_action": "Watch as a visual agent workspace sample; validate real workflow depth before treating it as more than presentation."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "osaurus-ai/osaurus",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "category": "macOS Agent Harness",
+      "score": 77,
+      "summary": "Native macOS AI harness with memory, autonomous execution, cryptographic identity, and offline-first positioning.",
+      "audience": "macOS users and local agent builders.",
+      "ai_native_angle": "The harness layer provides continuity, memory, execution, and identity around interchangeable models.",
+      "growth_signal": "6,018 stars, 341 forks, pushed on 2026-06-24; Swift workspace with App, Packages, docs, assets, scripts.",
+      "runnability": "README/product framing is strong; treated as mature active baseline until a fresh release or install audit.",
+      "recommended_action": "Watch for release notes; audit local install path before promoting again."
+    },
+    {
+      "full_name": "koltyakov/browser-bridge",
+      "url": "https://github.com/koltyakov/browser-bridge",
+      "category": "Browser Extension + MCP",
+      "score": 75,
+      "summary": "Browser extension, MCP, and CLI skill bridge for agentic browser development.",
+      "audience": "Agent users who need browser control from Codex, Claude Code, Cursor, Copilot, OpenCode, and similar tools.",
+      "ai_native_angle": "Bridges local agents to browser actions through extension, MCP, and skill setup.",
+      "growth_signal": "12 stars, pushed on 2026-06-24; includes Chrome Web Store listing, docs, packages, skills, tests.",
+      "runnability": "Chrome Web Store and unpacked install docs are present; needs browser audit.",
+      "recommended_action": "Test next cycle if browser-agent reliability is the focus."
+    },
+    {
+      "full_name": "phnx-labs/agents-cli",
+      "url": "https://github.com/phnx-labs/agents-cli",
+      "category": "CLI Agent Toolchain",
+      "score": 74,
+      "summary": "CLI toolchain for running subscription-based coding agents, parallel teams, browser driving, routines, and Touch ID secrets.",
+      "audience": "CLI coding-agent power users.",
+      "ai_native_angle": "Wraps existing agent subscriptions into routable teams with browser/app driving and local secret handling.",
+      "growth_signal": "8 stars, 28 open issues, pushed on 2026-06-24; npm package, docs, demo, tests, skills.",
+      "runnability": "README includes npm and bun global install plus demo video; needs maturity check.",
+      "recommended_action": "Watch issue velocity and run a small task before promoting."
+    },
+    {
+      "full_name": "boshu2/agentops",
+      "url": "https://github.com/boshu2/agentops",
+      "category": "Coding Agent Validation Layer",
+      "score": 74,
+      "summary": "Local operational layer for coding agents with validation, memory, and feedback loops that compound between sessions.",
+      "audience": "Teams raising autonomy thresholds for coding agents.",
+      "ai_native_angle": "Uses proof records and local evidence to decide how much autonomy future agent runs should earn.",
+      "growth_signal": "397 stars, 40 forks, pushed on 2026-06-24; rich `.agents`, `.codex`, docs, evals, evidence, and Go CLI layout.",
+      "runnability": "README frames local validation and evidence flow; needs hands-on task audit.",
+      "recommended_action": "Try on a small coding-agent task and compare receipt quality."
+    },
+    {
+      "full_name": "nvk/agentnoise",
+      "url": "https://github.com/nvk/agentnoise",
+      "category": "Phone Control Surface for Local Agents",
+      "score": 72,
+      "summary": "Rust-first desktop helper for controlling local Codex and Claude sessions from a phone running White Noise.",
+      "audience": "Developers who want mobile control over local coding-agent sessions.",
+      "ai_native_angle": "Turns phone voice/chat surfaces into control planes for local agents.",
+      "growth_signal": "18 stars, pushed on 2026-06-24; Rust project with docs, packaging, scripts, tests.",
+      "runnability": "README describes direct Codex/Claude launch defaults; no install audit.",
+      "recommended_action": "Watch as mobile-control pattern; test only if White Noise workflow is available."
+    },
+    {
+      "full_name": "mcpmux/mcp-mux",
+      "url": "https://github.com/mcpmux/mcp-mux",
+      "category": "MCP Gateway Desktop App",
+      "score": 72,
+      "summary": "Desktop app/local gateway for configuring MCP servers once and connecting every AI client through a single endpoint.",
+      "audience": "Users juggling MCP configuration across Cursor, Claude Desktop, VS Code, Windsurf, and related clients.",
+      "ai_native_angle": "Centralizes MCP tool configuration and gatewaying across agent clients.",
+      "growth_signal": "17 stars, 7 forks, pushed on 2026-06-24; Rust/TypeScript monorepo with apps, crates, schemas, tests.",
+      "runnability": "README links website, downloads, and server discovery; no install audit.",
+      "recommended_action": "Compare with callmux once one MCP reliability experiment is set up."
+    },
+    {
+      "full_name": "racecraft-lab/Paddock",
+      "url": "https://github.com/racecraft-lab/Paddock",
+      "category": "AI Software Factory Control Plane",
+      "score": 70,
+      "summary": "Control plane for issue-driven autonomous workflows, isolated agent sandboxes, governance, artifacts, and human review.",
+      "audience": "Teams experimenting with software-factory style agent workflows.",
+      "ai_native_angle": "Makes governance, artifacts, run state, and review metadata first-class in an agent workflow engine.",
+      "growth_signal": "6 stars, pushed on 2026-06-24; Next/TypeScript repo with Docker, OpenAPI, MCP/control interfaces, docs, Storybook.",
+      "runnability": "README states REST, CLI, and MCP control interfaces; needs proof of end-to-end run.",
+      "recommended_action": "Watch for demo maturity and run-state depth."
+    },
+    {
+      "full_name": "dragfly/dictare",
+      "url": "https://github.com/dragfly/dictare",
+      "category": "Local Voice Layer for Coding Agents",
+      "score": 69,
+      "summary": "Local voice interaction layer and OpenVIP protocol for coding agents and other AI workflows.",
+      "audience": "Voice-first coding-agent users and local assistant builders.",
+      "ai_native_angle": "Voice becomes an input/control layer for coding agents, with local execution and protocol framing.",
+      "growth_signal": "6 stars, pushed on 2026-06-23; Python repo with install script, UI, spec, tests, packaging, docs.",
+      "runnability": "README includes macOS/Linux install script and quick start; no run audit.",
+      "recommended_action": "Watch for demo clarity and agent compatibility matrix."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "jdilla1277/agentcad",
+      "url": "https://github.com/jdilla1277/agentcad",
+      "skip_reason": "Covered as a Top project on 2026-06-23; still active, but repeated CAD/MCP coverage was intentionally avoided today."
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Mature baseline agent workflow platform; active but not a fresh product discovery for this run."
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "skip_reason": "Mature RAG/agent context platform; high activity but not a new 24-72 hour product signal."
+    },
+    {
+      "full_name": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "skip_reason": "High-quality eval/red-team tool, but already a mature baseline and less aligned with today's product-surface focus."
+    },
+    {
+      "full_name": "Empreiteiro/langflow-templates",
+      "url": "https://github.com/Empreiteiro/langflow-templates",
+      "skip_reason": "Template collection for Langflow rather than an independent runnable AI-native product."
+    },
+    {
+      "full_name": "justoneapi/justoneapi-mcp",
+      "url": "https://github.com/justoneapi/justoneapi-mcp",
+      "skip_reason": "Thin MCP wrapper around one API surface; insufficient independent workflow/product depth."
+    },
+    {
+      "full_name": "ZclassiC23/zclassic",
+      "url": "https://github.com/ZclassiC23/zclassic",
+      "skip_reason": "Includes an MCP server, but the repository is primarily a cryptocurrency full node and off-topic for AI-native product radar."
+    },
+    {
+      "full_name": "NHID-Clinical/NHID-Clinical",
+      "url": "https://github.com/NHID-Clinical/NHID-Clinical",
+      "skip_reason": "Healthcare voice-agent conformance proposal with limited runnable product surface in the current audit."
+    }
+  ]
+}

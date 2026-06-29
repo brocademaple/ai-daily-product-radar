@@ -1,0 +1,197 @@
+{
+  "run_date": "2026-06-17",
+  "generated_at": "2026-06-17T10:45:00+08:00",
+  "data_window": "2026-06-15 00:00 to 2026-06-17 10:45 Asia/Shanghai; GitHub Search API + GitHub repository README/root-page spot checks.",
+  "source_summary": "GitHub Search API queries for created/pushed repositories around agent, MCP, RAG, LLM, automation, code-agent; GitHub repo pages/README spot checks for selected projects. No clone/install/runtime execution.",
+  "trend_observations": "本轮明显集中在 agent 可控状态层：repo-local task memory / skill OS、ChatGPT-to-local-repo MCP bridge、multi-model judge MCP、以及 voice-first personal agent。MCP 项目正在从连接器扩张转向“让现有强模型安全进入本地工作流”的产品包装。",
+  "assumptions": "优先收录 2026-06-15 之后创建或 72 小时内显著更新、且具备 CLI/MCP/安装脚本/真实用户场景的项目；重复昨日 Top 的项目只在 Skip/Watchlist 说明，不重复抬榜；star/fork 来自 GitHub API/页面快照，未做 clone、install、Docker 或本地运行审计。",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-17\n\n**数据窗口**：2026-06-15 00:00 to 2026-06-17 10:45 Asia/Shanghai; GitHub Search API + GitHub repository README/root-page spot checks.\n\n**信息来源**：GitHub Search API queries for created/pushed repositories around agent, MCP, RAG, LLM, automation, code-agent; GitHub repo pages/README spot checks for selected projects. No clone/install/runtime execution.\n\n**关键假设**：优先收录 2026-06-15 之后创建或 72 小时内显著更新、且具备 CLI/MCP/安装脚本/真实用户场景的项目；重复昨日 Top 的项目只在 Skip/Watchlist 说明，不重复抬榜；star/fork 来自 GitHub API/页面快照，未做 clone、install、Docker 或本地运行审计。\n\n## 今日趋势观察\n\n本轮明显集中在 agent 可控状态层：repo-local task memory / skill OS、ChatGPT-to-local-repo MCP bridge、multi-model judge MCP、以及 voice-first personal agent。MCP 项目正在从连接器扩张转向“让现有强模型安全进入本地工作流”的产品包装。\n\n今天的高质量新增项目不再只是“又一个 MCP server”。更值得跟踪的是三类产品包装：一是 agent 长任务所需的本地状态和技能系统，二是把 ChatGPT/Codex/Claude Code 等强模型接进本地 repo 的安全桥，三是将语音、播客、PDF、金融文本等真实输入源接入可持续运行的 agent 工作流。\n\n## Top Projects\n\n### 1. [dongshuyan/compass-skills](https://github.com/dongshuyan/compass-skills) - 88/100\n\n- **分类**：Agent Skills / Local Memory OS\n- **做什么**：为 AI coding agent 提供任务澄清、repo-local task forest、用户协作画像三套本地技能。\n- **面向谁**：频繁使用 Codex、Claude Code、OpenCode 等 agent 做长任务的工程师和团队。\n- **AI native 点**：把 agent 的长期目标、协作偏好、任务 DAG 和风险边界变成可审计的本地工作流。\n- **增长/活跃信号**：2026-06-15 创建，GitHub 页面显示约 173 stars/17 forks，API 搜索快照约 191 stars/18 forks；v0.2.0 于 2026-06-16 发布。\n- **可运行性判断**：README 提供 npx skills add 安装命令；仓库含 skills、scripts、HTML export、SECURITY.md 和验证状态。\n- **建议动作**：作为 agent memory / skill OS 标杆长期跟踪，建议本地安装到一个沙盒 repo 试 task-forest。\n\n### 2. [smixs/agent-second-brain](https://github.com/smixs/agent-second-brain) - 87/100\n\n- **分类**：Voice Personal Agent / PKM\n- **做什么**：Telegram 语音/文本/文件输入，自动整理为 Obsidian vault、知识图谱、提醒和日报的 24/7 second brain。\n- **面向谁**：重度语音记录、Obsidian、个人 CRM/项目管理用户，以及想自托管个人助理的独立开发者。\n- **AI native 点**：用长驻 Claude Code/tmux 会话驱动个人知识系统，agent 负责分类、链接、提醒、夜间整理和自修复。\n- **增长/活跃信号**：仓库 2026-06-17 仍在 push；页面约 274 stars/191 forks，181 commits，v3.0.1 release 为 2026-06-14。\n- **可运行性判断**：有 bootstrap.sh/setup.sh/upgrade.sh、pyproject、tests、systemd/VPS 安装流程和 vault 模板；需 Telegram + Deepgram + Claude 登录。\n- **建议动作**：列为复刻候选：可抽取 voice-to-vault、cron skill、自修复 watchdog 三段工作流做小实验。\n\n### 3. [rebel0789/codexpro](https://github.com/rebel0789/codexpro) - 84/100\n\n- **分类**：ChatGPT MCP Local Coding Bridge\n- **做什么**：把 ChatGPT Developer Mode 连接到本地 repo，让 ChatGPT 读取/编辑文件、搜索代码、运行安全验证命令并加载 Codex 风格上下文。\n- **面向谁**：有 ChatGPT Plus/Pro Developer Mode、同时使用 Codex 的开发者。\n- **AI native 点**：用 MCP + Apps SDK widget 将 ChatGPT web 变成本地 coding agent 表面，支持 handoff 到 Codex。\n- **增长/活跃信号**：2026-06-16 创建；API 搜索快照显示 25 stars/4 forks，GitHub 页面稍后显示 2 stars/0 forks，说明计数可能短时波动；6 commits。\n- **可运行性判断**：npm install -g codexpro / codexpro setup；仓库含 src、scripts、docs、package.json、SECURITY.md、visual tool cards。\n- **建议动作**：安全边界有价值，建议跟踪其 write/bash allowlist 和 ChatGPT Apps SDK card 设计。\n\n### 4. [ba1lly/OpenPrism](https://github.com/ba1lly/OpenPrism) - 82/100\n\n- **分类**：Multi-model Judge MCP\n- **做什么**：把多个模型并行组成 panel，再由 judge 汇总为更可靠答案，可作为 CLI 或 MCP server 接入 Claude Code、Codex、Cursor 等。\n- **面向谁**：需要在架构、研究、难问题上做多模型交叉验证的开发者和研究型团队。\n- **AI native 点**：把“多模型分歧-共识-盲点”变成可调用工具，并用 MCP 暴露 research/code/bakeoff/models。\n- **增长/活跃信号**：2026-06-15 创建，8 commits；API 搜索快照约 4 stars，主题覆盖 codex、claude-code、mcp-server、multi-model。\n- **可运行性判断**：支持 uvx openprism init --host codex/cursor/opencode；有 install.sh/ps1、pyproject、requirements、tests、.mcp.json。\n- **建议动作**：建议做一次小型 benchmark：同一产品判断题比较 single model vs panel judge。\n\n### 5. [harishkotra/the-gauntlet](https://github.com/harishkotra/the-gauntlet) - 76/100\n\n- **分类**：Browser Demo / Multi-agent MCP Patterns\n- **做什么**：浏览器交互式 demo，演示生产级 multi-agent system 生命周期中的 MCP pattern 与 anti-pattern。\n- **面向谁**：正在学习或设计 multi-agent/MCP 架构的工程师、布道/培训团队。\n- **AI native 点**：把 agent 架构模式做成可浏览的交互式体验，降低抽象 MCP 概念的理解成本。\n- **增长/活跃信号**：2026-06-15 创建；API 搜索快照约 4 stars，TypeScript，小体量但描述明确。\n- **可运行性判断**：仓库体量小，定位为 browser-based interactive demo；未完成页面审计，需后续确认 npm 脚本和 demo 完整度。\n- **建议动作**：放入短期试用：若 demo 可运行，可做成内部 MCP 训练材料参考。\n\n### 6. [abdu6666/BigData-Agent](https://github.com/abdu6666/BigData-Agent) - 74/100\n\n- **分类**：Vertical Financial RAG Agent\n- **做什么**：基于 Bigdata API 的金融文本分析 pipeline，覆盖主题洞察、风险筛查、趋势分析和自动报告。\n- **面向谁**：金融研究、投研、市场情报和合规分析团队。\n- **AI native 点**：把 RAG/GenAI 嵌进垂直金融数据工作流，从检索到自动报告形成闭环。\n- **增长/活跃信号**：2026-06-15 创建；API 快照约 10 stars/3 forks，topic 包含 agentic-ai、financial-analysis、grounding、rag。\n- **可运行性判断**：仓库含 notebook/HTML 形态，依赖 Bigdata API；产品边界清楚但可能更像示例 pipeline。\n- **建议动作**：观察是否补齐 UI/API 与真实数据接入文档；可借鉴其垂直报告链路。\n\n### 7. [Hatari130/podcast-bridge](https://github.com/Hatari130/podcast-bridge) - 72/100\n\n- **分类**：Podcast Skill / Agent Knowledge Ingestion\n- **做什么**：让 AI Agent 订阅、转录、检索并理解全球播客的 Skill。\n- **面向谁**：内容研究、播客监听、知识管理和信息雷达使用者。\n- **AI native 点**：把长音频订阅源转成 agent 可检索、可总结、可继续推理的知识入口。\n- **增长/活跃信号**：2026-06-16 创建；API 快照约 6 stars，Python，描述明确且 repo size 约 10MB。\n- **可运行性判断**：需后续确认 README、转录依赖和检索存储；从描述看偏可插拔 skill 而非完整 SaaS。\n- **建议动作**：列入 Watch-to-try：如果有 RSS + transcription + vector index 示例，可复用到行业情报雷达。\n\n### 8. [ayaanmustafa/Junas](https://github.com/ayaanmustafa/Junas) - 70/100\n\n- **分类**：Multimodal PDF RAG\n- **做什么**：ColPali hybrid 的多模态 PDF parser 与 RAG 项目。\n- **面向谁**：需要处理扫描版 PDF、图文混排报告、技术文档的 RAG 开发者。\n- **AI native 点**：将视觉文档解析和 RAG 检索结合，面向传统文本切块效果差的文档场景。\n- **增长/活跃信号**：2026-06-15 创建；API 快照约 9 stars，Python，短时间获得早期关注。\n- **可运行性判断**：仓库体量较小，未完成 README 审计；需确认 demo、模型下载、索引与查询路径。\n- **建议动作**：先放轻量试验队列，重点验证复杂 PDF 的解析质量。\n\n## Watchlist\n\n- [shreyashankar/plain-writing-skill](https://github.com/shreyashankar/plain-writing-skill) (68/100, Agent Skill / Writing Workflow)：面向 AI agents 的 plain-language writing skill，并带修订视图。 作为 skill 生态信号跟踪，暂不列 Top，避免 prompt/skill 模板占榜。\n- [hashangit/openfusion](https://github.com/hashangit/openfusion) (66/100, Multi-model MCP)：OpenRouter Fusion panel architecture 的本地 MCP server。 与 OpenPrism 合并观察，关注谁先形成稳定安装和真实评测。\n- [Tenstu/Pass-LLM-with-LLM](https://github.com/Tenstu/Pass-LLM-with-LLM) (61/100, Exam Prep MCP Harness)：用 LLM + MCP tools 辅助算法面试/考试准备的 Claude Code harness。 观察，不进入 Top。\n- [Matymatyk-business/cmux-skill](https://github.com/Matymatyk-business/cmux-skill) (58/100, Agent Skill / macOS Terminal Control)：控制 cmux native macOS terminal app 的 agent skill。 仅观察 cmux 生态是否扩展成完整 agent workbench。\n\n## Skip Reasons\n\n- [HuolalaTech/huolala-figma-mcp](https://github.com/HuolalaTech/huolala-figma-mcp)：昨日已作为 Top 项目建卡；今天虽仍有关注，但未发现新的 release/runtime 证据，避免重复抬榜。\n- [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent)：昨日已入选 Top；今天继续活跃但不重复列入，后续只在出现 release/架构变化时更新。\n- [renee-jia/scholar-loop](https://github.com/renee-jia/scholar-loop)：昨日已入选 Top；偏 autonomous scientist/research loop，今天无新增可运行性证据。\n- [Happy-Chen-CH/Educational_RAG_System](https://github.com/Happy-Chen-CH/Educational_RAG_System)：昨日已入选 Top；今天不重复，后续关注是否补充部署脚本、UI demo 或课程数据接入。\n- [ASPIRINH/hands-on-llm](https://github.com/ASPIRINH/hands-on-llm)：更像 LLM 教程 notebook collection，产品形态和用户工作流闭环不足。\n- [harbouli/jira-mcp-node](https://github.com/harbouli/jira-mcp-node)：单一 Jira MCP connector，产品包装和差异化不足，暂不列入。\n\n类型级降权：纯教程 notebook、prompt/skill collection、单一 connector、只有 README 无明显代码/安装路径的项目，本轮均不作为 Top。\n\n## 今日建议动作\n\n1. 本地试跑 `dongshuyan/compass-skills` 的 task-forest，验证它是否能稳定承接长任务自动化记忆。\n2. 用一个沙盒 repo 审计 `rebel0789/codexpro` 的 write/bash allowlist 与 tunnel 暴露边界。\n3. 对 `ba1lly/OpenPrism` 做 3-5 个架构/研究问题的小样本对比，判断 multi-model judge 是否真有决策增益。\n4. 抽取 `smixs/agent-second-brain` 的 voice-to-vault + cron + watchdog 架构，评估能否迁移到工作日报/会议行动项流。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "dongshuyan/compass-skills",
+      "url": "https://github.com/dongshuyan/compass-skills",
+      "category": "Agent Skills / Local Memory OS",
+      "score": 88,
+      "summary": "为 AI coding agent 提供任务澄清、repo-local task forest、用户协作画像三套本地技能。",
+      "audience": "频繁使用 Codex、Claude Code、OpenCode 等 agent 做长任务的工程师和团队。",
+      "ai_native_angle": "把 agent 的长期目标、协作偏好、任务 DAG 和风险边界变成可审计的本地工作流。",
+      "growth_signal": "2026-06-15 创建，GitHub 页面显示约 173 stars/17 forks，API 搜索快照约 191 stars/18 forks；v0.2.0 于 2026-06-16 发布。",
+      "runnability": "README 提供 npx skills add 安装命令；仓库含 skills、scripts、HTML export、SECURITY.md 和验证状态。",
+      "recommended_action": "作为 agent memory / skill OS 标杆长期跟踪，建议本地安装到一个沙盒 repo 试 task-forest。"
+    },
+    {
+      "rank": 2,
+      "full_name": "smixs/agent-second-brain",
+      "url": "https://github.com/smixs/agent-second-brain",
+      "category": "Voice Personal Agent / PKM",
+      "score": 87,
+      "summary": "Telegram 语音/文本/文件输入，自动整理为 Obsidian vault、知识图谱、提醒和日报的 24/7 second brain。",
+      "audience": "重度语音记录、Obsidian、个人 CRM/项目管理用户，以及想自托管个人助理的独立开发者。",
+      "ai_native_angle": "用长驻 Claude Code/tmux 会话驱动个人知识系统，agent 负责分类、链接、提醒、夜间整理和自修复。",
+      "growth_signal": "仓库 2026-06-17 仍在 push；页面约 274 stars/191 forks，181 commits，v3.0.1 release 为 2026-06-14。",
+      "runnability": "有 bootstrap.sh/setup.sh/upgrade.sh、pyproject、tests、systemd/VPS 安装流程和 vault 模板；需 Telegram + Deepgram + Claude 登录。",
+      "recommended_action": "列为复刻候选：可抽取 voice-to-vault、cron skill、自修复 watchdog 三段工作流做小实验。"
+    },
+    {
+      "rank": 3,
+      "full_name": "rebel0789/codexpro",
+      "url": "https://github.com/rebel0789/codexpro",
+      "category": "ChatGPT MCP Local Coding Bridge",
+      "score": 84,
+      "summary": "把 ChatGPT Developer Mode 连接到本地 repo，让 ChatGPT 读取/编辑文件、搜索代码、运行安全验证命令并加载 Codex 风格上下文。",
+      "audience": "有 ChatGPT Plus/Pro Developer Mode、同时使用 Codex 的开发者。",
+      "ai_native_angle": "用 MCP + Apps SDK widget 将 ChatGPT web 变成本地 coding agent 表面，支持 handoff 到 Codex。",
+      "growth_signal": "2026-06-16 创建；API 搜索快照显示 25 stars/4 forks，GitHub 页面稍后显示 2 stars/0 forks，说明计数可能短时波动；6 commits。",
+      "runnability": "npm install -g codexpro / codexpro setup；仓库含 src、scripts、docs、package.json、SECURITY.md、visual tool cards。",
+      "recommended_action": "安全边界有价值，建议跟踪其 write/bash allowlist 和 ChatGPT Apps SDK card 设计。"
+    },
+    {
+      "rank": 4,
+      "full_name": "ba1lly/OpenPrism",
+      "url": "https://github.com/ba1lly/OpenPrism",
+      "category": "Multi-model Judge MCP",
+      "score": 82,
+      "summary": "把多个模型并行组成 panel，再由 judge 汇总为更可靠答案，可作为 CLI 或 MCP server 接入 Claude Code、Codex、Cursor 等。",
+      "audience": "需要在架构、研究、难问题上做多模型交叉验证的开发者和研究型团队。",
+      "ai_native_angle": "把“多模型分歧-共识-盲点”变成可调用工具，并用 MCP 暴露 research/code/bakeoff/models。",
+      "growth_signal": "2026-06-15 创建，8 commits；API 搜索快照约 4 stars，主题覆盖 codex、claude-code、mcp-server、multi-model。",
+      "runnability": "支持 uvx openprism init --host codex/cursor/opencode；有 install.sh/ps1、pyproject、requirements、tests、.mcp.json。",
+      "recommended_action": "建议做一次小型 benchmark：同一产品判断题比较 single model vs panel judge。"
+    },
+    {
+      "rank": 5,
+      "full_name": "harishkotra/the-gauntlet",
+      "url": "https://github.com/harishkotra/the-gauntlet",
+      "category": "Browser Demo / Multi-agent MCP Patterns",
+      "score": 76,
+      "summary": "浏览器交互式 demo，演示生产级 multi-agent system 生命周期中的 MCP pattern 与 anti-pattern。",
+      "audience": "正在学习或设计 multi-agent/MCP 架构的工程师、布道/培训团队。",
+      "ai_native_angle": "把 agent 架构模式做成可浏览的交互式体验，降低抽象 MCP 概念的理解成本。",
+      "growth_signal": "2026-06-15 创建；API 搜索快照约 4 stars，TypeScript，小体量但描述明确。",
+      "runnability": "仓库体量小，定位为 browser-based interactive demo；未完成页面审计，需后续确认 npm 脚本和 demo 完整度。",
+      "recommended_action": "放入短期试用：若 demo 可运行，可做成内部 MCP 训练材料参考。"
+    },
+    {
+      "rank": 6,
+      "full_name": "abdu6666/BigData-Agent",
+      "url": "https://github.com/abdu6666/BigData-Agent",
+      "category": "Vertical Financial RAG Agent",
+      "score": 74,
+      "summary": "基于 Bigdata API 的金融文本分析 pipeline，覆盖主题洞察、风险筛查、趋势分析和自动报告。",
+      "audience": "金融研究、投研、市场情报和合规分析团队。",
+      "ai_native_angle": "把 RAG/GenAI 嵌进垂直金融数据工作流，从检索到自动报告形成闭环。",
+      "growth_signal": "2026-06-15 创建；API 快照约 10 stars/3 forks，topic 包含 agentic-ai、financial-analysis、grounding、rag。",
+      "runnability": "仓库含 notebook/HTML 形态，依赖 Bigdata API；产品边界清楚但可能更像示例 pipeline。",
+      "recommended_action": "观察是否补齐 UI/API 与真实数据接入文档；可借鉴其垂直报告链路。"
+    },
+    {
+      "rank": 7,
+      "full_name": "Hatari130/podcast-bridge",
+      "url": "https://github.com/Hatari130/podcast-bridge",
+      "category": "Podcast Skill / Agent Knowledge Ingestion",
+      "score": 72,
+      "summary": "让 AI Agent 订阅、转录、检索并理解全球播客的 Skill。",
+      "audience": "内容研究、播客监听、知识管理和信息雷达使用者。",
+      "ai_native_angle": "把长音频订阅源转成 agent 可检索、可总结、可继续推理的知识入口。",
+      "growth_signal": "2026-06-16 创建；API 快照约 6 stars，Python，描述明确且 repo size 约 10MB。",
+      "runnability": "需后续确认 README、转录依赖和检索存储；从描述看偏可插拔 skill 而非完整 SaaS。",
+      "recommended_action": "列入 Watch-to-try：如果有 RSS + transcription + vector index 示例，可复用到行业情报雷达。"
+    },
+    {
+      "rank": 8,
+      "full_name": "ayaanmustafa/Junas",
+      "url": "https://github.com/ayaanmustafa/Junas",
+      "category": "Multimodal PDF RAG",
+      "score": 70,
+      "summary": "ColPali hybrid 的多模态 PDF parser 与 RAG 项目。",
+      "audience": "需要处理扫描版 PDF、图文混排报告、技术文档的 RAG 开发者。",
+      "ai_native_angle": "将视觉文档解析和 RAG 检索结合，面向传统文本切块效果差的文档场景。",
+      "growth_signal": "2026-06-15 创建；API 快照约 9 stars，Python，短时间获得早期关注。",
+      "runnability": "仓库体量较小，未完成 README 审计；需确认 demo、模型下载、索引与查询路径。",
+      "recommended_action": "先放轻量试验队列，重点验证复杂 PDF 的解析质量。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "shreyashankar/plain-writing-skill",
+      "url": "https://github.com/shreyashankar/plain-writing-skill",
+      "category": "Agent Skill / Writing Workflow",
+      "score": 68,
+      "summary": "面向 AI agents 的 plain-language writing skill，并带修订视图。",
+      "audience": "写作、文档、产品说明和内容审稿场景。",
+      "ai_native_angle": "把“改写 + 可解释 diff”包装成 agent skill，可作为更大工作流里的质量 gate。",
+      "growth_signal": "2026-06-15 创建；API 快照约 129 stars/4 forks。",
+      "runnability": "HTML/skill 形态，需确认是否有可安装 skill metadata 与 demo。",
+      "recommended_action": "作为 skill 生态信号跟踪，暂不列 Top，避免 prompt/skill 模板占榜。"
+    },
+    {
+      "full_name": "hashangit/openfusion",
+      "url": "https://github.com/hashangit/openfusion",
+      "category": "Multi-model MCP",
+      "score": 66,
+      "summary": "OpenRouter Fusion panel architecture 的本地 MCP server。",
+      "audience": "希望把多模型融合接入任意 MCP client 的开发者。",
+      "ai_native_angle": "和 OpenPrism 方向高度相似，强调多模型答案融合。",
+      "growth_signal": "2026-06-15 创建；API 快照约 9 stars/2 forks。",
+      "runnability": "TypeScript 项目，README 页面本轮未稳定打开。",
+      "recommended_action": "与 OpenPrism 合并观察，关注谁先形成稳定安装和真实评测。"
+    },
+    {
+      "full_name": "Tenstu/Pass-LLM-with-LLM",
+      "url": "https://github.com/Tenstu/Pass-LLM-with-LLM",
+      "category": "Exam Prep MCP Harness",
+      "score": 61,
+      "summary": "用 LLM + MCP tools 辅助算法面试/考试准备的 Claude Code harness。",
+      "audience": "刷题和算法考试准备用户。",
+      "ai_native_angle": "将 Claude Code/MCP 用在教育训练流程，但边界偏窄。",
+      "growth_signal": "2026-06-16 创建；API 快照约 4 stars。",
+      "runnability": "Python；需确认是否有完整题库、CLI 和安全边界。",
+      "recommended_action": "观察，不进入 Top。"
+    },
+    {
+      "full_name": "Matymatyk-business/cmux-skill",
+      "url": "https://github.com/Matymatyk-business/cmux-skill",
+      "category": "Agent Skill / macOS Terminal Control",
+      "score": 58,
+      "summary": "控制 cmux native macOS terminal app 的 agent skill。",
+      "audience": "cmux 用户和多 terminal agent 协作用户。",
+      "ai_native_angle": "把桌面终端控制包装为 agent skill，是 agent GUI 操作层的一个信号。",
+      "growth_signal": "2026-06-15 创建；API 快照约 6 stars/1 fork。",
+      "runnability": "仓库很小，暂看更像配置/skill 包。",
+      "recommended_action": "仅观察 cmux 生态是否扩展成完整 agent workbench。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "HuolalaTech/huolala-figma-mcp",
+      "url": "https://github.com/HuolalaTech/huolala-figma-mcp",
+      "skip_reason": "昨日已作为 Top 项目建卡；今天虽仍有关注，但未发现新的 release/runtime 证据，避免重复抬榜。"
+    },
+    {
+      "full_name": "omnigent-ai/omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "skip_reason": "昨日已入选 Top；今天继续活跃但不重复列入，后续只在出现 release/架构变化时更新。"
+    },
+    {
+      "full_name": "renee-jia/scholar-loop",
+      "url": "https://github.com/renee-jia/scholar-loop",
+      "skip_reason": "昨日已入选 Top；偏 autonomous scientist/research loop，今天无新增可运行性证据。"
+    },
+    {
+      "full_name": "Happy-Chen-CH/Educational_RAG_System",
+      "url": "https://github.com/Happy-Chen-CH/Educational_RAG_System",
+      "skip_reason": "昨日已入选 Top；今天不重复，后续关注是否补充部署脚本、UI demo 或课程数据接入。"
+    },
+    {
+      "full_name": "ASPIRINH/hands-on-llm",
+      "url": "https://github.com/ASPIRINH/hands-on-llm",
+      "skip_reason": "更像 LLM 教程 notebook collection，产品形态和用户工作流闭环不足。"
+    },
+    {
+      "full_name": "harbouli/jira-mcp-node",
+      "url": "https://github.com/harbouli/jira-mcp-node",
+      "skip_reason": "单一 Jira MCP connector，产品包装和差异化不足，暂不列入。"
+    }
+  ]
+}

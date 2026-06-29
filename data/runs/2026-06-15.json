@@ -1,0 +1,197 @@
+{
+  "run_date": "2026-06-15",
+  "generated_at": "2026-06-15T14:06:22+08:00",
+  "data_window": "2026-06-12 14:00 to 2026-06-15 14:06 Asia/Shanghai; GitTrend AI Agent page updated June 15, 2026; GitTrend AI Coding Assistant, AI Infrastructure, and AI Skills pages checked live; GitHub repository README and visible metadata pages checked live on June 15, 2026.",
+  "source_summary": "Live GitTrend topic pages, GitHub repository README/metadata pages, and automation memory to avoid repeating recent picks unless there was stronger new growth or product signal. No clone, install, Docker run, or GitHub API audit was performed.",
+  "trend_observations": "The strongest signal is a split between agent internet reach infrastructure and concrete artifact workflows: Agent Reach and Firecrawl make external web/social context agent-ready, while PPT Master and Open Design turn agent work into editable/exportable deliverables. Coding-agent GUI surfaces and skills-as-quality-gates remain active, but prompt-only and guide-only repositories still need downgrading.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, install instructions, examples, screenshots, docs, and explicit user workflows. GitTrend star deltas are directional only. Repeated abnormal star spikes, prompt-only skills, guide repositories, pure learning material, and unclear clone/skeleton repos were downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-15\n\nTop 3: Panniantong/Agent-Reach, hugohe3/ppt-master, openchamber/openchamber. Main trend: agent internet reach and real artifact export are becoming product surfaces. See data/runs/2026-06-15.md for the full Markdown brief.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "Agent Internet Reach CLI",
+      "score": 88,
+      "summary": "Installs cross-platform internet read/search capabilities for AI agents across Twitter/X, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, RSS, and related sources.",
+      "audience": "Agent users and researchers doing community research, product sentiment checks, video/social-source reading, or broad web monitoring.",
+      "ai_native_angle": "Packages external-world access as an installable, health-checked, updateable agent capability instead of one-off platform scripts.",
+      "growth_signal": "GitTrend AI Agent ranked it #1, marked NEW 2026, with 28.8k stars, 2.4k forks, and +1.3k today; GitHub showed 283 commits plus docs, scripts, tests, and config directories.",
+      "runnability": "README provides install/update prompts, platform descriptions, health-check posture, and security guidance; usable but high-risk for login/cookie-based platforms.",
+      "recommended_action": "Test with throwaway or low-risk accounts on GitHub, YouTube, and Reddit first; avoid primary-account cookies until the credential model is reviewed."
+    },
+    {
+      "rank": 2,
+      "full_name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "category": "Agentic PPTX Generation Workflow",
+      "score": 87,
+      "summary": "Generates genuinely editable PowerPoint decks from documents, including native shapes, animations, speaker notes, audio narration, and template reuse.",
+      "audience": "People and teams producing consulting decks, reports, presentations, or reusable content where editable PPTX matters.",
+      "ai_native_angle": "Uses Claude/Codex/Cursor-style agents as the executor while the project supplies workflow, parsing, design spec, SVG-to-PPTX export, examples, and skill packaging.",
+      "growth_signal": "GitTrend AI Agent ranked it #10 with 27.5k stars, 2.5k forks, and +301 today; GitHub showed 741 commits and docs, examples, projects, and skills directories.",
+      "runnability": "README includes a live demo, downloadable example PPTX files, pip install path, npx skills add path, and multi-agent usage instructions.",
+      "recommended_action": "Run one existing Markdown/report through it for an 8-slide Chinese editable deck; inspect editability, typography, and template-fill quality."
+    },
+    {
+      "rank": 3,
+      "full_name": "openchamber/openchamber",
+      "url": "https://github.com/openchamber/openchamber",
+      "category": "OpenCode Agent GUI",
+      "score": 85,
+      "summary": "Desktop, browser, and mobile interface for OpenCode agent sessions, diffs, tool output, dev servers, and cross-device continuity.",
+      "audience": "OpenCode and terminal-agent users who need a visible control plane for coding-agent sessions.",
+      "ai_native_angle": "Turns coding-agent work into a GUI control surface with session continuity, diff review, settings, tool output, remote access, and PWA/desktop usage.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #2 with 5.0k stars, 501 forks, and +977 today; GitHub showed 1,665 commits plus Dockerfile, docker-compose, packages, docs, and scripts.",
+      "runnability": "README shows screenshots and desktop/browser/phone positioning; repository includes Vite/TypeScript app structure and Docker assets.",
+      "recommended_action": "Compare against Vibe Kanban and JetBrains CC GUI for permissioning, diff review, remote access, and session-state UX."
+    },
+    {
+      "rank": 4,
+      "full_name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "Web Context API for Agents",
+      "score": 84,
+      "summary": "Searches, scrapes, crawls, maps, interacts with pages, and returns LLM-ready Markdown, JSON, screenshots, and structured data for AI agents.",
+      "audience": "RAG, research automation, data extraction, and agent product teams that need reliable web context.",
+      "ai_native_angle": "Makes web context an agent infrastructure layer through MCP, CLI skills, an Agent endpoint, structured output, and browser interaction actions.",
+      "growth_signal": "GitTrend AI Agent ranked it #8 with 132.8k stars, 7.8k forks, and +397 today; GitHub showed 5,649 commits, 59 issues, and 322 PRs.",
+      "runnability": "README includes Python, Node, cURL, CLI examples, MCP configuration, agent onboarding skill, hosted service, and self-host files.",
+      "recommended_action": "Use it as the API/hosted-service comparison to Agent Reach; run the same research prompt through both and compare stability, cost, and source traceability."
+    },
+    {
+      "rank": 5,
+      "full_name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "category": "Agentic Design Workspace",
+      "score": 83,
+      "summary": "Local-first Claude Design/Figma alternative that connects coding-agent CLIs to a desktop design studio for prototypes, web, slides, images, video, and exports.",
+      "audience": "Product builders, PMs, design engineers, and Codex/Claude/Cursor users who need prompt-to-artifact workflows.",
+      "ai_native_angle": "Treats the agent as the design engine while skills, MCP, design systems, sandbox preview, BYOK, and HTML/PDF/PPTX/MP4 export are product primitives.",
+      "growth_signal": "GitTrend AI Agent ranked it #7 with 64.8k stars, 7.3k forks, and +466 today; GitHub showed 2,272 commits and 0.10.0 release notes.",
+      "runnability": "Repository exposes desktop/web/apps/plugins/skills/design-system paths and prior README review showed install/export workflows.",
+      "recommended_action": "Continue tracking; next useful audit is the Codex MCP install path and actual HTML/PPTX artifact quality."
+    },
+    {
+      "rank": 6,
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "category": "Engineering Agent Skill System",
+      "score": 78,
+      "summary": "Production-grade engineering skills and slash commands covering spec, plan, build, test, review, simplify, and ship.",
+      "audience": "Developers and teams who want AI coding agents to follow stronger engineering quality gates.",
+      "ai_native_angle": "Encodes senior-engineering workflows into agent-callable commands, hooks, scripts, agents, commands, skills, and plugin metadata.",
+      "growth_signal": "GitTrend AI Agent ranked it #2, marked NEW 2026, with 59.5k stars, 6.4k forks, and +1.1k today; GitHub showed 240 commits.",
+      "runnability": "README documents seven slash commands, automatic skill activation, and /build auto; product UI is weaker than the Top 5, but workflow packaging is concrete.",
+      "recommended_action": "Extract the /spec, /review, and /ship quality gates for comparison with the local Codex workflow instead of adopting wholesale."
+    },
+    {
+      "rank": 7,
+      "full_name": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "category": "Multi-agent Finance Workflow",
+      "score": 76,
+      "summary": "Multi-agent LLM financial trading framework with research, sentiment, trader, portfolio manager, and decision-log workflows.",
+      "audience": "Quant/finance researchers and builders studying vertical multi-agent workflows.",
+      "ai_native_angle": "Structures a finance workflow as collaborating LLM agents rather than a single chat assistant.",
+      "growth_signal": "GitTrend AI Agent ranked it #9 with 86.2k stars, 16.6k forks, and +326 today; README shows a 2026-05 v0.2.5 release and visible CLI, Docker, tests, and package directories.",
+      "runnability": "Repository includes pyproject, requirements, Dockerfile, docker-compose, CLI, tests, and tradingagents package.",
+      "recommended_action": "Study as a vertical multi-agent product pattern only; do not use outputs as investment advice."
+    },
+    {
+      "rank": 8,
+      "full_name": "qixing-jk/all-api-hub",
+      "url": "https://github.com/qixing-jk/all-api-hub",
+      "category": "AI API Account Operations",
+      "score": 74,
+      "summary": "Browser-extension account hub for New API/Sub2API relay accounts, balances, usage, auto check-ins, one-click keys, pricing, health checks, and channel management.",
+      "audience": "Heavy AI tool users and small teams juggling multiple relay accounts, model gateways, or China-market AI API providers.",
+      "ai_native_angle": "Operationalizes the account, cost, key, and availability layer beneath AI-native tools.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #3 with 3.9k stars, 272 forks, and +475 today; prior audit found Chrome/Edge/Firefox distribution signals.",
+      "runnability": "Browser-extension product shape is clear, but credential storage and permissions need review.",
+      "recommended_action": "Use as an AI API ops-pattern reference; audit credential handling before adopting."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "SWE-agent/mini-swe-agent",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "category": "Minimal SWE Agent CLI",
+      "score": 73,
+      "summary": "Small CLI-style SWE agent that remains active on GitTrend after prior promotion.",
+      "audience": "Developers comparing compact coding agents and SWE-bench-oriented tools.",
+      "ai_native_angle": "Pushes agent usefulness through a minimal command-line loop rather than a large framework.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #5 with +568 today.",
+      "runnability": "Previously reviewed as CLI-shaped; not re-audited today.",
+      "recommended_action": "Keep watching benchmark claims and real CLI ergonomics."
+    },
+    {
+      "full_name": "agentscope-ai/agentscope-java",
+      "url": "https://github.com/agentscope-ai/agentscope-java",
+      "category": "Java Multi-agent Framework",
+      "score": 71,
+      "summary": "Java framework for agent-oriented programming and LLM applications.",
+      "audience": "Enterprise Java teams exploring agent systems.",
+      "ai_native_angle": "Moves agent orchestration patterns into Java stacks.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #2 with +546 today.",
+      "runnability": "Needs deeper README/install/example audit before promotion.",
+      "recommended_action": "Watch as enterprise-language signal."
+    },
+    {
+      "full_name": "TanStack/ai",
+      "url": "https://github.com/TanStack/ai",
+      "category": "Type-safe AI App SDK",
+      "score": 70,
+      "summary": "Provider-agnostic TypeScript AI SDK for streaming chat, tool calling, agents, and multimodal apps.",
+      "audience": "TanStack and TypeScript application teams.",
+      "ai_native_angle": "Could make AI app primitives framework-native and type-safe.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #10 with +158 today.",
+      "runnability": "Docs/package maturity not fully audited today.",
+      "recommended_action": "Watch for API stabilization and examples."
+    },
+    {
+      "full_name": "looplj/axonhub",
+      "url": "https://github.com/looplj/axonhub",
+      "category": "LLM Gateway / Ops",
+      "score": 70,
+      "summary": "Open-source AI gateway for 100+ LLMs with failover, load balancing, cost control, and tracing.",
+      "audience": "Teams operating multiple LLM providers.",
+      "ai_native_angle": "Treats model routing, reliability, cost, and observability as shared AI infrastructure.",
+      "growth_signal": "GitTrend AI Infrastructure ranked it #5 with +366 today.",
+      "runnability": "Needs direct README/control-plane audit before Top promotion.",
+      "recommended_action": "Watch for deployable dashboard and real production case studies."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "skip_reason": "Very high and repeated star/commit headline numbers need GitHub API or community validation before treating growth as confirmed."
+    },
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "skip_reason": "Primarily taste/style guidance and skill methodology; lacks auditable runtime or product interface."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Repeated abnormal star velocity and very high headline numbers require API/community validation."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "skip_reason": "Educational/tutorial repository rather than product-shaped AI-native tool."
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "skip_reason": "Single-file methodology/CLAUDE.md-style project without runnable product workflow."
+    },
+    {
+      "full_name": "yasasbanukaofficial/claude-code",
+      "url": "https://github.com/yasasbanukaofficial/claude-code",
+      "skip_reason": "Open-source Claude Code skeleton claim and unusual fork/star structure make originality and legitimacy unclear."
+    }
+  ]
+}

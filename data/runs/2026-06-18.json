@@ -1,0 +1,221 @@
+{
+  "run_date": "2026-06-18",
+  "generated_at": "2026-06-18T10:19:03+08:00",
+  "data_window": "2026-06-16 10:20 to 2026-06-18 10:20 Asia/Shanghai; GitHub created/pushed/search window for recent AI agent, LLM app, RAG, MCP, workflow, browser/code/voice agent repositories.",
+  "source_summary": "GitHub Search API metadata plus GitHub repository README/root contents spot checks for selected candidates.",
+  "trend_observations": "Agent 产品开始从“单 agent 能做事”转向“本地控制面 + 可审计工作流”：Junction、Foreman、Stacks 都在把 agent 操作变成 UI/TUI/board。 MCP 不再只是 connector 展示，开始进入支付、SOP、Kanban、语义缓存、记忆层等带状态和权限的业务关键路径。 垂直 agent app 的新样例增多：安全运营、内容运营、求职助手等都在尝试把 LLM 嵌进完整业务闭环。",
+  "assumptions": "数据窗口按北京时间 2026-06-16 10:20 到 2026-06-18 10:20 估算，对应 GitHub created/pushed 的近 24-72 小时。 本次使用 GitHub Search API 元数据和 README/root contents spot check；没有 clone、安装、Docker 启动或端到端运行。 Score 优先考虑新鲜度、可运行性、产品形态、README 完整度和 AI native 业务闭环；stars 很低但产品表面清晰的项目仍可入选。 成熟大仓如 Dify、Langflow、OpenHands、Stagehand、LiveKit 只作为趋势背景，不进入 Top，除非出现明确新 release 或异常增长。",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-18\n\n**数据窗口**：2026-06-16 10:20 至 2026-06-18 10:20（Asia/Shanghai，约近 48 小时，覆盖最近 24-72 小时新建/活跃更新仓库）  \n**信息来源**：GitHub Search API（created/pushed/stars/forks/topics）、GitHub repository README 与 root contents spot check  \n**实时仓库审计**：已做 API 元数据 + README/目录结构审计；未 clone、未安装依赖、未运行 Docker/npm/pytest  \n**关键假设**：优先收录有真实 UI/CLI/API、示例、Docker、测试或文档的 AI native 产品形态；纯论文复现、prompt collection、活动页、SDK wrapper 降权。\n\n## Top Projects\n\n### 1. [Plaer1/junction](https://github.com/Plaer1/junction) - 88/100\n- **分类**：Code Agent UI / VS Code Extension\n- **做什么**：VS Code 侧边栏聊天界面，统一连接本地 AI coding agents，包括 OpenClaw、Hermes、Goose、OpenCode、OpenHands 等。\n- **面向谁**：已经在本机跑多个 coding agent 的开发者和团队。\n- **AI native 点**：把 IDE 内的对话、workspace context 和本地 agent runtime 连接成一个可切换的控制面。\n- **增长/活跃信号**：2026-06-17 新建，GitHub API 显示 500 stars、2 forks；同日有代码推送。\n- **可运行性判断**：TypeScript VS Code extension；根目录有 package.json、src、tests、media、quickstart.sh、install.sh 和截图资源。\n- **建议动作**：优先试用并做项目卡片；观察它是否能成为多 agent 本地工作台入口。\n\n### 2. [yolfinance/yolfi-agent](https://github.com/yolfinance/yolfi-agent) - 84/100\n- **分类**：Agent Commerce / MCP Payments\n- **做什么**：面向 AI coding agents 的稳定币 checkout 集成包，提供 SDK、CLI、MCP server、Agent Skill 和 webhook 工具。\n- **面向谁**：需要让 AI agent 帮应用接入支付、付费墙或 access logic 的开发者。\n- **AI native 点**：把支付接入拆成 agent 可调用的 JSON-first 工具链，让 Codex/Claude Code/Cursor 等能直接完成商业化流程。\n- **增长/活跃信号**：2026-06-16 新建，2026-06-18 仍在推送；GitHub API 显示 89 stars、0 forks。\n- **可运行性判断**：根目录有 Dockerfile、package.json、src、test、examples、docs、server.json、SKILL.md，并带 npm badge 和 Glama MCP badge。\n- **建议动作**：加入复刻候选：验证 MCP host 中创建 payment link 和 webhook verification 的最短路径。\n\n### 3. [wellwelwel/blue-spec](https://github.com/wellwelwel/blue-spec) - 82/100\n- **分类**：Agent Security Workflow\n- **做什么**：Security-Driven Hardening 工具包，让 AI agent 先理解系统行为，再引导项目做有针对性的安全加固。\n- **面向谁**：希望把安全审计、加固和 agent 编码流程结合的工程团队。\n- **AI native 点**：把安全流程产品化为 agent skills 和命令，让多种 coding agents 能按同一 hardening spec 工作。\n- **增长/活跃信号**：2026-06-17 新建，36 stars；README 声称支持 37 agents，同日完成推送。\n- **可运行性判断**：TypeScript 项目；根目录有 package.json、src、test、tools、scripts、spec、website、AGENTS.md、CLAUDE.md、GEMINI.md。\n- **建议动作**：跟踪其 npm 包和实际命令体验，适合做安全 agent workflow 对照样例。\n\n### 4. [HankLEE-1/AI-Guardian](https://github.com/HankLEE-1/AI-Guardian) - 80/100\n- **分类**：AI Security Operations Platform\n- **做什么**：Agent 驱动的网络安全流量监控与分析平台，覆盖告警研判、资产关联、协同处置和自动化报告。\n- **面向谁**：安全运营、护网、企业 SOC 和安全平台原型团队。\n- **AI native 点**：把 LangGraph agent 放进安全告警处理链路，强调证据闭环、协同处置和报告生成。\n- **增长/活跃信号**：2026-06-17 新建，2026-06-18 有推送；GitHub API 显示 20 stars、2 forks。\n- **可运行性判断**：Python/FastAPI + React；根目录有 backend、frontend、core、integration、docs、docker-compose.yml、Dockerfile.backend/frontend 和操作手册。\n- **建议动作**：适合作为垂直安全 agent 产品卡片；后续验证 docker-compose 是否可跑通。\n\n### 5. [VisionForge-OU/foreman](https://github.com/VisionForge-OU/foreman) - 78/100\n- **分类**：Coding Agent Orchestrator / TUI\n- **做什么**：Textual TUI 编排器，监督 headless Claude Code agents 按 plan、ADR/PRD、issues、TDD build、e2e 的门禁流程交付。\n- **面向谁**：想把 coding agent 变成受控软件交付流水线的独立开发者和工程团队。\n- **AI native 点**：把多个 agent loop 和交付门禁组合成可观察的本地 TUI，而不是单次聊天式编码。\n- **增长/活跃信号**：2026-06-17 新建，12 stars、2 forks；README 标注 0.6.0 并有 dogfood、validation、examples。\n- **可运行性判断**：Python 3.11+；根目录有 pyproject.toml、uv.lock、src、tests、docs、examples、config.sample.yaml。\n- **建议动作**：Watch + 试跑 TUI；重点看 gating 事件流和 Claude CLI 依赖是否稳定。\n\n### 6. [phuhao00/bony-agent](https://github.com/phuhao00/bony-agent) - 77/100\n- **分类**：AI Content Operations Platform\n- **做什么**：全链路内容生产与分发数字员工，覆盖 AI 对话、图片/视频/音乐生成、智能编辑和多平台定时发布。\n- **面向谁**：内容团队、自媒体运营、短剧/多媒体创作者和个人自动化生产者。\n- **AI native 点**：用 27+ specialized agents 把内容生产、媒体生成、发布运营和数据洞察组织成工作台。\n- **增长/活跃信号**：2026-06-17 新建，4 stars；当日多次推送，README 有主界面、伙伴、工作台截图。\n- **可运行性判断**：FastAPI + Next.js + LangGraph；根目录含 backend、frontend/electron/mobile/browser-extension、docker-compose.yml、deploy/start/build 脚本。\n- **建议动作**：列入实验候选；先审 docker-compose 和核心发布 connector 的真实可用性。\n\n### 7. [jentrix-au/stacks-ai](https://github.com/jentrix-au/stacks-ai) - 76/100\n- **分类**：Agent-Native Work Management / MCP\n- **做什么**：自托管 Kanban/CRM/support/roadmap 通用看板，UI 操作和 MCP server 共享同一套动作能力。\n- **面向谁**：希望让人和 agent 协同管理任务、bug、支持工单、CRM 和路线图的团队。\n- **AI native 点**：内建 54 个 MCP tools、scoped tokens/OAuth、idempotency 和 activity attribution，让 agent 成为可审计队友。\n- **增长/活跃信号**：2026-06-16 新建，3 stars；README 细节完整，强调 Next.js 16、Prisma 7、Auth.js v5。\n- **可运行性判断**：TypeScript/Next.js；根目录有 package.json、pnpm workspace、prisma、src、tests、playwright/vitest 配置、.env.example。\n- **建议动作**：加入趋势地图：agent 操作 UI 与同构 MCP API 的产品形态值得跟踪。\n\n### 8. [Keljian/JSE](https://github.com/Keljian/JSE) - 75/100\n- **分类**：Local AI Job Search Assistant\n- **做什么**：本地优先桌面求职助手：抓取职位、用本地 LLM 匹配、生成个性化申请材料，并用 Kanban 跟踪流程。\n- **面向谁**：正在求职、希望本地保存数据并半自动化申请流程的个人用户。\n- **AI native 点**：LLM 不只是写简历，而是贯穿职位抓取、匹配评分、企业研究、材料生成和私有知识库复用。\n- **增长/活跃信号**：2026-06-17 新建，2026-06-18 有推送；GitHub API 显示 3 stars，文档和启动脚本完整。\n- **可运行性判断**：Python + Electron；根目录有 Run.command/Run.bat、requirements.txt、package.json、electron、src、数据库与 scraper 插件模块。\n- **建议动作**：Watch；如果继续更新，可作为垂直个人 agent app 案例拆解。\n\n## Watchlist\n\n- [Noshkoto/Noshy](https://github.com/Noshkoto/Noshy) - 72/100，Agent Memory / MCP：面向 agent 的持久记忆层，提供 LLM extraction、hybrid search、knowledge graph、MCP/ICM 兼容。  \n  信号：2026-06-16 新建，4 stars；根目录有 Dockerfile、server.py、examples、tests、docs。  \n  动作：观察下一轮是否出现用户案例或集成文档。\n\n- [Rohit-Dnath/RAMen](https://github.com/Rohit-Dnath/RAMen) - 71/100，AI Cache / Vector Store / MCP：类似 Redis 的内存数据存储，加入向量搜索、语义缓存和内建 MCP server。  \n  信号：2026-06-16 新建，5 stars；有 Makefile、Dockerfile、cmd/internal/docs。  \n  动作：Watch 并等待更完整 benchmark / MCP 示例。\n\n- [krishnashakula/browsewright](https://github.com/krishnashakula/browsewright) - 70/100，Browser Agent / Playwright：给 LLM 一个 URL 和目标，由它驱动真实 Chrome、填表并返回结构化数据。  \n  信号：2026-06-16 新建，2 stars；README 有 PyPI badge、CI badge、examples、tests。  \n  动作：观察 PyPI 包和复杂站点成功率；暂不进 Top 是因为 traction 很早。\n\n- [aws-samples/sample-sop-mcp](https://github.com/aws-samples/sample-sop-mcp) - 70/100，MCP Workflow / SOP Execution：把重复流程变成 agent 可逐步执行的 SOP，每一步产出后再推进，强调审计和门禁。  \n  信号：2026-06-16 新建，2 stars；AWS samples 组织下有 CI、docs、skills、tests。  \n  动作：Watch；适合作为 agent 工作流审计设计参考。\n\n- [r266-tech/agent-access](https://github.com/r266-tech/agent-access) - 69/100，Agent Access Layer / CLI Registry：中文 agent 访问层，将网站、App、API 和重复联网流程沉淀成 agent-native CLI registry。  \n  信号：2026-06-16 新建，9 stars；有 AGENTS.md、plugins、scripts、CONTRIBUTING。  \n  动作：Watch；适合跟踪中文 agent 工具生态。\n\n- [juliangeymonat-jpg/mothrag](https://github.com/juliangeymonat-jpg/mothrag) - 68/100，Agentic RAG / Multi-hop QA：确定性 multi-hop RAG，强调 proof tree、商品化 LLM API、无 GPU 和论文级 benchmark。  \n  信号：2026-06-17 新建，4 stars；有 docs、examples、benchmarks、paper、tests。  \n  动作：跟踪是否出现 hosted demo 或应用集成案例。\n\n## Skip Reasons\n- [Hatari130/podcast-bridge](https://github.com/Hatari130/podcast-bridge)：2026-06-17 已进入 Top；今天没有新的增量信号，避免重复收录。\n- [team-to-be-found/Clawhunt-profile](https://github.com/team-to-be-found/Clawhunt-profile)：更像黑客松/赏金市场活动资料，当前缺少明确可运行代码。\n- [AlessandroFare/fable-frame](https://github.com/AlessandroFare/fable-frame)：主要是 prompt templates / system instructions，产品运行面不足。\n- [Tenstu/Pass-LLM-with-LLM](https://github.com/Tenstu/Pass-LLM-with-LLM)：定位为面试/考试破解 harness，应用场景风险较高，且产品化价值弱。\n- [sylearn/wtflow](https://github.com/sylearn/wtflow)：更像 Worktrunk 的 Agent Skill 知识包，不是独立产品；保留作流程参考。\n- [likithamadala/ai-pm-learning-fleet](https://github.com/likithamadala/ai-pm-learning-fleet)：概念有趣，但当前像个人学习/自维护 agent fleet，用户场景和可运行产品面不足。\n\n## 今日趋势观察\n- Agent 产品开始从“单 agent 能做事”转向“本地控制面 + 可审计工作流”：Junction、Foreman、Stacks 都在把 agent 操作变成 UI/TUI/board。\n- MCP 不再只是 connector 展示，开始进入支付、SOP、Kanban、语义缓存、记忆层等带状态和权限的业务关键路径。\n- 垂直 agent app 的新样例增多：安全运营、内容运营、求职助手等都在尝试把 LLM 嵌进完整业务闭环。\n\n## 今日建议动作\n- 先试 `Plaer1/junction`：它最像新的本地多 agent IDE 控制面，适合快速判断 multi-agent workspace UX。\n- 对 `yolfinance/yolfi-agent` 做一次 MCP host + CLI 支付链路最小验证，关注 agent commerce 的真实可用性。\n- 用 `wellwelwel/blue-spec` 和 `aws-samples/sample-sop-mcp` 对照观察：安全/流程类 agent 正在走向可审计规范化。\n\n## 数据窗口与关键假设\n- 数据窗口按北京时间 2026-06-16 10:20 到 2026-06-18 10:20 估算，对应 GitHub created/pushed 的近 24-72 小时。\n- 本次使用 GitHub Search API 元数据和 README/root contents spot check；没有 clone、安装、Docker 启动或端到端运行。\n- Score 优先考虑新鲜度、可运行性、产品形态、README 完整度和 AI native 业务闭环；stars 很低但产品表面清晰的项目仍可入选。\n- 成熟大仓如 Dify、Langflow、OpenHands、Stagehand、LiveKit 只作为趋势背景，不进入 Top，除非出现明确新 release 或异常增长。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Plaer1/junction",
+      "url": "https://github.com/Plaer1/junction",
+      "category": "Code Agent UI / VS Code Extension",
+      "score": 88,
+      "summary": "VS Code 侧边栏聊天界面，统一连接本地 AI coding agents，包括 OpenClaw、Hermes、Goose、OpenCode、OpenHands 等。",
+      "audience": "已经在本机跑多个 coding agent 的开发者和团队。",
+      "ai_native_angle": "把 IDE 内的对话、workspace context 和本地 agent runtime 连接成一个可切换的控制面。",
+      "growth_signal": "2026-06-17 新建，GitHub API 显示 500 stars、2 forks；同日有代码推送。",
+      "runnability": "TypeScript VS Code extension；根目录有 package.json、src、tests、media、quickstart.sh、install.sh 和截图资源。",
+      "recommended_action": "优先试用并做项目卡片；观察它是否能成为多 agent 本地工作台入口。"
+    },
+    {
+      "rank": 2,
+      "full_name": "yolfinance/yolfi-agent",
+      "url": "https://github.com/yolfinance/yolfi-agent",
+      "category": "Agent Commerce / MCP Payments",
+      "score": 84,
+      "summary": "面向 AI coding agents 的稳定币 checkout 集成包，提供 SDK、CLI、MCP server、Agent Skill 和 webhook 工具。",
+      "audience": "需要让 AI agent 帮应用接入支付、付费墙或 access logic 的开发者。",
+      "ai_native_angle": "把支付接入拆成 agent 可调用的 JSON-first 工具链，让 Codex/Claude Code/Cursor 等能直接完成商业化流程。",
+      "growth_signal": "2026-06-16 新建，2026-06-18 仍在推送；GitHub API 显示 89 stars、0 forks。",
+      "runnability": "根目录有 Dockerfile、package.json、src、test、examples、docs、server.json、SKILL.md，并带 npm badge 和 Glama MCP badge。",
+      "recommended_action": "加入复刻候选：验证 MCP host 中创建 payment link 和 webhook verification 的最短路径。"
+    },
+    {
+      "rank": 3,
+      "full_name": "wellwelwel/blue-spec",
+      "url": "https://github.com/wellwelwel/blue-spec",
+      "category": "Agent Security Workflow",
+      "score": 82,
+      "summary": "Security-Driven Hardening 工具包，让 AI agent 先理解系统行为，再引导项目做有针对性的安全加固。",
+      "audience": "希望把安全审计、加固和 agent 编码流程结合的工程团队。",
+      "ai_native_angle": "把安全流程产品化为 agent skills 和命令，让多种 coding agents 能按同一 hardening spec 工作。",
+      "growth_signal": "2026-06-17 新建，36 stars；README 声称支持 37 agents，同日完成推送。",
+      "runnability": "TypeScript 项目；根目录有 package.json、src、test、tools、scripts、spec、website、AGENTS.md、CLAUDE.md、GEMINI.md。",
+      "recommended_action": "跟踪其 npm 包和实际命令体验，适合做安全 agent workflow 对照样例。"
+    },
+    {
+      "rank": 4,
+      "full_name": "HankLEE-1/AI-Guardian",
+      "url": "https://github.com/HankLEE-1/AI-Guardian",
+      "category": "AI Security Operations Platform",
+      "score": 80,
+      "summary": "Agent 驱动的网络安全流量监控与分析平台，覆盖告警研判、资产关联、协同处置和自动化报告。",
+      "audience": "安全运营、护网、企业 SOC 和安全平台原型团队。",
+      "ai_native_angle": "把 LangGraph agent 放进安全告警处理链路，强调证据闭环、协同处置和报告生成。",
+      "growth_signal": "2026-06-17 新建，2026-06-18 有推送；GitHub API 显示 20 stars、2 forks。",
+      "runnability": "Python/FastAPI + React；根目录有 backend、frontend、core、integration、docs、docker-compose.yml、Dockerfile.backend/frontend 和操作手册。",
+      "recommended_action": "适合作为垂直安全 agent 产品卡片；后续验证 docker-compose 是否可跑通。"
+    },
+    {
+      "rank": 5,
+      "full_name": "VisionForge-OU/foreman",
+      "url": "https://github.com/VisionForge-OU/foreman",
+      "category": "Coding Agent Orchestrator / TUI",
+      "score": 78,
+      "summary": "Textual TUI 编排器，监督 headless Claude Code agents 按 plan、ADR/PRD、issues、TDD build、e2e 的门禁流程交付。",
+      "audience": "想把 coding agent 变成受控软件交付流水线的独立开发者和工程团队。",
+      "ai_native_angle": "把多个 agent loop 和交付门禁组合成可观察的本地 TUI，而不是单次聊天式编码。",
+      "growth_signal": "2026-06-17 新建，12 stars、2 forks；README 标注 0.6.0 并有 dogfood、validation、examples。",
+      "runnability": "Python 3.11+；根目录有 pyproject.toml、uv.lock、src、tests、docs、examples、config.sample.yaml。",
+      "recommended_action": "Watch + 试跑 TUI；重点看 gating 事件流和 Claude CLI 依赖是否稳定。"
+    },
+    {
+      "rank": 6,
+      "full_name": "phuhao00/bony-agent",
+      "url": "https://github.com/phuhao00/bony-agent",
+      "category": "AI Content Operations Platform",
+      "score": 77,
+      "summary": "全链路内容生产与分发数字员工，覆盖 AI 对话、图片/视频/音乐生成、智能编辑和多平台定时发布。",
+      "audience": "内容团队、自媒体运营、短剧/多媒体创作者和个人自动化生产者。",
+      "ai_native_angle": "用 27+ specialized agents 把内容生产、媒体生成、发布运营和数据洞察组织成工作台。",
+      "growth_signal": "2026-06-17 新建，4 stars；当日多次推送，README 有主界面、伙伴、工作台截图。",
+      "runnability": "FastAPI + Next.js + LangGraph；根目录含 backend、frontend/electron/mobile/browser-extension、docker-compose.yml、deploy/start/build 脚本。",
+      "recommended_action": "列入实验候选；先审 docker-compose 和核心发布 connector 的真实可用性。"
+    },
+    {
+      "rank": 7,
+      "full_name": "jentrix-au/stacks-ai",
+      "url": "https://github.com/jentrix-au/stacks-ai",
+      "category": "Agent-Native Work Management / MCP",
+      "score": 76,
+      "summary": "自托管 Kanban/CRM/support/roadmap 通用看板，UI 操作和 MCP server 共享同一套动作能力。",
+      "audience": "希望让人和 agent 协同管理任务、bug、支持工单、CRM 和路线图的团队。",
+      "ai_native_angle": "内建 54 个 MCP tools、scoped tokens/OAuth、idempotency 和 activity attribution，让 agent 成为可审计队友。",
+      "growth_signal": "2026-06-16 新建，3 stars；README 细节完整，强调 Next.js 16、Prisma 7、Auth.js v5。",
+      "runnability": "TypeScript/Next.js；根目录有 package.json、pnpm workspace、prisma、src、tests、playwright/vitest 配置、.env.example。",
+      "recommended_action": "加入趋势地图：agent 操作 UI 与同构 MCP API 的产品形态值得跟踪。"
+    },
+    {
+      "rank": 8,
+      "full_name": "Keljian/JSE",
+      "url": "https://github.com/Keljian/JSE",
+      "category": "Local AI Job Search Assistant",
+      "score": 75,
+      "summary": "本地优先桌面求职助手：抓取职位、用本地 LLM 匹配、生成个性化申请材料，并用 Kanban 跟踪流程。",
+      "audience": "正在求职、希望本地保存数据并半自动化申请流程的个人用户。",
+      "ai_native_angle": "LLM 不只是写简历，而是贯穿职位抓取、匹配评分、企业研究、材料生成和私有知识库复用。",
+      "growth_signal": "2026-06-17 新建，2026-06-18 有推送；GitHub API 显示 3 stars，文档和启动脚本完整。",
+      "runnability": "Python + Electron；根目录有 Run.command/Run.bat、requirements.txt、package.json、electron、src、数据库与 scraper 插件模块。",
+      "recommended_action": "Watch；如果继续更新，可作为垂直个人 agent app 案例拆解。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "Noshkoto/Noshy",
+      "url": "https://github.com/Noshkoto/Noshy",
+      "category": "Agent Memory / MCP",
+      "score": 72,
+      "summary": "面向 agent 的持久记忆层，提供 LLM extraction、hybrid search、knowledge graph、MCP/ICM 兼容。",
+      "audience": "需要跨 session 记忆的 agent runtime 和个人助手开发者。",
+      "ai_native_angle": "将 memory/memoir/graph 作为 agent 原生基础设施暴露给 MCP 和 skill。",
+      "growth_signal": "2026-06-16 新建，4 stars；根目录有 Dockerfile、server.py、examples、tests、docs。",
+      "runnability": "Python 包 + server + Docker；需验证与主流 MCP host 的真实接入体验。",
+      "recommended_action": "观察下一轮是否出现用户案例或集成文档。"
+    },
+    {
+      "full_name": "Rohit-Dnath/RAMen",
+      "url": "https://github.com/Rohit-Dnath/RAMen",
+      "category": "AI Cache / Vector Store / MCP",
+      "score": 71,
+      "summary": "类似 Redis 的内存数据存储，加入向量搜索、语义缓存和内建 MCP server。",
+      "audience": "希望降低 LLM 调用成本、给 agent 提供轻量 memory/cache 的后端开发者。",
+      "ai_native_angle": "把 Redis protocol、semantic cache 和 MCP server 合并成单个 Go binary。",
+      "growth_signal": "2026-06-16 新建，5 stars；有 Makefile、Dockerfile、cmd/internal/docs。",
+      "runnability": "Go 单体项目；适合后续做语义缓存 micro-benchmark。",
+      "recommended_action": "Watch 并等待更完整 benchmark / MCP 示例。"
+    },
+    {
+      "full_name": "krishnashakula/browsewright",
+      "url": "https://github.com/krishnashakula/browsewright",
+      "category": "Browser Agent / Playwright",
+      "score": 70,
+      "summary": "给 LLM 一个 URL 和目标，由它驱动真实 Chrome、填表并返回结构化数据。",
+      "audience": "需要减少 selector 维护成本的自动化、数据采集和内部运营团队。",
+      "ai_native_angle": "将 Playwright 从脚本式自动化转成 intent-driven browser agent。",
+      "growth_signal": "2026-06-16 新建，2 stars；README 有 PyPI badge、CI badge、examples、tests。",
+      "runnability": "Python 3.10+ 包；根目录有 pyproject.toml、browsewright、examples、tests、.env.example。",
+      "recommended_action": "观察 PyPI 包和复杂站点成功率；暂不进 Top 是因为 traction 很早。"
+    },
+    {
+      "full_name": "aws-samples/sample-sop-mcp",
+      "url": "https://github.com/aws-samples/sample-sop-mcp",
+      "category": "MCP Workflow / SOP Execution",
+      "score": 70,
+      "summary": "把重复流程变成 agent 可逐步执行的 SOP，每一步产出后再推进，强调审计和门禁。",
+      "audience": "企业流程、运维、合规和需要 SOP 化 agent 执行的团队。",
+      "ai_native_angle": "MCP server 按 step/gate 暴露流程，而不是给 agent 一次性自由执行。",
+      "growth_signal": "2026-06-16 新建，2 stars；AWS samples 组织下有 CI、docs、skills、tests。",
+      "runnability": "Python/uv 项目；根目录有 pyproject.toml、src、scripts、skills、docs、tests。",
+      "recommended_action": "Watch；适合作为 agent 工作流审计设计参考。"
+    },
+    {
+      "full_name": "r266-tech/agent-access",
+      "url": "https://github.com/r266-tech/agent-access",
+      "category": "Agent Access Layer / CLI Registry",
+      "score": 69,
+      "summary": "中文 agent 访问层，将网站、App、API 和重复联网流程沉淀成 agent-native CLI registry。",
+      "audience": "中文开发者、Codex/Claude Code/Cursor 用户和需要稳定外部访问能力的 agent。",
+      "ai_native_angle": "优先结构化 CLI/API，浏览器/CDP/GUI 只作为开荒与兜底，降低 agent 上下文浪费。",
+      "growth_signal": "2026-06-16 新建，9 stars；有 AGENTS.md、plugins、scripts、CONTRIBUTING。",
+      "runnability": "Node >=20；目前更像生态规范和 registry，需要更多真实 adapter 验证。",
+      "recommended_action": "Watch；适合跟踪中文 agent 工具生态。"
+    },
+    {
+      "full_name": "juliangeymonat-jpg/mothrag",
+      "url": "https://github.com/juliangeymonat-jpg/mothrag",
+      "category": "Agentic RAG / Multi-hop QA",
+      "score": 68,
+      "summary": "确定性 multi-hop RAG，强调 proof tree、商品化 LLM API、无 GPU 和论文级 benchmark。",
+      "audience": "需要可解释 multi-hop QA 的 RAG 工程师和研究型产品团队。",
+      "ai_native_angle": "将 reader、embedder、retrieval judges 组织为可部署的 proof-tree RAG pipeline。",
+      "growth_signal": "2026-06-17 新建，4 stars；有 docs、examples、benchmarks、paper、tests。",
+      "runnability": "Python 包；产品表面偏库/研究，暂列 Watchlist。",
+      "recommended_action": "跟踪是否出现 hosted demo 或应用集成案例。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Hatari130/podcast-bridge",
+      "url": "https://github.com/Hatari130/podcast-bridge",
+      "skip_reason": "2026-06-17 已进入 Top；今天没有新的增量信号，避免重复收录。"
+    },
+    {
+      "full_name": "team-to-be-found/Clawhunt-profile",
+      "url": "https://github.com/team-to-be-found/Clawhunt-profile",
+      "skip_reason": "更像黑客松/赏金市场活动资料，当前缺少明确可运行代码。"
+    },
+    {
+      "full_name": "AlessandroFare/fable-frame",
+      "url": "https://github.com/AlessandroFare/fable-frame",
+      "skip_reason": "主要是 prompt templates / system instructions，产品运行面不足。"
+    },
+    {
+      "full_name": "Tenstu/Pass-LLM-with-LLM",
+      "url": "https://github.com/Tenstu/Pass-LLM-with-LLM",
+      "skip_reason": "定位为面试/考试破解 harness，应用场景风险较高，且产品化价值弱。"
+    },
+    {
+      "full_name": "sylearn/wtflow",
+      "url": "https://github.com/sylearn/wtflow",
+      "skip_reason": "更像 Worktrunk 的 Agent Skill 知识包，不是独立产品；保留作流程参考。"
+    },
+    {
+      "full_name": "likithamadala/ai-pm-learning-fleet",
+      "url": "https://github.com/likithamadala/ai-pm-learning-fleet",
+      "skip_reason": "概念有趣，但当前像个人学习/自维护 agent fleet，用户场景和可运行产品面不足。"
+    }
+  ]
+}

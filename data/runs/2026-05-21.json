@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-05-21",
+  "generated_at": "2026-05-21T10:15:18+08:00",
+  "data_window": "2026-05-18T10:15:00+08:00 to 2026-05-21T10:15:00+08:00; GitHub repositories recently created, recently pushed, or newly visible on AI agent / MCP / AI workflow topic surfaces.",
+  "source_summary": "GitHub topic pages for ai-agent, mcp, and ai-workflow sorted by recently updated; individual GitHub repository README/metadata pages where available. Shell network DNS was unavailable, so GitHub API queries were replaced by browser/web GitHub checks.",
+  "trend_observations": "This window shows more product-shaped AI agent infrastructure than pure model work: terminal/desktop agents, self-hosted automation APIs, MCP gateways, Telegram/browser surfaces, and research-agent workflows. The strongest projects package agents behind CLI/API/UI surfaces with Docker or install instructions; weaker candidates are still mostly prompt lists, model repos, or narrow wrappers.",
+  "assumptions": "Scores favor runnable product surfaces, README completeness, examples/Docker/install paths, user-facing workflows, and recent GitHub update visibility. Because unauthenticated shell access to api.github.com failed in this environment, star/growth signals are approximate and based on visible GitHub topic/repo metadata rather than exact 24-hour deltas. Repositories highlighted in the 2026-05-20 run were avoided unless a distinct new product signal appeared.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-21\n\n**数据窗口**: 2026-05-18 10:15 to 2026-05-21 10:15 Asia/Shanghai. 主要依据 GitHub AI agent / MCP / AI workflow topic recent-update surfaces 与仓库 README 可运行性检查；shell DNS 无法解析 `api.github.com`，所以增长信号不使用精确 GitHub API delta。\n\n## Top Projects\n\n### 1. [matevip/mateclaw](https://github.com/matevip/mateclaw) - AI Coding Agent - Score 88\n- **做什么**: 面向 Claude Code 的本地 GUI/管理层，支持会话、Git worktree、项目上下文和 agentic coding 工作流。\n- **面向谁**: 高频使用 Claude Code、希望把终端 coding agent 产品化管理的个人开发者和小团队。\n- **AI native 点**: 核心价值不是编辑器外壳，而是围绕 AI coding session、上下文与多分支任务编排组织软件开发。\n- **增长/活跃信号**: GitHub topic recent-update 中高位出现，README 有清晰产品定位与运行说明，符合近几天 agent IDE/agent manager 热点。\n- **可运行性判断**: 有明确应用形态和安装/运行路径，产品完成度高于普通 wrapper。\n- **建议动作**: 本地试用，重点观察 Claude Code 之外的 agent 适配能力、session persistence 和团队协作路线。\n\n### 2. [boxlite-ai/boxlite](https://github.com/boxlite-ai/boxlite) - Agent Automation API - Score 86\n- **做什么**: 用 API/SDK/Docker 把 AI 任务放进可隔离运行的自动化环境，面向 agent 执行和浏览器/桌面式任务。\n- **面向谁**: 需要把 AI agent 接入生产流程的开发者、自动化团队和 AI SaaS 构建者。\n- **AI native 点**: 把 agent 的执行环境、任务隔离、外部工具调用做成产品基础设施，而不是单一 demo。\n- **增长/活跃信号**: recent-update surface 上活跃，README 呈现 API、Docker 和开发者入口，具备产品基础设施特征。\n- **可运行性判断**: Docker/API/SDK 信号强，可直接进入技术评估。\n- **建议动作**: 拉取跑一个浏览器/文件任务 demo，评估与 MCP、Browser Use、CI worker 的边界。\n\n### 3. [AliceLJY/telegram-ai-bridge](https://github.com/AliceLJY/telegram-ai-bridge) - AI Assistant / Messaging Agent - Score 82\n- **做什么**: 把 OpenAI/Claude/Gemini/Groq/Ollama 等模型接入 Telegram Bot，提供多模型聊天、上下文、群组和自托管桥接。\n- **面向谁**: 希望把多模型 AI assistant 放到 Telegram 工作流里的个人、社群运营者和小团队。\n- **AI native 点**: 产品入口是消息流，AI assistant 成为群聊/私聊里的常驻执行层，而不是孤立网页聊天框。\n- **增长/活跃信号**: GitHub recent-update 可见，README 覆盖多 provider、部署和 Bot 使用场景。\n- **可运行性判断**: 需要 Telegram Bot token 和模型 API key；自托管路径清晰。\n- **建议动作**: 放入轻量 assistant watchlist，同时评估权限、安全和群聊上下文隔离。\n\n### 4. [scoutqa-dot-ai/thor](https://github.com/scoutqa-dot-ai/thor) - Research Agent Workflow - Score 80\n- **做什么**: 面向研究/问答的 agent workflow，围绕检索、回答、评估或任务执行组织 AI 工作流。\n- **面向谁**: 构建研究助手、QA agent、内部知识工作流的开发团队。\n- **AI native 点**: 以 agent 任务链和知识/检索闭环为核心，而不是单次 prompt 调用。\n- **增长/活跃信号**: 最近更新出现在 AI workflow 相关检索面，项目定位接近可复用 agent product layer。\n- **可运行性判断**: README/仓库形态比纯论文代码更接近应用，但仍需进一步跑 examples 验证稳定性。\n- **建议动作**: 试跑 example，重点看数据源接入、评估闭环和是否支持企业内网知识源。\n\n### 5. [vassiliylakhonin/agenda-intelligence-md](https://github.com/vassiliylakhonin/agenda-intelligence-md) - Meeting / Agenda AI Workflow - Score 78\n- **做什么**: 将议程、会议材料或 markdown 工作流结构化为 AI 可处理的会议智能流程。\n- **面向谁**: 需要把会议准备、议题整理和行动项生成自动化的产品/运营/知识管理团队。\n- **AI native 点**: 把 LLM 嵌入文档到会议决策链路，产品价值来自结构化上下文和后续行动生成。\n- **增长/活跃信号**: 最近更新可见，切中 AI workflow 从聊天转向业务文档流程的趋势。\n- **可运行性判断**: 更像工具型 workflow；需要检查 CLI/API 包装深度和示例输入输出。\n- **建议动作**: Watch + clone，看是否能稳定处理真实会议 markdown 与 action item 输出。\n\n### 6. [RileyCraig14/nexus-agent](https://github.com/RileyCraig14/nexus-agent) - MCP / Agent Commerce - Score 75\n- **做什么**: 围绕 agent、MCP server 和 pay-per-call/服务调用的实验性连接层。\n- **面向谁**: MCP server 作者、agent platform 构建者和探索 agent monetization 的开发者。\n- **AI native 点**: 试图把 agent 工具调用变成可分发、可计费、可组合的服务能力。\n- **增长/活跃信号**: MCP recent-update 相关搜索面出现，方向与 agent commerce / MCP marketplace 趋势一致。\n- **可运行性判断**: 早期项目，需确认 API、示例和真实交易闭环。\n- **建议动作**: Watch，不急于集成；等 demo、协议边界和安全模型更清楚。\n\n### 7. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) - Browser / Web Agent - Score 74\n- **做什么**: 面向 web 数据获取、网页任务或浏览器自动化的 AI agent 项目。\n- **面向谁**: 需要自动浏览网页、采集信息、执行轻量 web workflow 的开发者。\n- **AI native 点**: 让 LLM 参与网页理解和行动决策，替代固定规则脚本。\n- **增长/活跃信号**: AI agent topic recent-update 中出现且有较高累计 star 可见度，说明不是一次性空仓库。\n- **可运行性判断**: 需要进一步验证最新 README 的安装、demo 和反爬/登录场景能力。\n- **建议动作**: 作为 browser-agent 方向备选，和 Browser Use、Open Operator 类项目横向比较。\n\n### 8. [MustafaKemal0146/fetih](https://github.com/MustafaKemal0146/fetih) - Security / Autonomous CLI Agent - Score 72\n- **做什么**: 偏安全/CLI 场景的 agent 工具，可能覆盖侦察、自动化检查或命令行辅助。\n- **面向谁**: 安全研究、红队实验、自动化检查工具链使用者。\n- **AI native 点**: 将 agent 作为命令行任务执行和分析的核心控制层。\n- **增长/活跃信号**: GitHub AI agent recent-update 中新近活跃；安全 agent 仍是持续升温方向。\n- **可运行性判断**: 需要谨慎沙箱运行，确认是否有清晰 dry-run、权限边界和示例。\n- **建议动作**: 仅在隔离环境评估；优先看是否有真实 CLI help、Docker 和测试数据。\n\n## Watchlist\n\n- [alice9w2/peerbus](https://github.com/alice9w2/peerbus) - AI agent / workflow: 新仓库信号强但 star 与文档深度不足，观察是否补 demo、Docker 或实际集成。\n- [botingw/asset-hub](https://github.com/botingw/asset-hub) - AI asset/workflow utility: 可能是资源管理或 agent 辅助工具，产品边界还不清晰。\n- [docdyhr/uspto_fpd_mcp](https://github.com/docdyhr/uspto_fpd_mcp) - MCP server: 垂直数据源 MCP，有场景价值，但更像 connector，需要看到 agent workflow demo。\n- [park1210/daisyui-mcp](https://github.com/park1210/daisyui-mcp) - MCP developer tool: 面向前端 UI/组件知识的 MCP server，若能接入 coding agent 会有实用价值。\n\n## Skip Reasons\n\n- [Axel-art/citation-fetcher](https://github.com/Axel-art/citation-fetcher): 更像单点文献/引用工具，AI native product 面不足。\n- [AaaamrAAlabd/DontYap](https://github.com/AaaamrAAlabd/DontYap): prompt/行为约束类仓库，缺少可运行产品层。\n- [jc-cb/polymarket-agent](https://github.com/jc-cb/polymarket-agent): 交易/市场 bot 风险较高，AI 产品通用性和可验证 demo 不足。\n- [Doohae/Hierarchical-STAMP](https://github.com/Doohae/Hierarchical-STAMP): 更接近模型/研究代码，不符合本雷达优先级。\n\n## 今日趋势观察\n\n1. **Agent 产品壳继续从 IDE 扩到运行环境**: mateclaw、boxlite 这类项目说明用户不仅要模型能力，还要 session、workspace、sandbox、API 和执行环境。\n2. **MCP 从 connector 走向服务市场想象**: nexus-agent、垂直 MCP server 和 UI/MCP 工具都在探索 agent tool distribution，但安全、权限和计费边界仍早期。\n3. **聊天入口回到真实工作流**: Telegram assistant、meeting/agenda workflow 说明 AI assistant 正从网页聊天迁移到团队已经使用的消息和文档环境。\n4. **安全/浏览器 agent 仍热，但要严筛可控性**: 这类项目容易有 demo 光环，真正评估要看 sandbox、权限、可复现任务和失败处理。\n\n## 关键假设\n\n- 最近活跃的 GitHub topic/search surface 足以作为候选发现源，但不是精确增长榜。\n- 优先选择可运行 UI/CLI/API、Docker/examples/README 完整、用户场景明确的项目。\n- 昨日 Top 项目未重复收录，避免雷达连续两天堆叠同一批成熟项目。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "matevip/mateclaw",
+      "url": "https://github.com/matevip/mateclaw",
+      "category": "AI Coding Agent",
+      "score": 88,
+      "summary": "Local GUI and management layer for Claude Code-style agentic coding sessions, projects, and worktrees.",
+      "audience": "Developers and small teams using AI coding agents heavily.",
+      "ai_native_angle": "The core workflow is AI coding session orchestration, context management, and agent task handling.",
+      "growth_signal": "Recently visible on GitHub AI agent recent-update surfaces with product-oriented README and runnable app positioning.",
+      "runnability": "Clear application shape with install/run path; stronger product surface than a thin SDK wrapper.",
+      "recommended_action": "Try locally and evaluate session persistence, worktree handling, and multi-agent extensibility."
+    },
+    {
+      "rank": 2,
+      "full_name": "boxlite-ai/boxlite",
+      "url": "https://github.com/boxlite-ai/boxlite",
+      "category": "Agent Automation API",
+      "score": 86,
+      "summary": "API/SDK/Docker-oriented automation environment for running AI agent tasks in isolated execution contexts.",
+      "audience": "Developers building production AI agents, automation backends, and AI SaaS workflows.",
+      "ai_native_angle": "Turns agent execution, isolation, and tool access into reusable infrastructure.",
+      "growth_signal": "Recent GitHub update visibility plus README signals for API, Docker, and developer onboarding.",
+      "runnability": "Docker/API/SDK cues make it suitable for immediate technical evaluation.",
+      "recommended_action": "Run a local task demo and compare it with browser-agent and CI worker approaches."
+    },
+    {
+      "rank": 3,
+      "full_name": "AliceLJY/telegram-ai-bridge",
+      "url": "https://github.com/AliceLJY/telegram-ai-bridge",
+      "category": "AI Assistant / Messaging Agent",
+      "score": 82,
+      "summary": "Self-hosted Telegram bridge for multi-provider AI assistants across OpenAI, Claude, Gemini, Groq, and Ollama.",
+      "audience": "Individuals, communities, and small teams that want AI assistants inside Telegram.",
+      "ai_native_angle": "Embeds AI assistance in persistent chat workflows rather than a separate web chatbot.",
+      "growth_signal": "Recently updated GitHub visibility and README coverage of multiple model providers and bot deployment.",
+      "runnability": "Requires Telegram bot credentials and model keys; self-hosting path appears straightforward.",
+      "recommended_action": "Evaluate for lightweight team assistant use, with emphasis on permissions and group-context isolation."
+    },
+    {
+      "rank": 4,
+      "full_name": "scoutqa-dot-ai/thor",
+      "url": "https://github.com/scoutqa-dot-ai/thor",
+      "category": "Research Agent Workflow",
+      "score": 80,
+      "summary": "Agent workflow for research or QA-style tasks involving retrieval, answering, and repeatable AI work loops.",
+      "audience": "Teams building research assistants, internal QA agents, and knowledge workflows.",
+      "ai_native_angle": "Uses agent workflows and knowledge loops as the product core rather than one-off LLM calls.",
+      "growth_signal": "Recently visible in AI workflow discovery surfaces and positioned as a reusable agent layer.",
+      "runnability": "Likely runnable through examples, but should be validated against real knowledge sources.",
+      "recommended_action": "Clone and run examples; inspect datasource adapters and evaluation loop quality."
+    },
+    {
+      "rank": 5,
+      "full_name": "vassiliylakhonin/agenda-intelligence-md",
+      "url": "https://github.com/vassiliylakhonin/agenda-intelligence-md",
+      "category": "Meeting / Agenda AI Workflow",
+      "score": 78,
+      "summary": "AI workflow for turning agenda or meeting markdown into structured meeting intelligence and actions.",
+      "audience": "Product, operations, and knowledge-management teams automating meeting preparation and follow-up.",
+      "ai_native_angle": "LLM value is embedded in document-to-decision workflows and structured action extraction.",
+      "growth_signal": "Recent update visibility in AI workflow search surfaces and a practical business workflow target.",
+      "runnability": "Tool-like workflow; needs verification of CLI/API depth and example input-output quality.",
+      "recommended_action": "Watch and test against real meeting markdown before adopting."
+    },
+    {
+      "rank": 6,
+      "full_name": "RileyCraig14/nexus-agent",
+      "url": "https://github.com/RileyCraig14/nexus-agent",
+      "category": "MCP / Agent Commerce",
+      "score": 75,
+      "summary": "Experimental layer around agents, MCP servers, and pay-per-call service invocation.",
+      "audience": "MCP server authors, agent platform builders, and developers exploring agent monetization.",
+      "ai_native_angle": "Treats agent tool calls as composable, distributable, and potentially billable service units.",
+      "growth_signal": "Appeared in MCP recent-update discovery and matches the emerging agent commerce theme.",
+      "runnability": "Early-stage; API, demo, and transaction safety need confirmation.",
+      "recommended_action": "Watch for a working demo, protocol boundary, and security model."
+    },
+    {
+      "rank": 7,
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "Browser / Web Agent",
+      "score": 74,
+      "summary": "AI agent project for web data access, browser tasks, or web workflow automation.",
+      "audience": "Developers automating web browsing, collection, and lightweight web operations.",
+      "ai_native_angle": "Uses LLM-driven web understanding and action selection instead of fixed scraper scripts.",
+      "growth_signal": "Visible in AI agent recent-update surfaces with meaningful cumulative star visibility.",
+      "runnability": "Requires README/demo verification for browser setup, login handling, and anti-bot limits.",
+      "recommended_action": "Benchmark against Browser Use and similar browser-agent stacks."
+    },
+    {
+      "rank": 8,
+      "full_name": "MustafaKemal0146/fetih",
+      "url": "https://github.com/MustafaKemal0146/fetih",
+      "category": "Security / Autonomous CLI Agent",
+      "score": 72,
+      "summary": "Security-oriented CLI agent for autonomous or assisted command-line analysis and checks.",
+      "audience": "Security researchers, red-team experimenters, and automation-heavy CLI users.",
+      "ai_native_angle": "Positions an agent as the control layer for security-oriented command-line workflows.",
+      "growth_signal": "Recently active in AI agent discovery surfaces; security agents remain a hot category.",
+      "runnability": "Should be evaluated only in a sandbox with clear dry-run and permission boundaries.",
+      "recommended_action": "Sandbox-test CLI help, examples, and safety controls before any deeper use."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "alice9w2/peerbus",
+      "url": "https://github.com/alice9w2/peerbus",
+      "category": "AI Agent / Workflow",
+      "score": 68,
+      "summary": "Newly visible agent/workflow project with early product signal but limited traction evidence.",
+      "audience": "Developers watching early AI workflow infrastructure.",
+      "ai_native_angle": "Potentially coordinates agent/workflow behavior, but the durable product layer is not yet proven.",
+      "growth_signal": "Recent GitHub topic visibility; low public proof so far.",
+      "runnability": "Needs stronger README, examples, or Docker/demo path.",
+      "recommended_action": "Watch for runnable examples and adoption signals."
+    },
+    {
+      "full_name": "botingw/asset-hub",
+      "url": "https://github.com/botingw/asset-hub",
+      "category": "AI Asset / Workflow Utility",
+      "score": 66,
+      "summary": "Potential resource or asset hub for AI-assisted workflows.",
+      "audience": "Teams organizing reusable assets for AI workflows.",
+      "ai_native_angle": "Could become useful as a shared resource layer for agent tasks if integrated with execution workflows.",
+      "growth_signal": "Recent AI topic visibility, but product boundaries remain unclear.",
+      "runnability": "Need to verify app surface and example usage.",
+      "recommended_action": "Keep on watchlist until demos clarify the workflow."
+    },
+    {
+      "full_name": "docdyhr/uspto_fpd_mcp",
+      "url": "https://github.com/docdyhr/uspto_fpd_mcp",
+      "category": "MCP Server",
+      "score": 65,
+      "summary": "Vertical MCP server for USPTO-related data access.",
+      "audience": "Patent research, legal-tech, and agent developers needing USPTO data tools.",
+      "ai_native_angle": "Exposes domain data as an agent-callable MCP tool surface.",
+      "growth_signal": "Recent MCP topic visibility; vertical MCP connectors are proliferating.",
+      "runnability": "Likely runnable as an MCP connector, but needs agent workflow demo validation.",
+      "recommended_action": "Watch for examples showing real patent-research agent tasks."
+    },
+    {
+      "full_name": "park1210/daisyui-mcp",
+      "url": "https://github.com/park1210/daisyui-mcp",
+      "category": "MCP Developer Tool",
+      "score": 64,
+      "summary": "MCP server for DaisyUI/frontend component context.",
+      "audience": "Frontend developers using coding agents with component-library knowledge.",
+      "ai_native_angle": "Makes UI framework knowledge callable from coding agents through MCP.",
+      "growth_signal": "Recent MCP discovery visibility and a practical coding-agent use case.",
+      "runnability": "Need to confirm package install, tool schema, and editor/agent integration examples.",
+      "recommended_action": "Watch for integration examples with Claude Code, Cursor, or Codex-style agents."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Axel-art/citation-fetcher",
+      "url": "https://github.com/Axel-art/citation-fetcher",
+      "skip_reason": "Narrow citation utility; insufficient AI-native product surface for this radar."
+    },
+    {
+      "full_name": "AaaamrAAlabd/DontYap",
+      "url": "https://github.com/AaaamrAAlabd/DontYap",
+      "skip_reason": "Looks closer to a prompt/behavior constraint collection than runnable product software."
+    },
+    {
+      "full_name": "jc-cb/polymarket-agent",
+      "url": "https://github.com/jc-cb/polymarket-agent",
+      "skip_reason": "Trading bot category has high risk and weak general AI product applicability without stronger demo evidence."
+    },
+    {
+      "full_name": "Doohae/Hierarchical-STAMP",
+      "url": "https://github.com/Doohae/Hierarchical-STAMP",
+      "skip_reason": "Research/model code shape; lower fit than runnable AI native product or workflow tool."
+    }
+  ]
+}

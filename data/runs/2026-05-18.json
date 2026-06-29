@@ -1,0 +1,208 @@
+{
+  "run_date": "2026-05-18",
+  "generated_at": "2026-05-18T10:31:05+08:00",
+  "data_window": "2026-05-15 to 2026-05-18 (strict recent release/update window), with OSSInsight/GitHub current visibility used as secondary growth signal",
+  "source_summary": "GitHub repository pages and READMEs for runnable evidence; GitHub visible stars/releases/issues/PRs; OSSInsight collection pages for broad current ranking context. Shell curl remained blocked, so no authenticated GitHub API delta export was used.",
+  "trend_observations": "This rerun shows a cleaner pattern: terminal coding agents are now full products with installers, desktop variants, IDE modes and MCP; MCP is becoming a first-class integration layer; and production agent platforms are adding governance primitives such as tracing, RBAC, human approval, memory and scheduling.",
+  "assumptions": "Score favors runnable product surface, recent release/update or strong current growth visibility, clear user workflow, docs/install quality, and whether AI is central to the product path. Big incumbent projects can rank if their current release/activity signal is strong, but pure SDKs, prompt packs, paper repos and resource lists are downgraded.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-18 (rerun)\n\n数据观察窗口：2026-05-15 to 2026-05-18；补充参考 OSSInsight/GitHub 当前可见度。\n生成时间：2026-05-18T10:31:05+08:00\n\n## Top Projects (10)\n\n### 1. anomalyco/opencode\n- GitHub: https://github.com/anomalyco/opencode\n- 分类: Coding Agent / Terminal + Desktop\n- AI Native Product Score: 92/100\n- 做什么: 开源 AI coding agent，提供终端 UI、安装器、桌面 beta、内置 build/plan agent 和多语言 README。\n- 面向谁: 希望在本地仓库中用 agent 做代码修改、探索、计划和执行的工程师与团队。\n- AI native 点: agent 不是插件，而是主界面；内置可切换权限模式，覆盖终端、桌面和工程工作流。\n- 增长/活跃信号: GitHub 页面显示约 162k stars、13k+ commits、806 releases，最新 release v1.15.4 标注 2026-05-17。\n- 可运行性判断: README 提供 curl installer、npm、brew、Windows、Arch、Nix 等安装方式；桌面 beta 有 release 下载。\n- 建议动作: 最高优先级试跑；重点看 plan/build 权限边界、长任务恢复、MCP/工具接入和团队协作可控性。\n\n### 2. anthropics/claude-code\n- GitHub: https://github.com/anthropics/claude-code\n- 分类: Coding Agent / Terminal Product\n- AI Native Product Score: 91/100\n- 做什么: 终端里的 agentic coding tool，理解代码库、执行常规任务、解释复杂代码并处理 git workflow。\n- 面向谁: 已在 Claude 生态工作的工程团队、独立开发者、代码审查/维护场景。\n- AI native 点: 以自然语言驱动 repo 级任务，并包含插件目录、examples、bug report 命令和安装脚本。\n- 增长/活跃信号: GitHub 页面显示约 124k stars、5k+ issues、542 PRs、625 commits；仓库含 demo.gif、plugins、examples。\n- 可运行性判断: README 推荐 curl 安装脚本、Homebrew、Windows install.ps1/WinGet；进入项目目录运行 `claude`。\n- 建议动作: 跟 opencode/Codex/Gemini CLI 做同仓库对比；重点评估插件生态和权限/审计体验。\n\n### 3. google-gemini/gemini-cli\n- GitHub: https://github.com/google-gemini/gemini-cli\n- 分类: Coding Agent / CLI + GitHub Action\n- AI Native Product Score: 90/100\n- 做什么: 把 Gemini 带进终端的开源 AI agent，支持代码理解、生成、调试、自动化和 GitHub workflow。\n- 面向谁: Google/Gemini 用户、需要大上下文和搜索 grounding 的开发者团队。\n- AI native 点: 内置 Google Search grounding、文件/命令/web fetch 工具、MCP 扩展、checkpointing 和 GitHub Action。\n- 增长/活跃信号: GitHub 页面显示约 104k stars、6,175 commits、494 releases；README 写明每周 preview/stable、每日 nightly 发布节奏。\n- 可运行性判断: 支持 npx 即跑、npm 全局安装、Homebrew、MacPorts、Conda；可用 Google OAuth 或 API key。\n- 建议动作: 重点试用非交互脚本模式和 GitHub Action，用于 issue triage/PR review 自动化。\n\n### 4. aaif-goose/goose\n- GitHub: https://github.com/aaif-goose/goose\n- 分类: General-purpose Agent / Desktop + CLI + API\n- AI Native Product Score: 89/100\n- 做什么: 本机运行的通用 AI agent，提供桌面 app、CLI 和 API，用于代码、研究、写作、自动化与数据分析。\n- 面向谁: 想把多模型、多扩展、本地执行统一起来的个人和团队。\n- AI native 点: 支持 15+ provider、70+ MCP extensions、ACP；产品面覆盖桌面、终端、嵌入 API。\n- 增长/活跃信号: GitHub 页面显示约 45.4k stars、134 releases，最新 v1.34.1 标注 2026-05-15；项目迁入 Linux Foundation AAIF。\n- 可运行性判断: README 提供桌面 app 下载和 CLI 安装脚本；文档含 quickstart、installation、tutorials。\n- 建议动作: 用作“通用本地 agent 基线”评测；关注 MCP extension 管理和多 provider 切换体验。\n\n### 5. n8n-io/n8n\n- GitHub: https://github.com/n8n-io/n8n\n- 分类: AI Workflow Automation / Low-code Platform\n- AI Native Product Score: 88/100\n- 做什么: 面向技术团队的 workflow automation 平台，集成 400+ connectors、AI agent workflows、LangChain、本地/云部署。\n- 面向谁: 运营、增长、工程平台、内部自动化和企业集成团队。\n- AI native 点: AI agent workflow 已嵌入可视化自动化平台，并可结合代码节点、集成、模板与自托管。\n- 增长/活跃信号: GitHub 页面显示约 188k stars、625 releases，最新 stable 标注 2026-05-15。\n- 可运行性判断: README 提供 `npx n8n` 和 Docker 快速启动，访问本地编辑器 `localhost:5678`。\n- 建议动作: 作为 AI workflow 产品基线；评估 MCP server/client、新 AI nodes、模板质量和企业权限。\n\n### 6. github/github-mcp-server\n- GitHub: https://github.com/github/github-mcp-server\n- 分类: MCP Server / Developer Workflow Integration\n- AI Native Product Score: 86/100\n- 做什么: GitHub 官方 MCP server，让 AI tools 读 repo、管理 issues/PR、分析 Actions、处理 workflow。\n- 面向谁: 需要把 GitHub 上下文和操作能力接给 Copilot、Claude、Codex、Cursor、Windsurf 的开发团队。\n- AI native 点: 把 GitHub 的工程上下文变成 agent 可调用工具面，是 coding agent 生产化的基础设施。\n- 增长/活跃信号: GitHub 页面显示约 29.9k stars、831 commits、185 issues、149 PRs；README 覆盖 remote/local MCP 方案。\n- 可运行性判断: 支持 VS Code one-click/JSON 配置、remote MCP URL、Docker local server、PAT/OAuth 配置。\n- 建议动作: 立即纳入内部 agent 工具链；重点做 token scope、审计和 toolset 白名单策略。\n\n### 7. upstash/context7\n- GitHub: https://github.com/upstash/context7\n- 分类: MCP Docs / LLM Context Tool\n- AI Native Product Score: 85/100\n- 做什么: 为 coding agents 提供最新代码文档和示例，支持 CLI+Skills 与 MCP server 两种模式。\n- 面向谁: 使用 Cursor、Claude Code、Codex、opencode 等 coding agent 的开发者。\n- AI native 点: 直接解决 LLM 代码生成依赖过时文档的问题，把 docs retrieval 做成 agent 原生工具。\n- 增长/活跃信号: GitHub 页面显示约 55.5k stars、74 releases，最新 ctx7@0.4.2 标注 2026-05-11；MCP 生态传播强。\n- 可运行性判断: README 提供 `npx ctx7 setup`，可自动生成 API key 并安装 skill/MCP；也支持手动 MCP URL。\n- 建议动作: 接入一个真实 coding agent 测试一周；观察是否减少 hallucinated API 和版本错误。\n\n### 8. agno-agi/agno\n- GitHub: https://github.com/agno-agi/agno\n- 分类: Agent Platform SDK + Control Plane\n- AI Native Product Score: 84/100\n- 做什么: 用于构建、运行和管理 agent platforms 的 SDK/平台层，支持 tracing、scheduling、RBAC、human approval、memory、toolkits 和 UI。\n- 面向谁: 正在把 agent 做成生产服务的平台团队和 AI 应用团队。\n- AI native 点: 从“写一个 agent”提升到“管理一个 agent 平台”，把权限、审计、运行、接口和部署纳入核心。\n- 增长/活跃信号: GitHub 页面显示约 40.2k stars、5,564 commits、190 releases，最新 v2.6.7 标注 2026-05-15。\n- 可运行性判断: README 链接 docs、20 行 first agent、auto-improving platform 示例；可部署到容器环境。\n- 建议动作: 研究其生产 API、human approval 和 observability 设计，判断是否适合作为内部 agent backend。\n\n### 9. mem0ai/mem0\n- GitHub: https://github.com/mem0ai/mem0\n- 分类: Agent Memory Layer / Self-hosted + Cloud\n- AI Native Product Score: 82/100\n- 做什么: AI assistant/agent 的通用记忆层，支持用户/会话/agent 多层记忆、SDK、CLI、自托管 server 和 cloud。\n- 面向谁: 做客服、个人助理、长期任务 agent、自动化系统的团队。\n- AI native 点: 把“长期记忆”做成独立基础设施，直接影响 agent personalization 和跨会话连续性。\n- 增长/活跃信号: GitHub 页面显示约 56k stars、319 releases，最新 @mem0/cli v0.2.5 标注 2026-05-14；README 强调 April 2026 新记忆算法。\n- 可运行性判断: CLI quickstart、pip/npm SDK、自托管 Docker compose、server bootstrap 和 dashboard 路径都明确。\n- 建议动作: 放入 memory layer 横评；重点测召回质量、隐私边界、自托管复杂度和 agent-owned API key 模式。\n\n### 10. openai/codex\n- GitHub: https://github.com/openai/codex\n- 分类: Coding Agent / CLI + Desktop App Entry\n- AI Native Product Score: 81/100\n- 做什么: 本地运行的轻量 coding agent，支持 CLI、IDE 入口和 `codex app` 桌面体验。\n- 面向谁: OpenAI/ChatGPT 用户、需要在本地工程中运行 coding agent 的开发者。\n- AI native 点: 以本地 agent 执行代码任务为核心，连接 ChatGPT 计划或 API key，覆盖 CLI/IDE/桌面入口。\n- 增长/活跃信号: GitHub 页面显示约 83.3k stars、6,580 commits、789 releases；最新 release 显示 2026-05-08，严格 release 时间不在 72h 内，但当前关注度和产品面强。\n- 可运行性判断: README 提供 npm、Homebrew、GitHub release binary；运行 `codex` 即可开始。\n- 建议动作: 保持在基线组，与 opencode/Claude Code/Gemini CLI 做同任务对比。\n\n## Watchlist (4)\n\n- browser-use/browser-use (https://github.com/browser-use/browser-use)\n  - 分类: Browser Agent Framework / Cloud Product\n  - Score: 75\n  - 摘要: 浏览器自动化 agent 代表项目，GitHub 页面显示约 94.3k stars、9,212 commits；但最新 release 显示 2026-04-02，本轮放 Watchlist 而非 Top。\n  - 建议动作: 关注 cloud 产品化、stealth/scaling 能力和与 MCP/coding agent 的集成。\n\n- HKUDS/RAG-Anything (https://github.com/HKUDS/RAG-Anything)\n  - 分类: Multimodal RAG Framework\n  - Score: 73\n  - 摘要: 多模态 RAG 方向热度高，但偏 framework/research，需要确认产品 demo 和真实用户工作流。\n  - 建议动作: 若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。\n\n- getzep/graphiti (https://github.com/getzep/graphiti)\n  - 分类: Temporal Knowledge Graph / Agent Memory\n  - Score: 72\n  - 摘要: agent memory/knowledge graph 方向重要，适合作为 mem0 的架构对照。\n  - 建议动作: 关注 temporal graph 建模、实时更新和生产部署路径。\n\n- langflow-ai/langflow (https://github.com/langflow-ai/langflow)\n  - 分类: Visual Agent/RAG Builder\n  - Score: 71\n  - 摘要: 可视化 AI workflow/RAG builder 仍值得跟踪，但本轮没有比 n8n/Agno 更强的新信号。\n  - 建议动作: 放入可视化 builder 横评，比较模板、部署、权限和 connector 生态。\n\n## Skip Reasons\n- openai/openai-agents-python (https://github.com/openai/openai-agents-python): 高质量 SDK，但更像 agent framework，不是这轮优先的独立产品面。\n- modelcontextprotocol/servers (https://github.com/modelcontextprotocol/servers): MCP server 集合/参考实现，价值高但不是单一可运行产品。\n- microsoft/autogen (https://github.com/microsoft/autogen): 重要多 agent framework，但本轮更优先保留具备清晰 UI/CLI/API 产品闭环的项目。\n\n## 今日趋势观察\n- Coding agent 已进入“产品军备竞赛”：CLI 只是入口，桌面 app、IDE、插件、MCP、GitHub Action、权限模式才是差异化。\n- MCP 从“能接工具”变成“必须有治理”：GitHub MCP Server、Context7 这类项目会成为 coding agent 默认配件。\n- 生产 agent 平台开始补齐 boring-but-critical 能力：RBAC、tracing、human approval、memory、scheduling、audit logs。\n- AI workflow 平台正在吃掉一部分 agent builder 需求：n8n 这种原本的自动化平台通过 AI nodes/MCP/模板快速变成 agent 产品入口。\n\n## 关键假设\n- 严格窗口按 2026-05-15 至 2026-05-18；若 release 不在窗口内，但当前增长/关注度/可运行产品面非常强，会降低分数但仍可能入选。\n- GitHub 页面可见的 stars/issues/PRs/releases 是本轮主要事实来源；没有使用未认证 GitHub API 计算精确 24h star delta。\n- 分数是 AI Native Product Score，不是代码质量分；优先可运行产品、真实工作流和 AI 是否处在核心路径。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "category": "Coding Agent / Terminal + Desktop",
+      "score": 92,
+      "summary": "开源 AI coding agent，提供终端 UI、安装器、桌面 beta、内置 build/plan agent 和多语言 README。",
+      "audience": "希望在本地仓库中用 agent 做代码修改、探索、计划和执行的工程师与团队。",
+      "ai_native_angle": "agent 不是插件，而是主界面；内置可切换权限模式，覆盖终端、桌面和工程工作流。",
+      "growth_signal": "GitHub 页面显示约 162k stars、13k+ commits、806 releases，最新 release v1.15.4 标注 2026-05-17。",
+      "runnability": "README 提供 curl installer、npm、brew、Windows、Arch、Nix 等安装方式；桌面 beta 有 release 下载。",
+      "recommended_action": "最高优先级试跑；重点看 plan/build 权限边界、长任务恢复、MCP/工具接入和团队协作可控性。"
+    },
+    {
+      "rank": 2,
+      "full_name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "category": "Coding Agent / Terminal Product",
+      "score": 91,
+      "summary": "终端里的 agentic coding tool，理解代码库、执行常规任务、解释复杂代码并处理 git workflow。",
+      "audience": "已在 Claude 生态工作的工程团队、独立开发者、代码审查/维护场景。",
+      "ai_native_angle": "以自然语言驱动 repo 级任务，并包含插件目录、examples、bug report 命令和安装脚本。",
+      "growth_signal": "GitHub 页面显示约 124k stars、5k+ issues、542 PRs、625 commits；仓库含 demo.gif、plugins、examples。",
+      "runnability": "README 推荐 curl 安装脚本、Homebrew、Windows install.ps1/WinGet；进入项目目录运行 `claude`。",
+      "recommended_action": "跟 opencode/Codex/Gemini CLI 做同仓库对比；重点评估插件生态和权限/审计体验。"
+    },
+    {
+      "rank": 3,
+      "full_name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "category": "Coding Agent / CLI + GitHub Action",
+      "score": 90,
+      "summary": "把 Gemini 带进终端的开源 AI agent，支持代码理解、生成、调试、自动化和 GitHub workflow。",
+      "audience": "Google/Gemini 用户、需要大上下文和搜索 grounding 的开发者团队。",
+      "ai_native_angle": "内置 Google Search grounding、文件/命令/web fetch 工具、MCP 扩展、checkpointing 和 GitHub Action。",
+      "growth_signal": "GitHub 页面显示约 104k stars、6,175 commits、494 releases；README 写明每周 preview/stable、每日 nightly 发布节奏。",
+      "runnability": "支持 npx 即跑、npm 全局安装、Homebrew、MacPorts、Conda；可用 Google OAuth 或 API key。",
+      "recommended_action": "重点试用非交互脚本模式和 GitHub Action，用于 issue triage/PR review 自动化。"
+    },
+    {
+      "rank": 4,
+      "full_name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "category": "General-purpose Agent / Desktop + CLI + API",
+      "score": 89,
+      "summary": "本机运行的通用 AI agent，提供桌面 app、CLI 和 API，用于代码、研究、写作、自动化与数据分析。",
+      "audience": "想把多模型、多扩展、本地执行统一起来的个人和团队。",
+      "ai_native_angle": "支持 15+ provider、70+ MCP extensions、ACP；产品面覆盖桌面、终端、嵌入 API。",
+      "growth_signal": "GitHub 页面显示约 45.4k stars、134 releases，最新 v1.34.1 标注 2026-05-15；项目迁入 Linux Foundation AAIF。",
+      "runnability": "README 提供桌面 app 下载和 CLI 安装脚本；文档含 quickstart、installation、tutorials。",
+      "recommended_action": "用作“通用本地 agent 基线”评测；关注 MCP extension 管理和多 provider 切换体验。"
+    },
+    {
+      "rank": 5,
+      "full_name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "category": "AI Workflow Automation / Low-code Platform",
+      "score": 88,
+      "summary": "面向技术团队的 workflow automation 平台，集成 400+ connectors、AI agent workflows、LangChain、本地/云部署。",
+      "audience": "运营、增长、工程平台、内部自动化和企业集成团队。",
+      "ai_native_angle": "AI agent workflow 已嵌入可视化自动化平台，并可结合代码节点、集成、模板与自托管。",
+      "growth_signal": "GitHub 页面显示约 188k stars、625 releases，最新 stable 标注 2026-05-15。",
+      "runnability": "README 提供 `npx n8n` 和 Docker 快速启动，访问本地编辑器 `localhost:5678`。",
+      "recommended_action": "作为 AI workflow 产品基线；评估 MCP server/client、新 AI nodes、模板质量和企业权限。"
+    },
+    {
+      "rank": 6,
+      "full_name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "category": "MCP Server / Developer Workflow Integration",
+      "score": 86,
+      "summary": "GitHub 官方 MCP server，让 AI tools 读 repo、管理 issues/PR、分析 Actions、处理 workflow。",
+      "audience": "需要把 GitHub 上下文和操作能力接给 Copilot、Claude、Codex、Cursor、Windsurf 的开发团队。",
+      "ai_native_angle": "把 GitHub 的工程上下文变成 agent 可调用工具面，是 coding agent 生产化的基础设施。",
+      "growth_signal": "GitHub 页面显示约 29.9k stars、831 commits、185 issues、149 PRs；README 覆盖 remote/local MCP 方案。",
+      "runnability": "支持 VS Code one-click/JSON 配置、remote MCP URL、Docker local server、PAT/OAuth 配置。",
+      "recommended_action": "立即纳入内部 agent 工具链；重点做 token scope、审计和 toolset 白名单策略。"
+    },
+    {
+      "rank": 7,
+      "full_name": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "MCP Docs / LLM Context Tool",
+      "score": 85,
+      "summary": "为 coding agents 提供最新代码文档和示例，支持 CLI+Skills 与 MCP server 两种模式。",
+      "audience": "使用 Cursor、Claude Code、Codex、opencode 等 coding agent 的开发者。",
+      "ai_native_angle": "直接解决 LLM 代码生成依赖过时文档的问题，把 docs retrieval 做成 agent 原生工具。",
+      "growth_signal": "GitHub 页面显示约 55.5k stars、74 releases，最新 ctx7@0.4.2 标注 2026-05-11；MCP 生态传播强。",
+      "runnability": "README 提供 `npx ctx7 setup`，可自动生成 API key 并安装 skill/MCP；也支持手动 MCP URL。",
+      "recommended_action": "接入一个真实 coding agent 测试一周；观察是否减少 hallucinated API 和版本错误。"
+    },
+    {
+      "rank": 8,
+      "full_name": "agno-agi/agno",
+      "url": "https://github.com/agno-agi/agno",
+      "category": "Agent Platform SDK + Control Plane",
+      "score": 84,
+      "summary": "用于构建、运行和管理 agent platforms 的 SDK/平台层，支持 tracing、scheduling、RBAC、human approval、memory、toolkits 和 UI。",
+      "audience": "正在把 agent 做成生产服务的平台团队和 AI 应用团队。",
+      "ai_native_angle": "从“写一个 agent”提升到“管理一个 agent 平台”，把权限、审计、运行、接口和部署纳入核心。",
+      "growth_signal": "GitHub 页面显示约 40.2k stars、5,564 commits、190 releases，最新 v2.6.7 标注 2026-05-15。",
+      "runnability": "README 链接 docs、20 行 first agent、auto-improving platform 示例；可部署到容器环境。",
+      "recommended_action": "研究其生产 API、human approval 和 observability 设计，判断是否适合作为内部 agent backend。"
+    },
+    {
+      "rank": 9,
+      "full_name": "mem0ai/mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "category": "Agent Memory Layer / Self-hosted + Cloud",
+      "score": 82,
+      "summary": "AI assistant/agent 的通用记忆层，支持用户/会话/agent 多层记忆、SDK、CLI、自托管 server 和 cloud。",
+      "audience": "做客服、个人助理、长期任务 agent、自动化系统的团队。",
+      "ai_native_angle": "把“长期记忆”做成独立基础设施，直接影响 agent personalization 和跨会话连续性。",
+      "growth_signal": "GitHub 页面显示约 56k stars、319 releases，最新 @mem0/cli v0.2.5 标注 2026-05-14；README 强调 April 2026 新记忆算法。",
+      "runnability": "CLI quickstart、pip/npm SDK、自托管 Docker compose、server bootstrap 和 dashboard 路径都明确。",
+      "recommended_action": "放入 memory layer 横评；重点测召回质量、隐私边界、自托管复杂度和 agent-owned API key 模式。"
+    },
+    {
+      "rank": 10,
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "category": "Coding Agent / CLI + Desktop App Entry",
+      "score": 81,
+      "summary": "本地运行的轻量 coding agent，支持 CLI、IDE 入口和 `codex app` 桌面体验。",
+      "audience": "OpenAI/ChatGPT 用户、需要在本地工程中运行 coding agent 的开发者。",
+      "ai_native_angle": "以本地 agent 执行代码任务为核心，连接 ChatGPT 计划或 API key，覆盖 CLI/IDE/桌面入口。",
+      "growth_signal": "GitHub 页面显示约 83.3k stars、6,580 commits、789 releases；最新 release 显示 2026-05-08，严格 release 时间不在 72h 内，但当前关注度和产品面强。",
+      "runnability": "README 提供 npm、Homebrew、GitHub release binary；运行 `codex` 即可开始。",
+      "recommended_action": "保持在基线组，与 opencode/Claude Code/Gemini CLI 做同任务对比。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "Browser Agent Framework / Cloud Product",
+      "score": 75,
+      "summary": "浏览器自动化 agent 代表项目，GitHub 页面显示约 94.3k stars、9,212 commits；但最新 release 显示 2026-04-02，本轮放 Watchlist 而非 Top。",
+      "audience": "需要让 AI 在网页上执行任务的自动化团队和开发者。",
+      "ai_native_angle": "把 browser 作为 agent 的核心执行面。",
+      "growth_signal": "当前关注度仍高，但 release 时间不在本轮严格窗口内。",
+      "runnability": "README 提供 uv 安装、人类 quickstart、cloud 入口和 examples。",
+      "recommended_action": "关注 cloud 产品化、stealth/scaling 能力和与 MCP/coding agent 的集成。"
+    },
+    {
+      "full_name": "HKUDS/RAG-Anything",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "category": "Multimodal RAG Framework",
+      "score": 73,
+      "summary": "多模态 RAG 方向热度高，但偏 framework/research，需要确认产品 demo 和真实用户工作流。",
+      "audience": "做文档理解、多模态检索和知识库应用的团队。",
+      "ai_native_angle": "把复杂文档结构和多模态内容接入 RAG。",
+      "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
+      "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
+      "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+    },
+    {
+      "full_name": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "category": "Temporal Knowledge Graph / Agent Memory",
+      "score": 72,
+      "summary": "agent memory/knowledge graph 方向重要，适合作为 mem0 的架构对照。",
+      "audience": "需要长期上下文、事件记忆和知识图谱的 agent 团队。",
+      "ai_native_angle": "用 temporal graph 为 agent 提供可更新的长期事实层。",
+      "growth_signal": "memory/knowledge graph 仍是 agent 平台核心能力。",
+      "runnability": "需进一步试跑 ingestion/query 流程。",
+      "recommended_action": "关注 temporal graph 建模、实时更新和生产部署路径。"
+    },
+    {
+      "full_name": "langflow-ai/langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "category": "Visual Agent/RAG Builder",
+      "score": 71,
+      "summary": "可视化 AI workflow/RAG builder 仍值得跟踪，但本轮没有比 n8n/Agno 更强的新信号。",
+      "audience": "想用可视化方式搭建 agent/RAG workflow 的团队。",
+      "ai_native_angle": "把 LLM steps、tools、retrieval 和 app endpoints 可视化编排。",
+      "growth_signal": "长期热门 visual AI builder。",
+      "runnability": "通常具备本地运行/UI 体验，但本轮未作为重点核验。",
+      "recommended_action": "放入可视化 builder 横评，比较模板、部署、权限和 connector 生态。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "openai/openai-agents-python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "skip_reason": "高质量 SDK，但更像 agent framework，不是这轮优先的独立产品面。"
+    },
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "skip_reason": "MCP server 集合/参考实现，价值高但不是单一可运行产品。"
+    },
+    {
+      "full_name": "microsoft/autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "skip_reason": "重要多 agent framework，但本轮更优先保留具备清晰 UI/CLI/API 产品闭环的项目。"
+    }
+  ]
+}

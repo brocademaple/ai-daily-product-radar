@@ -1,0 +1,182 @@
+{
+  "run_date": "2026-06-04",
+  "generated_at": "2026-06-04T10:22:12+08:00",
+  "data_window": "2026-06-01T02:17:12Z to 2026-06-04T02:22:12Z; GitHub public search/repository pages for recently updated or newly surfaced AI-native product repositories.",
+  "source_summary": "实时 Web/GitHub 搜索与公开仓库页；参考本地 2026-06-02 和 2026-06-03 radar，降低重复项目权重。当前 shell 环境无 gh CLI，curl 对 api.github.com 未返回可用内容，因此未使用 GitHub API 增强；本轮未 clone 或本地运行仓库。",
+  "trend_observations": "MCP 正从单点 server 进入网关、代理、注册表和垂直连接器层；browser agent 的产品化焦点转向可治理执行；voice agent 开始出现电话/客服这类更具体的交互场景；agent 代码检索和安全约束工具在从 demo 转向团队工作流。",
+  "assumptions": "优先选择过去 24-72 小时搜索中活跃出现、产品形态清晰、README/安装入口/示例信号较完整的仓库。增长信号以近期更新、搜索可见度、组织背书、README 产品化程度和生态相关性做定性判断；star/release 数字未做 API 级核验。",
+  "markdown_report": "# Daily AI Native Product GitHub Radar - 2026-06-04\n\n数据窗口：2026-06-01T02:17:12Z to 2026-06-04T02:22:12Z\n\n信息来源：实时 Web/GitHub 搜索与公开仓库页；参考本地 2026-06-02 和 2026-06-03 radar，降低重复项目权重。当前 shell 环境无 gh CLI，curl 对 api.github.com 未返回可用内容，因此未使用 GitHub API 增强；本轮未 clone 或本地运行仓库，可运行性基于 README、安装入口、examples/demo/docker/API/CLI 信号判断。\n\n## Top Projects\n\n### 1. smart-mcp-proxy/mcpproxy-go\n- GitHub: https://github.com/smart-mcp-proxy/mcpproxy-go\n- 分类：MCP Gateway / Agent Tooling Infrastructure\n- AI Native Product Score：88\n- 做什么：Go 实现的 MCP 代理/网关，把多个 MCP server 的接入、路由和管理集中到一个更可部署的服务层。\n- 面向谁：需要把内部工具、SaaS API、数据源统一接入 Claude/Cursor/Codex 等 agent 客户端的平台工程团队。\n- AI native 点：核心价值是让 agent 工具调用从“本地配置文件”升级为可运维、可治理的工具网关。\n- 增长/活跃信号：MCP gateway/proxy 在近期搜索中显著增多，说明团队开始从单个 MCP server 转向工具层基础设施。\n- 可运行性判断：Go 服务形态清晰，预期具备 CLI/服务端启动路径；本轮未 clone，需下一步核验 config、auth、multi-server routing 和日志。\n- 建议动作：优先试跑。用 3 个 MCP server 组成最小工具网关，验证鉴权、路由、失败隔离和审计日志。\n\n### 2. openswarm-os/openswarm\n- GitHub: https://github.com/openswarm-os/openswarm\n- 分类：Multi-agent Workflow / Agent OS\n- AI Native Product Score：86\n- 做什么：面向多 agent 协作的开源工作流/运行环境，强调把多个专长 agent 组织成可执行任务系统。\n- 面向谁：需要构建 research、coding、ops、support 等多角色 agent workflow 的 AI 产品团队。\n- AI native 点：产品形态围绕 agent 编排、任务分解、工具调用和协作状态，而不是单次 chatbot。\n- 增长/活跃信号：multi-agent/agent OS 在近期搜索中继续升温，且和 OpenHands、Mastra、VoltAgent 形成不同层级的对照。\n- 可运行性判断：仓库定位偏 runtime/workbench，需进一步核验 demo、CLI/UI、状态可观测性和失败恢复。\n- 建议动作：Watch + 小样复刻。用“自动研究一个 GitHub 项目并输出复刻计划”测试多 agent 协作质量。\n\n### 3. 1mcp-app/agent\n- GitHub: https://github.com/1mcp-app/agent\n- 分类：MCP Agent Client / Tool Aggregation\n- AI Native Product Score：84\n- 做什么：围绕 MCP 工具生态构建 agent/client，把多工具接入、任务执行和用户交互放在同一产品面。\n- 面向谁：想把 MCP 从开发者配置变成可用 agent 应用的个人用户、开发者和内部工具团队。\n- AI native 点：agent 能力来自工具生态聚合，用户价值来自“自然语言目标 -> MCP 工具链执行”。\n- 增长/活跃信号：MCP client/agent 类项目在 72 小时窗口内出现频繁，说明协议侧需求开始向终端产品迁移。\n- 可运行性判断：需要核验桌面/CLI/UI 入口、MCP server 配置和示例任务完整度；本轮未本地运行。\n- 建议动作：加入 MCP agent client 横评，重点比较配置成本、工具发现、执行日志和权限提示。\n\n### 4. hyprmcp/jetski\n- GitHub: https://github.com/hyprmcp/jetski\n- 分类：MCP Server Management / Agent Tool Discovery\n- AI Native Product Score：82\n- 做什么：围绕 MCP server 发现、安装或管理的工具，目标是降低 agent 工具接入成本。\n- 面向谁：频繁试用 MCP server、需要管理多工具环境的 AI 工程师和团队。\n- AI native 点：agent 的生产力取决于可用工具集，Jetski 这类管理层项目解决“工具如何被找到、安装、启用”的关键摩擦。\n- 增长/活跃信号：MCP server 数量快速增长后，registry/manager/proxy 类项目开始变成新层级。\n- 可运行性判断：需下一步确认命令行安装、server manifest 兼容性和是否支持主流 MCP client。\n- 建议动作：Watch。若支持一键安装/启用多个 server，可进入 MCP 工具链复刻实验。\n\n### 5. BrowserOperator/browser-operator-core\n- GitHub: https://github.com/BrowserOperator/browser-operator-core\n- 分类：Browser Agent / Web Task Automation\n- AI Native Product Score：81\n- 做什么：面向浏览器任务执行的 agent core，让 AI 根据目标理解网页、规划动作并操作页面。\n- 面向谁：做网页自动化、QA、运营后台流程、数据采集和表单处理的开发团队。\n- AI native 点：浏览器被抽象成 agent execution environment，核心是页面理解、动作选择、上下文恢复和任务完成度。\n- 增长/活跃信号：Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现，赛道继续扩散。\n- 可运行性判断：核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理；本轮未运行。\n- 建议动作：放入 browser-agent benchmark 候选，用同一表单/后台任务测成功率。\n\n### 6. gerkensm/callcenter.js-mcp\n- GitHub: https://github.com/gerkensm/callcenter.js-mcp\n- 分类：Voice Agent / Call Center MCP\n- AI Native Product Score：78\n- 做什么：把 call center/电话交互能力接入 MCP，使 agent 可以围绕电话客服或语音流程调用工具。\n- 面向谁：想把客服、电话机器人、工单和 CRM 动作连起来的 voice-agent 实验团队。\n- AI native 点：语音交互、业务工具和 agent 调用协议结合，适合从“聊天助手”进入真实电话工作流。\n- 增长/活跃信号：voice agent 从通用实时框架向垂直场景移动，电话/客服是最早有 ROI 的方向之一。\n- 可运行性判断：MCP server/JS 形态易于接入，但需核验电话 provider、凭证配置和 demo；本轮未运行。\n- 建议动作：复刻候选。做一个只读客服场景：来电摘要 -> 查询知识库 -> 生成工单建议。\n\n### 7. relevanceai/file-search-mcp\n- GitHub: https://github.com/relevanceai/file-search-mcp\n- 分类：RAG / File Search MCP\n- AI Native Product Score：77\n- 做什么：通过 MCP 暴露文件搜索/检索能力，让 agent 能围绕本地或托管文件执行问答与检索任务。\n- 面向谁：需要给 Claude/Cursor/自建 agent 加入文件级 RAG 搜索的开发者和知识库团队。\n- AI native 点：RAG 从独立应用后端变成 agent 可调用工具，适合嵌入多步骤工作流。\n- 增长/活跃信号：RAG-MCP 连接器仍持续出现，说明检索能力正在协议化。\n- 可运行性判断：MCP server 形态明确，需核验索引流程、文件权限、查询延迟和返回格式。\n- 建议动作：Watch + 横评。与 Context7、Graphiti、传统向量库接入做检索质量对照。\n\n### 8. alejandroqh/repo39\n- GitHub: https://github.com/alejandroqh/repo39\n- 分类：Code Agent Context / Repository Search\n- AI Native Product Score：73\n- 做什么：面向 agent 的代码仓库理解/检索工具，目标是帮助 coding agent 更快定位 repo 中相关上下文。\n- 面向谁：构建 coding agent、代码审查 agent 或需要大仓库语义检索的工程团队。\n- AI native 点：把代码库上下文供给做成 agent 的基础能力，直接影响自动编码、审查和修复质量。\n- 增长/活跃信号：coding-agent 热潮带动 repo search/context layer 项目出现；项目仍早期，适合观察而非立即生产使用。\n- 可运行性判断：需核验 CLI/API、索引方式、语言覆盖和与现有 agent 的集成方式；本轮未运行。\n- 建议动作：保留 Watch/实验。用本仓库做索引测试，看是否能提升 issue triage 上下文命中。\n\n## Watchlist\n\n### superplan-md/superplan-plugin\n- GitHub: https://github.com/superplan-md/superplan-plugin\n- 分类：Agent Planning / IDE Workflow\n- Score：72\n- 简述：面向 AI/code agent 的计划与任务组织插件，可能补足 coding agent 的长期任务管理。\n- 建议动作：等文档、IDE 集成和真实 demo 更明确后再升 Top。\n\n### modelcontextprotocol/registry\n- GitHub: https://github.com/modelcontextprotocol/registry\n- 分类：MCP Registry / Ecosystem Infrastructure\n- Score：72\n- 简述：MCP server 发现和分发基础设施方向重要，但更像生态底座而非单一产品。\n- 建议动作：持续跟踪 registry 标准，作为 MCP manager/proxy 项目的兼容性基准。\n\n### HexStrike-AI/HexStrike-AI\n- GitHub: https://github.com/HexStrike-AI/HexStrike-AI\n- 分类：Security Agent / MCP Offensive Security\n- Score：71\n- 简述：安全 agent + MCP 工具编排信号强，但风险边界和使用约束需要仔细审计。\n- 建议动作：只做防御/授权测试场景评估，关注权限、审计和安全 disclaimer。\n\n### Canner/WrenAI\n- GitHub: https://github.com/Canner/WrenAI\n- 分类：AI Data Analyst / BI Copilot\n- Score：70\n- 简述：数据分析 assistant 产品形态成熟，今天未进入 Top 是因为近期新增信号弱于 MCP/agent infra。\n- 建议动作：作为“AI analyst”产品基线保留，后续看 release 和企业连接器更新。\n\n## Skip Reasons\n\n- Significant-Gravitas/AutoGPT：历史影响大，但今天窗口内不是新产品信号，且已不适合作为新增 radar Top。\n- langchain-ai/langchain、run-llama/llama_index：基础框架生态重要，但本简报优先产品型应用、agent workbench、MCP 工具链。\n- awesome-*、prompt collection、course/tutorial 仓库：可作为发现源，不进入产品雷达 Top。\n- paper reproduction、benchmark-only、thin SDK wrapper：缺少明确用户场景或可运行产品面，统一降权。\n- 只有 README、无代码/无示例/无安装入口的营销仓库：跳过，不伪造为 GitHub repo 条目。\n\n## 今日趋势观察\n\n1. MCP 的新增机会从 server 本身转向 gateway、registry、manager、client 和垂直业务 connector。\n2. Browser agent 竞争焦点变成可治理执行：权限、审计、失败恢复和 human-in-the-loop 比单纯能点网页更重要。\n3. Voice agent 正向电话客服、会议、质检等具体工作流落地，MCP 会成为语音 agent 连接业务系统的常见协议。\n4. Coding agent 的下一层基础设施是 repo context、计划管理、执行边界和安全审计。\n5. “产品形态”越来越体现在安装路径、demo、执行日志、权限配置和失败处理，而不是 README 里的 agent 概念。\n\n## 今日建议动作\n\n- 优先复刻：MCP Gateway 最小实验。用 mcpproxy-go 连接 file-search、GitHub/本地 repo search、一个 SaaS MCP server，观察 agent 工具发现和日志。\n- 第二优先：Browser-agent benchmark。把 BrowserOperator 加入 Webwright/browser-use/Skyvern/Playwright MCP 同题横评。\n- 第三优先：Voice-agent MCP 实验。用 callcenter.js-mcp 设计只读客服闭环，暂不接真实外呼。\n- 长期跟踪：MCP registry 标准变化，决定后续项目卡片是否按 server/manager/proxy/client 分层维护。\n\n## 关键假设\n\n- 本轮增长信号为 2026-06-04 运行时公开搜索和仓库页快照，可能随 GitHub 索引和 star/update 快速变化。\n- 当前环境无法用 gh CLI 或 GitHub API 做数值增强，未声称精确 star 增长。\n- 本轮未 clone/执行仓库；所有可运行性为 README、仓库结构、安装入口和产品面信号判断。\n- 已在 2026-06-02/2026-06-03 Top 出现的项目，今天只在有新趋势价值时进入 Watchlist 或跳过原因。",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "smart-mcp-proxy/mcpproxy-go",
+      "url": "https://github.com/smart-mcp-proxy/mcpproxy-go",
+      "category": "MCP Gateway / Agent Tooling Infrastructure",
+      "score": 88,
+      "summary": "Go 实现的 MCP 代理/网关，把多个 MCP server 的接入、路由和管理集中到一个可部署服务层。",
+      "audience": "需要统一接入内部工具、SaaS API 和数据源的平台工程团队。",
+      "ai_native_angle": "让 agent 工具调用从本地配置升级为可运维、可治理的工具网关。",
+      "growth_signal": "MCP gateway/proxy 在近期搜索中显著增多，体现单 server 之后的基础设施需求。",
+      "runnability": "Go 服务形态清晰；本轮未 clone，需核验 config、auth、routing 和日志。",
+      "recommended_action": "优先试跑，用 3 个 MCP server 验证路由、鉴权和审计日志。"
+    },
+    {
+      "rank": 2,
+      "full_name": "openswarm-os/openswarm",
+      "url": "https://github.com/openswarm-os/openswarm",
+      "category": "Multi-agent Workflow / Agent OS",
+      "score": 86,
+      "summary": "面向多 agent 协作的开源工作流/运行环境。",
+      "audience": "构建 research、coding、ops、support 多角色 agent workflow 的 AI 产品团队。",
+      "ai_native_angle": "围绕 agent 编排、任务分解、工具调用和协作状态组织产品。",
+      "growth_signal": "multi-agent/agent OS 在近期搜索中继续升温，和 OpenHands、Mastra、VoltAgent 形成对照。",
+      "runnability": "需进一步核验 demo、CLI/UI、状态可观测性和失败恢复。",
+      "recommended_action": "Watch + 小样复刻，用 GitHub 项目研究任务测试多 agent 协作质量。"
+    },
+    {
+      "rank": 3,
+      "full_name": "1mcp-app/agent",
+      "url": "https://github.com/1mcp-app/agent",
+      "category": "MCP Agent Client / Tool Aggregation",
+      "score": 84,
+      "summary": "围绕 MCP 工具生态构建 agent/client，把多工具接入、任务执行和用户交互放在同一产品面。",
+      "audience": "希望把 MCP 从开发者配置变成可用 agent 应用的个人用户、开发者和内部工具团队。",
+      "ai_native_angle": "用户价值来自自然语言目标到 MCP 工具链执行的闭环。",
+      "growth_signal": "MCP client/agent 类项目在窗口内出现频繁，协议侧需求开始向终端产品迁移。",
+      "runnability": "需核验桌面/CLI/UI 入口、MCP server 配置和示例任务完整度。",
+      "recommended_action": "加入 MCP agent client 横评，比较配置成本、工具发现、执行日志和权限提示。"
+    },
+    {
+      "rank": 4,
+      "full_name": "hyprmcp/jetski",
+      "url": "https://github.com/hyprmcp/jetski",
+      "category": "MCP Server Management / Agent Tool Discovery",
+      "score": 82,
+      "summary": "围绕 MCP server 发现、安装或管理的工具，降低 agent 工具接入成本。",
+      "audience": "频繁试用 MCP server、需要管理多工具环境的 AI 工程师和团队。",
+      "ai_native_angle": "解决 agent 工具如何被找到、安装、启用的关键摩擦。",
+      "growth_signal": "MCP server 数量快速增长后，registry/manager/proxy 类项目开始变成新层级。",
+      "runnability": "需确认命令行安装、server manifest 兼容性和主流 MCP client 支持。",
+      "recommended_action": "Watch；若支持一键安装/启用多个 server，可进入 MCP 工具链实验。"
+    },
+    {
+      "rank": 5,
+      "full_name": "BrowserOperator/browser-operator-core",
+      "url": "https://github.com/BrowserOperator/browser-operator-core",
+      "category": "Browser Agent / Web Task Automation",
+      "score": 81,
+      "summary": "面向浏览器任务执行的 agent core，根据目标理解网页、规划动作并操作页面。",
+      "audience": "做网页自动化、QA、运营后台流程、数据采集和表单处理的开发团队。",
+      "ai_native_angle": "浏览器被抽象成 agent execution environment，核心是页面理解和动作恢复。",
+      "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
+      "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
+      "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+    },
+    {
+      "rank": 6,
+      "full_name": "gerkensm/callcenter.js-mcp",
+      "url": "https://github.com/gerkensm/callcenter.js-mcp",
+      "category": "Voice Agent / Call Center MCP",
+      "score": 78,
+      "summary": "把 call center/电话交互能力接入 MCP，使 agent 围绕电话客服或语音流程调用工具。",
+      "audience": "想把客服、电话机器人、工单和 CRM 动作连起来的 voice-agent 实验团队。",
+      "ai_native_angle": "语音交互、业务工具和 agent 调用协议结合，进入真实电话工作流。",
+      "growth_signal": "voice agent 从通用实时框架向电话/客服等垂直场景移动。",
+      "runnability": "MCP server/JS 形态易于接入，但需核验电话 provider、凭证配置和 demo。",
+      "recommended_action": "复刻候选，先做只读客服场景：来电摘要、知识库查询、工单建议。"
+    },
+    {
+      "rank": 7,
+      "full_name": "relevanceai/file-search-mcp",
+      "url": "https://github.com/relevanceai/file-search-mcp",
+      "category": "RAG / File Search MCP",
+      "score": 77,
+      "summary": "通过 MCP 暴露文件搜索/检索能力，让 agent 围绕文件执行问答与检索任务。",
+      "audience": "需要给 Claude/Cursor/自建 agent 加入文件级 RAG 搜索的开发者和知识库团队。",
+      "ai_native_angle": "RAG 从独立应用后端变成 agent 可调用工具，嵌入多步骤工作流。",
+      "growth_signal": "RAG-MCP 连接器仍持续出现，检索能力正在协议化。",
+      "runnability": "MCP server 形态明确，需核验索引流程、文件权限、查询延迟和返回格式。",
+      "recommended_action": "Watch + 横评，与 Context7、Graphiti、传统向量库接入做检索质量对照。"
+    },
+    {
+      "rank": 8,
+      "full_name": "alejandroqh/repo39",
+      "url": "https://github.com/alejandroqh/repo39",
+      "category": "Code Agent Context / Repository Search",
+      "score": 73,
+      "summary": "面向 agent 的代码仓库理解/检索工具，帮助 coding agent 更快定位相关上下文。",
+      "audience": "构建 coding agent、代码审查 agent 或需要大仓库语义检索的工程团队。",
+      "ai_native_angle": "代码库上下文供给直接影响自动编码、审查和修复质量。",
+      "growth_signal": "coding-agent 热潮带动 repo search/context layer 项目出现；项目仍早期。",
+      "runnability": "需核验 CLI/API、索引方式、语言覆盖和 agent 集成方式。",
+      "recommended_action": "保留 Watch/实验，用本仓库做索引测试看上下文命中率。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "superplan-md/superplan-plugin",
+      "url": "https://github.com/superplan-md/superplan-plugin",
+      "category": "Agent Planning / IDE Workflow",
+      "score": 72,
+      "summary": "面向 AI/code agent 的计划与任务组织插件，可能补足 coding agent 的长期任务管理。",
+      "audience": "使用 IDE 内 coding agent 执行多步任务的开发者。",
+      "ai_native_angle": "把计划、任务状态和 agent 执行上下文结合。",
+      "growth_signal": "coding-agent 生态开始关注计划管理和执行记录。",
+      "runnability": "需等待更明确的文档、IDE 集成和 demo。",
+      "recommended_action": "Watch；文档和真实 demo 明确后再升 Top。"
+    },
+    {
+      "full_name": "modelcontextprotocol/registry",
+      "url": "https://github.com/modelcontextprotocol/registry",
+      "category": "MCP Registry / Ecosystem Infrastructure",
+      "score": 72,
+      "summary": "MCP server 发现和分发基础设施方向重要，但更像生态底座而非单一产品。",
+      "audience": "MCP server 作者、agent 平台和工具管理器开发者。",
+      "ai_native_angle": "决定 agent 工具生态如何被发现、验证和分发。",
+      "growth_signal": "MCP server 爆发后，registry 标准成为 manager/proxy/client 的共同依赖。",
+      "runnability": "基础设施项目，需看规范和集成进展。",
+      "recommended_action": "持续跟踪 registry 标准，作为 MCP manager/proxy 兼容性基准。"
+    },
+    {
+      "full_name": "HexStrike-AI/HexStrike-AI",
+      "url": "https://github.com/HexStrike-AI/HexStrike-AI",
+      "category": "Security Agent / MCP Offensive Security",
+      "score": 71,
+      "summary": "安全 agent + MCP 工具编排信号强，但风险边界和使用约束需要仔细审计。",
+      "audience": "授权安全测试、防御验证和红队自动化团队。",
+      "ai_native_angle": "把安全工具链变成 agent 可调用的多步骤执行环境。",
+      "growth_signal": "agent security 与 MCP 结合开始出现更强产品形态。",
+      "runnability": "需严格核验权限、审计、安全 disclaimer 和授权边界。",
+      "recommended_action": "只做防御/授权测试场景评估。"
+    },
+    {
+      "full_name": "Canner/WrenAI",
+      "url": "https://github.com/Canner/WrenAI",
+      "category": "AI Data Analyst / BI Copilot",
+      "score": 70,
+      "summary": "数据分析 assistant 产品形态成熟，今天新增信号弱于 MCP/agent infra。",
+      "audience": "需要自然语言查询、数据建模和 BI assistant 的数据团队。",
+      "ai_native_angle": "把语义层、SQL 生成、数据解释和业务分析工作流组合为 AI analyst。",
+      "growth_signal": "AI analyst 仍是稳定产品方向，但今日窗口趋势焦点转向 MCP/agent infra。",
+      "runnability": "产品化程度较高，需后续跟踪 release 和连接器更新。",
+      "recommended_action": "作为 AI analyst 基线保留。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "skip_reason": "历史影响大，但今天窗口内不是新产品信号，且已不适合作为新增 radar Top。"
+    },
+    {
+      "full_name": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "skip_reason": "基础框架生态重要，本简报优先产品型应用、agent workbench、MCP 工具链。"
+    },
+    {
+      "full_name": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "skip_reason": "基础 RAG/agent 框架，今天作为生态背景处理，不进入产品型 Top。"
+    }
+  ]
+}

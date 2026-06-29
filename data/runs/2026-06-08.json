@@ -1,0 +1,187 @@
+{
+  "run_date": "2026-06-08",
+  "generated_at": "2026-06-08T10:17:38+08:00",
+  "data_window": "2026-06-05 10:17 to 2026-06-08 10:17 Asia/Shanghai; GitHub topic/repository pages and AI Native Landscape pages for recently updated or newly visible AI agent, MCP, RAG, workflow, browser/code/assistant automation repositories.",
+  "source_summary": "Live GitHub Topic pages, GitHub repository README pages, and AI Native Landscape. Local gh was unavailable and shell curl to GitHub failed because 127.0.0.1:7890 proxy was not reachable; no clone/run audit was performed.",
+  "trend_observations": "AI coding-agent products are moving from single-agent execution toward multi-agent control planes; MCP opportunity is shifting toward debugging, eval, OAuth, gateway, and governance tooling; always-on agent platforms emphasize identity, triggers, browser runtime, and durable operations; memory/context layers are splitting into personal memory, code graph context, and session intelligence.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, explicit user scenarios, documentation, demos/examples/screenshots, and visible page-level activity. Pure guides, prompt/template collections, awesome lists, paper/benchmark repos, and marketing-only shells were downgraded. Growth signals are qualitative page observations and should be API-verified before investment decisions.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-08\n\n数据窗口：2026-06-05 10:17 至 2026-06-08 10:17（Asia/Shanghai）。重点查看 GitHub Topic 最近更新列表、仓库 README、可运行入口、demo/screenshots、stars/forks/issues/PR/commits 等页面信号。\n\n关键假设：本地 `gh` 不可用，shell 侧 `curl` 被本机 `127.0.0.1:7890` 代理配置阻断；本轮使用实时 GitHub/AI Native Landscape 网页审计，没有 clone 或实际运行仓库。分数偏向真实产品形态、可运行 UI/CLI/API、文档完整度、近期活跃和可复刻价值；纯指南、模板、awesome list、论文/benchmark、低代码空壳项目降权。\n\n## Top Projects\n\n1. shep-ai/shep - Coding Agent Control Plane - Score 89\n   - GitHub: https://github.com/shep-ai/shep\n   - 做什么：用 CLI + Web Dashboard 管理多个 AI coding agent 并行开发，每个任务独立 worktree，可自动 commit、push、开 PR、看 CI、失败重试。\n   - 面向谁：同时跑 Claude Code、Cursor CLI、Gemini CLI 等 coding agent 的工程团队和独立开发者。\n   - AI native 点：产品核心不是写代码本身，而是把多个 agent 的执行生命周期、隔离、审计和 PR 流程产品化。\n   - 增长/活跃信号：仓库页显示约 203 stars、31 forks、1,026 commits、63 issues、33 PR；README 有 Shep Cloud、localhost dashboard、CLI、CI auto-fix 等完整产品叙事。\n   - 可运行性判断：支持 `npx @shepai/cli`、`npm i -g @shepai/cli`，本地启动 `shep` 打开 `localhost:4050`，具备截图和命令示例；未实际运行。\n   - 建议动作：高优先级复刻拆解，重点看 worktree 隔离、agent session 状态机、CI 失败回收和 PR 审批边界。\n\n2. MCPJam/inspector - MCP Debugging / Evaluation Platform - Score 87\n   - GitHub: https://github.com/MCPJam/inspector\n   - 做什么：面向 MCP servers、MCP apps、ChatGPT apps 的调试、检查、聊天、OAuth、eval、CI/CD 平台。\n   - 面向谁：开发和维护 MCP server/app 的工程师、agent 工具团队、平台团队。\n   - AI native 点：把 MCP tool/resource/prompt、JSON-RPC trace、OAuth、模型聊天和 eval 放进同一个开发工作台。\n   - 增长/活跃信号：仓库页显示约 2k stars、237 forks、3,814 commits、45 issues、56 PR；MCP server Topic 页显示 2026-06-02 更新。\n   - 可运行性判断：提供 hosted app、desktop app、`npx @mcpjam/inspector@latest`、Docker 四条路径；README 有 demo、CLI、SDK、CI 说明。\n   - 建议动作：作为 MCP 开发工具链标杆，优先试用 hosted/npx 路径，提炼“trace + eval + OAuth debugger”产品模块。\n\n3. dcSpark/shinkai-local-ai-agents - Local No-code Agent Builder - Score 84\n   - GitHub: https://github.com/dcSpark/shinkai-local-ai-agents\n   - 做什么：两步安装的本地 AI agent 应用，用可视化方式创建本地/远程模型 agent，支持 MCP、加密支付和多 agent 协作。\n   - 面向谁：想在本地创建 agent workflow、自动化、个人/团队 assistant 的非专业和半专业用户。\n   - AI native 点：agent builder、多 agent orchestration、MCP、local-first、payments/crypto 共同构成产品体验。\n   - 增长/活跃信号：mcp-agents Topic 页显示约 427 stars，2026-06-05 更新；README 强调 demo、examples、release 下载和跨平台桌面应用。\n   - 可运行性判断：提供 release 下载、一键安装、Tauri desktop、React UI、NX monorepo；未实际运行。\n   - 建议动作：放入“local agent app + MCP + no-code builder”观察线，重点验证安装包成熟度和真实 agent 模板质量。\n\n4. gobii-ai/gobii-platform - Always-on AI Workforce Platform - Score 83\n   - GitHub: https://github.com/gobii-ai/gobii-platform\n   - 做什么：面向团队的 always-on AI coworker 平台，支持 schedule/event 唤醒、真实浏览器操作、webhook、agent 身份、邮件/SMS 入口和 agent-to-agent 协作。\n   - 面向谁：希望把 agent 放进生产工作流、自动触发、持续运行的团队和业务自动化开发者。\n   - AI native 点：持久 agent、身份、事件队列、浏览器 runtime、密钥/代理/sandbox 控制是核心产品结构。\n   - 增长/活跃信号：仓库页显示约 447 stars；README 展示 hosted product、自托管平台、Docker Compose、API quick start 和 production use cases。\n   - 可运行性判断：支持 `curl -fsSL https://gobii.ai/install.sh | bash`、`docker compose up --build`、`localhost:8000` 设置；未实际运行。\n   - 建议动作：作为“团队级长时运行 agent”样本，拆解 agent identity、schedule/event trigger、browser-use API 兼容层。\n\n5. blackwell-systems/knowing - Code Intelligence MCP / Agent Context Layer - Score 81\n   - GitHub: https://github.com/blackwell-systems/knowing\n   - 做什么：为 AI coding agent 提供代码关系图、上下文检索、blast radius、test scope、Merkle proof 和 supply-chain audit。\n   - 面向谁：大型代码库、平台工程、安全审计、希望减少 agent grep/read 循环的开发团队。\n   - AI native 点：agent 通过 MCP 直接查询图谱上下文，系统会随代码变化自动失效旧知识，并输出可验证关系证明。\n   - 增长/活跃信号：仓库页显示约 10 stars、1,981 commits；MCP server Topic 页显示 2026-06-02 更新，README 给出 28 MCP tools、38 edge types、benchmark 和多语言 extractors。\n   - 可运行性判断：支持 Homebrew、npm、pip、go install，MCP stdio/HTTP 配置完整；未实际运行。\n   - 建议动作：列入 coding-agent context plane 复刻候选，优先小仓库验证 `context_for_task`、`blast_radius`、`test_scope`。\n\n6. ictechgy/light_terminal - Agent Terminal Session Daemon - Score 79\n   - GitHub: https://github.com/ictechgy/light_terminal\n   - 做什么：为 AI coding agent 提供 tmux-compatible 持久 PTY session daemon，支持 Claude、Codex、Gemini、Cursor、Aider、Goose 等 launchers。\n   - 面向谁：需要远程/移动查看 agent session、保持终端状态、兼容 tmux/cmux 的开发者。\n   - AI native 点：把 agent 运行环境、日志、等待、通知、进程树和 tmux shim 做成稳定 CLI substrate。\n   - 增长/活跃信号：ai-agents Topic 页显示约 4 stars，2026-06-03 更新；README 提供 Homebrew、npm、Cargo、smoke test、agent launcher 列表和公共命令契约。\n   - 可运行性判断：支持 `brew install ictechgy/tap/lterm`、`npm install -g @ictechgy/lterm`、`cargo install`；未实际运行。\n   - 建议动作：作为 agent terminal/runtime substrate 小样本，观察是否能补足 Codex/Claude 长任务会话管理。\n\n7. gambletan/cortex - Local Personal Agent Memory Engine - Score 77\n   - GitHub: https://github.com/gambletan/cortex\n   - 做什么：本地优先的个人 AI agent memory engine，强调 AES-256-GCM、LoCoMo 分数、快速 ingest、本地数据库和自有云同步。\n   - 面向谁：个人 assistant、IM agent、长期记忆型 agent app 开发者。\n   - AI native 点：把 episodic/semantic/preference memory、身份解析、检索和 MCP server 作为 agent 的长期记忆层。\n   - 增长/活跃信号：MCP server Topic 页显示约 15 stars，2026-06-02 更新；README 有 Rust API、Homebrew、source build 和本地隐私叙事。\n   - 可运行性判断：支持 `brew install cortex-mcp-server` 和源码构建；更偏 library/MCP infra，产品 UI 尚弱。\n   - 建议动作：加入 memory layer watchlist，和 supermemory/mem0/本地记忆方案对比 API 边界。\n\n8. AgentStaqAI/agentgate - MCP Zero-trust Gateway - Score 75\n   - GitHub: https://github.com/AgentStaqAI/agentgate\n   - 做什么：MCP 的零信任防火墙和协议桥，代理 MCP traffic，做 allowlist、策略拦截、audit log、HITL approval。\n   - 面向谁：把 MCP server 接入生产 agent 的平台/安全/DevOps 团队。\n   - AI native 点：解决 agent tool calling 的权限、审计、人工审批和协议桥接问题，是 agent 上生产的治理层。\n   - 增长/活跃信号：mcp-agents Topic 页列为 2026 年内活跃项目；README 有 Go binary、install script、Homebrew、配置示例和 HITL 截图。\n   - 可运行性判断：支持 one-liner、Homebrew、源码构建，配置样例明确；stars 信号较弱，需验证维护节奏。\n   - 建议动作：作为 MCP gateway 安全样本保留，后续和 ToolHive、mcpproxy-go、MCPJam 的治理/调试边界对比。\n\n## Watchlist\n\n- 20alexl/claude-engram - Coding Agent Memory - Score 72 - https://github.com/20alexl/claude-engram - 方向是 Claude Code hook + session intelligence + cross-session search，适合观察 agent memory 是否从工具库走向产品；需要确认跨 agent 支持和安装路径。\n- chunxiaoxx/nautilus-compass - Multi-agent Reliability Layer - Score 71 - https://github.com/chunxiaoxx/nautilus-compass - 方向是 cross-dialog contracts、drift detection、black-box memory，不依赖 LLM extraction；需要验证 README 之外是否有稳定 CLI/API。\n- moiraweave-labs/moiraweave-cli - Agent Ops CLI - Score 68 - https://github.com/moiraweave-labs/moiraweave-cli - ai-agents Topic 显示为本地 startup、workload templates、runs、agent sessions、deployment flows；0 star 且更新信号偏早，先观察。\n- blackwell-systems/knowing - Code Graph Context Layer - Score 81 - https://github.com/blackwell-systems/knowing - 已进 Top，但 adoption 很早；建议在小仓库做一次实际 MCP 工具调用后再提高优先级。\n\n## Skip Reasons\n\n- zebbern/claude-code-guide：https://github.com/zebbern/claude-code-guide - 4.2k stars 且 2026-06-07 更新，但主要是 Claude Code guide/commands/workflows/skills 文档集合，不是可运行产品。\n- shanraisshan/claude-code-best-practice：https://github.com/shanraisshan/claude-code-best-practice - stars 异常高，定位更像 best practice/agentic engineering 内容页，缺少清晰产品运行面。\n- thinkwee/AgentsMeetRL：https://github.com/thinkwee/AgentsMeetRL - Agentic RL awesome list，偏资料索引，不符合产品形态优先标准。\n- Gudvin82/vibe-coding-protocols：https://github.com/Gudvin82/vibe-coding-protocols - 有实用模板价值，但本轮判定为 markdown protocol/template collection。\n\n## 今日趋势观察\n\n1. AI coding agent 生态正在从“单 agent 写代码”转向“多 agent 执行控制面”：worktree、PR、CI、日志、恢复、审批变成核心产品面。\n2. MCP 的机会从 server 数量增长转向开发者工具和治理工具：inspector、eval、OAuth debugger、gateway、HITL、audit log 会逐渐标配。\n3. 长时运行 agent 产品正在强调身份和触发器：email/SMS/webhook/schedule/event queue 让 agent 更像“可联系的数字同事”。\n4. Agent memory/context 层出现分化：个人记忆、代码图谱上下文、session mistake mining 是不同赛道，短期更适合作为基础设施试验。\n\n## 今日建议动作\n\n- 优先试跑 Shep：验证 `npx @shepai/cli`、dashboard、worktree/PR/CI loop 是否真能闭环。\n- 用 MCPJam Inspector 调试一个本地 MCP server，把 trace/eval/OAuth debugger 的产品模块拆成可复刻清单。\n- 为 Gobii 建一张“always-on agent 平台”卡片，重点看 agent identity、schedule/event trigger、browser task API。\n- 选 knowing 或 cortex 做一个 30 分钟小实验，确认 memory/context 层和本地 Codex 工作流的结合点。\n\n## 信息来源\n\n- GitHub Topic: https://github.com/topics/ai-agents?o=desc&s=updated\n- GitHub Topic: https://github.com/topics/mcp-agents\n- GitHub Topic: https://github.com/topics/mcp-server?o=desc&s=updated\n- AI Native Landscape: https://landscape.jimmysong.io/\n- 项目仓库 README/页面：shep-ai/shep、MCPJam/inspector、dcSpark/shinkai-local-ai-agents、gobii-ai/gobii-platform、blackwell-systems/knowing、ictechgy/light_terminal、gambletan/cortex、AgentStaqAI/agentgate。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "shep-ai/shep",
+      "url": "https://github.com/shep-ai/shep",
+      "category": "Coding Agent Control Plane",
+      "score": 89,
+      "summary": "CLI and web dashboard for running multiple AI coding agents in isolated worktrees with commits, pushes, PRs, CI watching, and retries.",
+      "audience": "Engineering teams and solo developers running Claude Code, Cursor CLI, Gemini CLI, or similar coding agents in parallel.",
+      "ai_native_angle": "It productizes the execution lifecycle around many agents: isolation, state, audit trail, PR flow, CI feedback, and recovery.",
+      "growth_signal": "Repository page showed about 203 stars, 31 forks, 1,026 commits, 63 issues, and 33 PRs, with a complete product README and cloud/local paths.",
+      "runnability": "Provides npx and npm CLI install paths plus a local dashboard at localhost:4050; no clone/run audit performed.",
+      "recommended_action": "Run a focused local trial and decompose worktree isolation, agent state machine, CI auto-fix, and PR approval flow."
+    },
+    {
+      "rank": 2,
+      "full_name": "MCPJam/inspector",
+      "url": "https://github.com/MCPJam/inspector",
+      "category": "MCP Debugging / Evaluation Platform",
+      "score": 87,
+      "summary": "Development platform for debugging, inspecting, chatting with, evaluating, and CI-testing MCP servers, MCP apps, and ChatGPT apps.",
+      "audience": "Engineers and platform teams building or maintaining MCP servers and agent tool integrations.",
+      "ai_native_angle": "MCP tools/resources/prompts, JSON-RPC traces, OAuth debugging, model chat, evals, CLI, SDK, and CI are unified in one agent-development workspace.",
+      "growth_signal": "Repository page showed about 2k stars, 237 forks, 3,814 commits, 45 issues, and 56 PRs; MCP server topic listed it as updated on 2026-06-02.",
+      "runnability": "Hosted app, desktop app, npx CLI, and Docker paths are documented; no local run audit performed.",
+      "recommended_action": "Use it to debug one local MCP server and extract a reproducible trace/eval/OAuth debugger product checklist."
+    },
+    {
+      "rank": 3,
+      "full_name": "dcSpark/shinkai-local-ai-agents",
+      "url": "https://github.com/dcSpark/shinkai-local-ai-agents",
+      "category": "Local No-code Agent Builder",
+      "score": 84,
+      "summary": "Local-first no-code AI agent app for creating local/remote model agents with MCP support, multi-agent collaboration, and payments/crypto workflows.",
+      "audience": "Users and builders who want local agent workflows, automation, personal assistants, or team assistants without writing much code.",
+      "ai_native_angle": "Agent builder, multi-agent orchestration, MCP, local-first runtime, and payments/crypto are all part of the product surface.",
+      "growth_signal": "mcp-agents topic page showed about 427 stars and an update on 2026-06-05; README includes demo, examples, release downloads, and desktop architecture.",
+      "runnability": "Release download and one-click install path are documented; repo is a Tauri/React/NX monorepo; no run audit performed.",
+      "recommended_action": "Track as a local agent app plus MCP plus no-code builder sample and verify install package maturity."
+    },
+    {
+      "rank": 4,
+      "full_name": "gobii-ai/gobii-platform",
+      "url": "https://github.com/gobii-ai/gobii-platform",
+      "category": "Always-on AI Workforce Platform",
+      "score": 83,
+      "summary": "Self-hostable always-on AI coworker platform with schedules, events, browser tasks, webhooks, agent identity, email/SMS entry points, and agent-to-agent coordination.",
+      "audience": "Teams and automation builders that want production agents to run continuously and be contactable like coworkers.",
+      "ai_native_angle": "Durable agents, identity, event queues, browser runtime, secrets, proxy control, and sandboxing form the product architecture.",
+      "growth_signal": "Repository page showed about 447 stars and a detailed README covering hosted product, Docker self-hosting, API quick start, and production use cases.",
+      "runnability": "Supports hosted installer, manual git clone plus docker compose, and localhost setup; no local run audit performed.",
+      "recommended_action": "Create a long-running-agent platform card focused on identity, schedule/event triggers, and browser-use API compatibility."
+    },
+    {
+      "rank": 5,
+      "full_name": "blackwell-systems/knowing",
+      "url": "https://github.com/blackwell-systems/knowing",
+      "category": "Code Intelligence MCP / Agent Context Layer",
+      "score": 81,
+      "summary": "Code relationship graph and MCP context engine for AI coding agents, with blast radius, test scope, Merkle proofs, and supply-chain audit.",
+      "audience": "Large-codebase teams, platform engineers, security auditors, and agent-tool builders reducing grep/read loops.",
+      "ai_native_angle": "Agents call MCP tools to retrieve graph-ranked code context, blast radius, and test scope while stale knowledge expires as code changes.",
+      "growth_signal": "Repository page showed about 10 stars and 1,981 commits; MCP server topic listed it as updated on 2026-06-02, with README benchmarks, 28 MCP tools, and 38 edge types.",
+      "runnability": "Homebrew, npm, pip, go install, MCP stdio, and HTTP setup are documented; no run audit performed.",
+      "recommended_action": "Run a small-repo trial of context_for_task, blast_radius, and test_scope before raising confidence."
+    },
+    {
+      "rank": 6,
+      "full_name": "ictechgy/light_terminal",
+      "url": "https://github.com/ictechgy/light_terminal",
+      "category": "Agent Terminal Session Daemon",
+      "score": 79,
+      "summary": "tmux-compatible persistent PTY session daemon and CLI substrate for AI coding agents.",
+      "audience": "Developers who need persistent terminal sessions, remote/mobile review, and compatibility shims for many coding agents.",
+      "ai_native_angle": "Agent execution environment, logs, waits, notifications, process tree inspection, and tmux/cmux compatibility are treated as product features.",
+      "growth_signal": "ai-agents topic page showed about 4 stars and an update on 2026-06-03; README includes install paths, smoke tests, launchers, and public command contract.",
+      "runnability": "Homebrew, npm, Cargo, and source build paths are documented; no run audit performed.",
+      "recommended_action": "Evaluate whether it improves long-running Codex/Claude task session management."
+    },
+    {
+      "rank": 7,
+      "full_name": "gambletan/cortex",
+      "url": "https://github.com/gambletan/cortex",
+      "category": "Local Personal Agent Memory Engine",
+      "score": 77,
+      "summary": "Local-first memory engine for personal AI agents with encrypted storage, identity resolution, retrieval, and MCP server positioning.",
+      "audience": "Personal assistant, IM agent, and long-term memory agent app builders.",
+      "ai_native_angle": "Episodic, semantic, and preference memory become reusable local agent infrastructure.",
+      "growth_signal": "MCP server topic page showed about 15 stars and an update on 2026-06-02; README emphasizes local privacy, Rust API, Homebrew, and source build.",
+      "runnability": "Homebrew and source build are documented; more library/MCP infra than full app UI; no run audit performed.",
+      "recommended_action": "Compare API boundaries with supermemory, mem0, and local memory options."
+    },
+    {
+      "rank": 8,
+      "full_name": "AgentStaqAI/agentgate",
+      "url": "https://github.com/AgentStaqAI/agentgate",
+      "category": "MCP Zero-trust Gateway",
+      "score": 75,
+      "summary": "Zero-trust firewall and protocol bridge for MCP traffic with allowlists, policy interception, audit logs, and human approval.",
+      "audience": "Platform, security, and DevOps teams putting MCP servers behind production agents.",
+      "ai_native_angle": "It governs agent tool calls through authorization, audit, HITL approval, and protocol bridging.",
+      "growth_signal": "mcp-agents topic page lists it as an active 2026 project; README includes Go binary, install script, Homebrew, configuration, and HITL screenshot.",
+      "runnability": "One-liner, Homebrew, and source build are documented; star signal is weak and maintenance cadence needs verification.",
+      "recommended_action": "Keep as an MCP security sample and compare against ToolHive, mcpproxy-go, and MCPJam boundaries."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "20alexl/claude-engram",
+      "url": "https://github.com/20alexl/claude-engram",
+      "category": "Coding Agent Memory",
+      "score": 72,
+      "summary": "Persistent memory and session intelligence for AI coding assistants using hooks and cross-session search.",
+      "audience": "Claude Code and coding-agent users who want automatic mistake, decision, and context memory.",
+      "ai_native_angle": "Session traces become reusable agent memory and prediction signals.",
+      "growth_signal": "Repository appeared in current MCP/agent discovery pass with product-like memory positioning.",
+      "runnability": "Needs follow-up verification of install path, cross-agent support, and hook robustness.",
+      "recommended_action": "Watch and audit if it supports non-Claude agents cleanly."
+    },
+    {
+      "full_name": "chunxiaoxx/nautilus-compass",
+      "url": "https://github.com/chunxiaoxx/nautilus-compass",
+      "category": "Multi-agent Reliability Layer",
+      "score": 71,
+      "summary": "Reliability layer for multi-agent setups using cross-dialog contracts, drift detection, and black-box memory.",
+      "audience": "Builders coordinating multiple agent conversations without a central orchestrator.",
+      "ai_native_angle": "Agent coordination and drift control become explicit runtime infrastructure.",
+      "growth_signal": "Repository surfaced in current multi-agent reliability discovery pass.",
+      "runnability": "Needs verification of CLI/API maturity beyond README positioning.",
+      "recommended_action": "Watch for runnable examples and compare with Shep-style orchestration."
+    },
+    {
+      "full_name": "moiraweave-labs/moiraweave-cli",
+      "url": "https://github.com/moiraweave-labs/moiraweave-cli",
+      "category": "Agent Ops CLI",
+      "score": 68,
+      "summary": "Command-line entry point for MoiraWeave startup, workload templates, runs, agent sessions, and deployment flows.",
+      "audience": "Agent ops and workload deployment experimenters.",
+      "ai_native_angle": "Agent sessions and workload templates are treated as deployable operations.",
+      "growth_signal": "ai-agents topic page listed it in recently updated results with 0 stars and an update on 2026-06-03.",
+      "runnability": "Needs follow-up repo audit; early adoption signal is weak.",
+      "recommended_action": "Keep in low-priority watchlist until docs and examples mature."
+    },
+    {
+      "full_name": "blackwell-systems/knowing",
+      "url": "https://github.com/blackwell-systems/knowing",
+      "category": "Code Graph Context Layer",
+      "score": 81,
+      "summary": "Code graph context engine for AI agents; included in Top but adoption is still early.",
+      "audience": "Coding-agent and platform teams.",
+      "ai_native_angle": "MCP-based code graph retrieval can replace repeated grep/read loops.",
+      "growth_signal": "Strong implementation claims but small public star count.",
+      "runnability": "Runnable paths are documented; needs real smoke test.",
+      "recommended_action": "Run a small test before increasing confidence."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "zebbern/claude-code-guide",
+      "url": "https://github.com/zebbern/claude-code-guide",
+      "skip_reason": "4.2k stars and updated on 2026-06-07, but primarily a Claude Code guide/commands/workflows/skills document collection rather than a runnable product."
+    },
+    {
+      "full_name": "shanraisshan/claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "skip_reason": "Very high star signal but positioned as best-practice/agentic-engineering content, with insufficient runnable product surface."
+    },
+    {
+      "full_name": "thinkwee/AgentsMeetRL",
+      "url": "https://github.com/thinkwee/AgentsMeetRL",
+      "skip_reason": "Agentic RL awesome list and research-resource index, not a product-shaped UI/CLI/API."
+    },
+    {
+      "full_name": "Gudvin82/vibe-coding-protocols",
+      "url": "https://github.com/Gudvin82/vibe-coding-protocols",
+      "skip_reason": "Useful markdown protocols/templates for safer AI-assisted coding, but mostly a template collection rather than a runnable product."
+    }
+  ]
+}

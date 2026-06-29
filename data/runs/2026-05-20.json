@@ -1,0 +1,213 @@
+{
+  "run_date": "2026-05-20",
+  "generated_at": "2026-05-20T11:34:24+08:00",
+  "data_window": "2026-05-18 to 2026-05-20 (GitHub repositories created or pushed in the last 24-72 hours, plus direct README checks)",
+  "source_summary": "GitHub Search API queries for created:>2026-05-17 and pushed:>2026-05-18 across agent, MCP, RAG, workflow, browser agent, and LLM topics; direct GitHub README/raw README checks for install commands, demos, screenshots, docs, Docker/examples, stars, forks, issues, and pushed_at evidence.",
+  "trend_observations": "The strongest signal today is agent infrastructure moving from chat and SDKs into executable surfaces: small-model coding agents, agent commerce skills, personal memory/identity layers, local RAG apps, MCP context compression, physical-device bridges, vulnerability agents, and enterprise AI/MCP gateways.",
+  "assumptions": "Unauthenticated GitHub Search API was used, so star velocity is inferred from current stars plus fresh created_at/pushed_at, not exact 24-hour star deltas. Scores prioritize runnable product surface, clear user workflow, README quality, docs/screenshots/examples, and whether AI is central to the product. Obvious SEO/marketing repositories, pure notes, interview guides, and prompt/skill collections are skipped even if fresh.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-20\n\n数据观察窗口：2026-05-18 to 2026-05-20；生成时间：2026-05-20T11:34:24+08:00。\n\n## Top Projects (10)\n\n### 1. Doorman11991/smallcode\n- GitHub: https://github.com/Doorman11991/smallcode\n- 分类: Local Coding Agent / Small-model Agent Runtime\n- AI Native Product Score: 91/100\n- 做什么: 面向 7B-20B 本地小模型的 terminal-native coding agent，通过预算管理、宽容工具解析、TODO 分解、patch-first 编辑和本地记忆提升小模型可用性。\n- 面向谁: 想用本地 LLM 做 coding agent、重视隐私/成本/离线能力的开发者。\n- AI native 点: 产品核心不是调用大模型，而是围绕小模型缺陷重构 agent loop、工具路由、上下文预算和执行追踪。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 733 stars、42 forks、2026-05-19 pushed。\n- 可运行性判断: README 提供 npm/npx、预编译二进制、一行 install.sh/install.ps1、.env 配置、CLI 命令、Programmatic API 和 trace/eval 命令。\n- 建议动作: 高优先级试跑；用一个中等代码修复任务比较本地 7B/14B 模型与云模型 fallback 的质量差距。\n\n### 2. evilsocket/audit\n- GitHub: https://github.com/evilsocket/audit\n- 分类: Vulnerability Discovery Agent / Security Workflow\n- AI Native Product Score: 88/100\n- 做什么: 把 Cloudflare Project Glasswing 风格的漏洞发现流程打包成 8-stage agent：Recon、Hunt、Validate、Gapfill、Dedupe、Trace、Feedback、Report。\n- 面向谁: 安全研究员、AppSec 团队、需要对真实代码库跑 AI 漏洞发现的工程组织。\n- AI native 点: 多个窄域 agent、故意反驳、reachability gate、反馈循环和 schema-validated 报告构成完整安全产品流程。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 301 stars、40 forks、2026-05-19 pushed。\n- 可运行性判断: README 提供 venv/pip install、audit auth-check/run/status/report、预算和并发控制、live target reproduction、SQLite state/results layout。\n- 建议动作: 用一个可丢弃 VM 跑小型开源目标；重点验证误报率、reachability trace 和成本上限是否可控。\n\n### 3. Shopify/ucp-cli\n- GitHub: https://github.com/Shopify/ucp-cli\n- 分类: Agent Commerce Skill / Protocol CLI\n- AI Native Product Score: 86/100\n- 做什么: Universal Commerce Protocol 的 shopping skill CLI，让 agent 搜索商品、建购物车、进入 checkout、处理升级/handoff、追踪订单。\n- 面向谁: 构建购物 agent、商业助手、merchant/commerce agent integration 的团队。\n- AI native 点: CLI 输出全结构化 JSON，命令带 schema introspection、agent skill 包和 escalation hook，让 agent 可以按商家实时 schema 操作交易流程。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 16 stars、2 forks、2026-05-19 pushed；owner 为 Shopify，产品域信号强。\n- 可运行性判断: README 提供 npm install -g、ucp skills add、profile init、catalog/cart/checkout/order 命令和开发 pnpm build/test/lint/typecheck。\n- 建议动作: 重点 watch；如果做购物/交易 agent，应跟踪 UCP merchant 覆盖和 Catalog JWT 获取门槛。\n\n### 4. cosmicflow-space/mnemos\n- GitHub: https://github.com/cosmicflow-space/mnemos\n- 分类: Local-first Personal RAG / Knowledge App\n- AI Native Product Score: 85/100\n- 做什么: 本地优先 personal RAG：拖入文件夹、扫描/过滤/本地 embeddings、聊天时返回带引用的答案，并记录审计日志。\n- 面向谁: 需要本地知识库问答、个人资料不想出机器的研究者、写作者和开发者。\n- AI native 点: 把隐私分层、源文件安全过滤、provider 自动检测、引用回答和审计日志整成单用户 RAG 产品。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 9 stars、2026-05-19 pushed；README 有 demo gif 与多张 UI 截图。\n- 可运行性判断: README 提供 node setup.mjs、Docker compose、pnpm dev；默认 127.0.0.1:3030 UI，含 agent/sources/chat 流程。\n- 建议动作: 放入可试用清单；用真实文档目录检查引用质量、排除规则和本地默认链路是否如 README 描述。\n\n### 5. Patdolitse/engram\n- GitHub: https://github.com/Patdolitse/engram\n- 分类: Cross-tool AI Memory / MCP Identity Layer\n- AI Native Product Score: 84/100\n- 做什么: 本地 MCP server，把用户身份、偏好、经验教训、决策记录存为 JSON/Markdown，供 Claude Code、Codex、Cursor 等工具共享。\n- 面向谁: 长期使用多个 AI coding tools、需要跨会话/跨工具保持个人工作偏好的开发者。\n- AI native 点: 不是记住一次任务，而是把“用户是谁、怎么工作、哪些经验要继承”做成可被 AI 工具读取的身份层。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 35 stars、2026-05-19 pushed；topics 覆盖 codex、claude-code、cursor、MCP。\n- 可运行性判断: README 提供 pip install piia-engram、python demos/setup_engram.py、MCP 配置、37 个工具、审计和可选字段加密说明。\n- 建议动作: 与 claude-mem/其他 session memory 分开评估；重点看安全边界、数据模型和实际召回污染。\n\n### 6. GlitterKill/sdl-mcp\n- GitHub: https://github.com/GlitterKill/sdl-mcp\n- 分类: MCP Code Context / Symbol Graph for Agents\n- AI Native Product Score: 83/100\n- 做什么: 把代码库索引成 symbol graph，通过 MCP/CLI/HTTP/API 给 coding agent 提供按需代码上下文，而不是整文件塞上下文。\n- 面向谁: 让 Claude Code、Codex、Cursor、Windsurf 等 agent 在大型代码库里更省 token、更稳定找上下文的团队。\n- AI native 点: 产品围绕 agent context retrieval、四级上下文升级、token savings meter、blast radius 和治理策略设计。\n- 增长/活跃信号: 2026-02 创建但 2026-05-20 pushed；GitHub API 显示 303 stars、21 forks、3 issues。\n- 可运行性判断: README 提供 npm install -g sdl-mcp、init -y --auto-index、serve --stdio；文档覆盖 MCP tools、CLI、配置、agent workflows 和 graph UI。\n- 建议动作: 进入 coding-agent context 横评；用同一 repo 对比 rg/read_file 与 SDL-MCP 的 token 和准确率。\n\n### 7. device-context-protocol/dcp\n- GitHub: https://github.com/device-context-protocol/dcp\n- 分类: Physical Device Agent Protocol / MCP Bridge\n- AI Native Product Score: 80/100\n- 做什么: Device Context Protocol，把 LLM agent 的 intent-level 工具调用安全桥接到 ESP32/MCU 等物理设备，并提供 MCP wrapper。\n- 面向谁: 机器人、IoT、硬件自动化和需要让 agent 控制设备的工程团队。\n- AI native 点: 让 MCP host 用能力约束、单位、range/type 校验和 capability token 调用物理设备，减少 hallucinated device call 风险。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 24 stars、2026-05-19 pushed；README 声称 ESP32 实机 UART validation 和 PyPI release。\n- 可运行性判断: README 提供 pip install pydcp[mcp,serial]、dcp inspect/serve --simulator、MCP config、ESP32 examples、pytest。\n- 建议动作: Watch-to-test；优先跑 simulator，再决定是否接硬件验证。\n\n### 8. ThinkWatchProject/ThinkWatch\n- GitHub: https://github.com/ThinkWatchProject/ThinkWatch\n- 分类: Enterprise AI Gateway / MCP Security Control Plane\n- AI Native Product Score: 79/100\n- 做什么: 企业级 AI secure gateway，统一代理 OpenAI/Anthropic/Gemini/Azure/Bedrock API 和 MCP tool invocation，提供 RBAC、审计、限流、成本追踪和控制台。\n- 面向谁: 需要治理公司内 AI API/MCP 使用的安全、平台和 DevEx 团队。\n- AI native 点: 把模型请求和 MCP 工具调用当成企业访问面统一治理，类似 AI 时代的 bastion host。\n- 增长/活跃信号: 2026-04 创建但 2026-05-20 pushed；GitHub API 显示 932 stars、19 forks。\n- 可运行性判断: README 提供 make infra、make dev-backend、web pnpm dev、setup wizard、Docker/K8s/Helm/docs；技术栈完整。\n- 建议动作: 放入 enterprise AI governance watch；先本地验证 gateway 兼容 Claude Code/Cursor 和 MCP allowlist。\n\n### 9. vm0-ai/vm0\n- GitHub: https://github.com/vm0-ai/vm0\n- 分类: AI Teammate / Tool-Orchestrating Agent Platform\n- AI Native Product Score: 78/100\n- 做什么: Zero 是 Slack/web 中可 @mention 的 AI teammate，连接 100+ 工具处理 reports、triage、outreach、research、error scan、release notes 等工作。\n- 面向谁: 需要跨 Slack/GitHub/Gmail/Calendar/Linear/Sentry 等工具自动执行日常运营和工程任务的团队。\n- AI native 点: 记忆、定时任务、sub-agents、身份解析、工具编排和 Firecracker sandbox 是产品主干。\n- 增长/活跃信号: 2025-11 创建但 2026-05-20 pushed；GitHub API 显示 1,112 stars、62 forks、96 issues，README 含 Trendshift badge。\n- 可运行性判断: README 强产品化但本地 quickstart 不如其他项目直接；仓库为 monorepo，强调 self-host/security/100+ integrations。\n- 建议动作: 作为“AI teammate + sandbox + integrations”方向观察；若要试用先找 self-host docs 和最小 connector path。\n\n### 10. wdnmd1265/ai-flow-architect\n- GitHub: https://github.com/wdnmd1265/ai-flow-architect\n- 分类: Multi-model Workflow / Quality Arbitration\n- AI Native Product Score: 74/100\n- 做什么: 固定的 dual-brain workflow：一个模型规划，一个 opponent/reviewer 挑战，用户批准后再由专家团队执行，并由第二模型仲裁质量。\n- 面向谁: 想要可审计 AI 方案设计/代码生成，而不是单模型一次性输出的开发者和小团队。\n- AI native 点: 把 disagreement、model diversity、approval gate、field filtering 和成本控制做成工作流主结构。\n- 增长/活跃信号: 2026-05-18 创建；GitHub API 显示 4 stars、2026-05-19 pushed；README 显示 114 unit tests。\n- 可运行性判断: README 提供 pip install -e、pytest tests/unit、examples/basic_usage.py；但 roadmap 明确 CLI/PyPI/Web UI 尚未完成，专家执行层部分仍 mock。\n- 建议动作: Watchlist 边界项目；等真实 LLM expert execution 和 CLI 后再升级。\n\n## Watchlist (4)\n\n- tailcallhq/forgecode (https://github.com/tailcallhq/forgecode)\n  - 分类: Coding Agent / Terminal Development Environment\n  - Score: 73\n  - 摘要: 成熟 terminal coding agent，2026-05-20 pushed，约 7.3k stars；产品面完整但不是本轮新发现，coding-agent 赛道也已拥挤。\n  - 建议动作: 做 coding agent 基线，不作为今日新锐 Top。\n\n- hypothesi/mcp-server-tauri (https://github.com/hypothesi/mcp-server-tauri)\n  - 分类: MCP Server / Tauri Automation\n  - Score: 70\n  - 摘要: Tauri v2 MCP server/plugin，2026-05-20 pushed，约 210 stars；更像垂直 MCP adapter。\n  - 建议动作: 如果关注 app automation / desktop dev agent，再单独验证。\n\n- NikitaHerndlhofer/superwhisper-rag (https://github.com/NikitaHerndlhofer/superwhisper-rag)\n  - 分类: Voice Notes RAG / macOS Knowledge Tool\n  - Score: 68\n  - 摘要: superwhisper + local vector/RAG 方向新项目，stars 低但场景清楚。\n  - 建议动作: 等 README/安装流程/截图更完整。\n\n- ogubuikeAlex/orra-rag-agent (https://github.com/ogubuikeAlex/orra-rag-agent)\n  - 分类: Enterprise Hybrid RAG Agent\n  - Score: 66\n  - 摘要: RAGAS-evaluated hybrid RAG agent，新但产品面和用户场景仍需进一步确认。\n  - 建议动作: 后续观察是否补齐 demo、deployment 和 UI/API。\n\n## Skip Reasons\n- AbhishekK130804/Claude-Mythos-AI-Anthropic-App (https://github.com/AbhishekK130804/Claude-Mythos-AI-Anthropic-App): 描述明显关键词堆砌，包含 download/free/jailbreak/reverse proxy 等营销/SEO 信号，虽然 stars 高但可信产品面弱。\n- SihaoLiu/vibe-agentic-interview-notes (https://github.com/SihaoLiu/vibe-agentic-interview-notes): 内容/观点笔记，不是可运行 AI Native Product。\n- ather-techie/rag-interview-questions (https://github.com/ather-techie/rag-interview-questions): RAG 面试资料/学习内容，不是产品或工具。\n- ayush016/android-lead-agent-skills (https://github.com/ayush016/android-lead-agent-skills): skill/prompt collection，适合参考，不符合本雷达优先的可运行产品标准。\n\n## 今日趋势观察\n- 新项目开始明显围绕“agent 可执行性”补短板：小模型 coding agent、漏洞发现流水线、commerce skill、设备控制协议都不是单纯 chat UI。\n- 个人 AI 基础设施继续升温：Engram 管身份/偏好，Mnemos 管本地知识，说明 memory/RAG 正从框架层走向个人工具层。\n- MCP 正在分化为三个方向：上下文压缩（SDL-MCP）、垂直能力桥（DCP/Tauri）、企业治理网关（ThinkWatch）。\n- 许多新仓库仍有 SEO 化、prompt collection 化倾向；今日筛选重点压低了“关键词很多但运行闭环弱”的项目。\n\n## 关键假设\n- GitHub stars/forks/issues/pushed_at 来自未认证 GitHub Search API 和仓库 README 检查；未使用付费趋势数据或精确 star delta。\n- 排名不是绝对技术质量，而是今天窗口内的 AI Native Product 信号强度。\n- 对硬件/安全类项目未实际执行外部目标或硬件测试；可运行性以 README 命令、仓库结构和测试/示例证据判断。",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Doorman11991/smallcode",
+      "url": "https://github.com/Doorman11991/smallcode",
+      "category": "Local Coding Agent / Small-model Agent Runtime",
+      "score": 91,
+      "summary": "Terminal-native coding agent optimized for local 7B-20B models using budgeted context, forgiving tool parsing, TODO decomposition, patch-first editing, traces, and local memory.",
+      "audience": "Developers who want private, low-cost, local coding agents instead of relying only on frontier cloud models.",
+      "ai_native_angle": "The agent loop is designed around small-model weaknesses: context budgeting, parser repair, tool routing, decomposition, fallback escalation, and observability.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 733 stars, 42 forks, and pushed_at 2026-05-19T21:38:44Z.",
+      "runnability": "README includes npm/npx install, prebuilt binaries, one-line install scripts, env configuration, CLI commands, programmatic API, traces, evals, and model profiles.",
+      "recommended_action": "Try on a medium code-fix task and compare local 7B/14B quality against optional cloud fallback."
+    },
+    {
+      "rank": 2,
+      "full_name": "evilsocket/audit",
+      "url": "https://github.com/evilsocket/audit",
+      "category": "Vulnerability Discovery Agent / Security Workflow",
+      "score": 88,
+      "summary": "Runnable 8-stage vulnerability-discovery agent inspired by Cloudflare Project Glasswing, with recon, hunt, validate, trace, feedback, and reporting stages.",
+      "audience": "Security researchers, AppSec teams, and engineering orgs testing AI-assisted vulnerability discovery on real codebases.",
+      "ai_native_angle": "Uses many narrow agents, deliberate disagreement, reachability gates, feedback loops, schemas, and cost controls as the core product workflow.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 301 stars, 40 forks, and pushed_at 2026-05-19T12:01:54Z.",
+      "runnability": "README includes venv/pip install, audit auth-check/run/status/report, concurrency and budget flags, live-target reproduction, SQLite state, prompts, schemas, and results layout.",
+      "recommended_action": "Run inside a disposable VM on a small target and inspect false positives, reachability traces, and budget behavior."
+    },
+    {
+      "rank": 3,
+      "full_name": "Shopify/ucp-cli",
+      "url": "https://github.com/Shopify/ucp-cli",
+      "category": "Agent Commerce Skill / Protocol CLI",
+      "score": 86,
+      "summary": "A Universal Commerce Protocol CLI and agent skill for product search, cart creation, checkout, escalation handoff, and order tracking.",
+      "audience": "Teams building shopping agents, commerce assistants, and merchant integrations.",
+      "ai_native_angle": "Agent-first structured JSON I/O, schema introspection, bundled skill instructions, views, and escalation hooks let agents transact against live merchant schemas.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 16 stars, 2 forks, and pushed_at 2026-05-19T13:55:19Z; Shopify ownership is a strong ecosystem signal.",
+      "runnability": "README includes npm install -g, ucp skills add, profile init, catalog/cart/checkout/order examples, pnpm build/test/lint/typecheck.",
+      "recommended_action": "Watch closely if building commerce agents; validate merchant coverage and Catalog JWT requirements."
+    },
+    {
+      "rank": 4,
+      "full_name": "cosmicflow-space/mnemos",
+      "url": "https://github.com/cosmicflow-space/mnemos",
+      "category": "Local-first Personal RAG / Knowledge App",
+      "score": 85,
+      "summary": "Local-first personal RAG app: drop a folder, ingest locally, chat with citations, and audit query/provider activity.",
+      "audience": "Researchers, writers, and developers who need private local knowledge-base QA.",
+      "ai_native_angle": "Combines local embeddings, provider tiers, source safety filters, credential detection, cited answers, and audit trails into a complete single-user RAG product.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
+      "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
+      "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+    },
+    {
+      "rank": 5,
+      "full_name": "Patdolitse/engram",
+      "url": "https://github.com/Patdolitse/engram",
+      "category": "Cross-tool AI Memory / MCP Identity Layer",
+      "score": 84,
+      "summary": "Local MCP server that stores identity, preferences, lessons, decisions, and project context as JSON/Markdown for Claude Code, Codex, Cursor, and other tools.",
+      "audience": "Developers using multiple AI coding tools who want stable personal context across sessions and products.",
+      "ai_native_angle": "Turns user identity and collaboration memory into a shared local context layer exposed through MCP and fallback identity-card exports.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 35 stars and pushed_at 2026-05-19T12:56:16Z; topics include codex, claude-code, cursor, and MCP.",
+      "runnability": "README includes pip install piia-engram, setup demo, MCP config, 37 tools, local storage layout, audit logging, and optional field encryption.",
+      "recommended_action": "Evaluate separately from session-memory tools; focus on data model, access boundaries, and recall pollution."
+    },
+    {
+      "rank": 6,
+      "full_name": "GlitterKill/sdl-mcp",
+      "url": "https://github.com/GlitterKill/sdl-mcp",
+      "category": "MCP Code Context / Symbol Graph for Agents",
+      "score": 83,
+      "summary": "Indexes a codebase into a symbol graph and serves compact, task-shaped context to coding agents through MCP, CLI, HTTP, and a graph UI.",
+      "audience": "Teams using Claude Code, Codex, Cursor, Windsurf, Gemini, or similar agents on larger codebases.",
+      "ai_native_angle": "Designed around agent context retrieval, controlled context escalation, token-savings measurement, semantic graph slices, blast radius, and governance.",
+      "growth_signal": "Created 2026-02 but pushed 2026-05-20; GitHub API showed 303 stars, 21 forks, and 3 open issues.",
+      "runnability": "README includes npm install -g sdl-mcp, init -y --auto-index, serve --stdio, MCP tool docs, CLI reference, configuration, agent workflows, and graph UI docs.",
+      "recommended_action": "Benchmark against plain ripgrep/read_file on one real repo for token use and answer quality."
+    },
+    {
+      "rank": 7,
+      "full_name": "device-context-protocol/dcp",
+      "url": "https://github.com/device-context-protocol/dcp",
+      "category": "Physical Device Agent Protocol / MCP Bridge",
+      "score": 80,
+      "summary": "A compact Device Context Protocol and MCP bridge for safely exposing intent-level physical-device controls to LLM agents.",
+      "audience": "Robotics, IoT, embedded, and hardware automation teams.",
+      "ai_native_angle": "Moves safety from prompts into protocol-level units, ranges, capability tokens, manifests, dry-run, and a bridge that blocks invalid device calls.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 24 stars and pushed_at 2026-05-19T11:15:00Z; README cites ESP32 hardware validation and PyPI release.",
+      "runnability": "README includes pip install pydcp[mcp,serial], dcp inspect/serve --simulator, MCP config, ESP32 examples, UART/MQTT/BLE paths, and pytest.",
+      "recommended_action": "Run simulator first, then decide whether hardware validation is worth a bench test."
+    },
+    {
+      "rank": 8,
+      "full_name": "ThinkWatchProject/ThinkWatch",
+      "url": "https://github.com/ThinkWatchProject/ThinkWatch",
+      "category": "Enterprise AI Gateway / MCP Security Control Plane",
+      "score": 79,
+      "summary": "Enterprise secure gateway for AI API calls and MCP tool invocations with RBAC, audit logs, rate limits, budgets, cost tracking, and a management UI.",
+      "audience": "Security, platform, and DevEx teams governing organizational AI and MCP usage.",
+      "ai_native_angle": "Treats model requests and MCP tool calls as a governed enterprise access surface similar to a bastion host.",
+      "growth_signal": "Created 2026-04 and pushed 2026-05-20; GitHub API showed 932 stars and 19 forks.",
+      "runnability": "README includes make infra, make dev-backend, web pnpm dev, setup wizard, Docker/Kubernetes/Helm, docs, and a full Rust/React/Postgres/Redis stack.",
+      "recommended_action": "Validate locally as an AI/MCP gateway for Claude Code/Cursor compatibility and MCP allowlists."
+    },
+    {
+      "rank": 9,
+      "full_name": "vm0-ai/vm0",
+      "url": "https://github.com/vm0-ai/vm0",
+      "category": "AI Teammate / Tool-Orchestrating Agent Platform",
+      "score": 78,
+      "summary": "Zero is a Slack/web AI teammate that connects to 100+ tools and handles reports, triage, outreach, research, error scanning, release notes, and recurring workflows.",
+      "audience": "Teams that want AI agents to execute cross-tool operational and engineering work.",
+      "ai_native_angle": "Memory, scheduled intelligence, specialized sub-agents, identity resolution, tool orchestration, and Firecracker sandboxing are core product primitives.",
+      "growth_signal": "Created 2025-11 but pushed 2026-05-20; GitHub API showed 1,112 stars, 62 forks, and 96 open issues.",
+      "runnability": "README is product-rich and points to many use cases/security pages, but local self-host quickstart is less direct than the top new projects.",
+      "recommended_action": "Watch the AI teammate + sandbox direction; find the minimal self-host path before deeper evaluation."
+    },
+    {
+      "rank": 10,
+      "full_name": "wdnmd1265/ai-flow-architect",
+      "url": "https://github.com/wdnmd1265/ai-flow-architect",
+      "category": "Multi-model Workflow / Quality Arbitration",
+      "score": 74,
+      "summary": "A fixed dual-brain AI workflow where one model plans, opponent perspectives challenge, the user approves, experts execute, and another model arbitrates quality.",
+      "audience": "Developers and small teams seeking more auditable AI design/code-generation outputs than a single-model answer.",
+      "ai_native_angle": "Productizes disagreement, model diversity, approval gates, session isolation, field filtering, and cost controls as the workflow itself.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 4 stars and pushed_at 2026-05-19T13:53:08Z; README reports 114 unit tests.",
+      "runnability": "README includes pip install -e, pytest tests/unit, examples/basic_usage.py, docs, and provider config, but roadmap says CLI/PyPI/Web UI and real expert execution are still pending.",
+      "recommended_action": "Keep at watchlist boundary until real LLM expert execution and CLI land."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "tailcallhq/forgecode",
+      "url": "https://github.com/tailcallhq/forgecode",
+      "category": "Coding Agent / Terminal Development Environment",
+      "score": 73,
+      "summary": "Mature terminal coding agent with TUI, one-shot CLI, shell plugin, MCP, semantic search, and provider login; active on 2026-05-20.",
+      "audience": "Developers comparing open-source coding agents.",
+      "ai_native_angle": "Full terminal development environment around agentic coding workflows.",
+      "growth_signal": "GitHub API showed about 7.3k stars, 1.4k forks, and pushed_at 2026-05-20T03:29:38Z.",
+      "runnability": "README has curl installer, provider login, TUI/CLI/zsh usage, MCP configuration, and docs.",
+      "recommended_action": "Use as a coding-agent baseline rather than today's new project signal."
+    },
+    {
+      "full_name": "hypothesi/mcp-server-tauri",
+      "url": "https://github.com/hypothesi/mcp-server-tauri",
+      "category": "MCP Server / Tauri Automation",
+      "score": 70,
+      "summary": "Model Context Protocol server and plugin for Tauri v2 development.",
+      "audience": "Developers building desktop apps with Tauri and agent-assisted automation.",
+      "ai_native_angle": "Vertical MCP adapter for app/dev automation.",
+      "growth_signal": "GitHub API showed 210 stars, 27 forks, and pushed_at 2026-05-20T03:27:25Z.",
+      "runnability": "Appears packaged with docs/site, but not broad enough for Top.",
+      "recommended_action": "Validate only if desktop/Tauri automation is a current focus."
+    },
+    {
+      "full_name": "NikitaHerndlhofer/superwhisper-rag",
+      "url": "https://github.com/NikitaHerndlhofer/superwhisper-rag",
+      "category": "Voice Notes RAG / macOS Knowledge Tool",
+      "score": 68,
+      "summary": "Early project around Superwhisper, Ollama, SQLite, and vector search for voice-note RAG.",
+      "audience": "Mac users turning dictated notes into a searchable local knowledge base.",
+      "ai_native_angle": "Voice capture plus local RAG could become a useful personal assistant workflow.",
+      "growth_signal": "Created 2026-05-18; GitHub API showed 4 stars and pushed_at 2026-05-19T14:33:50Z.",
+      "runnability": "README/install evidence needs more confirmation.",
+      "recommended_action": "Wait for clearer docs, screenshots, and setup path."
+    },
+    {
+      "full_name": "ogubuikeAlex/orra-rag-agent",
+      "url": "https://github.com/ogubuikeAlex/orra-rag-agent",
+      "category": "Enterprise Hybrid RAG Agent",
+      "score": 66,
+      "summary": "RAGAS-evaluated enterprise hybrid RAG agent built for Orra.",
+      "audience": "Teams exploring evaluated hybrid RAG agents.",
+      "ai_native_angle": "Combines RAG agent behavior with evaluation framing.",
+      "growth_signal": "Created during the observation window and surfaced in RAG search.",
+      "runnability": "Needs stronger demo, deployment, UI/API, and documentation evidence.",
+      "recommended_action": "Observe for productization before promoting."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "AbhishekK130804/Claude-Mythos-AI-Anthropic-App",
+      "url": "https://github.com/AbhishekK130804/Claude-Mythos-AI-Anthropic-App",
+      "skip_reason": "Description shows heavy SEO/marketing keyword stuffing including download/free/jailbreak/reverse-proxy terms; credible runnable product surface is weak despite stars."
+    },
+    {
+      "full_name": "SihaoLiu/vibe-agentic-interview-notes",
+      "url": "https://github.com/SihaoLiu/vibe-agentic-interview-notes",
+      "skip_reason": "Opinion/notes repository about AI-era interviews, not a runnable AI Native Product."
+    },
+    {
+      "full_name": "ather-techie/rag-interview-questions",
+      "url": "https://github.com/ather-techie/rag-interview-questions",
+      "skip_reason": "Interview-preparation content for RAG concepts, not a product, UI, CLI, API, or workflow tool."
+    },
+    {
+      "full_name": "ayush016/android-lead-agent-skills",
+      "url": "https://github.com/ayush016/android-lead-agent-skills",
+      "skip_reason": "Skill/prompt collection for Android lead engineers; useful reference material but below product-shaped threshold."
+    }
+  ]
+}

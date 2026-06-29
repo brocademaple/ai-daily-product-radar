@@ -1,0 +1,208 @@
+{
+  "run_date": "2026-05-19",
+  "generated_at": "2026-05-19T10:37:10+08:00",
+  "data_window": "2026-05-16 to 2026-05-19 (GitHub recently visible activity, newly surfaced repositories, and current README/release evidence)",
+  "source_summary": "GitHub repository pages and READMEs were checked directly for stars, commits, issues/PRs, folders, quickstarts, demos, Docker/examples, and product surface. Web search was used for discovery because unauthenticated GitHub API deltas were not available in this run.",
+  "trend_observations": "Today shows a sharp move from generic agents toward agent operating layers: cross-agent memory, session capture, browser/desktop tool surfaces, markdown-native orchestration, and security gates for MCP-connected execution.",
+  "assumptions": "Scores favor runnable UI/CLI/API, clear user workflow, docs/install quality, active repository surface, and whether AI is central to the product path. GitHub visible stars/commits/issues are treated as current visibility signals, not exact 24-hour deltas. Repositories from the previous run were avoided unless they represented a distinct new signal.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-05-19\n\n数据观察窗口：2026-05-16 to 2026-05-19；生成时间：2026-05-19T10:37:10+08:00。\n\n## Top Projects (10)\n\n### 1. NousResearch/hermes-agent\n- GitHub: https://github.com/NousResearch/hermes-agent\n- 分类: Self-improving Agent / CLI + Messaging Gateway\n- AI Native Product Score: 92/100\n- 做什么: 自带学习循环的通用 agent，支持 CLI/TUI、消息网关、定时任务、记忆搜索、技能生成和多模型切换。\n- 面向谁: 需要长期运行个人/团队 agent 的研究者、开发者和自动化团队。\n- AI native 点: 记忆、技能、自我改进、跨会话连续性和多终端执行环境是产品主干，不只是功能点。\n- 增长/活跃信号: GitHub 页面显示约 156k stars、25.2k forks、8,767 commits、4.2k issues、5k+ PRs。\n- 可运行性判断: README 提供 Linux/macOS/WSL/Termux 一行安装、Windows PowerShell 安装、CLI 命令、gateway、tools/model 配置；仓库含 docker、docs、plugins、skills、web、tests。\n- 建议动作: 作为“长期自主 agent OS”高优先级试跑；重点看记忆写入边界、技能自改机制和远程执行安全。\n\n### 2. HKUDS/CLI-Anything\n- GitHub: https://github.com/HKUDS/CLI-Anything\n- 分类: Agent-native CLI Harness / Tool Runtime\n- AI Native Product Score: 89/100\n- 做什么: 把复杂软件和服务包装成 agent 可用的 CLI harness/skill，让 agent 操作 Blender、浏览器、GIS、媒体工具等外部软件。\n- 面向谁: 需要让 coding/automation agent 稳定调用图形软件、专业工具和网站的工程团队。\n- AI native 点: 目标不是给人写 CLI，而是把“所有软件 agent-ready”作为运行层抽象。\n- 增长/活跃信号: GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。\n- 可运行性判断: README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。\n- 建议动作: 放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。\n\n### 3. jackwener/OpenCLI\n- GitHub: https://github.com/jackwener/OpenCLI\n- 分类: Browser Agent Runtime / CLI Hub\n- AI Native Product Score: 87/100\n- 做什么: 把网站、登录态浏览器、Electron app 和本地二进制封装成统一 CLI，让 AI agent 用确定性命令操作真实工具。\n- 面向谁: 需要自动化网页操作、私有登录态任务和桌面应用控制的 agent 开发者。\n- AI native 点: 为 Claude Code、Cursor 等 agent 提供 browser skill、adapter authoring、DOM 快照、点击/填写/抽取等低层操作面。\n- 增长/活跃信号: GitHub 页面显示约 21.7k stars、2.2k forks、1,227 commits、36 issues、60 PRs。\n- 可运行性判断: README 提供 npm 全局安装、Chrome extension、`opencli doctor`、browser/profile/list 等命令，以及 skills 安装方式。\n- 建议动作: 试做一个需要登录态的网站任务，比较它和 Playwright/MCP/browser-use 的稳定性和可审计性。\n\n### 4. thedotmack/claude-mem\n- GitHub: https://github.com/thedotmack/claude-mem\n- 分类: Cross-agent Memory / Session Continuity\n- AI Native Product Score: 86/100\n- 做什么: 捕获 agent 会话，压缩成长期上下文，并在未来会话中注入相关记忆；覆盖 Claude Code、Codex、Gemini、Copilot、OpenCode 等。\n- 面向谁: 长期使用 coding agents、希望跨工具保留项目上下文和决策记录的开发者。\n- AI native 点: 把 agent 会话本身当成可索引、可召回、可注入的产品数据层。\n- 增长/活跃信号: GitHub 页面显示约 76.6k stars、6.6k forks、1,899 commits、82 issues、44 PRs。\n- 可运行性判断: 仓库含 `.codex-plugin`、`.claude-plugin`、docker、docs、plugin、ragtime、tests、transcript-watch 示例。\n- 建议动作: 重点试一次真实项目的多日任务；关注隐私、压缩质量、召回污染和跨 agent 格式兼容。\n\n### 5. entireio/cli\n- GitHub: https://github.com/entireio/cli\n- 分类: Agent Session Capture / Git Workflow\n- AI Native Product Score: 84/100\n- 做什么: 挂进 Git 工作流，捕获 AI agent 会话，把 checkpoint 和 commits 索引到一起，形成“代码为何这样写”的可搜索记录。\n- 面向谁: 使用多个 coding agents 的工程团队、代码审查者和需要可追溯 AI 开发过程的组织。\n- AI native 点: 不是写代码 agent，而是给 agent 产出的工程过程补上 session provenance、rewind、explain、resume。\n- 增长/活跃信号: GitHub 页面显示约 4.3k stars、335 forks、4,367 commits、65 issues、67 PRs。\n- 可运行性判断: README 命令参考包含 `entire enable`、`entire checkpoint explain/rewind/search`、`entire session resume/attach`、`entire agent`；仓库含 `.codex`、`.claude`、`.gemini`、`.opencode` 集成目录。\n- 建议动作: 与团队现有 git hook/PR review 流程做小规模试点，看是否能降低 agent 产出审查成本。\n\n### 6. massgen/MassGen\n- GitHub: https://github.com/massgen/MassGen\n- 分类: Multi-agent Terminal Orchestrator\n- AI Native Product Score: 82/100\n- 做什么: 终端中的多 agent scaling 系统，编排多个 frontier model/agent 协作、推理、产出结果。\n- 面向谁: 需要多模型互评、多 agent 规划/写作/代码任务的高级用户和研发团队。\n- AI native 点: 把“多个 agent 并行协作”产品化成 TUI/CLI workflow，并支持作为技能接入其他 coding agent。\n- 增长/活跃信号: GitHub 页面显示约 1k stars、160 forks、3,882 commits、1 issue、2 PRs。\n- 可运行性判断: README 提供 `pip install massgen`、`uv run massgen --setup`、`uv run massgen --quickstart`，可选择 1-5 个 agent、模型后端和 Docker 执行模式。\n- 建议动作: 用同一复杂任务对比单 agent 与 MassGen 的成本/质量/延迟，重点观察冲突消解机制。\n\n### 7. sattyamjjain/agent-audit-kit\n- GitHub: https://github.com/sattyamjjain/agent-audit-kit\n- 分类: Agent Security Scanner / GitHub Action + CLI\n- AI Native Product Score: 79/100\n- 做什么: 面向 MCP-connected AI agent pipeline 的静态扫描器，覆盖 194 条规则、11 类风险、多个合规框架、SARIF 和 GitHub Action。\n- 面向谁: 正在把 agent 接入 MCP、CI/CD、工具调用和生产环境的安全/平台团队。\n- AI native 点: 直接把 agentic workflow 的配置、MCP 风险、hook 外传、权限问题纳入安全扫描。\n- 增长/活跃信号: GitHub 页面显示约 111 commits、21 issues、2 PRs；虽然 stars 低，但产品形态和风险主题非常贴近当前 MCP 安全缺口。\n- 可运行性判断: README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。\n- 建议动作: 进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。\n\n### 8. mvar-security/mvar\n- GitHub: https://github.com/mvar-security/mvar\n- 分类: Agent Runtime Security / Execution Firewall\n- AI Native Product Score: 78/100\n- 做什么: 为 LLM agent runtime 提供确定性执行防火墙，使用信息流控制和 provenance 约束高权限工具调用。\n- 面向谁: 构建可执行 shell/API/文件/凭据操作 agent 的平台与安全团队。\n- AI native 点: 不靠 prompt filter 或 LLM judge，而是在执行 sink 处做策略拦截，是 agent runtime 治理方向。\n- 增长/活跃信号: GitHub 页面显示约 172 commits、3 issues、4 PRs；stars 很低但文档、proof、demo、adapter、threat model 齐全。\n- 可运行性判断: README 提供 `pip install mvar-security`、30-second proof、quickstart、Claude Code production-ready adapter、tests 和 proof scripts。\n- 建议动作: 作为早期安全基础设施观察；优先验证是否能嵌入 Claude Code / OpenAI Agents / MCP 工具链。\n\n### 9. charannyk06/conductor-oss\n- GitHub: https://github.com/charannyk06/conductor-oss\n- 分类: Coding Agent Orchestrator / Local Dashboard\n- AI Native Product Score: 77/100\n- 做什么: 本地优先的 AI coding agent 编排层，用 dashboard 管理 repo/workspace、git worktrees、真实 terminal、diff、preview、retry 和 reviewer feedback。\n- 面向谁: 同时运行 Claude Code、Codex、Gemini 等 coding CLI 的个人和团队。\n- AI native 点: 把 Markdown/kanban/task board 变成 agent 任务编排界面，输出 PR 和更新 board 状态。\n- 增长/活跃信号: GitHub 页面显示约 30 stars、3 forks、1,238 commits、2 issues、8 PRs；早期但工程量和产品面完整。\n- 可运行性判断: 仓库含 install.sh、docker-compose、desktop/dashboard 相关 packages、runtime-sidecar、docs、tests、security review。\n- 建议动作: 放 Watch-to-try 边界；如果本地多 agent 协作是重点，可以先跑 demo dashboard。\n\n### 10. firecrawl/open-lovable\n- GitHub: https://github.com/firecrawl/open-lovable\n- 分类: AI App Builder / Website-to-React\n- AI Native Product Score: 75/100\n- 做什么: 用聊天把任意网站克隆/重建成现代 React app 的示例应用。\n- 面向谁: 需要快速生成前端原型、复刻页面结构、测试 Firecrawl+LLM app builder 的开发者。\n- AI native 点: 把 web extraction、LLM 生成和 React 项目生成连成可运行产品流程。\n- 增长/活跃信号: GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。\n- 可运行性判断: README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。\n- 建议动作: 作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。\n\n## Watchlist (4)\n\n- Fosowl/agenticSeek (https://github.com/Fosowl/agenticSeek)\n  - 分类: Local Autonomous Agent\n  - Score: 73\n  - 摘要: 本地 agent，覆盖浏览、代码和本地/云模型 provider；GitHub 页面显示约 26.4k stars、944 commits。\n  - 建议动作: 等待本轮外更强 release/产品信号；适合进入 local agent 基线观察。\n\n- holaboss-ai/holaOS (https://github.com/holaboss-ai/holaOS)\n  - 分类: Agent Workspace OS\n  - Score: 72\n  - 摘要: 把重复工作转成运行中的 AI work-stream，含 desktop、runtime、SDK、docs 和一行安装；GitHub 页面显示约 5.6k stars、548 commits。\n  - 建议动作: 关注 workspace/memory/continuity 模型是否形成可复用 agent OS 形态。\n\n- mvar-security/clawzero (https://github.com/mvar-security/clawzero)\n  - 分类: Agent Execution Firewall\n  - Score: 70\n  - 摘要: 与 MVAR 配套的执行防火墙方向，适合观察 agent runtime security 是否从 demo 走向真实集成。\n  - 建议动作: 等更多 adapter 与独立用户案例后再提升到 Top。\n\n- NirDiamant/agents-towards-production (https://github.com/NirDiamant/agents-towards-production)\n  - 分类: Production Agent Tutorial / Examples\n  - Score: 68\n  - 摘要: code-first production agent 教程，内容有用，但更像教程体系而非独立产品。\n  - 建议动作: 做学习参考，不作为产品雷达主项。\n\n## Skip Reasons\n- humanlayer/12-factor-agents (https://github.com/humanlayer/12-factor-agents): 高质量生产 agent 原则文档，影响力强，但核心是内容/方法论，不是可运行产品。\n- microsoft/ai-agents-for-beginners (https://github.com/microsoft/ai-agents-for-beginners): 教程/课程型仓库，适合学习，不符合本雷达优先的产品形态。\n- modelcontextprotocol/servers (https://github.com/modelcontextprotocol/servers): MCP server 集合/参考实现，价值高但不是单一产品；适合作为生态索引，不适合作为 Top 项目。\n\n## 今日趋势观察\n- Agent 产品开始补“操作系统层”：记忆、会话、workspace、gateway、scheduler、tool runtime 都在成为独立产品。\n- 浏览器和桌面控制正在 CLI 化/skill 化：OpenCLI、CLI-Anything 代表把 GUI 和网站变成 agent 可审计执行面。\n- MCP/agent 安全从理念进入工具：AgentAuditKit、MVAR 这类项目说明“prompt injection 到执行 sink”的问题正在被产品化处理。\n- Coding agent 的下一层机会不是再造一个聊天框，而是记录、恢复、解释、审计和编排多个 agent 的工作过程。\n\n## 关键假设\n- 本轮没有认证 GitHub API star delta；增长信号以 GitHub 当前可见 stars/commits/issues/PRs、README 更新痕迹和搜索发现新鲜度为主。\n- Score 是 AI Native Product Score，不是代码质量或公司质量分；低 stars 但具备明确 agent-native 产品面的安全/治理项目可入选。\n- 与 2026-05-18 已覆盖的 opencode、Claude Code、Gemini CLI、n8n、Agno、Context7 等项目尽量不重复入 Top。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "Self-improving Agent / CLI + Messaging Gateway",
+      "score": 92,
+      "summary": "自带学习循环的通用 agent，支持 CLI/TUI、消息网关、定时任务、记忆搜索、技能生成和多模型切换。",
+      "audience": "需要长期运行个人/团队 agent 的研究者、开发者和自动化团队。",
+      "ai_native_angle": "记忆、技能、自我改进、跨会话连续性和多终端执行环境是产品主干，不只是功能点。",
+      "growth_signal": "GitHub 页面显示约 156k stars、25.2k forks、8,767 commits、4.2k issues、5k+ PRs。",
+      "runnability": "README 提供 Linux/macOS/WSL/Termux 一行安装、Windows PowerShell 安装、CLI 命令、gateway、tools/model 配置；仓库含 docker、docs、plugins、skills、web、tests。",
+      "recommended_action": "作为“长期自主 agent OS”高优先级试跑；重点看记忆写入边界、技能自改机制和远程执行安全。"
+    },
+    {
+      "rank": 2,
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "category": "Agent-native CLI Harness / Tool Runtime",
+      "score": 89,
+      "summary": "把复杂软件和服务包装成 agent 可用的 CLI harness/skill，让 agent 操作外部软件。",
+      "audience": "需要让 coding/automation agent 稳定调用图形软件、专业工具和网站的工程团队。",
+      "ai_native_angle": "目标不是给人写 CLI，而是把所有软件 agent-ready 作为运行层抽象。",
+      "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
+      "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
+      "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+    },
+    {
+      "rank": 3,
+      "full_name": "jackwener/OpenCLI",
+      "url": "https://github.com/jackwener/OpenCLI",
+      "category": "Browser Agent Runtime / CLI Hub",
+      "score": 87,
+      "summary": "把网站、登录态浏览器、Electron app 和本地二进制封装成统一 CLI，让 AI agent 用确定性命令操作真实工具。",
+      "audience": "需要自动化网页操作、私有登录态任务和桌面应用控制的 agent 开发者。",
+      "ai_native_angle": "为 Claude Code、Cursor 等 agent 提供 browser skill、adapter authoring、DOM 快照、点击/填写/抽取等低层操作面。",
+      "growth_signal": "GitHub 页面显示约 21.7k stars、2.2k forks、1,227 commits、36 issues、60 PRs。",
+      "runnability": "README 提供 npm 全局安装、Chrome extension、`opencli doctor`、browser/profile/list 等命令，以及 skills 安装方式。",
+      "recommended_action": "试做一个需要登录态的网站任务，比较它和 Playwright/MCP/browser-use 的稳定性和可审计性。"
+    },
+    {
+      "rank": 4,
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "category": "Cross-agent Memory / Session Continuity",
+      "score": 86,
+      "summary": "捕获 agent 会话，压缩成长期上下文，并在未来会话中注入相关记忆。",
+      "audience": "长期使用 coding agents、希望跨工具保留项目上下文和决策记录的开发者。",
+      "ai_native_angle": "把 agent 会话本身当成可索引、可召回、可注入的产品数据层。",
+      "growth_signal": "GitHub 页面显示约 76.6k stars、6.6k forks、1,899 commits、82 issues、44 PRs。",
+      "runnability": "仓库含 `.codex-plugin`、`.claude-plugin`、docker、docs、plugin、ragtime、tests、transcript-watch 示例。",
+      "recommended_action": "重点试一次真实项目的多日任务；关注隐私、压缩质量、召回污染和跨 agent 格式兼容。"
+    },
+    {
+      "rank": 5,
+      "full_name": "entireio/cli",
+      "url": "https://github.com/entireio/cli",
+      "category": "Agent Session Capture / Git Workflow",
+      "score": 84,
+      "summary": "挂进 Git 工作流，捕获 AI agent 会话，把 checkpoint 和 commits 索引到一起。",
+      "audience": "使用多个 coding agents 的工程团队、代码审查者和需要可追溯 AI 开发过程的组织。",
+      "ai_native_angle": "给 agent 产出的工程过程补上 session provenance、rewind、explain、resume。",
+      "growth_signal": "GitHub 页面显示约 4.3k stars、335 forks、4,367 commits、65 issues、67 PRs。",
+      "runnability": "README 命令参考包含 `entire enable`、`entire checkpoint explain/rewind/search`、`entire session resume/attach`、`entire agent`；仓库含 `.codex`、`.claude`、`.gemini`、`.opencode` 集成目录。",
+      "recommended_action": "与团队现有 git hook/PR review 流程做小规模试点，看是否能降低 agent 产出审查成本。"
+    },
+    {
+      "rank": 6,
+      "full_name": "massgen/MassGen",
+      "url": "https://github.com/massgen/MassGen",
+      "category": "Multi-agent Terminal Orchestrator",
+      "score": 82,
+      "summary": "终端中的多 agent scaling 系统，编排多个 frontier model/agent 协作、推理、产出结果。",
+      "audience": "需要多模型互评、多 agent 规划/写作/代码任务的高级用户和研发团队。",
+      "ai_native_angle": "把多个 agent 并行协作产品化成 TUI/CLI workflow，并支持作为技能接入其他 coding agent。",
+      "growth_signal": "GitHub 页面显示约 1k stars、160 forks、3,882 commits、1 issue、2 PRs。",
+      "runnability": "README 提供 `pip install massgen`、`uv run massgen --setup`、`uv run massgen --quickstart`，可选择 1-5 个 agent、模型后端和 Docker 执行模式。",
+      "recommended_action": "用同一复杂任务对比单 agent 与 MassGen 的成本/质量/延迟，重点观察冲突消解机制。"
+    },
+    {
+      "rank": 7,
+      "full_name": "sattyamjjain/agent-audit-kit",
+      "url": "https://github.com/sattyamjjain/agent-audit-kit",
+      "category": "Agent Security Scanner / GitHub Action + CLI",
+      "score": 79,
+      "summary": "面向 MCP-connected AI agent pipeline 的静态扫描器，覆盖 194 条规则、11 类风险、多个合规框架、SARIF 和 GitHub Action。",
+      "audience": "正在把 agent 接入 MCP、CI/CD、工具调用和生产环境的安全/平台团队。",
+      "ai_native_angle": "直接把 agentic workflow 的配置、MCP 风险、hook 外传、权限问题纳入安全扫描。",
+      "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
+      "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
+      "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+    },
+    {
+      "rank": 8,
+      "full_name": "mvar-security/mvar",
+      "url": "https://github.com/mvar-security/mvar",
+      "category": "Agent Runtime Security / Execution Firewall",
+      "score": 78,
+      "summary": "为 LLM agent runtime 提供确定性执行防火墙，使用信息流控制和 provenance 约束高权限工具调用。",
+      "audience": "构建可执行 shell/API/文件/凭据操作 agent 的平台与安全团队。",
+      "ai_native_angle": "不靠 prompt filter 或 LLM judge，而是在执行 sink 处做策略拦截，是 agent runtime 治理方向。",
+      "growth_signal": "GitHub 页面显示约 172 commits、3 issues、4 PRs；stars 很低但文档、proof、demo、adapter、threat model 齐全。",
+      "runnability": "README 提供 `pip install mvar-security`、30-second proof、quickstart、Claude Code production-ready adapter、tests 和 proof scripts。",
+      "recommended_action": "作为早期安全基础设施观察；优先验证是否能嵌入 Claude Code / OpenAI Agents / MCP 工具链。"
+    },
+    {
+      "rank": 9,
+      "full_name": "charannyk06/conductor-oss",
+      "url": "https://github.com/charannyk06/conductor-oss",
+      "category": "Coding Agent Orchestrator / Local Dashboard",
+      "score": 77,
+      "summary": "本地优先的 AI coding agent 编排层，用 dashboard 管理 repo/workspace、git worktrees、真实 terminal、diff、preview、retry 和 reviewer feedback。",
+      "audience": "同时运行 Claude Code、Codex、Gemini 等 coding CLI 的个人和团队。",
+      "ai_native_angle": "把 Markdown/kanban/task board 变成 agent 任务编排界面，输出 PR 和更新 board 状态。",
+      "growth_signal": "GitHub 页面显示约 30 stars、3 forks、1,238 commits、2 issues、8 PRs；早期但工程量和产品面完整。",
+      "runnability": "仓库含 install.sh、docker-compose、desktop/dashboard 相关 packages、runtime-sidecar、docs、tests、security review。",
+      "recommended_action": "放 Watch-to-try 边界；如果本地多 agent 协作是重点，可以先跑 demo dashboard。"
+    },
+    {
+      "rank": 10,
+      "full_name": "firecrawl/open-lovable",
+      "url": "https://github.com/firecrawl/open-lovable",
+      "category": "AI App Builder / Website-to-React",
+      "score": 75,
+      "summary": "用聊天把任意网站克隆/重建成现代 React app 的示例应用。",
+      "audience": "需要快速生成前端原型、复刻页面结构、测试 Firecrawl+LLM app builder 的开发者。",
+      "ai_native_angle": "把 web extraction、LLM 生成和 React 项目生成连成可运行产品流程。",
+      "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
+      "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
+      "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "Fosowl/agenticSeek",
+      "url": "https://github.com/Fosowl/agenticSeek",
+      "category": "Local Autonomous Agent",
+      "score": 73,
+      "summary": "本地 agent，覆盖浏览、代码和本地/云模型 provider；GitHub 页面显示约 26.4k stars、944 commits。",
+      "audience": "希望本地运行自主 agent、减少云 API 依赖的开发者。",
+      "ai_native_angle": "本地模型、浏览、代码和 agent 执行一体化。",
+      "growth_signal": "GitHub 当前可见度高，但本轮未看到比 Top 项目更强的新 release/产品信号。",
+      "runnability": "README 提供本地与 API provider 配置，仓库含 frontend、llm_router、llm_server、docs、tests。",
+      "recommended_action": "等待本轮外更强 release/产品信号；适合进入 local agent 基线观察。"
+    },
+    {
+      "full_name": "holaboss-ai/holaOS",
+      "url": "https://github.com/holaboss-ai/holaOS",
+      "category": "Agent Workspace OS",
+      "score": 72,
+      "summary": "把重复工作转成运行中的 AI work-stream，含 desktop、runtime、SDK、docs 和一行安装；GitHub 页面显示约 5.6k stars、548 commits。",
+      "audience": "需要 workspace/memory/continuity agent 环境的个人和小团队。",
+      "ai_native_angle": "围绕 workspace、runtime、memory 和 agent harness 组织产品。",
+      "growth_signal": "GitHub 页面显示 5.6k stars、4 issues、10 PRs、548 commits。",
+      "runnability": "README 提供 macOS/Linux/WSL 一行安装，文档覆盖 workspace、memory、continuity、agent harness。",
+      "recommended_action": "关注 workspace/memory/continuity 模型是否形成可复用 agent OS 形态。"
+    },
+    {
+      "full_name": "mvar-security/clawzero",
+      "url": "https://github.com/mvar-security/clawzero",
+      "category": "Agent Execution Firewall",
+      "score": 70,
+      "summary": "与 MVAR 配套的执行防火墙方向，适合观察 agent runtime security 是否从 demo 走向真实集成。",
+      "audience": "关注 agent 执行安全的安全团队与平台团队。",
+      "ai_native_angle": "把 agent 的高权限执行路径做成安全治理产品。",
+      "growth_signal": "作为 MVAR stack 一部分在 README proof/demo 中被引用。",
+      "runnability": "需要进一步核验独立安装、adapter 覆盖和真实用户案例。",
+      "recommended_action": "等更多 adapter 与独立用户案例后再提升到 Top。"
+    },
+    {
+      "full_name": "NirDiamant/agents-towards-production",
+      "url": "https://github.com/NirDiamant/agents-towards-production",
+      "category": "Production Agent Tutorial / Examples",
+      "score": 68,
+      "summary": "code-first production agent 教程，内容有用，但更像教程体系而非独立产品。",
+      "audience": "学习生产级 agent 设计和工程实践的开发者。",
+      "ai_native_angle": "围绕 production agent 的代码示例和工程模式组织。",
+      "growth_signal": "当前在搜索发现中可见，但不属于产品型项目。",
+      "runnability": "示例可参考，但缺少单一产品闭环。",
+      "recommended_action": "做学习参考，不作为产品雷达主项。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "skip_reason": "高质量生产 agent 原则文档，影响力强，但核心是内容/方法论，不是可运行产品。"
+    },
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "skip_reason": "教程/课程型仓库，适合学习，不符合本雷达优先的产品形态。"
+    },
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "skip_reason": "MCP server 集合/参考实现，价值高但不是单一产品；适合作为生态索引，不适合作为 Top 项目。"
+    }
+  ]
+}

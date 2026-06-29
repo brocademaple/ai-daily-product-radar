@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-06-29",
+  "generated_at": "2026-06-29T10:58:00+08:00",
+  "data_window": "2026-06-26T00:00:00Z to 2026-06-29T02:40:00Z; GitHub Search API created>=2026-06-26 and pushed>=2026-06-28 queries, plus README/root-content audits for selected repositories.",
+  "source_summary": "GitHub Search API repository metadata; GitHub repository README and root contents through GitHub API for shortlisted projects. No clone/install/Docker/UI runtime execution audit was performed.",
+  "trend_observations": "Today's product-shaped repos concentrate around agent workbenches, local agent substrates, privacy firewalls, MCP observability, and small physical/mobile surfaces that make long-running coding agents easier to operate.",
+  "assumptions": "Prioritized product-shaped repositories with UI/CLI/API, runnable install paths, docs/examples/screenshots/demo assets, and concrete user workflows. Repositories promoted on 2026-06-28 were demoted unless they showed a distinct fresh signal. Star/fork counts are GitHub API snapshots; all runnability judgments are README/root-file audits, not local runtime proof. Real spam/marketing repos found in GitHub search are listed as skipped; type-level exclusions are described in the report without fabricated repos.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-29\n\n数据窗口：2026-06-26T00:00:00Z to 2026-06-29T02:40:00Z; GitHub Search API created>=2026-06-26 and pushed>=2026-06-28 queries, plus README/root-content audits for selected repositories.\n\n信息来源：GitHub Search API repository metadata; GitHub repository README and root contents through GitHub API for shortlisted projects. No clone/install/Docker/UI runtime execution audit was performed.\n\n关键假设：Prioritized product-shaped repositories with UI/CLI/API, runnable install paths, docs/examples/screenshots/demo assets, and concrete user workflows. Repositories promoted on 2026-06-28 were demoted unless they showed a distinct fresh signal. Star/fork counts are GitHub API snapshots; all runnability judgments are README/root-file audits, not local runtime proof. Real spam/marketing repos found in GitHub search are listed as skipped; type-level exclusions are described in the report without fabricated repos.\n\n## 今日趋势观察\n\nToday's product-shaped repos concentrate around agent workbenches, local agent substrates, privacy firewalls, MCP observability, and small physical/mobile surfaces that make long-running coding agents easier to operate.\n\n- Agent 工作台继续从单一聊天窗口转向“多会话、多 worktree、多审阅”的本地控制面，`superset-sh/superset` 是今天最强活跃信号。\n- 本地 agent substrate 开始变具体：`monlite` 把文档、向量、队列、cron 收进一个 SQLite 文件，`dent8` 把长期记忆加上 authority/freshness 防线。\n- 隐私与安全不再只靠“不要上传”：`vault-engine` 和 `mcpsnoop` 分别把 PII 处理、MCP 调用可视化放到 agent 工作流入口。\n- 垂直 copilot 值得继续找：MATLAB/Simulink Copilot 虽然 star 很少，但有真实截图、工具链和明确工程场景。\n- 今日 GitHub 搜索出现大量游戏外挂/免费模型 SEO repo；这类项目不进入 Top，保留真实 Skip 证据。\n\n## Top Projects\n\n### 1. [superset-sh/superset](https://github.com/superset-sh/superset)\n- 分类：Parallel Coding Agent Workbench\n- AI Native Product Score：91\n- 做什么：Desktop/web code editor for running many Claude Code, Codex and other CLI agents in parallel on local worktrees.\n- 面向谁：Developers and teams running multiple coding agents who need task switching, diff review, workspace presets and local control.\n- AI native 点：It treats agent sessions as the primary work surface: parallel execution, terminal compatibility, worktree orchestration, agent presets, review/edit loops and local task context are core product objects.\n- 增长/活跃信号：GitHub API snapshot showed 12.1k stars, 1.0k forks, pushed 2026-06-29; README/root include apps, packages, Docker Compose, agent config files, assets and multi-agent compatibility claims.\n- 可运行性判断：README documents local agent orchestration and supported Claude Code/Codex/OpenCode style CLIs; root has bun workspace, docker-compose, apps and packages. Not locally launched today.\n- 建议动作：High-priority trial: run one sandbox project with 3 parallel Codex/Claude tasks and inspect diff-review ergonomics.\n\n### 2. [qataruts/monlite](https://github.com/qataruts/monlite)\n- 分类：Local Agent Backend / SQLite Substrate\n- AI Native Product Score：88\n- 做什么：Documents, vectors, full-text search, cache, queue and cron in one SQLite file for coding agents, RAG pipelines and autonomous workers.\n- 面向谁：Agent app builders who want local-first memory/job/document infrastructure without Redis, vector DB and queue services.\n- AI native 点：It packages the boring backend primitives agents need into one embeddable local substrate: memory documents, vector search, persisted jobs and scheduled work in a single database file.\n- 增长/活跃信号：Created 2026-06-26, pushed 2026-06-29, 24 stars; TypeScript workspace with docs, live demo, examples, bench, tests, packages and Python bindings.\n- 可运行性判断：README shows docs/live browser demo, one-file local backend positioning and examples; root has package.json, pnpm workspace, src, tests, docs and demo. No npm install was run.\n- 建议动作：Prototype a tiny radar memory/job queue using monlite to see whether it can replace multiple local services.\n\n### 3. [fishonbike/vault-engine](https://github.com/fishonbike/vault-engine)\n- 分类：Local LLM Privacy Firewall\n- AI Native Product Score：86\n- 做什么：Local-LLM privacy layer that detects, tokenizes and restores PII before text is sent to cloud models, with strong Chinese support.\n- 面向谁：People pasting private customer, company or personal context into ChatGPT, Claude, Gemini, Codex or Claude Code.\n- AI native 点：It moves privacy protection into the agent/chat workflow itself: local detection, reversible pseudonymization, evaluation scripts and restore flow become pre-cloud model infrastructure.\n- 增长/活跃信号：Created 2026-06-26, pushed 2026-06-28, 22 stars; repo has docs, eval, examples, tests, SECURITY.md and bilingual README.\n- 可运行性判断：README includes demo SVG, benchmark reproduction and `pip install vault-engine`; root contains pyproject, scripts, eval and tests. No local eval was run.\n- 建议动作：Test on Chinese/English sensitive snippets and compare redaction quality against PasteGuard-style proxy approaches.\n\n### 4. [LongNgn204/local-coding-agent](https://github.com/LongNgn204/local-coding-agent)\n- 分类：ChatGPT Web to Local Coding MCP\n- AI Native Product Score：84\n- 做什么：Local MCP server for ChatGPT Web that can read/write files, run commands and manage processes on the user machine through a Windows tray app and secure tunnel.\n- 面向谁：ChatGPT Web users who want local coding-agent capabilities without moving repo files into a hosted workspace.\n- AI native 点：It turns ChatGPT Web into a local coding surface by exposing file, shell, process, git and note tools over MCP with local tray controls.\n- 增长/活跃信号：Created 2026-06-28, pushed same day, 5 stars; repo includes server, tray-app, SECURITY.md, scripts and .env example.\n- 可运行性判断：README lists 20+ MCP tools, encrypted Windows tray controls and OpenAI Secure MCP Tunnel flow; no tunnel or command execution audit was performed.\n- 建议动作：Security-first watch: inspect allowlists and command boundaries before any real repo test.\n\n### 5. [incidentfox/box](https://github.com/incidentfox/box)\n- 分类：Self-hosted Mobile Coding Agent Control\n- AI Native Product Score：83\n- 做什么：Phone-first self-hosted UI for running real Claude Code and Codex sessions on your own server with chat, voice, files, skills and always-on runs.\n- 面向谁：Developers who want to monitor and drive long coding-agent jobs from a phone while keeping the actual CLIs on their own machine/server.\n- AI native 点：It wraps long-lived coding-agent sessions in a mobile operations surface: real CLI sessions, file movement, voice input, persistence, logs and server ownership.\n- 增长/活跃信号：Created 2026-06-28, pushed 2026-06-29, 3 stars; README has demo gif, install/provision scripts, Caddyfile, harness/server/public structure and Codex/Claude positioning.\n- 可运行性判断：Root includes install.sh, bootstrap.sh, provision.sh, package.json, server and harness; README describes real Claude Code/Codex sessions. Not deployed today.\n- 建议动作：Compare with Remote Coder and Avibe; trial only on an isolated server because it controls real coding CLIs.\n\n### 6. [kerlenton/mcpsnoop](https://github.com/kerlenton/mcpsnoop)\n- 分类：MCP Observability / Proxy TUI\n- AI Native Product Score：82\n- 做什么：Transparent terminal proxy that shows live MCP tool calls between AI clients and MCP servers, positioned as Wireshark for MCP.\n- 面向谁：MCP server builders, agent ops teams and developers debugging tool calls from Claude Desktop, Cursor, Claude Code or Codex-style clients.\n- AI native 点：As MCP usage grows, the product need shifts to inspectability: live tool-call visibility, proxying and trace debugging become first-class agent infrastructure.\n- 增长/活跃信号：Created 2026-06-27, pushed 2026-06-28, 6 stars; Go repo with demo gif, CI, Makefile, docs, internal/cmd structure and release config.\n- 可运行性判断：README shows demo and proxy positioning; root has go.mod, cmd/internal/docs and Makefile. No local MCP proxy test was run.\n- 建议动作：Use it in the next MCP experiment to capture exact tool calls and permission surprises.\n\n### 7. [suzike/matlab-simulink-copilot](https://github.com/suzike/matlab-simulink-copilot)\n- 分类：Vertical Engineering Copilot\n- AI Native Product Score：80\n- 做什么：MATLAB/Simulink docked AI assistant panel using Claude Code or Codex as backend and MATLAB MCP as the tool hand.\n- 面向谁：Model-based design and engineering users who want agent help inside MATLAB/Simulink rather than in a separate chat window.\n- AI native 点：It connects a domain IDE surface, live model/workspace context, Codex/Claude backend and official MATLAB MCP tooling into one vertical copilot loop.\n- 增长/活跃信号：Created 2026-06-26, pushed 2026-06-28, 2 stars; repo has real screenshot, MATLAB toolbox file, sidecar, UI, docs and install guide.\n- 可运行性判断：README includes screenshot, backend/MCP architecture and installation docs; root has MATLAB-Copilot.mltbx, matlab, sidecar and ui. No MATLAB run audit.\n- 建议动作：Track as a strong vertical-copilot pattern; validate if MATLAB environment is available.\n\n### 8. [alibaba/UnifiedModel](https://github.com/alibaba/UnifiedModel)\n- 分类：Enterprise Semantic Layer for Agents\n- AI Native Product Score：78\n- 做什么：Semantic object graph layer that models enterprise data once and exposes it through SPL, REST, MCP and a React Web UI.\n- 面向谁：Enterprise data/platform teams exposing telemetry, service and business objects safely to AI agents.\n- AI native 点：It bridges existing enterprise systems into agent-understandable entities and relationships, with MCP/AgentGateway as a first-class access path.\n- 增长/活跃信号：Created 2026-05-06, pushed 2026-06-29, 203 stars, 38 forks; root includes API, cmd, deployments, docs, examples, generated SDKs and Makefile.\n- 可运行性判断：README claims `make quickstart` starts local API/Web UI with demo workspace; no quickstart was executed today.\n- 建议动作：Use its demo as a checklist for internal data-to-agent semantic layers and MCP governance.\n\n### 9. [xyzzylabs/dent8](https://github.com/xyzzylabs/dent8)\n- 分类：Agent Memory Firewall / MCP\n- AI Native Product Score：77\n- 做什么：Provenance-, authority- and freshness-governed memory firewall for coding agents with tamper-evident replayable event log.\n- 面向谁：Agent builders who need long-term memory but also need to reject stale or low-authority facts.\n- AI native 点：It treats memory as a governed belief surface: assertions, authority, replay, explainability and MCP serving are central, not afterthought metadata.\n- 增长/活跃信号：Created 2026-06-28, pushed same day, 2 stars; Rust workspace with crates, migrations, compose file, demo gif, docs and eval tests.\n- 可运行性判断：README says `cargo run -p dent8-cli -- demo`, `dent8 mcp serve`, and adversarial eval tests; no cargo run was performed.\n- 建议动作：Add to the local agent-memory comparison set with memlawb, c0, Graphenium and agent-memory-engine.\n\n### 10. [mateaix/loope](https://github.com/mateaix/loope)\n- 分类：Coding Agent Loop Orchestration\n- AI Native Product Score：75\n- 做什么：Rust CLI/TUI for loop engineering where Claude implements, Codex reviews, OpenCode plugs in and verifier checks each iteration.\n- 面向谁：Developers who want a repeatable implement-review-verify loop across multiple coding agents.\n- AI native 点：It productizes a multi-agent engineering loop: design, implementation, Codex review, verifier evidence, adapters and run directories.\n- 增长/活跃信号：Created 2026-06-28, pushed 2026-06-29, 2 stars; Rust repo with install.sh, docs, tests, assets and usage guide.\n- 可运行性判断：README shows install script and quick start; root has Cargo workspace, docs and tests. No local build was run.\n- 建议动作：Watch for adoption; test once the adapter docs stabilize because the Claude-implements/Codex-reviews loop maps well to this automation style.\n\n## Watchlist\n\n- [asimons81/hermes-a2a-bridge](https://github.com/asimons81/hermes-a2a-bridge) — A2A Bridge for Hermes，Score 72。Local-first Hermes Agent bridge for Agent-to-Agent Protocol HTTP+JSON subset. 建议：Watch for real cross-agent examples.\n- [Yene96/Mercury](https://github.com/Yene96/Mercury) — Android Native Agentic Harness，Score 71。Android harness where an LLM can read workspace state, run local calculations, trigger notifications and compose messages. 建议：Watch for demo/safety controls before testing.\n- [ruvnet/agenticow](https://github.com/ruvnet/agenticow) — Branchable Agent Memory，Score 70。Copy-on-write vector branching for embedded multi-agent memory. 建议：Watch; verify benchmark claims before adopting.\n- [TNTnext/Lumen](https://github.com/TNTnext/Lumen) — Self-hosted AI Gateway，Score 69。Python self-hosted AI gateway with multi-user governance, provider toggles and onboarding. 建议：Watch as lightweight gateway reference.\n- [c-daniele/obsidiaria](https://github.com/c-daniele/obsidiaria) — Obsidian Agent Operating System，Score 68。Agent-run Obsidian vault workflow with inbox routing, daily routines and delegated roles. 建议：Watch, but keep below UI/CLI products.\n- [puffinsoft/peek-cli](https://github.com/puffinsoft/peek-cli) — Browser Screenshot Tool for Coding Agents，Score 67。Browser extension plus WebSocket daemon that lets coding agents capture screenshots from open tabs. 建议：Watch; test with local browser only after permission review.\n\n## Skip Reasons\n\n- [dimasarestuprasmanto/Pet-Simulator-99-Auto-Farm-Trainer-2026-Tera](https://github.com/dimasarestuprasmanto/Pet-Simulator-99-Auto-Farm-Trainer-2026-Tera)：Spammy game auto-farm/undetected trainer repo surfaced by automation keywords; not an AI-native product for this radar and carries abuse risk.\n- [NagaaSaketh/Pet-Simulator-99-Auto-Farm-Trainer-2026-Ultimate](https://github.com/NagaaSaketh/Pet-Simulator-99-Auto-Farm-Trainer-2026-Ultimate)：Duplicate-pattern game cheat/automation repo with artificial-looking launch cluster; excluded.\n- [ahmadrj80/claude-fable-5-free-desktop-app](https://github.com/ahmadrj80/claude-fable-5-free-desktop-app)：Keyword-heavy free/Claude model marketing wrapper with weak credible product evidence.\n- [Altair4300/glm-5.2-free-desktop-app](https://github.com/Altair4300/glm-5.2-free-desktop-app)：Model-name/free-desktop-app SEO pattern; likely access/marketing wrapper rather than auditable product.\n- [QihongRuan/stanford-cs336-notes](https://github.com/QihongRuan/stanford-cs336-notes)：High-quality notes but educational content, not runnable AI-native product software.\n- [estevecastells/awesome-ai-search](https://github.com/estevecastells/awesome-ai-search)：Awesome list/resource collection without product runtime.\n- [nabinkhadka/FreeLLMAPI](https://github.com/nabinkhadka/FreeLLMAPI)：Free-tier provider rotation router; mostly provider-access plumbing with compliance and durability concerns.\n- [ilindaniel/ponytail-lite](https://github.com/ilindaniel/ponytail-lite)：Agent behavior/prompt guidance, useful as method material but weak standalone product surface.\n\n类型级降权：prompt/rules/skill-only collection、课程笔记、awesome list、单纯 provider wrapper、模型营销下载页、游戏外挂/undetected automation、只有 README 没有可运行代码路径的仓库，本轮均不作为 Top。\n\n## 今日建议动作\n\n1. 先试 `qataruts/monlite`：用一个 SQLite 文件承载 radar 的候选缓存、向量摘要和后续复跑任务。\n2. 对 `superset-sh/superset` 做本地工作台试跑：开 3 个 Codex/Claude-style agent session，验证多 worktree、diff review 和 preset 价值。\n3. 把 `vault-engine` 和 `mcpsnoop` 作为安全/可观测实验：一个保护出站上下文，一个记录 MCP 调用。\n4. 对 `incidentfox/box`、`local-coding-agent` 先做权限审计，再考虑真实账号或 repo 接入。\n5. 将 `matlab-simulink-copilot` 单独建垂直 copilot 卡，后续可按“IDE 内嵌 UI + MCP 工具 + Codex/Claude 后端”模式找同类项目。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "superset-sh/superset",
+      "url": "https://github.com/superset-sh/superset",
+      "category": "Parallel Coding Agent Workbench",
+      "score": 91,
+      "summary": "Desktop/web code editor for running many Claude Code, Codex and other CLI agents in parallel on local worktrees.",
+      "audience": "Developers and teams running multiple coding agents who need task switching, diff review, workspace presets and local control.",
+      "ai_native_angle": "It treats agent sessions as the primary work surface: parallel execution, terminal compatibility, worktree orchestration, agent presets, review/edit loops and local task context are core product objects.",
+      "growth_signal": "GitHub API snapshot showed 12.1k stars, 1.0k forks, pushed 2026-06-29; README/root include apps, packages, Docker Compose, agent config files, assets and multi-agent compatibility claims.",
+      "runnability": "README documents local agent orchestration and supported Claude Code/Codex/OpenCode style CLIs; root has bun workspace, docker-compose, apps and packages. Not locally launched today.",
+      "recommended_action": "High-priority trial: run one sandbox project with 3 parallel Codex/Claude tasks and inspect diff-review ergonomics."
+    },
+    {
+      "rank": 2,
+      "full_name": "qataruts/monlite",
+      "url": "https://github.com/qataruts/monlite",
+      "category": "Local Agent Backend / SQLite Substrate",
+      "score": 88,
+      "summary": "Documents, vectors, full-text search, cache, queue and cron in one SQLite file for coding agents, RAG pipelines and autonomous workers.",
+      "audience": "Agent app builders who want local-first memory/job/document infrastructure without Redis, vector DB and queue services.",
+      "ai_native_angle": "It packages the boring backend primitives agents need into one embeddable local substrate: memory documents, vector search, persisted jobs and scheduled work in a single database file.",
+      "growth_signal": "Created 2026-06-26, pushed 2026-06-29, 24 stars; TypeScript workspace with docs, live demo, examples, bench, tests, packages and Python bindings.",
+      "runnability": "README shows docs/live browser demo, one-file local backend positioning and examples; root has package.json, pnpm workspace, src, tests, docs and demo. No npm install was run.",
+      "recommended_action": "Prototype a tiny radar memory/job queue using monlite to see whether it can replace multiple local services."
+    },
+    {
+      "rank": 3,
+      "full_name": "fishonbike/vault-engine",
+      "url": "https://github.com/fishonbike/vault-engine",
+      "category": "Local LLM Privacy Firewall",
+      "score": 86,
+      "summary": "Local-LLM privacy layer that detects, tokenizes and restores PII before text is sent to cloud models, with strong Chinese support.",
+      "audience": "People pasting private customer, company or personal context into ChatGPT, Claude, Gemini, Codex or Claude Code.",
+      "ai_native_angle": "It moves privacy protection into the agent/chat workflow itself: local detection, reversible pseudonymization, evaluation scripts and restore flow become pre-cloud model infrastructure.",
+      "growth_signal": "Created 2026-06-26, pushed 2026-06-28, 22 stars; repo has docs, eval, examples, tests, SECURITY.md and bilingual README.",
+      "runnability": "README includes demo SVG, benchmark reproduction and `pip install vault-engine`; root contains pyproject, scripts, eval and tests. No local eval was run.",
+      "recommended_action": "Test on Chinese/English sensitive snippets and compare redaction quality against PasteGuard-style proxy approaches."
+    },
+    {
+      "rank": 4,
+      "full_name": "LongNgn204/local-coding-agent",
+      "url": "https://github.com/LongNgn204/local-coding-agent",
+      "category": "ChatGPT Web to Local Coding MCP",
+      "score": 84,
+      "summary": "Local MCP server for ChatGPT Web that can read/write files, run commands and manage processes on the user machine through a Windows tray app and secure tunnel.",
+      "audience": "ChatGPT Web users who want local coding-agent capabilities without moving repo files into a hosted workspace.",
+      "ai_native_angle": "It turns ChatGPT Web into a local coding surface by exposing file, shell, process, git and note tools over MCP with local tray controls.",
+      "growth_signal": "Created 2026-06-28, pushed same day, 5 stars; repo includes server, tray-app, SECURITY.md, scripts and .env example.",
+      "runnability": "README lists 20+ MCP tools, encrypted Windows tray controls and OpenAI Secure MCP Tunnel flow; no tunnel or command execution audit was performed.",
+      "recommended_action": "Security-first watch: inspect allowlists and command boundaries before any real repo test."
+    },
+    {
+      "rank": 5,
+      "full_name": "incidentfox/box",
+      "url": "https://github.com/incidentfox/box",
+      "category": "Self-hosted Mobile Coding Agent Control",
+      "score": 83,
+      "summary": "Phone-first self-hosted UI for running real Claude Code and Codex sessions on your own server with chat, voice, files, skills and always-on runs.",
+      "audience": "Developers who want to monitor and drive long coding-agent jobs from a phone while keeping the actual CLIs on their own machine/server.",
+      "ai_native_angle": "It wraps long-lived coding-agent sessions in a mobile operations surface: real CLI sessions, file movement, voice input, persistence, logs and server ownership.",
+      "growth_signal": "Created 2026-06-28, pushed 2026-06-29, 3 stars; README has demo gif, install/provision scripts, Caddyfile, harness/server/public structure and Codex/Claude positioning.",
+      "runnability": "Root includes install.sh, bootstrap.sh, provision.sh, package.json, server and harness; README describes real Claude Code/Codex sessions. Not deployed today.",
+      "recommended_action": "Compare with Remote Coder and Avibe; trial only on an isolated server because it controls real coding CLIs."
+    },
+    {
+      "rank": 6,
+      "full_name": "kerlenton/mcpsnoop",
+      "url": "https://github.com/kerlenton/mcpsnoop",
+      "category": "MCP Observability / Proxy TUI",
+      "score": 82,
+      "summary": "Transparent terminal proxy that shows live MCP tool calls between AI clients and MCP servers, positioned as Wireshark for MCP.",
+      "audience": "MCP server builders, agent ops teams and developers debugging tool calls from Claude Desktop, Cursor, Claude Code or Codex-style clients.",
+      "ai_native_angle": "As MCP usage grows, the product need shifts to inspectability: live tool-call visibility, proxying and trace debugging become first-class agent infrastructure.",
+      "growth_signal": "Created 2026-06-27, pushed 2026-06-28, 6 stars; Go repo with demo gif, CI, Makefile, docs, internal/cmd structure and release config.",
+      "runnability": "README shows demo and proxy positioning; root has go.mod, cmd/internal/docs and Makefile. No local MCP proxy test was run.",
+      "recommended_action": "Use it in the next MCP experiment to capture exact tool calls and permission surprises."
+    },
+    {
+      "rank": 7,
+      "full_name": "suzike/matlab-simulink-copilot",
+      "url": "https://github.com/suzike/matlab-simulink-copilot",
+      "category": "Vertical Engineering Copilot",
+      "score": 80,
+      "summary": "MATLAB/Simulink docked AI assistant panel using Claude Code or Codex as backend and MATLAB MCP as the tool hand.",
+      "audience": "Model-based design and engineering users who want agent help inside MATLAB/Simulink rather than in a separate chat window.",
+      "ai_native_angle": "It connects a domain IDE surface, live model/workspace context, Codex/Claude backend and official MATLAB MCP tooling into one vertical copilot loop.",
+      "growth_signal": "Created 2026-06-26, pushed 2026-06-28, 2 stars; repo has real screenshot, MATLAB toolbox file, sidecar, UI, docs and install guide.",
+      "runnability": "README includes screenshot, backend/MCP architecture and installation docs; root has MATLAB-Copilot.mltbx, matlab, sidecar and ui. No MATLAB run audit.",
+      "recommended_action": "Track as a strong vertical-copilot pattern; validate if MATLAB environment is available."
+    },
+    {
+      "rank": 8,
+      "full_name": "alibaba/UnifiedModel",
+      "url": "https://github.com/alibaba/UnifiedModel",
+      "category": "Enterprise Semantic Layer for Agents",
+      "score": 78,
+      "summary": "Semantic object graph layer that models enterprise data once and exposes it through SPL, REST, MCP and a React Web UI.",
+      "audience": "Enterprise data/platform teams exposing telemetry, service and business objects safely to AI agents.",
+      "ai_native_angle": "It bridges existing enterprise systems into agent-understandable entities and relationships, with MCP/AgentGateway as a first-class access path.",
+      "growth_signal": "Created 2026-05-06, pushed 2026-06-29, 203 stars, 38 forks; root includes API, cmd, deployments, docs, examples, generated SDKs and Makefile.",
+      "runnability": "README claims `make quickstart` starts local API/Web UI with demo workspace; no quickstart was executed today.",
+      "recommended_action": "Use its demo as a checklist for internal data-to-agent semantic layers and MCP governance."
+    },
+    {
+      "rank": 9,
+      "full_name": "xyzzylabs/dent8",
+      "url": "https://github.com/xyzzylabs/dent8",
+      "category": "Agent Memory Firewall / MCP",
+      "score": 77,
+      "summary": "Provenance-, authority- and freshness-governed memory firewall for coding agents with tamper-evident replayable event log.",
+      "audience": "Agent builders who need long-term memory but also need to reject stale or low-authority facts.",
+      "ai_native_angle": "It treats memory as a governed belief surface: assertions, authority, replay, explainability and MCP serving are central, not afterthought metadata.",
+      "growth_signal": "Created 2026-06-28, pushed same day, 2 stars; Rust workspace with crates, migrations, compose file, demo gif, docs and eval tests.",
+      "runnability": "README says `cargo run -p dent8-cli -- demo`, `dent8 mcp serve`, and adversarial eval tests; no cargo run was performed.",
+      "recommended_action": "Add to the local agent-memory comparison set with memlawb, c0, Graphenium and agent-memory-engine."
+    },
+    {
+      "rank": 10,
+      "full_name": "mateaix/loope",
+      "url": "https://github.com/mateaix/loope",
+      "category": "Coding Agent Loop Orchestration",
+      "score": 75,
+      "summary": "Rust CLI/TUI for loop engineering where Claude implements, Codex reviews, OpenCode plugs in and verifier checks each iteration.",
+      "audience": "Developers who want a repeatable implement-review-verify loop across multiple coding agents.",
+      "ai_native_angle": "It productizes a multi-agent engineering loop: design, implementation, Codex review, verifier evidence, adapters and run directories.",
+      "growth_signal": "Created 2026-06-28, pushed 2026-06-29, 2 stars; Rust repo with install.sh, docs, tests, assets and usage guide.",
+      "runnability": "README shows install script and quick start; root has Cargo workspace, docs and tests. No local build was run.",
+      "recommended_action": "Watch for adoption; test once the adapter docs stabilize because the Claude-implements/Codex-reviews loop maps well to this automation style."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "asimons81/hermes-a2a-bridge",
+      "url": "https://github.com/asimons81/hermes-a2a-bridge",
+      "category": "A2A Bridge for Hermes",
+      "score": 72,
+      "summary": "Local-first Hermes Agent bridge for Agent-to-Agent Protocol HTTP+JSON subset.",
+      "audience": "Hermes users and agent interoperability builders.",
+      "ai_native_angle": "Adds A2A calls beside MCP tools for local agent ecosystems.",
+      "growth_signal": "Created 2026-06-27, pushed 2026-06-29, 11 stars; package entry point, docs and tests.",
+      "runnability": "README has pip editable install and doctor command.",
+      "recommended_action": "Watch for real cross-agent examples."
+    },
+    {
+      "full_name": "Yene96/Mercury",
+      "url": "https://github.com/Yene96/Mercury",
+      "category": "Android Native Agentic Harness",
+      "score": 71,
+      "summary": "Android harness where an LLM can read workspace state, run local calculations, trigger notifications and compose messages.",
+      "audience": "Android automation and mobile-agent experimenters.",
+      "ai_native_angle": "Gives models native Android tools and embedded Python runtime.",
+      "growth_signal": "Created 2026-06-28, Kotlin/Android tree with design docs and media references.",
+      "runnability": "Gradle project and README build notes; no APK build.",
+      "recommended_action": "Watch for demo/safety controls before testing."
+    },
+    {
+      "full_name": "ruvnet/agenticow",
+      "url": "https://github.com/ruvnet/agenticow",
+      "category": "Branchable Agent Memory",
+      "score": 70,
+      "summary": "Copy-on-write vector branching for embedded multi-agent memory.",
+      "audience": "Agent memory and simulation builders.",
+      "ai_native_angle": "Makes memory snapshots branchable like git for agent experiments.",
+      "growth_signal": "Created 2026-06-28, npm package, docs, examples, benchmarks and demo site.",
+      "runnability": "README shows npm install and demo command.",
+      "recommended_action": "Watch; verify benchmark claims before adopting."
+    },
+    {
+      "full_name": "TNTnext/Lumen",
+      "url": "https://github.com/TNTnext/Lumen",
+      "category": "Self-hosted AI Gateway",
+      "score": 69,
+      "summary": "Python self-hosted AI gateway with multi-user governance, provider toggles and onboarding.",
+      "audience": "Small teams centralizing model access.",
+      "ai_native_angle": "Governed model access supports agent products, though agent workflow depth is still light.",
+      "growth_signal": "Created 2026-06-27, pushed 2026-06-29, app.py/routes/static structure.",
+      "runnability": "README says pip install requirements and run app.py.",
+      "recommended_action": "Watch as lightweight gateway reference."
+    },
+    {
+      "full_name": "c-daniele/obsidiaria",
+      "url": "https://github.com/c-daniele/obsidiaria",
+      "category": "Obsidian Agent Operating System",
+      "score": 68,
+      "summary": "Agent-run Obsidian vault workflow with inbox routing, daily routines and delegated roles.",
+      "audience": "PKM users using OpenCode/Claude Code/Kilo around an Obsidian vault.",
+      "ai_native_angle": "Turns notes and routines into agent-managed operations.",
+      "growth_signal": "Created 2026-06-28 with vault directories, AGENTS/CLAUDE/SKILLS docs and examples.",
+      "runnability": "Looks like a vault/skill package, not a standalone app.",
+      "recommended_action": "Watch, but keep below UI/CLI products."
+    },
+    {
+      "full_name": "puffinsoft/peek-cli",
+      "url": "https://github.com/puffinsoft/peek-cli",
+      "category": "Browser Screenshot Tool for Coding Agents",
+      "score": 67,
+      "summary": "Browser extension plus WebSocket daemon that lets coding agents capture screenshots from open tabs.",
+      "audience": "Coding-agent users debugging browser UIs.",
+      "ai_native_angle": "Provides visual browser context as a reusable agent tool.",
+      "growth_signal": "Created 2026-06-27, Codex/Claude plugin assets, skills and privacy doc.",
+      "runnability": "README shows `peeked start` daemon flow.",
+      "recommended_action": "Watch; test with local browser only after permission review."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "dimasarestuprasmanto/Pet-Simulator-99-Auto-Farm-Trainer-2026-Tera",
+      "url": "https://github.com/dimasarestuprasmanto/Pet-Simulator-99-Auto-Farm-Trainer-2026-Tera",
+      "skip_reason": "Spammy game auto-farm/undetected trainer repo surfaced by automation keywords; not an AI-native product for this radar and carries abuse risk."
+    },
+    {
+      "full_name": "NagaaSaketh/Pet-Simulator-99-Auto-Farm-Trainer-2026-Ultimate",
+      "url": "https://github.com/NagaaSaketh/Pet-Simulator-99-Auto-Farm-Trainer-2026-Ultimate",
+      "skip_reason": "Duplicate-pattern game cheat/automation repo with artificial-looking launch cluster; excluded."
+    },
+    {
+      "full_name": "ahmadrj80/claude-fable-5-free-desktop-app",
+      "url": "https://github.com/ahmadrj80/claude-fable-5-free-desktop-app",
+      "skip_reason": "Keyword-heavy free/Claude model marketing wrapper with weak credible product evidence."
+    },
+    {
+      "full_name": "Altair4300/glm-5.2-free-desktop-app",
+      "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
+      "skip_reason": "Model-name/free-desktop-app SEO pattern; likely access/marketing wrapper rather than auditable product."
+    },
+    {
+      "full_name": "QihongRuan/stanford-cs336-notes",
+      "url": "https://github.com/QihongRuan/stanford-cs336-notes",
+      "skip_reason": "High-quality notes but educational content, not runnable AI-native product software."
+    },
+    {
+      "full_name": "estevecastells/awesome-ai-search",
+      "url": "https://github.com/estevecastells/awesome-ai-search",
+      "skip_reason": "Awesome list/resource collection without product runtime."
+    },
+    {
+      "full_name": "nabinkhadka/FreeLLMAPI",
+      "url": "https://github.com/nabinkhadka/FreeLLMAPI",
+      "skip_reason": "Free-tier provider rotation router; mostly provider-access plumbing with compliance and durability concerns."
+    },
+    {
+      "full_name": "ilindaniel/ponytail-lite",
+      "url": "https://github.com/ilindaniel/ponytail-lite",
+      "skip_reason": "Agent behavior/prompt guidance, useful as method material but weak standalone product surface."
+    }
+  ]
+}

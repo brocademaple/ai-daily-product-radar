@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-06-25",
+  "generated_at": "2026-06-25T10:30:00+08:00",
+  "data_window": "2026-06-22T00:00:00Z to 2026-06-25T02:20:00Z; GitHub repositories created, recently pushed, or showing visible product activity in AI agent, LLM app, RAG, MCP, browser agent, code agent, voice agent, AI workflow, and assistant directions.",
+  "source_summary": "Live GitHub Search API queries plus GitHub repository metadata, README, and root-content audits for shortlisted repositories. No clone, install, Docker, npm, pip, Go, Cargo, Android, browser-extension, or local runtime audit was performed.",
+  "trend_observations": "Agent-native products are shifting toward media-generation runtimes for agents, security/control planes around agent egress and MCP, browser-native harnesses, local-first coding CLIs, self-hosted app-building workspaces, persistent memory MCP layers, and voice/mobile control surfaces for long-running coding agents.",
+  "assumptions": "Prioritized product-shaped repositories with runnable UI/CLI/API, clear users, README depth, examples/assets/Docker/CLI commands, and recent pushed activity. Star counts are GitHub API snapshots rather than precise time-series deltas. Mature baselines, pure templates, thin SDK/API wrappers, paper/training repos, prompt collections, and awesome lists were downgraded or skipped. Type-level exclusions are described in markdown_report and not fabricated as skipped repositories.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-25\n\n数据窗口：2026-06-22T00:00:00Z 至 2026-06-25T02:20:00Z；重点查看 GitHub Search API 中 `pushed:>2026-06-22`、`created:>2026-06-01` 的 AI agent、LLM app、RAG、MCP、browser agent、code agent、voice agent、AI workflow 方向仓库，并对入选候选做 GitHub API 元数据、README 和根目录文件抽样。\n\n关键假设：本轮做了实时 GitHub API/README/root-content 审计，但没有 clone、安装、Docker/npm/pip/go/cargo/Android/浏览器扩展构建或本地运行。Star 数是 API 快照，不是精确增量。优先保留真实产品形态、可运行 UI/CLI/API、明确用户场景和 demo/安装/截图/文档完整的仓库；成熟基线项目、纯模板集合、薄 MCP wrapper、论文/训练/awesome/prompt collection 继续降权。昨天已覆盖的 Orca、Deco Studio、Stardust、wmux、LocalMind、trvl、AzureAgentForge、callmux、skill-flow、bagidea-office 不重复进入 Top。\n\n## Top Projects\n\n### 1. heygen-com/hyperframes - Agent-native Video Rendering - Score 93\n- GitHub: https://github.com/heygen-com/hyperframes\n- 做什么：HTML-to-video rendering framework built so agents can write HTML, preview scenes, and render product-quality videos through a programmable stack.\n- 面向谁：AI app builders, agent workflow builders, product/video teams that want agents to generate editable motion assets.\n- AI native 点：The core abstraction is agent-readable HTML plus render pipeline, with `.claude-plugin`, `.codex-plugin`, examples, docs, and packages that make video generation a tool-using agent task.\n- 增长/活跃信号：GitHub API snapshot: 31,064 stars, 2,893 forks, 56 open issues, created 2026-03-10 and pushed 2026-06-25; root contains docs, examples, packages, assets, plugin directories, tests and package metadata.\n- 可运行性判断：README exposes npm package, quickstart/showcase links, Node >=22 and docs; root has examples and package.json. No local render audit performed.\n- 建议动作：High-priority trial: ask Codex/Claude to generate a short product explainer scene and inspect editability, render time, asset handling, and failure modes.\n\n### 2. luckyPipewrench/pipelock - Agent Security / MCP Firewall - Score 90\n- GitHub: https://github.com/luckyPipewrench/pipelock\n- 做什么：Open-source agent firewall for mediated HTTP, MCP, A2A, and WebSocket traffic, focused on exfiltration, SSRF, prompt injection, and signed action receipts.\n- 面向谁：Teams deploying agents with tool/network access who need auditability and policy enforcement outside the model loop.\n- AI native 点：It treats agent egress as a governed runtime surface: mediator-signed receipts, MCP/A2A traffic scanning, deploy configs, charts, CLI/server code, and security workflows.\n- 增长/活跃信号：729 stars, 86 forks, 2 open issues, pushed on 2026-06-25; repo includes Dockerfiles, charts, cmd, configs, deploy, bench, security policy and CI/security workflows.\n- 可运行性判断：README has release badges, CNCF landscape signal, Docker/build infrastructure and deployment assets; no local proxy/firewall audit performed.\n- 建议动作：Prototype around one MCP server plus one HTTP tool and verify whether receipts and prompt-injection/SSRF controls are usable in normal agent runs.\n\n### 3. NotASithLord/peerd - Browser-native Agent Harness - Score 88\n- GitHub: https://github.com/NotASithLord/peerd\n- 做什么：Chrome/Firefox extension that runs the agent loop in the browser, drives tabs, spins up sandboxed compute, and shares built artifacts peer-to-peer with BYOK/no backend positioning.\n- 面向谁：Browser-agent builders, privacy-first agent users, and teams experimenting with extension-based local agent loops.\n- AI native 点：The browser becomes the agent runtime: tab control, extension packaging, sandboxed JS/WASM compute, local artifacts, manifests and update feeds are first-class pieces.\n- 增长/活跃信号：71 stars, 2 forks, 6 open issues, created 2026-06-22 and pushed 2026-06-25; root includes extension, manifests, signaling-node, tools, tests, packaging, docs and status/design files.\n- 可运行性判断：README describes Manifest V3 Chrome/Firefox extension and no-build vanilla JS path; no browser install audit performed.\n- 建议动作：Watch closely and run a browser-extension smoke test next cycle: tab navigation, local compute, persistence, and peer share are the key claims.\n\n### 4. QodeXcli/QodeX - Local-first Coding Agent CLI - Score 86\n- GitHub: https://github.com/QodeXcli/QodeX\n- 做什么：Terminal coding agent that defaults to local models through Ollama/LM Studio, with optional cloud fallback, 100+ tools, browser capability, vision, live artifacts, and guardrails.\n- 面向谁：Developers who want a privacy-first coding agent and teams comparing Codex/Claude-style flows against local models.\n- AI native 点：Local model execution, syntax/completion gates, browser and vision tools, shareable artifacts, MCP templates and VS Code extension all center the agent loop.\n- 增长/活跃信号：33 stars, 12 forks, created 2026-06-11 and pushed 2026-06-25; repo includes bin, src, services, eval, examples, grammars, mcp-templates, docs, tests and vscode-extension.\n- 可运行性判断：README states version 2.4.0, package scripts and local model setup; no CLI install/run audit performed.\n- 建议动作：Run against a small repo with Qwen3-Coder via Ollama and compare guardrail behavior against Codex CLI on the same task.\n\n### 5. mobius-os/mobius - Self-hosted App-building Agent OS - Score 84\n- GitHub: https://github.com/mobius-os/mobius\n- 做什么：Self-hosted AI agent that builds mini-apps, edits its own interface, and exposes a personal AI operating-system style workspace on your own server.\n- 面向谁：Users and builders who want a sovereign, self-hosted app-building assistant rather than hosted agent SaaS.\n- AI native 点：Agent-built apps, self-modifying UI, core apps, protected files, backend/frontend split, PWA posture and Docker deployment make the agent the product operator.\n- 增长/活跃信号：8 stars, created 2026-04-06 and pushed 2026-06-25; root includes Dockerfile, docker-compose, backend, frontend, core-apps, docs, skill, tests and Playwright config.\n- 可运行性判断：README advertises single-container Docker and PWA install; repo has compose files and test config. No self-hosted run audit performed.\n- 建议动作：Add to experiment queue; verify whether it can build one small CRUD app safely without corrupting protected UI/runtime files.\n\n### 6. oleksiijko/pmb - Local-first Agent Memory MCP - Score 83\n- GitHub: https://github.com/oleksiijko/pmb\n- 做什么：Persistent memory for AI coding agents over MCP, storing decisions, lessons, and facts in one local SQLite file with offline multilingual usage.\n- 面向谁：Claude Code, Cursor, Codex and other MCP-client users who need durable project memory without cloud storage.\n- AI native 点：The product is a memory substrate for agent sessions: MCP tools, local SQLite, graph dashboard, compose/npm/pyproject packaging and tests.\n- 增长/活跃信号：85 stars, 10 forks, 3 open issues, created 2026-05-25 and pushed 2026-06-25; root includes docs, npm package, Python source, tests, Docker/compose and server metadata.\n- 可运行性判断：README shows PyPI, MCP-native setup and dashboard GIF; no local MCP run audit performed.\n- 建议动作：Trial with Codex on one repo and compare recall quality against existing memory files; inspect schema and export path.\n\n### 7. vilmire/adhdev - Coding Agent Dashboard Hub - Score 82\n- GitHub: https://github.com/vilmire/adhdev\n- 做什么：Self-hosted control plane for AI coding-agent sessions, showing running/waiting/finished/stuck states with chat, terminal, approvals, interrupts and history reopening.\n- 面向谁：Developers and teams running long-lived background coding agents who need one local dashboard.\n- AI native 点：It treats agent sessions as operational objects with status, approvals, terminal state, interruption and next-instruction routing.\n- 增长/活跃信号：48 stars, 11 forks, created 2026-03-17 and pushed 2026-06-25; repo contains packages, docs, npm metadata, scripts and CI.\n- 可运行性判断：README describes standalone daemon with embedded web dashboard and npm package; no local daemon audit performed.\n- 建议动作：Compare with Orca/cmux/Overdeck; focus on approval flow and whether terminal/chat state is faithful enough for real supervision.\n\n### 8. corrm/beflow - Governed Agent PR Orchestration - Score 80\n- GitHub: https://github.com/corrm/beflow\n- 做什么：CLI that turns Plane/Linear work items into agent-built pull requests with AGENTOWNERS-style policy gates before review readiness.\n- 面向谁：Engineering teams that want autonomous coding agents to work from backlog items while retaining review and ownership policy.\n- AI native 点：Backlog-to-PR automation, policy gates, board sync, review state and agent-built changes form the product workflow.\n- 增长/活跃信号：7 stars, created 2026-06-14 and pushed 2026-06-24; root includes package.json, config schema/example, docs, media demo, src and tests.\n- 可运行性判断：README links npm package and demo GIF; no Plane/Linear integration audit performed.\n- 建议动作：Run on a toy Linear/Plane board and inspect policy behavior before considering use on a real repo.\n\n### 9. zwx1127/gdx - Game-dev Automation CLI for Agents - Score 79\n- GitHub: https://github.com/zwx1127/gdx\n- 做什么：Rust CLI that exposes Godot 4 project setup, scene editing, runtime control, screenshots, tests and exports through JSON-emitting commands for AI agents.\n- 面向谁：Game developers and agent builders who want Codex or similar agents to operate real Godot projects from chat.\n- AI native 点：It wraps Godot into a reliable machine interface for agents, including screenshots, tests, exports and remote approval workflows via agent-relay.\n- 增长/活跃信号：10 stars, created 2026-06-09 and pushed 2026-06-25; root includes crates, docs, skills, tests, Rust toolchain and bilingual README.\n- 可运行性判断：README documents JSON CLI commands and local-trusted-machine workflow; no Godot project audit performed.\n- 建议动作：Use as a small game-agent experiment: create a scene, capture screenshot, run tests, then inspect whether command output is agent-friendly.\n\n### 10. dotdevdotdev/agentwire-dev - Voice Control for Coding Agents - Score 78\n- GitHub: https://github.com/dotdevdotdev/agentwire-dev\n- 做什么：Push-to-talk voice control for Claude Code running in tmux from phone, tablet or laptop, with PyPI package, TTS/STT requirements and remote execution positioning.\n- 面向谁：Developers who want to steer long-running coding agents away from the workstation.\n- AI native 点：It turns voice/mobile input into a control layer for local coding agents, connecting tmux, agent sessions, speech and remote prompts.\n- 增长/活跃信号：18 stars, 5 forks, 26 open issues, pushed on 2026-06-25; root includes Python package, docs, examples, Dockerfiles, tests and TTS requirements.\n- 可运行性判断：README exposes PyPI install/download badges and phone/remote workflow; no voice/tmux run audit performed.\n- 建议动作：Evaluate alongside PocketShell/agentnoise if mobile voice control becomes a near-term workflow need.\n\n## Watchlist\n\n- [thesongzhu/Friday](https://github.com/thesongzhu/Friday) - Private Agent Control Plane - Score 77：Local-first BYOK control plane that chooses agents, checks work, asks before risky actions and remembers preferences. 增长/活跃信号：917 stars, 116 forks, pushed on 2026-06-25; apps/packages/memory/docs/managed-skills present. 建议：Watch for stable local candidate and compare against Deco/ADHDev.\n- [xuzhougeng/wispterm](https://github.com/xuzhougeng/wispterm) - AI-agent Terminal Workspace - Score 76：Cross-platform terminal workspace for remote development and AI agent workflows, powered by libghostty-vt. 增长/活跃信号：266 stars, 16 forks, 13 open issues, pushed on 2026-06-25. 建议：Watch as cross-platform complement to cmux/wmux.\n- [markhuangai/dense-mem](https://github.com/markhuangai/dense-mem) - Evidence-based Agent Memory - Score 76：Self-hosted memory server with MCP, evidence provenance, typed claims, conflict detection, PostgreSQL, Neo4j and hosted demo. 增长/活跃信号：29 stars, 4 forks, pushed on 2026-06-25; web, migrations, Go source, packages and tests present. 建议：Watch and run a memory conflict test.\n- [lambda-alpha-labs/Graphenium](https://github.com/lambda-alpha-labs/Graphenium) - Structural Memory for Coding Agents - Score 75：MCP-native repository knowledge graph for fast code navigation and persistent structural memory. 增长/活跃信号：Created 2026-06-24, 7 stars, 9 open issues; install script, docs, skills, Rust source present. 建议：Watch for package/release and try on a medium repo.\n- [MarlBurroW/hivekeep](https://github.com/MarlBurroW/hivekeep) - Self-hosted Personal AI Agents - Score 74：Single-container home server for persistent personal AI agents with memory and collaboration. 增长/活跃信号：23 stars, 3 forks, 20 open issues, created 2026-06-07 and pushed 2026-06-24. 建议：Watch; compare with Mobius for app-building depth.\n- [rickicode/patchright-browser](https://github.com/rickicode/patchright-browser) - Browser Automation MCP - Score 73：Patchright-based browser automation MCP server with multi-profile Chromium, dashboard and StreamableHTTP. 增长/活跃信号：Created 2026-06-24, 10 stars, pushed same day; dashboard screenshots, install scripts, lib and skills present. 建议：Watch for early issues and test against logged-in workflow.\n\n## Skip Reasons\n\n- [langgenius/dify](https://github.com/langgenius/dify)：Mature agent workflow platform and recurring baseline; active but not a fresh discovery for today.\n- [infiniflow/ragflow](https://github.com/infiniflow/ragflow)：Mature RAG baseline; no new product-shape signal strong enough to repeat today.\n- [n8n-io/n8n](https://github.com/n8n-io/n8n)：High-quality workflow automation baseline, but too mature and broad for this daily new-radar slot.\n- [anomalyco/opencode](https://github.com/anomalyco/opencode)：Major coding-agent baseline with huge activity; skipped to reserve Top slots for newer product-shaped projects.\n- [langfuse/langfuse-docs](https://github.com/langfuse/langfuse-docs)：Documentation repository for an established observability product, not a new runnable product repo.\n- [QAInsights/awesome-ai-tools](https://github.com/QAInsights/awesome-ai-tools)：Curated list/reference repository; excluded by prompt collection/awesome-list rule.\n- [Empreiteiro/langflow-templates](https://github.com/Empreiteiro/langflow-templates)：Template collection without independent product runtime.\n- [justoneapi/justoneapi-mcp](https://github.com/justoneapi/justoneapi-mcp)：Thin single-service MCP wrapper with limited standalone workflow/product surface.\n\n类型级跳过原因：本轮也降权了纯论文复现、benchmark、prompt/rules collection、只含 README 的营销仓库、单 API wrapper、加密/游戏外挂/非 AI 主题项目；这些没有写入 `skipped_projects`，避免伪造真实 GitHub repo。\n\n## 今日趋势观察\n\n1. Agent-native media 正在从“生成视频 API”变成“让 agent 编写、预览、渲染可编辑视频”的工程化工作流，HyperFrames 是今天最强信号。\n2. Agent 安全与治理正在前移到 egress/MCP/A2A/WebSocket 层，Pipelock、beflow、Friday、ADHDev 都把审批、证据或策略做成运行时能力。\n3. 浏览器正在成为本地 agent runtime：peerd、Patchright Browser、Molio、GitNexus 说明扩展、WebGPU、WebClipper、browser-side graph/RAG 都在产品化。\n4. Coding-agent CLI/工作台仍在快速分化：QodeX 偏 local-first 模型和 guardrails，ADHDev 偏 session dashboard，WispTerm/cmux 偏终端控制面，AgentWire/PocketShell 偏移动与语音输入。\n5. Agent memory 进入“证据、冲突、结构化图谱”竞争期：PMB、dense-mem、Graphenium、Myco Brain、IAI PME 关注点都从简单笔记转向 provenance、graph、SQLite/Postgres/Neo4j 和 MCP 工具化。\n\n## 今日建议动作\n\n- 优先试跑 HyperFrames：用 agent 生成 15-30 秒产品演示视频，记录 HTML 编辑性、渲染稳定性和模板复用方式。\n- 用 Pipelock 做一个最小 MCP/HTTP egress 实验，确认 action receipt 是否能进入日常 agent 审计链。\n- 试装 peerd 或 Patchright Browser，验证浏览器扩展/MCP 是否能支撑真实登录态任务。\n- 用 PMB 跑一次 Codex 项目记忆实验，比较本地 SQLite MCP 与当前 Markdown memory 工作流的差异。\n- 把 ADHDev/beflow 放进 coding-agent 运维候选，分别评估 session 控制面和 backlog-to-PR 策略门禁。\n\n## 信息来源\n\n- GitHub Search API：`AI agent MCP pushed:>2026-06-22 stars:>5`、`LLM app pushed:>2026-06-22 stars:>5`、`RAG agent pushed:>2026-06-22 stars:>5`、`browser agent pushed:>2026-06-22 stars:>5`、`code agent pushed:>2026-06-22 stars:>5`、`voice agent pushed:>2026-06-22 stars:>5`、`AI workflow pushed:>2026-06-22 stars:>5`、`MCP server pushed:>2026-06-22 stars:>5`、`AI assistant created:>2026-06-01 pushed:>2026-06-22 stars:>5`、`automation agent created:>2026-06-01 pushed:>2026-06-22 stars:>5`。\n- GitHub repository metadata/README/root contents：Top、Watchlist、Skip 中列出的仓库，以及候选池中的 GitNexus、Myco Brain、dense-mem、Graphenium、Friday、WispTerm、PocketShell、AgentWire、gdx、Hivekeep、Patchright Browser、Molio、Rapida、Patter、VoiceBlender 等。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "category": "Agent-native Video Rendering",
+      "score": 93,
+      "summary": "HTML-to-video rendering framework built so agents can write HTML, preview scenes, and render product-quality videos through a programmable stack.",
+      "audience": "AI app builders, agent workflow builders, product/video teams that want agents to generate editable motion assets.",
+      "ai_native_angle": "The core abstraction is agent-readable HTML plus render pipeline, with `.claude-plugin`, `.codex-plugin`, examples, docs, and packages that make video generation a tool-using agent task.",
+      "growth_signal": "GitHub API snapshot: 31,064 stars, 2,893 forks, 56 open issues, created 2026-03-10 and pushed 2026-06-25; root contains docs, examples, packages, assets, plugin directories, tests and package metadata.",
+      "runnability": "README exposes npm package, quickstart/showcase links, Node >=22 and docs; root has examples and package.json. No local render audit performed.",
+      "recommended_action": "High-priority trial: ask Codex/Claude to generate a short product explainer scene and inspect editability, render time, asset handling, and failure modes."
+    },
+    {
+      "rank": 2,
+      "full_name": "luckyPipewrench/pipelock",
+      "url": "https://github.com/luckyPipewrench/pipelock",
+      "category": "Agent Security / MCP Firewall",
+      "score": 90,
+      "summary": "Open-source agent firewall for mediated HTTP, MCP, A2A, and WebSocket traffic, focused on exfiltration, SSRF, prompt injection, and signed action receipts.",
+      "audience": "Teams deploying agents with tool/network access who need auditability and policy enforcement outside the model loop.",
+      "ai_native_angle": "It treats agent egress as a governed runtime surface: mediator-signed receipts, MCP/A2A traffic scanning, deploy configs, charts, CLI/server code, and security workflows.",
+      "growth_signal": "729 stars, 86 forks, 2 open issues, pushed on 2026-06-25; repo includes Dockerfiles, charts, cmd, configs, deploy, bench, security policy and CI/security workflows.",
+      "runnability": "README has release badges, CNCF landscape signal, Docker/build infrastructure and deployment assets; no local proxy/firewall audit performed.",
+      "recommended_action": "Prototype around one MCP server plus one HTTP tool and verify whether receipts and prompt-injection/SSRF controls are usable in normal agent runs."
+    },
+    {
+      "rank": 3,
+      "full_name": "NotASithLord/peerd",
+      "url": "https://github.com/NotASithLord/peerd",
+      "category": "Browser-native Agent Harness",
+      "score": 88,
+      "summary": "Chrome/Firefox extension that runs the agent loop in the browser, drives tabs, spins up sandboxed compute, and shares built artifacts peer-to-peer with BYOK/no backend positioning.",
+      "audience": "Browser-agent builders, privacy-first agent users, and teams experimenting with extension-based local agent loops.",
+      "ai_native_angle": "The browser becomes the agent runtime: tab control, extension packaging, sandboxed JS/WASM compute, local artifacts, manifests and update feeds are first-class pieces.",
+      "growth_signal": "71 stars, 2 forks, 6 open issues, created 2026-06-22 and pushed 2026-06-25; root includes extension, manifests, signaling-node, tools, tests, packaging, docs and status/design files.",
+      "runnability": "README describes Manifest V3 Chrome/Firefox extension and no-build vanilla JS path; no browser install audit performed.",
+      "recommended_action": "Watch closely and run a browser-extension smoke test next cycle: tab navigation, local compute, persistence, and peer share are the key claims."
+    },
+    {
+      "rank": 4,
+      "full_name": "QodeXcli/QodeX",
+      "url": "https://github.com/QodeXcli/QodeX",
+      "category": "Local-first Coding Agent CLI",
+      "score": 86,
+      "summary": "Terminal coding agent that defaults to local models through Ollama/LM Studio, with optional cloud fallback, 100+ tools, browser capability, vision, live artifacts, and guardrails.",
+      "audience": "Developers who want a privacy-first coding agent and teams comparing Codex/Claude-style flows against local models.",
+      "ai_native_angle": "Local model execution, syntax/completion gates, browser and vision tools, shareable artifacts, MCP templates and VS Code extension all center the agent loop.",
+      "growth_signal": "33 stars, 12 forks, created 2026-06-11 and pushed 2026-06-25; repo includes bin, src, services, eval, examples, grammars, mcp-templates, docs, tests and vscode-extension.",
+      "runnability": "README states version 2.4.0, package scripts and local model setup; no CLI install/run audit performed.",
+      "recommended_action": "Run against a small repo with Qwen3-Coder via Ollama and compare guardrail behavior against Codex CLI on the same task."
+    },
+    {
+      "rank": 5,
+      "full_name": "mobius-os/mobius",
+      "url": "https://github.com/mobius-os/mobius",
+      "category": "Self-hosted App-building Agent OS",
+      "score": 84,
+      "summary": "Self-hosted AI agent that builds mini-apps, edits its own interface, and exposes a personal AI operating-system style workspace on your own server.",
+      "audience": "Users and builders who want a sovereign, self-hosted app-building assistant rather than hosted agent SaaS.",
+      "ai_native_angle": "Agent-built apps, self-modifying UI, core apps, protected files, backend/frontend split, PWA posture and Docker deployment make the agent the product operator.",
+      "growth_signal": "8 stars, created 2026-04-06 and pushed 2026-06-25; root includes Dockerfile, docker-compose, backend, frontend, core-apps, docs, skill, tests and Playwright config.",
+      "runnability": "README advertises single-container Docker and PWA install; repo has compose files and test config. No self-hosted run audit performed.",
+      "recommended_action": "Add to experiment queue; verify whether it can build one small CRUD app safely without corrupting protected UI/runtime files."
+    },
+    {
+      "rank": 6,
+      "full_name": "oleksiijko/pmb",
+      "url": "https://github.com/oleksiijko/pmb",
+      "category": "Local-first Agent Memory MCP",
+      "score": 83,
+      "summary": "Persistent memory for AI coding agents over MCP, storing decisions, lessons, and facts in one local SQLite file with offline multilingual usage.",
+      "audience": "Claude Code, Cursor, Codex and other MCP-client users who need durable project memory without cloud storage.",
+      "ai_native_angle": "The product is a memory substrate for agent sessions: MCP tools, local SQLite, graph dashboard, compose/npm/pyproject packaging and tests.",
+      "growth_signal": "85 stars, 10 forks, 3 open issues, created 2026-05-25 and pushed 2026-06-25; root includes docs, npm package, Python source, tests, Docker/compose and server metadata.",
+      "runnability": "README shows PyPI, MCP-native setup and dashboard GIF; no local MCP run audit performed.",
+      "recommended_action": "Trial with Codex on one repo and compare recall quality against existing memory files; inspect schema and export path."
+    },
+    {
+      "rank": 7,
+      "full_name": "vilmire/adhdev",
+      "url": "https://github.com/vilmire/adhdev",
+      "category": "Coding Agent Dashboard Hub",
+      "score": 82,
+      "summary": "Self-hosted control plane for AI coding-agent sessions, showing running/waiting/finished/stuck states with chat, terminal, approvals, interrupts and history reopening.",
+      "audience": "Developers and teams running long-lived background coding agents who need one local dashboard.",
+      "ai_native_angle": "It treats agent sessions as operational objects with status, approvals, terminal state, interruption and next-instruction routing.",
+      "growth_signal": "48 stars, 11 forks, created 2026-03-17 and pushed 2026-06-25; repo contains packages, docs, npm metadata, scripts and CI.",
+      "runnability": "README describes standalone daemon with embedded web dashboard and npm package; no local daemon audit performed.",
+      "recommended_action": "Compare with Orca/cmux/Overdeck; focus on approval flow and whether terminal/chat state is faithful enough for real supervision."
+    },
+    {
+      "rank": 8,
+      "full_name": "corrm/beflow",
+      "url": "https://github.com/corrm/beflow",
+      "category": "Governed Agent PR Orchestration",
+      "score": 80,
+      "summary": "CLI that turns Plane/Linear work items into agent-built pull requests with AGENTOWNERS-style policy gates before review readiness.",
+      "audience": "Engineering teams that want autonomous coding agents to work from backlog items while retaining review and ownership policy.",
+      "ai_native_angle": "Backlog-to-PR automation, policy gates, board sync, review state and agent-built changes form the product workflow.",
+      "growth_signal": "7 stars, created 2026-06-14 and pushed 2026-06-24; root includes package.json, config schema/example, docs, media demo, src and tests.",
+      "runnability": "README links npm package and demo GIF; no Plane/Linear integration audit performed.",
+      "recommended_action": "Run on a toy Linear/Plane board and inspect policy behavior before considering use on a real repo."
+    },
+    {
+      "rank": 9,
+      "full_name": "zwx1127/gdx",
+      "url": "https://github.com/zwx1127/gdx",
+      "category": "Game-dev Automation CLI for Agents",
+      "score": 79,
+      "summary": "Rust CLI that exposes Godot 4 project setup, scene editing, runtime control, screenshots, tests and exports through JSON-emitting commands for AI agents.",
+      "audience": "Game developers and agent builders who want Codex or similar agents to operate real Godot projects from chat.",
+      "ai_native_angle": "It wraps Godot into a reliable machine interface for agents, including screenshots, tests, exports and remote approval workflows via agent-relay.",
+      "growth_signal": "10 stars, created 2026-06-09 and pushed 2026-06-25; root includes crates, docs, skills, tests, Rust toolchain and bilingual README.",
+      "runnability": "README documents JSON CLI commands and local-trusted-machine workflow; no Godot project audit performed.",
+      "recommended_action": "Use as a small game-agent experiment: create a scene, capture screenshot, run tests, then inspect whether command output is agent-friendly."
+    },
+    {
+      "rank": 10,
+      "full_name": "dotdevdotdev/agentwire-dev",
+      "url": "https://github.com/dotdevdotdev/agentwire-dev",
+      "category": "Voice Control for Coding Agents",
+      "score": 78,
+      "summary": "Push-to-talk voice control for Claude Code running in tmux from phone, tablet or laptop, with PyPI package, TTS/STT requirements and remote execution positioning.",
+      "audience": "Developers who want to steer long-running coding agents away from the workstation.",
+      "ai_native_angle": "It turns voice/mobile input into a control layer for local coding agents, connecting tmux, agent sessions, speech and remote prompts.",
+      "growth_signal": "18 stars, 5 forks, 26 open issues, pushed on 2026-06-25; root includes Python package, docs, examples, Dockerfiles, tests and TTS requirements.",
+      "runnability": "README exposes PyPI install/download badges and phone/remote workflow; no voice/tmux run audit performed.",
+      "recommended_action": "Evaluate alongside PocketShell/agentnoise if mobile voice control becomes a near-term workflow need."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "thesongzhu/Friday",
+      "url": "https://github.com/thesongzhu/Friday",
+      "category": "Private Agent Control Plane",
+      "score": 77,
+      "summary": "Local-first BYOK control plane that chooses agents, checks work, asks before risky actions and remembers preferences.",
+      "audience": "Power users who want a private boss layer over Codex/Claude/other agents.",
+      "ai_native_angle": "Approval-first routing, memory, evidence, local kernel and managed skills make it an agent operations shell.",
+      "growth_signal": "917 stars, 116 forks, pushed on 2026-06-25; apps/packages/memory/docs/managed-skills present.",
+      "runnability": "README and setup command look promising; needs install audit before Top placement.",
+      "recommended_action": "Watch for stable local candidate and compare against Deco/ADHDev."
+    },
+    {
+      "full_name": "xuzhougeng/wispterm",
+      "url": "https://github.com/xuzhougeng/wispterm",
+      "category": "AI-agent Terminal Workspace",
+      "score": 76,
+      "summary": "Cross-platform terminal workspace for remote development and AI agent workflows, powered by libghostty-vt.",
+      "audience": "Developers who want a terminal shaped around agent multitasking.",
+      "ai_native_angle": "Terminal workspace, plugins, remote dev and agent workflow framing align with long-running agent control.",
+      "growth_signal": "266 stars, 16 forks, 13 open issues, pushed on 2026-06-25.",
+      "runnability": "Releases and platform badges exist; needs desktop install audit.",
+      "recommended_action": "Watch as cross-platform complement to cmux/wmux."
+    },
+    {
+      "full_name": "markhuangai/dense-mem",
+      "url": "https://github.com/markhuangai/dense-mem",
+      "category": "Evidence-based Agent Memory",
+      "score": 76,
+      "summary": "Self-hosted memory server with MCP, evidence provenance, typed claims, conflict detection, PostgreSQL, Neo4j and hosted demo.",
+      "audience": "Teams needing auditable memory for agents.",
+      "ai_native_angle": "Evidence, claims and conflict handling address long-term agent trust.",
+      "growth_signal": "29 stars, 4 forks, pushed on 2026-06-25; web, migrations, Go source, packages and tests present.",
+      "runnability": "Hosted demo and Docker/demo assets exist; compare against PMB/Myco/IAI before promoting.",
+      "recommended_action": "Watch and run a memory conflict test."
+    },
+    {
+      "full_name": "lambda-alpha-labs/Graphenium",
+      "url": "https://github.com/lambda-alpha-labs/Graphenium",
+      "category": "Structural Memory for Coding Agents",
+      "score": 75,
+      "summary": "MCP-native repository knowledge graph for fast code navigation and persistent structural memory.",
+      "audience": "Coding-agent users in large repos.",
+      "ai_native_angle": "Durable graph queries replace repeated grep-and-trace navigation.",
+      "growth_signal": "Created 2026-06-24, 7 stars, 9 open issues; install script, docs, skills, Rust source present.",
+      "runnability": "README has install/demo GIF; very new, needs proof.",
+      "recommended_action": "Watch for package/release and try on a medium repo."
+    },
+    {
+      "full_name": "MarlBurroW/hivekeep",
+      "url": "https://github.com/MarlBurroW/hivekeep",
+      "category": "Self-hosted Personal AI Agents",
+      "score": 74,
+      "summary": "Single-container home server for persistent personal AI agents with memory and collaboration.",
+      "audience": "Self-hosting users who want a private AI team.",
+      "ai_native_angle": "Persistent agents, local memory, plugins and API/docs frame it as consumer assistant infrastructure.",
+      "growth_signal": "23 stars, 3 forks, 20 open issues, created 2026-06-07 and pushed 2026-06-24.",
+      "runnability": "Docker/package/docs are present; needs first-run audit.",
+      "recommended_action": "Watch; compare with Mobius for app-building depth."
+    },
+    {
+      "full_name": "rickicode/patchright-browser",
+      "url": "https://github.com/rickicode/patchright-browser",
+      "category": "Browser Automation MCP",
+      "score": 73,
+      "summary": "Patchright-based browser automation MCP server with multi-profile Chromium, dashboard and StreamableHTTP.",
+      "audience": "Agent users needing real browser profiles and dashboarded automation.",
+      "ai_native_angle": "Exposes real headed/headless browser operations as MCP tools with profiles and agent setup.",
+      "growth_signal": "Created 2026-06-24, 10 stars, pushed same day; dashboard screenshots, install scripts, lib and skills present.",
+      "runnability": "README has Claude MCP quickstart; needs security/reliability audit.",
+      "recommended_action": "Watch for early issues and test against logged-in workflow."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Mature agent workflow platform and recurring baseline; active but not a fresh discovery for today."
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "skip_reason": "Mature RAG baseline; no new product-shape signal strong enough to repeat today."
+    },
+    {
+      "full_name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "skip_reason": "High-quality workflow automation baseline, but too mature and broad for this daily new-radar slot."
+    },
+    {
+      "full_name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "skip_reason": "Major coding-agent baseline with huge activity; skipped to reserve Top slots for newer product-shaped projects."
+    },
+    {
+      "full_name": "langfuse/langfuse-docs",
+      "url": "https://github.com/langfuse/langfuse-docs",
+      "skip_reason": "Documentation repository for an established observability product, not a new runnable product repo."
+    },
+    {
+      "full_name": "QAInsights/awesome-ai-tools",
+      "url": "https://github.com/QAInsights/awesome-ai-tools",
+      "skip_reason": "Curated list/reference repository; excluded by prompt collection/awesome-list rule."
+    },
+    {
+      "full_name": "Empreiteiro/langflow-templates",
+      "url": "https://github.com/Empreiteiro/langflow-templates",
+      "skip_reason": "Template collection without independent product runtime."
+    },
+    {
+      "full_name": "justoneapi/justoneapi-mcp",
+      "url": "https://github.com/justoneapi/justoneapi-mcp",
+      "skip_reason": "Thin single-service MCP wrapper with limited standalone workflow/product surface."
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "run_date": "2026-06-10",
+  "generated_at": "2026-06-10T18:17:34+08:00",
+  "data_window": "2026-06-07 18:17 to 2026-06-10 18:17 Asia/Shanghai; GitTrend AI Agent/AI Coding Assistant/AI Skills pages updated June 6-9, 2026, GitHub repository README pages, and targeted web search for AI agent, coding-agent, MCP, skills, RAG/notebook, and AI workflow products.",
+  "source_summary": "Live GitTrend topic/trending pages, GitHub repository README pages, targeted web search, and prior automation memory to avoid repeating 2026-06-09 picks unless they still carried a materially fresh signal. Local gh remains unavailable in this workspace and no clone/run audit was performed; star velocity is treated as directional and GitTrend-specific until API-verified.",
+  "trend_observations": "The current product-shaped signals are vertical agent workspaces moving from prompts into domain operating systems, coding agents optimizing for model-specific economics and persistent sessions, front-end agent protocols maturing around generative UI, and self-hosted notebook/RAG products packaging deployment rather than just demos.",
+  "assumptions": "Prioritized repositories with visible product surface, runnable UI/CLI/API, install instructions, docs/examples/screenshots/demo assets, and recent growth or update signals. Downgraded pure prompt/CLAUDE.md collections, model-training tutorials, abnormal star spikes, and repositories without a durable user workflow. This run used live web/README audit only; no local clone, package install, docker start, or GitHub API audit was performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-06-10\n\n数据窗口：2026-06-07 18:17 to 2026-06-10 18:17 Asia/Shanghai; GitTrend AI Agent/AI Coding Assistant/AI Skills pages updated June 6-9, 2026, GitHub repository README pages, and targeted web search for AI agent, coding-agent, MCP, skills, RAG/notebook, and AI workflow products.\n\n关键假设：Prioritized repositories with visible product surface, runnable UI/CLI/API, install instructions, docs/examples/screenshots/demo assets, and recent growth or update signals. Downgraded pure prompt/CLAUDE.md collections, model-training tutorials, abnormal star spikes, and repositories without a durable user workflow. This run used live web/README audit only; no local clone, package install, docker start, or GitHub API audit was performed.\n\n## Top Projects\n\n1. [santifer/career-ops](https://github.com/santifer/career-ops) - Vertical Career Agent OS - Score 91\n   - 做什么：AI-powered job-search command center that turns Claude Code, Codex, Gemini, Qwen or OpenCode into a pipeline for job evaluation, tailored CV generation, portal scanning, batch processing and tracking.\n   - 面向谁：Job seekers, career switchers and AI builders who want a structured, human-reviewed job-search operating system.\n   - AI native 点：The workflow is agent-native: coding CLIs navigate career pages, reason over CV/job fit, personalize PDFs, update trackers, deduplicate applications and keep a TUI/dashboard view of the pipeline.\n   - 增长/活跃信号：GitTrend ranked it #6 in AI Agent on June 9 with +754 stars today; GitHub showed 52.1k stars, 10.5k forks, 259 commits, 88 issues and 79 PRs, with demo images and multilingual README.\n   - 可运行性判断：Fast path is npx @santifer/career-ops init, then open Claude/Gemini/Codex/Qwen/OpenCode in the generated workspace; manual clone/npm install and Playwright Chromium setup are documented.\n   - 建议动作：High-priority vertical product study. Run onboarding with a dummy CV and compare its data contract, tracker integrity and HITL safeguards against simpler prompt-pack workflows.\n\n2. [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) - Model-specific Coding Agent CLI - Score 89\n   - 做什么：DeepSeek-native coding agent for terminal and desktop workflows, redesigned around stable prefix-cache economics, long-running sessions, SEARCH/REPLACE review and Go-based native distribution.\n   - 面向谁：Developers using DeepSeek models heavily, especially cost-sensitive users who leave agents running across long coding sessions.\n   - AI native 点：It treats model-cache behavior as a product primitive: the agent loop, command set, session memory, MCP wiring and desktop client are all shaped around keeping prompts cache-stable.\n   - 增长/活跃信号：GitTrend ranked it #7 in AI Agent on June 9 with +608 stars today; GitTrend repo page showed 13.8k stars, 797 forks and 309 issues, while GitHub showed 747 commits and a main-v2 Go rewrite note.\n   - 可运行性判断：Install paths include npm i -g reasonix and brew install esengine/reasonix/reasonix; prebuilt archives and SHA256SUMS are documented for macOS/Linux/Windows.\n   - 建议动作：Run a small coding benchmark against generic agents using the same DeepSeek key; inspect whether cache metrics and review/apply loop create a real cost/quality advantage.\n\n3. [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) - Agent Frontend / Generative UI Stack - Score 87\n   - 做什么：Frontend stack for embedding agents and generative UI into React, Next.js, Angular, Vue, React Native and chat surfaces, with AG-UI protocol positioning.\n   - 面向谁：Product teams and frontend engineers building user-facing AI copilots, in-app agents and multi-surface assistant experiences.\n   - AI native 点：The AI surface is not a chat widget bolted on later; it exposes one agent backend across app UI, mobile, team chat and generative UI components.\n   - 增长/活跃信号：GitTrend ranked it #10 in AI Agent on June 9 with +468 stars today; GitHub showed 10,905 commits plus monorepo packages, SDKs, docs, showcase and skills folders.\n   - 可运行性判断：React/Next.js and React Native quickstarts are GA, Angular/Vue supported, and Slack/Teams/Discord/Google Chat are marked beta/early-access.\n   - 建议动作：Track as a protocol/product layer. Test a tiny internal dashboard copilot and compare AG-UI ergonomics against ad hoc streaming UI implementations.\n\n4. [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) - Self-hosted NotebookLM / RAG Workspace - Score 85\n   - 做什么：Open-source NotebookLM-like workspace with notebooks, AI providers, API/frontend structure, Docker deployment, local/Ollama option and persistent data service.\n   - 面向谁：Researchers, students, content teams and knowledge workers who want NotebookLM-style workflows outside a closed hosted product.\n   - AI native 点：It packages source-grounded AI synthesis into a deployable workspace: users bring documents/data, configure model providers, then create notebooks with local or API models.\n   - 增长/活跃信号：GitTrend ranked it #9 in AI Skills on June 9 with +702 stars today; GitHub showed 739 commits and a structured repo with api, frontend, examples, docs, tests and Docker files.\n   - 可运行性判断：README provides docker-compose.yml, SurrealDB service, app ports 8502/5055, encryption key setup, provider registration and Ollama/local AI option.\n   - 建议动作：Run the Docker compose path with a small document set and compare ingestion, citation behavior and provider configuration against hosted NotebookLM.\n\n5. [dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill) - Business Diagnosis Agent Skills - Score 82\n   - 做什么：Chinese business diagnosis toolbox distilled into 21 agent skills for Claude Code, Codex, Cursor, Trae Solo and similar agent workbenches.\n   - 面向谁：Creators, founders, consultants and operators who want repeatable business/content/decision diagnostics inside coding-agent style tools.\n   - AI native 点：The product is an agent skill operating system: routing, diagnostics, content systems, decision records, learning flows, state save/restore and report generation are encoded as reusable agent workflows.\n   - 增长/活跃信号：GitTrend ranked it #1 in AI Coding Assistant on June 6 with +1.7k stars today; GitHub showed 6.4k stars, 834 forks, 53 commits and a visible v2.14.2 update note.\n   - 可运行性判断：Install paths include Claude plugin marketplace commands, npx skills add for Codex/Claude Code, Trae Solo zip packages, and local build scripts.\n   - 建议动作：Use as a vertical-skill case study: inspect packaging, routing and state persistence patterns; do not treat it as a generic agent platform benchmark.\n\n6. [phuryn/pm-skills](https://github.com/phuryn/pm-skills) - Product Management Agent Skill Marketplace - Score 80\n   - 做什么：PM skill marketplace with 68 skills and 42 chained workflows across 9 plugins for discovery, strategy, execution, launch, growth and AI-built code shipping.\n   - 面向谁：Product managers and founders who want structured PM frameworks inside Claude Code, Claude Cowork and Codex-like agent environments.\n   - AI native 点：It turns PM methods into executable agent workflows with marketplace/plugin installation, chained commands and framework-specific skills rather than static templates.\n   - 增长/活跃信号：GitTrend AI Skills ranked it #10 on June 9 with +486 stars today; GitHub README shows installation for Claude Cowork, Claude Code and Codex CLI plus marketplace screenshots.\n   - 可运行性判断：Claude plugin marketplace and Codex plugin marketplace commands are documented; slash command behavior differs by host, which needs practical audit.\n   - 建议动作：Watch and sample one discovery-to-PRD workflow. Promote only if chained workflows produce better decisions than a good checklist plus general LLM.\n\n7. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) - Agent Internet Reach CLI - Score 79\n   - 做什么：CLI/scaffold that gives agents searchable/readable access to web and social sources including X/Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, Douyin, LinkedIn, RSS and WeChat.\n   - 面向谁：Research-agent builders and operators who need broad source collection without implementing every connector from scratch.\n   - AI native 点：It packages external-world perception tools for agents with channel setup, diagnostics, dry-run safety and pluggable upstream dependencies.\n   - 增长/活跃信号：GitTrend ranked it #3 in AI Agent on June 9 with +1.1k stars today and 24.3k stars; it remained a strong carry-over signal from yesterday.\n   - 可运行性判断：README describes CLI/scaffold concepts, doctor/install/safe/dry-run flow and per-channel dependencies, but this run did not clone or test credentials.\n   - 建议动作：Track for radar-workflow reuse, but audit credential handling, platform ToS exposure and source-quality controls before using logged-in social channels.\n\n8. [uditgoenka/autoresearch](https://github.com/uditgoenka/autoresearch) - Autonomous Research Skill Loop - Score 77\n   - 做什么：Claude/OpenCode/Codex skill that runs a goal-directed modify-verify-keep/discard loop with commands, safety hooks and guided installation.\n   - 面向谁：Agent power users trying to automate iterative research, benchmarking, debugging or eval loops inside coding assistants.\n   - AI native 点：It formalizes an autonomous agent loop around measurable goals, repeated verification and rollback/keep decisions, exposed as skills and commands across multiple hosts.\n   - 增长/活跃信号：GitTrend ranked it #10 in AI Coding Assistant on June 6 with +369 stars today; GitHub README advertises support for Claude Code, OpenCode and OpenAI Codex with 13 commands and 9 safety hooks.\n   - 可运行性判断：Guided installer supports OpenCode and Codex, with manual copy fallback into .agents/skills/autoresearch; local behavior still needs a controlled run.\n   - 建议动作：Use as a small experiment candidate for this radar itself: test whether it can run a bounded source-collection/evaluation loop without drifting.\n\n## Watchlist\n\n- [tw93/Waza](https://github.com/tw93/Waza) - Engineering Habits Skills - Score 73 - Engineering habits packaged as Claude-runnable skills. 建议：Watch; promote only if it proves more than a skill/prompt collection.\n- [obra/superpowers](https://github.com/obra/superpowers) - Agentic Skills Methodology - Score 72 - Agentic skills framework and software-development methodology across Claude, Codex, OpenCode, Cursor, Gemini and Copilot. 建议：Watch as methodology reference; avoid Top unless new product surface emerges.\n- [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) - Interactive Code Knowledge Graph - Score 72 - Interactive code knowledge graph with search/Q&A for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 建议：Compare later against Graphify and CodeGraphContext on one known repo.\n- [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) - Code Context MCP - Score 70 - MCP server plus CLI that indexes local code into a graph database for AI assistants. 建议：Keep in context-engineering watchlist; do not duplicate experiments until one code-graph tool wins.\n\n## Skip Reasons\n\n- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) - High GitTrend rank, but mainly a taste/style skill pack; useful as workflow inspiration, not enough durable UI/CLI/API product surface for today's Top list.\n- [affaan-m/ECC](https://github.com/affaan-m/ECC) - Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification.\n- [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) - Single CLAUDE.md/prompt-methodology style project; downgraded because it lacks a runnable product workflow.\n- [FlorianBruniaux/claude-code-ultimate-guide](https://github.com/FlorianBruniaux/claude-code-ultimate-guide) - Documentation/guide repository rather than AI-native product surface.\n- [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) - Educational/build-from-scratch content; outside the product-shaped agent/workflow focus.\n\n## 今日趋势观察\n\n1. 垂直 agent 产品正在从“提示词包”升级成领域操作系统：Career-Ops、dbskill、PM Skills 都在把知识、流程、状态和产物交付放进同一个 agent 工作台。\n2. Coding agent 进入模型经济学阶段：Reasonix 把 DeepSeek prefix-cache 稳定性当成产品核心，说明下一轮差异化会来自 agent loop 与模型特性的深绑定。\n3. Agent UI/前端协议继续升温：CopilotKit 的 AG-UI/generative UI 方向说明“让 agent 进入真实产品界面”仍是高价值基础设施层。\n4. 自托管知识工作台有产品化空间：open-notebook 这类 NotebookLM 替代品开始把 Docker、Provider 配置、本地模型和持久化作为第一屏能力。\n5. Skills 生态出现两极：一边是可安装、可组合的垂直工作流，另一边是单文件/方法论集合；本雷达继续优先前者。\n\n## 今日建议动作\n\n- 第一优先级：试跑 Career-Ops 的 dummy profile 流程，观察它如何组织 agent、数据契约、PDF 和 tracker。\n- 第二优先级：用 Reasonix 做一次小型代码任务，记录 cache 命中、成本、review/apply 体验。\n- 第三优先级：用 open-notebook 跑 Docker compose，验证 NotebookLM 替代品的部署摩擦和引用质量。\n- 低成本观察：关注 CopilotKit/AG-UI 是否成为多端 agent UI 的事实协议，暂不把纯 skill/prompt spike 当成产品趋势。\n\n## 信息来源\n\n- GitTrend AI Agent: https://gittrend.io/trending/ai-agent\n- GitTrend AI Coding Assistant: https://gittrend.io/trending/ai-coding-assistant\n- GitTrend AI Skills: https://gittrend.io/trending/ai-skills\n- GitTrend DeepSeek-Reasonix repo page: https://gittrend.io/repo/esengine/DeepSeek-Reasonix\n- GitHub README pages: santifer/career-ops、esengine/DeepSeek-Reasonix、CopilotKit/CopilotKit、lfnovo/open-notebook、dontbesilent2025/dbskill、phuryn/pm-skills、Panniantong/Agent-Reach、uditgoenka/autoresearch、tw93/Waza、obra/superpowers。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "category": "Vertical Career Agent OS",
+      "score": 91,
+      "summary": "AI-powered job-search command center that turns Claude Code, Codex, Gemini, Qwen or OpenCode into a pipeline for job evaluation, tailored CV generation, portal scanning, batch processing and tracking.",
+      "audience": "Job seekers, career switchers and AI builders who want a structured, human-reviewed job-search operating system.",
+      "ai_native_angle": "The workflow is agent-native: coding CLIs navigate career pages, reason over CV/job fit, personalize PDFs, update trackers, deduplicate applications and keep a TUI/dashboard view of the pipeline.",
+      "growth_signal": "GitTrend ranked it #6 in AI Agent on June 9 with +754 stars today; GitHub showed 52.1k stars, 10.5k forks, 259 commits, 88 issues and 79 PRs, with demo images and multilingual README.",
+      "runnability": "Fast path is npx @santifer/career-ops init, then open Claude/Gemini/Codex/Qwen/OpenCode in the generated workspace; manual clone/npm install and Playwright Chromium setup are documented.",
+      "recommended_action": "High-priority vertical product study. Run onboarding with a dummy CV and compare its data contract, tracker integrity and HITL safeguards against simpler prompt-pack workflows."
+    },
+    {
+      "rank": 2,
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "category": "Model-specific Coding Agent CLI",
+      "score": 89,
+      "summary": "DeepSeek-native coding agent for terminal and desktop workflows, redesigned around stable prefix-cache economics, long-running sessions, SEARCH/REPLACE review and Go-based native distribution.",
+      "audience": "Developers using DeepSeek models heavily, especially cost-sensitive users who leave agents running across long coding sessions.",
+      "ai_native_angle": "It treats model-cache behavior as a product primitive: the agent loop, command set, session memory, MCP wiring and desktop client are all shaped around keeping prompts cache-stable.",
+      "growth_signal": "GitTrend ranked it #7 in AI Agent on June 9 with +608 stars today; GitTrend repo page showed 13.8k stars, 797 forks and 309 issues, while GitHub showed 747 commits and a main-v2 Go rewrite note.",
+      "runnability": "Install paths include npm i -g reasonix and brew install esengine/reasonix/reasonix; prebuilt archives and SHA256SUMS are documented for macOS/Linux/Windows.",
+      "recommended_action": "Run a small coding benchmark against generic agents using the same DeepSeek key; inspect whether cache metrics and review/apply loop create a real cost/quality advantage."
+    },
+    {
+      "rank": 3,
+      "full_name": "CopilotKit/CopilotKit",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "category": "Agent Frontend / Generative UI Stack",
+      "score": 87,
+      "summary": "Frontend stack for embedding agents and generative UI into React, Next.js, Angular, Vue, React Native and chat surfaces, with AG-UI protocol positioning.",
+      "audience": "Product teams and frontend engineers building user-facing AI copilots, in-app agents and multi-surface assistant experiences.",
+      "ai_native_angle": "The AI surface is not a chat widget bolted on later; it exposes one agent backend across app UI, mobile, team chat and generative UI components.",
+      "growth_signal": "GitTrend ranked it #10 in AI Agent on June 9 with +468 stars today; GitHub showed 10,905 commits plus monorepo packages, SDKs, docs, showcase and skills folders.",
+      "runnability": "React/Next.js and React Native quickstarts are GA, Angular/Vue supported, and Slack/Teams/Discord/Google Chat are marked beta/early-access.",
+      "recommended_action": "Track as a protocol/product layer. Test a tiny internal dashboard copilot and compare AG-UI ergonomics against ad hoc streaming UI implementations."
+    },
+    {
+      "rank": 4,
+      "full_name": "lfnovo/open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "category": "Self-hosted NotebookLM / RAG Workspace",
+      "score": 85,
+      "summary": "Open-source NotebookLM-like workspace with notebooks, AI providers, API/frontend structure, Docker deployment, local/Ollama option and persistent data service.",
+      "audience": "Researchers, students, content teams and knowledge workers who want NotebookLM-style workflows outside a closed hosted product.",
+      "ai_native_angle": "It packages source-grounded AI synthesis into a deployable workspace: users bring documents/data, configure model providers, then create notebooks with local or API models.",
+      "growth_signal": "GitTrend ranked it #9 in AI Skills on June 9 with +702 stars today; GitHub showed 739 commits and a structured repo with api, frontend, examples, docs, tests and Docker files.",
+      "runnability": "README provides docker-compose.yml, SurrealDB service, app ports 8502/5055, encryption key setup, provider registration and Ollama/local AI option.",
+      "recommended_action": "Run the Docker compose path with a small document set and compare ingestion, citation behavior and provider configuration against hosted NotebookLM."
+    },
+    {
+      "rank": 5,
+      "full_name": "dontbesilent2025/dbskill",
+      "url": "https://github.com/dontbesilent2025/dbskill",
+      "category": "Business Diagnosis Agent Skills",
+      "score": 82,
+      "summary": "Chinese business diagnosis toolbox distilled into 21 agent skills for Claude Code, Codex, Cursor, Trae Solo and similar agent workbenches.",
+      "audience": "Creators, founders, consultants and operators who want repeatable business/content/decision diagnostics inside coding-agent style tools.",
+      "ai_native_angle": "The product is an agent skill operating system: routing, diagnostics, content systems, decision records, learning flows, state save/restore and report generation are encoded as reusable agent workflows.",
+      "growth_signal": "GitTrend ranked it #1 in AI Coding Assistant on June 6 with +1.7k stars today; GitHub showed 6.4k stars, 834 forks, 53 commits and a visible v2.14.2 update note.",
+      "runnability": "Install paths include Claude plugin marketplace commands, npx skills add for Codex/Claude Code, Trae Solo zip packages, and local build scripts.",
+      "recommended_action": "Use as a vertical-skill case study: inspect packaging, routing and state persistence patterns; do not treat it as a generic agent platform benchmark."
+    },
+    {
+      "rank": 6,
+      "full_name": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "category": "Product Management Agent Skill Marketplace",
+      "score": 80,
+      "summary": "PM skill marketplace with 68 skills and 42 chained workflows across 9 plugins for discovery, strategy, execution, launch, growth and AI-built code shipping.",
+      "audience": "Product managers and founders who want structured PM frameworks inside Claude Code, Claude Cowork and Codex-like agent environments.",
+      "ai_native_angle": "It turns PM methods into executable agent workflows with marketplace/plugin installation, chained commands and framework-specific skills rather than static templates.",
+      "growth_signal": "GitTrend AI Skills ranked it #10 on June 9 with +486 stars today; GitHub README shows installation for Claude Cowork, Claude Code and Codex CLI plus marketplace screenshots.",
+      "runnability": "Claude plugin marketplace and Codex plugin marketplace commands are documented; slash command behavior differs by host, which needs practical audit.",
+      "recommended_action": "Watch and sample one discovery-to-PRD workflow. Promote only if chained workflows produce better decisions than a good checklist plus general LLM."
+    },
+    {
+      "rank": 7,
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "Agent Internet Reach CLI",
+      "score": 79,
+      "summary": "CLI/scaffold that gives agents searchable/readable access to web and social sources including X/Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu, Douyin, LinkedIn, RSS and WeChat.",
+      "audience": "Research-agent builders and operators who need broad source collection without implementing every connector from scratch.",
+      "ai_native_angle": "It packages external-world perception tools for agents with channel setup, diagnostics, dry-run safety and pluggable upstream dependencies.",
+      "growth_signal": "GitTrend ranked it #3 in AI Agent on June 9 with +1.1k stars today and 24.3k stars; it remained a strong carry-over signal from yesterday.",
+      "runnability": "README describes CLI/scaffold concepts, doctor/install/safe/dry-run flow and per-channel dependencies, but this run did not clone or test credentials.",
+      "recommended_action": "Track for radar-workflow reuse, but audit credential handling, platform ToS exposure and source-quality controls before using logged-in social channels."
+    },
+    {
+      "rank": 8,
+      "full_name": "uditgoenka/autoresearch",
+      "url": "https://github.com/uditgoenka/autoresearch",
+      "category": "Autonomous Research Skill Loop",
+      "score": 77,
+      "summary": "Claude/OpenCode/Codex skill that runs a goal-directed modify-verify-keep/discard loop with commands, safety hooks and guided installation.",
+      "audience": "Agent power users trying to automate iterative research, benchmarking, debugging or eval loops inside coding assistants.",
+      "ai_native_angle": "It formalizes an autonomous agent loop around measurable goals, repeated verification and rollback/keep decisions, exposed as skills and commands across multiple hosts.",
+      "growth_signal": "GitTrend ranked it #10 in AI Coding Assistant on June 6 with +369 stars today; GitHub README advertises support for Claude Code, OpenCode and OpenAI Codex with 13 commands and 9 safety hooks.",
+      "runnability": "Guided installer supports OpenCode and Codex, with manual copy fallback into .agents/skills/autoresearch; local behavior still needs a controlled run.",
+      "recommended_action": "Use as a small experiment candidate for this radar itself: test whether it can run a bounded source-collection/evaluation loop without drifting."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "tw93/Waza",
+      "url": "https://github.com/tw93/Waza",
+      "category": "Engineering Habits Skills",
+      "score": 73,
+      "summary": "Engineering habits packaged as Claude-runnable skills.",
+      "audience": "Developers using Claude Code-style agents.",
+      "ai_native_angle": "Converts workflow habits into reusable agent procedures.",
+      "growth_signal": "GitTrend ranked it #3 in AI Coding Assistant on June 6 with +953 stars today; GitHub showed 5.6k stars.",
+      "runnability": "Needs install and host-compatibility audit.",
+      "recommended_action": "Watch; promote only if it proves more than a skill/prompt collection."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "category": "Agentic Skills Methodology",
+      "score": 72,
+      "summary": "Agentic skills framework and software-development methodology across Claude, Codex, OpenCode, Cursor, Gemini and Copilot.",
+      "audience": "Teams standardizing agent-assisted development workflows.",
+      "ai_native_angle": "Defines repeatable skills and process gates for agent work.",
+      "growth_signal": "GitTrend AI Skills ranked it #6 on June 9 with +1.0k stars today, but it is a mature methodology baseline.",
+      "runnability": "Installation differs per harness and is documented for many hosts.",
+      "recommended_action": "Watch as methodology reference; avoid Top unless new product surface emerges."
+    },
+    {
+      "full_name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "category": "Interactive Code Knowledge Graph",
+      "score": 72,
+      "summary": "Interactive code knowledge graph with search/Q&A for Claude Code, Codex, Cursor, Copilot and Gemini CLI.",
+      "audience": "Developers onboarding to larger codebases.",
+      "ai_native_angle": "Turns repository structure into a visual, queryable agent context layer.",
+      "growth_signal": "GitTrend AI Skills ranked it #8 on June 9 with +837 stars today; carry-over signal from 2026-06-09.",
+      "runnability": "Installer scripts were visible in previous audit; no local run performed.",
+      "recommended_action": "Compare later against Graphify and CodeGraphContext on one known repo."
+    },
+    {
+      "full_name": "CodeGraphContext/CodeGraphContext",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext",
+      "category": "Code Context MCP",
+      "score": 70,
+      "summary": "MCP server plus CLI that indexes local code into a graph database for AI assistants.",
+      "audience": "Coding-agent users who need persistent code context.",
+      "ai_native_angle": "Makes code graph retrieval available as an MCP context provider.",
+      "growth_signal": "GitTrend AI Coding Assistant ranked it #7 on June 6 with +404 stars today; carry-over context-engineering signal.",
+      "runnability": "Needs direct README/install audit.",
+      "recommended_action": "Keep in context-engineering watchlist; do not duplicate experiments until one code-graph tool wins."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "skip_reason": "High GitTrend rank, but mainly a taste/style skill pack; useful as workflow inspiration, not enough durable UI/CLI/API product surface for today's Top list."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification."
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "skip_reason": "Single CLAUDE.md/prompt-methodology style project; downgraded because it lacks a runnable product workflow."
+    },
+    {
+      "full_name": "FlorianBruniaux/claude-code-ultimate-guide",
+      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+      "skip_reason": "Documentation/guide repository rather than AI-native product surface."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "skip_reason": "Educational/build-from-scratch content; outside the product-shaped agent/workflow focus."
+    }
+  ]
+}
