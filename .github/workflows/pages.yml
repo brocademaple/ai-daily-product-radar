@@ -32,6 +32,11 @@ jobs:
         working-directory: frontend
         run: npm ci
 
+      - name: Rebuild static radar snapshot
+        run: |
+          node scripts/build-radar-snapshot.mjs
+          node frontend/scripts/radar-translations.mjs generate
+
       - name: Build static radar board
         working-directory: frontend
         env:

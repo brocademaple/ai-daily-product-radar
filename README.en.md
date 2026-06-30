@@ -30,8 +30,8 @@ It tracks whether a repository looks like a real product, who it serves, what ma
 ## Live Demo
 
 - GitHub Pages: <https://brocademaple.github.io/ai-daily-product-radar/>
-- Current public dataset: 35 historical runs, 484 deduplicated GitHub projects, 615 history entries
-- Latest data window: 2026-06-29
+- Current public dataset: 36 historical runs, 504 deduplicated GitHub projects, 635 history entries
+- Latest data window: 2026-06-30
 - Demo mode: static snapshot, no backend required
 
 ## What You Can Do
@@ -104,6 +104,13 @@ The backend `RADAR_RUNS_DIR` environment variable controls the default import di
 ## Deploy to GitHub Pages
 
 The repository includes `.github/workflows/pages.yml`. On every push to `main`, GitHub Actions installs frontend dependencies, builds the static frontend, and publishes `frontend/dist`.
+
+After adding a daily run, rebuild the static data:
+
+```bash
+node scripts/build-radar-snapshot.mjs
+node frontend/scripts/radar-translations.mjs generate
+```
 
 Local Pages build:
 

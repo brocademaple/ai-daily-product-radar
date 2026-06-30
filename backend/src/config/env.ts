@@ -17,7 +17,7 @@ const EnvSchema = z
 
     RADAR_RUNS_DIR: z
       .string()
-      .default('/Users/eee/Documents/Codex/2026-05-14/ai-fomo-github-ai-native-product/data/runs'),
+      .default('../data/runs'),
   })
   .superRefine((value, ctx) => {
     if (value.DB_DIALECT === 'postgres' && !value.DATABASE_URL) {
