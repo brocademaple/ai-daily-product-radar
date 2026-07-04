@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+      "runDate": "2026-07-04",
+      "generatedAt": "2026-07-04T14:18:00+08:00",
+      "dataWindow": "2026-07-01 00:00 to 2026-07-04 14:18 Asia/Shanghai; GitHub Search API queries for newly created or recently pushed AI agent, LLM app, RAG, MCP, coding-agent, workflow, browser/voice-agent and automation repositories; targeted GitHub API README/root-content audits for selected candidates.",
+      "sourceSummary": "Shell curl captured GitHub Search API batches into /tmp/radar_2026_07_04_*.json, then repository metadata, README and root contents were spot-checked for product-shaped candidates under /tmp/radar_2026_07_04_repo_audit. No third-party repository was cloned, installed, or run locally; runnability is based on README, package files, Docker/deploy files, examples, docs, and root structure.",
+      "trendObservations": "Fresh AI-native product signals are clustering around agent accountability, local-first workspaces, mobile embedded agents, MCP operational tooling, and vertical agent workflows. The strongest candidates are no longer just chat UIs: they expose agent memory, evidence trails, rate-limit prediction, tool sandboxes, visual workspaces, or deployable workflow surfaces. Prompt/skill-only projects are growing quickly but remain lower priority unless they include a durable runtime or user workflow.",
+      "assumptions": "Scores favor repositories created or materially updated in the 2026-07-01 to 2026-07-04 window, with a visible product surface, runnable CLI/UI/API/MCP server, meaningful docs/examples, and clear user scenario. Star counts are unauthenticated GitHub API point-in-time signals and may be noisy. Mature baseline projects such as n8n, opencode, Claude Code, Codex, VS Code and prompt collections were used as context but not promoted without a fresh product-specific signal. Local runtime audits were not performed.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-07-04\n\n数据窗口：2026-07-01 00:00 to 2026-07-04 14:18 Asia/Shanghai; GitHub Search API queries for newly created or recently pushed AI agent, LLM app, RAG, MCP, coding-agent, workflow, browser/voice-agent and automation repositories; targeted GitHub API README/root-content audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-01 to 2026-07-04 window, with a visible product surface, runnable CLI/UI/API/MCP server, meaningful docs/examples, and clear user scenario. Star counts are unauthenticated GitHub API point-in-time signals and may be noisy. Mature baseline projects such as n8n, opencode, Claude Code, Codex, VS Code and prompt collections were used as context but not promoted without a fresh product-specific signal. Local runtime audits were not performed.\n\n## Top Projects\n\n1. [Aevella/polaris-local-first](https://github.com/Aevella/polaris-local-first) - Local-first AI Workspace - Score 88\n   - 做什么：Local-first AI workspace for sustained model work, collaborators, saved materials, project context and portable backups.\n   - 面向谁：Power users and teams that need AI collaboration to persist across sessions, files, people, and reusable project artifacts.\n   - AI native 点：Treats AI work as a workspace with identity, memory boundaries, cards/materials, tools, and evidence trails rather than a disposable chat transcript.\n   - 增长/活跃信号：Created 2026-07-01; GitHub Search showed 80 stars and 19 forks; root audit found desktop, mobile, API/server, docs, deployment notes, package-lock, TypeScript/Vite-style app structure, Capacitor config, and security docs.\n   - 可运行性判断：README and root files indicate a runnable TypeScript app with package.json, server/api, desktop/mobile folders, .env.example, DEPLOYMENT.md and docs. No install/run audit was performed.\n   - 建议动作：Clone in a sandbox and verify whether the local-first data model, project materials, and collaborator boundaries can support a real multi-session AI workbench.\n\n2. [antgroup/Napaxi](https://github.com/antgroup/Napaxi) - Mobile-native Agent SDK - Score 86\n   - 做什么：Rust/Flutter mobile-native SDK for embedding on-device agent experiences with sandboxed execution, tools, and x-app/x-agent/x-channel connectors.\n   - 面向谁：Mobile app teams that want agent capabilities inside iOS/Android products without pushing the whole experience into a web chat.\n   - AI native 点：Moves agent runtime and tool execution into the mobile application layer, including sandboxing and cross-app/channel concepts as product primitives.\n   - 增长/活跃信号：Created 2026-07-01; GitHub API showed 24 stars, 3 forks, pushed 2026-07-03; Ant Group org; root audit found Cargo.toml, Rust/Flutter codegen config, multilingual docs, changelog, security and contributor materials.\n   - 可运行性判断：README signals SDK 1.0 and Rust/Flutter requirements; root structure suggests a real SDK rather than README-only concept. Mobile build was not run.\n   - 建议动作：Review license and mobile integration model; run the sample path if available and compare with existing app-agent embedding options.\n\n3. [Brain0-ai/brain0](https://github.com/Brain0-ai/brain0) - Agent Code Provenance / Decision Graph - Score 84\n   - 做什么：Black-box recorder for AI-written code that links commits to prompts, read context, trust signals, drift detection and audit evidence.\n   - 面向谁：Engineering teams using coding agents who need to know why code changed, what the agent saw, and whether changes remain trustworthy.\n   - AI native 点：Adds provenance and accountability to agent-authored code, turning prompts, context reads and trust checks into inspectable engineering artifacts.\n   - 增长/活跃信号：Created 2026-07-02; GitHub API showed 22 stars and 12 forks; root audit found Rust workspace, packages, pnpm workspace, schemas, docs, CI badge and security/contribution files.\n   - 可运行性判断：README is extensive and root files include Cargo, pnpm, schema and scripts, indicating more than a prompt collection. No binary or dashboard was run locally.\n   - 建议动作：Test on a small agent-authored repo and check whether it reconstructs prompt/context provenance with low friction.\n\n4. [akseolabs-seo/fable-soul](https://github.com/akseolabs-seo/fable-soul) - Coding-agent Judgment Layer - Score 82\n   - 做什么：Markdown/Python judgment layer for AI coding agents that adds verification, communication discipline, and senior-engineer style decision checks.\n   - 面向谁：Developers using Claude Code, Codex or similar agents who want lightweight guardrails before accepting edits.\n   - AI native 点：Productizes agent judgment as reusable operating discipline: verify, reason, explain and avoid shallow edits inside the coding-agent loop.\n   - 增长/活跃信号：Created 2026-07-03; GitHub Search showed 50 stars and 17 forks; root audit found README, bilingual README, SKILL.md, examples, references, scripts and changelog.\n   - 可运行性判断：Runs as a skill-style workflow with two Python scripts and Markdown instructions; it is executable enough for agent hosts, but less productized than a standalone app.\n   - 建议动作：Trial as a Codex/Claude coding skill on one low-risk fix and measure whether it reduces review churn.\n\n5. [msaad00/agent-bom](https://github.com/msaad00/agent-bom) - Agent Supply-chain Security Control Plane - Score 81\n   - 做什么：AI supply-chain and cloud security scanner/control plane covering agents, MCP, packages, cloud estate, non-human identities and policy checks.\n   - 面向谁：Security and platform teams that need visibility into AI agent dependencies, MCP servers and machine identities.\n   - AI native 点：Frames agent/MCP usage as a software bill of materials and security surface, which is a practical gap as agent tools proliferate.\n   - 增长/活跃信号：GitHub API showed 24 stars and 7 forks with active push on 2026-07-04; root audit found Dockerfile, Makefile, PyPI/Docker Hub READMEs, .agent-bom example config, pre-commit hooks and project structure docs.\n   - 可运行性判断：Root files point to CLI/container distribution and a self-hosted UI path; exact setup was not run.\n   - 建议动作：Run the scanner against a small MCP-heavy repo and inspect whether findings are concrete enough for a security review workflow.\n\n6. [medoxisto/toolbox-mcp](https://github.com/medoxisto/toolbox-mcp) - Local MCP Utility Toolbox - Score 79\n   - 做什么：Local stdio MCP server exposing OCR, PDF/image/audio/video, spreadsheet, math, QR, regex, JSON/CSV and timezone tools for AI agents.\n   - 面向谁：Agent users who want private local file/tool capabilities without sending files to network services.\n   - AI native 点：Extends agents with practical local capabilities that LLMs cannot perform reliably alone, while keeping execution on the user machine.\n   - 增长/活跃信号：Created 2026-07-01; GitHub API showed 19 stars and 6 forks; root audit found TypeScript source, package.json/package-lock, README and OCR trained data.\n   - 可运行性判断：README describes npm-style local MCP usage over stdio; root structure is compact and runnable-looking, but no MCP host integration was tested.\n   - 建议动作：Add temporarily to a local MCP host and test PDF/OCR/math tasks against real files.\n\n7. [klarlabs-studio/tokenops](https://github.com/klarlabs-studio/tokenops) - Agent Rate-limit Operations MCP - Score 78\n   - 做什么：Go-based MCP server and CLI for predicting AI-agent rate-limit cutoffs across Claude, ChatGPT and Gemini-style subscription tiers.\n   - 面向谁：Heavy AI-agent operators who need to plan work around subscription, token and rate-limit constraints.\n   - AI native 点：Turns model subscription limits into an agent-readable operations signal, helping agents decide when to continue, defer, switch model, or compress work.\n   - 增长/活跃信号：GitHub API showed active push on 2026-07-04; root audit found Go module, cmd/internal layout, deployments, docs, integrations, CI/release badges, changelog and goreleaser config.\n   - 可运行性判断：README and Go project layout suggest a real CLI/MCP server; no binary install or MCP registration was performed.\n   - 建议动作：Watch closely; trial if current agent workflows hit rate-limit uncertainty often enough to justify an ops layer.\n\n8. [liangdabiao/ecom-details-image-ui](https://github.com/liangdabiao/ecom-details-image-ui) - Vertical AI Image Agent App - Score 76\n   - 做什么：Chinese e-commerce visual creation assistant that turns product descriptions or reference images into professional product-detail imagery.\n   - 面向谁：Small merchants, e-commerce operators and designers who need fast product-scene image generation with a web UI.\n   - AI native 点：A vertical user-facing AI workflow rather than a generic image API: prompt, reference image, scene/style change, gateway config and deployable app are packaged together.\n   - 增长/活跃信号：Created 2026-07-01; GitHub API showed 17 stars and 4 forks; root audit found Vite/TypeScript app, cloud-functions, server, agents folder, EdgeOne deployment config and detailed Chinese README.\n   - 可运行性判断：README includes EdgeOne Makers deployment path and environment variables; local app likely runnable via package.json, but not built today.\n   - 建议动作：Use as a vertical-product pattern; verify generated image quality and cost controls before deeper adoption.\n\n## Watchlist\n\n- [Oft3r/agentic-trading-desk](https://github.com/Oft3r/agentic-trading-desk) - Vertical Agent Trading Desk - Score 74 - Local AI-assisted trading desk using Robinhood MCP plus deterministic Python technical-analysis engines. 建议：Watch as a vertical-agent design pattern; do not use with real accounts before security and compliance review.\n- [kevintsai1202/deep-memory](https://github.com/kevintsai1202/deep-memory) - Agent Memory / Hybrid Retrieval Skill - Score 73 - Self-evolving knowledge accumulation and hybrid retrieval skill for coding agents with local ChromaDB and reranking. 建议：Watch; compare with Hunch and Brain0 on the same repo memory/provenance task.\n- [davesheffer/hunch](https://github.com/davesheffer/hunch) - Architectural Conformance for AI Code - Score 72 - Git-native graph of decisions, bugs and invariants exposed to agent hosts for architectural conformance. 建议：Keep on watchlist and test if architectural drift becomes a pain point.\n- [Nicnk/mcp-proxy-studio](https://github.com/Nicnk/mcp-proxy-studio) - MCP Proxy Studio - Score 70 - Visual dashboard for creating, running and monitoring MCP proxies with live logs and inspector-style management. 建议：Watch; inspect code before installing binaries or relying on the release artifact.\n- [MS33834/autoship-cli](https://github.com/MS33834/autoship-cli) - Local AI Delivery Assistant - Score 69 - Local-first intelligent delivery assistant for cleaning, verifying, committing and shipping project artifacts. 建议：Watch and run only in a disposable repo until commit/upload behavior is fully understood.\n- [aipoch/open-science](https://github.com/aipoch/open-science) - AI Science Workbench - Score 68 - Model-agnostic AI workbench concept for scientific discovery. 建议：Track for future runnable releases; skip for immediate trials.\n\n## Skip Reasons\n\n- [amitshekhariitbhu/ai-agents-tutorial](https://github.com/amitshekhariitbhu/ai-agents-tutorial) - Educational tutorial repository; useful learning material but outside product-shaped radar focus.\n- [7-e1even/learn-agent](https://github.com/7-e1even/learn-agent) - Promising coding-agent learning project, but positioned as from-scratch educational material rather than a durable app/CLI/API product.\n- [Zsun79/ConferenceWatch](https://github.com/Zsun79/ConferenceWatch) - Agent skill for AI conference deadlines; useful niche utility but too narrow and skill-like for Top product placement.\n- [DasterProkio/awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion) - Curated awesome list; not runnable software.\n- [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) - Prompt/model collection with high attention, but no standalone user-facing product or runtime.\n- [andreanocalvin/autoclaw-autologin](https://github.com/andreanocalvin/autoclaw-autologin) - OAuth auto-login/reverse-proxy automation raises account-safety and policy risk; not suitable for promotion without deeper review.\n- [nodobys/Claude-Sonnet-5-Free-Desktop-APP](https://github.com/nodobys/Claude-Sonnet-5-Free-Desktop-APP) - Marketing-heavy free-model desktop-app framing; runnable/product claims need verification and provenance is weak.\n- [affaan-m/ECC](https://github.com/affaan-m/ECC) - Repeated abnormal headline star velocity; treat as noisy until independently verified despite frequent search visibility.\n\n## 今日趋势观察\n\n1. Agent accountability is becoming a product category: Brain0, Fable Soul, Hunch and Agent BOM all focus on why an agent acted, what it touched, and whether the output is trustworthy.\n2. Local-first AI workspaces are moving beyond chat logs into project materials, collaborators, evidence and portable backups; Polaris is the clearest fresh signal today.\n3. MCP infrastructure is splitting into practical local toolboxes, proxy studios, rate-limit operations and domain-specific servers rather than just connector demos.\n4. Mobile embedded agents are emerging as a separate surface from web/desktop chat; Napaxi is notable because it frames sandboxed mobile agent execution as an SDK.\n5. Vertical AI products remain interesting when they package a complete workflow, as seen in e-commerce image generation and agentic trading, but they need stronger runtime validation before broad adoption.\n\n## 今日建议动作\n\n- First trial: Polaris, to evaluate whether local-first AI workspace primitives are useful for multi-session product research.\n- Second trial: Brain0 or Fable Soul on a disposable coding-agent branch, to test whether provenance/judgment tooling catches review risks.\n- MCP utility trial: toolbox-mcp for OCR/PDF/math tasks and tokenops only if rate-limit prediction is a current operational pain.\n- Mobile follow-up: inspect Napaxi sample integration and license before considering a mobile agent prototype.\n\n## 信息来源\n\n- GitHub Search API snapshots: `/tmp/radar_2026_07_04_created_agent.json`, `/tmp/radar_2026_07_04_created_assistant.json`, `/tmp/radar_2026_07_04_mcp_updated.json`, `/tmp/radar_2026_07_04_code_agent.json`, `/tmp/radar_2026_07_04_workflow.json`.\n- GitHub repository metadata, README and root contents for selected candidates in `/tmp/radar_2026_07_04_repo_audit`.\n- No clone, install, Docker, npm, pip, cargo, Go, mobile build or browser run audit was performed today.\n",
+      "sourceFile": "2026-07-04.json",
+      "entryCount": 22
+    },
+    {
       "id": "run:2026-06-30:2026-06-30T16:58:00+08:00",
       "runDate": "2026-06-30",
       "generatedAt": "2026-06-30T16:58:00+08:00",
@@ -1271,6 +1283,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Aevella/polaris-local-first",
+      "url": "https://github.com/Aevella/polaris-local-first",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local-first AI Workspace",
+      "summary": "Local-first AI workspace for sustained model work, collaborators, saved materials, project context and portable backups.",
+      "audience": "Power users and teams that need AI collaboration to persist across sessions, files, people, and reusable project artifacts.",
+      "aiNativeAngle": "Treats AI work as a workspace with identity, memory boundaries, cards/materials, tools, and evidence trails rather than a disposable chat transcript.",
+      "growthSignal": "Created 2026-07-01; GitHub Search showed 80 stars and 19 forks; root audit found desktop, mobile, API/server, docs, deployment notes, package-lock, TypeScript/Vite-style app structure, Capacitor config, and security docs.",
+      "runnability": "README and root files indicate a runnable TypeScript app with package.json, server/api, desktop/mobile folders, .env.example, DEPLOYMENT.md and docs. No install/run audit was performed.",
+      "recommendedAction": "Clone in a sandbox and verify whether the local-first data model, project materials, and collaborator boundaries can support a real multi-session AI workbench.",
+      "skipReason": null
+    },
+    {
       "fullName": "qataruts/monlite",
       "url": "https://github.com/qataruts/monlite",
       "firstSeenDate": "2026-06-29",
@@ -1936,6 +1967,25 @@
       "skipReason": null
     },
     {
+      "fullName": "antgroup/Napaxi",
+      "url": "https://github.com/antgroup/Napaxi",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Mobile-native Agent SDK",
+      "summary": "Rust/Flutter mobile-native SDK for embedding on-device agent experiences with sandboxed execution, tools, and x-app/x-agent/x-channel connectors.",
+      "audience": "Mobile app teams that want agent capabilities inside iOS/Android products without pushing the whole experience into a web chat.",
+      "aiNativeAngle": "Moves agent runtime and tool execution into the mobile application layer, including sandboxing and cross-app/channel concepts as product primitives.",
+      "growthSignal": "Created 2026-07-01; GitHub API showed 24 stars, 3 forks, pushed 2026-07-03; Ant Group org; root audit found Cargo.toml, Rust/Flutter codegen config, multilingual docs, changelog, security and contributor materials.",
+      "runnability": "README signals SDK 1.0 and Rust/Flutter requirements; root structure suggests a real SDK rather than README-only concept. Mobile build was not run.",
+      "recommendedAction": "Review license and mobile integration model; run the sample path if available and compare with existing app-agent embedding options.",
+      "skipReason": null
+    },
+    {
       "fullName": "agentcarto/agentcarto",
       "url": "https://github.com/agentcarto/agentcarto",
       "firstSeenDate": "2026-06-30",
@@ -2427,6 +2477,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "Brain0-ai/brain0",
+      "url": "https://github.com/Brain0-ai/brain0",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Code Provenance / Decision Graph",
+      "summary": "Black-box recorder for AI-written code that links commits to prompts, read context, trust signals, drift detection and audit evidence.",
+      "audience": "Engineering teams using coding agents who need to know why code changed, what the agent saw, and whether changes remain trustworthy.",
+      "aiNativeAngle": "Adds provenance and accountability to agent-authored code, turning prompts, context reads and trust checks into inspectable engineering artifacts.",
+      "growthSignal": "Created 2026-07-02; GitHub API showed 22 stars and 12 forks; root audit found Rust workspace, packages, pnpm workspace, schemas, docs, CI badge and security/contribution files.",
+      "runnability": "README is extensive and root files include Cargo, pnpm, schema and scripts, indicating more than a prompt collection. No binary or dashboard was run locally.",
+      "recommendedAction": "Test on a small agent-authored repo and check whether it reconstructs prompt/context provenance with low friction.",
       "skipReason": null
     },
     {
@@ -3285,6 +3354,25 @@
       "skipReason": null
     },
     {
+      "fullName": "akseolabs-seo/fable-soul",
+      "url": "https://github.com/akseolabs-seo/fable-soul",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Coding-agent Judgment Layer",
+      "summary": "Markdown/Python judgment layer for AI coding agents that adds verification, communication discipline, and senior-engineer style decision checks.",
+      "audience": "Developers using Claude Code, Codex or similar agents who want lightweight guardrails before accepting edits.",
+      "aiNativeAngle": "Productizes agent judgment as reusable operating discipline: verify, reason, explain and avoid shallow edits inside the coding-agent loop.",
+      "growthSignal": "Created 2026-07-03; GitHub Search showed 50 stars and 17 forks; root audit found README, bilingual README, SKILL.md, examples, references, scripts and changelog.",
+      "runnability": "Runs as a skill-style workflow with two Python scripts and Markdown instructions; it is executable enough for agent hosts, but less productized than a standalone app.",
+      "recommendedAction": "Trial as a Codex/Claude coding skill on one low-risk fix and measure whether it reduces review churn.",
+      "skipReason": null
+    },
+    {
       "fullName": "shaul1991/localmind",
       "url": "https://github.com/shaul1991/localmind",
       "firstSeenDate": "2026-06-30",
@@ -3700,6 +3788,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
       "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
       "recommendedAction": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。",
+      "skipReason": null
+    },
+    {
+      "fullName": "msaad00/agent-bom",
+      "url": "https://github.com/msaad00/agent-bom",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Supply-chain Security Control Plane",
+      "summary": "AI supply-chain and cloud security scanner/control plane covering agents, MCP, packages, cloud estate, non-human identities and policy checks.",
+      "audience": "Security and platform teams that need visibility into AI agent dependencies, MCP servers and machine identities.",
+      "aiNativeAngle": "Frames agent/MCP usage as a software bill of materials and security surface, which is a practical gap as agent tools proliferate.",
+      "growthSignal": "GitHub API showed 24 stars and 7 forks with active push on 2026-07-04; root audit found Dockerfile, Makefile, PyPI/Docker Hub READMEs, .agent-bom example config, pre-commit hooks and project structure docs.",
+      "runnability": "Root files point to CLI/container distribution and a self-hosted UI path; exact setup was not run.",
+      "recommendedAction": "Run the scanner against a small MCP-heavy repo and inspect whether findings are concrete enough for a security review workflow.",
       "skipReason": null
     },
     {
@@ -4178,6 +4285,25 @@
       "skipReason": null
     },
     {
+      "fullName": "medoxisto/toolbox-mcp",
+      "url": "https://github.com/medoxisto/toolbox-mcp",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local MCP Utility Toolbox",
+      "summary": "Local stdio MCP server exposing OCR, PDF/image/audio/video, spreadsheet, math, QR, regex, JSON/CSV and timezone tools for AI agents.",
+      "audience": "Agent users who want private local file/tool capabilities without sending files to network services.",
+      "aiNativeAngle": "Extends agents with practical local capabilities that LLMs cannot perform reliably alone, while keeping execution on the user machine.",
+      "growthSignal": "Created 2026-07-01; GitHub API showed 19 stars and 6 forks; root audit found TypeScript source, package.json/package-lock, README and OCR trained data.",
+      "runnability": "README describes npm-style local MCP usage over stdio; root structure is compact and runnable-looking, but no MCP host integration was tested.",
+      "recommendedAction": "Add temporarily to a local MCP host and test PDF/OCR/math tasks against real files.",
+      "skipReason": null
+    },
+    {
       "fullName": "benis-me/Dezin",
       "url": "https://github.com/benis-me/Dezin",
       "firstSeenDate": "2026-06-30",
@@ -4365,6 +4491,25 @@
       "growthSignal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
       "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
       "recommendedAction": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。",
+      "skipReason": null
+    },
+    {
+      "fullName": "klarlabs-studio/tokenops",
+      "url": "https://github.com/klarlabs-studio/tokenops",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Rate-limit Operations MCP",
+      "summary": "Go-based MCP server and CLI for predicting AI-agent rate-limit cutoffs across Claude, ChatGPT and Gemini-style subscription tiers.",
+      "audience": "Heavy AI-agent operators who need to plan work around subscription, token and rate-limit constraints.",
+      "aiNativeAngle": "Turns model subscription limits into an agent-readable operations signal, helping agents decide when to continue, defer, switch model, or compress work.",
+      "growthSignal": "GitHub API showed active push on 2026-07-04; root audit found Go module, cmd/internal layout, deployments, docs, integrations, CI/release badges, changelog and goreleaser config.",
+      "runnability": "README and Go project layout suggest a real CLI/MCP server; no binary install or MCP registration was performed.",
+      "recommendedAction": "Watch closely; trial if current agent workflows hit rate-limit uncertainty often enough to justify an ops layer.",
       "skipReason": null
     },
     {
@@ -5071,6 +5216,25 @@
       "skipReason": null
     },
     {
+      "fullName": "liangdabiao/ecom-details-image-ui",
+      "url": "https://github.com/liangdabiao/ecom-details-image-ui",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Vertical AI Image Agent App",
+      "summary": "Chinese e-commerce visual creation assistant that turns product descriptions or reference images into professional product-detail imagery.",
+      "audience": "Small merchants, e-commerce operators and designers who need fast product-scene image generation with a web UI.",
+      "aiNativeAngle": "A vertical user-facing AI workflow rather than a generic image API: prompt, reference image, scene/style change, gateway config and deployable app are packaged together.",
+      "growthSignal": "Created 2026-07-01; GitHub API showed 17 stars and 4 forks; root audit found Vite/TypeScript app, cloud-functions, server, agents folder, EdgeOne deployment config and detailed Chinese README.",
+      "runnability": "README includes EdgeOne Makers deployment path and environment variables; local app likely runnable via package.json, but not built today.",
+      "recommendedAction": "Use as a vertical-product pattern; verify generated image quality and cost controls before deeper adoption.",
+      "skipReason": null
+    },
+    {
       "fullName": "roicai/mcp-server",
       "url": "https://github.com/roicai/mcp-server",
       "firstSeenDate": "2026-06-30",
@@ -5565,6 +5729,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Oft3r/agentic-trading-desk",
+      "url": "https://github.com/Oft3r/agentic-trading-desk",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Vertical Agent Trading Desk",
+      "summary": "Local AI-assisted trading desk using Robinhood MCP plus deterministic Python technical-analysis engines.",
+      "audience": "Individual traders experimenting with agent-assisted analysis while keeping execution decisions human-approved.",
+      "aiNativeAngle": "Separates AI data/query interaction from deterministic scoring engines and explicit user approval, a useful pattern for high-stakes agent products.",
+      "growthSignal": "Created 2026-07-02; GitHub API showed 80 stars and 10 forks; root audit found scripts, SKILL.md and detailed architecture README.",
+      "runnability": "Python scripts and local modular architecture are documented, but financial credentials and risk controls require careful audit.",
+      "recommendedAction": "Watch as a vertical-agent design pattern; do not use with real accounts before security and compliance review.",
+      "skipReason": null
+    },
+    {
       "fullName": "memex-lab/memex",
       "url": "https://github.com/memex-lab/memex",
       "firstSeenDate": "2026-06-30",
@@ -5926,6 +6109,25 @@
       "skipReason": null
     },
     {
+      "fullName": "kevintsai1202/deep-memory",
+      "url": "https://github.com/kevintsai1202/deep-memory",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Memory / Hybrid Retrieval Skill",
+      "summary": "Self-evolving knowledge accumulation and hybrid retrieval skill for coding agents with local ChromaDB and reranking.",
+      "audience": "Developers who want Codex/Claude-style agents to retain project knowledge across sessions.",
+      "aiNativeAngle": "Targets long-horizon agent memory and retrieval rather than one-off chat context.",
+      "growthSignal": "Created 2026-07-01; GitHub API showed 22 stars and 6 forks; root audit found assets, docs, landing-page and skills.",
+      "runnability": "Skill-pack shape is clear, but product surface is narrower than Top workspace/provenance tools.",
+      "recommendedAction": "Watch; compare with Hunch and Brain0 on the same repo memory/provenance task.",
+      "skipReason": null
+    },
+    {
       "fullName": "max-sixty/worktrunk",
       "url": "https://github.com/max-sixty/worktrunk",
       "firstSeenDate": "2026-06-30",
@@ -6113,6 +6315,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "davesheffer/hunch",
+      "url": "https://github.com/davesheffer/hunch",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Architectural Conformance for AI Code",
+      "summary": "Git-native graph of decisions, bugs and invariants exposed to agent hosts for architectural conformance.",
+      "audience": "Teams trying to keep AI-generated changes aligned with project decisions and invariants.",
+      "aiNativeAngle": "Makes project architecture memory available to agents as a first-class source of truth.",
+      "growthSignal": "GitHub API showed active push on 2026-07-04; root audit found npm package structure, plugin/site/demo/test folders and multiple agent-host config directories.",
+      "runnability": "Looks productized, but current star signal is tiny and it was not newly created in the 72-hour window.",
+      "recommendedAction": "Keep on watchlist and test if architectural drift becomes a pain point.",
       "skipReason": null
     },
     {
@@ -6819,6 +7040,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Nicnk/mcp-proxy-studio",
+      "url": "https://github.com/Nicnk/mcp-proxy-studio",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 70,
+      "latestScore": 70,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "MCP Proxy Studio",
+      "summary": "Visual dashboard for creating, running and monitoring MCP proxies with live logs and inspector-style management.",
+      "audience": "MCP users who need a GUI around proxy configuration and observability.",
+      "aiNativeAngle": "MCP infrastructure is moving from config files toward operational dashboards.",
+      "growthSignal": "Active push on 2026-07-04; root audit found backend, frontend, studio, Dockerfile, docker-compose, Makefile, package.json and pyproject.",
+      "runnability": "Docker and full-stack structure are promising, but README download wording is odd and star signal is zero.",
+      "recommendedAction": "Watch; inspect code before installing binaries or relying on the release artifact.",
+      "skipReason": null
+    },
+    {
       "fullName": "bgmacris/quimera-ai",
       "url": "https://github.com/bgmacris/quimera-ai",
       "firstSeenDate": "2026-06-30",
@@ -7161,6 +7401,25 @@
       "skipReason": null
     },
     {
+      "fullName": "MS33834/autoship-cli",
+      "url": "https://github.com/MS33834/autoship-cli",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 69,
+      "latestScore": 69,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local AI Delivery Assistant",
+      "summary": "Local-first intelligent delivery assistant for cleaning, verifying, committing and shipping project artifacts.",
+      "audience": "Developers who want an AI-assisted release/check workflow without leaving their machine.",
+      "aiNativeAngle": "Packages delivery hygiene as an agent-adjacent CLI workflow with examples, SDK and registry assets.",
+      "growthSignal": "GitHub Search showed 40 stars, pushed 2026-07-04; root audit found pyproject, docs, examples, benchmarks, dogfood, registry and editor integrations.",
+      "runnability": "README/root files look runnable via Python package, but repo metadata fetch partially failed, so kept below Top.",
+      "recommendedAction": "Watch and run only in a disposable repo until commit/upload behavior is fully understood.",
+      "skipReason": null
+    },
+    {
       "fullName": "TNTnext/Lumen",
       "url": "https://github.com/TNTnext/Lumen",
       "firstSeenDate": "2026-06-29",
@@ -7348,6 +7607,25 @@
       "growthSignal": "Recent Claude/GRC search visibility.",
       "runnability": "Executable product surface needs verification.",
       "recommendedAction": "Watch until demos, CLI, or workflow examples are clearer.",
+      "skipReason": null
+    },
+    {
+      "fullName": "aipoch/open-science",
+      "url": "https://github.com/aipoch/open-science",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": 68,
+      "latestScore": 68,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI Science Workbench",
+      "summary": "Model-agnostic AI workbench concept for scientific discovery.",
+      "audience": "Researchers exploring AI-native research workflows.",
+      "aiNativeAngle": "Aims at scientific discovery as an AI workbench, but currently reads pre-alpha/vision-heavy.",
+      "growthSignal": "Created 2026-07-03; GitHub API showed 31 stars; README is large and community-oriented.",
+      "runnability": "Root audit only found README and LICENSE, so executable product surface is not yet proven.",
+      "recommendedAction": "Track for future runnable releases; skip for immediate trials.",
       "skipReason": null
     },
     {
@@ -7938,6 +8216,158 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "7-e1even/learn-agent",
+      "url": "https://github.com/7-e1even/learn-agent",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Promising coding-agent learning project, but positioned as from-scratch educational material rather than a durable app/CLI/API product."
+    },
+    {
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "firstSeenDate": "2026-06-09",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 7,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Repeated abnormal headline star velocity; treat as noisy until independently verified despite frequent search visibility."
+    },
+    {
+      "fullName": "amitshekhariitbhu/ai-agents-tutorial",
+      "url": "https://github.com/amitshekhariitbhu/ai-agents-tutorial",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Educational tutorial repository; useful learning material but outside product-shaped radar focus."
+    },
+    {
+      "fullName": "andreanocalvin/autoclaw-autologin",
+      "url": "https://github.com/andreanocalvin/autoclaw-autologin",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "OAuth auto-login/reverse-proxy automation raises account-safety and policy risk; not suitable for promotion without deeper review."
+    },
+    {
+      "fullName": "DasterProkio/awesome-ai-companion",
+      "url": "https://github.com/DasterProkio/awesome-ai-companion",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Curated awesome list; not runnable software."
+    },
+    {
+      "fullName": "nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+      "url": "https://github.com/nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Marketing-heavy free-model desktop-app framing; runnable/product claims need verification and provenance is weak."
+    },
+    {
+      "fullName": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Prompt/model collection with high attention, but no standalone user-facing product or runtime."
+    },
+    {
+      "fullName": "Zsun79/ConferenceWatch",
+      "url": "https://github.com/Zsun79/ConferenceWatch",
+      "firstSeenDate": "2026-07-04",
+      "lastSeenDate": "2026-07-04",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Agent skill for AI conference deadlines; useful niche utility but too narrow and skill-like for Top product placement."
     },
     {
       "fullName": "frangelbarrera/osint-agent-skills",
@@ -8679,25 +9109,6 @@
       "runnability": null,
       "recommendedAction": null,
       "skipReason": "Includes an MCP server, but the repository is primarily a cryptocurrency full node and off-topic for AI-native product radar."
-    },
-    {
-      "fullName": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "firstSeenDate": "2026-06-09",
-      "lastSeenDate": "2026-06-23",
-      "seenCount": 6,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion."
     },
     {
       "fullName": "f/prompts.chat",
@@ -12320,6 +12731,40 @@
         }
       }
     ],
+    "Aevella/polaris-local-first": [
+      {
+        "id": "Aevella-polaris-local-first:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "Aevella/polaris-local-first",
+        "url": "https://github.com/Aevella/polaris-local-first",
+        "category": "Local-first AI Workspace",
+        "score": 88,
+        "summary": "Local-first AI workspace for sustained model work, collaborators, saved materials, project context and portable backups.",
+        "audience": "Power users and teams that need AI collaboration to persist across sessions, files, people, and reusable project artifacts.",
+        "aiNativeAngle": "Treats AI work as a workspace with identity, memory boundaries, cards/materials, tools, and evidence trails rather than a disposable chat transcript.",
+        "growthSignal": "Created 2026-07-01; GitHub Search showed 80 stars and 19 forks; root audit found desktop, mobile, API/server, docs, deployment notes, package-lock, TypeScript/Vite-style app structure, Capacitor config, and security docs.",
+        "runnability": "README and root files indicate a runnable TypeScript app with package.json, server/api, desktop/mobile folders, .env.example, DEPLOYMENT.md and docs. No install/run audit was performed.",
+        "recommendedAction": "Clone in a sandbox and verify whether the local-first data model, project materials, and collaborator boundaries can support a real multi-session AI workbench.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "Aevella/polaris-local-first",
+          "url": "https://github.com/Aevella/polaris-local-first",
+          "category": "Local-first AI Workspace",
+          "score": 88,
+          "summary": "Local-first AI workspace for sustained model work, collaborators, saved materials, project context and portable backups.",
+          "audience": "Power users and teams that need AI collaboration to persist across sessions, files, people, and reusable project artifacts.",
+          "ai_native_angle": "Treats AI work as a workspace with identity, memory boundaries, cards/materials, tools, and evidence trails rather than a disposable chat transcript.",
+          "growth_signal": "Created 2026-07-01; GitHub Search showed 80 stars and 19 forks; root audit found desktop, mobile, API/server, docs, deployment notes, package-lock, TypeScript/Vite-style app structure, Capacitor config, and security docs.",
+          "runnability": "README and root files indicate a runnable TypeScript app with package.json, server/api, desktop/mobile folders, .env.example, DEPLOYMENT.md and docs. No install/run audit was performed.",
+          "recommended_action": "Clone in a sandbox and verify whether the local-first data model, project materials, and collaborator boundaries can support a real multi-session AI workbench."
+        }
+      }
+    ],
     "qataruts/monlite": [
       {
         "id": "qataruts-monlite:2026-06-29T10:58:00+08:00:top:0",
@@ -14064,6 +14509,40 @@
         }
       }
     ],
+    "antgroup/Napaxi": [
+      {
+        "id": "antgroup-Napaxi:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "antgroup/Napaxi",
+        "url": "https://github.com/antgroup/Napaxi",
+        "category": "Mobile-native Agent SDK",
+        "score": 86,
+        "summary": "Rust/Flutter mobile-native SDK for embedding on-device agent experiences with sandboxed execution, tools, and x-app/x-agent/x-channel connectors.",
+        "audience": "Mobile app teams that want agent capabilities inside iOS/Android products without pushing the whole experience into a web chat.",
+        "aiNativeAngle": "Moves agent runtime and tool execution into the mobile application layer, including sandboxing and cross-app/channel concepts as product primitives.",
+        "growthSignal": "Created 2026-07-01; GitHub API showed 24 stars, 3 forks, pushed 2026-07-03; Ant Group org; root audit found Cargo.toml, Rust/Flutter codegen config, multilingual docs, changelog, security and contributor materials.",
+        "runnability": "README signals SDK 1.0 and Rust/Flutter requirements; root structure suggests a real SDK rather than README-only concept. Mobile build was not run.",
+        "recommendedAction": "Review license and mobile integration model; run the sample path if available and compare with existing app-agent embedding options.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "antgroup/Napaxi",
+          "url": "https://github.com/antgroup/Napaxi",
+          "category": "Mobile-native Agent SDK",
+          "score": 86,
+          "summary": "Rust/Flutter mobile-native SDK for embedding on-device agent experiences with sandboxed execution, tools, and x-app/x-agent/x-channel connectors.",
+          "audience": "Mobile app teams that want agent capabilities inside iOS/Android products without pushing the whole experience into a web chat.",
+          "ai_native_angle": "Moves agent runtime and tool execution into the mobile application layer, including sandboxing and cross-app/channel concepts as product primitives.",
+          "growth_signal": "Created 2026-07-01; GitHub API showed 24 stars, 3 forks, pushed 2026-07-03; Ant Group org; root audit found Cargo.toml, Rust/Flutter codegen config, multilingual docs, changelog, security and contributor materials.",
+          "runnability": "README signals SDK 1.0 and Rust/Flutter requirements; root structure suggests a real SDK rather than README-only concept. Mobile build was not run.",
+          "recommended_action": "Review license and mobile integration model; run the sample path if available and compare with existing app-agent embedding options."
+        }
+      }
+    ],
     "agentcarto/agentcarto": [
       {
         "id": "agentcarto-agentcarto:2026-06-30T16:58:00+08:00:top:0",
@@ -15072,6 +15551,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "Brain0-ai/brain0": [
+      {
+        "id": "Brain0-ai-brain0:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "Brain0-ai/brain0",
+        "url": "https://github.com/Brain0-ai/brain0",
+        "category": "Agent Code Provenance / Decision Graph",
+        "score": 84,
+        "summary": "Black-box recorder for AI-written code that links commits to prompts, read context, trust signals, drift detection and audit evidence.",
+        "audience": "Engineering teams using coding agents who need to know why code changed, what the agent saw, and whether changes remain trustworthy.",
+        "aiNativeAngle": "Adds provenance and accountability to agent-authored code, turning prompts, context reads and trust checks into inspectable engineering artifacts.",
+        "growthSignal": "Created 2026-07-02; GitHub API showed 22 stars and 12 forks; root audit found Rust workspace, packages, pnpm workspace, schemas, docs, CI badge and security/contribution files.",
+        "runnability": "README is extensive and root files include Cargo, pnpm, schema and scripts, indicating more than a prompt collection. No binary or dashboard was run locally.",
+        "recommendedAction": "Test on a small agent-authored repo and check whether it reconstructs prompt/context provenance with low friction.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "Brain0-ai/brain0",
+          "url": "https://github.com/Brain0-ai/brain0",
+          "category": "Agent Code Provenance / Decision Graph",
+          "score": 84,
+          "summary": "Black-box recorder for AI-written code that links commits to prompts, read context, trust signals, drift detection and audit evidence.",
+          "audience": "Engineering teams using coding agents who need to know why code changed, what the agent saw, and whether changes remain trustworthy.",
+          "ai_native_angle": "Adds provenance and accountability to agent-authored code, turning prompts, context reads and trust checks into inspectable engineering artifacts.",
+          "growth_signal": "Created 2026-07-02; GitHub API showed 22 stars and 12 forks; root audit found Rust workspace, packages, pnpm workspace, schemas, docs, CI badge and security/contribution files.",
+          "runnability": "README is extensive and root files include Cargo, pnpm, schema and scripts, indicating more than a prompt collection. No binary or dashboard was run locally.",
+          "recommended_action": "Test on a small agent-authored repo and check whether it reconstructs prompt/context provenance with low friction."
         }
       }
     ],
@@ -16839,6 +17352,40 @@
         }
       }
     ],
+    "akseolabs-seo/fable-soul": [
+      {
+        "id": "akseolabs-seo-fable-soul:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "akseolabs-seo/fable-soul",
+        "url": "https://github.com/akseolabs-seo/fable-soul",
+        "category": "Coding-agent Judgment Layer",
+        "score": 82,
+        "summary": "Markdown/Python judgment layer for AI coding agents that adds verification, communication discipline, and senior-engineer style decision checks.",
+        "audience": "Developers using Claude Code, Codex or similar agents who want lightweight guardrails before accepting edits.",
+        "aiNativeAngle": "Productizes agent judgment as reusable operating discipline: verify, reason, explain and avoid shallow edits inside the coding-agent loop.",
+        "growthSignal": "Created 2026-07-03; GitHub Search showed 50 stars and 17 forks; root audit found README, bilingual README, SKILL.md, examples, references, scripts and changelog.",
+        "runnability": "Runs as a skill-style workflow with two Python scripts and Markdown instructions; it is executable enough for agent hosts, but less productized than a standalone app.",
+        "recommendedAction": "Trial as a Codex/Claude coding skill on one low-risk fix and measure whether it reduces review churn.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "akseolabs-seo/fable-soul",
+          "url": "https://github.com/akseolabs-seo/fable-soul",
+          "category": "Coding-agent Judgment Layer",
+          "score": 82,
+          "summary": "Markdown/Python judgment layer for AI coding agents that adds verification, communication discipline, and senior-engineer style decision checks.",
+          "audience": "Developers using Claude Code, Codex or similar agents who want lightweight guardrails before accepting edits.",
+          "ai_native_angle": "Productizes agent judgment as reusable operating discipline: verify, reason, explain and avoid shallow edits inside the coding-agent loop.",
+          "growth_signal": "Created 2026-07-03; GitHub Search showed 50 stars and 17 forks; root audit found README, bilingual README, SKILL.md, examples, references, scripts and changelog.",
+          "runnability": "Runs as a skill-style workflow with two Python scripts and Markdown instructions; it is executable enough for agent hosts, but less productized than a standalone app.",
+          "recommended_action": "Trial as a Codex/Claude coding skill on one low-risk fix and measure whether it reduces review churn."
+        }
+      }
+    ],
     "shaul1991/localmind": [
       {
         "id": "shaul1991-localmind:2026-06-30T16:58:00+08:00:top:0",
@@ -17741,6 +18288,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
           "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
           "recommended_action": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。"
+        }
+      }
+    ],
+    "msaad00/agent-bom": [
+      {
+        "id": "msaad00-agent-bom:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "msaad00/agent-bom",
+        "url": "https://github.com/msaad00/agent-bom",
+        "category": "Agent Supply-chain Security Control Plane",
+        "score": 81,
+        "summary": "AI supply-chain and cloud security scanner/control plane covering agents, MCP, packages, cloud estate, non-human identities and policy checks.",
+        "audience": "Security and platform teams that need visibility into AI agent dependencies, MCP servers and machine identities.",
+        "aiNativeAngle": "Frames agent/MCP usage as a software bill of materials and security surface, which is a practical gap as agent tools proliferate.",
+        "growthSignal": "GitHub API showed 24 stars and 7 forks with active push on 2026-07-04; root audit found Dockerfile, Makefile, PyPI/Docker Hub READMEs, .agent-bom example config, pre-commit hooks and project structure docs.",
+        "runnability": "Root files point to CLI/container distribution and a self-hosted UI path; exact setup was not run.",
+        "recommendedAction": "Run the scanner against a small MCP-heavy repo and inspect whether findings are concrete enough for a security review workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "msaad00/agent-bom",
+          "url": "https://github.com/msaad00/agent-bom",
+          "category": "Agent Supply-chain Security Control Plane",
+          "score": 81,
+          "summary": "AI supply-chain and cloud security scanner/control plane covering agents, MCP, packages, cloud estate, non-human identities and policy checks.",
+          "audience": "Security and platform teams that need visibility into AI agent dependencies, MCP servers and machine identities.",
+          "ai_native_angle": "Frames agent/MCP usage as a software bill of materials and security surface, which is a practical gap as agent tools proliferate.",
+          "growth_signal": "GitHub API showed 24 stars and 7 forks with active push on 2026-07-04; root audit found Dockerfile, Makefile, PyPI/Docker Hub READMEs, .agent-bom example config, pre-commit hooks and project structure docs.",
+          "runnability": "Root files point to CLI/container distribution and a self-hosted UI path; exact setup was not run.",
+          "recommended_action": "Run the scanner against a small MCP-heavy repo and inspect whether findings are concrete enough for a security review workflow."
         }
       }
     ],
@@ -18749,6 +19330,40 @@
         }
       }
     ],
+    "medoxisto/toolbox-mcp": [
+      {
+        "id": "medoxisto-toolbox-mcp:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "medoxisto/toolbox-mcp",
+        "url": "https://github.com/medoxisto/toolbox-mcp",
+        "category": "Local MCP Utility Toolbox",
+        "score": 79,
+        "summary": "Local stdio MCP server exposing OCR, PDF/image/audio/video, spreadsheet, math, QR, regex, JSON/CSV and timezone tools for AI agents.",
+        "audience": "Agent users who want private local file/tool capabilities without sending files to network services.",
+        "aiNativeAngle": "Extends agents with practical local capabilities that LLMs cannot perform reliably alone, while keeping execution on the user machine.",
+        "growthSignal": "Created 2026-07-01; GitHub API showed 19 stars and 6 forks; root audit found TypeScript source, package.json/package-lock, README and OCR trained data.",
+        "runnability": "README describes npm-style local MCP usage over stdio; root structure is compact and runnable-looking, but no MCP host integration was tested.",
+        "recommendedAction": "Add temporarily to a local MCP host and test PDF/OCR/math tasks against real files.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "medoxisto/toolbox-mcp",
+          "url": "https://github.com/medoxisto/toolbox-mcp",
+          "category": "Local MCP Utility Toolbox",
+          "score": 79,
+          "summary": "Local stdio MCP server exposing OCR, PDF/image/audio/video, spreadsheet, math, QR, regex, JSON/CSV and timezone tools for AI agents.",
+          "audience": "Agent users who want private local file/tool capabilities without sending files to network services.",
+          "ai_native_angle": "Extends agents with practical local capabilities that LLMs cannot perform reliably alone, while keeping execution on the user machine.",
+          "growth_signal": "Created 2026-07-01; GitHub API showed 19 stars and 6 forks; root audit found TypeScript source, package.json/package-lock, README and OCR trained data.",
+          "runnability": "README describes npm-style local MCP usage over stdio; root structure is compact and runnable-looking, but no MCP host integration was tested.",
+          "recommended_action": "Add temporarily to a local MCP host and test PDF/OCR/math tasks against real files."
+        }
+      }
+    ],
     "benis-me/Dezin": [
       {
         "id": "benis-me-Dezin:2026-06-30T16:58:00+08:00:top:0",
@@ -19086,6 +19701,40 @@
           "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
           "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
           "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+        }
+      }
+    ],
+    "klarlabs-studio/tokenops": [
+      {
+        "id": "klarlabs-studio-tokenops:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "klarlabs-studio/tokenops",
+        "url": "https://github.com/klarlabs-studio/tokenops",
+        "category": "Agent Rate-limit Operations MCP",
+        "score": 78,
+        "summary": "Go-based MCP server and CLI for predicting AI-agent rate-limit cutoffs across Claude, ChatGPT and Gemini-style subscription tiers.",
+        "audience": "Heavy AI-agent operators who need to plan work around subscription, token and rate-limit constraints.",
+        "aiNativeAngle": "Turns model subscription limits into an agent-readable operations signal, helping agents decide when to continue, defer, switch model, or compress work.",
+        "growthSignal": "GitHub API showed active push on 2026-07-04; root audit found Go module, cmd/internal layout, deployments, docs, integrations, CI/release badges, changelog and goreleaser config.",
+        "runnability": "README and Go project layout suggest a real CLI/MCP server; no binary install or MCP registration was performed.",
+        "recommendedAction": "Watch closely; trial if current agent workflows hit rate-limit uncertainty often enough to justify an ops layer.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "klarlabs-studio/tokenops",
+          "url": "https://github.com/klarlabs-studio/tokenops",
+          "category": "Agent Rate-limit Operations MCP",
+          "score": 78,
+          "summary": "Go-based MCP server and CLI for predicting AI-agent rate-limit cutoffs across Claude, ChatGPT and Gemini-style subscription tiers.",
+          "audience": "Heavy AI-agent operators who need to plan work around subscription, token and rate-limit constraints.",
+          "ai_native_angle": "Turns model subscription limits into an agent-readable operations signal, helping agents decide when to continue, defer, switch model, or compress work.",
+          "growth_signal": "GitHub API showed active push on 2026-07-04; root audit found Go module, cmd/internal layout, deployments, docs, integrations, CI/release badges, changelog and goreleaser config.",
+          "runnability": "README and Go project layout suggest a real CLI/MCP server; no binary install or MCP registration was performed.",
+          "recommended_action": "Watch closely; trial if current agent workflows hit rate-limit uncertainty often enough to justify an ops layer."
         }
       }
     ],
@@ -20406,6 +21055,40 @@
         }
       }
     ],
+    "liangdabiao/ecom-details-image-ui": [
+      {
+        "id": "liangdabiao-ecom-details-image-ui:2026-07-04T14:18:00+08:00:top:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "liangdabiao/ecom-details-image-ui",
+        "url": "https://github.com/liangdabiao/ecom-details-image-ui",
+        "category": "Vertical AI Image Agent App",
+        "score": 76,
+        "summary": "Chinese e-commerce visual creation assistant that turns product descriptions or reference images into professional product-detail imagery.",
+        "audience": "Small merchants, e-commerce operators and designers who need fast product-scene image generation with a web UI.",
+        "aiNativeAngle": "A vertical user-facing AI workflow rather than a generic image API: prompt, reference image, scene/style change, gateway config and deployable app are packaged together.",
+        "growthSignal": "Created 2026-07-01; GitHub API showed 17 stars and 4 forks; root audit found Vite/TypeScript app, cloud-functions, server, agents folder, EdgeOne deployment config and detailed Chinese README.",
+        "runnability": "README includes EdgeOne Makers deployment path and environment variables; local app likely runnable via package.json, but not built today.",
+        "recommendedAction": "Use as a vertical-product pattern; verify generated image quality and cost controls before deeper adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "liangdabiao/ecom-details-image-ui",
+          "url": "https://github.com/liangdabiao/ecom-details-image-ui",
+          "category": "Vertical AI Image Agent App",
+          "score": 76,
+          "summary": "Chinese e-commerce visual creation assistant that turns product descriptions or reference images into professional product-detail imagery.",
+          "audience": "Small merchants, e-commerce operators and designers who need fast product-scene image generation with a web UI.",
+          "ai_native_angle": "A vertical user-facing AI workflow rather than a generic image API: prompt, reference image, scene/style change, gateway config and deployable app are packaged together.",
+          "growth_signal": "Created 2026-07-01; GitHub API showed 17 stars and 4 forks; root audit found Vite/TypeScript app, cloud-functions, server, agents folder, EdgeOne deployment config and detailed Chinese README.",
+          "runnability": "README includes EdgeOne Makers deployment path and environment variables; local app likely runnable via package.json, but not built today.",
+          "recommended_action": "Use as a vertical-product pattern; verify generated image quality and cost controls before deeper adoption."
+        }
+      }
+    ],
     "roicai/mcp-server": [
       {
         "id": "roicai-mcp-server:2026-06-30T16:58:00+08:00:top:0",
@@ -21437,6 +22120,40 @@
         }
       }
     ],
+    "Oft3r/agentic-trading-desk": [
+      {
+        "id": "Oft3r-agentic-trading-desk:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "Oft3r/agentic-trading-desk",
+        "url": "https://github.com/Oft3r/agentic-trading-desk",
+        "category": "Vertical Agent Trading Desk",
+        "score": 74,
+        "summary": "Local AI-assisted trading desk using Robinhood MCP plus deterministic Python technical-analysis engines.",
+        "audience": "Individual traders experimenting with agent-assisted analysis while keeping execution decisions human-approved.",
+        "aiNativeAngle": "Separates AI data/query interaction from deterministic scoring engines and explicit user approval, a useful pattern for high-stakes agent products.",
+        "growthSignal": "Created 2026-07-02; GitHub API showed 80 stars and 10 forks; root audit found scripts, SKILL.md and detailed architecture README.",
+        "runnability": "Python scripts and local modular architecture are documented, but financial credentials and risk controls require careful audit.",
+        "recommendedAction": "Watch as a vertical-agent design pattern; do not use with real accounts before security and compliance review.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "Oft3r/agentic-trading-desk",
+          "url": "https://github.com/Oft3r/agentic-trading-desk",
+          "category": "Vertical Agent Trading Desk",
+          "score": 74,
+          "summary": "Local AI-assisted trading desk using Robinhood MCP plus deterministic Python technical-analysis engines.",
+          "audience": "Individual traders experimenting with agent-assisted analysis while keeping execution decisions human-approved.",
+          "ai_native_angle": "Separates AI data/query interaction from deterministic scoring engines and explicit user approval, a useful pattern for high-stakes agent products.",
+          "growth_signal": "Created 2026-07-02; GitHub API showed 80 stars and 10 forks; root audit found scripts, SKILL.md and detailed architecture README.",
+          "runnability": "Python scripts and local modular architecture are documented, but financial credentials and risk controls require careful audit.",
+          "recommended_action": "Watch as a vertical-agent design pattern; do not use with real accounts before security and compliance review."
+        }
+      }
+    ],
     "memex-lab/memex": [
       {
         "id": "memex-lab-memex:2026-06-30T16:58:00+08:00:watchlist:0",
@@ -22242,6 +22959,40 @@
         }
       }
     ],
+    "kevintsai1202/deep-memory": [
+      {
+        "id": "kevintsai1202-deep-memory:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "kevintsai1202/deep-memory",
+        "url": "https://github.com/kevintsai1202/deep-memory",
+        "category": "Agent Memory / Hybrid Retrieval Skill",
+        "score": 73,
+        "summary": "Self-evolving knowledge accumulation and hybrid retrieval skill for coding agents with local ChromaDB and reranking.",
+        "audience": "Developers who want Codex/Claude-style agents to retain project knowledge across sessions.",
+        "aiNativeAngle": "Targets long-horizon agent memory and retrieval rather than one-off chat context.",
+        "growthSignal": "Created 2026-07-01; GitHub API showed 22 stars and 6 forks; root audit found assets, docs, landing-page and skills.",
+        "runnability": "Skill-pack shape is clear, but product surface is narrower than Top workspace/provenance tools.",
+        "recommendedAction": "Watch; compare with Hunch and Brain0 on the same repo memory/provenance task.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "kevintsai1202/deep-memory",
+          "url": "https://github.com/kevintsai1202/deep-memory",
+          "category": "Agent Memory / Hybrid Retrieval Skill",
+          "score": 73,
+          "summary": "Self-evolving knowledge accumulation and hybrid retrieval skill for coding agents with local ChromaDB and reranking.",
+          "audience": "Developers who want Codex/Claude-style agents to retain project knowledge across sessions.",
+          "ai_native_angle": "Targets long-horizon agent memory and retrieval rather than one-off chat context.",
+          "growth_signal": "Created 2026-07-01; GitHub API showed 22 stars and 6 forks; root audit found assets, docs, landing-page and skills.",
+          "runnability": "Skill-pack shape is clear, but product surface is narrower than Top workspace/provenance tools.",
+          "recommended_action": "Watch; compare with Hunch and Brain0 on the same repo memory/provenance task."
+        }
+      }
+    ],
     "max-sixty/worktrunk": [
       {
         "id": "max-sixty-worktrunk:2026-06-30T16:58:00+08:00:watchlist:0",
@@ -22601,6 +23352,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "davesheffer/hunch": [
+      {
+        "id": "davesheffer-hunch:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "davesheffer/hunch",
+        "url": "https://github.com/davesheffer/hunch",
+        "category": "Architectural Conformance for AI Code",
+        "score": 72,
+        "summary": "Git-native graph of decisions, bugs and invariants exposed to agent hosts for architectural conformance.",
+        "audience": "Teams trying to keep AI-generated changes aligned with project decisions and invariants.",
+        "aiNativeAngle": "Makes project architecture memory available to agents as a first-class source of truth.",
+        "growthSignal": "GitHub API showed active push on 2026-07-04; root audit found npm package structure, plugin/site/demo/test folders and multiple agent-host config directories.",
+        "runnability": "Looks productized, but current star signal is tiny and it was not newly created in the 72-hour window.",
+        "recommendedAction": "Keep on watchlist and test if architectural drift becomes a pain point.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "davesheffer/hunch",
+          "url": "https://github.com/davesheffer/hunch",
+          "category": "Architectural Conformance for AI Code",
+          "score": 72,
+          "summary": "Git-native graph of decisions, bugs and invariants exposed to agent hosts for architectural conformance.",
+          "audience": "Teams trying to keep AI-generated changes aligned with project decisions and invariants.",
+          "ai_native_angle": "Makes project architecture memory available to agents as a first-class source of truth.",
+          "growth_signal": "GitHub API showed active push on 2026-07-04; root audit found npm package structure, plugin/site/demo/test folders and multiple agent-host config directories.",
+          "runnability": "Looks productized, but current star signal is tiny and it was not newly created in the 72-hour window.",
+          "recommended_action": "Keep on watchlist and test if architectural drift becomes a pain point."
         }
       }
     ],
@@ -23961,6 +24746,40 @@
         }
       }
     ],
+    "Nicnk/mcp-proxy-studio": [
+      {
+        "id": "Nicnk-mcp-proxy-studio:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "Nicnk/mcp-proxy-studio",
+        "url": "https://github.com/Nicnk/mcp-proxy-studio",
+        "category": "MCP Proxy Studio",
+        "score": 70,
+        "summary": "Visual dashboard for creating, running and monitoring MCP proxies with live logs and inspector-style management.",
+        "audience": "MCP users who need a GUI around proxy configuration and observability.",
+        "aiNativeAngle": "MCP infrastructure is moving from config files toward operational dashboards.",
+        "growthSignal": "Active push on 2026-07-04; root audit found backend, frontend, studio, Dockerfile, docker-compose, Makefile, package.json and pyproject.",
+        "runnability": "Docker and full-stack structure are promising, but README download wording is odd and star signal is zero.",
+        "recommendedAction": "Watch; inspect code before installing binaries or relying on the release artifact.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Nicnk/mcp-proxy-studio",
+          "url": "https://github.com/Nicnk/mcp-proxy-studio",
+          "category": "MCP Proxy Studio",
+          "score": 70,
+          "summary": "Visual dashboard for creating, running and monitoring MCP proxies with live logs and inspector-style management.",
+          "audience": "MCP users who need a GUI around proxy configuration and observability.",
+          "ai_native_angle": "MCP infrastructure is moving from config files toward operational dashboards.",
+          "growth_signal": "Active push on 2026-07-04; root audit found backend, frontend, studio, Dockerfile, docker-compose, Makefile, package.json and pyproject.",
+          "runnability": "Docker and full-stack structure are promising, but README download wording is odd and star signal is zero.",
+          "recommended_action": "Watch; inspect code before installing binaries or relying on the release artifact."
+        }
+      }
+    ],
     "bgmacris/quimera-ai": [
       {
         "id": "bgmacris-quimera-ai:2026-06-30T16:58:00+08:00:watchlist:0",
@@ -24576,6 +25395,40 @@
         }
       }
     ],
+    "MS33834/autoship-cli": [
+      {
+        "id": "MS33834-autoship-cli:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "MS33834/autoship-cli",
+        "url": "https://github.com/MS33834/autoship-cli",
+        "category": "Local AI Delivery Assistant",
+        "score": 69,
+        "summary": "Local-first intelligent delivery assistant for cleaning, verifying, committing and shipping project artifacts.",
+        "audience": "Developers who want an AI-assisted release/check workflow without leaving their machine.",
+        "aiNativeAngle": "Packages delivery hygiene as an agent-adjacent CLI workflow with examples, SDK and registry assets.",
+        "growthSignal": "GitHub Search showed 40 stars, pushed 2026-07-04; root audit found pyproject, docs, examples, benchmarks, dogfood, registry and editor integrations.",
+        "runnability": "README/root files look runnable via Python package, but repo metadata fetch partially failed, so kept below Top.",
+        "recommendedAction": "Watch and run only in a disposable repo until commit/upload behavior is fully understood.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "MS33834/autoship-cli",
+          "url": "https://github.com/MS33834/autoship-cli",
+          "category": "Local AI Delivery Assistant",
+          "score": 69,
+          "summary": "Local-first intelligent delivery assistant for cleaning, verifying, committing and shipping project artifacts.",
+          "audience": "Developers who want an AI-assisted release/check workflow without leaving their machine.",
+          "ai_native_angle": "Packages delivery hygiene as an agent-adjacent CLI workflow with examples, SDK and registry assets.",
+          "growth_signal": "GitHub Search showed 40 stars, pushed 2026-07-04; root audit found pyproject, docs, examples, benchmarks, dogfood, registry and editor integrations.",
+          "runnability": "README/root files look runnable via Python package, but repo metadata fetch partially failed, so kept below Top.",
+          "recommended_action": "Watch and run only in a disposable repo until commit/upload behavior is fully understood."
+        }
+      }
+    ],
     "TNTnext/Lumen": [
       {
         "id": "TNTnext-Lumen:2026-06-29T10:58:00+08:00:watchlist:0",
@@ -24903,6 +25756,40 @@
           "growth_signal": "Recent Claude/GRC search visibility.",
           "runnability": "Executable product surface needs verification.",
           "recommended_action": "Watch until demos, CLI, or workflow examples are clearer."
+        }
+      }
+    ],
+    "aipoch/open-science": [
+      {
+        "id": "aipoch-open-science:2026-07-04T14:18:00+08:00:watchlist:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "aipoch/open-science",
+        "url": "https://github.com/aipoch/open-science",
+        "category": "AI Science Workbench",
+        "score": 68,
+        "summary": "Model-agnostic AI workbench concept for scientific discovery.",
+        "audience": "Researchers exploring AI-native research workflows.",
+        "aiNativeAngle": "Aims at scientific discovery as an AI workbench, but currently reads pre-alpha/vision-heavy.",
+        "growthSignal": "Created 2026-07-03; GitHub API showed 31 stars; README is large and community-oriented.",
+        "runnability": "Root audit only found README and LICENSE, so executable product surface is not yet proven.",
+        "recommendedAction": "Track for future runnable releases; skip for immediate trials.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "aipoch/open-science",
+          "url": "https://github.com/aipoch/open-science",
+          "category": "AI Science Workbench",
+          "score": 68,
+          "summary": "Model-agnostic AI workbench concept for scientific discovery.",
+          "audience": "Researchers exploring AI-native research workflows.",
+          "ai_native_angle": "Aims at scientific discovery as an AI workbench, but currently reads pre-alpha/vision-heavy.",
+          "growth_signal": "Created 2026-07-03; GitHub API showed 31 stars; README is large and community-oriented.",
+          "runnability": "Root audit only found README and LICENSE, so executable product surface is not yet proven.",
+          "recommended_action": "Track for future runnable releases; skip for immediate trials."
         }
       }
     ],
@@ -26169,6 +27056,358 @@
         }
       }
     ],
+    "7-e1even/learn-agent": [
+      {
+        "id": "7-e1even-learn-agent:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "7-e1even/learn-agent",
+        "url": "https://github.com/7-e1even/learn-agent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Promising coding-agent learning project, but positioned as from-scratch educational material rather than a durable app/CLI/API product.",
+        "rawJson": {
+          "full_name": "7-e1even/learn-agent",
+          "url": "https://github.com/7-e1even/learn-agent",
+          "skip_reason": "Promising coding-agent learning project, but positioned as from-scratch educational material rather than a durable app/CLI/API product."
+        }
+      }
+    ],
+    "affaan-m/ECC": [
+      {
+        "id": "affaan-m-ECC:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Repeated abnormal headline star velocity; treat as noisy until independently verified despite frequent search visibility.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Repeated abnormal headline star velocity; treat as noisy until independently verified despite frequent search visibility."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-23T10:19:48+08:00:skip:1",
+        "runId": "run:2026-06-23:2026-06-23T10:19:48+08:00",
+        "runDate": "2026-06-23",
+        "generatedAt": "2026-06-23T10:19:48+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-15T14:06:22+08:00:skip:2",
+        "runId": "run:2026-06-15:2026-06-15T14:06:22+08:00",
+        "runDate": "2026-06-15",
+        "generatedAt": "2026-06-15T14:06:22+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Repeated abnormal star velocity and very high headline numbers require API/community validation.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Repeated abnormal star velocity and very high headline numbers require API/community validation."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-12T18:25:00+08:00:skip:3",
+        "runId": "run:2026-06-12:2026-06-12T18:25:00+08:00",
+        "runDate": "2026-06-12",
+        "generatedAt": "2026-06-12T18:25:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-11T18:18:22+08:00:skip:4",
+        "runId": "run:2026-06-11:2026-06-11T18:18:22+08:00",
+        "runDate": "2026-06-11",
+        "generatedAt": "2026-06-11T18:18:22+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-10T18:17:34+08:00:skip:5",
+        "runId": "run:2026-06-10:2026-06-10T18:17:34+08:00",
+        "runDate": "2026-06-10",
+        "generatedAt": "2026-06-10T18:17:34+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification."
+        }
+      },
+      {
+        "id": "affaan-m-ECC:2026-06-09T18:17:26+08:00:skip:6",
+        "runId": "run:2026-06-09:2026-06-09T18:17:26+08:00",
+        "runDate": "2026-06-09",
+        "generatedAt": "2026-06-09T18:17:26+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "GitTrend and topic pages show huge star velocity, but prior run already flagged the signal as abnormal; treat as unverified until GitHub API/community validation. Product shape is also closer to an agent harness/skills methodology than a clear user product.",
+        "rawJson": {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "skip_reason": "GitTrend and topic pages show huge star velocity, but prior run already flagged the signal as abnormal; treat as unverified until GitHub API/community validation. Product shape is also closer to an agent harness/skills methodology than a clear user product."
+        }
+      }
+    ],
+    "amitshekhariitbhu/ai-agents-tutorial": [
+      {
+        "id": "amitshekhariitbhu-ai-agents-tutorial:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "amitshekhariitbhu/ai-agents-tutorial",
+        "url": "https://github.com/amitshekhariitbhu/ai-agents-tutorial",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Educational tutorial repository; useful learning material but outside product-shaped radar focus.",
+        "rawJson": {
+          "full_name": "amitshekhariitbhu/ai-agents-tutorial",
+          "url": "https://github.com/amitshekhariitbhu/ai-agents-tutorial",
+          "skip_reason": "Educational tutorial repository; useful learning material but outside product-shaped radar focus."
+        }
+      }
+    ],
+    "andreanocalvin/autoclaw-autologin": [
+      {
+        "id": "andreanocalvin-autoclaw-autologin:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "andreanocalvin/autoclaw-autologin",
+        "url": "https://github.com/andreanocalvin/autoclaw-autologin",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "OAuth auto-login/reverse-proxy automation raises account-safety and policy risk; not suitable for promotion without deeper review.",
+        "rawJson": {
+          "full_name": "andreanocalvin/autoclaw-autologin",
+          "url": "https://github.com/andreanocalvin/autoclaw-autologin",
+          "skip_reason": "OAuth auto-login/reverse-proxy automation raises account-safety and policy risk; not suitable for promotion without deeper review."
+        }
+      }
+    ],
+    "DasterProkio/awesome-ai-companion": [
+      {
+        "id": "DasterProkio-awesome-ai-companion:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "DasterProkio/awesome-ai-companion",
+        "url": "https://github.com/DasterProkio/awesome-ai-companion",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated awesome list; not runnable software.",
+        "rawJson": {
+          "full_name": "DasterProkio/awesome-ai-companion",
+          "url": "https://github.com/DasterProkio/awesome-ai-companion",
+          "skip_reason": "Curated awesome list; not runnable software."
+        }
+      }
+    ],
+    "nodobys/Claude-Sonnet-5-Free-Desktop-APP": [
+      {
+        "id": "nodobys-Claude-Sonnet-5-Free-Desktop-APP:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+        "url": "https://github.com/nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Marketing-heavy free-model desktop-app framing; runnable/product claims need verification and provenance is weak.",
+        "rawJson": {
+          "full_name": "nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+          "url": "https://github.com/nodobys/Claude-Sonnet-5-Free-Desktop-APP",
+          "skip_reason": "Marketing-heavy free-model desktop-app framing; runnable/product claims need verification and provenance is weak."
+        }
+      }
+    ],
+    "x1xhlol/system-prompts-and-models-of-ai-tools": [
+      {
+        "id": "x1xhlol-system-prompts-and-models-of-ai-tools:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "x1xhlol/system-prompts-and-models-of-ai-tools",
+        "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Prompt/model collection with high attention, but no standalone user-facing product or runtime.",
+        "rawJson": {
+          "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "skip_reason": "Prompt/model collection with high attention, but no standalone user-facing product or runtime."
+        }
+      }
+    ],
+    "Zsun79/ConferenceWatch": [
+      {
+        "id": "Zsun79-ConferenceWatch:2026-07-04T14:18:00+08:00:skip:0",
+        "runId": "run:2026-07-04:2026-07-04T14:18:00+08:00",
+        "runDate": "2026-07-04",
+        "generatedAt": "2026-07-04T14:18:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Zsun79/ConferenceWatch",
+        "url": "https://github.com/Zsun79/ConferenceWatch",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Agent skill for AI conference deadlines; useful niche utility but too narrow and skill-like for Top product placement.",
+        "rawJson": {
+          "full_name": "Zsun79/ConferenceWatch",
+          "url": "https://github.com/Zsun79/ConferenceWatch",
+          "skip_reason": "Agent skill for AI conference deadlines; useful niche utility but too narrow and skill-like for Top product placement."
+        }
+      }
+    ],
     "frangelbarrera/osint-agent-skills": [
       {
         "id": "frangelbarrera-osint-agent-skills:2026-06-30T16:58:00+08:00:skip:0",
@@ -27372,152 +28611,6 @@
           "full_name": "ZclassiC23/zclassic",
           "url": "https://github.com/ZclassiC23/zclassic",
           "skip_reason": "Includes an MCP server, but the repository is primarily a cryptocurrency full node and off-topic for AI-native product radar."
-        }
-      }
-    ],
-    "affaan-m/ECC": [
-      {
-        "id": "affaan-m-ECC:2026-06-23T10:19:48+08:00:skip:0",
-        "runId": "run:2026-06-23:2026-06-23T10:19:48+08:00",
-        "runDate": "2026-06-23",
-        "generatedAt": "2026-06-23T10:19:48+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "Implausible high-star signal and broad agent-harness marketing language; previously flagged as needing API/community validation before promotion."
-        }
-      },
-      {
-        "id": "affaan-m-ECC:2026-06-15T14:06:22+08:00:skip:1",
-        "runId": "run:2026-06-15:2026-06-15T14:06:22+08:00",
-        "runDate": "2026-06-15",
-        "generatedAt": "2026-06-15T14:06:22+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Repeated abnormal star velocity and very high headline numbers require API/community validation.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "Repeated abnormal star velocity and very high headline numbers require API/community validation."
-        }
-      },
-      {
-        "id": "affaan-m-ECC:2026-06-12T18:25:00+08:00:skip:2",
-        "runId": "run:2026-06-12:2026-06-12T18:25:00+08:00",
-        "runDate": "2026-06-12",
-        "generatedAt": "2026-06-12T18:25:00+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires GitHub API/community validation before promotion."
-        }
-      },
-      {
-        "id": "affaan-m-ECC:2026-06-11T18:18:22+08:00:skip:3",
-        "runId": "run:2026-06-11:2026-06-11T18:18:22+08:00",
-        "runDate": "2026-06-11",
-        "generatedAt": "2026-06-11T18:18:22+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; requires API/community validation before promotion."
-        }
-      },
-      {
-        "id": "affaan-m-ECC:2026-06-10T18:17:34+08:00:skip:4",
-        "runId": "run:2026-06-10:2026-06-10T18:17:34+08:00",
-        "runDate": "2026-06-10",
-        "generatedAt": "2026-06-10T18:17:34+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "Repeated abnormal star velocity and very high headline numbers; product shape still reads closer to agent harness methodology than a validated user-facing product. Requires API/community verification."
-        }
-      },
-      {
-        "id": "affaan-m-ECC:2026-06-09T18:17:26+08:00:skip:5",
-        "runId": "run:2026-06-09:2026-06-09T18:17:26+08:00",
-        "runDate": "2026-06-09",
-        "generatedAt": "2026-06-09T18:17:26+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "affaan-m/ECC",
-        "url": "https://github.com/affaan-m/ECC",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "GitTrend and topic pages show huge star velocity, but prior run already flagged the signal as abnormal; treat as unverified until GitHub API/community validation. Product shape is also closer to an agent harness/skills methodology than a clear user product.",
-        "rawJson": {
-          "full_name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "skip_reason": "GitTrend and topic pages show huge star velocity, but prior run already flagged the signal as abnormal; treat as unverified until GitHub API/community validation. Product shape is also closer to an agent harness/skills methodology than a clear user product."
         }
       }
     ],
