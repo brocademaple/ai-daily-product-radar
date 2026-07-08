@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+      "runDate": "2026-07-08",
+      "generatedAt": "2026-07-08T15:04:02+08:00",
+      "dataWindow": "2026-07-05 00:00 to 2026-07-08 15:04 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, assistant, browser/code/voice-agent and automation repositories; targeted GitHub API README/root-content audits for selected candidates.",
+      "sourceSummary": "Shell curl saved GitHub Search API responses to /tmp/radar_2026_07_08_*.json, then repository metadata, README and root contents were audited under /tmp/radar_2026_07_08_repo_audit. No third-party repo was cloned, installed, built, or run locally; runnability is inferred from README, root files, package manifests, Docker/config files, tests, examples, docs and release signals.",
+      "trendObservations": "Fresh signals cluster around agent workbenches and terminal control planes, repo-native governance for coding agents, local-first knowledge/editor surfaces with MCP endpoints, and vertical agents embedded in Slack, finance, SEO, healthcare or commerce workflows. The better products expose state, evidence, audit trails, local execution, or a bounded user workflow rather than only a model call.",
+      "assumptions": "Scores favor repositories created or materially updated in the 2026-07-05 to 2026-07-08 window, with a real product surface, runnable CLI/UI/API/MCP workflow, clear user scenario, and enough documentation or examples to evaluate. Star counts are unauthenticated GitHub API point-in-time signals and can be noisy. Mature evergreen infrastructure is included only when this window showed strong product-shape activity; pure training code, prompt collections, awesome lists, SDK wrappers and README-only visions are downgraded.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-07-08\n\n数据窗口：2026-07-05 00:00 to 2026-07-08 15:04 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, assistant, browser/code/voice-agent and automation repositories; targeted GitHub API README/root-content audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-05 to 2026-07-08 window, with a real product surface, runnable CLI/UI/API/MCP workflow, clear user scenario, and enough documentation or examples to evaluate. Star counts are unauthenticated GitHub API point-in-time signals and can be noisy. Mature evergreen infrastructure is included only when this window showed strong product-shape activity; pure training code, prompt collections, awesome lists, SDK wrappers and README-only visions are downgraded.\n\n## Top Projects\n\n1. [Cranot/roam-code](https://github.com/Cranot/roam-code) - Local Code Intelligence MCP - Score 89\n   - 做什么：Local codebase intelligence CLI and MCP server for AI coding agents with SQLite graph facts, safety gates, audit evidence and hundreds of agent-readable tools.\n   - 面向谁：Engineering teams using coding agents on real codebases who need local evidence before edits are accepted.\n   - AI native 点：Turns code understanding, blast-radius analysis and change evidence into a local MCP/CLI substrate that agents can query before and after modifying code.\n   - 增长/活跃信号：Active push on 2026-07-08; 494 stars and 47 forks; README shows PyPI, CI, Dockerfile, Makefile, benchmarks, docs, tests, skills and MCP install path.\n   - 可运行性判断：Strong runnable signal: pip/uv install instructions, Dockerfile, pyproject, tests, benchmarks, MCP config and smoke docs. No local install was run today.\n   - 建议动作：Trial on a disposable repo and compare preflight/evidence packets against the current coding-agent review workflow.\n\n2. [zhitongblog/solomd](https://github.com/zhitongblog/solomd) - Agent-native Markdown Workspace - Score 88\n   - 做什么：Local-first Markdown editor with an embedded agent panel, bundled MCP server, vault federation, scheduled recipes and AutoGit branch review.\n   - 面向谁：Knowledge workers and developers who want an Obsidian/Typora-like local editor that agents can safely read and write.\n   - AI native 点：Makes the document workspace itself agent-addressable through MCP, recipes, traces and accept/reject write branches rather than bolting chat beside notes.\n   - 增长/活跃信号：Active push on 2026-07-08; 424 stars and 25 forks; root audit found Tauri/Vue app, MCP server, web clipper, docs, localization READMEs and distribution assets.\n   - 可运行性判断：Strong product signal with release/download links, app folders, dev-mcp, distribution docs and multilingual README. Desktop app was not installed.\n   - 建议动作：Evaluate as a local knowledge-workbench pattern, especially the per-run trace and AutoGit approval model.\n\n3. [DecapodLabs/decapod](https://github.com/DecapodLabs/decapod) - Repo-native Agent Governance Kernel - Score 86\n   - 做什么：Daemonless local-first governance kernel that gives coding agents durable repo state for intent, context, boundaries, coordination and proof.\n   - 面向谁：Teams running multiple AI coding agents who need persistent project rules and completion evidence inside the repository.\n   - AI native 点：Promotes agent governance from chat instructions into repo-native state that later agents, reviewers and CI can inspect.\n   - 增长/活跃信号：Active push on 2026-07-08; 221 stars and 21 forks; root audit found Cargo workspace, Bazel files, Dockerfile.workspace, docs, constitution asset, tests and agent config docs.\n   - 可运行性判断：README advertises cargo install and decapod init; Rust workspace and CI files indicate a runnable CLI. No cargo install was run.\n   - 建议动作：Test on one repo with protected files and explicit validation rules to see whether proof state helps review.\n\n4. [100yenadmin/Lossless-Codex-Orchestrator-LCO](https://github.com/100yenadmin/Lossless-Codex-Orchestrator-LCO) - Codex Session Memory and Orchestration Layer - Score 85\n   - 做什么：Indexes local Codex projects and threads into an agent-readable memory and command layer for search, triage, dry-run orchestration and handoff.\n   - 面向谁：Heavy Codex/OpenClaw users managing many concurrent projects, follow-ups and blocked threads.\n   - AI native 点：Treats agent session history as operational state that another agent can search, summarize and act on through MCP/plugin surfaces.\n   - 增长/活跃信号：Created 2026-06-28 and pushed 2026-07-08; 67 stars; audit found npm package, package-lock, docs, evals, hooks, skills, tests, OpenClaw plugin manifest and screenshots.\n   - 可运行性判断：Strong CLI signal with npm install, lco doctor, lco find, package files and tests. No global install was performed.\n   - 建议动作：Use a disposable Codex history export to verify search quality, privacy boundary and dry-run command packets.\n\n5. [Sma1lboy/kobe](https://github.com/Sma1lboy/kobe) - Terminal IDE for Parallel Coding Agents - Score 82\n   - 做什么：Terminal IDE for fanning out many coding agents in isolated git worktrees from one screen, engine-agnostic across Claude Code, Codex and others.\n   - 面向谁：Developers and managers coordinating multiple coding-agent tasks at once.\n   - AI native 点：Focuses the UI around parallel agent sessions, worktree isolation and attention management, which are native pain points of agentic development.\n   - 增长/活跃信号：Active push on 2026-07-08; 83 stars and 5 forks; root audit found package workspace, docs, public assets, release notes, AGENTS/CLAUDE context and scripts.\n   - 可运行性判断：Package/workspace structure and docs look runnable, but no local install or UI launch was run.\n   - 建议动作：Compare with agterm and existing terminal/worktree setup for multi-agent visibility and interruption handling.\n\n6. [Ranork/remnus-app](https://github.com/Ranork/remnus-app) - MCP-native Workspace - Score 80\n   - 做什么：MCP-native workspace combining databases, pages, kanbans, calendars and app surfaces with Docker, Tauri/Capacitor-style deployment hints.\n   - 面向谁：Users who want a Notion-like local or self-hosted workspace that MCP clients and agents can operate.\n   - AI native 点：Frames workspace objects as MCP-accessible primitives instead of keeping agents outside the product surface.\n   - 增长/活跃信号：Active push on 2026-07-08; 54 stars and 13 forks; root audit found src, src-tauri, android, mcpb, Dockerfile, docker-compose, package-lock, docs and skills.\n   - 可运行性判断：Good full-stack runnable signal via package.json, Docker/docker-compose, .env.example and app directories. No container or app launch was run.\n   - 建议动作：Watch and inspect data model plus MCP security before using with real workspace data.\n\n7. [umputun/agterm](https://github.com/umputun/agterm) - Agentic Flow Terminal - Score 79\n   - 做什么：Native macOS terminal for organizing many long-lived agent sessions into workspaces, status rows, overlays, scripts and a local control CLI.\n   - 面向谁：Mac users who run several Claude Code/Codex sessions and need session status, layout control and scriptable terminal surfaces.\n   - AI native 点：Moves agent-status and terminal control into the shell host itself, letting agents drive layout and report active/blocked/completed state.\n   - 增长/活跃信号：Active push on 2026-07-08; 223 stars and 21 forks; audit found Swift app, Makefile, docs, screenshots, packaging, project.yml and UI tests.\n   - 可运行性判断：Strong macOS app signal with docs and packaging, but local GUI build was not attempted.\n   - 建议动作：Try only after reviewing install path; compare attention/status model with current terminal workflow.\n\n8. [cjohnstoniv/wardyn](https://github.com/cjohnstoniv/wardyn) - Coding-agent Security Governance Plane - Score 77\n   - 做什么：Open-source governance control plane for coding agents with per-run identity, brokered credentials, layered egress, approvals and append-only audit.\n   - 面向谁：Platform/security teams evaluating how to let coding agents work with bounded credentials and network policies.\n   - AI native 点：Defines security and identity primitives around agent runs rather than around human-only developer sessions.\n   - 增长/活跃信号：Created 2026-07-08 and pushed same day; 0 stars but strong root audit: Go module, cmd/internal/pkg, UI, deploy, docs, examples, threatmodel, governance and security docs.\n   - 可运行性判断：Promising CLI/service layout with Makefile and examples, but brand-new and unproven. No local build was run.\n   - 建议动作：Keep as an early security signal; inspect threat model and run only in a sandbox.\n\n9. [cuken/forge](https://github.com/cuken/forge) - Agentic Software Work Orchestration - Score 75\n   - 做什么：Provider-neutral orchestration layer for agentic software work across tasks, specs, agents, workspaces, version control and context.\n   - 面向谁：Teams experimenting with many non-blocking coding tasks that must avoid workspace conflicts.\n   - AI native 点：Treats specs, context, worktrees and agent providers as orchestration primitives for parallel software work.\n   - 增长/活跃信号：Created 2026-07-07 and pushed 2026-07-08; audit found package-lock, src, tests, containers, docs, AGENTS and handoff files.\n   - 可运行性判断：TypeScript package with tests and containers suggests runnable CLI/service, but star signal is tiny and README is still early.\n   - 建议动作：Watch for docs/examples maturity; compare architecture against LCO, kobe and Decapod before trial.\n\n10. [2233admin/qmtcli](https://github.com/2233admin/qmtcli) - Local Finance Agent CLI Bridge - Score 73\n   - 做什么：Local JSON CLI bridging a logged-in QMT/XtQuant client to scripts, notebooks and agents through stable stdin/stdout RPC.\n   - 面向谁：Quant/trading users who want agents to query a local brokerage terminal without exposing credentials through a network service.\n   - AI native 点：Uses process-level JSON/RPC as a bounded agent interface to a high-risk local desktop finance system, with explicit capability and schema commands.\n   - 增长/活跃信号：Created 2026-07-07 and pushed 2026-07-08; audit found pyproject, uv.lock, src, tests, docs, examples, AGENTS, changelog and bilingual README.\n   - 可运行性判断：Good CLI signal with qmtcli capabilities/schema/examples/server commands, but it depends on a logged-in QMT client and was not run.\n   - 建议动作：Study the local-bridge pattern; avoid real-account use until order protections and audit logs are reviewed.\n\n## Watchlist\n\n- [RNT56/SEO-workflow](https://github.com/RNT56/SEO-workflow) - Evidence-bound SEO Agent Workflow - Score 72 - Agent-readiness and SEO workflow for scanning live sites and producing validated remediation reports. 建议：Watch as a vertical evidence-bound agent pattern.\n- [romilp619/signalroom-ai](https://github.com/romilp619/signalroom-ai) - Slack Project-risk Agent - Score 71 - Slack agent that detects hidden project risks, contradictions and blockers, then generates evidence-backed rescue plans. 建议：Watch; useful pattern for Slack-native operational agents.\n- [putratogatorop/whatsapp-ai-shop-assistant](https://github.com/putratogatorop/whatsapp-ai-shop-assistant) - WhatsApp Commerce Agent - Score 70 - WhatsApp customer support and sales agent using FastAPI, LangGraph, RAG, Qdrant, Postgres and Celery. 建议：Watch for demo evidence and integration docs.\n- [mjpvl-ai/clinical-cohort-mapper](https://github.com/mjpvl-ai/clinical-cohort-mapper) - Clinical Query Mapping Agent - Score 69 - LangGraph pipeline mapping free-form patient cohort queries to LOINC, ICD-10-CM, RxNorm and SNOMED CT codes with OpenTelemetry tracing. 建议：Track as a vertical RAG/agent pattern, not as clinical advice.\n- [vishaldev78/Meeting-Insights-Agent](https://github.com/vishaldev78/Meeting-Insights-Agent) - Slack Meeting Memory Agent - Score 67 - Slack agent for meeting summaries, action-item extraction, auto-detection and channel-history Q&A. 建议：Watch alongside SignalRoom for Slack agent UX patterns.\n- [yashshelke2106/fno-signal-terminal](https://github.com/yashshelke2106/fno-signal-terminal) - AI-assisted Trading Terminal - Score 66 - Indian F&O trading terminal with FastAPI, Next.js dashboard, scanner, risk engine and an AI-agent desk documented in the repo. 建议：Use only as architecture study; never connect real capital without deep audit.\n\n## Skip Reasons\n\n- [AI-Hypercomputer/maxtext](https://github.com/AI-Hypercomputer/maxtext) - High-quality LLM training/inference code, but not a fresh user-facing AI-native product for this radar.\n- [BerriAI/litellm](https://github.com/BerriAI/litellm) - Important mature AI gateway infrastructure; included as context but not promoted because today lacked a new product-specific signal.\n- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Awesome/resource collection rather than runnable product surface.\n- [xagentAI/.github](https://github.com/xagentAI/.github) - Organization/profile repository with marketplace positioning; root README API returned 404 and no runnable product code was visible.\n- [Pitikha/TangkuAgentOS](https://github.com/Pitikha/TangkuAgentOS) - Vision and architecture are broad, but current README reads platform-aspirational and product/runnable surface is less concrete than Top candidates.\n- [maimounatonny/Fanar-Hackathon](https://github.com/maimounatonny/Fanar-Hackathon) - Hackathon prototype with a narrow government guidance scenario; root surface looked too thin for Top/Watchlist today.\n- [NietzsLe/taskflow](https://github.com/NietzsLe/taskflow) - Interesting loop-engineering state substrate, but early zero-star package and generic automation scope need more proof before promotion.\n- [vllm-project/vllm](https://github.com/vllm-project/vllm) - Core model-serving infrastructure, not product-shaped discovery for this daily radar.\n\n## 今日趋势观察\n\n1. Agent tooling is converging on durable work state: LCO, Decapod, Kobe and Forge all treat agent work as something to index, govern, isolate or hand off.\n2. Local-first agent surfaces are getting stronger: SoloMD, agterm and qmtcli keep data/control on the user machine while exposing bounded agent interfaces.\n3. Coding-agent safety is moving from prompt advice to enforceable evidence: roam-code, Decapod and Wardyn all foreground audit trails, policy gates or identity.\n4. Vertical agents are easiest to evaluate when they are embedded in a real channel such as Slack, WhatsApp, QMT, SEO scanners or clinical coding pipelines.\n5. Pure platform visions still need runnable proof; today's stronger candidates had package manifests, tests, Docker, MCP configs, screenshots or install commands.\n\n## 今日建议动作\n\n- First trial: run roam-code against a disposable repository and compare the evidence packet against current review expectations.\n- Second trial: inspect SoloMD's MCP/AutoGit model as a local knowledge-workbench reference.\n- Governance follow-up: compare Decapod, Wardyn and LCO on what each stores as durable agent state.\n- UI/workbench follow-up: compare Kobe and agterm for multi-agent visibility and attention management.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_08_created_agent.json, /tmp/radar_2026_07_08_created_mcp.json, /tmp/radar_2026_07_08_created_product.json, /tmp/radar_2026_07_08_active_ai_assistant.json, /tmp/radar_2026_07_08_active_stars.json, /tmp/radar_2026_07_08_agent_stars.json.\n- GitHub repository metadata, README and root contents for selected candidates under /tmp/radar_2026_07_08_repo_audit.\n- No clone, install, Docker, npm, pip, cargo, Go, Swift, mobile build, Slack app install, brokerage connection or browser run audit was performed today.\n",
+      "sourceFile": "2026-07-08.json",
+      "entryCount": 24
+    },
+    {
       "id": "run:2026-07-04:2026-07-04T14:18:00+08:00",
       "runDate": "2026-07-04",
       "generatedAt": "2026-07-04T14:18:00+08:00",
@@ -1169,6 +1181,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Cranot/roam-code",
+      "url": "https://github.com/Cranot/roam-code",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 89,
+      "latestScore": 89,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local Code Intelligence MCP",
+      "summary": "Local codebase intelligence CLI and MCP server for AI coding agents with SQLite graph facts, safety gates, audit evidence and hundreds of agent-readable tools.",
+      "audience": "Engineering teams using coding agents on real codebases who need local evidence before edits are accepted.",
+      "aiNativeAngle": "Turns code understanding, blast-radius analysis and change evidence into a local MCP/CLI substrate that agents can query before and after modifying code.",
+      "growthSignal": "Active push on 2026-07-08; 494 stars and 47 forks; README shows PyPI, CI, Dockerfile, Makefile, benchmarks, docs, tests, skills and MCP install path.",
+      "runnability": "Strong runnable signal: pip/uv install instructions, Dockerfile, pyproject, tests, benchmarks, MCP config and smoke docs. No local install was run today.",
+      "recommendedAction": "Trial on a disposable repo and compare preflight/evidence packets against the current coding-agent review workflow.",
+      "skipReason": null
+    },
+    {
       "fullName": "Hyperyond/Hover",
       "url": "https://github.com/Hyperyond/Hover",
       "firstSeenDate": "2026-06-30",
@@ -1280,6 +1311,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "zhitongblog/solomd",
+      "url": "https://github.com/zhitongblog/solomd",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-native Markdown Workspace",
+      "summary": "Local-first Markdown editor with an embedded agent panel, bundled MCP server, vault federation, scheduled recipes and AutoGit branch review.",
+      "audience": "Knowledge workers and developers who want an Obsidian/Typora-like local editor that agents can safely read and write.",
+      "aiNativeAngle": "Makes the document workspace itself agent-addressable through MCP, recipes, traces and accept/reject write branches rather than bolting chat beside notes.",
+      "growthSignal": "Active push on 2026-07-08; 424 stars and 25 forks; root audit found Tauri/Vue app, MCP server, web clipper, docs, localization READMEs and distribution assets.",
+      "runnability": "Strong product signal with release/download links, app folders, dev-mcp, distribution docs and multilingual README. Desktop app was not installed.",
+      "recommendedAction": "Evaluate as a local knowledge-workbench pattern, especially the per-run trace and AutoGit approval model.",
       "skipReason": null
     },
     {
@@ -1967,6 +2017,25 @@
       "skipReason": null
     },
     {
+      "fullName": "DecapodLabs/decapod",
+      "url": "https://github.com/DecapodLabs/decapod",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Repo-native Agent Governance Kernel",
+      "summary": "Daemonless local-first governance kernel that gives coding agents durable repo state for intent, context, boundaries, coordination and proof.",
+      "audience": "Teams running multiple AI coding agents who need persistent project rules and completion evidence inside the repository.",
+      "aiNativeAngle": "Promotes agent governance from chat instructions into repo-native state that later agents, reviewers and CI can inspect.",
+      "growthSignal": "Active push on 2026-07-08; 221 stars and 21 forks; root audit found Cargo workspace, Bazel files, Dockerfile.workspace, docs, constitution asset, tests and agent config docs.",
+      "runnability": "README advertises cargo install and decapod init; Rust workspace and CI files indicate a runnable CLI. No cargo install was run.",
+      "recommendedAction": "Test on one repo with protected files and explicit validation rules to see whether proof state helps review.",
+      "skipReason": null
+    },
+    {
       "fullName": "antgroup/Napaxi",
       "url": "https://github.com/antgroup/Napaxi",
       "firstSeenDate": "2026-07-04",
@@ -2344,6 +2413,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。",
       "runnability": "支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。",
       "recommendedAction": "优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。",
+      "skipReason": null
+    },
+    {
+      "fullName": "100yenadmin/Lossless-Codex-Orchestrator-LCO",
+      "url": "https://github.com/100yenadmin/Lossless-Codex-Orchestrator-LCO",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Codex Session Memory and Orchestration Layer",
+      "summary": "Indexes local Codex projects and threads into an agent-readable memory and command layer for search, triage, dry-run orchestration and handoff.",
+      "audience": "Heavy Codex/OpenClaw users managing many concurrent projects, follow-ups and blocked threads.",
+      "aiNativeAngle": "Treats agent session history as operational state that another agent can search, summarize and act on through MCP/plugin surfaces.",
+      "growthSignal": "Created 2026-06-28 and pushed 2026-07-08; 67 stars; audit found npm package, package-lock, docs, evals, hooks, skills, tests, OpenClaw plugin manifest and screenshots.",
+      "runnability": "Strong CLI signal with npm install, lco doctor, lco find, package files and tests. No global install was performed.",
+      "recommendedAction": "Use a disposable Codex history export to verify search quality, privacy boundary and dry-run command packets.",
       "skipReason": null
     },
     {
@@ -3354,6 +3442,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Sma1lboy/kobe",
+      "url": "https://github.com/Sma1lboy/kobe",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Terminal IDE for Parallel Coding Agents",
+      "summary": "Terminal IDE for fanning out many coding agents in isolated git worktrees from one screen, engine-agnostic across Claude Code, Codex and others.",
+      "audience": "Developers and managers coordinating multiple coding-agent tasks at once.",
+      "aiNativeAngle": "Focuses the UI around parallel agent sessions, worktree isolation and attention management, which are native pain points of agentic development.",
+      "growthSignal": "Active push on 2026-07-08; 83 stars and 5 forks; root audit found package workspace, docs, public assets, release notes, AGENTS/CLAUDE context and scripts.",
+      "runnability": "Package/workspace structure and docs look runnable, but no local install or UI launch was run.",
+      "recommendedAction": "Compare with agterm and existing terminal/worktree setup for multi-agent visibility and interruption handling.",
+      "skipReason": null
+    },
+    {
       "fullName": "akseolabs-seo/fable-soul",
       "url": "https://github.com/akseolabs-seo/fable-soul",
       "firstSeenDate": "2026-07-04",
@@ -3981,6 +4088,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Ranork/remnus-app",
+      "url": "https://github.com/Ranork/remnus-app",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "MCP-native Workspace",
+      "summary": "MCP-native workspace combining databases, pages, kanbans, calendars and app surfaces with Docker, Tauri/Capacitor-style deployment hints.",
+      "audience": "Users who want a Notion-like local or self-hosted workspace that MCP clients and agents can operate.",
+      "aiNativeAngle": "Frames workspace objects as MCP-accessible primitives instead of keeping agents outside the product surface.",
+      "growthSignal": "Active push on 2026-07-08; 54 stars and 13 forks; root audit found src, src-tauri, android, mcpb, Dockerfile, docker-compose, package-lock, docs and skills.",
+      "runnability": "Good full-stack runnable signal via package.json, Docker/docker-compose, .env.example and app directories. No container or app launch was run.",
+      "recommendedAction": "Watch and inspect data model plus MCP security before using with real workspace data.",
+      "skipReason": null
+    },
+    {
       "fullName": "Wang-Yeah623/qq-ai-bridge",
       "url": "https://github.com/Wang-Yeah623/qq-ai-bridge",
       "firstSeenDate": "2026-06-30",
@@ -4282,6 +4408,25 @@
       "growthSignal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
       "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
       "recommendedAction": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。",
+      "skipReason": null
+    },
+    {
+      "fullName": "umputun/agterm",
+      "url": "https://github.com/umputun/agterm",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agentic Flow Terminal",
+      "summary": "Native macOS terminal for organizing many long-lived agent sessions into workspaces, status rows, overlays, scripts and a local control CLI.",
+      "audience": "Mac users who run several Claude Code/Codex sessions and need session status, layout control and scriptable terminal surfaces.",
+      "aiNativeAngle": "Moves agent-status and terminal control into the shell host itself, letting agents drive layout and report active/blocked/completed state.",
+      "growthSignal": "Active push on 2026-07-08; 223 stars and 21 forks; audit found Swift app, Makefile, docs, screenshots, packaging, project.yml and UI tests.",
+      "runnability": "Strong macOS app signal with docs and packaging, but local GUI build was not attempted.",
+      "recommendedAction": "Try only after reviewing install path; compare attention/status model with current terminal workflow.",
       "skipReason": null
     },
     {
@@ -4988,6 +5133,25 @@
       "skipReason": null
     },
     {
+      "fullName": "cjohnstoniv/wardyn",
+      "url": "https://github.com/cjohnstoniv/wardyn",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Coding-agent Security Governance Plane",
+      "summary": "Open-source governance control plane for coding agents with per-run identity, brokered credentials, layered egress, approvals and append-only audit.",
+      "audience": "Platform/security teams evaluating how to let coding agents work with bounded credentials and network policies.",
+      "aiNativeAngle": "Defines security and identity primitives around agent runs rather than around human-only developer sessions.",
+      "growthSignal": "Created 2026-07-08 and pushed same day; 0 stars but strong root audit: Go module, cmd/internal/pkg, UI, deploy, docs, examples, threatmodel, governance and security docs.",
+      "runnability": "Promising CLI/service layout with Makefile and examples, but brand-new and unproven. No local build was run.",
+      "recommendedAction": "Keep as an early security signal; inspect threat model and run only in a sandbox.",
+      "skipReason": null
+    },
+    {
       "fullName": "xyzzylabs/dent8",
       "url": "https://github.com/xyzzylabs/dent8",
       "firstSeenDate": "2026-06-29",
@@ -5517,6 +5681,25 @@
       "growthSignal": "Recent MCP search visibility from a major enterprise vendor.",
       "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
       "recommendedAction": "Track as an enterprise MCP pattern, especially auth and governance choices.",
+      "skipReason": null
+    },
+    {
+      "fullName": "cuken/forge",
+      "url": "https://github.com/cuken/forge",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agentic Software Work Orchestration",
+      "summary": "Provider-neutral orchestration layer for agentic software work across tasks, specs, agents, workspaces, version control and context.",
+      "audience": "Teams experimenting with many non-blocking coding tasks that must avoid workspace conflicts.",
+      "aiNativeAngle": "Treats specs, context, worktrees and agent providers as orchestration primitives for parallel software work.",
+      "growthSignal": "Created 2026-07-07 and pushed 2026-07-08; audit found package-lock, src, tests, containers, docs, AGENTS and handoff files.",
+      "runnability": "TypeScript package with tests and containers suggests runnable CLI/service, but star signal is tiny and README is still early.",
+      "recommendedAction": "Watch for docs/examples maturity; compare architecture against LCO, kobe and Decapod before trial.",
       "skipReason": null
     },
     {
@@ -6109,6 +6292,25 @@
       "skipReason": null
     },
     {
+      "fullName": "2233admin/qmtcli",
+      "url": "https://github.com/2233admin/qmtcli",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local Finance Agent CLI Bridge",
+      "summary": "Local JSON CLI bridging a logged-in QMT/XtQuant client to scripts, notebooks and agents through stable stdin/stdout RPC.",
+      "audience": "Quant/trading users who want agents to query a local brokerage terminal without exposing credentials through a network service.",
+      "aiNativeAngle": "Uses process-level JSON/RPC as a bounded agent interface to a high-risk local desktop finance system, with explicit capability and schema commands.",
+      "growthSignal": "Created 2026-07-07 and pushed 2026-07-08; audit found pyproject, uv.lock, src, tests, docs, examples, AGENTS, changelog and bilingual README.",
+      "runnability": "Good CLI signal with qmtcli capabilities/schema/examples/server commands, but it depends on a logged-in QMT client and was not run.",
+      "recommendedAction": "Study the local-bridge pattern; avoid real-account use until order protections and audit logs are reviewed.",
+      "skipReason": null
+    },
+    {
       "fullName": "kevintsai1202/deep-memory",
       "url": "https://github.com/kevintsai1202/deep-memory",
       "firstSeenDate": "2026-07-04",
@@ -6315,6 +6517,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "RNT56/SEO-workflow",
+      "url": "https://github.com/RNT56/SEO-workflow",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Evidence-bound SEO Agent Workflow",
+      "summary": "Agent-readiness and SEO workflow for scanning live sites and producing validated remediation reports.",
+      "audience": "SEO and web engineering teams needing auditable technical SEO fixes.",
+      "aiNativeAngle": "Turns site audits into an agent workflow with evidence, reports, examples and CI checks.",
+      "growthSignal": "Created 2026-07-06; root audit found apps, packages, examples, fixtures, docs, workflow-learnings, pnpm workspace and CI badges.",
+      "runnability": "Looks runnable as a TypeScript workspace, but zero-star and non-commercial licensing keep it on watchlist.",
+      "recommendedAction": "Watch as a vertical evidence-bound agent pattern.",
       "skipReason": null
     },
     {
@@ -6774,6 +6995,25 @@
       "skipReason": null
     },
     {
+      "fullName": "romilp619/signalroom-ai",
+      "url": "https://github.com/romilp619/signalroom-ai",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 71,
+      "latestScore": 71,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Slack Project-risk Agent",
+      "summary": "Slack agent that detects hidden project risks, contradictions and blockers, then generates evidence-backed rescue plans.",
+      "audience": "Product and engineering teams living in Slack.",
+      "aiNativeAngle": "Embeds risk graphing, what-if simulation and cited evidence into Slack-native agent surfaces.",
+      "growthSignal": "Created 2026-07-08; root audit found package files, Slack manifest, docs, src and tests.",
+      "runnability": "Runnable-looking Node app with Slack manifest and env example, but no install or Slack workspace test was performed.",
+      "recommendedAction": "Watch; useful pattern for Slack-native operational agents.",
+      "skipReason": null
+    },
+    {
       "fullName": "treyxu23/safari-web-agent",
       "url": "https://github.com/treyxu23/safari-web-agent",
       "firstSeenDate": "2026-06-30",
@@ -7037,6 +7277,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。",
+      "skipReason": null
+    },
+    {
+      "fullName": "putratogatorop/whatsapp-ai-shop-assistant",
+      "url": "https://github.com/putratogatorop/whatsapp-ai-shop-assistant",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 70,
+      "latestScore": 70,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "WhatsApp Commerce Agent",
+      "summary": "WhatsApp customer support and sales agent using FastAPI, LangGraph, RAG, Qdrant, Postgres and Celery.",
+      "audience": "Small commerce teams needing conversational support and sales automation.",
+      "aiNativeAngle": "Packages chat, retrieval, queueing and persistence around a real messaging channel.",
+      "growthSignal": "Created 2026-07-08; root audit found app, data, docker-compose, docker, infra, scripts, tests and deploy docs.",
+      "runnability": "Strong backend/container signal but portfolio framing and zero stars keep it below Top.",
+      "recommendedAction": "Watch for demo evidence and integration docs.",
       "skipReason": null
     },
     {
@@ -7398,6 +7657,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。",
+      "skipReason": null
+    },
+    {
+      "fullName": "mjpvl-ai/clinical-cohort-mapper",
+      "url": "https://github.com/mjpvl-ai/clinical-cohort-mapper",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 69,
+      "latestScore": 69,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Clinical Query Mapping Agent",
+      "summary": "LangGraph pipeline mapping free-form patient cohort queries to LOINC, ICD-10-CM, RxNorm and SNOMED CT codes with OpenTelemetry tracing.",
+      "audience": "Healthcare analytics teams prototyping cohort query normalization.",
+      "aiNativeAngle": "Uses self-correction and tracing for a domain-specific query-to-code workflow.",
+      "growthSignal": "Created 2026-07-07; root audit found DESIGN, problem statement, docker-compose, mapper, observability, tests and results.json.",
+      "runnability": "Good prototype structure; high-stakes domain means it needs stronger validation before promotion.",
+      "recommendedAction": "Track as a vertical RAG/agent pattern, not as clinical advice.",
       "skipReason": null
     },
     {
@@ -7933,6 +8211,25 @@
       "skipReason": null
     },
     {
+      "fullName": "vishaldev78/Meeting-Insights-Agent",
+      "url": "https://github.com/vishaldev78/Meeting-Insights-Agent",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 67,
+      "latestScore": 67,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Slack Meeting Memory Agent",
+      "summary": "Slack agent for meeting summaries, action-item extraction, auto-detection and channel-history Q&A.",
+      "audience": "Teams that lose decisions and commitments in Slack channels.",
+      "aiNativeAngle": "Turns meeting memory and task capture into Slack commands and proactive agent events.",
+      "growthSignal": "Created 2026-07-08; audit found Node package files, app.js, env example and feature-rich README.",
+      "runnability": "Likely runnable as a Slack Bolt app, but repository is small and no Slack test was run.",
+      "recommendedAction": "Watch alongside SignalRoom for Slack agent UX patterns.",
+      "skipReason": null
+    },
+    {
       "fullName": "puffinsoft/peek-cli",
       "url": "https://github.com/puffinsoft/peek-cli",
       "firstSeenDate": "2026-06-29",
@@ -7949,6 +8246,25 @@
       "growthSignal": "Created 2026-06-27, Codex/Claude plugin assets, skills and privacy doc.",
       "runnability": "README shows `peeked start` daemon flow.",
       "recommendedAction": "Watch; test with local browser only after permission review.",
+      "skipReason": null
+    },
+    {
+      "fullName": "yashshelke2106/fno-signal-terminal",
+      "url": "https://github.com/yashshelke2106/fno-signal-terminal",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": 66,
+      "latestScore": 66,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI-assisted Trading Terminal",
+      "summary": "Indian F&O trading terminal with FastAPI, Next.js dashboard, scanner, risk engine and an AI-agent desk documented in the repo.",
+      "audience": "Quant hobbyists studying broker-integrated trading systems.",
+      "aiNativeAngle": "Shows how a multi-role AI agent desk can accelerate a vertical tool while keeping measurement and risk gates explicit.",
+      "growthSignal": "Created 2026-07-06; root audit found many Python pipelines, docs, tests, requirements and trading-ui.",
+      "runnability": "Large runnable surface, but finance/broker risk and zero-star signal keep it on watchlist.",
+      "recommendedAction": "Use only as architecture study; never connect real capital without deep audit.",
       "skipReason": null
     },
     {
@@ -8216,6 +8532,158 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "AI-Hypercomputer/maxtext",
+      "url": "https://github.com/AI-Hypercomputer/maxtext",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "High-quality LLM training/inference code, but not a fresh user-facing AI-native product for this radar."
+    },
+    {
+      "fullName": "BerriAI/litellm",
+      "url": "https://github.com/BerriAI/litellm",
+      "firstSeenDate": "2026-06-26",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Important mature AI gateway infrastructure; included as context but not promoted because today lacked a new product-specific signal."
+    },
+    {
+      "fullName": "hesreallyhim/awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Awesome/resource collection rather than runnable product surface."
+    },
+    {
+      "fullName": "maimounatonny/Fanar-Hackathon",
+      "url": "https://github.com/maimounatonny/Fanar-Hackathon",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Hackathon prototype with a narrow government guidance scenario; root surface looked too thin for Top/Watchlist today."
+    },
+    {
+      "fullName": "NietzsLe/taskflow",
+      "url": "https://github.com/NietzsLe/taskflow",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Interesting loop-engineering state substrate, but early zero-star package and generic automation scope need more proof before promotion."
+    },
+    {
+      "fullName": "Pitikha/TangkuAgentOS",
+      "url": "https://github.com/Pitikha/TangkuAgentOS",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Vision and architecture are broad, but current README reads platform-aspirational and product/runnable surface is less concrete than Top candidates."
+    },
+    {
+      "fullName": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Core model-serving infrastructure, not product-shaped discovery for this daily radar."
+    },
+    {
+      "fullName": "xagentAI/.github",
+      "url": "https://github.com/xagentAI/.github",
+      "firstSeenDate": "2026-07-08",
+      "lastSeenDate": "2026-07-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Organization/profile repository with marketplace positioning; root README API returned 404 and no runnable product code was visible."
     },
     {
       "fullName": "7-e1even/learn-agent",
@@ -8862,25 +9330,6 @@
       "runnability": null,
       "recommendedAction": null,
       "skipReason": "Skill library for content creation; useful as agent capability material, but weaker independent product/runtime surface than UI/CLI/API tools today."
-    },
-    {
-      "fullName": "BerriAI/litellm",
-      "url": "https://github.com/BerriAI/litellm",
-      "firstSeenDate": "2026-06-26",
-      "lastSeenDate": "2026-06-26",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today."
     },
     {
       "fullName": "CorpusIQ/corpusiq-docs",
@@ -12527,6 +12976,40 @@
         }
       }
     ],
+    "Cranot/roam-code": [
+      {
+        "id": "Cranot-roam-code:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "Cranot/roam-code",
+        "url": "https://github.com/Cranot/roam-code",
+        "category": "Local Code Intelligence MCP",
+        "score": 89,
+        "summary": "Local codebase intelligence CLI and MCP server for AI coding agents with SQLite graph facts, safety gates, audit evidence and hundreds of agent-readable tools.",
+        "audience": "Engineering teams using coding agents on real codebases who need local evidence before edits are accepted.",
+        "aiNativeAngle": "Turns code understanding, blast-radius analysis and change evidence into a local MCP/CLI substrate that agents can query before and after modifying code.",
+        "growthSignal": "Active push on 2026-07-08; 494 stars and 47 forks; README shows PyPI, CI, Dockerfile, Makefile, benchmarks, docs, tests, skills and MCP install path.",
+        "runnability": "Strong runnable signal: pip/uv install instructions, Dockerfile, pyproject, tests, benchmarks, MCP config and smoke docs. No local install was run today.",
+        "recommendedAction": "Trial on a disposable repo and compare preflight/evidence packets against the current coding-agent review workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "Cranot/roam-code",
+          "url": "https://github.com/Cranot/roam-code",
+          "category": "Local Code Intelligence MCP",
+          "score": 89,
+          "summary": "Local codebase intelligence CLI and MCP server for AI coding agents with SQLite graph facts, safety gates, audit evidence and hundreds of agent-readable tools.",
+          "audience": "Engineering teams using coding agents on real codebases who need local evidence before edits are accepted.",
+          "ai_native_angle": "Turns code understanding, blast-radius analysis and change evidence into a local MCP/CLI substrate that agents can query before and after modifying code.",
+          "growth_signal": "Active push on 2026-07-08; 494 stars and 47 forks; README shows PyPI, CI, Dockerfile, Makefile, benchmarks, docs, tests, skills and MCP install path.",
+          "runnability": "Strong runnable signal: pip/uv install instructions, Dockerfile, pyproject, tests, benchmarks, MCP config and smoke docs. No local install was run today.",
+          "recommended_action": "Trial on a disposable repo and compare preflight/evidence packets against the current coding-agent review workflow."
+        }
+      }
+    ],
     "Hyperyond/Hover": [
       {
         "id": "Hyperyond-Hover:2026-06-30T16:58:00+08:00:top:0",
@@ -12728,6 +13211,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "zhitongblog/solomd": [
+      {
+        "id": "zhitongblog-solomd:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "zhitongblog/solomd",
+        "url": "https://github.com/zhitongblog/solomd",
+        "category": "Agent-native Markdown Workspace",
+        "score": 88,
+        "summary": "Local-first Markdown editor with an embedded agent panel, bundled MCP server, vault federation, scheduled recipes and AutoGit branch review.",
+        "audience": "Knowledge workers and developers who want an Obsidian/Typora-like local editor that agents can safely read and write.",
+        "aiNativeAngle": "Makes the document workspace itself agent-addressable through MCP, recipes, traces and accept/reject write branches rather than bolting chat beside notes.",
+        "growthSignal": "Active push on 2026-07-08; 424 stars and 25 forks; root audit found Tauri/Vue app, MCP server, web clipper, docs, localization READMEs and distribution assets.",
+        "runnability": "Strong product signal with release/download links, app folders, dev-mcp, distribution docs and multilingual README. Desktop app was not installed.",
+        "recommendedAction": "Evaluate as a local knowledge-workbench pattern, especially the per-run trace and AutoGit approval model.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "zhitongblog/solomd",
+          "url": "https://github.com/zhitongblog/solomd",
+          "category": "Agent-native Markdown Workspace",
+          "score": 88,
+          "summary": "Local-first Markdown editor with an embedded agent panel, bundled MCP server, vault federation, scheduled recipes and AutoGit branch review.",
+          "audience": "Knowledge workers and developers who want an Obsidian/Typora-like local editor that agents can safely read and write.",
+          "ai_native_angle": "Makes the document workspace itself agent-addressable through MCP, recipes, traces and accept/reject write branches rather than bolting chat beside notes.",
+          "growth_signal": "Active push on 2026-07-08; 424 stars and 25 forks; root audit found Tauri/Vue app, MCP server, web clipper, docs, localization READMEs and distribution assets.",
+          "runnability": "Strong product signal with release/download links, app folders, dev-mcp, distribution docs and multilingual README. Desktop app was not installed.",
+          "recommended_action": "Evaluate as a local knowledge-workbench pattern, especially the per-run trace and AutoGit approval model."
         }
       }
     ],
@@ -14509,6 +15026,40 @@
         }
       }
     ],
+    "DecapodLabs/decapod": [
+      {
+        "id": "DecapodLabs-decapod:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "DecapodLabs/decapod",
+        "url": "https://github.com/DecapodLabs/decapod",
+        "category": "Repo-native Agent Governance Kernel",
+        "score": 86,
+        "summary": "Daemonless local-first governance kernel that gives coding agents durable repo state for intent, context, boundaries, coordination and proof.",
+        "audience": "Teams running multiple AI coding agents who need persistent project rules and completion evidence inside the repository.",
+        "aiNativeAngle": "Promotes agent governance from chat instructions into repo-native state that later agents, reviewers and CI can inspect.",
+        "growthSignal": "Active push on 2026-07-08; 221 stars and 21 forks; root audit found Cargo workspace, Bazel files, Dockerfile.workspace, docs, constitution asset, tests and agent config docs.",
+        "runnability": "README advertises cargo install and decapod init; Rust workspace and CI files indicate a runnable CLI. No cargo install was run.",
+        "recommendedAction": "Test on one repo with protected files and explicit validation rules to see whether proof state helps review.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "DecapodLabs/decapod",
+          "url": "https://github.com/DecapodLabs/decapod",
+          "category": "Repo-native Agent Governance Kernel",
+          "score": 86,
+          "summary": "Daemonless local-first governance kernel that gives coding agents durable repo state for intent, context, boundaries, coordination and proof.",
+          "audience": "Teams running multiple AI coding agents who need persistent project rules and completion evidence inside the repository.",
+          "ai_native_angle": "Promotes agent governance from chat instructions into repo-native state that later agents, reviewers and CI can inspect.",
+          "growth_signal": "Active push on 2026-07-08; 221 stars and 21 forks; root audit found Cargo workspace, Bazel files, Dockerfile.workspace, docs, constitution asset, tests and agent config docs.",
+          "runnability": "README advertises cargo install and decapod init; Rust workspace and CI files indicate a runnable CLI. No cargo install was run.",
+          "recommended_action": "Test on one repo with protected files and explicit validation rules to see whether proof state helps review."
+        }
+      }
+    ],
     "antgroup/Napaxi": [
       {
         "id": "antgroup-Napaxi:2026-07-04T14:18:00+08:00:top:0",
@@ -15186,6 +15737,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。",
           "runnability": "支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。",
           "recommended_action": "优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。"
+        }
+      }
+    ],
+    "100yenadmin/Lossless-Codex-Orchestrator-LCO": [
+      {
+        "id": "100yenadmin-Lossless-Codex-Orchestrator-LCO:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "100yenadmin/Lossless-Codex-Orchestrator-LCO",
+        "url": "https://github.com/100yenadmin/Lossless-Codex-Orchestrator-LCO",
+        "category": "Codex Session Memory and Orchestration Layer",
+        "score": 85,
+        "summary": "Indexes local Codex projects and threads into an agent-readable memory and command layer for search, triage, dry-run orchestration and handoff.",
+        "audience": "Heavy Codex/OpenClaw users managing many concurrent projects, follow-ups and blocked threads.",
+        "aiNativeAngle": "Treats agent session history as operational state that another agent can search, summarize and act on through MCP/plugin surfaces.",
+        "growthSignal": "Created 2026-06-28 and pushed 2026-07-08; 67 stars; audit found npm package, package-lock, docs, evals, hooks, skills, tests, OpenClaw plugin manifest and screenshots.",
+        "runnability": "Strong CLI signal with npm install, lco doctor, lco find, package files and tests. No global install was performed.",
+        "recommendedAction": "Use a disposable Codex history export to verify search quality, privacy boundary and dry-run command packets.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "100yenadmin/Lossless-Codex-Orchestrator-LCO",
+          "url": "https://github.com/100yenadmin/Lossless-Codex-Orchestrator-LCO",
+          "category": "Codex Session Memory and Orchestration Layer",
+          "score": 85,
+          "summary": "Indexes local Codex projects and threads into an agent-readable memory and command layer for search, triage, dry-run orchestration and handoff.",
+          "audience": "Heavy Codex/OpenClaw users managing many concurrent projects, follow-ups and blocked threads.",
+          "ai_native_angle": "Treats agent session history as operational state that another agent can search, summarize and act on through MCP/plugin surfaces.",
+          "growth_signal": "Created 2026-06-28 and pushed 2026-07-08; 67 stars; audit found npm package, package-lock, docs, evals, hooks, skills, tests, OpenClaw plugin manifest and screenshots.",
+          "runnability": "Strong CLI signal with npm install, lco doctor, lco find, package files and tests. No global install was performed.",
+          "recommended_action": "Use a disposable Codex history export to verify search quality, privacy boundary and dry-run command packets."
         }
       }
     ],
@@ -17352,6 +17937,40 @@
         }
       }
     ],
+    "Sma1lboy/kobe": [
+      {
+        "id": "Sma1lboy-kobe:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "Sma1lboy/kobe",
+        "url": "https://github.com/Sma1lboy/kobe",
+        "category": "Terminal IDE for Parallel Coding Agents",
+        "score": 82,
+        "summary": "Terminal IDE for fanning out many coding agents in isolated git worktrees from one screen, engine-agnostic across Claude Code, Codex and others.",
+        "audience": "Developers and managers coordinating multiple coding-agent tasks at once.",
+        "aiNativeAngle": "Focuses the UI around parallel agent sessions, worktree isolation and attention management, which are native pain points of agentic development.",
+        "growthSignal": "Active push on 2026-07-08; 83 stars and 5 forks; root audit found package workspace, docs, public assets, release notes, AGENTS/CLAUDE context and scripts.",
+        "runnability": "Package/workspace structure and docs look runnable, but no local install or UI launch was run.",
+        "recommendedAction": "Compare with agterm and existing terminal/worktree setup for multi-agent visibility and interruption handling.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "Sma1lboy/kobe",
+          "url": "https://github.com/Sma1lboy/kobe",
+          "category": "Terminal IDE for Parallel Coding Agents",
+          "score": 82,
+          "summary": "Terminal IDE for fanning out many coding agents in isolated git worktrees from one screen, engine-agnostic across Claude Code, Codex and others.",
+          "audience": "Developers and managers coordinating multiple coding-agent tasks at once.",
+          "ai_native_angle": "Focuses the UI around parallel agent sessions, worktree isolation and attention management, which are native pain points of agentic development.",
+          "growth_signal": "Active push on 2026-07-08; 83 stars and 5 forks; root audit found package workspace, docs, public assets, release notes, AGENTS/CLAUDE context and scripts.",
+          "runnability": "Package/workspace structure and docs look runnable, but no local install or UI launch was run.",
+          "recommended_action": "Compare with agterm and existing terminal/worktree setup for multi-agent visibility and interruption handling."
+        }
+      }
+    ],
     "akseolabs-seo/fable-soul": [
       {
         "id": "akseolabs-seo-fable-soul:2026-07-04T14:18:00+08:00:top:0",
@@ -18693,6 +19312,40 @@
         }
       }
     ],
+    "Ranork/remnus-app": [
+      {
+        "id": "Ranork-remnus-app:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "Ranork/remnus-app",
+        "url": "https://github.com/Ranork/remnus-app",
+        "category": "MCP-native Workspace",
+        "score": 80,
+        "summary": "MCP-native workspace combining databases, pages, kanbans, calendars and app surfaces with Docker, Tauri/Capacitor-style deployment hints.",
+        "audience": "Users who want a Notion-like local or self-hosted workspace that MCP clients and agents can operate.",
+        "aiNativeAngle": "Frames workspace objects as MCP-accessible primitives instead of keeping agents outside the product surface.",
+        "growthSignal": "Active push on 2026-07-08; 54 stars and 13 forks; root audit found src, src-tauri, android, mcpb, Dockerfile, docker-compose, package-lock, docs and skills.",
+        "runnability": "Good full-stack runnable signal via package.json, Docker/docker-compose, .env.example and app directories. No container or app launch was run.",
+        "recommendedAction": "Watch and inspect data model plus MCP security before using with real workspace data.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "Ranork/remnus-app",
+          "url": "https://github.com/Ranork/remnus-app",
+          "category": "MCP-native Workspace",
+          "score": 80,
+          "summary": "MCP-native workspace combining databases, pages, kanbans, calendars and app surfaces with Docker, Tauri/Capacitor-style deployment hints.",
+          "audience": "Users who want a Notion-like local or self-hosted workspace that MCP clients and agents can operate.",
+          "ai_native_angle": "Frames workspace objects as MCP-accessible primitives instead of keeping agents outside the product surface.",
+          "growth_signal": "Active push on 2026-07-08; 54 stars and 13 forks; root audit found src, src-tauri, android, mcpb, Dockerfile, docker-compose, package-lock, docs and skills.",
+          "runnability": "Good full-stack runnable signal via package.json, Docker/docker-compose, .env.example and app directories. No container or app launch was run.",
+          "recommended_action": "Watch and inspect data model plus MCP security before using with real workspace data."
+        }
+      }
+    ],
     "Wang-Yeah623/qq-ai-bridge": [
       {
         "id": "Wang-Yeah623-qq-ai-bridge:2026-06-30T16:58:00+08:00:top:0",
@@ -19327,6 +19980,40 @@
           "growth_signal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
           "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
           "recommended_action": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。"
+        }
+      }
+    ],
+    "umputun/agterm": [
+      {
+        "id": "umputun-agterm:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "umputun/agterm",
+        "url": "https://github.com/umputun/agterm",
+        "category": "Agentic Flow Terminal",
+        "score": 79,
+        "summary": "Native macOS terminal for organizing many long-lived agent sessions into workspaces, status rows, overlays, scripts and a local control CLI.",
+        "audience": "Mac users who run several Claude Code/Codex sessions and need session status, layout control and scriptable terminal surfaces.",
+        "aiNativeAngle": "Moves agent-status and terminal control into the shell host itself, letting agents drive layout and report active/blocked/completed state.",
+        "growthSignal": "Active push on 2026-07-08; 223 stars and 21 forks; audit found Swift app, Makefile, docs, screenshots, packaging, project.yml and UI tests.",
+        "runnability": "Strong macOS app signal with docs and packaging, but local GUI build was not attempted.",
+        "recommendedAction": "Try only after reviewing install path; compare attention/status model with current terminal workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "umputun/agterm",
+          "url": "https://github.com/umputun/agterm",
+          "category": "Agentic Flow Terminal",
+          "score": 79,
+          "summary": "Native macOS terminal for organizing many long-lived agent sessions into workspaces, status rows, overlays, scripts and a local control CLI.",
+          "audience": "Mac users who run several Claude Code/Codex sessions and need session status, layout control and scriptable terminal surfaces.",
+          "ai_native_angle": "Moves agent-status and terminal control into the shell host itself, letting agents drive layout and report active/blocked/completed state.",
+          "growth_signal": "Active push on 2026-07-08; 223 stars and 21 forks; audit found Swift app, Makefile, docs, screenshots, packaging, project.yml and UI tests.",
+          "runnability": "Strong macOS app signal with docs and packaging, but local GUI build was not attempted.",
+          "recommended_action": "Try only after reviewing install path; compare attention/status model with current terminal workflow."
         }
       }
     ],
@@ -20649,6 +21336,40 @@
         }
       }
     ],
+    "cjohnstoniv/wardyn": [
+      {
+        "id": "cjohnstoniv-wardyn:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "cjohnstoniv/wardyn",
+        "url": "https://github.com/cjohnstoniv/wardyn",
+        "category": "Coding-agent Security Governance Plane",
+        "score": 77,
+        "summary": "Open-source governance control plane for coding agents with per-run identity, brokered credentials, layered egress, approvals and append-only audit.",
+        "audience": "Platform/security teams evaluating how to let coding agents work with bounded credentials and network policies.",
+        "aiNativeAngle": "Defines security and identity primitives around agent runs rather than around human-only developer sessions.",
+        "growthSignal": "Created 2026-07-08 and pushed same day; 0 stars but strong root audit: Go module, cmd/internal/pkg, UI, deploy, docs, examples, threatmodel, governance and security docs.",
+        "runnability": "Promising CLI/service layout with Makefile and examples, but brand-new and unproven. No local build was run.",
+        "recommendedAction": "Keep as an early security signal; inspect threat model and run only in a sandbox.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "cjohnstoniv/wardyn",
+          "url": "https://github.com/cjohnstoniv/wardyn",
+          "category": "Coding-agent Security Governance Plane",
+          "score": 77,
+          "summary": "Open-source governance control plane for coding agents with per-run identity, brokered credentials, layered egress, approvals and append-only audit.",
+          "audience": "Platform/security teams evaluating how to let coding agents work with bounded credentials and network policies.",
+          "ai_native_angle": "Defines security and identity primitives around agent runs rather than around human-only developer sessions.",
+          "growth_signal": "Created 2026-07-08 and pushed same day; 0 stars but strong root audit: Go module, cmd/internal/pkg, UI, deploy, docs, examples, threatmodel, governance and security docs.",
+          "runnability": "Promising CLI/service layout with Makefile and examples, but brand-new and unproven. No local build was run.",
+          "recommended_action": "Keep as an early security signal; inspect threat model and run only in a sandbox."
+        }
+      }
+    ],
     "xyzzylabs/dent8": [
       {
         "id": "xyzzylabs-dent8:2026-06-29T10:58:00+08:00:top:0",
@@ -21622,6 +22343,40 @@
           "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
           "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
           "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+        }
+      }
+    ],
+    "cuken/forge": [
+      {
+        "id": "cuken-forge:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "cuken/forge",
+        "url": "https://github.com/cuken/forge",
+        "category": "Agentic Software Work Orchestration",
+        "score": 75,
+        "summary": "Provider-neutral orchestration layer for agentic software work across tasks, specs, agents, workspaces, version control and context.",
+        "audience": "Teams experimenting with many non-blocking coding tasks that must avoid workspace conflicts.",
+        "aiNativeAngle": "Treats specs, context, worktrees and agent providers as orchestration primitives for parallel software work.",
+        "growthSignal": "Created 2026-07-07 and pushed 2026-07-08; audit found package-lock, src, tests, containers, docs, AGENTS and handoff files.",
+        "runnability": "TypeScript package with tests and containers suggests runnable CLI/service, but star signal is tiny and README is still early.",
+        "recommendedAction": "Watch for docs/examples maturity; compare architecture against LCO, kobe and Decapod before trial.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "cuken/forge",
+          "url": "https://github.com/cuken/forge",
+          "category": "Agentic Software Work Orchestration",
+          "score": 75,
+          "summary": "Provider-neutral orchestration layer for agentic software work across tasks, specs, agents, workspaces, version control and context.",
+          "audience": "Teams experimenting with many non-blocking coding tasks that must avoid workspace conflicts.",
+          "ai_native_angle": "Treats specs, context, worktrees and agent providers as orchestration primitives for parallel software work.",
+          "growth_signal": "Created 2026-07-07 and pushed 2026-07-08; audit found package-lock, src, tests, containers, docs, AGENTS and handoff files.",
+          "runnability": "TypeScript package with tests and containers suggests runnable CLI/service, but star signal is tiny and README is still early.",
+          "recommended_action": "Watch for docs/examples maturity; compare architecture against LCO, kobe and Decapod before trial."
         }
       }
     ],
@@ -22959,6 +23714,40 @@
         }
       }
     ],
+    "2233admin/qmtcli": [
+      {
+        "id": "2233admin-qmtcli:2026-07-08T15:04:02+08:00:top:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "2233admin/qmtcli",
+        "url": "https://github.com/2233admin/qmtcli",
+        "category": "Local Finance Agent CLI Bridge",
+        "score": 73,
+        "summary": "Local JSON CLI bridging a logged-in QMT/XtQuant client to scripts, notebooks and agents through stable stdin/stdout RPC.",
+        "audience": "Quant/trading users who want agents to query a local brokerage terminal without exposing credentials through a network service.",
+        "aiNativeAngle": "Uses process-level JSON/RPC as a bounded agent interface to a high-risk local desktop finance system, with explicit capability and schema commands.",
+        "growthSignal": "Created 2026-07-07 and pushed 2026-07-08; audit found pyproject, uv.lock, src, tests, docs, examples, AGENTS, changelog and bilingual README.",
+        "runnability": "Good CLI signal with qmtcli capabilities/schema/examples/server commands, but it depends on a logged-in QMT client and was not run.",
+        "recommendedAction": "Study the local-bridge pattern; avoid real-account use until order protections and audit logs are reviewed.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "2233admin/qmtcli",
+          "url": "https://github.com/2233admin/qmtcli",
+          "category": "Local Finance Agent CLI Bridge",
+          "score": 73,
+          "summary": "Local JSON CLI bridging a logged-in QMT/XtQuant client to scripts, notebooks and agents through stable stdin/stdout RPC.",
+          "audience": "Quant/trading users who want agents to query a local brokerage terminal without exposing credentials through a network service.",
+          "ai_native_angle": "Uses process-level JSON/RPC as a bounded agent interface to a high-risk local desktop finance system, with explicit capability and schema commands.",
+          "growth_signal": "Created 2026-07-07 and pushed 2026-07-08; audit found pyproject, uv.lock, src, tests, docs, examples, AGENTS, changelog and bilingual README.",
+          "runnability": "Good CLI signal with qmtcli capabilities/schema/examples/server commands, but it depends on a logged-in QMT client and was not run.",
+          "recommended_action": "Study the local-bridge pattern; avoid real-account use until order protections and audit logs are reviewed."
+        }
+      }
+    ],
     "kevintsai1202/deep-memory": [
       {
         "id": "kevintsai1202-deep-memory:2026-07-04T14:18:00+08:00:watchlist:0",
@@ -23352,6 +24141,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "RNT56/SEO-workflow": [
+      {
+        "id": "RNT56-SEO-workflow:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "RNT56/SEO-workflow",
+        "url": "https://github.com/RNT56/SEO-workflow",
+        "category": "Evidence-bound SEO Agent Workflow",
+        "score": 72,
+        "summary": "Agent-readiness and SEO workflow for scanning live sites and producing validated remediation reports.",
+        "audience": "SEO and web engineering teams needing auditable technical SEO fixes.",
+        "aiNativeAngle": "Turns site audits into an agent workflow with evidence, reports, examples and CI checks.",
+        "growthSignal": "Created 2026-07-06; root audit found apps, packages, examples, fixtures, docs, workflow-learnings, pnpm workspace and CI badges.",
+        "runnability": "Looks runnable as a TypeScript workspace, but zero-star and non-commercial licensing keep it on watchlist.",
+        "recommendedAction": "Watch as a vertical evidence-bound agent pattern.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "RNT56/SEO-workflow",
+          "url": "https://github.com/RNT56/SEO-workflow",
+          "category": "Evidence-bound SEO Agent Workflow",
+          "score": 72,
+          "summary": "Agent-readiness and SEO workflow for scanning live sites and producing validated remediation reports.",
+          "audience": "SEO and web engineering teams needing auditable technical SEO fixes.",
+          "ai_native_angle": "Turns site audits into an agent workflow with evidence, reports, examples and CI checks.",
+          "growth_signal": "Created 2026-07-06; root audit found apps, packages, examples, fixtures, docs, workflow-learnings, pnpm workspace and CI badges.",
+          "runnability": "Looks runnable as a TypeScript workspace, but zero-star and non-commercial licensing keep it on watchlist.",
+          "recommended_action": "Watch as a vertical evidence-bound agent pattern."
         }
       }
     ],
@@ -24225,6 +25048,40 @@
         }
       }
     ],
+    "romilp619/signalroom-ai": [
+      {
+        "id": "romilp619-signalroom-ai:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "romilp619/signalroom-ai",
+        "url": "https://github.com/romilp619/signalroom-ai",
+        "category": "Slack Project-risk Agent",
+        "score": 71,
+        "summary": "Slack agent that detects hidden project risks, contradictions and blockers, then generates evidence-backed rescue plans.",
+        "audience": "Product and engineering teams living in Slack.",
+        "aiNativeAngle": "Embeds risk graphing, what-if simulation and cited evidence into Slack-native agent surfaces.",
+        "growthSignal": "Created 2026-07-08; root audit found package files, Slack manifest, docs, src and tests.",
+        "runnability": "Runnable-looking Node app with Slack manifest and env example, but no install or Slack workspace test was performed.",
+        "recommendedAction": "Watch; useful pattern for Slack-native operational agents.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "romilp619/signalroom-ai",
+          "url": "https://github.com/romilp619/signalroom-ai",
+          "category": "Slack Project-risk Agent",
+          "score": 71,
+          "summary": "Slack agent that detects hidden project risks, contradictions and blockers, then generates evidence-backed rescue plans.",
+          "audience": "Product and engineering teams living in Slack.",
+          "ai_native_angle": "Embeds risk graphing, what-if simulation and cited evidence into Slack-native agent surfaces.",
+          "growth_signal": "Created 2026-07-08; root audit found package files, Slack manifest, docs, src and tests.",
+          "runnability": "Runnable-looking Node app with Slack manifest and env example, but no install or Slack workspace test was performed.",
+          "recommended_action": "Watch; useful pattern for Slack-native operational agents."
+        }
+      }
+    ],
     "treyxu23/safari-web-agent": [
       {
         "id": "treyxu23-safari-web-agent:2026-06-30T16:58:00+08:00:watchlist:0",
@@ -24743,6 +25600,40 @@
           "score": 71,
           "summary": "面向 AI agent 的沙箱基础设施（代码执行、browser use 等），偏底层组件。",
           "recommended_action": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。"
+        }
+      }
+    ],
+    "putratogatorop/whatsapp-ai-shop-assistant": [
+      {
+        "id": "putratogatorop-whatsapp-ai-shop-assistant:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "putratogatorop/whatsapp-ai-shop-assistant",
+        "url": "https://github.com/putratogatorop/whatsapp-ai-shop-assistant",
+        "category": "WhatsApp Commerce Agent",
+        "score": 70,
+        "summary": "WhatsApp customer support and sales agent using FastAPI, LangGraph, RAG, Qdrant, Postgres and Celery.",
+        "audience": "Small commerce teams needing conversational support and sales automation.",
+        "aiNativeAngle": "Packages chat, retrieval, queueing and persistence around a real messaging channel.",
+        "growthSignal": "Created 2026-07-08; root audit found app, data, docker-compose, docker, infra, scripts, tests and deploy docs.",
+        "runnability": "Strong backend/container signal but portfolio framing and zero stars keep it below Top.",
+        "recommendedAction": "Watch for demo evidence and integration docs.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "putratogatorop/whatsapp-ai-shop-assistant",
+          "url": "https://github.com/putratogatorop/whatsapp-ai-shop-assistant",
+          "category": "WhatsApp Commerce Agent",
+          "score": 70,
+          "summary": "WhatsApp customer support and sales agent using FastAPI, LangGraph, RAG, Qdrant, Postgres and Celery.",
+          "audience": "Small commerce teams needing conversational support and sales automation.",
+          "ai_native_angle": "Packages chat, retrieval, queueing and persistence around a real messaging channel.",
+          "growth_signal": "Created 2026-07-08; root audit found app, data, docker-compose, docker, infra, scripts, tests and deploy docs.",
+          "runnability": "Strong backend/container signal but portfolio framing and zero stars keep it below Top.",
+          "recommended_action": "Watch for demo evidence and integration docs."
         }
       }
     ],
@@ -25392,6 +26283,40 @@
           "score": 70,
           "summary": "以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。",
           "recommended_action": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。"
+        }
+      }
+    ],
+    "mjpvl-ai/clinical-cohort-mapper": [
+      {
+        "id": "mjpvl-ai-clinical-cohort-mapper:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "mjpvl-ai/clinical-cohort-mapper",
+        "url": "https://github.com/mjpvl-ai/clinical-cohort-mapper",
+        "category": "Clinical Query Mapping Agent",
+        "score": 69,
+        "summary": "LangGraph pipeline mapping free-form patient cohort queries to LOINC, ICD-10-CM, RxNorm and SNOMED CT codes with OpenTelemetry tracing.",
+        "audience": "Healthcare analytics teams prototyping cohort query normalization.",
+        "aiNativeAngle": "Uses self-correction and tracing for a domain-specific query-to-code workflow.",
+        "growthSignal": "Created 2026-07-07; root audit found DESIGN, problem statement, docker-compose, mapper, observability, tests and results.json.",
+        "runnability": "Good prototype structure; high-stakes domain means it needs stronger validation before promotion.",
+        "recommendedAction": "Track as a vertical RAG/agent pattern, not as clinical advice.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "mjpvl-ai/clinical-cohort-mapper",
+          "url": "https://github.com/mjpvl-ai/clinical-cohort-mapper",
+          "category": "Clinical Query Mapping Agent",
+          "score": 69,
+          "summary": "LangGraph pipeline mapping free-form patient cohort queries to LOINC, ICD-10-CM, RxNorm and SNOMED CT codes with OpenTelemetry tracing.",
+          "audience": "Healthcare analytics teams prototyping cohort query normalization.",
+          "ai_native_angle": "Uses self-correction and tracing for a domain-specific query-to-code workflow.",
+          "growth_signal": "Created 2026-07-07; root audit found DESIGN, problem statement, docker-compose, mapper, observability, tests and results.json.",
+          "runnability": "Good prototype structure; high-stakes domain means it needs stronger validation before promotion.",
+          "recommended_action": "Track as a vertical RAG/agent pattern, not as clinical advice."
         }
       }
     ],
@@ -26441,6 +27366,40 @@
         }
       }
     ],
+    "vishaldev78/Meeting-Insights-Agent": [
+      {
+        "id": "vishaldev78-Meeting-Insights-Agent:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "vishaldev78/Meeting-Insights-Agent",
+        "url": "https://github.com/vishaldev78/Meeting-Insights-Agent",
+        "category": "Slack Meeting Memory Agent",
+        "score": 67,
+        "summary": "Slack agent for meeting summaries, action-item extraction, auto-detection and channel-history Q&A.",
+        "audience": "Teams that lose decisions and commitments in Slack channels.",
+        "aiNativeAngle": "Turns meeting memory and task capture into Slack commands and proactive agent events.",
+        "growthSignal": "Created 2026-07-08; audit found Node package files, app.js, env example and feature-rich README.",
+        "runnability": "Likely runnable as a Slack Bolt app, but repository is small and no Slack test was run.",
+        "recommendedAction": "Watch alongside SignalRoom for Slack agent UX patterns.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "vishaldev78/Meeting-Insights-Agent",
+          "url": "https://github.com/vishaldev78/Meeting-Insights-Agent",
+          "category": "Slack Meeting Memory Agent",
+          "score": 67,
+          "summary": "Slack agent for meeting summaries, action-item extraction, auto-detection and channel-history Q&A.",
+          "audience": "Teams that lose decisions and commitments in Slack channels.",
+          "ai_native_angle": "Turns meeting memory and task capture into Slack commands and proactive agent events.",
+          "growth_signal": "Created 2026-07-08; audit found Node package files, app.js, env example and feature-rich README.",
+          "runnability": "Likely runnable as a Slack Bolt app, but repository is small and no Slack test was run.",
+          "recommended_action": "Watch alongside SignalRoom for Slack agent UX patterns."
+        }
+      }
+    ],
     "puffinsoft/peek-cli": [
       {
         "id": "puffinsoft-peek-cli:2026-06-29T10:58:00+08:00:watchlist:0",
@@ -26471,6 +27430,40 @@
           "growth_signal": "Created 2026-06-27, Codex/Claude plugin assets, skills and privacy doc.",
           "runnability": "README shows `peeked start` daemon flow.",
           "recommended_action": "Watch; test with local browser only after permission review."
+        }
+      }
+    ],
+    "yashshelke2106/fno-signal-terminal": [
+      {
+        "id": "yashshelke2106-fno-signal-terminal:2026-07-08T15:04:02+08:00:watchlist:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "yashshelke2106/fno-signal-terminal",
+        "url": "https://github.com/yashshelke2106/fno-signal-terminal",
+        "category": "AI-assisted Trading Terminal",
+        "score": 66,
+        "summary": "Indian F&O trading terminal with FastAPI, Next.js dashboard, scanner, risk engine and an AI-agent desk documented in the repo.",
+        "audience": "Quant hobbyists studying broker-integrated trading systems.",
+        "aiNativeAngle": "Shows how a multi-role AI agent desk can accelerate a vertical tool while keeping measurement and risk gates explicit.",
+        "growthSignal": "Created 2026-07-06; root audit found many Python pipelines, docs, tests, requirements and trading-ui.",
+        "runnability": "Large runnable surface, but finance/broker risk and zero-star signal keep it on watchlist.",
+        "recommendedAction": "Use only as architecture study; never connect real capital without deep audit.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "yashshelke2106/fno-signal-terminal",
+          "url": "https://github.com/yashshelke2106/fno-signal-terminal",
+          "category": "AI-assisted Trading Terminal",
+          "score": 66,
+          "summary": "Indian F&O trading terminal with FastAPI, Next.js dashboard, scanner, risk engine and an AI-agent desk documented in the repo.",
+          "audience": "Quant hobbyists studying broker-integrated trading systems.",
+          "ai_native_angle": "Shows how a multi-role AI agent desk can accelerate a vertical tool while keeping measurement and risk gates explicit.",
+          "growth_signal": "Created 2026-07-06; root audit found many Python pipelines, docs, tests, requirements and trading-ui.",
+          "runnability": "Large runnable surface, but finance/broker risk and zero-star signal keep it on watchlist.",
+          "recommended_action": "Use only as architecture study; never connect real capital without deep audit."
         }
       }
     ],
@@ -27053,6 +28046,238 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "AI-Hypercomputer/maxtext": [
+      {
+        "id": "AI-Hypercomputer-maxtext:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "AI-Hypercomputer/maxtext",
+        "url": "https://github.com/AI-Hypercomputer/maxtext",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "High-quality LLM training/inference code, but not a fresh user-facing AI-native product for this radar.",
+        "rawJson": {
+          "full_name": "AI-Hypercomputer/maxtext",
+          "url": "https://github.com/AI-Hypercomputer/maxtext",
+          "skip_reason": "High-quality LLM training/inference code, but not a fresh user-facing AI-native product for this radar."
+        }
+      }
+    ],
+    "BerriAI/litellm": [
+      {
+        "id": "BerriAI-litellm:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "BerriAI/litellm",
+        "url": "https://github.com/BerriAI/litellm",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Important mature AI gateway infrastructure; included as context but not promoted because today lacked a new product-specific signal.",
+        "rawJson": {
+          "full_name": "BerriAI/litellm",
+          "url": "https://github.com/BerriAI/litellm",
+          "skip_reason": "Important mature AI gateway infrastructure; included as context but not promoted because today lacked a new product-specific signal."
+        }
+      },
+      {
+        "id": "BerriAI-litellm:2026-06-26T10:28:00+08:00:skip:1",
+        "runId": "run:2026-06-26:2026-06-26T10:28:00+08:00",
+        "runDate": "2026-06-26",
+        "generatedAt": "2026-06-26T10:28:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "BerriAI/litellm",
+        "url": "https://github.com/BerriAI/litellm",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today.",
+        "rawJson": {
+          "full_name": "BerriAI/litellm",
+          "url": "https://github.com/BerriAI/litellm",
+          "skip_reason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today."
+        }
+      }
+    ],
+    "hesreallyhim/awesome-claude-code": [
+      {
+        "id": "hesreallyhim-awesome-claude-code:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "hesreallyhim/awesome-claude-code",
+        "url": "https://github.com/hesreallyhim/awesome-claude-code",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome/resource collection rather than runnable product surface.",
+        "rawJson": {
+          "full_name": "hesreallyhim/awesome-claude-code",
+          "url": "https://github.com/hesreallyhim/awesome-claude-code",
+          "skip_reason": "Awesome/resource collection rather than runnable product surface."
+        }
+      }
+    ],
+    "maimounatonny/Fanar-Hackathon": [
+      {
+        "id": "maimounatonny-Fanar-Hackathon:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "maimounatonny/Fanar-Hackathon",
+        "url": "https://github.com/maimounatonny/Fanar-Hackathon",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Hackathon prototype with a narrow government guidance scenario; root surface looked too thin for Top/Watchlist today.",
+        "rawJson": {
+          "full_name": "maimounatonny/Fanar-Hackathon",
+          "url": "https://github.com/maimounatonny/Fanar-Hackathon",
+          "skip_reason": "Hackathon prototype with a narrow government guidance scenario; root surface looked too thin for Top/Watchlist today."
+        }
+      }
+    ],
+    "NietzsLe/taskflow": [
+      {
+        "id": "NietzsLe-taskflow:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "NietzsLe/taskflow",
+        "url": "https://github.com/NietzsLe/taskflow",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Interesting loop-engineering state substrate, but early zero-star package and generic automation scope need more proof before promotion.",
+        "rawJson": {
+          "full_name": "NietzsLe/taskflow",
+          "url": "https://github.com/NietzsLe/taskflow",
+          "skip_reason": "Interesting loop-engineering state substrate, but early zero-star package and generic automation scope need more proof before promotion."
+        }
+      }
+    ],
+    "Pitikha/TangkuAgentOS": [
+      {
+        "id": "Pitikha-TangkuAgentOS:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Pitikha/TangkuAgentOS",
+        "url": "https://github.com/Pitikha/TangkuAgentOS",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Vision and architecture are broad, but current README reads platform-aspirational and product/runnable surface is less concrete than Top candidates.",
+        "rawJson": {
+          "full_name": "Pitikha/TangkuAgentOS",
+          "url": "https://github.com/Pitikha/TangkuAgentOS",
+          "skip_reason": "Vision and architecture are broad, but current README reads platform-aspirational and product/runnable surface is less concrete than Top candidates."
+        }
+      }
+    ],
+    "vllm-project/vllm": [
+      {
+        "id": "vllm-project-vllm:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "vllm-project/vllm",
+        "url": "https://github.com/vllm-project/vllm",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Core model-serving infrastructure, not product-shaped discovery for this daily radar.",
+        "rawJson": {
+          "full_name": "vllm-project/vllm",
+          "url": "https://github.com/vllm-project/vllm",
+          "skip_reason": "Core model-serving infrastructure, not product-shaped discovery for this daily radar."
+        }
+      }
+    ],
+    "xagentAI/.github": [
+      {
+        "id": "xagentAI-.github:2026-07-08T15:04:02+08:00:skip:0",
+        "runId": "run:2026-07-08:2026-07-08T15:04:02+08:00",
+        "runDate": "2026-07-08",
+        "generatedAt": "2026-07-08T15:04:02+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "xagentAI/.github",
+        "url": "https://github.com/xagentAI/.github",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Organization/profile repository with marketplace positioning; root README API returned 404 and no runnable product code was visible.",
+        "rawJson": {
+          "full_name": "xagentAI/.github",
+          "url": "https://github.com/xagentAI/.github",
+          "skip_reason": "Organization/profile repository with marketplace positioning; root README API returned 404 and no runnable product code was visible."
         }
       }
     ],
@@ -28129,32 +29354,6 @@
           "full_name": "Pluviobyte/video-production-skills",
           "url": "https://github.com/Pluviobyte/video-production-skills",
           "skip_reason": "Skill library for content creation; useful as agent capability material, but weaker independent product/runtime surface than UI/CLI/API tools today."
-        }
-      }
-    ],
-    "BerriAI/litellm": [
-      {
-        "id": "BerriAI-litellm:2026-06-26T10:28:00+08:00:skip:0",
-        "runId": "run:2026-06-26:2026-06-26T10:28:00+08:00",
-        "runDate": "2026-06-26",
-        "generatedAt": "2026-06-26T10:28:00+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "BerriAI/litellm",
-        "url": "https://github.com/BerriAI/litellm",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today.",
-        "rawJson": {
-          "full_name": "BerriAI/litellm",
-          "url": "https://github.com/BerriAI/litellm",
-          "skip_reason": "Strong AI gateway but primarily mature infra/SDK/proxy, less new product-shaped discovery today."
         }
       }
     ],
