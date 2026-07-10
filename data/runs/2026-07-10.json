@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-07-10",
+  "generated_at": "2026-07-10T11:10:00+08:00",
+  "data_window": "2026-07-07 00:00 to 2026-07-10 11:10 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, assistant, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API README/root-content audits for selected candidates.",
+  "source_summary": "Shell curl saved GitHub Search API responses to /tmp/radar_2026_07_10_*.json, then selected repository metadata, README and root contents were audited under /tmp/radar_2026_07_10_repo_audit. No third-party repo was cloned, installed, built, or run locally; runnability is inferred from README, root files, package manifests, Docker/config files, tests, examples, docs, screenshots and release signals.",
+  "trend_observations": "Fresh signals cluster around AI-native creative pre-production tools, local-first physical/control interfaces for agents, bounded voice/phone bridges, AI subscription/workbench utilities, and evidence-heavy vertical copilots. The best candidates expose a narrow operational loop, local execution or auditable artifacts instead of only wrapping a model call.",
+  "assumptions": "Scores favor repositories created or materially updated in the 2026-07-07 to 2026-07-10 window, with a concrete product surface, runnable CLI/UI/API/MCP workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star counts are unauthenticated GitHub API point-in-time signals and can be noisy; suspicious star/fork patterns, game cheats, prompt-only repos, paper/benchmark repos, SDK wrappers, and README-only marketing surfaces are downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-10\n\n数据窗口：2026-07-07 00:00 to 2026-07-10 11:10 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, assistant, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API README/root-content audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-07 to 2026-07-10 window, with a concrete product surface, runnable CLI/UI/API/MCP workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star counts are unauthenticated GitHub API point-in-time signals and can be noisy; suspicious star/fork patterns, game cheats, prompt-only repos, paper/benchmark repos, SDK wrappers, and README-only marketing surfaces are downgraded or skipped.\n\n## Top Projects\n\n1. [bkingfilm/lapian-notes](https://github.com/bkingfilm/lapian-notes) - AI-native Film Analysis Notebook - Score 88\n   - 做什么：Local film-analysis workspace that turns a movie into editable shot notes with frame extraction, subtitle alignment, AI analysis packages, story lanes, structure trees and emotion curves.\n   - 面向谁：Film creators, editors, students and story analysts doing close reading of movies with local assets.\n   - AI native 点：Makes long-form video legible to AI by packaging local frames/subtitles into structured analysis artifacts, then importing AI output back into an editable creative notebook.\n   - 增长/活跃信号：Created 2026-07-08, pushed 2026-07-09; 174 stars and 25 forks; root audit found Vite/TypeScript app, docs, public assets, package-lock, run scripts, subtitle/transcode plugins and release/download badges.\n   - 可运行性判断：Strong product signal with package.json, Vite config, run.bat/run.command/setup.ps1 and docs. No local desktop/browser run was performed.\n   - 建议动作：Trial on a short public-domain clip and inspect whether the generated analysis package can become a reusable storyboard/review workflow.\n\n2. [wassermanproductions/blockout](https://github.com/wassermanproductions/blockout) - AI-native Filmmaking Previs Desktop App - Score 87\n   - 做什么：Electron desktop app for grey-box staging, camera/cast choreography and motion-reference export for video generators such as Seedance, Veo, Kling, LTX and Wan.\n   - 面向谁：AI filmmakers and creative directors who need unambiguous motion references before prompting video models.\n   - AI native 点：Treats previs as an AI-control artifact: rough 3D blocking, depth/stills/video and tailored prompts are exported so video generators follow camera and actor intent.\n   - 增长/活跃信号：Created 2026-07-07, pushed 2026-07-09; 63 stars and 9 forks; root audit found Electron/Vite app, MCP folder, docs, tests, Playwright/Vitest configs, AGENTS/CLAUDE context and screenshots.\n   - 可运行性判断：Good runnable signal with package-lock, electron-builder, src, build, tests and docs. No npm install or app launch was run.\n   - 建议动作：Compare against the current image/video prompt workflow; especially test whether motion-reference packages reduce regeneration loops.\n\n3. [bolivestilo/Homekit](https://github.com/bolivestilo/Homekit) - Physical-world Agent Control Interface - Score 85\n   - 做什么：TypeScript package/CLI that gives AI agents a single interface for Apple Home actions such as lights, locks and sensor reads.\n   - 面向谁：Home automation builders experimenting with bounded local agent control over physical devices.\n   - AI native 点：Extends agent actions from web/API tasks into the home while foregrounding a typed interface, docs, CI, CodeQL, security and package surfaces.\n   - 增长/活跃信号：Created 2026-07-08, pushed same day; 66 stars and 1 fork; root audit found packages monorepo, docs, package.json, CHANGELOG, ROADMAP, SECURITY, CI and npm badge for homekit-cli.\n   - 可运行性判断：Promising CLI/package signal, but physical-device safety and Apple Home permissions require sandboxed review. No device test was attempted.\n   - 建议动作：Review command permissions and dry-run behavior before any real HomeKit bridge; use fake accessories first.\n\n4. [SilentFleetKK/ai-market-pulse](https://github.com/SilentFleetKK/ai-market-pulse) - AI-assisted Market Research Cockpit - Score 84\n   - 做什么：Python research cockpit that turns watchlists into daily market reports with screening, signal review, benchmark comparison, AI summaries and publishing paths.\n   - 面向谁：Quant researchers and operators who need repeatable daily market intelligence without building a full internal dashboard.\n   - AI native 点：Combines market-data pipelines, prompts, report generation and zero-code publishing into a daily AI research loop with Docker/examples/tests.\n   - 增长/活跃信号：Created 2026-07-09, pushed same day; 63 stars and 12 forks; audit found Dockerfile, docker-compose, pyproject, uv.lock, docs, examples, prompts, tests and bilingual README.\n   - 可运行性判断：Strong runnable signal with quick-start claims, Python package metadata, container files and tests. No market-data/API run was performed.\n   - 建议动作：Study as a report automation pattern; keep it paper-only until data provenance and financial-risk disclaimers are reviewed.\n\n5. [TristanBrotherton/openclaw-voice-call-realtime](https://github.com/TristanBrotherton/openclaw-voice-call-realtime) - Realtime Phone-call Agent Plugin - Score 82\n   - 做什么：OpenClaw plugin that lets an assistant place and receive real phone calls through Twilio and OpenAI Realtime, with in-call tools, transcripts, call screening and structured outcomes.\n   - 面向谁：Agent builders who want assistants to handle phone-only workflows such as reservations, store checks or IVR navigation.\n   - AI native 点：Gives an agent a bounded voice/telephony actuator, then captures transcript, summary and outcome so the call becomes auditable work.\n   - 增长/活跃信号：Created 2026-07-08, pushed same day; 47 stars and 3 forks; root audit found OpenClaw plugin manifest, package-lock, src, index.ts, CHANGELOG and README with concrete call scenarios.\n   - 可运行性判断：Good plugin signal, but depends on Twilio/OpenAI credentials and real-world phone calls. No credentialed run was attempted.\n   - 建议动作：Prototype only with test numbers and strict consent/logging rules; inspect failure behavior around IVR and human escalation.\n\n6. [yangg1224/smart_remarkable](https://github.com/yangg1224/smart_remarkable) - LLM Ink-screen Assistant - Score 80\n   - 做什么：Rust Vision-LLM agent for reMarkable tablets that watches handwritten input, sends selected screen regions to an LLM and draws or types responses back onto the ink screen.\n   - 面向谁：reMarkable power users who want AI help embedded in handwriting workflows rather than a separate chat surface.\n   - AI native 点：Turns handwriting regions into model-addressable objects and returns answers as editable pen strokes, making the agent part of the native tablet interaction.\n   - 增长/活跃信号：Created 2026-07-07, pushed 2026-07-09; 49 stars and 5 forks; audit found Cargo workspace, docs, assets, evaluations, prompts, tests, build.sh and an xovi extension for an LLM button.\n   - 可运行性判断：Strong device-specific engineering signal, but requires compatible reMarkable setup. No device build or install was run.\n   - 建议动作：Track for local-device AI UX; test only on a spare device or emulator path after reviewing extension hooks.\n\n7. [thomasunise/visionbridge](https://github.com/thomasunise/visionbridge) - OpenAI-compatible Vision Tool Proxy - Score 78\n   - 做什么：Tiny proxy that lets text-only reasoning models inspect images through a separate vision model using tools such as look, OCR, scan, crop and compare.\n   - 面向谁：Developers using local/OpenAI-compatible chat stacks who want vision without retraining or switching their reasoning model.\n   - AI native 点：Splits reasoning and perception into tool calls, allowing agents to request targeted visual evidence rather than blindly receiving a huge multimodal blob.\n   - 增长/活跃信号：Created 2026-07-07; 29 stars and 1 fork; root audit found Dockerfile, docker-compose, Makefile, pyproject, examples, benchmarks, tests and OpenWebUI/LibreChat-style proxy docs.\n   - 可运行性判断：Good API/server signal with container and test assets. No local server or model backend was run.\n   - 建议动作：Try with local Ollama/LM Studio plus a known VLM and inspect tool-call trace quality.\n\n8. [Northwood-Systems/foreman](https://github.com/Northwood-Systems/foreman) - Self-hosted LLM Gateway for Coding Agents - Score 77\n   - 做什么：Single Go binary LLM gateway that routes requests across providers by cost, policy and determinism while keeping keys and traffic inside the user network.\n   - 面向谁：Teams using coding agents across many models who need spend control and provider policy without changing harness code.\n   - AI native 点：Puts model routing, cost policy and conversation pinning between agents and providers, making agent model choice governable and auditable.\n   - 增长/活跃信号：Created 2026-07-08; 19 stars; root audit found Go cmd/internal/shared layout, Dockerfile, Makefile, configs, deploy, docs, assets, SECURITY and goreleaser config.\n   - 可运行性判断：Strong Go service signal with binary/package structure and Docker docs. No build or gateway smoke test was run.\n   - 建议动作：Compare with existing LiteLLM-style gateways for deterministic routing and local policy ergonomics.\n\n9. [ItsJazii/pane](https://github.com/ItsJazii/pane) - AI Subscription Usage Tray - Score 75\n   - 做什么：Windows tray app that aggregates AI subscription limits, resets, spend and usage across Claude, Codex, Cursor, Copilot and other providers.\n   - 面向谁：Heavy AI coding-tool users juggling multiple subscriptions and quota windows.\n   - AI native 点：Treats AI tool quotas as operational state for power users, bringing provider limits into a local always-visible control surface.\n   - 增长/活跃信号：Created 2026-07-07, pushed 2026-07-09; 8 stars; audit found Tauri/Rust + Vite app, docs screenshots, install.ps1, package-lock, ROADMAP, SECURITY and provider list.\n   - 可运行性判断：Concrete desktop-app signal, but provider integrations and credential handling need inspection. No Windows run was attempted.\n   - 建议动作：Use as a pattern for quota-aware agent workbenches; audit local storage before connecting real accounts.\n\n10. [deer-flow/llm-space](https://github.com/deer-flow/llm-space) - Agent Builder Debugging Desktop - Score 74\n   - 做什么：Desktop app for prototyping agent ideas, inspecting harness execution steps, debugging failures and evaluating performance, dogfooded with DeerFlow.\n   - 面向谁：Agent developers who need local visibility into multi-step harness behavior and evaluation traces.\n   - AI native 点：Moves agent debugging from logs into a desktop workbench centered on run steps, failure inspection and eval feedback.\n   - 增长/活跃信号：Created 2026-06-28, pushed 2026-07-10; 59 stars and 10 forks; audit found apps/packages monorepo, docs, scripts, telemetry policy, AGENTS/CLAUDE files, bun lock and screenshots.\n   - 可运行性判断：Good desktop/workbench signal, but no Bun install or app launch was performed.\n   - 建议动作：Watch as an agent-observability UI reference; compare with agent-inspect and existing local trace tooling.\n\n## Watchlist\n\n- [pascalorg/lingo](https://github.com/pascalorg/lingo) - Safer LLM Tool Input Parser - Score 72 - Zero-dependency parser/humanizer for quantities, units, dates and ranges so forms and LLM tool calls can normalize messy natural-language values. 建议：Watch for examples around agent tool schemas and validation failure UX.\n- [xiaosen2026/flowcanva](https://github.com/xiaosen2026/flowcanva) - Infinite-canvas Multimodal AI Pipeline - Score 71 - Full-stack infinite canvas for chaining LLM, image, video, ComfyUI and agent/workflow nodes. 建议：Watch for install docs and reusable workflow JSON support.\n- [MadBlast0/Cli-launcher](https://github.com/MadBlast0/Cli-launcher) - Desktop Launcher for AI Coding CLIs - Score 70 - Electron desktop launcher to install, update, uninstall and launch 17 terminal AI agents from one panel. 建议：Track for provider install/update safety and account isolation.\n- [ninemindai/agentgem](https://github.com/ninemindai/agentgem) - Portable Coding-agent Session Distillation - Score 69 - Distills coding-agent sessions into reusable portable “Gems” with secret redaction and deployment across harnesses. 建议：Watch alongside LCO/Decapod-style session memory tools.\n- [wellwelwel/lagune](https://github.com/wellwelwel/lagune) - Agent-guided Security Hardening - Score 68 - Security copilot that guides supported AI agents through project-specific hardening across many languages. 建议：Evaluate on a disposable service and compare findings with established scanners.\n- [MongLong0214/logic-pro-mcp](https://github.com/MongLong0214/logic-pro-mcp) - Logic Pro MCP Control Server - Score 67 - Local MCP server for controlling Logic Pro, writing MIDI, operating transport/mixer state and verifying live project data. 建议：Watch for permission model and readback reliability.\n\n## Skip Reasons\n\n- [lewisondako2005-commits/Fortnite-Aimbot-Softaim-Mod-Menu-2026](https://github.com/lewisondako2005-commits/Fortnite-Aimbot-Softaim-Mod-Menu-2026) - Game cheat/aimbot repository; excluded for safety and not a legitimate AI-native product.\n- [R0f1ida/Rust-Aimbot-ESP-Hack-2026-Undetected](https://github.com/R0f1ida/Rust-Aimbot-ESP-Hack-2026-Undetected) - Game cheat/ESP repository with suspicious growth pattern; excluded.\n- [zhouwei713/seedance-prompt](https://github.com/zhouwei713/seedance-prompt) - Prompt/skill collection for video prompts rather than a runnable product surface.\n- [youssefeltot123-commits/AI-Photo-Enhancer-2026-Restore-Old](https://github.com/youssefeltot123-commits/AI-Photo-Enhancer-2026-Restore-Old) - Generic AI photo enhancer repo with suspicious same-day 100-star/no-fork pattern and insufficient audited product evidence before rate limit.\n- [davidguilfarras09/AI-Face-Swap-Tool-2026-Real-Time-Video](https://github.com/davidguilfarras09/AI-Face-Swap-Tool-2026-Real-Time-Video) - Generic face-swap repo with suspicious same-day star pattern and higher misuse risk; not promoted.\n- [webierproductionenv/AI-Background-Remover-2026-Batch](https://github.com/webierproductionenv/AI-Background-Remover-2026-Batch) - Generic image utility with suspicious same-day star pattern; README/root audit was blocked by rate limit before product proof.\n- [KORAYTEACHER/fintech-forge](https://github.com/KORAYTEACHER/fintech-forge) - Finance app scaffold looked broad and marketing-heavy compared with more concrete AI Market Pulse and FinTech Advisor candidates.\n- [suyiyun/llm-text2sql-taxonomy](https://github.com/suyiyun/llm-text2sql-taxonomy) - Research/benchmark taxonomy code, not a user-facing AI-native product for this radar.\n\n## 今日趋势观察\n\n1. AI-native creative tools are becoming more operational: Lapian Notes and Blockout transform raw media intent into structured assets that downstream models can follow.\n2. Physical-world and device-native agents are moving from demos into bounded interfaces: Homekit, Smart Remarkable and Logic Pro MCP all focus on local control/readback.\n3. Voice and phone agents are narrowing toward explicit workflows with transcripts, outcomes and tool boundaries, as shown by the OpenClaw realtime call plugin.\n4. Agent workbenches now need operational telemetry beyond chat history: Pane, LLM Space, Foreman and AgentGem all expose quota, routing, traces or reusable session knowledge.\n5. Suspicious same-day star bursts remain common around generic AI image/video utilities and game-cheat repositories; runnable product evidence and root-file audits matter more than raw stars.\n\n## 今日建议动作\n\n- Creative workflow trial: run Lapian Notes or Blockout against a short non-sensitive clip/scene and compare the artifact loop with current prompt-only video workflows.\n- Safety review: inspect Homekit and the OpenClaw voice plugin for dry-run, permission, consent and logging boundaries before any real-world actuation.\n- Infra comparison: compare Foreman with LiteLLM-style gateways for coding-agent model routing, cost policy and conversation pinning.\n- Workbench follow-up: watch Pane, LLM Space and AgentGem as evidence that AI power users need quota, trace and reusable workflow surfaces.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_10_created_agents.json, /tmp/radar_2026_07_10_created_llm.json, /tmp/radar_2026_07_10_updated_ai.json, /tmp/radar_2026_07_10_active_agent_stars.json, /tmp/radar_2026_07_10_active_mcp_stars.json, /tmp/radar_2026_07_10_active_vertical_agents.json, /tmp/radar_2026_07_10_active_workflow_llm.json.\n- GitHub repository metadata, README and root contents for selected candidates under /tmp/radar_2026_07_10_repo_audit.\n- GitHub API rate limits blocked the tail of a few low-confidence generic image/utility audits; those repos were not promoted.\n- No clone, install, Docker, npm, pip, cargo, Go, Swift, Windows, tablet, HomeKit, Twilio, Logic Pro, brokerage, browser or local runtime audit was performed today.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "bkingfilm/lapian-notes",
+      "url": "https://github.com/bkingfilm/lapian-notes",
+      "category": "AI-native Film Analysis Notebook",
+      "score": 88,
+      "summary": "Local film-analysis workspace that turns a movie into editable shot notes with frame extraction, subtitle alignment, AI analysis packages, story lanes, structure trees and emotion curves.",
+      "audience": "Film creators, editors, students and story analysts doing close reading of movies with local assets.",
+      "ai_native_angle": "Makes long-form video legible to AI by packaging local frames/subtitles into structured analysis artifacts, then importing AI output back into an editable creative notebook.",
+      "growth_signal": "Created 2026-07-08, pushed 2026-07-09; 174 stars and 25 forks; root audit found Vite/TypeScript app, docs, public assets, package-lock, run scripts, subtitle/transcode plugins and release/download badges.",
+      "runnability": "Strong product signal with package.json, Vite config, run.bat/run.command/setup.ps1 and docs. No local desktop/browser run was performed.",
+      "recommended_action": "Trial on a short public-domain clip and inspect whether the generated analysis package can become a reusable storyboard/review workflow."
+    },
+    {
+      "rank": 2,
+      "full_name": "wassermanproductions/blockout",
+      "url": "https://github.com/wassermanproductions/blockout",
+      "category": "AI-native Filmmaking Previs Desktop App",
+      "score": 87,
+      "summary": "Electron desktop app for grey-box staging, camera/cast choreography and motion-reference export for video generators such as Seedance, Veo, Kling, LTX and Wan.",
+      "audience": "AI filmmakers and creative directors who need unambiguous motion references before prompting video models.",
+      "ai_native_angle": "Treats previs as an AI-control artifact: rough 3D blocking, depth/stills/video and tailored prompts are exported so video generators follow camera and actor intent.",
+      "growth_signal": "Created 2026-07-07, pushed 2026-07-09; 63 stars and 9 forks; root audit found Electron/Vite app, MCP folder, docs, tests, Playwright/Vitest configs, AGENTS/CLAUDE context and screenshots.",
+      "runnability": "Good runnable signal with package-lock, electron-builder, src, build, tests and docs. No npm install or app launch was run.",
+      "recommended_action": "Compare against the current image/video prompt workflow; especially test whether motion-reference packages reduce regeneration loops."
+    },
+    {
+      "rank": 3,
+      "full_name": "bolivestilo/Homekit",
+      "url": "https://github.com/bolivestilo/Homekit",
+      "category": "Physical-world Agent Control Interface",
+      "score": 85,
+      "summary": "TypeScript package/CLI that gives AI agents a single interface for Apple Home actions such as lights, locks and sensor reads.",
+      "audience": "Home automation builders experimenting with bounded local agent control over physical devices.",
+      "ai_native_angle": "Extends agent actions from web/API tasks into the home while foregrounding a typed interface, docs, CI, CodeQL, security and package surfaces.",
+      "growth_signal": "Created 2026-07-08, pushed same day; 66 stars and 1 fork; root audit found packages monorepo, docs, package.json, CHANGELOG, ROADMAP, SECURITY, CI and npm badge for homekit-cli.",
+      "runnability": "Promising CLI/package signal, but physical-device safety and Apple Home permissions require sandboxed review. No device test was attempted.",
+      "recommended_action": "Review command permissions and dry-run behavior before any real HomeKit bridge; use fake accessories first."
+    },
+    {
+      "rank": 4,
+      "full_name": "SilentFleetKK/ai-market-pulse",
+      "url": "https://github.com/SilentFleetKK/ai-market-pulse",
+      "category": "AI-assisted Market Research Cockpit",
+      "score": 84,
+      "summary": "Python research cockpit that turns watchlists into daily market reports with screening, signal review, benchmark comparison, AI summaries and publishing paths.",
+      "audience": "Quant researchers and operators who need repeatable daily market intelligence without building a full internal dashboard.",
+      "ai_native_angle": "Combines market-data pipelines, prompts, report generation and zero-code publishing into a daily AI research loop with Docker/examples/tests.",
+      "growth_signal": "Created 2026-07-09, pushed same day; 63 stars and 12 forks; audit found Dockerfile, docker-compose, pyproject, uv.lock, docs, examples, prompts, tests and bilingual README.",
+      "runnability": "Strong runnable signal with quick-start claims, Python package metadata, container files and tests. No market-data/API run was performed.",
+      "recommended_action": "Study as a report automation pattern; keep it paper-only until data provenance and financial-risk disclaimers are reviewed."
+    },
+    {
+      "rank": 5,
+      "full_name": "TristanBrotherton/openclaw-voice-call-realtime",
+      "url": "https://github.com/TristanBrotherton/openclaw-voice-call-realtime",
+      "category": "Realtime Phone-call Agent Plugin",
+      "score": 82,
+      "summary": "OpenClaw plugin that lets an assistant place and receive real phone calls through Twilio and OpenAI Realtime, with in-call tools, transcripts, call screening and structured outcomes.",
+      "audience": "Agent builders who want assistants to handle phone-only workflows such as reservations, store checks or IVR navigation.",
+      "ai_native_angle": "Gives an agent a bounded voice/telephony actuator, then captures transcript, summary and outcome so the call becomes auditable work.",
+      "growth_signal": "Created 2026-07-08, pushed same day; 47 stars and 3 forks; root audit found OpenClaw plugin manifest, package-lock, src, index.ts, CHANGELOG and README with concrete call scenarios.",
+      "runnability": "Good plugin signal, but depends on Twilio/OpenAI credentials and real-world phone calls. No credentialed run was attempted.",
+      "recommended_action": "Prototype only with test numbers and strict consent/logging rules; inspect failure behavior around IVR and human escalation."
+    },
+    {
+      "rank": 6,
+      "full_name": "yangg1224/smart_remarkable",
+      "url": "https://github.com/yangg1224/smart_remarkable",
+      "category": "LLM Ink-screen Assistant",
+      "score": 80,
+      "summary": "Rust Vision-LLM agent for reMarkable tablets that watches handwritten input, sends selected screen regions to an LLM and draws or types responses back onto the ink screen.",
+      "audience": "reMarkable power users who want AI help embedded in handwriting workflows rather than a separate chat surface.",
+      "ai_native_angle": "Turns handwriting regions into model-addressable objects and returns answers as editable pen strokes, making the agent part of the native tablet interaction.",
+      "growth_signal": "Created 2026-07-07, pushed 2026-07-09; 49 stars and 5 forks; audit found Cargo workspace, docs, assets, evaluations, prompts, tests, build.sh and an xovi extension for an LLM button.",
+      "runnability": "Strong device-specific engineering signal, but requires compatible reMarkable setup. No device build or install was run.",
+      "recommended_action": "Track for local-device AI UX; test only on a spare device or emulator path after reviewing extension hooks."
+    },
+    {
+      "rank": 7,
+      "full_name": "thomasunise/visionbridge",
+      "url": "https://github.com/thomasunise/visionbridge",
+      "category": "OpenAI-compatible Vision Tool Proxy",
+      "score": 78,
+      "summary": "Tiny proxy that lets text-only reasoning models inspect images through a separate vision model using tools such as look, OCR, scan, crop and compare.",
+      "audience": "Developers using local/OpenAI-compatible chat stacks who want vision without retraining or switching their reasoning model.",
+      "ai_native_angle": "Splits reasoning and perception into tool calls, allowing agents to request targeted visual evidence rather than blindly receiving a huge multimodal blob.",
+      "growth_signal": "Created 2026-07-07; 29 stars and 1 fork; root audit found Dockerfile, docker-compose, Makefile, pyproject, examples, benchmarks, tests and OpenWebUI/LibreChat-style proxy docs.",
+      "runnability": "Good API/server signal with container and test assets. No local server or model backend was run.",
+      "recommended_action": "Try with local Ollama/LM Studio plus a known VLM and inspect tool-call trace quality."
+    },
+    {
+      "rank": 8,
+      "full_name": "Northwood-Systems/foreman",
+      "url": "https://github.com/Northwood-Systems/foreman",
+      "category": "Self-hosted LLM Gateway for Coding Agents",
+      "score": 77,
+      "summary": "Single Go binary LLM gateway that routes requests across providers by cost, policy and determinism while keeping keys and traffic inside the user network.",
+      "audience": "Teams using coding agents across many models who need spend control and provider policy without changing harness code.",
+      "ai_native_angle": "Puts model routing, cost policy and conversation pinning between agents and providers, making agent model choice governable and auditable.",
+      "growth_signal": "Created 2026-07-08; 19 stars; root audit found Go cmd/internal/shared layout, Dockerfile, Makefile, configs, deploy, docs, assets, SECURITY and goreleaser config.",
+      "runnability": "Strong Go service signal with binary/package structure and Docker docs. No build or gateway smoke test was run.",
+      "recommended_action": "Compare with existing LiteLLM-style gateways for deterministic routing and local policy ergonomics."
+    },
+    {
+      "rank": 9,
+      "full_name": "ItsJazii/pane",
+      "url": "https://github.com/ItsJazii/pane",
+      "category": "AI Subscription Usage Tray",
+      "score": 75,
+      "summary": "Windows tray app that aggregates AI subscription limits, resets, spend and usage across Claude, Codex, Cursor, Copilot and other providers.",
+      "audience": "Heavy AI coding-tool users juggling multiple subscriptions and quota windows.",
+      "ai_native_angle": "Treats AI tool quotas as operational state for power users, bringing provider limits into a local always-visible control surface.",
+      "growth_signal": "Created 2026-07-07, pushed 2026-07-09; 8 stars; audit found Tauri/Rust + Vite app, docs screenshots, install.ps1, package-lock, ROADMAP, SECURITY and provider list.",
+      "runnability": "Concrete desktop-app signal, but provider integrations and credential handling need inspection. No Windows run was attempted.",
+      "recommended_action": "Use as a pattern for quota-aware agent workbenches; audit local storage before connecting real accounts."
+    },
+    {
+      "rank": 10,
+      "full_name": "deer-flow/llm-space",
+      "url": "https://github.com/deer-flow/llm-space",
+      "category": "Agent Builder Debugging Desktop",
+      "score": 74,
+      "summary": "Desktop app for prototyping agent ideas, inspecting harness execution steps, debugging failures and evaluating performance, dogfooded with DeerFlow.",
+      "audience": "Agent developers who need local visibility into multi-step harness behavior and evaluation traces.",
+      "ai_native_angle": "Moves agent debugging from logs into a desktop workbench centered on run steps, failure inspection and eval feedback.",
+      "growth_signal": "Created 2026-06-28, pushed 2026-07-10; 59 stars and 10 forks; audit found apps/packages monorepo, docs, scripts, telemetry policy, AGENTS/CLAUDE files, bun lock and screenshots.",
+      "runnability": "Good desktop/workbench signal, but no Bun install or app launch was performed.",
+      "recommended_action": "Watch as an agent-observability UI reference; compare with agent-inspect and existing local trace tooling."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "pascalorg/lingo",
+      "url": "https://github.com/pascalorg/lingo",
+      "category": "Safer LLM Tool Input Parser",
+      "score": 72,
+      "summary": "Zero-dependency parser/humanizer for quantities, units, dates and ranges so forms and LLM tool calls can normalize messy natural-language values.",
+      "audience": "Product engineers building natural-language forms or tool APIs.",
+      "ai_native_angle": "Reduces brittle model-to-API handoff by canonicalizing common user/model strings before they hit databases or tools.",
+      "growth_signal": "Created 2026-07-07, pushed 2026-07-09; 13 stars; monorepo with apps, packages, scripts, skills, wiki, AGENTS and locale support.",
+      "runnability": "Runnable package signal, but broader app proof still early.",
+      "recommended_action": "Watch for examples around agent tool schemas and validation failure UX."
+    },
+    {
+      "full_name": "xiaosen2026/flowcanva",
+      "url": "https://github.com/xiaosen2026/flowcanva",
+      "category": "Infinite-canvas Multimodal AI Pipeline",
+      "score": 71,
+      "summary": "Full-stack infinite canvas for chaining LLM, image, video, ComfyUI and agent/workflow nodes.",
+      "audience": "Creative AI users who prefer visual node orchestration across text/image/video tools.",
+      "ai_native_angle": "Presents multimodal generation as a canvas-native graph with assets, director view and backend orchestration.",
+      "growth_signal": "Created 2026-07-07; 8 stars; root audit found backend, frontend-admin, frontend-canvas, screenshots and start-dev script.",
+      "runnability": "Promising UI evidence, but needs setup/run verification.",
+      "recommended_action": "Watch for install docs and reusable workflow JSON support."
+    },
+    {
+      "full_name": "MadBlast0/Cli-launcher",
+      "url": "https://github.com/MadBlast0/Cli-launcher",
+      "category": "Desktop Launcher for AI Coding CLIs",
+      "score": 70,
+      "summary": "Electron desktop launcher to install, update, uninstall and launch 17 terminal AI agents from one panel.",
+      "audience": "Developers switching among Claude Code, Codex, Copilot, Aider, Gemini CLI and similar tools.",
+      "ai_native_angle": "Treats the fragmented AI CLI ecosystem as a local app-management workflow.",
+      "growth_signal": "Created 2026-07-08, pushed 2026-07-09; Electron/React/Vite package with media, resources and tests.",
+      "runnability": "Concrete app skeleton, small traction.",
+      "recommended_action": "Track for provider install/update safety and account isolation."
+    },
+    {
+      "full_name": "ninemindai/agentgem",
+      "url": "https://github.com/ninemindai/agentgem",
+      "category": "Portable Coding-agent Session Distillation",
+      "score": 69,
+      "summary": "Distills coding-agent sessions into reusable portable “Gems” with secret redaction and deployment across harnesses.",
+      "audience": "Teams trying to turn successful agent sessions into repeatable workflows.",
+      "ai_native_angle": "Captures tacit prompting/workflow behavior from local agent sessions and packages it as reusable operating knowledge.",
+      "growth_signal": "Pushed 2026-07-10; 23 stars; package/workspace, Dockerfile, desktop, docs, skills, website and CI badges.",
+      "runnability": "Promising but needs real session-quality validation.",
+      "recommended_action": "Watch alongside LCO/Decapod-style session memory tools."
+    },
+    {
+      "full_name": "wellwelwel/lagune",
+      "url": "https://github.com/wellwelwel/lagune",
+      "category": "Agent-guided Security Hardening",
+      "score": 68,
+      "summary": "Security copilot that guides supported AI agents through project-specific hardening across many languages.",
+      "audience": "Developers who want coding agents to perform security review and remediation with a guided workflow.",
+      "ai_native_angle": "Wraps security hardening as an agent-compatible workflow and supports dozens of agent harnesses.",
+      "growth_signal": "Pushed 2026-07-10; 69 stars; npm/package files, docs website, tests and supported-agent docs.",
+      "runnability": "Good package/docs signal; needs audit on security claims.",
+      "recommended_action": "Evaluate on a disposable service and compare findings with established scanners."
+    },
+    {
+      "full_name": "MongLong0214/logic-pro-mcp",
+      "url": "https://github.com/MongLong0214/logic-pro-mcp",
+      "category": "Logic Pro MCP Control Server",
+      "score": 67,
+      "summary": "Local MCP server for controlling Logic Pro, writing MIDI, operating transport/mixer state and verifying live project data.",
+      "audience": "Musicians and AI music builders using Logic Pro with agent workflows.",
+      "ai_native_angle": "Makes a professional creative desktop app addressable through stateful, fail-closed MCP actions.",
+      "growth_signal": "Pushed 2026-07-10; 36 stars; Swift package, tests, artifacts, docs, manifest/server files and demo media.",
+      "runnability": "Strong Mac/Swift signal; requires Logic Pro and macOS permissions.",
+      "recommended_action": "Watch for permission model and readback reliability."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "lewisondako2005-commits/Fortnite-Aimbot-Softaim-Mod-Menu-2026",
+      "url": "https://github.com/lewisondako2005-commits/Fortnite-Aimbot-Softaim-Mod-Menu-2026",
+      "skip_reason": "Game cheat/aimbot repository; excluded for safety and not a legitimate AI-native product."
+    },
+    {
+      "full_name": "R0f1ida/Rust-Aimbot-ESP-Hack-2026-Undetected",
+      "url": "https://github.com/R0f1ida/Rust-Aimbot-ESP-Hack-2026-Undetected",
+      "skip_reason": "Game cheat/ESP repository with suspicious growth pattern; excluded."
+    },
+    {
+      "full_name": "zhouwei713/seedance-prompt",
+      "url": "https://github.com/zhouwei713/seedance-prompt",
+      "skip_reason": "Prompt/skill collection for video prompts rather than a runnable product surface."
+    },
+    {
+      "full_name": "youssefeltot123-commits/AI-Photo-Enhancer-2026-Restore-Old",
+      "url": "https://github.com/youssefeltot123-commits/AI-Photo-Enhancer-2026-Restore-Old",
+      "skip_reason": "Generic AI photo enhancer repo with suspicious same-day 100-star/no-fork pattern and insufficient audited product evidence before rate limit."
+    },
+    {
+      "full_name": "davidguilfarras09/AI-Face-Swap-Tool-2026-Real-Time-Video",
+      "url": "https://github.com/davidguilfarras09/AI-Face-Swap-Tool-2026-Real-Time-Video",
+      "skip_reason": "Generic face-swap repo with suspicious same-day star pattern and higher misuse risk; not promoted."
+    },
+    {
+      "full_name": "webierproductionenv/AI-Background-Remover-2026-Batch",
+      "url": "https://github.com/webierproductionenv/AI-Background-Remover-2026-Batch",
+      "skip_reason": "Generic image utility with suspicious same-day star pattern; README/root audit was blocked by rate limit before product proof."
+    },
+    {
+      "full_name": "KORAYTEACHER/fintech-forge",
+      "url": "https://github.com/KORAYTEACHER/fintech-forge",
+      "skip_reason": "Finance app scaffold looked broad and marketing-heavy compared with more concrete AI Market Pulse and FinTech Advisor candidates."
+    },
+    {
+      "full_name": "suyiyun/llm-text2sql-taxonomy",
+      "url": "https://github.com/suyiyun/llm-text2sql-taxonomy",
+      "skip_reason": "Research/benchmark taxonomy code, not a user-facing AI-native product for this radar."
+    }
+  ]
+}
