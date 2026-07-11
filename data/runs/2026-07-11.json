@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-07-11",
+  "generated_at": "2026-07-11T11:42:00+08:00",
+  "data_window": "2026-07-09 00:00 to 2026-07-11 11:42 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API README/root-content audits for selected candidates.",
+  "source_summary": "Shell curl saved GitHub Search API responses to /tmp/radar_2026_07_11_created_agents.json, /tmp/radar_2026_07_11_updated_agents.json, /tmp/radar_2026_07_11_updated_mcp_rag.json and /tmp/radar_2026_07_11_created_llm_workflow.json. Selected repository metadata, README and root contents were audited under /tmp/radar_2026_07_11_repo_audit. No third-party repo was cloned, installed, built, credentialed, or run locally; runnability is inferred from README, root files, package manifests, Docker/config files, tests, docs, examples, assets and workflow surfaces.",
+  "trend_observations": "Fresh signals cluster around installable Codex/agent skills as product surfaces, MCP bridges that give agents bounded control of browsers and desktop apps, AI-native character/creative workbenches with real frontends, and safety-sensitive action layers for money, outreach and trading workflows. The strongest repos expose a concrete loop with examples, scripts, manifests or UI assets; generic fintech/image utilities and README-only marketing repos remain noisy.",
+  "assumptions": "Scores favor repositories created or materially updated in the 2026-07-09 to 2026-07-11 window, with a concrete product surface, runnable CLI/UI/API/MCP/skill workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be noisy; suspicious fork bursts, README-only repos, adult/consent-sensitive tools, pure collections, broad SDK/eval libraries, paper/benchmark code and generic marketing scaffolds are downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-11\n\n数据窗口：2026-07-09 00:00 to 2026-07-11 11:42 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, MCP, RAG, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API README/root-content audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-09 to 2026-07-11 window, with a concrete product surface, runnable CLI/UI/API/MCP/skill workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be noisy; suspicious fork bursts, README-only repos, adult/consent-sensitive tools, pure collections, broad SDK/eval libraries, paper/benchmark code and generic marketing scaffolds are downgraded or skipped.\n\n## Top Projects\n\n1. [vinhhien112/Three.js-Object-Sculptor-Codex-Plugin](https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin) - Codex Plugin for Procedural 3D Assets - Score 88\n   - 做什么：Codex plugin that turns an attached object image into a code-only, animation-ready procedural Three.js model with quality gates and skill packaging.\n   - 面向谁：Codex users, creative coders and frontend builders who need inspectable 3D objects without downloading opaque asset packs.\n   - AI native 点：Makes visual asset generation an agent-executed coding workflow: the model reads an image, writes procedural Three.js, and produces an editable runtime object rather than a static bitmap.\n   - 增长/活跃信号：Created 2026-07-09, pushed 2026-07-10; 152 stars and 20 forks; root audit found .codex-plugin, skills, scripts, assets, LICENSE and README with a concrete Codex plugin workflow.\n   - 可运行性判断：Strong plugin/product signal with Codex plugin metadata, skill folder and scripts. No Codex plugin install or Three.js render smoke test was run.\n   - 建议动作：Install in a disposable Codex profile and test one simple object image; inspect whether generated geometry is maintainable enough for frontend use.\n\n2. [xiaolongbao0709/ai-virtual-phone](https://github.com/xiaolongbao0709/ai-virtual-phone) - AI Character Virtual Phone Workbench - Score 86\n   - 做什么：Next.js browser app that simulates a full phone for AI characters, with chat, group chat, moments, voice messages, red envelopes, story modes, world books, app marketplace, mini-games and PWA polish.\n   - 面向谁：Roleplay, interactive fiction and AI companion builders who want a richer diegetic interface than a standard chat box.\n   - AI native 点：Treats AI characters as stateful phone-native entities with memory, schedules, relationship state, media, apps and narrative systems embedded in the UI.\n   - 增长/活跃信号：Created 2026-07-09, pushed same day; 103 stars and 158 forks; root audit found Next.js app, components, docs, scripts, data, tools, package-lock, public assets and a detailed Chinese README.\n   - 可运行性判断：Strong frontend product signal with Next.js config, package.json, docs and assets. No npm install, PWA launch or model/API credential test was performed.\n   - 建议动作：Review as an AI companion interface pattern; test locally only with non-sensitive fictional data and verify memory/export boundaries.\n\n3. [Matchameleon/moneyclaw](https://github.com/Matchameleon/moneyclaw) - Intent-based Payments for OpenClaw Agents - Score 85\n   - 做什么：OpenClaw-oriented agent payment layer with prepaid wallet, virtual card, OTP inbox, docs, examples, skill package and Docker Compose.\n   - 面向谁：Agent builders exploring bounded financial actions, prepaid wallets and payment-task delegation.\n   - AI native 点：Moves from chat-only assistants to agents that can execute payment intents through constrained cards, inboxes and auditable tasks.\n   - 增长/活跃信号：Created 2026-07-09; 87 stars; root audit found docs, examples, src, moneyclaw-skill, docker-compose.yml, SECURITY, package.json and pnpm lock.\n   - 可运行性判断：Good API/skill/container signal, but financial workflows require credentials, compliance review and sandbox accounts. No payment or credentialed run was attempted.\n   - 建议动作：Study the prepaid-card and OTP boundary design; only trial against fake/sandbox payment rails.\n\n4. [Weebapp003/tradingview-mcp](https://github.com/Weebapp003/tradingview-mcp) - TradingView MCP Bridge - Score 83\n   - 做什么：MCP bridge connecting Claude Code to local TradingView Desktop through Chrome DevTools Protocol for chart analysis, Pine Script development and workflow automation.\n   - 面向谁：Traders and quant tinkerers who want AI assistance inside TradingView without manually copying chart state and scripts.\n   - AI native 点：Gives an agent a bounded visual/software control plane over a specialist desktop app, with setup docs, research notes and execution-lane concepts.\n   - 增长/活跃信号：Created 2026-07-09; 85 stars; root audit found .env.example, package.json, docker-compose.yml, src, tests, scripts, agents, skills, SETUP_GUIDE, RESEARCH and SECURITY docs.\n   - 可运行性判断：Strong MCP/server signal, but depends on local TradingView, Chrome DevTools permissions and finance-risk constraints. No desktop connection was run.\n   - 建议动作：Evaluate only in paper-trading mode; inspect readback, command scope and anti-automation risks before real usage.\n\n5. [MoisesR7/browser-mcp](https://github.com/MoisesR7/browser-mcp) - Autonomous Browser MCP Server - Score 82\n   - 做什么：MCP browser agent server with Docker, Smithery config, public assets, tests and TypeScript source for autonomous browser automation.\n   - 面向谁：Developers wiring LLM agents into browser workflows through MCP-compatible tooling.\n   - AI native 点：Turns browser actions into a packaged MCP surface so agents can navigate and manipulate web pages through an installable server instead of bespoke scripts.\n   - 增长/活跃信号：Created 2026-07-09; 86 stars; root audit found Dockerfile, docker-compose.yml, smithery.yaml, jest config, package.json, src, public, tests and SECURITY docs.\n   - 可运行性判断：Good server/package signal with tests and container files. No browser automation smoke test or Smithery install was run.\n   - 建议动作：Compare with existing BrowserSkill/browser-use stacks and test against a disposable local page first.\n\n6. [Litun/bloomy-linkedin-outreach](https://github.com/Litun/bloomy-linkedin-outreach) - Agent-run LinkedIn Outreach Campaign Template - Score 81\n   - 做什么：Template for running a self-driving LinkedIn outreach campaign with an AI agent and Bloomy LinkedIn MCP, including ICP, campaign, setup, templates, logs and review artifacts.\n   - 面向谁：Founders and GTM operators experimenting with agent-assisted prospecting and follow-up workflows.\n   - AI native 点：Packages a recurring agent workflow around sourcing, connection requests, intros, follow-ups and replies, with campaign state and rate-limit guidance as first-class files.\n   - 增长/活跃信号：Created 2026-07-09; 116 stars; root audit found AGENTS, CLAUDE, ICP, CAMPAIGN, PRODUCT, SETUP, TEMPLATES, logs, prospects.csv and outreach/weekly review outputs.\n   - 可运行性判断：Concrete workflow-template signal, but depends on LinkedIn account automation and MCP credentials. No account-connected run was attempted.\n   - 建议动作：Use as a workflow-design reference; do not connect a real LinkedIn account until compliance, consent and rate-limit behavior are reviewed.\n\n7. [Jane-xiaoer/paper-collage-ad-codex](https://github.com/Jane-xiaoer/paper-collage-ad-codex) - Codex Skill for End-to-end Ad Video Production - Score 80\n   - 做什么：Codex skill for paper-cut collage ad production from concept, script and storyboard through animation, narration, music, sound design, composition and MP4 QC.\n   - 面向谁：Creators using Codex as a production operator for short-form ad/video assets.\n   - AI native 点：Turns a creative production pipeline into a runnable agent skill with references, scripts, examples and quality-control steps rather than a prompt pack.\n   - 增长/活跃信号：Created 2026-07-10; 103 stars and 13 forks; root audit found SKILL.md, WORKFLOW.zh-CN.md, agents, examples, references and scripts.\n   - 可运行性判断：Strong Codex skill signal, but local audio/video tooling and IndexTTS dependencies were not installed or tested.\n   - 建议动作：Run on a short non-branded mock brief and check whether the MP4 QC stage catches real visual/audio defects.\n\n8. [yetone/kill-ai-slop](https://github.com/yetone/kill-ai-slop) - Anti-slop Design Skill and Website - Score 79\n   - 做什么：Field guide and agent skill for detecting common AI-generated visual/copy tics in vibe-coded products and stripping them from projects.\n   - 面向谁：Product builders and coding-agent users trying to raise UI/copy taste in generated apps.\n   - AI native 点：Applies critique as an agent-operable skill: the system scans a project for AI slop patterns and turns taste heuristics into repeatable remediation.\n   - 增长/活跃信号：Created 2026-07-10; 155 stars and 3 forks; root audit found README, skill folder and website folder plus public site link.\n   - 可运行性判断：Clear website/skill surface, but repo is lighter than full apps and no scan was run against a real project.\n   - 建议动作：Trial against a disposable generated landing page and compare output with existing frontend taste checklist.\n\n9. [kaeawc/auto-mobile](https://github.com/kaeawc/auto-mobile) - Mobile Automation MCP and Test Suite - Score 78\n   - 做什么：Mobile automation suite with MCP, Swift package, Android assets, Docker docs, commands, benchmarks and agent/plugin context for authoring and executing mobile tests.\n   - 面向谁：Mobile teams and agent builders who need LLM-controllable mobile automation across app/device workflows.\n   - AI native 点：Exposes mobile UI/device operations as agent-addressable tooling, bridging MCP-style commands with native test execution assets.\n   - 增长/活跃信号：Created 2025-10-07, pushed 2026-07-11; 36 stars and 2 forks; root audit found Package.swift, android, commands, Dockerfile, DOCKER docs, .mcp example, CI badges, benchmark and extensive agent files.\n   - 可运行性判断：Strong engineering surface, but mobile simulator/device setup was not attempted.\n   - 建议动作：Watch for stable install docs and compare with XcodeBuildMCP/Appium flows on a small sample app.\n\n10. [takeshy/obsidian-gemini-helper](https://github.com/takeshy/obsidian-gemini-helper) - Obsidian AI Workflow/RAG Plugin - Score 77\n   - 做什么：Obsidian plugin for Gemini-powered AI chat, workflow automation, semantic search/RAG, LLM Wiki and dashboards with reading memos across desktop and mobile.\n   - 面向谁：Knowledge workers who use Obsidian as their local knowledge base and want AI assistance inside the vault.\n   - AI native 点：Embeds model chat, semantic retrieval, workflow automation and dashboard views directly into a local-first note workspace.\n   - 增长/活跃信号：Created 2025-12-10, pushed 2026-07-11; 103 stars and 9 forks; root audit found manifest.json, src, styles, docs, package-lock, esbuild/vitest configs and many localized READMEs.\n   - 可运行性判断：Good Obsidian plugin signal, but no vault install or Gemini credential test was run.\n   - 建议动作：Test in a temporary vault with synthetic notes and inspect what content leaves the local vault.\n\n## Watchlist\n\n- [nicobailon/grill-for-unknowns](https://github.com/nicobailon/grill-for-unknowns) - Agent Skill for Plan Interrogation - Score 74 - Agent skill/plugin that interrogates implementation plans using known/unknown framing before coding. 建议：Watch and compare with existing planning/debugging skills.\n- [zjunlp/SkillNet](https://github.com/zjunlp/SkillNet) - AI Skill Discovery and Evaluation Infrastructure - Score 73 - Open infrastructure for discovering, evaluating, composing and orchestrating reusable AI agent skills. 建议：Track as upstream context for the agent-skill marketplace trend.\n- [paxlabs-inc/matrix-core](https://github.com/paxlabs-inc/matrix-core) - Intent IR and UX Layer for Non-developer Requests - Score 72 - Cognition/UX layer that translates natural-language requests into typed, inspectable, correctable Intent IR. 建议：Watch for a minimal runnable demo and compare its IR with workflow-builder schemas.\n- [chenxi750328ai/agent-jianghu](https://github.com/chenxi750328ai/agent-jianghu) - Multi-agent Collaboration Platform - Score 70 - Chinese multi-agent collaboration project with status/ranking pages, project organization docs, skills and automation scripts. 建议：Watch for concrete scenarios and stable setup docs.\n- [KORAYTEACHER/fintech-advisor](https://github.com/KORAYTEACHER/fintech-advisor) - AI Financial Advisor App Scaffold - Score 69 - Next.js portfolio/net-worth tracker with AI financial advisor positioning, Docker files, docs and app/server folders. 建议：Audit provenance and disclaimers before any product reuse.\n- [imchine/FinTech-Solution](https://github.com/imchine/FinTech-Solution) - SME AI Financial Assistant SaaS - Score 68 - Next.js/Postgres financial intelligence platform for SMEs with Docker, Prisma and start scripts. 建议：Watch only after checking data model and generated-code provenance.\n\n## Skip Reasons\n\n- [FuelMagistrateLead/photoshop-ai-smart-enhance](https://github.com/FuelMagistrateLead/photoshop-ai-smart-enhance) - Root audit found only README and index.html for a Photoshop AI enhancer despite high same-day stars/forks; insufficient runnable extension proof.\n- [chordswallowthrust/undress-design](https://github.com/chordswallowthrust/undress-design) - README-only virtual try-on/garment-editing repo with consent-sensitive adult-adjacent positioning and no runnable code surface.\n- [Elias569/fintech-dashboard](https://github.com/Elias569/fintech-dashboard) - High same-day stars/forks and generic fintech dashboard positioning; lower confidence than audited finance candidates.\n- [Elias569/fintech-app](https://github.com/Elias569/fintech-app) - Generic fintech app with suspicious high fork count and insufficient product evidence in initial search results.\n- [KORAYTEACHER/fintech-forge](https://github.com/KORAYTEACHER/fintech-forge) - Broad AI fintech tools/scaffold positioning; less concrete than fintech-advisor and FinTech-Solution after audit.\n- [Forward-Future/gpt-5-6-relay](https://github.com/Forward-Future/gpt-5-6-relay) - Routing/skill concept around speculative model labels; not enough concrete user-facing product evidence for promotion.\n- [h4vzz/awesome-ai-agent-skills](https://github.com/h4vzz/awesome-ai-agent-skills) - Curated skill collection rather than a runnable product, app, CLI, API or MCP workflow.\n- [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) - RL/evaluation library for environments and evals; useful infrastructure but outside this radar’s product-shape filter.\n\n## 今日趋势观察\n\n1. Agent skills/plugins are becoming product surfaces: Three.js Object Sculptor, Paper Collage Ad, Kill AI Slop and Grill for Unknowns package repeatable agent behavior with manifests, scripts and docs.\n2. MCP bridges are moving from generic browser control into specialist desktop/workflow apps: TradingView MCP, Browser MCP and AutoMobile expose concrete action/readback surfaces.\n3. AI-native companion and creative UIs are getting richer: AI Virtual Phone shows character memory, apps, media, stories and PWA surfaces as one product loop.\n4. Real-world action agents need stricter boundaries: MoneyClaw, LinkedIn outreach and TradingView automation all touch money, accounts or regulated decisions, so sandboxing and consent matter more than raw functionality.\n5. Same-day star bursts remain noisy around fintech/image utilities; root-file audits and runnable evidence are the best filter.\n\n## 今日建议动作\n\n- Plugin trial: install Three.js Object Sculptor or Paper Collage Ad in a disposable Codex profile and inspect artifact quality, not just README claims.\n- Safety review: study MoneyClaw, Bloomy LinkedIn outreach and TradingView MCP for permission boundaries, account risk and audit logs before any real-world connection.\n- UI pattern review: use AI Virtual Phone as a reference for diegetic AI companion interfaces with memory, apps and narrative state.\n- Infrastructure watch: compare Browser MCP and AutoMobile against existing browser/mobile automation tools for reliable readback and failure handling.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_11_created_agents.json, /tmp/radar_2026_07_11_updated_agents.json, /tmp/radar_2026_07_11_updated_mcp_rag.json, /tmp/radar_2026_07_11_created_llm_workflow.json.\n- GitHub repository metadata, README and root contents for selected candidates under /tmp/radar_2026_07_11_repo_audit.\n- No clone, install, Docker, npm, pnpm, Bun, Swift, mobile simulator, browser, TradingView, LinkedIn, Obsidian, payment, finance, audio/video or credentialed runtime audit was performed today.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "url": "https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "category": "Codex Plugin for Procedural 3D Assets",
+      "score": 88,
+      "summary": "Codex plugin that turns an attached object image into a code-only, animation-ready procedural Three.js model with quality gates and skill packaging.",
+      "audience": "Codex users, creative coders and frontend builders who need inspectable 3D objects without downloading opaque asset packs.",
+      "ai_native_angle": "Makes visual asset generation an agent-executed coding workflow: the model reads an image, writes procedural Three.js, and produces an editable runtime object rather than a static bitmap.",
+      "growth_signal": "Created 2026-07-09, pushed 2026-07-10; 152 stars and 20 forks; root audit found .codex-plugin, skills, scripts, assets, LICENSE and README with a concrete Codex plugin workflow.",
+      "runnability": "Strong plugin/product signal with Codex plugin metadata, skill folder and scripts. No Codex plugin install or Three.js render smoke test was run.",
+      "recommended_action": "Install in a disposable Codex profile and test one simple object image; inspect whether generated geometry is maintainable enough for frontend use."
+    },
+    {
+      "rank": 2,
+      "full_name": "xiaolongbao0709/ai-virtual-phone",
+      "url": "https://github.com/xiaolongbao0709/ai-virtual-phone",
+      "category": "AI Character Virtual Phone Workbench",
+      "score": 86,
+      "summary": "Next.js browser app that simulates a full phone for AI characters, with chat, group chat, moments, voice messages, red envelopes, story modes, world books, app marketplace, mini-games and PWA polish.",
+      "audience": "Roleplay, interactive fiction and AI companion builders who want a richer diegetic interface than a standard chat box.",
+      "ai_native_angle": "Treats AI characters as stateful phone-native entities with memory, schedules, relationship state, media, apps and narrative systems embedded in the UI.",
+      "growth_signal": "Created 2026-07-09, pushed same day; 103 stars and 158 forks; root audit found Next.js app, components, docs, scripts, data, tools, package-lock, public assets and a detailed Chinese README.",
+      "runnability": "Strong frontend product signal with Next.js config, package.json, docs and assets. No npm install, PWA launch or model/API credential test was performed.",
+      "recommended_action": "Review as an AI companion interface pattern; test locally only with non-sensitive fictional data and verify memory/export boundaries."
+    },
+    {
+      "rank": 3,
+      "full_name": "Matchameleon/moneyclaw",
+      "url": "https://github.com/Matchameleon/moneyclaw",
+      "category": "Intent-based Payments for OpenClaw Agents",
+      "score": 85,
+      "summary": "OpenClaw-oriented agent payment layer with prepaid wallet, virtual card, OTP inbox, docs, examples, skill package and Docker Compose.",
+      "audience": "Agent builders exploring bounded financial actions, prepaid wallets and payment-task delegation.",
+      "ai_native_angle": "Moves from chat-only assistants to agents that can execute payment intents through constrained cards, inboxes and auditable tasks.",
+      "growth_signal": "Created 2026-07-09; 87 stars; root audit found docs, examples, src, moneyclaw-skill, docker-compose.yml, SECURITY, package.json and pnpm lock.",
+      "runnability": "Good API/skill/container signal, but financial workflows require credentials, compliance review and sandbox accounts. No payment or credentialed run was attempted.",
+      "recommended_action": "Study the prepaid-card and OTP boundary design; only trial against fake/sandbox payment rails."
+    },
+    {
+      "rank": 4,
+      "full_name": "Weebapp003/tradingview-mcp",
+      "url": "https://github.com/Weebapp003/tradingview-mcp",
+      "category": "TradingView MCP Bridge",
+      "score": 83,
+      "summary": "MCP bridge connecting Claude Code to local TradingView Desktop through Chrome DevTools Protocol for chart analysis, Pine Script development and workflow automation.",
+      "audience": "Traders and quant tinkerers who want AI assistance inside TradingView without manually copying chart state and scripts.",
+      "ai_native_angle": "Gives an agent a bounded visual/software control plane over a specialist desktop app, with setup docs, research notes and execution-lane concepts.",
+      "growth_signal": "Created 2026-07-09; 85 stars; root audit found .env.example, package.json, docker-compose.yml, src, tests, scripts, agents, skills, SETUP_GUIDE, RESEARCH and SECURITY docs.",
+      "runnability": "Strong MCP/server signal, but depends on local TradingView, Chrome DevTools permissions and finance-risk constraints. No desktop connection was run.",
+      "recommended_action": "Evaluate only in paper-trading mode; inspect readback, command scope and anti-automation risks before real usage."
+    },
+    {
+      "rank": 5,
+      "full_name": "MoisesR7/browser-mcp",
+      "url": "https://github.com/MoisesR7/browser-mcp",
+      "category": "Autonomous Browser MCP Server",
+      "score": 82,
+      "summary": "MCP browser agent server with Docker, Smithery config, public assets, tests and TypeScript source for autonomous browser automation.",
+      "audience": "Developers wiring LLM agents into browser workflows through MCP-compatible tooling.",
+      "ai_native_angle": "Turns browser actions into a packaged MCP surface so agents can navigate and manipulate web pages through an installable server instead of bespoke scripts.",
+      "growth_signal": "Created 2026-07-09; 86 stars; root audit found Dockerfile, docker-compose.yml, smithery.yaml, jest config, package.json, src, public, tests and SECURITY docs.",
+      "runnability": "Good server/package signal with tests and container files. No browser automation smoke test or Smithery install was run.",
+      "recommended_action": "Compare with existing BrowserSkill/browser-use stacks and test against a disposable local page first."
+    },
+    {
+      "rank": 6,
+      "full_name": "Litun/bloomy-linkedin-outreach",
+      "url": "https://github.com/Litun/bloomy-linkedin-outreach",
+      "category": "Agent-run LinkedIn Outreach Campaign Template",
+      "score": 81,
+      "summary": "Template for running a self-driving LinkedIn outreach campaign with an AI agent and Bloomy LinkedIn MCP, including ICP, campaign, setup, templates, logs and review artifacts.",
+      "audience": "Founders and GTM operators experimenting with agent-assisted prospecting and follow-up workflows.",
+      "ai_native_angle": "Packages a recurring agent workflow around sourcing, connection requests, intros, follow-ups and replies, with campaign state and rate-limit guidance as first-class files.",
+      "growth_signal": "Created 2026-07-09; 116 stars; root audit found AGENTS, CLAUDE, ICP, CAMPAIGN, PRODUCT, SETUP, TEMPLATES, logs, prospects.csv and outreach/weekly review outputs.",
+      "runnability": "Concrete workflow-template signal, but depends on LinkedIn account automation and MCP credentials. No account-connected run was attempted.",
+      "recommended_action": "Use as a workflow-design reference; do not connect a real LinkedIn account until compliance, consent and rate-limit behavior are reviewed."
+    },
+    {
+      "rank": 7,
+      "full_name": "Jane-xiaoer/paper-collage-ad-codex",
+      "url": "https://github.com/Jane-xiaoer/paper-collage-ad-codex",
+      "category": "Codex Skill for End-to-end Ad Video Production",
+      "score": 80,
+      "summary": "Codex skill for paper-cut collage ad production from concept, script and storyboard through animation, narration, music, sound design, composition and MP4 QC.",
+      "audience": "Creators using Codex as a production operator for short-form ad/video assets.",
+      "ai_native_angle": "Turns a creative production pipeline into a runnable agent skill with references, scripts, examples and quality-control steps rather than a prompt pack.",
+      "growth_signal": "Created 2026-07-10; 103 stars and 13 forks; root audit found SKILL.md, WORKFLOW.zh-CN.md, agents, examples, references and scripts.",
+      "runnability": "Strong Codex skill signal, but local audio/video tooling and IndexTTS dependencies were not installed or tested.",
+      "recommended_action": "Run on a short non-branded mock brief and check whether the MP4 QC stage catches real visual/audio defects."
+    },
+    {
+      "rank": 8,
+      "full_name": "yetone/kill-ai-slop",
+      "url": "https://github.com/yetone/kill-ai-slop",
+      "category": "Anti-slop Design Skill and Website",
+      "score": 79,
+      "summary": "Field guide and agent skill for detecting common AI-generated visual/copy tics in vibe-coded products and stripping them from projects.",
+      "audience": "Product builders and coding-agent users trying to raise UI/copy taste in generated apps.",
+      "ai_native_angle": "Applies critique as an agent-operable skill: the system scans a project for AI slop patterns and turns taste heuristics into repeatable remediation.",
+      "growth_signal": "Created 2026-07-10; 155 stars and 3 forks; root audit found README, skill folder and website folder plus public site link.",
+      "runnability": "Clear website/skill surface, but repo is lighter than full apps and no scan was run against a real project.",
+      "recommended_action": "Trial against a disposable generated landing page and compare output with existing frontend taste checklist."
+    },
+    {
+      "rank": 9,
+      "full_name": "kaeawc/auto-mobile",
+      "url": "https://github.com/kaeawc/auto-mobile",
+      "category": "Mobile Automation MCP and Test Suite",
+      "score": 78,
+      "summary": "Mobile automation suite with MCP, Swift package, Android assets, Docker docs, commands, benchmarks and agent/plugin context for authoring and executing mobile tests.",
+      "audience": "Mobile teams and agent builders who need LLM-controllable mobile automation across app/device workflows.",
+      "ai_native_angle": "Exposes mobile UI/device operations as agent-addressable tooling, bridging MCP-style commands with native test execution assets.",
+      "growth_signal": "Created 2025-10-07, pushed 2026-07-11; 36 stars and 2 forks; root audit found Package.swift, android, commands, Dockerfile, DOCKER docs, .mcp example, CI badges, benchmark and extensive agent files.",
+      "runnability": "Strong engineering surface, but mobile simulator/device setup was not attempted.",
+      "recommended_action": "Watch for stable install docs and compare with XcodeBuildMCP/Appium flows on a small sample app."
+    },
+    {
+      "rank": 10,
+      "full_name": "takeshy/obsidian-gemini-helper",
+      "url": "https://github.com/takeshy/obsidian-gemini-helper",
+      "category": "Obsidian AI Workflow/RAG Plugin",
+      "score": 77,
+      "summary": "Obsidian plugin for Gemini-powered AI chat, workflow automation, semantic search/RAG, LLM Wiki and dashboards with reading memos across desktop and mobile.",
+      "audience": "Knowledge workers who use Obsidian as their local knowledge base and want AI assistance inside the vault.",
+      "ai_native_angle": "Embeds model chat, semantic retrieval, workflow automation and dashboard views directly into a local-first note workspace.",
+      "growth_signal": "Created 2025-12-10, pushed 2026-07-11; 103 stars and 9 forks; root audit found manifest.json, src, styles, docs, package-lock, esbuild/vitest configs and many localized READMEs.",
+      "runnability": "Good Obsidian plugin signal, but no vault install or Gemini credential test was run.",
+      "recommended_action": "Test in a temporary vault with synthetic notes and inspect what content leaves the local vault."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "nicobailon/grill-for-unknowns",
+      "url": "https://github.com/nicobailon/grill-for-unknowns",
+      "category": "Agent Skill for Plan Interrogation",
+      "score": 74,
+      "summary": "Agent skill/plugin that interrogates implementation plans using known/unknown framing before coding.",
+      "audience": "Teams using coding agents for higher-stakes implementation planning.",
+      "ai_native_angle": "Makes plan critique a reusable skill that can inspect docs/source and force unresolved assumptions into the open.",
+      "growth_signal": "Created 2026-07-09; 141 stars; root audit found plugins, package.json, CHANGELOG, NOTICE and README.",
+      "runnability": "Promising plugin signal; needs evaluation on real project plans.",
+      "recommended_action": "Watch and compare with existing planning/debugging skills."
+    },
+    {
+      "full_name": "zjunlp/SkillNet",
+      "url": "https://github.com/zjunlp/SkillNet",
+      "category": "AI Skill Discovery and Evaluation Infrastructure",
+      "score": 73,
+      "summary": "Open infrastructure for discovering, evaluating, composing and orchestrating reusable AI agent skills.",
+      "audience": "Researchers and platform teams building skill registries for agents.",
+      "ai_native_angle": "Treats skills as searchable, installable and evaluable software assets.",
+      "growth_signal": "Older repo, pushed 2026-07-11; 1083 stars; audit found examples, experiments, skillnet-ai, skills and docs/images.",
+      "runnability": "Strong infrastructure signal, but broader and less fresh than today’s new plugin products.",
+      "recommended_action": "Track as upstream context for the agent-skill marketplace trend."
+    },
+    {
+      "full_name": "paxlabs-inc/matrix-core",
+      "url": "https://github.com/paxlabs-inc/matrix-core",
+      "category": "Intent IR and UX Layer for Non-developer Requests",
+      "score": 72,
+      "summary": "Cognition/UX layer that translates natural-language requests into typed, inspectable, correctable Intent IR.",
+      "audience": "Teams exploring agentic app builders or governance-aware request execution.",
+      "ai_native_angle": "Interposes a typed, correctable intent representation between users and execution systems.",
+      "growth_signal": "Created 2026-06-05, pushed 2026-07-11; 80 stars; root audit found architecture docs, Makefile, multilingual READMEs and many subsystem folders.",
+      "runnability": "Large-scope platform signal; needs focused quickstart proof.",
+      "recommended_action": "Watch for a minimal runnable demo and compare its IR with workflow-builder schemas."
+    },
+    {
+      "full_name": "chenxi750328ai/agent-jianghu",
+      "url": "https://github.com/chenxi750328ai/agent-jianghu",
+      "category": "Multi-agent Collaboration Platform",
+      "score": 70,
+      "summary": "Chinese multi-agent collaboration project with status/ranking pages, project organization docs, skills and automation scripts.",
+      "audience": "Agent community builders and teams experimenting with multi-agent operations dashboards.",
+      "ai_native_angle": "Frames agent collaboration as visible status/ranking and project-operation artifacts.",
+      "growth_signal": "Created 2026-02-01, pushed 2026-07-11; root audit found docs, scripts, tools, SKILLS, AGENTS and GitHub Pages status/ranking links.",
+      "runnability": "Interesting surface, but small traction and broad structure need deeper audit.",
+      "recommended_action": "Watch for concrete scenarios and stable setup docs."
+    },
+    {
+      "full_name": "KORAYTEACHER/fintech-advisor",
+      "url": "https://github.com/KORAYTEACHER/fintech-advisor",
+      "category": "AI Financial Advisor App Scaffold",
+      "score": 69,
+      "summary": "Next.js portfolio/net-worth tracker with AI financial advisor positioning, Docker files, docs and app/server folders.",
+      "audience": "Personal finance app builders evaluating AI advisor UX.",
+      "ai_native_angle": "Wraps portfolio state and financial guidance into an AI assistant flow.",
+      "growth_signal": "Created 2026-07-09; 151 stars and 430 forks; audit found Dockerfile, docker-compose, app, server, docs and package-lock.",
+      "runnability": "Runnable scaffold signal, but abnormal fork ratio and financial advice risk keep it off Top.",
+      "recommended_action": "Audit provenance and disclaimers before any product reuse."
+    },
+    {
+      "full_name": "imchine/FinTech-Solution",
+      "url": "https://github.com/imchine/FinTech-Solution",
+      "category": "SME AI Financial Assistant SaaS",
+      "score": 68,
+      "summary": "Next.js/Postgres financial intelligence platform for SMEs with Docker, Prisma and start scripts.",
+      "audience": "SME finance operators and SaaS builders.",
+      "ai_native_angle": "Positions AI as a financial analysis/copilot layer over business data.",
+      "growth_signal": "Created 2026-07-09; 151 stars; audit found Dockerfile, docker-compose, prisma, src, start scripts and package-lock.",
+      "runnability": "Better runnable signal than generic fintech repos, but still broad and finance-risk sensitive.",
+      "recommended_action": "Watch only after checking data model and generated-code provenance."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "FuelMagistrateLead/photoshop-ai-smart-enhance",
+      "url": "https://github.com/FuelMagistrateLead/photoshop-ai-smart-enhance",
+      "skip_reason": "Root audit found only README and index.html for a Photoshop AI enhancer despite high same-day stars/forks; insufficient runnable extension proof."
+    },
+    {
+      "full_name": "chordswallowthrust/undress-design",
+      "url": "https://github.com/chordswallowthrust/undress-design",
+      "skip_reason": "README-only virtual try-on/garment-editing repo with consent-sensitive adult-adjacent positioning and no runnable code surface."
+    },
+    {
+      "full_name": "Elias569/fintech-dashboard",
+      "url": "https://github.com/Elias569/fintech-dashboard",
+      "skip_reason": "High same-day stars/forks and generic fintech dashboard positioning; lower confidence than audited finance candidates."
+    },
+    {
+      "full_name": "Elias569/fintech-app",
+      "url": "https://github.com/Elias569/fintech-app",
+      "skip_reason": "Generic fintech app with suspicious high fork count and insufficient product evidence in initial search results."
+    },
+    {
+      "full_name": "KORAYTEACHER/fintech-forge",
+      "url": "https://github.com/KORAYTEACHER/fintech-forge",
+      "skip_reason": "Broad AI fintech tools/scaffold positioning; less concrete than fintech-advisor and FinTech-Solution after audit."
+    },
+    {
+      "full_name": "Forward-Future/gpt-5-6-relay",
+      "url": "https://github.com/Forward-Future/gpt-5-6-relay",
+      "skip_reason": "Routing/skill concept around speculative model labels; not enough concrete user-facing product evidence for promotion."
+    },
+    {
+      "full_name": "h4vzz/awesome-ai-agent-skills",
+      "url": "https://github.com/h4vzz/awesome-ai-agent-skills",
+      "skip_reason": "Curated skill collection rather than a runnable product, app, CLI, API or MCP workflow."
+    },
+    {
+      "full_name": "PrimeIntellect-ai/verifiers",
+      "url": "https://github.com/PrimeIntellect-ai/verifiers",
+      "skip_reason": "RL/evaluation library for environments and evals; useful infrastructure but outside this radar’s product-shape filter."
+    }
+  ]
+}
