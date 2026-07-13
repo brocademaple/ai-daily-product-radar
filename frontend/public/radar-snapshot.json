@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+      "runDate": "2026-07-13",
+      "generatedAt": "2026-07-13T15:35:16+08:00",
+      "dataWindow": "2026-07-11 00:00 to 2026-07-13 15:35 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API metadata/root-content/README audits for selected candidates.",
+      "sourceSummary": "Shell curl saved GitHub Search API responses to /tmp/radar_2026_07_13_created_agents.json, /tmp/radar_2026_07_13_updated_agents.json, /tmp/radar_2026_07_13_created_mcp_rag_workflow.json, /tmp/radar_2026_07_13_created_vertical_agents.json, /tmp/radar_2026_07_13_created_recent_agentic.json and /tmp/radar_2026_07_13_created_product_surface.json. Selected repository metadata, root contents and READMEs were audited under /tmp/radar_2026_07_13_repo_audit. No third-party repo was cloned, installed, built, credentialed, or run locally; runnability is inferred from README, root files, manifests, Docker/config files, tests, docs, examples, assets and skill/plugin surfaces.",
+      "trendObservations": "Fresh signals cluster around governed agentic IDEs, multi-agent runtimes with audit/replay surfaces, vertical agent workspaces for APK patching, travel guides, local chat summarization and AI companion calls, plus Codex/Claude-specific observability products. The strongest projects make the agent action loop inspectable through an IDE, dashboard, MCP server, transcript viewer or deployment workflow; prompt packs, awesome lists, suspicious free-model wrappers and pure benchmark/education repos remain noisy.",
+      "assumptions": "Scores favor repositories created or materially updated in the 2026-07-11 to 2026-07-13 window, with a concrete product surface, runnable UI/CLI/API/MCP/workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be gamed or noisy; repeated projects from recent runs are only promoted when there is a fresh product-shape signal. No clone/install/runtime audit was performed today.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-07-13\n\n数据窗口：2026-07-11 00:00 to 2026-07-13 15:35 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API metadata/root-content/README audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-11 to 2026-07-13 window, with a concrete product surface, runnable UI/CLI/API/MCP/workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be gamed or noisy; repeated projects from recent runs are only promoted when there is a fresh product-shape signal. No clone/install/runtime audit was performed today.\n\n## Top Projects\n\n1. [mereyabdenbekuly-ctrl/clodex-ide](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) - Local-first Governed Agentic IDE - Score 90\n   - 做什么：Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.\n   - 面向谁：Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.\n   - AI native 点：Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.\n   - 可运行性判断：Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.\n   - 建议动作：Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action.\n\n2. [Paresh-Maheshwari/morphe-ai](https://github.com/Paresh-Maheshwari/morphe-ai) - Multi-agent APK Patching Workspace - Score 86\n   - 做什么：AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.\n   - 面向谁：Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.\n   - AI native 点：Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.\n   - 可运行性判断：Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.\n   - 建议动作：Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts.\n\n3. [sandbaseai/managed-agents](https://github.com/sandbaseai/managed-agents) - Local-first Enterprise Agent Runtime - Score 85\n   - 做什么：Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.\n   - 面向谁：Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.\n   - AI native 点：Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.\n   - 可运行性判断：Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.\n   - 建议动作：Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use.\n\n4. [youxiandechilun/Guido](https://github.com/youxiandechilun/Guido) - Scenic-area AI Digital Guide - Score 83\n   - 做什么：Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.\n   - 面向谁：Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.\n   - AI native 点：Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.\n   - 可运行性判断：Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.\n   - 建议动作：Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue.\n\n5. [kitforai/kitforai](https://github.com/kitforai/kitforai) - Persistent Memory and RAG Developer Hub - Score 82\n   - 做什么：Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.\n   - 面向谁：Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.\n   - AI native 点：Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.\n   - 可运行性判断：Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.\n   - 建议动作：Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries.\n\n6. [S40911120/recensa](https://github.com/S40911120/recensa) - Claude Code Session Audit Viewer - Score 80\n   - 做什么：Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.\n   - 面向谁：Developers and teams using coding agents who need post-run observability over what agents did across sessions.\n   - AI native 点：Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.\n   - 可运行性判断：Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.\n   - 建议动作：Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity.\n\n7. [Cheiineeey/callhome](https://github.com/Cheiineeey/callhome) - Self-hosted Voice-call Stack for AI Companions - Score 79\n   - 做什么：Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.\n   - 面向谁：AI companion builders exploring phone-call interaction loops with local voice processing boundaries.\n   - AI native 点：Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.\n   - 可运行性判断：Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.\n   - 建议动作：Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls.\n\n8. [yung13yubabie/line-summary](https://github.com/yung13yubabie/line-summary) - Local LINE Chat Summary MCP - Score 78\n   - 做什么：Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.\n   - 面向谁：Claude Code users who want private local summaries of LINE conversations on their own Windows machine.\n   - AI native 点：Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.\n   - 可运行性判断：Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.\n   - 建议动作：Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory.\n\n9. [RongleCat/grok-go](https://github.com/RongleCat/grok-go) - Local Multi-account Grok Gateway for Codex - Score 77\n   - 做什么：Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.\n   - 面向谁：Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.\n   - AI native 点：Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.\n   - 可运行性判断：Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.\n   - 建议动作：Inspect credential storage and rate-limit behavior before connecting real accounts.\n\n10. [ShadoW-Shinigami/lyric-video-director](https://github.com/ShadoW-Shinigami/lyric-video-director) - Agent Skill for Lyric Video Direction - Score 76\n   - 做什么：Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.\n   - 面向谁：Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.\n   - AI native 点：Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.\n   - 可运行性判断：Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.\n   - 建议动作：Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims.\n\n## Watchlist\n\n- [mrbear1024/ai-content-kb](https://github.com/mrbear1024/ai-content-kb) - Review-first AI Content Knowledge Base - Score 74 - Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems. 建议：Mine the schema and review loop; do not treat it as a turnkey app yet.\n- [rolandwonglonam/rw-research-skill](https://github.com/rolandwonglonam/rw-research-skill) - Research Workflow Skills - Score 73 - Standalone research workflow skills for questions, literature, evidence, design, writing and submission. 建议：Watch for examples showing evidence traceability and output QA.\n- [mate-matt/rag-memory-lab](https://github.com/mate-matt/rag-memory-lab) - Local RAG Memory Lab - Score 72 - Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services. 建议：Borrow evaluation/evidence-card patterns for product RAG QA.\n- [OthmanAdi/plandeck](https://github.com/OthmanAdi/plandeck) - Visual Kanban for Long-running Agents - Score 71 - Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible. 建议：Re-audit root contents and screenshots before promoting.\n- [epoko77-ai/korean-bill-debate-mcp](https://github.com/epoko77-ai/korean-bill-debate-mcp) - Korean Legislative Records MCP - Score 70 - MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements. 建议：Check API source coverage and citation behavior.\n- [whoisqwerz/pocket_disasm](https://github.com/whoisqwerz/pocket_disasm) - Multi-session IDALib MCP Router - Score 69 - MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools. 建议：Watch for safe sample binaries, permission model and reproducible workflows.\n\n## Skip Reasons\n\n- [LonghornSilicon/awesome-ai-accelerators](https://github.com/LonghornSilicon/awesome-ai-accelerators) - Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow.\n- [calesthio/generative-media-skills](https://github.com/calesthio/generative-media-skills) - Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement.\n- [JosephHampton/awesome-gemini-cli-subagents](https://github.com/JosephHampton/awesome-gemini-cli-subagents) - Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs.\n- [berkayyytech/vortex](https://github.com/berkayyytech/vortex) - Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search.\n- [Nexis-AI/NexBench](https://github.com/Nexis-AI/NexBench) - Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today.\n- [claudemythos5/Claude-Mythos-5-AI-free](https://github.com/claudemythos5/Claude-Mythos-5-AI-free) - Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk.\n- [chatgpt-56/ChatGPT-5.6-Free-Codex](https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex) - Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product.\n- [CrestMessengerLearn/CapCut-Pro-Video-Editor](https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor) - Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface.\n\n类型级跳过原因：纯 prompt collection、awesome list、论文/benchmark-only、免费模型 SEO 壳、只有 README 没有可运行代码或明显营销下载仓库，均降权或排除；这些类型原因不会写入 JSON skipped_projects 的伪造 repo。\n\n## 今日趋势观察\n\n1. Governed coding-agent IDEs are moving from chat wrappers to release-evidence workbenches: Clodex leads because it exposes app/package/docs/security/release surfaces around autonomous execution.\n2. Agent runtimes are becoming operational products: Managed Agents, Recensa and PlanDeck all make sessions, audit, replay, approvals or plan state visible.\n3. Vertical agent apps are more compelling than generic assistants when they own a workflow: Morphe AI, Guido, line-summary and Callhome each bind AI to a concrete environment.\n4. MCP remains the dominant packaging layer for local private tools, especially chat history, search, legislative records and reverse engineering.\n5. Creative/media agent skills continue to grow, but repeated coverage requires new runtime evidence, not only extra stars.\n\n## 今日建议动作\n\n- Prototype Clodex or Managed Agents only on disposable repos/tasks and judge evidence quality before model quality.\n- Compare Recensa with existing Codex/Claude transcript storage to see whether replay/search changes review behavior.\n- Treat LINE/chat/voice companion projects as privacy-sensitive; test with synthetic or self-owned data only.\n- Re-audit PlanDeck and the niche MCP projects tomorrow if root-content API responses become complete.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_13_created_agents.json, /tmp/radar_2026_07_13_updated_agents.json, /tmp/radar_2026_07_13_created_mcp_rag_workflow.json, /tmp/radar_2026_07_13_created_vertical_agents.json, /tmp/radar_2026_07_13_created_recent_agentic.json, /tmp/radar_2026_07_13_created_product_surface.json.\n- GitHub repository metadata, root contents and READMEs for selected candidates under /tmp/radar_2026_07_13_repo_audit.\n- No clone, install, Docker, npm/pnpm, Python, Rust/Tauri, Java/Spring, Android, Windows, browser, telephony, MCP client, model-provider, credentialed runtime, media rendering or security/binary-analysis audit was performed today.\n",
+      "sourceFile": "2026-07-13.json",
+      "entryCount": 24
+    },
+    {
       "id": "run:2026-07-12:2026-07-12T18:10:00+08:00",
       "runDate": "2026-07-12",
       "generatedAt": "2026-07-12T18:10:00+08:00",
@@ -967,6 +979,25 @@
       "growthSignal": "GitHub 页面显示约 124k stars、5k+ issues、542 PRs、625 commits；仓库含 demo.gif、plugins、examples。",
       "runnability": "README 推荐 curl 安装脚本、Homebrew、Windows install.ps1/WinGet；进入项目目录运行 `claude`。",
       "recommendedAction": "跟 opencode/Codex/Gemini CLI 做同仓库对比；重点评估插件生态和权限/审计体验。",
+      "skipReason": null
+    },
+    {
+      "fullName": "mereyabdenbekuly-ctrl/clodex-ide",
+      "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 90,
+      "latestScore": 90,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local-first Governed Agentic IDE",
+      "summary": "Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.",
+      "audience": "Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.",
+      "aiNativeAngle": "Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.",
+      "runnability": "Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.",
+      "recommendedAction": "Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action.",
       "skipReason": null
     },
     {
@@ -2110,6 +2141,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Paresh-Maheshwari/morphe-ai",
+      "url": "https://github.com/Paresh-Maheshwari/morphe-ai",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Multi-agent APK Patching Workspace",
+      "summary": "AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.",
+      "audience": "Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.",
+      "aiNativeAngle": "Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.",
+      "runnability": "Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.",
+      "recommendedAction": "Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts.",
+      "skipReason": null
+    },
+    {
       "fullName": "Alisa0808/vox-director",
       "url": "https://github.com/Alisa0808/vox-director",
       "firstSeenDate": "2026-07-12",
@@ -2544,6 +2594,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。",
       "runnability": "支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。",
       "recommendedAction": "优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。",
+      "skipReason": null
+    },
+    {
+      "fullName": "sandbaseai/managed-agents",
+      "url": "https://github.com/sandbaseai/managed-agents",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local-first Enterprise Agent Runtime",
+      "summary": "Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.",
+      "audience": "Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.",
+      "aiNativeAngle": "Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.",
+      "runnability": "Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.",
+      "recommendedAction": "Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use.",
       "skipReason": null
     },
     {
@@ -3345,6 +3414,25 @@
       "skipReason": null
     },
     {
+      "fullName": "youxiandechilun/Guido",
+      "url": "https://github.com/youxiandechilun/Guido",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Scenic-area AI Digital Guide",
+      "summary": "Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.",
+      "audience": "Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.",
+      "aiNativeAngle": "Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.",
+      "runnability": "Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.",
+      "recommendedAction": "Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue.",
+      "skipReason": null
+    },
+    {
       "fullName": "mnemon-dev/mnemon",
       "url": "https://github.com/mnemon-dev/mnemon",
       "firstSeenDate": "2026-07-12",
@@ -3703,6 +3791,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "kitforai/kitforai",
+      "url": "https://github.com/kitforai/kitforai",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Persistent Memory and RAG Developer Hub",
+      "summary": "Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.",
+      "audience": "Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.",
+      "aiNativeAngle": "Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.",
+      "runnability": "Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.",
+      "recommendedAction": "Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries.",
       "skipReason": null
     },
     {
@@ -4450,12 +4557,12 @@
       "fullName": "calesthio/generative-media-skills",
       "url": "https://github.com/calesthio/generative-media-skills",
       "firstSeenDate": "2026-07-12",
-      "lastSeenDate": "2026-07-12",
-      "seenCount": 1,
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 2,
       "bestScore": 80,
-      "latestScore": 80,
-      "latestSection": "top",
-      "boardStatus": "top-picks",
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
       "category": "Portable Generative Media Agent Skills",
       "summary": "Research-backed agent skills for image, video, audio, voice and generative-media production across AI coding assistants.",
       "audience": "Creative operators building reusable media-generation workflows inside Codex, Claude Code, Gemini CLI and similar tools.",
@@ -4463,6 +4570,25 @@
       "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 35 stars and 3 forks; root audit found skills, README and tests.",
       "runnability": "Good skill/test signal, but actual media-tool integrations and output quality were not exercised.",
       "recommendedAction": "Pick one skill and run it on a small synthetic brief; evaluate repeatability, licensing assumptions and artifact QA.",
+      "skipReason": "Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement."
+    },
+    {
+      "fullName": "S40911120/recensa",
+      "url": "https://github.com/S40911120/recensa",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Claude Code Session Audit Viewer",
+      "summary": "Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.",
+      "audience": "Developers and teams using coding agents who need post-run observability over what agents did across sessions.",
+      "aiNativeAngle": "Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.",
+      "runnability": "Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.",
+      "recommendedAction": "Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity.",
       "skipReason": null
     },
     {
@@ -4827,6 +4953,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Cheiineeey/callhome",
+      "url": "https://github.com/Cheiineeey/callhome",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Self-hosted Voice-call Stack for AI Companions",
+      "summary": "Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.",
+      "audience": "AI companion builders exploring phone-call interaction loops with local voice processing boundaries.",
+      "aiNativeAngle": "Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.",
+      "runnability": "Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.",
+      "recommendedAction": "Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls.",
+      "skipReason": null
+    },
+    {
       "fullName": "sxp-studio/subjective-zero",
       "url": "https://github.com/sxp-studio/subjective-zero",
       "firstSeenDate": "2026-07-12",
@@ -5090,6 +5235,25 @@
       "growthSignal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
       "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
       "recommendedAction": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。",
+      "skipReason": null
+    },
+    {
+      "fullName": "yung13yubabie/line-summary",
+      "url": "https://github.com/yung13yubabie/line-summary",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local LINE Chat Summary MCP",
+      "summary": "Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.",
+      "audience": "Claude Code users who want private local summaries of LINE conversations on their own Windows machine.",
+      "aiNativeAngle": "Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.",
+      "runnability": "Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.",
+      "recommendedAction": "Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory.",
       "skipReason": null
     },
     {
@@ -5644,6 +5808,25 @@
       "skipReason": null
     },
     {
+      "fullName": "RongleCat/grok-go",
+      "url": "https://github.com/RongleCat/grok-go",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local Multi-account Grok Gateway for Codex",
+      "summary": "Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.",
+      "audience": "Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.",
+      "aiNativeAngle": "Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.",
+      "runnability": "Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.",
+      "recommendedAction": "Inspect credential storage and rate-limit behavior before connecting real accounts.",
+      "skipReason": null
+    },
+    {
       "fullName": "zhixuli0406/DuDuClaw",
       "url": "https://github.com/zhixuli0406/DuDuClaw",
       "firstSeenDate": "2026-07-12",
@@ -5945,6 +6128,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "ShadoW-Shinigami/lyric-video-director",
+      "url": "https://github.com/ShadoW-Shinigami/lyric-video-director",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Skill for Lyric Video Direction",
+      "summary": "Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.",
+      "audience": "Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.",
+      "aiNativeAngle": "Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.",
+      "runnability": "Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.",
+      "recommendedAction": "Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims.",
       "skipReason": null
     },
     {
@@ -6499,6 +6701,25 @@
       "skipReason": null
     },
     {
+      "fullName": "mrbear1024/ai-content-kb",
+      "url": "https://github.com/mrbear1024/ai-content-kb",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Review-first AI Content Knowledge Base",
+      "summary": "Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems.",
+      "audience": "Researchers, writers and educators building review-first knowledge bases.",
+      "aiNativeAngle": "Encodes source review, typed YAML relationships and Codex/Obsidian workflows as an AI-native content system.",
+      "growthSignal": "Created 2026-07-11; 100 stars; root audit found .kb, .obsidian, docs, products, raw, sources and wiki.",
+      "runnability": "Useful reference/product architecture, but less runnable than app/CLI/API candidates.",
+      "recommendedAction": "Mine the schema and review loop; do not treat it as a turnkey app yet.",
+      "skipReason": null
+    },
+    {
       "fullName": "steviebuilds/agent-room",
       "url": "https://github.com/steviebuilds/agent-room",
       "firstSeenDate": "2026-07-12",
@@ -6936,6 +7157,25 @@
       "skipReason": null
     },
     {
+      "fullName": "rolandwonglonam/rw-research-skill",
+      "url": "https://github.com/rolandwonglonam/rw-research-skill",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Research Workflow Skills",
+      "summary": "Standalone research workflow skills for questions, literature, evidence, design, writing and submission.",
+      "audience": "Academic and applied researchers using agentic writing/research assistants.",
+      "aiNativeAngle": "Turns research stages into reusable agent skills.",
+      "growthSignal": "Created 2026-07-11, pushed 2026-07-13; 49 stars and 7 forks.",
+      "runnability": "Promising workflow packaging but not yet audited deeply enough for Top.",
+      "recommendedAction": "Watch for examples showing evidence traceability and output QA.",
+      "skipReason": null
+    },
+    {
       "fullName": "swytchcodehq/agent-install-monitor",
       "url": "https://github.com/swytchcodehq/agent-install-monitor",
       "firstSeenDate": "2026-07-12",
@@ -7199,6 +7439,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "mate-matt/rag-memory-lab",
+      "url": "https://github.com/mate-matt/rag-memory-lab",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local RAG Memory Lab",
+      "summary": "Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services.",
+      "audience": "Builders learning RAG internals before productizing memory systems.",
+      "aiNativeAngle": "Useful as a hands-on evidence-card/RAG substrate even though it is educational.",
+      "growthSignal": "Created 2026-07-12; 24 stars; root audit found notebooks, knowledge-base, artifacts, assets, src, pyproject, uv.lock and Makefile.",
+      "runnability": "Likely runnable locally, but education-first rather than product-first.",
+      "recommendedAction": "Borrow evaluation/evidence-card patterns for product RAG QA.",
       "skipReason": null
     },
     {
@@ -7734,6 +7993,25 @@
       "skipReason": null
     },
     {
+      "fullName": "OthmanAdi/plandeck",
+      "url": "https://github.com/OthmanAdi/plandeck",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 71,
+      "latestScore": 71,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Visual Kanban for Long-running Agents",
+      "summary": "Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible.",
+      "audience": "Agent operators who dislike reading long markdown plans.",
+      "aiNativeAngle": "Attempts to turn an agent plan into a live operational board.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 17 stars.",
+      "runnability": "API metadata was promising, but README/root audit did not complete; keep below Top until code surface is verified.",
+      "recommendedAction": "Re-audit root contents and screenshots before promoting.",
+      "skipReason": null
+    },
+    {
       "fullName": "alchaincyf/doubao-search-mcp",
       "url": "https://github.com/alchaincyf/doubao-search-mcp",
       "firstSeenDate": "2026-07-12",
@@ -8054,6 +8332,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。",
+      "skipReason": null
+    },
+    {
+      "fullName": "epoko77-ai/korean-bill-debate-mcp",
+      "url": "https://github.com/epoko77-ai/korean-bill-debate-mcp",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 70,
+      "latestScore": 70,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Korean Legislative Records MCP",
+      "summary": "MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements.",
+      "audience": "Policy researchers and civic-tech builders needing source-grounded Korean legislative search.",
+      "aiNativeAngle": "Makes official civic records queryable through an agent tool surface.",
+      "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 16 stars and 4 forks.",
+      "runnability": "Niche but credible MCP direction; root audit was incomplete.",
+      "recommendedAction": "Check API source coverage and citation behavior.",
       "skipReason": null
     },
     {
@@ -8491,6 +8788,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。",
+      "skipReason": null
+    },
+    {
+      "fullName": "whoisqwerz/pocket_disasm",
+      "url": "https://github.com/whoisqwerz/pocket_disasm",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": 69,
+      "latestScore": 69,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Multi-session IDALib MCP Router",
+      "summary": "MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools.",
+      "audience": "Reverse engineers experimenting with agent-assisted binary analysis.",
+      "aiNativeAngle": "Connects an agent client to multi-session disassembly tooling.",
+      "growthSignal": "Created 2026-07-12; 15 stars.",
+      "runnability": "Interesting but security-sensitive and not deeply audited today.",
+      "recommendedAction": "Watch for safe sample binaries, permission model and reproducible workflows.",
       "skipReason": null
     },
     {
@@ -9482,6 +9798,139 @@
       "skipReason": null
     },
     {
+      "fullName": "berkayyytech/vortex",
+      "url": "https://github.com/berkayyytech/vortex",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search."
+    },
+    {
+      "fullName": "chatgpt-56/ChatGPT-5.6-Free-Codex",
+      "url": "https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product."
+    },
+    {
+      "fullName": "claudemythos5/Claude-Mythos-5-AI-free",
+      "url": "https://github.com/claudemythos5/Claude-Mythos-5-AI-free",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk."
+    },
+    {
+      "fullName": "CrestMessengerLearn/CapCut-Pro-Video-Editor",
+      "url": "https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface."
+    },
+    {
+      "fullName": "JosephHampton/awesome-gemini-cli-subagents",
+      "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+      "firstSeenDate": "2026-07-12",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs."
+    },
+    {
+      "fullName": "LonghornSilicon/awesome-ai-accelerators",
+      "url": "https://github.com/LonghornSilicon/awesome-ai-accelerators",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow."
+    },
+    {
+      "fullName": "Nexis-AI/NexBench",
+      "url": "https://github.com/Nexis-AI/NexBench",
+      "firstSeenDate": "2026-07-13",
+      "lastSeenDate": "2026-07-13",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today."
+    },
+    {
       "fullName": "amitshekhariitbhu/100-days-of-ai",
       "url": "https://github.com/amitshekhariitbhu/100-days-of-ai",
       "firstSeenDate": "2026-07-12",
@@ -9537,25 +9986,6 @@
       "runnability": null,
       "recommendedAction": null,
       "skipReason": "Vague productivity-agent positioning and insufficient root/product evidence compared with more concrete skill/workspace candidates."
-    },
-    {
-      "fullName": "JosephHampton/awesome-gemini-cli-subagents",
-      "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
-      "firstSeenDate": "2026-07-12",
-      "lastSeenDate": "2026-07-12",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Curated subagent collection; useful reference but weaker product surface than installable workflow tools with execution loops."
     },
     {
       "fullName": "JWM0203/MeetingCopilot",
@@ -13780,6 +14210,40 @@
         }
       }
     ],
+    "mereyabdenbekuly-ctrl/clodex-ide": [
+      {
+        "id": "mereyabdenbekuly-ctrl-clodex-ide:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "mereyabdenbekuly-ctrl/clodex-ide",
+        "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+        "category": "Local-first Governed Agentic IDE",
+        "score": 90,
+        "summary": "Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.",
+        "audience": "Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.",
+        "aiNativeAngle": "Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.",
+        "runnability": "Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.",
+        "recommendedAction": "Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "mereyabdenbekuly-ctrl/clodex-ide",
+          "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+          "category": "Local-first Governed Agentic IDE",
+          "score": 90,
+          "summary": "Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.",
+          "audience": "Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.",
+          "ai_native_angle": "Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.",
+          "runnability": "Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.",
+          "recommended_action": "Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action."
+        }
+      }
+    ],
     "eli-labz/Godcoder": [
       {
         "id": "eli-labz-Godcoder:2026-06-28T11:52:00+08:00:top:0",
@@ -16494,6 +16958,40 @@
         }
       }
     ],
+    "Paresh-Maheshwari/morphe-ai": [
+      {
+        "id": "Paresh-Maheshwari-morphe-ai:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "Paresh-Maheshwari/morphe-ai",
+        "url": "https://github.com/Paresh-Maheshwari/morphe-ai",
+        "category": "Multi-agent APK Patching Workspace",
+        "score": 86,
+        "summary": "AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.",
+        "audience": "Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.",
+        "aiNativeAngle": "Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.",
+        "runnability": "Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.",
+        "recommendedAction": "Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Paresh-Maheshwari/morphe-ai",
+          "url": "https://github.com/Paresh-Maheshwari/morphe-ai",
+          "category": "Multi-agent APK Patching Workspace",
+          "score": 86,
+          "summary": "AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.",
+          "audience": "Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.",
+          "ai_native_angle": "Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.",
+          "runnability": "Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.",
+          "recommended_action": "Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts."
+        }
+      }
+    ],
     "Alisa0808/vox-director": [
       {
         "id": "Alisa0808-vox-director:2026-07-12T18:10:00+08:00:top:0",
@@ -17273,6 +17771,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 13, 2026）；Star ~482；README 含截图与安装方案。",
           "runnability": "支持 npm 全局安装启动本地服务；也提供 docker compose；还有桌面端下载入口。",
           "recommended_action": "优先用 docker compose 起一个实例；验证组织结构视图/权限与工具接入。"
+        }
+      }
+    ],
+    "sandbaseai/managed-agents": [
+      {
+        "id": "sandbaseai-managed-agents:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "sandbaseai/managed-agents",
+        "url": "https://github.com/sandbaseai/managed-agents",
+        "category": "Local-first Enterprise Agent Runtime",
+        "score": 85,
+        "summary": "Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.",
+        "audience": "Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.",
+        "aiNativeAngle": "Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.",
+        "runnability": "Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.",
+        "recommendedAction": "Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "sandbaseai/managed-agents",
+          "url": "https://github.com/sandbaseai/managed-agents",
+          "category": "Local-first Enterprise Agent Runtime",
+          "score": 85,
+          "summary": "Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.",
+          "audience": "Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.",
+          "ai_native_angle": "Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.",
+          "runnability": "Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.",
+          "recommended_action": "Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use."
         }
       }
     ],
@@ -18979,6 +19511,40 @@
         }
       }
     ],
+    "youxiandechilun/Guido": [
+      {
+        "id": "youxiandechilun-Guido:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "youxiandechilun/Guido",
+        "url": "https://github.com/youxiandechilun/Guido",
+        "category": "Scenic-area AI Digital Guide",
+        "score": 83,
+        "summary": "Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.",
+        "audience": "Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.",
+        "aiNativeAngle": "Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.",
+        "runnability": "Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.",
+        "recommendedAction": "Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "youxiandechilun/Guido",
+          "url": "https://github.com/youxiandechilun/Guido",
+          "category": "Scenic-area AI Digital Guide",
+          "score": 83,
+          "summary": "Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.",
+          "audience": "Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.",
+          "ai_native_angle": "Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.",
+          "runnability": "Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.",
+          "recommended_action": "Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue."
+        }
+      }
+    ],
     "mnemon-dev/mnemon": [
       {
         "id": "mnemon-dev-mnemon:2026-07-12T18:10:00+08:00:top:0",
@@ -19708,6 +20274,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "kitforai/kitforai": [
+      {
+        "id": "kitforai-kitforai:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "kitforai/kitforai",
+        "url": "https://github.com/kitforai/kitforai",
+        "category": "Persistent Memory and RAG Developer Hub",
+        "score": 82,
+        "summary": "Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.",
+        "audience": "Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.",
+        "aiNativeAngle": "Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.",
+        "runnability": "Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.",
+        "recommendedAction": "Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "kitforai/kitforai",
+          "url": "https://github.com/kitforai/kitforai",
+          "category": "Persistent Memory and RAG Developer Hub",
+          "score": 82,
+          "summary": "Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.",
+          "audience": "Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.",
+          "ai_native_angle": "Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.",
+          "runnability": "Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.",
+          "recommended_action": "Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries."
         }
       }
     ],
@@ -21258,7 +21858,31 @@
     ],
     "calesthio/generative-media-skills": [
       {
-        "id": "calesthio-generative-media-skills:2026-07-12T18:10:00+08:00:top:0",
+        "id": "calesthio-generative-media-skills:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "calesthio/generative-media-skills",
+        "url": "https://github.com/calesthio/generative-media-skills",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement.",
+        "rawJson": {
+          "full_name": "calesthio/generative-media-skills",
+          "url": "https://github.com/calesthio/generative-media-skills",
+          "skip_reason": "Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement."
+        }
+      },
+      {
+        "id": "calesthio-generative-media-skills:2026-07-12T18:10:00+08:00:top:1",
         "runId": "run:2026-07-12:2026-07-12T18:10:00+08:00",
         "runDate": "2026-07-12",
         "generatedAt": "2026-07-12T18:10:00+08:00",
@@ -21287,6 +21911,40 @@
           "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 35 stars and 3 forks; root audit found skills, README and tests.",
           "runnability": "Good skill/test signal, but actual media-tool integrations and output quality were not exercised.",
           "recommended_action": "Pick one skill and run it on a small synthetic brief; evaluate repeatability, licensing assumptions and artifact QA."
+        }
+      }
+    ],
+    "S40911120/recensa": [
+      {
+        "id": "S40911120-recensa:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "S40911120/recensa",
+        "url": "https://github.com/S40911120/recensa",
+        "category": "Claude Code Session Audit Viewer",
+        "score": 80,
+        "summary": "Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.",
+        "audience": "Developers and teams using coding agents who need post-run observability over what agents did across sessions.",
+        "aiNativeAngle": "Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.",
+        "runnability": "Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.",
+        "recommendedAction": "Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "S40911120/recensa",
+          "url": "https://github.com/S40911120/recensa",
+          "category": "Claude Code Session Audit Viewer",
+          "score": 80,
+          "summary": "Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.",
+          "audience": "Developers and teams using coding agents who need post-run observability over what agents did across sessions.",
+          "ai_native_angle": "Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.",
+          "runnability": "Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.",
+          "recommended_action": "Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity."
         }
       }
     ],
@@ -22029,6 +22687,40 @@
         }
       }
     ],
+    "Cheiineeey/callhome": [
+      {
+        "id": "Cheiineeey-callhome:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "Cheiineeey/callhome",
+        "url": "https://github.com/Cheiineeey/callhome",
+        "category": "Self-hosted Voice-call Stack for AI Companions",
+        "score": 79,
+        "summary": "Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.",
+        "audience": "AI companion builders exploring phone-call interaction loops with local voice processing boundaries.",
+        "aiNativeAngle": "Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.",
+        "runnability": "Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.",
+        "recommendedAction": "Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "Cheiineeey/callhome",
+          "url": "https://github.com/Cheiineeey/callhome",
+          "category": "Self-hosted Voice-call Stack for AI Companions",
+          "score": 79,
+          "summary": "Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.",
+          "audience": "AI companion builders exploring phone-call interaction loops with local voice processing boundaries.",
+          "ai_native_angle": "Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.",
+          "runnability": "Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.",
+          "recommended_action": "Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls."
+        }
+      }
+    ],
     "sxp-studio/subjective-zero": [
       {
         "id": "sxp-studio-subjective-zero:2026-07-12T18:10:00+08:00:top:0",
@@ -22526,6 +23218,40 @@
           "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
           "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
           "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+        }
+      }
+    ],
+    "yung13yubabie/line-summary": [
+      {
+        "id": "yung13yubabie-line-summary:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "yung13yubabie/line-summary",
+        "url": "https://github.com/yung13yubabie/line-summary",
+        "category": "Local LINE Chat Summary MCP",
+        "score": 78,
+        "summary": "Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.",
+        "audience": "Claude Code users who want private local summaries of LINE conversations on their own Windows machine.",
+        "aiNativeAngle": "Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.",
+        "runnability": "Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.",
+        "recommendedAction": "Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "yung13yubabie/line-summary",
+          "url": "https://github.com/yung13yubabie/line-summary",
+          "category": "Local LINE Chat Summary MCP",
+          "score": 78,
+          "summary": "Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.",
+          "audience": "Claude Code users who want private local summaries of LINE conversations on their own Windows machine.",
+          "ai_native_angle": "Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.",
+          "runnability": "Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.",
+          "recommended_action": "Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory."
         }
       }
     ],
@@ -23576,6 +24302,40 @@
         }
       }
     ],
+    "RongleCat/grok-go": [
+      {
+        "id": "RongleCat-grok-go:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "RongleCat/grok-go",
+        "url": "https://github.com/RongleCat/grok-go",
+        "category": "Local Multi-account Grok Gateway for Codex",
+        "score": 77,
+        "summary": "Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.",
+        "audience": "Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.",
+        "aiNativeAngle": "Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.",
+        "runnability": "Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.",
+        "recommendedAction": "Inspect credential storage and rate-limit behavior before connecting real accounts.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "RongleCat/grok-go",
+          "url": "https://github.com/RongleCat/grok-go",
+          "category": "Local Multi-account Grok Gateway for Codex",
+          "score": 77,
+          "summary": "Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.",
+          "audience": "Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.",
+          "ai_native_angle": "Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.",
+          "runnability": "Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.",
+          "recommended_action": "Inspect credential storage and rate-limit behavior before connecting real accounts."
+        }
+      }
+    ],
     "zhixuli0406/DuDuClaw": [
       {
         "id": "zhixuli0406-DuDuClaw:2026-07-12T18:10:00+08:00:top:0",
@@ -24115,6 +24875,40 @@
           "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
           "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
           "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+        }
+      }
+    ],
+    "ShadoW-Shinigami/lyric-video-director": [
+      {
+        "id": "ShadoW-Shinigami-lyric-video-director:2026-07-13T15:35:16+08:00:top:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "ShadoW-Shinigami/lyric-video-director",
+        "url": "https://github.com/ShadoW-Shinigami/lyric-video-director",
+        "category": "Agent Skill for Lyric Video Direction",
+        "score": 76,
+        "summary": "Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.",
+        "audience": "Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.",
+        "aiNativeAngle": "Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.",
+        "runnability": "Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.",
+        "recommendedAction": "Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "ShadoW-Shinigami/lyric-video-director",
+          "url": "https://github.com/ShadoW-Shinigami/lyric-video-director",
+          "category": "Agent Skill for Lyric Video Direction",
+          "score": 76,
+          "summary": "Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.",
+          "audience": "Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.",
+          "ai_native_angle": "Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.",
+          "runnability": "Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.",
+          "recommended_action": "Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims."
         }
       }
     ],
@@ -25251,6 +26045,39 @@
         }
       }
     ],
+    "mrbear1024/ai-content-kb": [
+      {
+        "id": "mrbear1024-ai-content-kb:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "mrbear1024/ai-content-kb",
+        "url": "https://github.com/mrbear1024/ai-content-kb",
+        "category": "Review-first AI Content Knowledge Base",
+        "score": 74,
+        "summary": "Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems.",
+        "audience": "Researchers, writers and educators building review-first knowledge bases.",
+        "aiNativeAngle": "Encodes source review, typed YAML relationships and Codex/Obsidian workflows as an AI-native content system.",
+        "growthSignal": "Created 2026-07-11; 100 stars; root audit found .kb, .obsidian, docs, products, raw, sources and wiki.",
+        "runnability": "Useful reference/product architecture, but less runnable than app/CLI/API candidates.",
+        "recommendedAction": "Mine the schema and review loop; do not treat it as a turnkey app yet.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "mrbear1024/ai-content-kb",
+          "url": "https://github.com/mrbear1024/ai-content-kb",
+          "category": "Review-first AI Content Knowledge Base",
+          "score": 74,
+          "summary": "Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems.",
+          "audience": "Researchers, writers and educators building review-first knowledge bases.",
+          "ai_native_angle": "Encodes source review, typed YAML relationships and Codex/Obsidian workflows as an AI-native content system.",
+          "growth_signal": "Created 2026-07-11; 100 stars; root audit found .kb, .obsidian, docs, products, raw, sources and wiki.",
+          "runnability": "Useful reference/product architecture, but less runnable than app/CLI/API candidates.",
+          "recommended_action": "Mine the schema and review loop; do not treat it as a turnkey app yet."
+        }
+      }
+    ],
     "steviebuilds/agent-room": [
       {
         "id": "steviebuilds-agent-room:2026-07-12T18:10:00+08:00:watchlist:0",
@@ -26190,6 +27017,39 @@
         }
       }
     ],
+    "rolandwonglonam/rw-research-skill": [
+      {
+        "id": "rolandwonglonam-rw-research-skill:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "rolandwonglonam/rw-research-skill",
+        "url": "https://github.com/rolandwonglonam/rw-research-skill",
+        "category": "Research Workflow Skills",
+        "score": 73,
+        "summary": "Standalone research workflow skills for questions, literature, evidence, design, writing and submission.",
+        "audience": "Academic and applied researchers using agentic writing/research assistants.",
+        "aiNativeAngle": "Turns research stages into reusable agent skills.",
+        "growthSignal": "Created 2026-07-11, pushed 2026-07-13; 49 stars and 7 forks.",
+        "runnability": "Promising workflow packaging but not yet audited deeply enough for Top.",
+        "recommendedAction": "Watch for examples showing evidence traceability and output QA.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "rolandwonglonam/rw-research-skill",
+          "url": "https://github.com/rolandwonglonam/rw-research-skill",
+          "category": "Research Workflow Skills",
+          "score": 73,
+          "summary": "Standalone research workflow skills for questions, literature, evidence, design, writing and submission.",
+          "audience": "Academic and applied researchers using agentic writing/research assistants.",
+          "ai_native_angle": "Turns research stages into reusable agent skills.",
+          "growth_signal": "Created 2026-07-11, pushed 2026-07-13; 49 stars and 7 forks.",
+          "runnability": "Promising workflow packaging but not yet audited deeply enough for Top.",
+          "recommended_action": "Watch for examples showing evidence traceability and output QA."
+        }
+      }
+    ],
     "swytchcodehq/agent-install-monitor": [
       {
         "id": "swytchcodehq-agent-install-monitor:2026-07-12T18:10:00+08:00:watchlist:0",
@@ -26683,6 +27543,39 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "mate-matt/rag-memory-lab": [
+      {
+        "id": "mate-matt-rag-memory-lab:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "mate-matt/rag-memory-lab",
+        "url": "https://github.com/mate-matt/rag-memory-lab",
+        "category": "Local RAG Memory Lab",
+        "score": 72,
+        "summary": "Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services.",
+        "audience": "Builders learning RAG internals before productizing memory systems.",
+        "aiNativeAngle": "Useful as a hands-on evidence-card/RAG substrate even though it is educational.",
+        "growthSignal": "Created 2026-07-12; 24 stars; root audit found notebooks, knowledge-base, artifacts, assets, src, pyproject, uv.lock and Makefile.",
+        "runnability": "Likely runnable locally, but education-first rather than product-first.",
+        "recommendedAction": "Borrow evaluation/evidence-card patterns for product RAG QA.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "mate-matt/rag-memory-lab",
+          "url": "https://github.com/mate-matt/rag-memory-lab",
+          "category": "Local RAG Memory Lab",
+          "score": 72,
+          "summary": "Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services.",
+          "audience": "Builders learning RAG internals before productizing memory systems.",
+          "ai_native_angle": "Useful as a hands-on evidence-card/RAG substrate even though it is educational.",
+          "growth_signal": "Created 2026-07-12; 24 stars; root audit found notebooks, knowledge-base, artifacts, assets, src, pyproject, uv.lock and Makefile.",
+          "runnability": "Likely runnable locally, but education-first rather than product-first.",
+          "recommended_action": "Borrow evaluation/evidence-card patterns for product RAG QA."
         }
       }
     ],
@@ -27689,6 +28582,39 @@
         }
       }
     ],
+    "OthmanAdi/plandeck": [
+      {
+        "id": "OthmanAdi-plandeck:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "OthmanAdi/plandeck",
+        "url": "https://github.com/OthmanAdi/plandeck",
+        "category": "Visual Kanban for Long-running Agents",
+        "score": 71,
+        "summary": "Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible.",
+        "audience": "Agent operators who dislike reading long markdown plans.",
+        "aiNativeAngle": "Attempts to turn an agent plan into a live operational board.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 17 stars.",
+        "runnability": "API metadata was promising, but README/root audit did not complete; keep below Top until code surface is verified.",
+        "recommendedAction": "Re-audit root contents and screenshots before promoting.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "OthmanAdi/plandeck",
+          "url": "https://github.com/OthmanAdi/plandeck",
+          "category": "Visual Kanban for Long-running Agents",
+          "score": 71,
+          "summary": "Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible.",
+          "audience": "Agent operators who dislike reading long markdown plans.",
+          "ai_native_angle": "Attempts to turn an agent plan into a live operational board.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 17 stars.",
+          "runnability": "API metadata was promising, but README/root audit did not complete; keep below Top until code surface is verified.",
+          "recommended_action": "Re-audit root contents and screenshots before promoting."
+        }
+      }
+    ],
     "alchaincyf/doubao-search-mcp": [
       {
         "id": "alchaincyf-doubao-search-mcp:2026-07-12T18:10:00+08:00:watchlist:0",
@@ -28307,6 +29233,39 @@
           "score": 71,
           "summary": "面向 AI agent 的沙箱基础设施（代码执行、browser use 等），偏底层组件。",
           "recommended_action": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。"
+        }
+      }
+    ],
+    "epoko77-ai/korean-bill-debate-mcp": [
+      {
+        "id": "epoko77-ai-korean-bill-debate-mcp:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "epoko77-ai/korean-bill-debate-mcp",
+        "url": "https://github.com/epoko77-ai/korean-bill-debate-mcp",
+        "category": "Korean Legislative Records MCP",
+        "score": 70,
+        "summary": "MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements.",
+        "audience": "Policy researchers and civic-tech builders needing source-grounded Korean legislative search.",
+        "aiNativeAngle": "Makes official civic records queryable through an agent tool surface.",
+        "growthSignal": "Created 2026-07-12, pushed 2026-07-13; 16 stars and 4 forks.",
+        "runnability": "Niche but credible MCP direction; root audit was incomplete.",
+        "recommendedAction": "Check API source coverage and citation behavior.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "epoko77-ai/korean-bill-debate-mcp",
+          "url": "https://github.com/epoko77-ai/korean-bill-debate-mcp",
+          "category": "Korean Legislative Records MCP",
+          "score": 70,
+          "summary": "MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements.",
+          "audience": "Policy researchers and civic-tech builders needing source-grounded Korean legislative search.",
+          "ai_native_angle": "Makes official civic records queryable through an agent tool surface.",
+          "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 16 stars and 4 forks.",
+          "runnability": "Niche but credible MCP direction; root audit was incomplete.",
+          "recommended_action": "Check API source coverage and citation behavior."
         }
       }
     ],
@@ -29089,6 +30048,39 @@
           "score": 70,
           "summary": "以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。",
           "recommended_action": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。"
+        }
+      }
+    ],
+    "whoisqwerz/pocket_disasm": [
+      {
+        "id": "whoisqwerz-pocket_disasm:2026-07-13T15:35:16+08:00:watchlist:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "whoisqwerz/pocket_disasm",
+        "url": "https://github.com/whoisqwerz/pocket_disasm",
+        "category": "Multi-session IDALib MCP Router",
+        "score": 69,
+        "summary": "MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools.",
+        "audience": "Reverse engineers experimenting with agent-assisted binary analysis.",
+        "aiNativeAngle": "Connects an agent client to multi-session disassembly tooling.",
+        "growthSignal": "Created 2026-07-12; 15 stars.",
+        "runnability": "Interesting but security-sensitive and not deeply audited today.",
+        "recommendedAction": "Watch for safe sample binaries, permission model and reproducible workflows.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "whoisqwerz/pocket_disasm",
+          "url": "https://github.com/whoisqwerz/pocket_disasm",
+          "category": "Multi-session IDALib MCP Router",
+          "score": 69,
+          "summary": "MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools.",
+          "audience": "Reverse engineers experimenting with agent-assisted binary analysis.",
+          "ai_native_angle": "Connects an agent client to multi-session disassembly tooling.",
+          "growth_signal": "Created 2026-07-12; 15 stars.",
+          "runnability": "Interesting but security-sensitive and not deeply audited today.",
+          "recommended_action": "Watch for safe sample binaries, permission model and reproducible workflows."
         }
       }
     ],
@@ -31053,6 +32045,212 @@
         }
       }
     ],
+    "berkayyytech/vortex": [
+      {
+        "id": "berkayyytech-vortex:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "berkayyytech/vortex",
+        "url": "https://github.com/berkayyytech/vortex",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search.",
+        "rawJson": {
+          "full_name": "berkayyytech/vortex",
+          "url": "https://github.com/berkayyytech/vortex",
+          "skip_reason": "Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search."
+        }
+      }
+    ],
+    "chatgpt-56/ChatGPT-5.6-Free-Codex": [
+      {
+        "id": "chatgpt-56-ChatGPT-5.6-Free-Codex:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "chatgpt-56/ChatGPT-5.6-Free-Codex",
+        "url": "https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product.",
+        "rawJson": {
+          "full_name": "chatgpt-56/ChatGPT-5.6-Free-Codex",
+          "url": "https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex",
+          "skip_reason": "Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product."
+        }
+      }
+    ],
+    "claudemythos5/Claude-Mythos-5-AI-free": [
+      {
+        "id": "claudemythos5-Claude-Mythos-5-AI-free:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "claudemythos5/Claude-Mythos-5-AI-free",
+        "url": "https://github.com/claudemythos5/Claude-Mythos-5-AI-free",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk.",
+        "rawJson": {
+          "full_name": "claudemythos5/Claude-Mythos-5-AI-free",
+          "url": "https://github.com/claudemythos5/Claude-Mythos-5-AI-free",
+          "skip_reason": "Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk."
+        }
+      }
+    ],
+    "CrestMessengerLearn/CapCut-Pro-Video-Editor": [
+      {
+        "id": "CrestMessengerLearn-CapCut-Pro-Video-Editor:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "CrestMessengerLearn/CapCut-Pro-Video-Editor",
+        "url": "https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface.",
+        "rawJson": {
+          "full_name": "CrestMessengerLearn/CapCut-Pro-Video-Editor",
+          "url": "https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor",
+          "skip_reason": "Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface."
+        }
+      }
+    ],
+    "JosephHampton/awesome-gemini-cli-subagents": [
+      {
+        "id": "JosephHampton-awesome-gemini-cli-subagents:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "JosephHampton/awesome-gemini-cli-subagents",
+        "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs.",
+        "rawJson": {
+          "full_name": "JosephHampton/awesome-gemini-cli-subagents",
+          "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+          "skip_reason": "Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs."
+        }
+      },
+      {
+        "id": "JosephHampton-awesome-gemini-cli-subagents:2026-07-12T18:10:00+08:00:skip:1",
+        "runId": "run:2026-07-12:2026-07-12T18:10:00+08:00",
+        "runDate": "2026-07-12",
+        "generatedAt": "2026-07-12T18:10:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "JosephHampton/awesome-gemini-cli-subagents",
+        "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated subagent collection; useful reference but weaker product surface than installable workflow tools with execution loops.",
+        "rawJson": {
+          "full_name": "JosephHampton/awesome-gemini-cli-subagents",
+          "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+          "skip_reason": "Curated subagent collection; useful reference but weaker product surface than installable workflow tools with execution loops."
+        }
+      }
+    ],
+    "LonghornSilicon/awesome-ai-accelerators": [
+      {
+        "id": "LonghornSilicon-awesome-ai-accelerators:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "LonghornSilicon/awesome-ai-accelerators",
+        "url": "https://github.com/LonghornSilicon/awesome-ai-accelerators",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow.",
+        "rawJson": {
+          "full_name": "LonghornSilicon/awesome-ai-accelerators",
+          "url": "https://github.com/LonghornSilicon/awesome-ai-accelerators",
+          "skip_reason": "Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow."
+        }
+      }
+    ],
+    "Nexis-AI/NexBench": [
+      {
+        "id": "Nexis-AI-NexBench:2026-07-13T15:35:16+08:00:skip:0",
+        "runId": "run:2026-07-13:2026-07-13T15:35:16+08:00",
+        "runDate": "2026-07-13",
+        "generatedAt": "2026-07-13T15:35:16+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Nexis-AI/NexBench",
+        "url": "https://github.com/Nexis-AI/NexBench",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today.",
+        "rawJson": {
+          "full_name": "Nexis-AI/NexBench",
+          "url": "https://github.com/Nexis-AI/NexBench",
+          "skip_reason": "Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today."
+        }
+      }
+    ],
     "amitshekhariitbhu/100-days-of-ai": [
       {
         "id": "amitshekhariitbhu-100-days-of-ai:2026-07-12T18:10:00+08:00:skip:0",
@@ -31128,32 +32326,6 @@
           "full_name": "JamesBrownVC/Buddy",
           "url": "https://github.com/JamesBrownVC/Buddy",
           "skip_reason": "Vague productivity-agent positioning and insufficient root/product evidence compared with more concrete skill/workspace candidates."
-        }
-      }
-    ],
-    "JosephHampton/awesome-gemini-cli-subagents": [
-      {
-        "id": "JosephHampton-awesome-gemini-cli-subagents:2026-07-12T18:10:00+08:00:skip:0",
-        "runId": "run:2026-07-12:2026-07-12T18:10:00+08:00",
-        "runDate": "2026-07-12",
-        "generatedAt": "2026-07-12T18:10:00+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "JosephHampton/awesome-gemini-cli-subagents",
-        "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Curated subagent collection; useful reference but weaker product surface than installable workflow tools with execution loops.",
-        "rawJson": {
-          "full_name": "JosephHampton/awesome-gemini-cli-subagents",
-          "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
-          "skip_reason": "Curated subagent collection; useful reference but weaker product surface than installable workflow tools with execution loops."
         }
       }
     ],

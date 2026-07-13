@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-07-13",
+  "generated_at": "2026-07-13T15:35:16+08:00",
+  "data_window": "2026-07-11 00:00 to 2026-07-13 15:35 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API metadata/root-content/README audits for selected candidates.",
+  "source_summary": "Shell curl saved GitHub Search API responses to /tmp/radar_2026_07_13_created_agents.json, /tmp/radar_2026_07_13_updated_agents.json, /tmp/radar_2026_07_13_created_mcp_rag_workflow.json, /tmp/radar_2026_07_13_created_vertical_agents.json, /tmp/radar_2026_07_13_created_recent_agentic.json and /tmp/radar_2026_07_13_created_product_surface.json. Selected repository metadata, root contents and READMEs were audited under /tmp/radar_2026_07_13_repo_audit. No third-party repo was cloned, installed, built, credentialed, or run locally; runnability is inferred from README, root files, manifests, Docker/config files, tests, docs, examples, assets and skill/plugin surfaces.",
+  "trend_observations": "Fresh signals cluster around governed agentic IDEs, multi-agent runtimes with audit/replay surfaces, vertical agent workspaces for APK patching, travel guides, local chat summarization and AI companion calls, plus Codex/Claude-specific observability products. The strongest projects make the agent action loop inspectable through an IDE, dashboard, MCP server, transcript viewer or deployment workflow; prompt packs, awesome lists, suspicious free-model wrappers and pure benchmark/education repos remain noisy.",
+  "assumptions": "Scores favor repositories created or materially updated in the 2026-07-11 to 2026-07-13 window, with a concrete product surface, runnable UI/CLI/API/MCP/workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be gamed or noisy; repeated projects from recent runs are only promoted when there is a fresh product-shape signal. No clone/install/runtime audit was performed today.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-13\n\n数据窗口：2026-07-11 00:00 to 2026-07-13 15:35 Asia/Shanghai; GitHub Search API batches for newly created and actively pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API metadata/root-content/README audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-11 to 2026-07-13 window, with a concrete product surface, runnable UI/CLI/API/MCP/workflow, clear user scenario, and enough docs/examples/tests to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and can be gamed or noisy; repeated projects from recent runs are only promoted when there is a fresh product-shape signal. No clone/install/runtime audit was performed today.\n\n## Top Projects\n\n1. [mereyabdenbekuly-ctrl/clodex-ide](https://github.com/mereyabdenbekuly-ctrl/clodex-ide) - Local-first Governed Agentic IDE - Score 90\n   - 做什么：Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.\n   - 面向谁：Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.\n   - AI native 点：Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.\n   - 可运行性判断：Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.\n   - 建议动作：Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action.\n\n2. [Paresh-Maheshwari/morphe-ai](https://github.com/Paresh-Maheshwari/morphe-ai) - Multi-agent APK Patching Workspace - Score 86\n   - 做什么：AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.\n   - 面向谁：Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.\n   - AI native 点：Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.\n   - 可运行性判断：Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.\n   - 建议动作：Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts.\n\n3. [sandbaseai/managed-agents](https://github.com/sandbaseai/managed-agents) - Local-first Enterprise Agent Runtime - Score 85\n   - 做什么：Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.\n   - 面向谁：Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.\n   - AI native 点：Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.\n   - 可运行性判断：Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.\n   - 建议动作：Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use.\n\n4. [youxiandechilun/Guido](https://github.com/youxiandechilun/Guido) - Scenic-area AI Digital Guide - Score 83\n   - 做什么：Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.\n   - 面向谁：Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.\n   - AI native 点：Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.\n   - 可运行性判断：Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.\n   - 建议动作：Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue.\n\n5. [kitforai/kitforai](https://github.com/kitforai/kitforai) - Persistent Memory and RAG Developer Hub - Score 82\n   - 做什么：Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.\n   - 面向谁：Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.\n   - AI native 点：Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.\n   - 可运行性判断：Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.\n   - 建议动作：Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries.\n\n6. [S40911120/recensa](https://github.com/S40911120/recensa) - Claude Code Session Audit Viewer - Score 80\n   - 做什么：Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.\n   - 面向谁：Developers and teams using coding agents who need post-run observability over what agents did across sessions.\n   - AI native 点：Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.\n   - 可运行性判断：Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.\n   - 建议动作：Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity.\n\n7. [Cheiineeey/callhome](https://github.com/Cheiineeey/callhome) - Self-hosted Voice-call Stack for AI Companions - Score 79\n   - 做什么：Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.\n   - 面向谁：AI companion builders exploring phone-call interaction loops with local voice processing boundaries.\n   - AI native 点：Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.\n   - 可运行性判断：Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.\n   - 建议动作：Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls.\n\n8. [yung13yubabie/line-summary](https://github.com/yung13yubabie/line-summary) - Local LINE Chat Summary MCP - Score 78\n   - 做什么：Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.\n   - 面向谁：Claude Code users who want private local summaries of LINE conversations on their own Windows machine.\n   - AI native 点：Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.\n   - 增长/活跃信号：Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.\n   - 可运行性判断：Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.\n   - 建议动作：Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory.\n\n9. [RongleCat/grok-go](https://github.com/RongleCat/grok-go) - Local Multi-account Grok Gateway for Codex - Score 77\n   - 做什么：Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.\n   - 面向谁：Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.\n   - AI native 点：Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.\n   - 可运行性判断：Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.\n   - 建议动作：Inspect credential storage and rate-limit behavior before connecting real accounts.\n\n10. [ShadoW-Shinigami/lyric-video-director](https://github.com/ShadoW-Shinigami/lyric-video-director) - Agent Skill for Lyric Video Direction - Score 76\n   - 做什么：Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.\n   - 面向谁：Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.\n   - AI native 点：Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.\n   - 增长/活跃信号：Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.\n   - 可运行性判断：Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.\n   - 建议动作：Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims.\n\n## Watchlist\n\n- [mrbear1024/ai-content-kb](https://github.com/mrbear1024/ai-content-kb) - Review-first AI Content Knowledge Base - Score 74 - Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems. 建议：Mine the schema and review loop; do not treat it as a turnkey app yet.\n- [rolandwonglonam/rw-research-skill](https://github.com/rolandwonglonam/rw-research-skill) - Research Workflow Skills - Score 73 - Standalone research workflow skills for questions, literature, evidence, design, writing and submission. 建议：Watch for examples showing evidence traceability and output QA.\n- [mate-matt/rag-memory-lab](https://github.com/mate-matt/rag-memory-lab) - Local RAG Memory Lab - Score 72 - Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services. 建议：Borrow evaluation/evidence-card patterns for product RAG QA.\n- [OthmanAdi/plandeck](https://github.com/OthmanAdi/plandeck) - Visual Kanban for Long-running Agents - Score 71 - Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible. 建议：Re-audit root contents and screenshots before promoting.\n- [epoko77-ai/korean-bill-debate-mcp](https://github.com/epoko77-ai/korean-bill-debate-mcp) - Korean Legislative Records MCP - Score 70 - MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements. 建议：Check API source coverage and citation behavior.\n- [whoisqwerz/pocket_disasm](https://github.com/whoisqwerz/pocket_disasm) - Multi-session IDALib MCP Router - Score 69 - MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools. 建议：Watch for safe sample binaries, permission model and reproducible workflows.\n\n## Skip Reasons\n\n- [LonghornSilicon/awesome-ai-accelerators](https://github.com/LonghornSilicon/awesome-ai-accelerators) - Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow.\n- [calesthio/generative-media-skills](https://github.com/calesthio/generative-media-skills) - Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement.\n- [JosephHampton/awesome-gemini-cli-subagents](https://github.com/JosephHampton/awesome-gemini-cli-subagents) - Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs.\n- [berkayyytech/vortex](https://github.com/berkayyytech/vortex) - Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search.\n- [Nexis-AI/NexBench](https://github.com/Nexis-AI/NexBench) - Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today.\n- [claudemythos5/Claude-Mythos-5-AI-free](https://github.com/claudemythos5/Claude-Mythos-5-AI-free) - Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk.\n- [chatgpt-56/ChatGPT-5.6-Free-Codex](https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex) - Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product.\n- [CrestMessengerLearn/CapCut-Pro-Video-Editor](https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor) - Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface.\n\n类型级跳过原因：纯 prompt collection、awesome list、论文/benchmark-only、免费模型 SEO 壳、只有 README 没有可运行代码或明显营销下载仓库，均降权或排除；这些类型原因不会写入 JSON skipped_projects 的伪造 repo。\n\n## 今日趋势观察\n\n1. Governed coding-agent IDEs are moving from chat wrappers to release-evidence workbenches: Clodex leads because it exposes app/package/docs/security/release surfaces around autonomous execution.\n2. Agent runtimes are becoming operational products: Managed Agents, Recensa and PlanDeck all make sessions, audit, replay, approvals or plan state visible.\n3. Vertical agent apps are more compelling than generic assistants when they own a workflow: Morphe AI, Guido, line-summary and Callhome each bind AI to a concrete environment.\n4. MCP remains the dominant packaging layer for local private tools, especially chat history, search, legislative records and reverse engineering.\n5. Creative/media agent skills continue to grow, but repeated coverage requires new runtime evidence, not only extra stars.\n\n## 今日建议动作\n\n- Prototype Clodex or Managed Agents only on disposable repos/tasks and judge evidence quality before model quality.\n- Compare Recensa with existing Codex/Claude transcript storage to see whether replay/search changes review behavior.\n- Treat LINE/chat/voice companion projects as privacy-sensitive; test with synthetic or self-owned data only.\n- Re-audit PlanDeck and the niche MCP projects tomorrow if root-content API responses become complete.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_13_created_agents.json, /tmp/radar_2026_07_13_updated_agents.json, /tmp/radar_2026_07_13_created_mcp_rag_workflow.json, /tmp/radar_2026_07_13_created_vertical_agents.json, /tmp/radar_2026_07_13_created_recent_agentic.json, /tmp/radar_2026_07_13_created_product_surface.json.\n- GitHub repository metadata, root contents and READMEs for selected candidates under /tmp/radar_2026_07_13_repo_audit.\n- No clone, install, Docker, npm/pnpm, Python, Rust/Tauri, Java/Spring, Android, Windows, browser, telephony, MCP client, model-provider, credentialed runtime, media rendering or security/binary-analysis audit was performed today.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "mereyabdenbekuly-ctrl/clodex-ide",
+      "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+      "category": "Local-first Governed Agentic IDE",
+      "score": 90,
+      "summary": "Local-first, zero-trust agentic IDE for verifiable autonomous software development with governed execution and release-evidence surfaces.",
+      "audience": "Software teams evaluating autonomous coding agents but needing local control, audit trails and governed execution before trusting real repo changes.",
+      "ai_native_angle": "Turns coding-agent work into an IDE-level product loop: agent workspace, governed execution, release evidence, security docs and verifiable autonomy rather than chat-only code generation.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 691 stars and 148 forks; root audit found apps, packages, agent, docs, release-evidence, package.json, pnpm workspace, security and contributor docs.",
+      "runnability": "Strong monorepo/product signal with web app, packages and docs. No pnpm install, local IDE boot, sandbox execution or release-evidence replay was run.",
+      "recommended_action": "Run the smallest local workspace demo in a disposable repo and inspect what evidence is produced for every autonomous action."
+    },
+    {
+      "rank": 2,
+      "full_name": "Paresh-Maheshwari/morphe-ai",
+      "url": "https://github.com/Paresh-Maheshwari/morphe-ai",
+      "category": "Multi-agent APK Patching Workspace",
+      "score": 86,
+      "summary": "AI-powered Android APK patching workspace that coordinates APK analysis, decompilation, target hunting, patch writing, build and deployment.",
+      "audience": "Mobile reverse-engineering, QA and security teams exploring AI-assisted APK modification workflows.",
+      "ai_native_angle": "Frames APK modification as a multi-agent pipeline with steering context and setup CLI rather than a single reverse-engineering prompt.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 73 stars and 9 forks; root audit found .env.example, AGENTS.md, README and setup-cli.sh.",
+      "runnability": "Concrete workflow surface but thin code surface in root audit; no Android toolchain, decompiler, build or device deployment test was performed.",
+      "recommended_action": "Audit legal/safety boundaries first, then try the workflow only on a self-owned toy APK and verify reproducible patch artifacts."
+    },
+    {
+      "rank": 3,
+      "full_name": "sandbaseai/managed-agents",
+      "url": "https://github.com/sandbaseai/managed-agents",
+      "category": "Local-first Enterprise Agent Runtime",
+      "score": 85,
+      "summary": "Open-source Claude Managed Agents-compatible runtime for local multi-agent systems with sessions, tools, approvals, memory, credential vaults, audit trails and a dashboard.",
+      "audience": "Enterprise teams moving agent prototypes toward controllable local runtime infrastructure.",
+      "ai_native_angle": "Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-13; 34 stars and 1 fork; root audit found apps, docs, examples, tests, package.json, package-lock and TypeScript build config.",
+      "runnability": "Good local runtime/dashboard signal. No one-command start, model connection, MCP tool call or audit replay was executed.",
+      "recommended_action": "Run with a local mock model/tool and inspect whether approvals, credential handling and replay data are sufficient for team use."
+    },
+    {
+      "rank": 4,
+      "full_name": "youxiandechilun/Guido",
+      "url": "https://github.com/youxiandechilun/Guido",
+      "category": "Scenic-area AI Digital Guide",
+      "score": 83,
+      "summary": "Integrated scenic-area digital guide with text QA, voice interaction, photo recognition, local RAG, route recommendation, analytics, UniApp tourist app, Vue 3 admin and Spring Boot backend.",
+      "audience": "Tourism operators and local-service builders who need a concrete AI guide product rather than a generic chatbot demo.",
+      "ai_native_angle": "Combines local RAG, multimodal tourist interaction, model-provider adaptation and operations analytics into one vertical product loop.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-11; 61 stars and 1 fork; root audit found admin-web, backend, database, docs, assets and tourist-app.",
+      "runnability": "Strong full-stack product structure with database and multiple clients. No backend boot, UniApp build, model configuration or photo-recognition smoke test was run.",
+      "recommended_action": "Review the local RAG schema and run one scenic-spot fixture end to end before adapting to a real venue."
+    },
+    {
+      "rank": 5,
+      "full_name": "kitforai/kitforai",
+      "url": "https://github.com/kitforai/kitforai",
+      "category": "Persistent Memory and RAG Developer Hub",
+      "score": 82,
+      "summary": "Developer hub for Kit for AI with SDK, Claude Code plugin, MCP setup, llms.txt and examples around remember/recall, knowledge-base RAG search and document conversion.",
+      "audience": "Agent developers who want a packaged memory/RAG API surface for Codex, Claude Code and MCP workflows.",
+      "ai_native_angle": "Turns persistent memory, cited RAG and document conversion into SDK plus MCP/plugin surfaces that agents can call directly.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 63 stars and 2 forks; root audit found packages, plugins, examples, .claude-plugin, llms.txt and README.",
+      "runnability": "Strong developer-surface signal. No API key, SDK call, MCP registration or document conversion test was performed.",
+      "recommended_action": "Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries."
+    },
+    {
+      "rank": 6,
+      "full_name": "S40911120/recensa",
+      "url": "https://github.com/S40911120/recensa",
+      "category": "Claude Code Session Audit Viewer",
+      "score": 80,
+      "summary": "Self-hosted web viewer for Claude Code session transcripts with read, search, replay and audit workflows while keeping transcripts local.",
+      "audience": "Developers and teams using coding agents who need post-run observability over what agents did across sessions.",
+      "ai_native_angle": "Makes agent transcripts a searchable/replayable operational surface instead of buried chat logs.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 20 stars and 2 forks; root audit found Dockerfile, docker-compose.yml, backend, frontend, assets and docs-style governance files.",
+      "runnability": "Good self-hosted app signal with frontend/backend and Docker. No docker compose run, transcript import or replay audit was performed.",
+      "recommended_action": "Try against a copied Codex/Claude transcript directory and inspect redaction, search relevance and replay fidelity."
+    },
+    {
+      "rank": 7,
+      "full_name": "Cheiineeey/callhome",
+      "url": "https://github.com/Cheiineeey/callhome",
+      "category": "Self-hosted Voice-call Stack for AI Companions",
+      "score": 79,
+      "summary": "Open-source voice-call stack where an AI companion can place outbound calls, hang up gently and leave voicemails, with gateway, STT and UI concept pieces.",
+      "audience": "AI companion builders exploring phone-call interaction loops with local voice processing boundaries.",
+      "ai_native_angle": "Moves companion interaction from chat into evented phone-call behavior with call intent markers, voicemail and self-hosted voice services.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 21 stars and 4 forks; root audit found docs, gateway-reference, stt-service, ui-concept and bilingual README.",
+      "runnability": "Clear product concept and component split. No telephony gateway, STT service, UI flow or companion-call simulation was run.",
+      "recommended_action": "Prototype with a fake telephony adapter first and review consent, interruption and safety rules before real outbound calls."
+    },
+    {
+      "rank": 8,
+      "full_name": "yung13yubabie/line-summary",
+      "url": "https://github.com/yung13yubabie/line-summary",
+      "category": "Local LINE Chat Summary MCP",
+      "score": 78,
+      "summary": "Windows-only MCP server that lets Claude Code read local LINE Desktop chat history and generate daily summaries without network upload.",
+      "audience": "Claude Code users who want private local summaries of LINE conversations on their own Windows machine.",
+      "ai_native_angle": "Wraps local encrypted chat extraction and summary generation as an MCP tool for an agent client.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-12; 26 stars and 4 forks; root audit found .mcp.json, Python scripts, requirements, skills, spike and tests.",
+      "runnability": "Good MCP/tooling signal but platform-specific and sensitive. No Windows memory-key extraction, DB read or Claude Code MCP call was run.",
+      "recommended_action": "Review privacy/consent boundaries and test only on your own exportable chat data before touching live LINE memory."
+    },
+    {
+      "rank": 9,
+      "full_name": "RongleCat/grok-go",
+      "url": "https://github.com/RongleCat/grok-go",
+      "category": "Local Multi-account Grok Gateway for Codex",
+      "score": 77,
+      "summary": "Local multi-account Grok gateway for Codex with API and MCP surfaces, packaged as a Vite/Tauri-style app with docs and assets.",
+      "audience": "Codex users who need a local gateway layer around multiple Grok accounts and agent tool access.",
+      "ai_native_angle": "Provides an agent-facing local gateway/API/MCP bridge rather than asking users to manually juggle accounts or prompts.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-12; 25 stars and 2 forks; root audit found package.json, pnpm-lock, src, src-tauri, docs, public, scripts and bilingual README.",
+      "runnability": "Strong local app/package signal. No pnpm install, Tauri build, account connection, API call or MCP client test was performed.",
+      "recommended_action": "Inspect credential storage and rate-limit behavior before connecting real accounts."
+    },
+    {
+      "rank": 10,
+      "full_name": "ShadoW-Shinigami/lyric-video-director",
+      "url": "https://github.com/ShadoW-Shinigami/lyric-video-director",
+      "category": "Agent Skill for Lyric Video Direction",
+      "score": 76,
+      "summary": "Hermes Agent skill for typography-led lyric videos using image/video generation providers and deterministic exact-text QC against lyrics and audio.",
+      "audience": "Music/video creators who want an agent workflow for lyric-video ideation, reference generation and quality control.",
+      "ai_native_angle": "Packages creative direction, provider orchestration and text/audio QC as an installable agent skill with templates and scripts.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-11; 40 stars and 8 forks; root audit found SKILL.md, scripts, references, templates and README.",
+      "runnability": "Good skill/product packaging. No media provider calls, lyric timing input, render or QC run was performed.",
+      "recommended_action": "Use only rights-cleared lyrics/audio and run a 15-second fixture to check exact-text and audio-preservation claims."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "mrbear1024/ai-content-kb",
+      "url": "https://github.com/mrbear1024/ai-content-kb",
+      "category": "Review-first AI Content Knowledge Base",
+      "score": 74,
+      "summary": "Markdown, Obsidian and Codex-oriented reference architecture for AI-assisted personal content knowledge systems.",
+      "audience": "Researchers, writers and educators building review-first knowledge bases.",
+      "ai_native_angle": "Encodes source review, typed YAML relationships and Codex/Obsidian workflows as an AI-native content system.",
+      "growth_signal": "Created 2026-07-11; 100 stars; root audit found .kb, .obsidian, docs, products, raw, sources and wiki.",
+      "runnability": "Useful reference/product architecture, but less runnable than app/CLI/API candidates.",
+      "recommended_action": "Mine the schema and review loop; do not treat it as a turnkey app yet."
+    },
+    {
+      "full_name": "rolandwonglonam/rw-research-skill",
+      "url": "https://github.com/rolandwonglonam/rw-research-skill",
+      "category": "Research Workflow Skills",
+      "score": 73,
+      "summary": "Standalone research workflow skills for questions, literature, evidence, design, writing and submission.",
+      "audience": "Academic and applied researchers using agentic writing/research assistants.",
+      "ai_native_angle": "Turns research stages into reusable agent skills.",
+      "growth_signal": "Created 2026-07-11, pushed 2026-07-13; 49 stars and 7 forks.",
+      "runnability": "Promising workflow packaging but not yet audited deeply enough for Top.",
+      "recommended_action": "Watch for examples showing evidence traceability and output QA."
+    },
+    {
+      "full_name": "mate-matt/rag-memory-lab",
+      "url": "https://github.com/mate-matt/rag-memory-lab",
+      "category": "Local RAG Memory Lab",
+      "score": 72,
+      "summary": "Notebook-driven local RAG learning project covering chunking, indexing, hybrid retrieval, reranking and evidence cards without external generation services.",
+      "audience": "Builders learning RAG internals before productizing memory systems.",
+      "ai_native_angle": "Useful as a hands-on evidence-card/RAG substrate even though it is educational.",
+      "growth_signal": "Created 2026-07-12; 24 stars; root audit found notebooks, knowledge-base, artifacts, assets, src, pyproject, uv.lock and Makefile.",
+      "runnability": "Likely runnable locally, but education-first rather than product-first.",
+      "recommended_action": "Borrow evaluation/evidence-card patterns for product RAG QA."
+    },
+    {
+      "full_name": "OthmanAdi/plandeck",
+      "url": "https://github.com/OthmanAdi/plandeck",
+      "category": "Visual Kanban for Long-running Agents",
+      "score": 71,
+      "summary": "Visual Kanban concept for long-running AI agents where dependencies unlock into Ready and the next move is visible.",
+      "audience": "Agent operators who dislike reading long markdown plans.",
+      "ai_native_angle": "Attempts to turn an agent plan into a live operational board.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 17 stars.",
+      "runnability": "API metadata was promising, but README/root audit did not complete; keep below Top until code surface is verified.",
+      "recommended_action": "Re-audit root contents and screenshots before promoting."
+    },
+    {
+      "full_name": "epoko77-ai/korean-bill-debate-mcp",
+      "url": "https://github.com/epoko77-ai/korean-bill-debate-mcp",
+      "category": "Korean Legislative Records MCP",
+      "score": 70,
+      "summary": "MCP for exploring Korean National Assembly bills, committees, records, review reports and official statements.",
+      "audience": "Policy researchers and civic-tech builders needing source-grounded Korean legislative search.",
+      "ai_native_angle": "Makes official civic records queryable through an agent tool surface.",
+      "growth_signal": "Created 2026-07-12, pushed 2026-07-13; 16 stars and 4 forks.",
+      "runnability": "Niche but credible MCP direction; root audit was incomplete.",
+      "recommended_action": "Check API source coverage and citation behavior."
+    },
+    {
+      "full_name": "whoisqwerz/pocket_disasm",
+      "url": "https://github.com/whoisqwerz/pocket_disasm",
+      "category": "Multi-session IDALib MCP Router",
+      "score": 69,
+      "summary": "MCP router for coding agents to analyze multiple binaries in parallel with IDA-compatible reverse-engineering tools.",
+      "audience": "Reverse engineers experimenting with agent-assisted binary analysis.",
+      "ai_native_angle": "Connects an agent client to multi-session disassembly tooling.",
+      "growth_signal": "Created 2026-07-12; 15 stars.",
+      "runnability": "Interesting but security-sensitive and not deeply audited today.",
+      "recommended_action": "Watch for safe sample binaries, permission model and reproducible workflows."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "LonghornSilicon/awesome-ai-accelerators",
+      "url": "https://github.com/LonghornSilicon/awesome-ai-accelerators",
+      "skip_reason": "Curated resource list for AI accelerators; useful reference but not a runnable AI-native product, app, CLI, API or MCP workflow."
+    },
+    {
+      "full_name": "calesthio/generative-media-skills",
+      "url": "https://github.com/calesthio/generative-media-skills",
+      "skip_reason": "Strong project, but already promoted as a Top project on 2026-07-12; today it is treated as a continued growth signal rather than repeated Top placement."
+    },
+    {
+      "full_name": "JosephHampton/awesome-gemini-cli-subagents",
+      "url": "https://github.com/JosephHampton/awesome-gemini-cli-subagents",
+      "skip_reason": "Curated subagent collection; weaker product surface than tools with executable loops, dashboards or APIs."
+    },
+    {
+      "full_name": "berkayyytech/vortex",
+      "url": "https://github.com/berkayyytech/vortex",
+      "skip_reason": "Well-packaged VPS operations TUI, but explicitly agentless and not primarily an AI-native product despite appearing in agent-related search."
+    },
+    {
+      "full_name": "Nexis-AI/NexBench",
+      "url": "https://github.com/Nexis-AI/NexBench",
+      "skip_reason": "Autonomous-agent benchmark for on-chain tasks; valuable evaluation infrastructure but not a user-facing AI-native product today."
+    },
+    {
+      "full_name": "claudemythos5/Claude-Mythos-5-AI-free",
+      "url": "https://github.com/claudemythos5/Claude-Mythos-5-AI-free",
+      "skip_reason": "Suspicious free-model/desktop-app SEO positioning with weak trustworthy product evidence and potential policy/safety risk."
+    },
+    {
+      "full_name": "chatgpt-56/ChatGPT-5.6-Free-Codex",
+      "url": "https://github.com/chatgpt-56/ChatGPT-5.6-Free-Codex",
+      "skip_reason": "Suspicious free ChatGPT/Codex claims and tutorial-style SEO copy rather than a verifiable runnable product."
+    },
+    {
+      "full_name": "CrestMessengerLearn/CapCut-Pro-Video-Editor",
+      "url": "https://github.com/CrestMessengerLearn/CapCut-Pro-Video-Editor",
+      "skip_reason": "Download/SEO-style repository around a commercial editor; not a credible open-source AI-native product surface."
+    }
+  ]
+}
