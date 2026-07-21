@@ -1,0 +1,237 @@
+{
+  "run_date": "2026-07-22",
+  "generated_at": "2026-07-22T01:36:00+08:00",
+  "data_window": "2026-07-19 00:00 to 2026-07-22 01:36 Asia/Shanghai; GitHub Search API batches for newly created and recently pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API root-content audits for selected candidates.",
+  "source_summary": "Shell curl saved GitHub Search API snapshots to /tmp/radar_2026_07_22_*.json and selected repository root-content audits under /tmp/radar_2026_07_22_repo_audit. No third-party repository was cloned, installed, built, or run locally; runnability is judged from GitHub metadata, README descriptions, root files, app/backend/frontend/CLI/MCP layout, Docker/build files, examples, docs, tests, and package manifests.",
+  "trend_observations": "Fresh AI-native product signals cluster around local native AI apps, agent execution authorization, security/vulnerability agent workbenches, cross-channel agent identity, and operator consoles for multi-agent work. The best candidates expose a durable runtime, native app, SDK, control plane, or deployable workflow; prompt-only skill packs, tutorials, SEO/free-model wrappers, and README-only concepts remain lower priority.",
+  "assumptions": "Scores favor repositories created or materially updated in the 2026-07-19 to 2026-07-22 window with a concrete product surface, runnable UI/CLI/API/MCP/SDK/workflow, clear user scenario, and enough docs or root structure to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and may be noisy. Local runtime, credential, model-provider, payment, browser, mobile, voice, security and financial audits were not performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-22\n\n数据窗口：2026-07-19 00:00 to 2026-07-22 01:36 Asia/Shanghai; GitHub Search API batches for newly created and recently pushed AI agent, LLM app, RAG, MCP, workflow, browser/code/voice-agent, automation and AI-product repositories; targeted GitHub API root-content audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-19 to 2026-07-22 window with a concrete product surface, runnable UI/CLI/API/MCP/SDK/workflow, clear user scenario, and enough docs or root structure to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and may be noisy. Local runtime, credential, model-provider, payment, browser, mobile, voice, security and financial audits were not performed.\n\n## Top Projects\n\n1. [Blaizzy/nativ](https://github.com/Blaizzy/nativ) - Native Local AI Mac App - Score 91\n   - 做什么：Native macOS app for chatting with, serving, monitoring and connecting MLX models locally from one Mac interface.\n   - 面向谁：Mac users and local-model builders who want a native assistant/model server surface without leaving the desktop.\n   - AI native 点：Packages local model chat, serving and monitoring as a first-class native app, moving local AI from terminal scripts into a daily-use product surface.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; GitHub Search/API showed 542 stars and 33 forks; root audit found Nativ.xcodeproj, Swift Sources, Makefile, project.yml, PythonDistribution, scripts and website.\n   - 可运行性判断：Strong native app signal with Xcode project, Swift sources and website. No Xcode build, MLX model load or local server smoke test was performed.\n   - 建议动作：Trial on a disposable Mac model setup; verify model import, local serving endpoint, monitoring depth and resource usage.\n\n2. [eli-labz/Agent-Execution-Partnership](https://github.com/eli-labz/Agent-Execution-Partnership) - Agent Execution Authorization Control Plane - Score 88\n   - 做什么：Open-source control plane intended to authorize, log and govern AI agent actions before execution.\n   - 面向谁：Teams experimenting with autonomous agents who need approval gates, policies and evidence before allowing tool actions.\n   - AI native 点：Treats every agent action as an auditable transaction with authorization, policies, schemas and governance materials rather than implicit tool execution.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; GitHub Search showed 251 stars and 75 forks; root audit found Dockerfile, docker-compose, Makefile, pyproject, src, schemas, policies, docs, examples, simulations, tests, alembic and governance/security docs.\n   - 可运行性判断：Strong control-plane structure with container and Python project files, tests and migrations. No service boot, policy simulation or tool-action execution audit was run.\n   - 建议动作：Run the example simulation and inspect whether approvals, evidence hashes and policy failures are understandable enough for real agent operations.\n\n3. [Kritt-ai/open-kritt](https://github.com/Kritt-ai/open-kritt) - AI Security Agent Workbench - Score 87\n   - 做什么：Platform for orchestrating AI agents to find real vulnerabilities in code, with engine, executor view, frontend, backend and docs.\n   - 面向谁：Application security teams and engineering orgs that want agent-assisted vulnerability discovery with inspectable workflow surfaces.\n   - AI native 点：Frames security review as a coordinated agent workflow with executor visibility, backend/frontend surfaces, database and documentation instead of a one-shot scanner prompt.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; 204 stars and 44 forks; root audit found backend, frontend, engine, executor-view, database, docker-compose files, docs, docs-site, scripts and release/security/contribution materials.\n   - 可运行性判断：Very strong full-stack/runtime signal through Docker Compose and separate engine/UI components. No container boot, target repo scan or finding validation was performed.\n   - 建议动作：Run only against a toy vulnerable repo first; evaluate false positives, evidence quality and sandbox boundaries before using on private code.\n\n4. [TryCaspian/caspian-sdk](https://github.com/TryCaspian/caspian-sdk) - Cross-channel Agent Identity SDK - Score 84\n   - 做什么：SDK and app/packages layer for giving an AI agent one identity across Slack, Discord, Telegram, Instagram, email and X.\n   - 面向谁：Agent builders who need durable user-facing identity and channel presence across messaging surfaces.\n   - AI native 点：Moves agents from single-channel bots toward persistent identities with SDKs, packages, examples and llms.txt for agent-readable integration.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; 76 stars and 1 fork; root audit found apps, packages, sdks, examples, assets, pyproject, uv.lock, llms.txt, bilingual README and security/contribution files.\n   - 可运行性判断：Good SDK/product structure with examples and package layout, but channel credentials and real integrations were not tested.\n   - 建议动作：Inspect auth, account-linking and channel permission model; test with one low-risk channel before adopting cross-channel identity primitives.\n\n5. [risa-labs-inc/BossConsole](https://github.com/risa-labs-inc/BossConsole) - Multi-platform Agent Operator Console - Score 82\n   - 做什么：Native multi-threaded operator console for running and observing Claude Code, Gemini CLI, Codex CLI, Cursor agent and browser agents.\n   - 面向谁：Heavy coding-agent users managing multiple agent sessions across local projects and platforms.\n   - AI native 点：Turns agent operation into a multi-platform console with threads, browser/RPA hooks and native app packaging instead of disconnected terminals.\n   - 增长/活跃信号：Created 2026-07-21, pushed 2026-07-21; 30 stars; root audit found Gradle/Kotlin project files, composeApp, iosApp, modules, plugin-platform, server, supabase, docs, scripts, build Windows docs and RPA test page.\n   - 可运行性判断：Ambitious app structure across JVM/Compose/iOS/server surfaces. No Gradle build, agent connection, browser harness or packaged app run was performed.\n   - 建议动作：Watch closely; try only after checking setup path and whether Codex/Claude session management works with local credentials safely.\n\n6. [Blueturboguy07/NitroAI](https://github.com/Blueturboguy07/NitroAI) - Local-first AI Study Workspace - Score 80\n   - 做什么：Local-first desktop/web study app that turns lectures, PDFs and videos into notes, flashcards, quizzes and study chat.\n   - 面向谁：Students and self-learners who want AI study workflows around personal course materials without sending everything to a hosted SaaS.\n   - AI native 点：Combines ingestion, transformation, retrieval/chat and quiz generation into a single local learning workflow rather than a generic chatbot.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; 19 stars and 3 forks; root audit found Electron, Tauri, server, docs, build resources, Vite, tests, package-lock and scripts.\n   - 可运行性判断：Product-shaped local app with desktop build assets and server folder, but no file ingestion, video parsing, quiz generation or local build test was run.\n   - 建议动作：Trial with a small non-sensitive PDF/video and compare output quality and offline/privacy claims against mature study tools.\n\n7. [AIPAYagent/aipay-protocol](https://github.com/AIPAYagent/aipay-protocol) - Agent Payment Escrow Protocol - Score 78\n   - 做什么：Verifier-backed USDC escrow protocol for AI agents using signed orders, evidence hashes, Polygon deposits and deterministic settlement.\n   - 面向谁：Agent-commerce builders exploring payment rails where autonomous work needs proof, escrow and settlement.\n   - AI native 点：Connects agent actions to evidence-backed payment settlement, which is an important primitive if agents are paid for verifiable work.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; 30 stars; root audit found contracts, frontend, packages, verifiers, docs, tests, scripts, package.json and .env.example.\n   - 可运行性判断：Concrete protocol/app shape with smart contracts and verifier packages, but no contract audit, testnet deployment or payment flow was executed.\n   - 建议动作：Study as a design pattern only; require security review and testnet-only experiments before any real funds.\n\n8. [0xwilliamortiz/agents-council](https://github.com/0xwilliamortiz/agents-council) - Multi-agent Coding Review Plugin - Score 76\n   - 做什么：Claude Code plugin for orchestrating multiple agents such as Codex CLI and Gemini CLI to provide diverse coding perspectives.\n   - 面向谁：Developers who want a lightweight council/review loop across multiple coding agents from one Claude Code workflow.\n   - AI native 点：Productizes multi-agent review as a local plugin with config, bin entry and skills rather than asking users to manually copy prompts across tools.\n   - 增长/活跃信号：Created 2026-07-20, pushed 2026-07-21; 91 stars and 1 fork; root audit found package.json, bin, skills, council.config.yaml, AGENTS.md and bilingual README files.\n   - 可运行性判断：Runnable-looking npm/plugin surface, but narrower than full app/control-plane candidates and no Claude/Codex/Gemini integration was tested.\n   - 建议动作：Try in a disposable repo and measure whether multi-agent disagreement produces actionable review improvements or only extra noise.\n\n## Watchlist\n\n- [firelock-ai/kin](https://github.com/firelock-ai/kin) - Semantic Record for AI-written Software - Score 74 - Graph-based semantic system of record for AI-written software, tracking entities and relations rather than only file diffs. 建议：Compare with Brain0/Hunch-style provenance tools if coding-agent audit becomes a priority.\n- [MarwanAljijakli/agentkernel](https://github.com/MarwanAljijakli/agentkernel) - Transactional Agent Effects Runtime - Score 73 - Runtime for AI agent effects with explicit authority, staged commits, recovery and tamper-evident evidence. 建议：Watch for examples that show staged commits and recovery on real tool calls.\n- [burakgon/rvmp](https://github.com/burakgon/rvmp) - Browser-based Coding Agent Orchestrator - Score 72 - Self-hosted browser orchestrator for AI coding agents with terminals, Kanban routing and review flow. 建议：Watch for demo screenshots and a one-command local start path.\n- [GML-MMGroup/Blabber](https://github.com/GML-MMGroup/Blabber) - Agentic Podcast Video Generator - Score 70 - Prompt-to-animated-podcast concept with AI-written dialogue, dual hosts, dubbing, lip sync and auto camera/editing. 建议：Track for code release; skip immediate runtime trials.\n- [Chillsbro/parterre](https://github.com/Chillsbro/parterre) - Terminal Browser-agent Control Surface - Score 69 - Terminal tool for watching and controlling how AI agents browse, test and debug. 建议：Watch; trial only after inspecting install script and sandboxing behavior.\n- [loonggg/LLM-WIKI](https://github.com/loonggg/LLM-WIKI) - Self-growing AI Knowledge Base Skill - Score 68 - A self-growing AI knowledge base packaged as a skill with scripts and references. 建议：Mine workflow ideas; avoid promoting until examples show retrieval quality and data boundaries.\n\n## Skip Reasons\n\n- [liangdabiao/stem-illustration-skill](https://github.com/liangdabiao/stem-illustration-skill) - Useful STEM image-generation skill pack, but primarily prompt/template content rather than a durable runnable app, API or control plane.\n- [irenerachel/style-pack-skill](https://github.com/irenerachel/style-pack-skill) - Style extraction/generation skill pack; narrower creative prompt workflow and weaker product surface than full creative tools.\n- [karminski/VibeGamer](https://github.com/karminski/VibeGamer) - Interesting agent-playing-game experiment, but positioned as an experiment rather than a reusable product surface today.\n- [dusk-futile/idea-universe](https://github.com/dusk-futile/idea-universe) - Research-aware brainstorming prompt/workflow; no strong standalone runtime or user-facing product evidence.\n- [HealerCodeLabs/ai-knowledge-rag-langchain](https://github.com/HealerCodeLabs/ai-knowledge-rag-langchain) - Likely tutorial/demo RAG repository with sparse metadata; insufficient product-shaped signal.\n- [HealerCodeLabs/ai-semantic-search-api](https://github.com/HealerCodeLabs/ai-semantic-search-api) - Small semantic-search API demo signal; not enough differentiated AI-native product surface for today.\n- [MahalaxmiMacha/LLM-Based-Autonomous-Browser-Agent](https://github.com/MahalaxmiMacha/LLM-Based-Autonomous-Browser-Agent) - Autonomous browser-agent demo with very low traction; keep out of Top until setup, safety and product boundaries are clearer.\n- [dhruvbhavsar0612/browser-agent-web](https://github.com/dhruvbhavsar0612/browser-agent-web) - Launch/landing-page style browser-agent repository; current evidence suggests marketing surface more than runnable software.\n\n类型级跳过原因：纯 prompt collection、awesome list、教程/课程、论文/benchmark-only、免费模型 SEO 壳、只有 README 没有可运行代码、明显营销下载仓库，均降权或排除；这些类型原因不会写入 JSON skipped_projects 的伪造 repo。\n\n## 今日趋势观察\n\n1. Local native AI apps are back as a strong product shape: Nativ turns local MLX chat/serving/monitoring into a Mac app rather than a CLI-only workflow.\n2. Agent trust infrastructure is splitting into authorization, transactional effects, semantic records and evidence-backed payments; AEP, AgentKernel, Kin and AIPAY show adjacent primitives.\n3. Security is becoming a natural vertical for agents because orchestration, evidence and review loops can be inspected; Open Kritt is the clearest fresh example.\n4. Multi-agent work is moving from prompt packs to operator surfaces: BossConsole, Agents Council and RVMP all try to make concurrent agent work visible and routable.\n5. Cross-channel and local-first vertical apps are practical AI-native entry points, especially study workspaces, agent identities and browser/control tools.\n\n## 今日建议动作\n\n- First trial: Nativ, because local model UX is directly inspectable and may influence Mac-native AI workbench design.\n- Security/control-plane trial: run Open Kritt and Agent Execution Partnership only on toy targets to judge evidence quality and sandboxing.\n- Watch closely: BossConsole and Caspian SDK, because agent operation and cross-channel identity may become durable product primitives.\n- Avoid immediate adoption of payment/security-sensitive projects such as AIPAY until contracts, verifiers and policy boundaries are audited.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_22_created_agents.json, /tmp/radar_2026_07_22_created_mcp.json, /tmp/radar_2026_07_22_created_llm_rag_assistant.json, /tmp/radar_2026_07_22_recent_updates.json, /tmp/radar_2026_07_22_code_agent.json, /tmp/radar_2026_07_22_browser_agent.json, /tmp/radar_2026_07_22_voice_agent.json, /tmp/radar_2026_07_22_workflow_automation.json.\n- GitHub repository root-content audits for selected candidates under /tmp/radar_2026_07_22_repo_audit.\n- No clone, install, Docker, npm/pnpm/Bun, Python, Swift/Xcode, Kotlin/Gradle, browser, voice, payment, security scan, model-provider or credentialed runtime audit was performed today.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Blaizzy/nativ",
+      "url": "https://github.com/Blaizzy/nativ",
+      "category": "Native Local AI Mac App",
+      "score": 91,
+      "summary": "Native macOS app for chatting with, serving, monitoring and connecting MLX models locally from one Mac interface.",
+      "audience": "Mac users and local-model builders who want a native assistant/model server surface without leaving the desktop.",
+      "ai_native_angle": "Packages local model chat, serving and monitoring as a first-class native app, moving local AI from terminal scripts into a daily-use product surface.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; GitHub Search/API showed 542 stars and 33 forks; root audit found Nativ.xcodeproj, Swift Sources, Makefile, project.yml, PythonDistribution, scripts and website.",
+      "runnability": "Strong native app signal with Xcode project, Swift sources and website. No Xcode build, MLX model load or local server smoke test was performed.",
+      "recommended_action": "Trial on a disposable Mac model setup; verify model import, local serving endpoint, monitoring depth and resource usage."
+    },
+    {
+      "rank": 2,
+      "full_name": "eli-labz/Agent-Execution-Partnership",
+      "url": "https://github.com/eli-labz/Agent-Execution-Partnership",
+      "category": "Agent Execution Authorization Control Plane",
+      "score": 88,
+      "summary": "Open-source control plane intended to authorize, log and govern AI agent actions before execution.",
+      "audience": "Teams experimenting with autonomous agents who need approval gates, policies and evidence before allowing tool actions.",
+      "ai_native_angle": "Treats every agent action as an auditable transaction with authorization, policies, schemas and governance materials rather than implicit tool execution.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; GitHub Search showed 251 stars and 75 forks; root audit found Dockerfile, docker-compose, Makefile, pyproject, src, schemas, policies, docs, examples, simulations, tests, alembic and governance/security docs.",
+      "runnability": "Strong control-plane structure with container and Python project files, tests and migrations. No service boot, policy simulation or tool-action execution audit was run.",
+      "recommended_action": "Run the example simulation and inspect whether approvals, evidence hashes and policy failures are understandable enough for real agent operations."
+    },
+    {
+      "rank": 3,
+      "full_name": "Kritt-ai/open-kritt",
+      "url": "https://github.com/Kritt-ai/open-kritt",
+      "category": "AI Security Agent Workbench",
+      "score": 87,
+      "summary": "Platform for orchestrating AI agents to find real vulnerabilities in code, with engine, executor view, frontend, backend and docs.",
+      "audience": "Application security teams and engineering orgs that want agent-assisted vulnerability discovery with inspectable workflow surfaces.",
+      "ai_native_angle": "Frames security review as a coordinated agent workflow with executor visibility, backend/frontend surfaces, database and documentation instead of a one-shot scanner prompt.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; 204 stars and 44 forks; root audit found backend, frontend, engine, executor-view, database, docker-compose files, docs, docs-site, scripts and release/security/contribution materials.",
+      "runnability": "Very strong full-stack/runtime signal through Docker Compose and separate engine/UI components. No container boot, target repo scan or finding validation was performed.",
+      "recommended_action": "Run only against a toy vulnerable repo first; evaluate false positives, evidence quality and sandbox boundaries before using on private code."
+    },
+    {
+      "rank": 4,
+      "full_name": "TryCaspian/caspian-sdk",
+      "url": "https://github.com/TryCaspian/caspian-sdk",
+      "category": "Cross-channel Agent Identity SDK",
+      "score": 84,
+      "summary": "SDK and app/packages layer for giving an AI agent one identity across Slack, Discord, Telegram, Instagram, email and X.",
+      "audience": "Agent builders who need durable user-facing identity and channel presence across messaging surfaces.",
+      "ai_native_angle": "Moves agents from single-channel bots toward persistent identities with SDKs, packages, examples and llms.txt for agent-readable integration.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; 76 stars and 1 fork; root audit found apps, packages, sdks, examples, assets, pyproject, uv.lock, llms.txt, bilingual README and security/contribution files.",
+      "runnability": "Good SDK/product structure with examples and package layout, but channel credentials and real integrations were not tested.",
+      "recommended_action": "Inspect auth, account-linking and channel permission model; test with one low-risk channel before adopting cross-channel identity primitives."
+    },
+    {
+      "rank": 5,
+      "full_name": "risa-labs-inc/BossConsole",
+      "url": "https://github.com/risa-labs-inc/BossConsole",
+      "category": "Multi-platform Agent Operator Console",
+      "score": 82,
+      "summary": "Native multi-threaded operator console for running and observing Claude Code, Gemini CLI, Codex CLI, Cursor agent and browser agents.",
+      "audience": "Heavy coding-agent users managing multiple agent sessions across local projects and platforms.",
+      "ai_native_angle": "Turns agent operation into a multi-platform console with threads, browser/RPA hooks and native app packaging instead of disconnected terminals.",
+      "growth_signal": "Created 2026-07-21, pushed 2026-07-21; 30 stars; root audit found Gradle/Kotlin project files, composeApp, iosApp, modules, plugin-platform, server, supabase, docs, scripts, build Windows docs and RPA test page.",
+      "runnability": "Ambitious app structure across JVM/Compose/iOS/server surfaces. No Gradle build, agent connection, browser harness or packaged app run was performed.",
+      "recommended_action": "Watch closely; try only after checking setup path and whether Codex/Claude session management works with local credentials safely."
+    },
+    {
+      "rank": 6,
+      "full_name": "Blueturboguy07/NitroAI",
+      "url": "https://github.com/Blueturboguy07/NitroAI",
+      "category": "Local-first AI Study Workspace",
+      "score": 80,
+      "summary": "Local-first desktop/web study app that turns lectures, PDFs and videos into notes, flashcards, quizzes and study chat.",
+      "audience": "Students and self-learners who want AI study workflows around personal course materials without sending everything to a hosted SaaS.",
+      "ai_native_angle": "Combines ingestion, transformation, retrieval/chat and quiz generation into a single local learning workflow rather than a generic chatbot.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; 19 stars and 3 forks; root audit found Electron, Tauri, server, docs, build resources, Vite, tests, package-lock and scripts.",
+      "runnability": "Product-shaped local app with desktop build assets and server folder, but no file ingestion, video parsing, quiz generation or local build test was run.",
+      "recommended_action": "Trial with a small non-sensitive PDF/video and compare output quality and offline/privacy claims against mature study tools."
+    },
+    {
+      "rank": 7,
+      "full_name": "AIPAYagent/aipay-protocol",
+      "url": "https://github.com/AIPAYagent/aipay-protocol",
+      "category": "Agent Payment Escrow Protocol",
+      "score": 78,
+      "summary": "Verifier-backed USDC escrow protocol for AI agents using signed orders, evidence hashes, Polygon deposits and deterministic settlement.",
+      "audience": "Agent-commerce builders exploring payment rails where autonomous work needs proof, escrow and settlement.",
+      "ai_native_angle": "Connects agent actions to evidence-backed payment settlement, which is an important primitive if agents are paid for verifiable work.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; 30 stars; root audit found contracts, frontend, packages, verifiers, docs, tests, scripts, package.json and .env.example.",
+      "runnability": "Concrete protocol/app shape with smart contracts and verifier packages, but no contract audit, testnet deployment or payment flow was executed.",
+      "recommended_action": "Study as a design pattern only; require security review and testnet-only experiments before any real funds."
+    },
+    {
+      "rank": 8,
+      "full_name": "0xwilliamortiz/agents-council",
+      "url": "https://github.com/0xwilliamortiz/agents-council",
+      "category": "Multi-agent Coding Review Plugin",
+      "score": 76,
+      "summary": "Claude Code plugin for orchestrating multiple agents such as Codex CLI and Gemini CLI to provide diverse coding perspectives.",
+      "audience": "Developers who want a lightweight council/review loop across multiple coding agents from one Claude Code workflow.",
+      "ai_native_angle": "Productizes multi-agent review as a local plugin with config, bin entry and skills rather than asking users to manually copy prompts across tools.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-21; 91 stars and 1 fork; root audit found package.json, bin, skills, council.config.yaml, AGENTS.md and bilingual README files.",
+      "runnability": "Runnable-looking npm/plugin surface, but narrower than full app/control-plane candidates and no Claude/Codex/Gemini integration was tested.",
+      "recommended_action": "Try in a disposable repo and measure whether multi-agent disagreement produces actionable review improvements or only extra noise."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "firelock-ai/kin",
+      "url": "https://github.com/firelock-ai/kin",
+      "category": "Semantic Record for AI-written Software",
+      "score": 74,
+      "summary": "Graph-based semantic system of record for AI-written software, tracking entities and relations rather than only file diffs.",
+      "audience": "Teams using AI coding workflows who need durable semantic understanding of code changes.",
+      "ai_native_angle": "Makes AI-written code inspectable as a semantic graph that agents and humans can query across changes.",
+      "growth_signal": "Created earlier but pushed 2026-07-21; 41 stars and 4 forks; root audit found Rust crates, Docker, packages, plugins, tests, docs, llms.txt and pnpm workspace.",
+      "runnability": "Strong infrastructure shape but not newly created in this 72-hour window, so kept watchlist.",
+      "recommended_action": "Compare with Brain0/Hunch-style provenance tools if coding-agent audit becomes a priority."
+    },
+    {
+      "rank": 2,
+      "full_name": "MarwanAljijakli/agentkernel",
+      "url": "https://github.com/MarwanAljijakli/agentkernel",
+      "category": "Transactional Agent Effects Runtime",
+      "score": 73,
+      "summary": "Runtime for AI agent effects with explicit authority, staged commits, recovery and tamper-evident evidence.",
+      "audience": "Agent infrastructure builders needing safer side-effect execution semantics.",
+      "ai_native_angle": "Treats agent effects as transactions with authority and recovery, a strong primitive for high-trust automation.",
+      "growth_signal": "Created 2026-07-21 and surfaced in recent update search; root audit found Python package, docs, schemas, policies, scripts, tests and governance/security docs.",
+      "runnability": "Good repo anatomy but zero-star early signal; needs live examples before Top placement.",
+      "recommended_action": "Watch for examples that show staged commits and recovery on real tool calls."
+    },
+    {
+      "rank": 3,
+      "full_name": "burakgon/rvmp",
+      "url": "https://github.com/burakgon/rvmp",
+      "category": "Browser-based Coding Agent Orchestrator",
+      "score": 72,
+      "summary": "Self-hosted browser orchestrator for AI coding agents with terminals, Kanban routing and review flow.",
+      "audience": "Developers coordinating several coding-agent tasks from a visual workbench.",
+      "ai_native_angle": "Combines real terminals and planning board concepts around coding-agent execution.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-20; 6 stars; root audit found apps, packages, docs, scripts, Bun lock and workspace config.",
+      "runnability": "Promising product anatomy with low current traction; no browser session or terminal execution tested.",
+      "recommended_action": "Watch for demo screenshots and a one-command local start path."
+    },
+    {
+      "rank": 4,
+      "full_name": "GML-MMGroup/Blabber",
+      "url": "https://github.com/GML-MMGroup/Blabber",
+      "category": "Agentic Podcast Video Generator",
+      "score": 70,
+      "summary": "Prompt-to-animated-podcast concept with AI-written dialogue, dual hosts, dubbing, lip sync and auto camera/editing.",
+      "audience": "Creators exploring fully automated podcast/video generation.",
+      "ai_native_angle": "Packages writing, voice, lip sync and editing into one agentic media workflow.",
+      "growth_signal": "Created 2026-07-21; 2 stars; README/README_zh and assets were present in root audit.",
+      "runnability": "Interesting vertical concept but root audit found only README/assets today.",
+      "recommended_action": "Track for code release; skip immediate runtime trials."
+    },
+    {
+      "rank": 5,
+      "full_name": "Chillsbro/parterre",
+      "url": "https://github.com/Chillsbro/parterre",
+      "category": "Terminal Browser-agent Control Surface",
+      "score": 69,
+      "summary": "Terminal tool for watching and controlling how AI agents browse, test and debug.",
+      "audience": "Agent builders who need visibility into browser/test automation flows.",
+      "ai_native_angle": "Focuses on agent observability/control during web browsing and debugging sessions.",
+      "growth_signal": "Created 2026-07-20, pushed 2026-07-20; root audit found bin, src, tests, install.sh, package.json, Bun lock, assets and security/contribution docs.",
+      "runnability": "Good local tooling shape but only 1 star and not enough product evidence yet.",
+      "recommended_action": "Watch; trial only after inspecting install script and sandboxing behavior."
+    },
+    {
+      "rank": 6,
+      "full_name": "loonggg/LLM-WIKI",
+      "url": "https://github.com/loonggg/LLM-WIKI",
+      "category": "Self-growing AI Knowledge Base Skill",
+      "score": 68,
+      "summary": "A self-growing AI knowledge base packaged as a skill with scripts and references.",
+      "audience": "Agent users experimenting with lightweight personal/project knowledge accumulation.",
+      "ai_native_angle": "Targets agent memory and self-growing knowledge capture through skill packaging.",
+      "growth_signal": "Created 2026-07-20; 25 stars and 3 forks; root audit found SKILL.md, package.json, scripts, references and README.",
+      "runnability": "Runnable as a skill-style workflow, but product surface is thinner than NitroAI or dedicated memory/workbench systems.",
+      "recommended_action": "Mine workflow ideas; avoid promoting until examples show retrieval quality and data boundaries."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "liangdabiao/stem-illustration-skill",
+      "url": "https://github.com/liangdabiao/stem-illustration-skill",
+      "skip_reason": "Useful STEM image-generation skill pack, but primarily prompt/template content rather than a durable runnable app, API or control plane."
+    },
+    {
+      "full_name": "irenerachel/style-pack-skill",
+      "url": "https://github.com/irenerachel/style-pack-skill",
+      "skip_reason": "Style extraction/generation skill pack; narrower creative prompt workflow and weaker product surface than full creative tools."
+    },
+    {
+      "full_name": "karminski/VibeGamer",
+      "url": "https://github.com/karminski/VibeGamer",
+      "skip_reason": "Interesting agent-playing-game experiment, but positioned as an experiment rather than a reusable product surface today."
+    },
+    {
+      "full_name": "dusk-futile/idea-universe",
+      "url": "https://github.com/dusk-futile/idea-universe",
+      "skip_reason": "Research-aware brainstorming prompt/workflow; no strong standalone runtime or user-facing product evidence."
+    },
+    {
+      "full_name": "HealerCodeLabs/ai-knowledge-rag-langchain",
+      "url": "https://github.com/HealerCodeLabs/ai-knowledge-rag-langchain",
+      "skip_reason": "Likely tutorial/demo RAG repository with sparse metadata; insufficient product-shaped signal."
+    },
+    {
+      "full_name": "HealerCodeLabs/ai-semantic-search-api",
+      "url": "https://github.com/HealerCodeLabs/ai-semantic-search-api",
+      "skip_reason": "Small semantic-search API demo signal; not enough differentiated AI-native product surface for today."
+    },
+    {
+      "full_name": "MahalaxmiMacha/LLM-Based-Autonomous-Browser-Agent",
+      "url": "https://github.com/MahalaxmiMacha/LLM-Based-Autonomous-Browser-Agent",
+      "skip_reason": "Autonomous browser-agent demo with very low traction; keep out of Top until setup, safety and product boundaries are clearer."
+    },
+    {
+      "full_name": "dhruvbhavsar0612/browser-agent-web",
+      "url": "https://github.com/dhruvbhavsar0612/browser-agent-web",
+      "skip_reason": "Launch/landing-page style browser-agent repository; current evidence suggests marketing surface more than runnable software."
+    }
+  ]
+}
