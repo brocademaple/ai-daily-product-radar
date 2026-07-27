@@ -1,0 +1,264 @@
+{
+  "run_date": "2026-07-27",
+  "generated_at": "2026-07-27T00:30:00+08:00",
+  "data_window": "2026-07-24 00:00 to 2026-07-27 00:30 Asia/Shanghai; continuity review of the 2026-07-26 GitHub Search API snapshots and selected README/API audits after both the configured proxy and direct api.github.com DNS access failed during this run.",
+  "source_summary": "This continuity run reuses the verified GitHub Search API snapshots at /tmp/radar_2026_07_26_*.json and selected repository README/API audits under /tmp/radar_2026_07_26_repo_audit because live GitHub API discovery was unavailable: the configured proxy at 127.0.0.1:7890 refused connections and direct api.github.com DNS resolution failed. No third-party repository was cloned, installed, built, or run locally; runnability remains a README/metadata judgement.",
+  "trend_observations": "The current verified candidate set continues to center on coding-agent observability, native agent desktops, evidence-driven coding verification, guarded MCP operations, vertical agent workspaces, and agent-accessible media/audio tools. This is a continuity observation, not a fresh live-growth claim: no new GitHub Search response was available on 2026-07-27.",
+  "assumptions": "This report deliberately carries forward the last verified 72-hour candidate set rather than fabricating fresh discovery while GitHub API access is unavailable. Scores and star/fork figures are point-in-time evidence from the 2026-07-26 audit and may be stale. Local runtime, credential, model-provider, payment, Kubernetes, browser, Windows/macOS desktop, audio-model and security audits were not performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-26\n\n数据窗口：2026-07-23 00:00 to 2026-07-26 11:18 Asia/Shanghai; GitHub Search API batches for newly created and recently pushed AI, LLM app, agent, RAG, MCP, workflow, automation, browser/code/voice-agent and AI-product repositories; targeted GitHub API README audits for selected candidates.\n\n关键假设：Scores favor repositories created or materially updated in the 2026-07-23 to 2026-07-26 window with a concrete product surface, runnable UI/CLI/API/MCP/extension/workflow, clear user scenario, and enough README/docs evidence to evaluate. Star and fork counts are unauthenticated GitHub API point-in-time signals and may be noisy. Local runtime, credential, model-provider, payment, Kubernetes, browser, Windows/macOS desktop, audio-model and security audits were not performed.\n\n## Top Projects\n\n1. [mikehasa/agentacct](https://github.com/mikehasa/agentacct) - Local Agent Work Intelligence - Score 91\n   - 做什么：Local-first dashboard that reads Claude Code and Codex session logs, joins usage with recorded work, and shows token/cost/evidence on localhost.\n   - 面向谁：Heavy coding-agent users and engineering leads who need honest local visibility into what agents did and what it cost.\n   - AI native 点：Treats agent work as measurable operational data: session logs, task evidence, confidence-labeled joins, local MCP/hooks and a dashboard rather than a chat transcript.\n   - 增长/活跃信号：Created 2026-07-24, pushed 2026-07-25; GitHub API showed 325 stars and 2 forks; README includes PyPI badge, tests badge, screenshots, pipx/uv install, onboard/demo commands and Codex/Claude capability boundaries.\n   - 可运行性判断：Strong CLI/dashboard signal with package install path and demo mode. No pipx install, dashboard boot, Codex log sync or local evidence join was executed.\n   - 建议动作：Trial on a disposable repo with `agentacct demo` first, then inspect privacy boundaries before onboarding real project logs.\n\n2. [RongleCat/grok-app](https://github.com/RongleCat/grok-app) - Grok Build Desktop Workbench - Score 88\n   - 做什么：Tauri desktop workbench for local Grok Build CLI with sessions, projects, permissions, media previews and scheduled tasks.\n   - 面向谁：Grok Build CLI users who want multi-project agent sessions and richer desktop control than a terminal.\n   - AI native 点：Wraps a real CLI agent runtime into an app surface with permission modes, media/artifact handling and automation scheduling.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-25; 262 stars and 26 forks; README shows cross-platform Tauri 2 app, screenshots/assets, first-run wizard, mock mode and Grok CLI integration notes.\n   - 可运行性判断：Good desktop-app shape with explicit CLI dependency and dev/mock path. No Tauri build, Grok CLI login or agent session was tested.\n   - 建议动作：Watch and trial only with a non-sensitive project; verify permission bar, artifact preview and scheduled-task behavior.\n\n3. [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) - Agent Skill Product for Copywriting - Score 84\n   - 做什么：Portable agent skill for writing high-conversion copy while stripping common AI-writing patterns.\n   - 面向谁：Founders, marketers and product builders using agent harnesses for landing pages, emails and microcopy.\n   - AI native 点：Packages copy strategy as an installable cross-agent skill with interview flow, refusal to invent facts and explicit humanizer constraints.\n   - 增长/活跃信号：Created 2026-07-24, pushed 2026-07-25; 600 stars and 7 forks; README includes banner, method rationale, Skills CLI install, Claude plugin install and manual SKILL.md usage.\n   - 可运行性判断：Runnable as a skill-style workflow but not an app/API; no skill install or output quality test was run.\n   - 建议动作：Use as a workflow reference; promote to Top only for content-ops use cases, not infrastructure bets.\n\n4. [VinvAI/VinvAI](https://github.com/VinvAI/VinvAI) - Coding-agent Runtime Verification Extension - Score 83\n   - 做什么：Editor extension and local engine that traces app runtime, builds acceptance evidence and feeds verified context back to coding agents.\n   - 面向谁：Developers who distrust blind coding-agent edits and want runtime traces, acceptance tests and replay-backed verification.\n   - AI native 点：Moves coding-agent context from static repo text to live execution traces, line-level request evidence and local verification loops.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-25; 28 stars; README includes Open VSX install, multiple editor commands, local/no-telemetry badge, Rust/uv engine install and demo GIFs.\n   - 可运行性判断：Strong product/evidence claims with extension distribution, but first run needs Rust, uv and large local model download. No extension install or trace run was performed.\n   - 建议动作：Watch closely; test on a small FastAPI/Vite app to verify setup time, trace fidelity and acceptance-test isolation.\n\n5. [on-page-ai/geo-seo-superapp](https://github.com/on-page-ai/geo-seo-superapp) - Vertical AI SEO/GEO Desktop Workspace - Score 80\n   - 做什么：Free macOS workspace for SEO and GEO agency workflows including reports, crawls, indexation evidence, browser QA and reusable recipes.\n   - 面向谁：SEO/GEO agencies that run recurring optimization, crawl and evidence workflows across client sites.\n   - AI native 点：Turns SEO/GEO workflows into an agent-assisted desktop command center connected to accounts, browsers, MCP services and owned sites.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-25; 69 stars and 10 forks; README shows product/download links, screenshot, notarized DMG, requirements and account integration boundaries.\n   - 可运行性判断：Clear release/download path for Apple silicon macOS, but requires accounts and native install. No DMG verification or workflow run was performed.\n   - 建议动作：Evaluate as a vertical-agent packaging pattern; inspect privacy/account boundaries before agency use.\n\n6. [sandeepbazar/ocm-mcp-server](https://github.com/sandeepbazar/ocm-mcp-server) - Guarded Kubernetes MCP Operations - Score 79\n   - 做什么：MCP server that lets agents operate Open Cluster Management fleets through static checks, Kyverno dry-run, human approval and audit.\n   - 面向谁：Platform/SRE teams exploring AI-assisted Kubernetes remediation without handing models direct cluster-admin access.\n   - AI native 点：Defines agent operations as typed MCP tools behind policy, signed approvals and audit logs; dangerous actions are omitted from the tool surface.\n   - 增长/活跃信号：Created 2026-07-25, pushed 2026-07-25; 21 stars and 3 forks; README includes architecture diagrams, demo GIF, CI badge, toolset docs, quickstart and safety layers.\n   - 可运行性判断：Strong MCP/server and governance signal. No cluster, Kyverno, approval token or incident loop was run.\n   - 建议动作：Study the guardrail architecture; test only on a disposable OCM lab cluster.\n\n7. [giovannibrees/travel-roamradar](https://github.com/giovannibrees/travel-roamradar) - Self-hosted AI-assisted Travel Hub - Score 77\n   - 做什么：Cloudflare Worker travel hub that organizes flights, hotels, rides, wishlists and past trips, with optional Google Calendar/Gmail sync.\n   - 面向谁：Individuals who want a self-hosted personal travel timeline and destination-intel workspace.\n   - AI native 点：Uses AI-built product scaffolding and optional inbox/calendar ingestion to turn fragmented travel data into a living itinerary workspace.\n   - 增长/活跃信号：Created 2026-07-24, pushed 2026-07-24; 60 stars and 7 forks; README includes demo GIF, screenshots, Cloudflare self-hosting stance, Google sync and detailed feature list.\n   - 可运行性判断：Good self-hosted product signal, but license is noncommercial and no Cloudflare deploy or Google sync was tested.\n   - 建议动作：Mine UX ideas for personal-data workspaces; verify deploy/config friction before deeper adoption.\n\n8. [schowdary75/moonsconfig](https://github.com/schowdary75/moonsconfig) - Travel Agency AI Operating System - Score 75\n   - 做什么：TypeScript travel operating system with Maya AI, RFQs, vendor outreach, itinerary building, CRM, payments and multi-tenant SaaS modules.\n   - 面向谁：Travel agencies and SaaS builders looking at end-to-end AI-assisted travel operations.\n   - AI native 点：Positions an AI agent as the workflow layer across lead capture, supplier outreach, itinerary generation, support and internal operations.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-23; 18 stars and 3 forks; README shows Node/React/Docker badges, monorepo components, disabled-by-default integrations and local core modules.\n   - 可运行性判断：Ambitious full-stack signal but many provider-backed features need credentials. No Docker Compose, API or UI boot was tested.\n   - 建议动作：Keep on watchlist for vertical-agent OS patterns; validate core local modules before treating as runnable SaaS.\n\n9. [sm18lr88/STT-MCP](https://github.com/sm18lr88/STT-MCP) - Speech-to-text MCP Server - Score 73\n   - 做什么：MCP server and CLI that lets agents transcribe audio/video through FFmpeg plus Parakeet or Granite backends.\n   - 面向谁：Agent users who need local audio/video understanding inside MCP-capable workflows.\n   - AI native 点：Exposes speech transcription as an agent tool with backend selection, setup runbook and real speech acceptance-test expectations.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-25; 55 stars; README includes MCP/CLI modes, backend matrix, setup docs, uv/FFmpeg prerequisites and operational behavior.\n   - 可运行性判断：Good tool shape, but model/backend install requires hardware choice and network. No FFmpeg/model install or transcription test was run.\n   - 建议动作：Trial with a short public audio clip after backend confirmation; compare latency and cleanup behavior.\n\n10. [Optim-Agent/optim-plans](https://github.com/Optim-Agent/optim-plans) - Human-in-the-loop Agent Planning Plugin - Score 72\n   - 做什么：Planning and execution-loop plugin for Claude and Codex that creates reviewed Markdown plans, decision records and gated execution manifests.\n   - 面向谁：Developers who want agentic coding plans to be reviewable and execution to start from explicit approval.\n   - AI native 点：Separates planning and execution loops with durable manifests, worktree runs, checkpoints and final audit concepts for coding agents.\n   - 增长/活跃信号：Created 2026-07-23, pushed 2026-07-26; 23 stars; README includes CI badge, Codex/Claude skill badges, plan loop diagrams and plugin narrative.\n   - 可运行性判断：Runnable-looking Python skill/plugin surface but early and not independently installed or exercised today.\n   - 建议动作：Compare with existing repo planning workflows; test on a small feature before trusting long-running automation.\n\n## Watchlist\n\n- [24KaratAu/openhub](https://github.com/24KaratAu/openhub) - AI Tool/Skill TUI Catalog - Score 70 - Textual TUI discovery hub and installer for AI coding tools, MCP servers, skills and agents. 建议：Watch as a distribution idea; verify catalog quality before using.\n- [kylepelham/Drift](https://github.com/kylepelham/Drift) - OpenCode Windows Desktop Agent - Score 69 - Windows desktop app that bundles the OpenCode engine as a managed sidecar with projects, persistent threads and MCP decisions. 建议：Watch for releases and security model; trial on a disposable Windows workspace.\n- [R44VC0RP/hark](https://github.com/R44VC0RP/hark) - Webhook Notification Platform - Score 67 - Simple webhook-to-notification platform that can serve as an agent action/alert sink. 建议：Watch for agent-specific integrations and deployment examples.\n- [Jia-Ethan/grok-keysmith](https://github.com/Jia-Ethan/grok-keysmith) - Grok Build Instruction Deployment - Score 66 - Preview-first Grok Build instruction deployment with hook isolation and recovery. 建议：Audit install/uninstall and hook isolation before use.\n- [m1ng-li/mac-thermalright-ai-monitor](https://github.com/m1ng-li/mac-thermalright-ai-monitor) - Physical Agent/System Monitor - Score 65 - macOS monitor for Claude Code, Codex and system state on a Thermalright LCD. 建议：Watch as an ambient-agent UX idea rather than core product bet.\n- [Dream-0213/InfraCoder](https://github.com/Dream-0213/InfraCoder) - Private LLM Infra Agent - Score 64 - Lightweight agent for private large-model deployment, code development and GPU/vLLM infrastructure diagnosis. 建议：Watch; inspect GPU/vLLM workflows before trial.\n\n## Skip Reasons\n\n- [Eversmile12/leaked-llm-prompts](https://github.com/Eversmile12/leaked-llm-prompts) - Prompt collection; no durable runnable product surface.\n- [awesome-4dgs/awesome-4dgs](https://github.com/awesome-4dgs/awesome-4dgs) - Awesome list/curated papers and projects rather than an AI-native product.\n- [chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop](https://github.com/chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop) - Free-model desktop download framing looks marketing/high-risk; insufficient trustworthy product evidence.\n- [claudefable5-free/Claude-Fable-5-Free-Desktop](https://github.com/claudefable5-free/Claude-Fable-5-Free-Desktop) - Free-model desktop download framing looks marketing/high-risk; insufficient trustworthy product evidence.\n- [daimon3332/OutlookRegister](https://github.com/daimon3332/OutlookRegister) - Account registration automation, not an AI-native product target for this radar.\n- [cyi-cc/chatgpt-register](https://github.com/cyi-cc/chatgpt-register) - Account registration automation with weak product fit and higher abuse risk.\n- [XYZ-AI-Lab/axrl](https://github.com/XYZ-AI-Lab/axrl) - Agentic RL/training framework, valuable but closer to research infrastructure than user-facing product.\n- [CaliCastle/skills](https://github.com/CaliCastle/skills) - Agent skill collection; useful content but mostly prompt/tooling templates rather than a standalone product.\n\n类型级跳过原因：纯 prompt collection、awesome list、教程/课程、论文/benchmark-only、免费模型下载/注册工具、只有 README 没有可运行代码、明显营销仓库，均降权或排除；这些类型原因不会写入 JSON skipped_projects 的伪造 repo。\n\n## 今日趋势观察\n\n1. Coding-agent observability is becoming a product category: usage, cost, evidence and trace data are moving into local dashboards and runtime verification loops.\n2. Native agent desktops are diversifying: Grok App, Drift and GEO SEO SuperApp show how CLI/agent workflows are being wrapped into dedicated workbenches.\n3. Guardrails are moving from prompt policy to architecture: OCM MCP uses static checks, Kyverno, approvals and audit; Optim Plans makes execution approval explicit.\n4. Vertical AI workspaces remain strong when they own data ingestion and workflow state, especially travel, SEO/GEO and audio transcription.\n5. Skill packs still grow fast, but only the ones with install paths, clear operating boundaries and reusable workflow value deserve radar attention.\n\n## 今日建议动作\n\n- First trial: agentacct demo, because it is local-first, directly relevant to coding-agent operations, and has a low-risk demo path.\n- Desktop watch: Grok App and Drift, but use disposable projects until permission and provider behavior are verified.\n- Infra watch: ocm-mcp-server, Optim Plans and Vinv; evaluate evidence quality before adopting in high-trust workflows.\n- Vertical pattern mining: RoamRadar, MooNsConfig and GEO SEO SuperApp for how AI-native products wrap domain workflows rather than generic chat.\n\n## 信息来源\n\n- GitHub Search API snapshots: /tmp/radar_2026_07_26_created_ai.json, /tmp/radar_2026_07_26_pushed_agent.json, /tmp/radar_2026_07_26_created_workflow.json, /tmp/radar_2026_07_26_topic_ai_agent.json.\n- GitHub repository README/API audits for selected candidates under /tmp/radar_2026_07_26_repo_audit.\n- No clone, install, Docker, npm/pnpm/Bun, Python/uv, Tauri, Windows app, macOS app, Kubernetes, browser, audio-model, model-provider, security or credentialed runtime audit was performed today.\n",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-07-27\n\n连续监测说明：本次 GitHub API 的配置代理与直连 DNS 均不可用，因此复用 2026-07-26 已保存、已审计的候选集；以下增长数字为上一审计时点，非 7 月 27 日的新鲜增长声明。\n\n数据窗口：2026-07-24 00:00 to 2026-07-27 00:30 Asia/Shanghai; continuity review of verified 2026-07-26 GitHub Search API snapshots and README/API audits.\n\n关键假设：This report carries forward the last verified candidate set rather than fabricating new discovery while GitHub access is unavailable. Star/fork figures may be stale; no local runtime audit was performed.\n\n完整项目判断见 data/runs/2026-07-27.md。",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "mikehasa/agentacct",
+      "url": "https://github.com/mikehasa/agentacct",
+      "category": "Local Agent Work Intelligence",
+      "score": 91,
+      "summary": "Local-first dashboard that reads Claude Code and Codex session logs, joins usage with recorded work, and shows token/cost/evidence on localhost.",
+      "audience": "Heavy coding-agent users and engineering leads who need honest local visibility into what agents did and what it cost.",
+      "ai_native_angle": "Treats agent work as measurable operational data: session logs, task evidence, confidence-labeled joins, local MCP/hooks and a dashboard rather than a chat transcript.",
+      "growth_signal": "Created 2026-07-24, pushed 2026-07-25; GitHub API showed 325 stars and 2 forks; README includes PyPI badge, tests badge, screenshots, pipx/uv install, onboard/demo commands and Codex/Claude capability boundaries.",
+      "runnability": "Strong CLI/dashboard signal with package install path and demo mode. No pipx install, dashboard boot, Codex log sync or local evidence join was executed.",
+      "recommended_action": "Trial on a disposable repo with `agentacct demo` first, then inspect privacy boundaries before onboarding real project logs."
+    },
+    {
+      "rank": 2,
+      "full_name": "RongleCat/grok-app",
+      "url": "https://github.com/RongleCat/grok-app",
+      "category": "Grok Build Desktop Workbench",
+      "score": 88,
+      "summary": "Tauri desktop workbench for local Grok Build CLI with sessions, projects, permissions, media previews and scheduled tasks.",
+      "audience": "Grok Build CLI users who want multi-project agent sessions and richer desktop control than a terminal.",
+      "ai_native_angle": "Wraps a real CLI agent runtime into an app surface with permission modes, media/artifact handling and automation scheduling.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-25; 262 stars and 26 forks; README shows cross-platform Tauri 2 app, screenshots/assets, first-run wizard, mock mode and Grok CLI integration notes.",
+      "runnability": "Good desktop-app shape with explicit CLI dependency and dev/mock path. No Tauri build, Grok CLI login or agent session was tested.",
+      "recommended_action": "Watch and trial only with a non-sensitive project; verify permission bar, artifact preview and scheduled-task behavior."
+    },
+    {
+      "rank": 3,
+      "full_name": "mikiarlo3/ai-copywriter",
+      "url": "https://github.com/mikiarlo3/ai-copywriter",
+      "category": "Agent Skill Product for Copywriting",
+      "score": 84,
+      "summary": "Portable agent skill for writing high-conversion copy while stripping common AI-writing patterns.",
+      "audience": "Founders, marketers and product builders using agent harnesses for landing pages, emails and microcopy.",
+      "ai_native_angle": "Packages copy strategy as an installable cross-agent skill with interview flow, refusal to invent facts and explicit humanizer constraints.",
+      "growth_signal": "Created 2026-07-24, pushed 2026-07-25; 600 stars and 7 forks; README includes banner, method rationale, Skills CLI install, Claude plugin install and manual SKILL.md usage.",
+      "runnability": "Runnable as a skill-style workflow but not an app/API; no skill install or output quality test was run.",
+      "recommended_action": "Use as a workflow reference; promote to Top only for content-ops use cases, not infrastructure bets."
+    },
+    {
+      "rank": 4,
+      "full_name": "VinvAI/VinvAI",
+      "url": "https://github.com/VinvAI/VinvAI",
+      "category": "Coding-agent Runtime Verification Extension",
+      "score": 83,
+      "summary": "Editor extension and local engine that traces app runtime, builds acceptance evidence and feeds verified context back to coding agents.",
+      "audience": "Developers who distrust blind coding-agent edits and want runtime traces, acceptance tests and replay-backed verification.",
+      "ai_native_angle": "Moves coding-agent context from static repo text to live execution traces, line-level request evidence and local verification loops.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-25; 28 stars; README includes Open VSX install, multiple editor commands, local/no-telemetry badge, Rust/uv engine install and demo GIFs.",
+      "runnability": "Strong product/evidence claims with extension distribution, but first run needs Rust, uv and large local model download. No extension install or trace run was performed.",
+      "recommended_action": "Watch closely; test on a small FastAPI/Vite app to verify setup time, trace fidelity and acceptance-test isolation."
+    },
+    {
+      "rank": 5,
+      "full_name": "on-page-ai/geo-seo-superapp",
+      "url": "https://github.com/on-page-ai/geo-seo-superapp",
+      "category": "Vertical AI SEO/GEO Desktop Workspace",
+      "score": 80,
+      "summary": "Free macOS workspace for SEO and GEO agency workflows including reports, crawls, indexation evidence, browser QA and reusable recipes.",
+      "audience": "SEO/GEO agencies that run recurring optimization, crawl and evidence workflows across client sites.",
+      "ai_native_angle": "Turns SEO/GEO workflows into an agent-assisted desktop command center connected to accounts, browsers, MCP services and owned sites.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-25; 69 stars and 10 forks; README shows product/download links, screenshot, notarized DMG, requirements and account integration boundaries.",
+      "runnability": "Clear release/download path for Apple silicon macOS, but requires accounts and native install. No DMG verification or workflow run was performed.",
+      "recommended_action": "Evaluate as a vertical-agent packaging pattern; inspect privacy/account boundaries before agency use."
+    },
+    {
+      "rank": 6,
+      "full_name": "sandeepbazar/ocm-mcp-server",
+      "url": "https://github.com/sandeepbazar/ocm-mcp-server",
+      "category": "Guarded Kubernetes MCP Operations",
+      "score": 79,
+      "summary": "MCP server that lets agents operate Open Cluster Management fleets through static checks, Kyverno dry-run, human approval and audit.",
+      "audience": "Platform/SRE teams exploring AI-assisted Kubernetes remediation without handing models direct cluster-admin access.",
+      "ai_native_angle": "Defines agent operations as typed MCP tools behind policy, signed approvals and audit logs; dangerous actions are omitted from the tool surface.",
+      "growth_signal": "Created 2026-07-25, pushed 2026-07-25; 21 stars and 3 forks; README includes architecture diagrams, demo GIF, CI badge, toolset docs, quickstart and safety layers.",
+      "runnability": "Strong MCP/server and governance signal. No cluster, Kyverno, approval token or incident loop was run.",
+      "recommended_action": "Study the guardrail architecture; test only on a disposable OCM lab cluster."
+    },
+    {
+      "rank": 7,
+      "full_name": "giovannibrees/travel-roamradar",
+      "url": "https://github.com/giovannibrees/travel-roamradar",
+      "category": "Self-hosted AI-assisted Travel Hub",
+      "score": 77,
+      "summary": "Cloudflare Worker travel hub that organizes flights, hotels, rides, wishlists and past trips, with optional Google Calendar/Gmail sync.",
+      "audience": "Individuals who want a self-hosted personal travel timeline and destination-intel workspace.",
+      "ai_native_angle": "Uses AI-built product scaffolding and optional inbox/calendar ingestion to turn fragmented travel data into a living itinerary workspace.",
+      "growth_signal": "Created 2026-07-24, pushed 2026-07-24; 60 stars and 7 forks; README includes demo GIF, screenshots, Cloudflare self-hosting stance, Google sync and detailed feature list.",
+      "runnability": "Good self-hosted product signal, but license is noncommercial and no Cloudflare deploy or Google sync was tested.",
+      "recommended_action": "Mine UX ideas for personal-data workspaces; verify deploy/config friction before deeper adoption."
+    },
+    {
+      "rank": 8,
+      "full_name": "schowdary75/moonsconfig",
+      "url": "https://github.com/schowdary75/moonsconfig",
+      "category": "Travel Agency AI Operating System",
+      "score": 75,
+      "summary": "TypeScript travel operating system with Maya AI, RFQs, vendor outreach, itinerary building, CRM, payments and multi-tenant SaaS modules.",
+      "audience": "Travel agencies and SaaS builders looking at end-to-end AI-assisted travel operations.",
+      "ai_native_angle": "Positions an AI agent as the workflow layer across lead capture, supplier outreach, itinerary generation, support and internal operations.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-23; 18 stars and 3 forks; README shows Node/React/Docker badges, monorepo components, disabled-by-default integrations and local core modules.",
+      "runnability": "Ambitious full-stack signal but many provider-backed features need credentials. No Docker Compose, API or UI boot was tested.",
+      "recommended_action": "Keep on watchlist for vertical-agent OS patterns; validate core local modules before treating as runnable SaaS."
+    },
+    {
+      "rank": 9,
+      "full_name": "sm18lr88/STT-MCP",
+      "url": "https://github.com/sm18lr88/STT-MCP",
+      "category": "Speech-to-text MCP Server",
+      "score": 73,
+      "summary": "MCP server and CLI that lets agents transcribe audio/video through FFmpeg plus Parakeet or Granite backends.",
+      "audience": "Agent users who need local audio/video understanding inside MCP-capable workflows.",
+      "ai_native_angle": "Exposes speech transcription as an agent tool with backend selection, setup runbook and real speech acceptance-test expectations.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-25; 55 stars; README includes MCP/CLI modes, backend matrix, setup docs, uv/FFmpeg prerequisites and operational behavior.",
+      "runnability": "Good tool shape, but model/backend install requires hardware choice and network. No FFmpeg/model install or transcription test was run.",
+      "recommended_action": "Trial with a short public audio clip after backend confirmation; compare latency and cleanup behavior."
+    },
+    {
+      "rank": 10,
+      "full_name": "Optim-Agent/optim-plans",
+      "url": "https://github.com/Optim-Agent/optim-plans",
+      "category": "Human-in-the-loop Agent Planning Plugin",
+      "score": 72,
+      "summary": "Planning and execution-loop plugin for Claude and Codex that creates reviewed Markdown plans, decision records and gated execution manifests.",
+      "audience": "Developers who want agentic coding plans to be reviewable and execution to start from explicit approval.",
+      "ai_native_angle": "Separates planning and execution loops with durable manifests, worktree runs, checkpoints and final audit concepts for coding agents.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-26; 23 stars; README includes CI badge, Codex/Claude skill badges, plan loop diagrams and plugin narrative.",
+      "runnability": "Runnable-looking Python skill/plugin surface but early and not independently installed or exercised today.",
+      "recommended_action": "Compare with existing repo planning workflows; test on a small feature before trusting long-running automation."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "24KaratAu/openhub",
+      "url": "https://github.com/24KaratAu/openhub",
+      "category": "AI Tool/Skill TUI Catalog",
+      "score": 70,
+      "summary": "Textual TUI discovery hub and installer for AI coding tools, MCP servers, skills and agents.",
+      "audience": "Agent users who want a keyboard-first local catalog and exporter.",
+      "ai_native_angle": "Exports Universal Open Agent Skills and maps tools across Claude, Codex, Cursor, OpenCode and other harnesses.",
+      "growth_signal": "Created 2026-07-23; 19 stars; README shows pipx install, SQLite cache, fuzzy search, curated collections and skill export.",
+      "runnability": "Clear CLI install path but lower traction and package-catalog freshness risk.",
+      "recommended_action": "Watch as a distribution idea; verify catalog quality before using."
+    },
+    {
+      "rank": 2,
+      "full_name": "kylepelham/Drift",
+      "url": "https://github.com/kylepelham/Drift",
+      "category": "OpenCode Windows Desktop Agent",
+      "score": 69,
+      "summary": "Windows desktop app that bundles the OpenCode engine as a managed sidecar with projects, persistent threads and MCP decisions.",
+      "audience": "Windows users who want coding-agent desktop UX without installing the CLI separately.",
+      "ai_native_angle": "Packages agent engine lifecycle, provider settings, transcripts, MCP review and updates into a native desktop shell.",
+      "growth_signal": "Created 2026-07-24, pushed 2026-07-26; 15 stars; README shows signed release flow, SolidJS/Tauri/OpenCode architecture and detailed features.",
+      "runnability": "Good product surface but Windows-only and low early traction.",
+      "recommended_action": "Watch for releases and security model; trial on a disposable Windows workspace."
+    },
+    {
+      "rank": 3,
+      "full_name": "R44VC0RP/hark",
+      "url": "https://github.com/R44VC0RP/hark",
+      "category": "Webhook Notification Platform",
+      "score": 67,
+      "summary": "Simple webhook-to-notification platform that can serve as an agent action/alert sink.",
+      "audience": "Builders who need a lightweight event sink for automation notifications.",
+      "ai_native_angle": "Useful adjacent primitive for agent workflows but not AI-specific enough for Top placement.",
+      "growth_signal": "Created 2026-07-23, pushed 2026-07-26; 28 stars; surfaced in AI workflow search.",
+      "runnability": "Likely runnable webhook app, but README audit was not deep enough today.",
+      "recommended_action": "Watch for agent-specific integrations and deployment examples."
+    },
+    {
+      "rank": 4,
+      "full_name": "Jia-Ethan/grok-keysmith",
+      "url": "https://github.com/Jia-Ethan/grok-keysmith",
+      "category": "Grok Build Instruction Deployment",
+      "score": 66,
+      "summary": "Preview-first Grok Build instruction deployment with hook isolation and recovery.",
+      "audience": "Grok Build users managing instruction/config changes.",
+      "ai_native_angle": "Targets safer instruction deployment and rollback around an agent CLI.",
+      "growth_signal": "Created 2026-07-25; 65 stars and 13 forks in search results.",
+      "runnability": "Promising but narrower operational utility; not README-audited in depth today.",
+      "recommended_action": "Audit install/uninstall and hook isolation before use."
+    },
+    {
+      "rank": 5,
+      "full_name": "m1ng-li/mac-thermalright-ai-monitor",
+      "url": "https://github.com/m1ng-li/mac-thermalright-ai-monitor",
+      "category": "Physical Agent/System Monitor",
+      "score": 65,
+      "summary": "macOS monitor for Claude Code, Codex and system state on a Thermalright LCD.",
+      "audience": "Local-agent power users with dedicated hardware displays.",
+      "ai_native_angle": "Makes coding-agent status a physical ambient interface.",
+      "growth_signal": "Created 2026-07-23; 43 stars and 5 forks in search results.",
+      "runnability": "Hardware-specific and unaudited beyond search metadata.",
+      "recommended_action": "Watch as an ambient-agent UX idea rather than core product bet."
+    },
+    {
+      "rank": 6,
+      "full_name": "Dream-0213/InfraCoder",
+      "url": "https://github.com/Dream-0213/InfraCoder",
+      "category": "Private LLM Infra Agent",
+      "score": 64,
+      "summary": "Lightweight agent for private large-model deployment, code development and GPU/vLLM infrastructure diagnosis.",
+      "audience": "Teams operating private model infrastructure.",
+      "ai_native_angle": "Verticalizes agent assistance around infrastructure diagnosis and deployment work.",
+      "growth_signal": "Created 2026-07-23; 20 stars and 15 forks in search results.",
+      "runnability": "Potentially useful but not README-audited deeply today.",
+      "recommended_action": "Watch; inspect GPU/vLLM workflows before trial."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Eversmile12/leaked-llm-prompts",
+      "url": "https://github.com/Eversmile12/leaked-llm-prompts",
+      "skip_reason": "Prompt collection; no durable runnable product surface."
+    },
+    {
+      "full_name": "awesome-4dgs/awesome-4dgs",
+      "url": "https://github.com/awesome-4dgs/awesome-4dgs",
+      "skip_reason": "Awesome list/curated papers and projects rather than an AI-native product."
+    },
+    {
+      "full_name": "chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+      "url": "https://github.com/chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+      "skip_reason": "Free-model desktop download framing looks marketing/high-risk; insufficient trustworthy product evidence."
+    },
+    {
+      "full_name": "claudefable5-free/Claude-Fable-5-Free-Desktop",
+      "url": "https://github.com/claudefable5-free/Claude-Fable-5-Free-Desktop",
+      "skip_reason": "Free-model desktop download framing looks marketing/high-risk; insufficient trustworthy product evidence."
+    },
+    {
+      "full_name": "daimon3332/OutlookRegister",
+      "url": "https://github.com/daimon3332/OutlookRegister",
+      "skip_reason": "Account registration automation, not an AI-native product target for this radar."
+    },
+    {
+      "full_name": "cyi-cc/chatgpt-register",
+      "url": "https://github.com/cyi-cc/chatgpt-register",
+      "skip_reason": "Account registration automation with weak product fit and higher abuse risk."
+    },
+    {
+      "full_name": "XYZ-AI-Lab/axrl",
+      "url": "https://github.com/XYZ-AI-Lab/axrl",
+      "skip_reason": "Agentic RL/training framework, valuable but closer to research infrastructure than user-facing product."
+    },
+    {
+      "full_name": "CaliCastle/skills",
+      "url": "https://github.com/CaliCastle/skills",
+      "skip_reason": "Agent skill collection; useful content but mostly prompt/tooling templates rather than a standalone product."
+    }
+  ]
+}
