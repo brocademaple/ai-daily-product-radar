@@ -30,8 +30,8 @@ It tracks whether a repository looks like a real product, who it serves, what ma
 ## Live Demo
 
 - GitHub Pages: <https://brocademaple.github.io/ai-daily-product-radar/>
-- Current public dataset: 45 historical runs, 686 deduplicated GitHub projects, 847 history entries
-- Latest data window: 2026-07-27
+- Current public dataset: 46 historical runs, 686 deduplicated GitHub projects, 861 history entries
+- Latest data window: 2026-07-28
 - Demo mode: static snapshot, no backend required
 
 ## What You Can Do
