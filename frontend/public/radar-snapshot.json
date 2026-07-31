@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+      "runDate": "2026-07-31",
+      "generatedAt": "2026-07-31T11:58:04+08:00",
+      "dataWindow": "2026-07-28 00:00 to 2026-07-31 11:58 Asia/Shanghai; continuity review of verified 2026-07-26 GitHub Search API snapshots and selected README/API audits after current GitHub API discovery failed.",
+      "sourceSummary": "GitHub Search API discovery was attempted through the configured proxy and again with --noproxy '*'. The proxy at 127.0.0.1:7890 refused connections and direct api.github.com DNS resolution failed. This continuity run reuses the last verified 2026-07-26 candidate and repository audit set; it does not claim fresh growth. No third-party repository was cloned, installed, built, or run locally.",
+      "trendObservations": "Coding-agent observability and runtime evidence remain prominent product surfaces; safe agent operations increasingly use typed tool boundaries, dry-runs, human approvals and audit trails; vertical workbenches earn attention when they own domain data and workflow state.",
+      "assumptions": "This report deliberately carries forward the most recently verified candidate set because live GitHub discovery failed. Star, fork and push signals are 2026-07-26 point-in-time evidence and may be stale. Local runtime, credentials, model-provider, payment, Kubernetes, browser, desktop and security audits were not performed.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-07-31\n\nContinuity monitoring only: GitHub API discovery failed through both the configured proxy and direct DNS, so this report reuses verified 2026-07-26 candidates and does not claim fresh growth. Full Chinese report: data/runs/2026-07-31.md.",
+      "sourceFile": "2026-07-31.json",
+      "entryCount": 14
+    },
+    {
       "id": "run:2026-07-28:2026-07-28T10:15:00+08:00",
       "runDate": "2026-07-28",
       "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -843,8 +855,8 @@
       "fullName": "mikehasa/agentacct",
       "url": "https://github.com/mikehasa/agentacct",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 91,
       "latestScore": 91,
       "latestSection": "top",
@@ -853,7 +865,7 @@
       "summary": "Local-first dashboard joining Claude Code/Codex session logs with usage, cost and work evidence.",
       "audience": "Coding-agent power users and engineering leads.",
       "aiNativeAngle": "Treats agent session logs, MCP/hooks and execution evidence as operational data.",
-      "growthSignal": "2026-07-26 audit: created 2026-07-24, pushed 2026-07-25, 325 stars; README had screenshots, pipx/uv install and demo commands.",
+      "growthSignal": "2026-07-26 audit: created 2026-07-24, pushed 2026-07-25, 325 stars; README had screenshots, pipx/uv install and demo commands. Current status was not reverified.",
       "runnability": "Strong CLI/dashboard and demo signal; no local install or log sync was performed.",
       "recommendedAction": "Run agentacct demo in a disposable repository and review privacy boundaries.",
       "skipReason": null
@@ -1470,8 +1482,8 @@
       "fullName": "RongleCat/grok-app",
       "url": "https://github.com/RongleCat/grok-app",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 88,
       "latestScore": 88,
       "latestSection": "top",
@@ -1480,7 +1492,7 @@
       "summary": "Tauri desktop workbench for Grok Build CLI sessions, projects, permissions, media previews and scheduled tasks.",
       "audience": "Grok Build CLI users managing multiple agent projects.",
       "aiNativeAngle": "Packages agent runtime, permission modes and artifacts into a native application surface.",
-      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 262 stars and 26 forks; README showed screenshots and mock mode.",
+      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 262 stars and 26 forks; README showed screenshots and mock mode. Current status was not reverified.",
       "runnability": "Explicit desktop and mock paths; no Tauri build or Grok CLI session was tested.",
       "recommendedAction": "Trial only with a non-sensitive project and validate permission behavior.",
       "skipReason": null
@@ -2971,8 +2983,8 @@
       "fullName": "mikiarlo3/ai-copywriter",
       "url": "https://github.com/mikiarlo3/ai-copywriter",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 84,
       "latestScore": 84,
       "latestSection": "watchlist",
@@ -2981,7 +2993,7 @@
       "summary": "Portable cross-agent copywriting skill with an installable workflow.",
       "audience": "Founders and marketers using agent harnesses.",
       "aiNativeAngle": "Packages content strategy as a reusable agent skill.",
-      "growthSignal": "2026-07-26 audit: 600 stars and documented install paths.",
+      "growthSignal": "2026-07-26 audit: 600 stars and documented install paths; current status was not reverified.",
       "runnability": "Runnable as a skill workflow, not independently tested.",
       "recommendedAction": "Evaluate output quality before treating it as a product bet.",
       "skipReason": null
@@ -3598,8 +3610,8 @@
       "fullName": "VinvAI/VinvAI",
       "url": "https://github.com/VinvAI/VinvAI",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 83,
       "latestScore": 83,
       "latestSection": "top",
@@ -3608,7 +3620,7 @@
       "summary": "Editor extension and local engine for runtime traces, acceptance evidence and verified coding-agent context.",
       "audience": "Developers who need evidence-backed agent changes.",
       "aiNativeAngle": "Feeds live execution traces and acceptance loops back into the coding-agent context.",
-      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 28 stars; README had Open VSX install and demo GIFs.",
+      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 28 stars; README had Open VSX install and demo GIFs. Current status was not reverified.",
       "runnability": "Extension distribution and engine instructions exist, but Rust, uv and a local model are needed; not installed.",
       "recommendedAction": "Measure setup cost and trace fidelity on a small web application.",
       "skipReason": null
@@ -4776,8 +4788,8 @@
       "fullName": "on-page-ai/geo-seo-superapp",
       "url": "https://github.com/on-page-ai/geo-seo-superapp",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 80,
       "latestScore": 80,
       "latestSection": "watchlist",
@@ -4786,7 +4798,7 @@
       "summary": "macOS workspace for SEO/GEO reporting, crawls, evidence and browser QA.",
       "audience": "SEO/GEO agencies.",
       "aiNativeAngle": "Combines domain workflow state, accounts, browsers and MCP services.",
-      "growthSignal": "2026-07-26 audit: download path, screenshot and 69 stars.",
+      "growthSignal": "2026-07-26 audit: download path, screenshot and 69 stars; current status was not reverified.",
       "runnability": "Native install and accounts required; not tested.",
       "recommendedAction": "Inspect account and privacy boundaries.",
       "skipReason": null
@@ -5213,8 +5225,8 @@
       "fullName": "sandeepbazar/ocm-mcp-server",
       "url": "https://github.com/sandeepbazar/ocm-mcp-server",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 79,
       "latestScore": 79,
       "latestSection": "top",
@@ -5223,7 +5235,7 @@
       "summary": "MCP server for OCM fleet operations with static checks, Kyverno dry-runs, human approval and audit.",
       "audience": "Platform and SRE teams exploring guarded AI-assisted remediation.",
       "aiNativeAngle": "Constrains agent action through typed MCP tools, policies, signed approvals and audit logs.",
-      "growthSignal": "2026-07-26 audit: created and pushed 2026-07-25, 21 stars and 3 forks; README included diagrams, demo and quickstart.",
+      "growthSignal": "2026-07-26 audit: created and pushed 2026-07-25, 21 stars and 3 forks; README included diagrams, demo and quickstart. Current status was not reverified.",
       "runnability": "Strong governance/server shape; no cluster or approval flow was run.",
       "recommendedAction": "Test only against a disposable OCM lab cluster.",
       "skipReason": null
@@ -6106,8 +6118,8 @@
       "fullName": "giovannibrees/travel-roamradar",
       "url": "https://github.com/giovannibrees/travel-roamradar",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 77,
       "latestScore": 77,
       "latestSection": "watchlist",
@@ -6116,7 +6128,7 @@
       "summary": "Cloudflare Worker travel hub with optional Gmail and Calendar sync.",
       "audience": "Individuals managing travel timelines.",
       "aiNativeAngle": "Turns personal travel data into a persistent itinerary workspace.",
-      "growthSignal": "2026-07-26 audit: demo media and 60 stars.",
+      "growthSignal": "2026-07-26 audit: demo media and 60 stars; current status was not reverified.",
       "runnability": "Self-hosted shape is clear; deploy and sync were not run.",
       "recommendedAction": "Validate setup friction before adoption.",
       "skipReason": null
@@ -6790,8 +6802,8 @@
       "fullName": "schowdary75/moonsconfig",
       "url": "https://github.com/schowdary75/moonsconfig",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 75,
       "latestScore": 75,
       "latestSection": "watchlist",
@@ -6800,7 +6812,7 @@
       "summary": "Full-stack travel operating system with agent-assisted CRM, RFQs and itineraries.",
       "audience": "Travel agencies and vertical SaaS builders.",
       "aiNativeAngle": "Places an agent across lead, supplier and service workflows.",
-      "growthSignal": "2026-07-26 audit: TypeScript/React/Docker product signals.",
+      "growthSignal": "2026-07-26 audit: TypeScript/React/Docker product signals; current status was not reverified.",
       "runnability": "Many provider-backed modules need credentials; not run.",
       "recommendedAction": "Validate local core modules first.",
       "skipReason": null
@@ -7531,8 +7543,8 @@
       "fullName": "sm18lr88/STT-MCP",
       "url": "https://github.com/sm18lr88/STT-MCP",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 73,
       "latestScore": 73,
       "latestSection": "top",
@@ -7541,7 +7553,7 @@
       "summary": "MCP server and CLI for audio/video transcription using FFmpeg with Parakeet or Granite backends.",
       "audience": "Agent users needing local audio/video understanding.",
       "aiNativeAngle": "Exposes transcription as a configurable agent tool with setup and acceptance expectations.",
-      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 55 stars; README documented MCP/CLI modes and backend matrix.",
+      "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 55 stars; README documented MCP/CLI modes and backend matrix. Current status was not reverified.",
       "runnability": "Clear tool form, but hardware and model choice are required; no transcription run occurred.",
       "recommendedAction": "Benchmark a short public audio clip after selecting a backend.",
       "skipReason": null
@@ -7854,8 +7866,8 @@
       "fullName": "Optim-Agent/optim-plans",
       "url": "https://github.com/Optim-Agent/optim-plans",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": 72,
       "latestScore": 72,
       "latestSection": "watchlist",
@@ -7864,7 +7876,7 @@
       "summary": "Planning and gated execution plugin for Claude and Codex.",
       "audience": "Developers seeking reviewable coding-agent plans.",
       "aiNativeAngle": "Separates durable planning, approval and execution loops.",
-      "growthSignal": "2026-07-26 audit: plan-loop diagrams and skill badges.",
+      "growthSignal": "2026-07-26 audit: plan-loop diagrams and skill badges; current status was not reverified.",
       "runnability": "Runnable-looking plugin but not installed.",
       "recommendedAction": "Trial on a small feature.",
       "skipReason": null
@@ -10419,8 +10431,8 @@
       "fullName": "awesome-4dgs/awesome-4dgs",
       "url": "https://github.com/awesome-4dgs/awesome-4dgs",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": null,
       "latestScore": null,
       "latestSection": "skip",
@@ -10438,8 +10450,8 @@
       "fullName": "chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
       "url": "https://github.com/chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": null,
       "latestScore": null,
       "latestSection": "skip",
@@ -10457,8 +10469,8 @@
       "fullName": "daimon3332/OutlookRegister",
       "url": "https://github.com/daimon3332/OutlookRegister",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": null,
       "latestScore": null,
       "latestSection": "skip",
@@ -10476,8 +10488,8 @@
       "fullName": "Eversmile12/leaked-llm-prompts",
       "url": "https://github.com/Eversmile12/leaked-llm-prompts",
       "firstSeenDate": "2026-07-26",
-      "lastSeenDate": "2026-07-28",
-      "seenCount": 3,
+      "lastSeenDate": "2026-07-31",
+      "seenCount": 4,
       "bestScore": null,
       "latestScore": null,
       "latestSection": "skip",
@@ -14570,7 +14582,39 @@
     ],
     "mikehasa/agentacct": [
       {
-        "id": "mikehasa-agentacct:2026-07-28T10:15:00+08:00:top:0",
+        "id": "mikehasa-agentacct:2026-07-31T11:58:04+08:00:top:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "mikehasa/agentacct",
+        "url": "https://github.com/mikehasa/agentacct",
+        "category": "Local Agent Work Intelligence",
+        "score": 91,
+        "summary": "Local-first dashboard joining Claude Code/Codex session logs with usage, cost and work evidence.",
+        "audience": "Coding-agent power users and engineering leads.",
+        "aiNativeAngle": "Treats agent session logs, MCP/hooks and execution evidence as operational data.",
+        "growthSignal": "2026-07-26 audit: created 2026-07-24, pushed 2026-07-25, 325 stars; README had screenshots, pipx/uv install and demo commands. Current status was not reverified.",
+        "runnability": "Strong CLI/dashboard and demo signal; no local install or log sync was performed.",
+        "recommendedAction": "Run agentacct demo in a disposable repository and review privacy boundaries.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "mikehasa/agentacct",
+          "url": "https://github.com/mikehasa/agentacct",
+          "category": "Local Agent Work Intelligence",
+          "score": 91,
+          "summary": "Local-first dashboard joining Claude Code/Codex session logs with usage, cost and work evidence.",
+          "audience": "Coding-agent power users and engineering leads.",
+          "ai_native_angle": "Treats agent session logs, MCP/hooks and execution evidence as operational data.",
+          "growth_signal": "2026-07-26 audit: created 2026-07-24, pushed 2026-07-25, 325 stars; README had screenshots, pipx/uv install and demo commands. Current status was not reverified.",
+          "runnability": "Strong CLI/dashboard and demo signal; no local install or log sync was performed.",
+          "recommended_action": "Run agentacct demo in a disposable repository and review privacy boundaries."
+        }
+      },
+      {
+        "id": "mikehasa-agentacct:2026-07-28T10:15:00+08:00:top:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -14602,7 +14646,7 @@
         }
       },
       {
-        "id": "mikehasa-agentacct:2026-07-27T00:30:00+08:00:top:1",
+        "id": "mikehasa-agentacct:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -14634,7 +14678,7 @@
         }
       },
       {
-        "id": "mikehasa-agentacct:2026-07-26T11:18:00+08:00:top:2",
+        "id": "mikehasa-agentacct:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -16100,7 +16144,39 @@
     ],
     "RongleCat/grok-app": [
       {
-        "id": "RongleCat-grok-app:2026-07-28T10:15:00+08:00:top:0",
+        "id": "RongleCat-grok-app:2026-07-31T11:58:04+08:00:top:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "RongleCat/grok-app",
+        "url": "https://github.com/RongleCat/grok-app",
+        "category": "Grok Build Desktop Workbench",
+        "score": 88,
+        "summary": "Tauri desktop workbench for Grok Build CLI sessions, projects, permissions, media previews and scheduled tasks.",
+        "audience": "Grok Build CLI users managing multiple agent projects.",
+        "aiNativeAngle": "Packages agent runtime, permission modes and artifacts into a native application surface.",
+        "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 262 stars and 26 forks; README showed screenshots and mock mode. Current status was not reverified.",
+        "runnability": "Explicit desktop and mock paths; no Tauri build or Grok CLI session was tested.",
+        "recommendedAction": "Trial only with a non-sensitive project and validate permission behavior.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "RongleCat/grok-app",
+          "url": "https://github.com/RongleCat/grok-app",
+          "category": "Grok Build Desktop Workbench",
+          "score": 88,
+          "summary": "Tauri desktop workbench for Grok Build CLI sessions, projects, permissions, media previews and scheduled tasks.",
+          "audience": "Grok Build CLI users managing multiple agent projects.",
+          "ai_native_angle": "Packages agent runtime, permission modes and artifacts into a native application surface.",
+          "growth_signal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 262 stars and 26 forks; README showed screenshots and mock mode. Current status was not reverified.",
+          "runnability": "Explicit desktop and mock paths; no Tauri build or Grok CLI session was tested.",
+          "recommended_action": "Trial only with a non-sensitive project and validate permission behavior."
+        }
+      },
+      {
+        "id": "RongleCat-grok-app:2026-07-28T10:15:00+08:00:top:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -16132,7 +16208,7 @@
         }
       },
       {
-        "id": "RongleCat-grok-app:2026-07-27T00:30:00+08:00:top:1",
+        "id": "RongleCat-grok-app:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -16164,7 +16240,7 @@
         }
       },
       {
-        "id": "RongleCat-grok-app:2026-07-26T11:18:00+08:00:top:2",
+        "id": "RongleCat-grok-app:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -19531,7 +19607,39 @@
     ],
     "mikiarlo3/ai-copywriter": [
       {
-        "id": "mikiarlo3-ai-copywriter:2026-07-28T10:15:00+08:00:watchlist:0",
+        "id": "mikiarlo3-ai-copywriter:2026-07-31T11:58:04+08:00:watchlist:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "mikiarlo3/ai-copywriter",
+        "url": "https://github.com/mikiarlo3/ai-copywriter",
+        "category": "Agent Skill Product for Copywriting",
+        "score": 84,
+        "summary": "Portable cross-agent copywriting skill with an installable workflow.",
+        "audience": "Founders and marketers using agent harnesses.",
+        "aiNativeAngle": "Packages content strategy as a reusable agent skill.",
+        "growthSignal": "2026-07-26 audit: 600 stars and documented install paths; current status was not reverified.",
+        "runnability": "Runnable as a skill workflow, not independently tested.",
+        "recommendedAction": "Evaluate output quality before treating it as a product bet.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "mikiarlo3/ai-copywriter",
+          "url": "https://github.com/mikiarlo3/ai-copywriter",
+          "category": "Agent Skill Product for Copywriting",
+          "score": 84,
+          "summary": "Portable cross-agent copywriting skill with an installable workflow.",
+          "audience": "Founders and marketers using agent harnesses.",
+          "ai_native_angle": "Packages content strategy as a reusable agent skill.",
+          "growth_signal": "2026-07-26 audit: 600 stars and documented install paths; current status was not reverified.",
+          "runnability": "Runnable as a skill workflow, not independently tested.",
+          "recommended_action": "Evaluate output quality before treating it as a product bet."
+        }
+      },
+      {
+        "id": "mikiarlo3-ai-copywriter:2026-07-28T10:15:00+08:00:watchlist:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -19563,7 +19671,7 @@
         }
       },
       {
-        "id": "mikiarlo3-ai-copywriter:2026-07-27T00:30:00+08:00:top:1",
+        "id": "mikiarlo3-ai-copywriter:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -19595,7 +19703,7 @@
         }
       },
       {
-        "id": "mikiarlo3-ai-copywriter:2026-07-26T11:18:00+08:00:top:2",
+        "id": "mikiarlo3-ai-copywriter:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -20865,7 +20973,39 @@
     ],
     "VinvAI/VinvAI": [
       {
-        "id": "VinvAI-VinvAI:2026-07-28T10:15:00+08:00:top:0",
+        "id": "VinvAI-VinvAI:2026-07-31T11:58:04+08:00:top:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "VinvAI/VinvAI",
+        "url": "https://github.com/VinvAI/VinvAI",
+        "category": "Coding-agent Runtime Verification Extension",
+        "score": 83,
+        "summary": "Editor extension and local engine for runtime traces, acceptance evidence and verified coding-agent context.",
+        "audience": "Developers who need evidence-backed agent changes.",
+        "aiNativeAngle": "Feeds live execution traces and acceptance loops back into the coding-agent context.",
+        "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 28 stars; README had Open VSX install and demo GIFs. Current status was not reverified.",
+        "runnability": "Extension distribution and engine instructions exist, but Rust, uv and a local model are needed; not installed.",
+        "recommendedAction": "Measure setup cost and trace fidelity on a small web application.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "VinvAI/VinvAI",
+          "url": "https://github.com/VinvAI/VinvAI",
+          "category": "Coding-agent Runtime Verification Extension",
+          "score": 83,
+          "summary": "Editor extension and local engine for runtime traces, acceptance evidence and verified coding-agent context.",
+          "audience": "Developers who need evidence-backed agent changes.",
+          "ai_native_angle": "Feeds live execution traces and acceptance loops back into the coding-agent context.",
+          "growth_signal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 28 stars; README had Open VSX install and demo GIFs. Current status was not reverified.",
+          "runnability": "Extension distribution and engine instructions exist, but Rust, uv and a local model are needed; not installed.",
+          "recommended_action": "Measure setup cost and trace fidelity on a small web application."
+        }
+      },
+      {
+        "id": "VinvAI-VinvAI:2026-07-28T10:15:00+08:00:top:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -20897,7 +21037,7 @@
         }
       },
       {
-        "id": "VinvAI-VinvAI:2026-07-27T00:30:00+08:00:top:1",
+        "id": "VinvAI-VinvAI:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -20929,7 +21069,7 @@
         }
       },
       {
-        "id": "VinvAI-VinvAI:2026-07-26T11:18:00+08:00:top:2",
+        "id": "VinvAI-VinvAI:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -23342,7 +23482,39 @@
     ],
     "on-page-ai/geo-seo-superapp": [
       {
-        "id": "on-page-ai-geo-seo-superapp:2026-07-28T10:15:00+08:00:watchlist:0",
+        "id": "on-page-ai-geo-seo-superapp:2026-07-31T11:58:04+08:00:watchlist:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "on-page-ai/geo-seo-superapp",
+        "url": "https://github.com/on-page-ai/geo-seo-superapp",
+        "category": "Vertical AI SEO/GEO Desktop Workspace",
+        "score": 80,
+        "summary": "macOS workspace for SEO/GEO reporting, crawls, evidence and browser QA.",
+        "audience": "SEO/GEO agencies.",
+        "aiNativeAngle": "Combines domain workflow state, accounts, browsers and MCP services.",
+        "growthSignal": "2026-07-26 audit: download path, screenshot and 69 stars; current status was not reverified.",
+        "runnability": "Native install and accounts required; not tested.",
+        "recommendedAction": "Inspect account and privacy boundaries.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "on-page-ai/geo-seo-superapp",
+          "url": "https://github.com/on-page-ai/geo-seo-superapp",
+          "category": "Vertical AI SEO/GEO Desktop Workspace",
+          "score": 80,
+          "summary": "macOS workspace for SEO/GEO reporting, crawls, evidence and browser QA.",
+          "audience": "SEO/GEO agencies.",
+          "ai_native_angle": "Combines domain workflow state, accounts, browsers and MCP services.",
+          "growth_signal": "2026-07-26 audit: download path, screenshot and 69 stars; current status was not reverified.",
+          "runnability": "Native install and accounts required; not tested.",
+          "recommended_action": "Inspect account and privacy boundaries."
+        }
+      },
+      {
+        "id": "on-page-ai-geo-seo-superapp:2026-07-28T10:15:00+08:00:watchlist:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -23374,7 +23546,7 @@
         }
       },
       {
-        "id": "on-page-ai-geo-seo-superapp:2026-07-27T00:30:00+08:00:top:1",
+        "id": "on-page-ai-geo-seo-superapp:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -23406,7 +23578,7 @@
         }
       },
       {
-        "id": "on-page-ai-geo-seo-superapp:2026-07-26T11:18:00+08:00:top:2",
+        "id": "on-page-ai-geo-seo-superapp:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -24305,7 +24477,39 @@
     ],
     "sandeepbazar/ocm-mcp-server": [
       {
-        "id": "sandeepbazar-ocm-mcp-server:2026-07-28T10:15:00+08:00:top:0",
+        "id": "sandeepbazar-ocm-mcp-server:2026-07-31T11:58:04+08:00:top:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "sandeepbazar/ocm-mcp-server",
+        "url": "https://github.com/sandeepbazar/ocm-mcp-server",
+        "category": "Guarded Kubernetes MCP Operations",
+        "score": 79,
+        "summary": "MCP server for OCM fleet operations with static checks, Kyverno dry-runs, human approval and audit.",
+        "audience": "Platform and SRE teams exploring guarded AI-assisted remediation.",
+        "aiNativeAngle": "Constrains agent action through typed MCP tools, policies, signed approvals and audit logs.",
+        "growthSignal": "2026-07-26 audit: created and pushed 2026-07-25, 21 stars and 3 forks; README included diagrams, demo and quickstart. Current status was not reverified.",
+        "runnability": "Strong governance/server shape; no cluster or approval flow was run.",
+        "recommendedAction": "Test only against a disposable OCM lab cluster.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "sandeepbazar/ocm-mcp-server",
+          "url": "https://github.com/sandeepbazar/ocm-mcp-server",
+          "category": "Guarded Kubernetes MCP Operations",
+          "score": 79,
+          "summary": "MCP server for OCM fleet operations with static checks, Kyverno dry-runs, human approval and audit.",
+          "audience": "Platform and SRE teams exploring guarded AI-assisted remediation.",
+          "ai_native_angle": "Constrains agent action through typed MCP tools, policies, signed approvals and audit logs.",
+          "growth_signal": "2026-07-26 audit: created and pushed 2026-07-25, 21 stars and 3 forks; README included diagrams, demo and quickstart. Current status was not reverified.",
+          "runnability": "Strong governance/server shape; no cluster or approval flow was run.",
+          "recommended_action": "Test only against a disposable OCM lab cluster."
+        }
+      },
+      {
+        "id": "sandeepbazar-ocm-mcp-server:2026-07-28T10:15:00+08:00:top:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -24337,7 +24541,7 @@
         }
       },
       {
-        "id": "sandeepbazar-ocm-mcp-server:2026-07-27T00:30:00+08:00:top:1",
+        "id": "sandeepbazar-ocm-mcp-server:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -24369,7 +24573,7 @@
         }
       },
       {
-        "id": "sandeepbazar-ocm-mcp-server:2026-07-26T11:18:00+08:00:top:2",
+        "id": "sandeepbazar-ocm-mcp-server:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -26052,7 +26256,39 @@
     ],
     "giovannibrees/travel-roamradar": [
       {
-        "id": "giovannibrees-travel-roamradar:2026-07-28T10:15:00+08:00:watchlist:0",
+        "id": "giovannibrees-travel-roamradar:2026-07-31T11:58:04+08:00:watchlist:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "giovannibrees/travel-roamradar",
+        "url": "https://github.com/giovannibrees/travel-roamradar",
+        "category": "Self-hosted AI-assisted Travel Hub",
+        "score": 77,
+        "summary": "Cloudflare Worker travel hub with optional Gmail and Calendar sync.",
+        "audience": "Individuals managing travel timelines.",
+        "aiNativeAngle": "Turns personal travel data into a persistent itinerary workspace.",
+        "growthSignal": "2026-07-26 audit: demo media and 60 stars; current status was not reverified.",
+        "runnability": "Self-hosted shape is clear; deploy and sync were not run.",
+        "recommendedAction": "Validate setup friction before adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "giovannibrees/travel-roamradar",
+          "url": "https://github.com/giovannibrees/travel-roamradar",
+          "category": "Self-hosted AI-assisted Travel Hub",
+          "score": 77,
+          "summary": "Cloudflare Worker travel hub with optional Gmail and Calendar sync.",
+          "audience": "Individuals managing travel timelines.",
+          "ai_native_angle": "Turns personal travel data into a persistent itinerary workspace.",
+          "growth_signal": "2026-07-26 audit: demo media and 60 stars; current status was not reverified.",
+          "runnability": "Self-hosted shape is clear; deploy and sync were not run.",
+          "recommended_action": "Validate setup friction before adoption."
+        }
+      },
+      {
+        "id": "giovannibrees-travel-roamradar:2026-07-28T10:15:00+08:00:watchlist:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -26084,7 +26320,7 @@
         }
       },
       {
-        "id": "giovannibrees-travel-roamradar:2026-07-27T00:30:00+08:00:top:1",
+        "id": "giovannibrees-travel-roamradar:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -26116,7 +26352,7 @@
         }
       },
       {
-        "id": "giovannibrees-travel-roamradar:2026-07-26T11:18:00+08:00:top:2",
+        "id": "giovannibrees-travel-roamradar:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -27364,7 +27600,39 @@
     ],
     "schowdary75/moonsconfig": [
       {
-        "id": "schowdary75-moonsconfig:2026-07-28T10:15:00+08:00:watchlist:0",
+        "id": "schowdary75-moonsconfig:2026-07-31T11:58:04+08:00:watchlist:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "schowdary75/moonsconfig",
+        "url": "https://github.com/schowdary75/moonsconfig",
+        "category": "Travel Agency AI Operating System",
+        "score": 75,
+        "summary": "Full-stack travel operating system with agent-assisted CRM, RFQs and itineraries.",
+        "audience": "Travel agencies and vertical SaaS builders.",
+        "aiNativeAngle": "Places an agent across lead, supplier and service workflows.",
+        "growthSignal": "2026-07-26 audit: TypeScript/React/Docker product signals; current status was not reverified.",
+        "runnability": "Many provider-backed modules need credentials; not run.",
+        "recommendedAction": "Validate local core modules first.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "schowdary75/moonsconfig",
+          "url": "https://github.com/schowdary75/moonsconfig",
+          "category": "Travel Agency AI Operating System",
+          "score": 75,
+          "summary": "Full-stack travel operating system with agent-assisted CRM, RFQs and itineraries.",
+          "audience": "Travel agencies and vertical SaaS builders.",
+          "ai_native_angle": "Places an agent across lead, supplier and service workflows.",
+          "growth_signal": "2026-07-26 audit: TypeScript/React/Docker product signals; current status was not reverified.",
+          "runnability": "Many provider-backed modules need credentials; not run.",
+          "recommended_action": "Validate local core modules first."
+        }
+      },
+      {
+        "id": "schowdary75-moonsconfig:2026-07-28T10:15:00+08:00:watchlist:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -27396,7 +27664,7 @@
         }
       },
       {
-        "id": "schowdary75-moonsconfig:2026-07-27T00:30:00+08:00:top:1",
+        "id": "schowdary75-moonsconfig:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -27428,7 +27696,7 @@
         }
       },
       {
-        "id": "schowdary75-moonsconfig:2026-07-26T11:18:00+08:00:top:2",
+        "id": "schowdary75-moonsconfig:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -29031,7 +29299,39 @@
     ],
     "sm18lr88/STT-MCP": [
       {
-        "id": "sm18lr88-STT-MCP:2026-07-28T10:15:00+08:00:top:0",
+        "id": "sm18lr88-STT-MCP:2026-07-31T11:58:04+08:00:top:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "sm18lr88/STT-MCP",
+        "url": "https://github.com/sm18lr88/STT-MCP",
+        "category": "Speech-to-text MCP Server",
+        "score": 73,
+        "summary": "MCP server and CLI for audio/video transcription using FFmpeg with Parakeet or Granite backends.",
+        "audience": "Agent users needing local audio/video understanding.",
+        "aiNativeAngle": "Exposes transcription as a configurable agent tool with setup and acceptance expectations.",
+        "growthSignal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 55 stars; README documented MCP/CLI modes and backend matrix. Current status was not reverified.",
+        "runnability": "Clear tool form, but hardware and model choice are required; no transcription run occurred.",
+        "recommendedAction": "Benchmark a short public audio clip after selecting a backend.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "sm18lr88/STT-MCP",
+          "url": "https://github.com/sm18lr88/STT-MCP",
+          "category": "Speech-to-text MCP Server",
+          "score": 73,
+          "summary": "MCP server and CLI for audio/video transcription using FFmpeg with Parakeet or Granite backends.",
+          "audience": "Agent users needing local audio/video understanding.",
+          "ai_native_angle": "Exposes transcription as a configurable agent tool with setup and acceptance expectations.",
+          "growth_signal": "2026-07-26 audit: created 2026-07-23, pushed 2026-07-25, 55 stars; README documented MCP/CLI modes and backend matrix. Current status was not reverified.",
+          "runnability": "Clear tool form, but hardware and model choice are required; no transcription run occurred.",
+          "recommended_action": "Benchmark a short public audio clip after selecting a backend."
+        }
+      },
+      {
+        "id": "sm18lr88-STT-MCP:2026-07-28T10:15:00+08:00:top:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -29063,7 +29363,7 @@
         }
       },
       {
-        "id": "sm18lr88-STT-MCP:2026-07-27T00:30:00+08:00:top:1",
+        "id": "sm18lr88-STT-MCP:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -29095,7 +29395,7 @@
         }
       },
       {
-        "id": "sm18lr88-STT-MCP:2026-07-26T11:18:00+08:00:top:2",
+        "id": "sm18lr88-STT-MCP:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -29692,7 +29992,39 @@
     ],
     "Optim-Agent/optim-plans": [
       {
-        "id": "Optim-Agent-optim-plans:2026-07-28T10:15:00+08:00:watchlist:0",
+        "id": "Optim-Agent-optim-plans:2026-07-31T11:58:04+08:00:watchlist:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "Optim-Agent/optim-plans",
+        "url": "https://github.com/Optim-Agent/optim-plans",
+        "category": "Human-in-the-loop Agent Planning Plugin",
+        "score": 72,
+        "summary": "Planning and gated execution plugin for Claude and Codex.",
+        "audience": "Developers seeking reviewable coding-agent plans.",
+        "aiNativeAngle": "Separates durable planning, approval and execution loops.",
+        "growthSignal": "2026-07-26 audit: plan-loop diagrams and skill badges; current status was not reverified.",
+        "runnability": "Runnable-looking plugin but not installed.",
+        "recommendedAction": "Trial on a small feature.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "Optim-Agent/optim-plans",
+          "url": "https://github.com/Optim-Agent/optim-plans",
+          "category": "Human-in-the-loop Agent Planning Plugin",
+          "score": 72,
+          "summary": "Planning and gated execution plugin for Claude and Codex.",
+          "audience": "Developers seeking reviewable coding-agent plans.",
+          "ai_native_angle": "Separates durable planning, approval and execution loops.",
+          "growth_signal": "2026-07-26 audit: plan-loop diagrams and skill badges; current status was not reverified.",
+          "runnability": "Runnable-looking plugin but not installed.",
+          "recommended_action": "Trial on a small feature."
+        }
+      },
+      {
+        "id": "Optim-Agent-optim-plans:2026-07-28T10:15:00+08:00:watchlist:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -29724,7 +30056,7 @@
         }
       },
       {
-        "id": "Optim-Agent-optim-plans:2026-07-27T00:30:00+08:00:top:1",
+        "id": "Optim-Agent-optim-plans:2026-07-27T00:30:00+08:00:top:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -29756,7 +30088,7 @@
         }
       },
       {
-        "id": "Optim-Agent-optim-plans:2026-07-26T11:18:00+08:00:top:2",
+        "id": "Optim-Agent-optim-plans:2026-07-26T11:18:00+08:00:top:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -34821,7 +35153,31 @@
     ],
     "awesome-4dgs/awesome-4dgs": [
       {
-        "id": "awesome-4dgs-awesome-4dgs:2026-07-28T10:15:00+08:00:skip:0",
+        "id": "awesome-4dgs-awesome-4dgs:2026-07-31T11:58:04+08:00:skip:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "awesome-4dgs/awesome-4dgs",
+        "url": "https://github.com/awesome-4dgs/awesome-4dgs",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome list/curated projects rather than an AI-native product.",
+        "rawJson": {
+          "full_name": "awesome-4dgs/awesome-4dgs",
+          "url": "https://github.com/awesome-4dgs/awesome-4dgs",
+          "skip_reason": "Awesome list/curated projects rather than an AI-native product."
+        }
+      },
+      {
+        "id": "awesome-4dgs-awesome-4dgs:2026-07-28T10:15:00+08:00:skip:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -34845,7 +35201,7 @@
         }
       },
       {
-        "id": "awesome-4dgs-awesome-4dgs:2026-07-27T00:30:00+08:00:skip:1",
+        "id": "awesome-4dgs-awesome-4dgs:2026-07-27T00:30:00+08:00:skip:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -34869,7 +35225,7 @@
         }
       },
       {
-        "id": "awesome-4dgs-awesome-4dgs:2026-07-26T11:18:00+08:00:skip:2",
+        "id": "awesome-4dgs-awesome-4dgs:2026-07-26T11:18:00+08:00:skip:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -34895,7 +35251,31 @@
     ],
     "chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop": [
       {
-        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-28T10:15:00+08:00:skip:0",
+        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-31T11:58:04+08:00:skip:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+        "url": "https://github.com/chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Free-model desktop download framing is marketing/high-risk with insufficient trustworthy product evidence.",
+        "rawJson": {
+          "full_name": "chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+          "url": "https://github.com/chatgptcodex56/Chatgpt-5.6-AI-Free-Desktop",
+          "skip_reason": "Free-model desktop download framing is marketing/high-risk with insufficient trustworthy product evidence."
+        }
+      },
+      {
+        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-28T10:15:00+08:00:skip:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -34919,7 +35299,7 @@
         }
       },
       {
-        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-27T00:30:00+08:00:skip:1",
+        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-27T00:30:00+08:00:skip:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -34943,7 +35323,7 @@
         }
       },
       {
-        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-26T11:18:00+08:00:skip:2",
+        "id": "chatgptcodex56-Chatgpt-5.6-AI-Free-Desktop:2026-07-26T11:18:00+08:00:skip:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -34969,7 +35349,31 @@
     ],
     "daimon3332/OutlookRegister": [
       {
-        "id": "daimon3332-OutlookRegister:2026-07-28T10:15:00+08:00:skip:0",
+        "id": "daimon3332-OutlookRegister:2026-07-31T11:58:04+08:00:skip:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "daimon3332/OutlookRegister",
+        "url": "https://github.com/daimon3332/OutlookRegister",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Account registration automation is outside the AI-native product target.",
+        "rawJson": {
+          "full_name": "daimon3332/OutlookRegister",
+          "url": "https://github.com/daimon3332/OutlookRegister",
+          "skip_reason": "Account registration automation is outside the AI-native product target."
+        }
+      },
+      {
+        "id": "daimon3332-OutlookRegister:2026-07-28T10:15:00+08:00:skip:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -34993,7 +35397,7 @@
         }
       },
       {
-        "id": "daimon3332-OutlookRegister:2026-07-27T00:30:00+08:00:skip:1",
+        "id": "daimon3332-OutlookRegister:2026-07-27T00:30:00+08:00:skip:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -35017,7 +35421,7 @@
         }
       },
       {
-        "id": "daimon3332-OutlookRegister:2026-07-26T11:18:00+08:00:skip:2",
+        "id": "daimon3332-OutlookRegister:2026-07-26T11:18:00+08:00:skip:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
@@ -35043,7 +35447,31 @@
     ],
     "Eversmile12/leaked-llm-prompts": [
       {
-        "id": "Eversmile12-leaked-llm-prompts:2026-07-28T10:15:00+08:00:skip:0",
+        "id": "Eversmile12-leaked-llm-prompts:2026-07-31T11:58:04+08:00:skip:0",
+        "runId": "run:2026-07-31:2026-07-31T11:58:04+08:00",
+        "runDate": "2026-07-31",
+        "generatedAt": "2026-07-31T11:58:04+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Eversmile12/leaked-llm-prompts",
+        "url": "https://github.com/Eversmile12/leaked-llm-prompts",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Prompt collection; no durable runnable product surface.",
+        "rawJson": {
+          "full_name": "Eversmile12/leaked-llm-prompts",
+          "url": "https://github.com/Eversmile12/leaked-llm-prompts",
+          "skip_reason": "Prompt collection; no durable runnable product surface."
+        }
+      },
+      {
+        "id": "Eversmile12-leaked-llm-prompts:2026-07-28T10:15:00+08:00:skip:1",
         "runId": "run:2026-07-28:2026-07-28T10:15:00+08:00",
         "runDate": "2026-07-28",
         "generatedAt": "2026-07-28T10:15:00+08:00",
@@ -35067,7 +35495,7 @@
         }
       },
       {
-        "id": "Eversmile12-leaked-llm-prompts:2026-07-27T00:30:00+08:00:skip:1",
+        "id": "Eversmile12-leaked-llm-prompts:2026-07-27T00:30:00+08:00:skip:2",
         "runId": "run:2026-07-27:2026-07-27T00:30:00+08:00",
         "runDate": "2026-07-27",
         "generatedAt": "2026-07-27T00:30:00+08:00",
@@ -35091,7 +35519,7 @@
         }
       },
       {
-        "id": "Eversmile12-leaked-llm-prompts:2026-07-26T11:18:00+08:00:skip:2",
+        "id": "Eversmile12-leaked-llm-prompts:2026-07-26T11:18:00+08:00:skip:3",
         "runId": "run:2026-07-26:2026-07-26T11:18:00+08:00",
         "runDate": "2026-07-26",
         "generatedAt": "2026-07-26T11:18:00+08:00",
