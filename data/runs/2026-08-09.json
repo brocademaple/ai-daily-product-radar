@@ -1,0 +1,204 @@
+{
+  "run_date": "2026-08-09",
+  "generated_at": "2026-08-09T12:40:41+08:00",
+  "data_window": "2026-08-06 00:00 to 2026-08-09 12:40 Asia/Shanghai; local GitHub API discovery failed, so this run uses public web search and GitHub README/repository snippets as directional continuity evidence.",
+  "source_summary": "git fetch origin succeeded. Local curl against GitHub API failed through the configured proxy because 127.0.0.1:7890 refused connections, and failed without proxy because api.github.com DNS could not resolve. Candidate discovery used public web search results and GitHub repository/README snippets. No third-party repository was cloned, installed, built, run, security-scanned or credential-tested.",
+  "trend_observations": "Agent workbenches are expanding from single CLI sessions into containerized runtimes with chat channels, schedulers, workflow DAGs, browser control, memory, permissions and quality evidence. MCP is productizing both as generic runtime infrastructure and as vertical software-control bridges for browsers, games, voice and video. Self-hosted AI OS projects need deployment-friction comparison, not just README feature counts. Long-term agent memory is becoming a searchable operational asset.",
+  "assumptions": "Crawler freshness and search visibility are directional only; this report does not claim exact 24-72 hour star deltas. Scores emphasize product surface, runnability clues, user scenario, documentation density and AI-native architecture. Strong historical baselines such as github/gh-aw and github/github-mcp-server were not repeated in JSON skip entries because that would incorrectly demote their latest board status. Local runtime, Docker, browser, desktop, voice, video, model-provider, payment and security audits were not performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-08-09\n\n数据窗口：2026-08-06 00:00 至 2026-08-09 12:40（Asia/Shanghai）。\n\n关键假设：本地 `curl` 访问 GitHub API 失败；走现有代理时 `127.0.0.1:7890` 拒连，取消代理后 `api.github.com` DNS 解析失败。因此本次使用公开 web 搜索与 GitHub 仓库/README 摘要做连续性发现，不声明精确 24-72 小时 star 增量。所有增长/活跃信号均为搜索可见性、近期 crawl/README 暴露、产品形态和可运行证据的方向性判断；未 clone、安装、构建或运行第三方仓库。\n\n## Top Projects\n\n1. [radutopala/loop](https://github.com/radutopala/loop) - Agent Container Workbench - Score 91\n   - 做什么：把 Claude 等 coding agent 放进 Docker/桌面/Slack/Discord 工作台，提供 chat、terminal、file editor、workflow DAG、scheduler、browser 和质量扫描。\n   - 面向谁：需要长期运行 agent 任务、跨聊天渠道调度、审计执行结果的工程团队和 power users。\n   - AI native 点：agent 会话、任务调度、MCP 工具、浏览器控制、记忆索引、质量引擎和安全 gate 都是产品主面。\n   - 增长/活跃信号：web 搜索显示仓库近期被 crawl；README 暴露 DockerRunner、Workflow Engine、Security Gate、Quality Engine、MCP server 和本地 browser bridge 等完整产品层。\n   - 可运行性判断：CLI 命令、daemon、MCP、本地/全局 onboard、Docker image 与 workflow 示例齐全；本次未实际运行。\n   - 建议动作：优先做一次 disposable repo 的 `loop onboard:local`/workflow 试跑，重点验证权限 gate 和日志留存。\n\n2. [hyhmrright/JARVIS](https://github.com/hyhmrright/JARVIS) - Self-hosted AI OS - Score 88\n   - 做什么：自托管 AI assistant 平台，包含 RAG、多 LLM failover、Visual Workflow Studio、Skill Market、多租户 workspace、多渠道消息和 observability。\n   - 面向谁：想用一套 Docker 部署内部 AI OS、渠道机器人和工作流平台的小团队。\n   - AI native 点：LangGraph ReAct、多 agent supervisor、sandboxed tools、skill market、RAG tools 和多渠道入口组成完整 agent 操作系统。\n   - 增长/活跃信号：搜索结果近期 crawl；README 展示截图、Workflow Studio、Settings、Skill Market、multi-channel 和 one docker compose up 入口。\n   - 可运行性判断：产品面和部署口径清晰；需要后续验证 compose、模型 provider、渠道凭证和沙箱边界。\n   - 建议动作：加入自托管 AI OS 对比池，对比 AnythingLLM、OpenAgent、Activepieces 的部署摩擦。\n\n3. [micro/go-micro](https://github.com/micro/go-micro) - Go Agent Harness - Score 86\n   - 做什么：用 Go 构建 agent harness 和 service framework，把服务端点、agent、workflow、MCP/A2A gateway 放进同一运行时。\n   - 面向谁：用 Go 做生产 agent 服务、内部工具和可调用业务服务的后端团队。\n   - AI native 点：服务 endpoint 自动变成 AI-callable tool，agent 有 plan/delegate、memory、guardrails、approval tool、durable flow 和 MCP/A2A gateway。\n   - 增长/活跃信号：搜索结果近期 crawl；README 将 harness、service discovery、durable flow、MCP gateway、A2A gateway作为核心卖点。\n   - 可运行性判断：README 有 examples、first-agent、mcp、agent-plan-delegate 等路径；本次未执行 Go 示例。\n   - 建议动作：把它作为“agent as distributed service”的后端基线，试写一个小型 service-to-agent demo。\n\n4. [Decentralised-AI/Archon-agent-builder](https://github.com/Decentralised-AI/Archon-agent-builder) - Agent Builder Workbench - Score 84\n   - 做什么：用 agentic coding workflow、RAG 知识库和 Streamlit UI 创建其他 AI agents。\n   - 面向谁：正在搭建垂直 agent、想把 framework docs 和工具生成流程产品化的开发者。\n   - AI native 点：reasoner 生成 scope，pydantic AI coder、refiner agents、MCP server、Supabase vector DB 和 workbench 共同驱动 agent 创建。\n   - 增长/活跃信号：搜索结果近期 crawl；README 提供 Docker 推荐路径、Streamlit UI、Graph Service、MCP 容器和本地 Python 安装。\n   - 可运行性判断：`python run_docker.py` 和本地安装路径明确；需要 OpenAI/Anthropic/OpenRouter/Ollama 与 Supabase。\n   - 建议动作：评估 agent builder 的“文档 RAG + refiner agents”结构能否复用到内部模板生成器。\n\n5. [SummerEngine/summer-engine-agent](https://github.com/SummerEngine/summer-engine-agent) - Game-dev Agent Skill Bridge - Score 81\n   - 做什么：为 Codex、Claude Code、Cursor、Copilot 等 agent 安装游戏开发 skills，并通过 MCP 连接本地 Summer Engine。\n   - 面向谁：想让 coding agent 直接检查、编辑、运行和截图游戏场景的游戏开发者。\n   - AI native 点：skills + MCP server 暴露 scene、diagnostics、runtime、visual screenshot 等工具，让 agent 具备游戏引擎操作能力。\n   - 增长/活跃信号：搜索结果显示 last week crawl；README 给出跨 agent 安装、engine app、login、MCP 工具列表和平台边界。\n   - 可运行性判断：CLI 路径清晰，但 engine app 约 1GB 且闭源；Linux 支持仍需手动等待。\n   - 建议动作：Watch；适合在需要“agent 操作复杂本地软件”时拆解 MCP tool 设计。\n\n6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) - Browser Automation CLI - Score 79\n   - 做什么：面向 AI agents 的浏览器自动化 CLI，支持 Chrome/Chromium、Lightpanda、Safari WebDriver 路径和 skill 安装。\n   - 面向谁：需要让 coding agent 稳定测试登录流、QA 流程和网页交互的前端/全栈团队。\n   - AI native 点：通过 `agent-browser open/snapshot/click/fill` 这种 agent-readable 控制面，让模型按引用元素执行浏览器任务。\n   - 增长/活跃信号：公开结果显示仓库近期发布并被 crawl；README 强调 Codex、Claude Code、Cursor、Gemini CLI、Copilot 等 agent 集成。\n   - 可运行性判断：CLI 和 `npx skills add vercel-labs/agent-browser` 路径明确；未在本机安装或跑浏览器任务。\n   - 建议动作：用一个固定登录/表单流程和 Stagehand、Browser Use 做稳定性对比。\n\n7. [orneryd/Mimir](https://github.com/orneryd/Mimir) - Agent Memory Bank - Score 76\n   - 做什么：本地可定制 memory bank，给代码索引、长期记忆、多 agent orchestration 提供语义向量搜索。\n   - 面向谁：长期项目、复杂 agent 编排、需要跨 session 学习失败经验的开发者。\n   - AI native 点：把 memory、semantic search、worker agent experience 和 drag-and-drop orchestration 做成可运行基础设施。\n   - 增长/活跃信号：搜索结果近期 crawl；README 暴露 5-minute quick start、IDE integration、Docker/Node 启动路径。\n   - 可运行性判断：Docker Desktop、Node 18+、`npm run start` / `docker compose up -d` 路径明确；未验证 embedding provider 和数据隐私。\n   - 建议动作：与本仓库/Obsidian 记忆工作流对比，看是否值得作为 agent memory 实验件。\n\n8. [browser-use/video-use](https://github.com/browser-use/video-use) - Agentic Video Editing Skill - Score 74\n   - 做什么：把原始素材交给 coding agents 生成剪辑成片，覆盖静音裁切、字幕、调色、动画 overlays 和自检。\n   - 面向谁：用 Claude Code/Codex 等 agent 处理视频内容的创作者和自动化团队。\n   - AI native 点：用 skill、项目记忆、并行子 agent、FFmpeg/Remotion/Manim/HyperFrames 工具链重构视频编辑流程。\n   - 增长/活跃信号：公开 GitHub 结果近期 crawl；README 展示安装提示、`project.md` 持久记忆和 agent 支持面。\n   - 可运行性判断：有 `install.md`、`SKILL.md`、pyproject、静态资源和示例；依赖 FFmpeg 与外部 API key，未本地渲染。\n   - 建议动作：保留为 AI 创作工作流样板，先审计素材隐私和渲染成本。\n\n## Watchlist\n\n- [cloudflare/agents](https://github.com/cloudflare/agents) - Agent runtime packages - Score 82 - 功能面极强，包含 persistent state、MCP、workflows、voice、browser agents、sandboxed code mode、x402；但偏平台 SDK，今天作为生态基准观察。\n- [the-open-agent/openagent](https://github.com/the-open-agent/openagent) - Personal AI assistant - Score 80 - 自托管 personal assistant，支持 RAG、computer-use、browser-use、coding agent 和单 binary 安装；此前成熟度需要复核。\n- [Agent Voice Response](https://github.com/agentvoiceresponse) - Voice agent telephony stack - Score 73 - Asterisk/FreePBX/VitalPBX 方向的实时语音 agent 组件，适合观察 enterprise voice integration。\n- [browserbase/stagehand](https://github.com/browserbase/stagehand) - Browser agent SDK - Score 72 - 已多次出现，继续作为浏览器 agent 可重复执行/缓存/自愈基线。\n- [activepieces/activepieces](https://github.com/activepieces/activepieces) - AI workflow automation - Score 71 - 强产品形态和 MCP 生态，但此前已有雷达历史，今天不挤占新 Top。\n\n## Skip Reasons\n\n- [aloth/awesome-ai-agents](https://github.com/aloth/awesome-ai-agents)：awesome list/目录型内容，适合作为发现源，缺少单一可运行产品面。\n- [Supersynergy/awesome-ai-agents-2025](https://github.com/Supersynergy/awesome-ai-agents-2025)：年度目录型内容，缺少单一可运行产品面。\n- [G1o22/awesome-ai-agents-2026](https://github.com/G1o22/awesome-ai-agents-2026)：AI agent 聚合列表，适合作为发现源，不适合作为 Top 项目。\n- [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers)：论文列表/研究导航，缺少可直接运行的用户产品形态。\n- [github.github.com/gh-aw](https://github.github.com/gh-aw/)：这是 GitHub Agentic Workflows 文档站，不是独立 GitHub 产品仓库。\n\n## 今日趋势观察\n\n1. Agent workbench 正在从单机 CLI 扩展成“容器 + 聊天渠道 + scheduler + workflow DAG + browser + memory”的运行平台，Loop 是今天最清晰的样本。\n2. MCP 的产品化路径分成两类：一类是通用 runtime/gateway，另一类是垂直软件控制桥，比如游戏引擎、浏览器、语音和视频编辑。\n3. 自托管 AI OS 仍在升温，但要区分真正的一键部署产品和功能清单式 README；JARVIS/OpenAgent/AnythingLLM 值得做部署摩擦对比。\n4. Agent memory 正从“聊天历史”变成可审计、可搜索、可跨项目迁移的长期资产；Mimir 这类项目可和现有 Obsidian/Codex 记忆流程互相校准。\n\n## 今日建议动作\n\n- 先试跑 `radutopala/loop` 的本地 onboard，在 disposable repo 中记录权限、日志、browser 和 workflow 体验。\n- 把 `micro/go-micro` 做一个小型 Go service-to-agent spike，验证“每个服务端点变成 AI tool”的工程价值。\n- 对 `JARVIS`、`OpenAgent`、`AnythingLLM` 做一张自托管 AI OS 部署摩擦表，避免只看 README 功能密度。\n\n## 数据观察窗口与关键假设\n\n- Window: 2026-08-06 00:00 to 2026-08-09 12:40 Asia/Shanghai.\n- Source path: local `git fetch` succeeded, but local GitHub API discovery failed via both configured proxy and no-proxy direct DNS. Public web search/GitHub snippets were used for candidate discovery.\n- Assumption: crawler freshness and search visibility are directional only; scores emphasize product surface, runnability clues, user scenario, documentation density and AI-native architecture.\n- Assumption: strong historical baselines such as `github/gh-aw` and `github/github-mcp-server` were not repeated in JSON skip entries because that would incorrectly demote their latest board status.\n- Assumption: no repository was cloned, installed, built, run, security-scanned, credential-tested, browser-tested or model-provider-tested in this automation run.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "radutopala/loop",
+      "url": "https://github.com/radutopala/loop",
+      "category": "Agent Container Workbench",
+      "score": 91,
+      "summary": "Docker/desktop/chat workbench for coding agents with workflow DAGs, scheduler, browser control, memory and quality evidence.",
+      "audience": "Engineering teams and power users running long-lived agent tasks across local workspaces and chat channels.",
+      "ai_native_angle": "Agent sessions, MCP tools, browser bridge, memory index, scheduler, workflow engine, quality scanner and security gate are core product surfaces.",
+      "growth_signal": "Public web search showed recent crawl visibility; README exposes DockerRunner, Workflow Engine, Security Gate, Quality Engine, MCP server and host browser bridge.",
+      "runnability": "CLI, daemon, MCP, local/global onboard, Docker image and workflow examples are documented; no local run was performed.",
+      "recommended_action": "Run loop onboard:local in a disposable repository and verify permission gates, logs and workflow execution."
+    },
+    {
+      "rank": 2,
+      "full_name": "hyhmrright/JARVIS",
+      "url": "https://github.com/hyhmrright/JARVIS",
+      "category": "Self-hosted AI OS",
+      "score": 88,
+      "summary": "Self-hosted AI assistant platform with RAG, multi-LLM failover, workflow studio, skill market, multi-tenant workspaces and channels.",
+      "audience": "Small teams deploying an internal AI OS, channel bots and workflow automation stack.",
+      "ai_native_angle": "LangGraph ReAct, multi-agent supervisor, sandboxed tools, skill market, RAG tools and multi-channel access form the product.",
+      "growth_signal": "Recent public crawl visibility; README shows screenshots, Workflow Studio, Settings, Skill Market, multi-channel features and one-docker-compose positioning.",
+      "runnability": "Product and deployment shape are clear; compose, provider credentials, channel credentials and sandbox boundaries still need live verification.",
+      "recommended_action": "Add to the self-hosted AI OS comparison set against AnythingLLM, OpenAgent and Activepieces."
+    },
+    {
+      "rank": 3,
+      "full_name": "micro/go-micro",
+      "url": "https://github.com/micro/go-micro",
+      "category": "Go Agent Harness",
+      "score": 86,
+      "summary": "Go agent harness and service framework that unifies agents, services, workflows, MCP and A2A in one runtime.",
+      "audience": "Backend teams building production agent services, internal tools and AI-callable business endpoints in Go.",
+      "ai_native_angle": "Every service endpoint can become an AI-callable tool; agents get planning, delegation, memory, guardrails, approvals and durable flows.",
+      "growth_signal": "Recent public crawl visibility; README positions harnesses, service discovery, durable flows, MCP gateway and A2A gateway as core features.",
+      "runnability": "Examples include first-agent, mcp and agent-plan-delegate paths; no Go example was executed in this run.",
+      "recommended_action": "Prototype a small service-to-agent demo and evaluate the distributed-service framing."
+    },
+    {
+      "rank": 4,
+      "full_name": "Decentralised-AI/Archon-agent-builder",
+      "url": "https://github.com/Decentralised-AI/Archon-agent-builder",
+      "category": "Agent Builder Workbench",
+      "score": 84,
+      "summary": "Agentic coding workflow and RAG-backed workbench for creating other AI agents through a Streamlit UI.",
+      "audience": "Developers building vertical agents and productized framework-documentation workflows.",
+      "ai_native_angle": "Reasoner scope generation, pydantic AI coder, refiner agents, MCP server, Supabase vector DB and workbench drive agent creation.",
+      "growth_signal": "Recent public crawl visibility; README provides Docker setup, Streamlit UI, Graph Service, MCP container and local Python install paths.",
+      "runnability": "python run_docker.py and local install paths are documented; OpenAI, Anthropic, OpenRouter or Ollama plus Supabase are needed.",
+      "recommended_action": "Evaluate whether the documentation RAG plus refiner-agent pattern can power internal template generators."
+    },
+    {
+      "rank": 5,
+      "full_name": "SummerEngine/summer-engine-agent",
+      "url": "https://github.com/SummerEngine/summer-engine-agent",
+      "category": "Game-dev Agent Skill Bridge",
+      "score": 81,
+      "summary": "Cross-agent skills and MCP bridge that let coding agents inspect, edit, run and screenshot Summer Engine game scenes.",
+      "audience": "Game developers who want coding agents to operate a local game engine instead of only editing files.",
+      "ai_native_angle": "Skills plus MCP tools expose scene, diagnostics, runtime and visual screenshot capabilities to agents.",
+      "growth_signal": "Search result showed last-week crawl; README documents cross-agent install, engine app, login, MCP tools and platform boundaries.",
+      "runnability": "CLI path is clear, but the engine app is about 1 GB and closed source; Linux support remains limited.",
+      "recommended_action": "Watch as a vertical example of MCP tool design for complex local software."
+    },
+    {
+      "rank": 6,
+      "full_name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "category": "Browser Automation CLI",
+      "score": 79,
+      "summary": "Browser automation CLI for AI agents with element snapshots, browser control and coding-assistant skill integration.",
+      "audience": "Frontend and full-stack teams using agents to test login flows, QA tasks and web interactions.",
+      "ai_native_angle": "Agent-readable commands like open, snapshot, click and fill let models operate browser tasks through stable element references.",
+      "growth_signal": "Public result showed recent release/crawl visibility and README integration with Codex, Claude Code, Cursor, Gemini CLI and Copilot.",
+      "runnability": "CLI and npx skills add vercel-labs/agent-browser paths are documented; no local browser task was run.",
+      "recommended_action": "Compare a fixed login or form workflow against Stagehand and Browser Use for stability."
+    },
+    {
+      "rank": 7,
+      "full_name": "orneryd/Mimir",
+      "url": "https://github.com/orneryd/Mimir",
+      "category": "Agent Memory Bank",
+      "score": 76,
+      "summary": "Customizable local memory bank with semantic vector search for indexed code, stored memories and multi-agent orchestration.",
+      "audience": "Developers working on long-term projects, complex orchestration and cross-session learning from agent failures.",
+      "ai_native_angle": "Memory, semantic search, worker-agent experience and drag-and-drop orchestration are packaged as agent infrastructure.",
+      "growth_signal": "Recent public crawl visibility; README exposes a 5-minute quick start, IDE integration and Docker/Node startup path.",
+      "runnability": "Docker Desktop, Node 18+, npm run start and docker compose up paths are documented; embedding and privacy boundaries were not verified.",
+      "recommended_action": "Compare with the current Obsidian/Codex memory workflow before adopting."
+    },
+    {
+      "rank": 8,
+      "full_name": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "category": "Agentic Video Editing Skill",
+      "score": 74,
+      "summary": "Skill-driven workflow that lets coding agents edit raw video into rendered output with cuts, subtitles, grading, overlays and self-checks.",
+      "audience": "Creators and automation teams using Claude Code, Codex or similar agents for video production.",
+      "ai_native_angle": "Skills, project memory, parallel sub-agents and FFmpeg/Remotion/Manim/HyperFrames tools turn editing into an agent workflow.",
+      "growth_signal": "Recent public GitHub crawl visibility; README shows install prompt, project.md memory and support for multiple coding agents.",
+      "runnability": "install.md, SKILL.md, pyproject and examples exist; FFmpeg and external API keys are likely required, and no render was performed.",
+      "recommended_action": "Keep as an AI creative workflow sample after auditing media privacy and render cost."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "cloudflare/agents",
+      "url": "https://github.com/cloudflare/agents",
+      "category": "Agent Runtime Packages",
+      "score": 82,
+      "summary": "Cloudflare agent packages covering persistent state, MCP, workflows, voice, browser agents, code mode and sandboxed execution.",
+      "audience": "Teams building production agents on Cloudflare Workers and Durable Objects.",
+      "ai_native_angle": "Agent runtime primitives are packaged into deployable framework modules.",
+      "growth_signal": "Public snippets show broad current feature coverage and docs.",
+      "runnability": "Strong SDK/examples shape; platform coupling requires Cloudflare context.",
+      "recommended_action": "Track as an ecosystem baseline rather than a daily Top repeat."
+    },
+    {
+      "rank": 2,
+      "full_name": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "category": "Personal AI Assistant",
+      "score": 80,
+      "summary": "Self-hostable personal AI assistant with LLM, RAG, computer-use, browser-use and coding-agent support.",
+      "audience": "Individuals and teams wanting a local assistant workspace.",
+      "ai_native_angle": "Combines RAG, tool management, agent loops and browser/code execution in one assistant.",
+      "growth_signal": "Public snippets show single-binary installer, demo and product UI claims.",
+      "runnability": "Installer path is clear; maturity should be reverified before promotion.",
+      "recommended_action": "Re-audit alongside JARVIS and AnythingLLM."
+    },
+    {
+      "rank": 3,
+      "full_name": "agentvoiceresponse/agentvoiceresponse",
+      "url": "https://github.com/agentvoiceresponse",
+      "category": "Voice Agent Telephony Stack",
+      "score": 73,
+      "summary": "Voice-agent stack around Asterisk AudioSocket with ASR, LLM, TTS, STT and speech-to-speech components.",
+      "audience": "Teams integrating AI agents into telephony and contact-center systems.",
+      "ai_native_angle": "Turns voice infrastructure into provider-swappable conversational-agent services.",
+      "growth_signal": "Recent public crawl visibility and enterprise telephony positioning.",
+      "runnability": "Docker-style production claims need live deployment validation.",
+      "recommended_action": "Watch for enterprise voice integration patterns."
+    },
+    {
+      "rank": 4,
+      "full_name": "browserbase/stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "category": "Browser Agent SDK",
+      "score": 72,
+      "summary": "Browser agent SDK focused on repeatable, cached and self-healing web automation.",
+      "audience": "Teams building production browser automation and extraction workflows.",
+      "ai_native_angle": "Combines natural language actions with code paths for resilient browser agents.",
+      "growth_signal": "Mature, repeatedly visible browser-agent baseline.",
+      "runnability": "npx create-browser-app and examples are documented.",
+      "recommended_action": "Use as a comparison baseline for agent-browser."
+    },
+    {
+      "rank": 5,
+      "full_name": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "category": "AI Workflow Automation",
+      "score": 71,
+      "summary": "Open-source automation platform with AI agents, MCPs and hundreds of AI workflow integrations.",
+      "audience": "No-code automation builders and operations teams.",
+      "ai_native_angle": "AI agents and MCP servers sit inside a broader workflow automation product.",
+      "growth_signal": "Strong product and ecosystem visibility, but already known in prior radar context.",
+      "runnability": "Mature app shape; not promoted today to preserve focus on fresher candidates.",
+      "recommended_action": "Track as a mature automation benchmark."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "aloth/awesome-ai-agents",
+      "url": "https://github.com/aloth/awesome-ai-agents",
+      "skip_reason": "Awesome list and discovery source rather than one runnable AI-native product."
+    },
+    {
+      "full_name": "Supersynergy/awesome-ai-agents-2025",
+      "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+      "skip_reason": "Annual directory content rather than one runnable AI-native product."
+    },
+    {
+      "full_name": "G1o22/awesome-ai-agents-2026",
+      "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+      "skip_reason": "AI agent aggregation list; useful as a discovery source but not a Top product."
+    },
+    {
+      "full_name": "VoltAgent/awesome-ai-agent-papers",
+      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+      "skip_reason": "Paper list and research navigation rather than a directly runnable user product."
+    }
+  ]
+}

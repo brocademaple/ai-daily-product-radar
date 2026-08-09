@@ -1,0 +1,250 @@
+{
+  "run_date": "2026-08-08",
+  "generated_at": "2026-08-08T17:30:00+08:00",
+  "data_window": "2026-08-05 00:00 to 2026-08-08 17:30 Asia/Shanghai; GitHub plugin repository search for created/pushed AI agent, MCP, RAG, LLM app, browser/code/voice agent, automation and workflow repositories, plus GitHub repository page README/root-structure spot checks.",
+  "source_summary": "Attempted shell curl GitHub Search API dumps to /tmp/radar_2026_08_08_*.json, first through configured proxy and then with proxy variables unset. All shell API requests failed before usable JSON was saved. Live discovery then used the connected GitHub search tool and web-opened GitHub repository pages for shortlisted candidates; no local runtime audit was performed.",
+  "trend_observations": "Agent control planes dominated this run: local coding-agent shells are becoming persistent operation consoles, while MCP is moving into vertical tools such as construction takeoff and code graphs. A second cluster packages the surrounding operations layer: quota visibility, reproducible CLI packaging, memory/context stores, approval/audit workflows and phone/PWA supervision.",
+  "assumptions": "Shell GitHub API discovery failed because the configured proxy 127.0.0.1:7890 refused connections and direct api.github.com DNS resolution failed. Candidate discovery used the connected GitHub repository search tool plus GitHub repository pages opened through web browsing. Search results were constrained with pushed:>2026-08-05 or created:>2026-08-05 queries where available, but exact star counts and push timestamps are page/plugin snapshots rather than independently replayed API JSON dumps. No third-party repository was cloned, installed, built, authenticated, scanned, or run. Runnability is inferred from README, root directories, install commands, Docker/package/test files and release/documentation signals.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-08-08\n\nLive discovery used GitHub plugin search plus GitHub repository page audits after shell GitHub API access failed. Full Chinese report: data/runs/2026-08-08.md.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "CoWork-OS/CoWork-OS",
+      "url": "https://github.com/CoWork-OS/CoWork-OS",
+      "category": "Local AI Super App / Agent OS",
+      "score": 93,
+      "summary": "GUI-first, CLI-capable local AI workbench for coding, documents, browser work, automations, providers, channels and agent operations.",
+      "audience": "Power users, founders and small teams who want one governed local workspace for agents and artifacts.",
+      "ai_native_angle": "Makes agents, artifacts, channels, browser testing, memory, approvals and provider routing the core workspace primitives instead of adding chat on top of files.",
+      "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 workflow set; GitHub page crawled today shows 6,148 commits, 418 stars, 65 forks and a public adoption report generated 2026-08-08T04:19:54Z.",
+      "runnability": "README shows Dockerfiles, package metadata, desktop/native/server folders, CLI and getting-started docs; no local install or desktop runtime audit was performed.",
+      "recommended_action": "High-priority product teardown: inspect local-first security boundaries, artifact workbench quality and whether Automation Studio can run a real recurring workflow."
+    },
+    {
+      "rank": 2,
+      "full_name": "BennyKok/omg.dev",
+      "url": "https://github.com/BennyKok/omg.dev",
+      "category": "Private Coding-agent Control Plane",
+      "score": 91,
+      "summary": "Self-hosted control plane that runs coding agents on your own machine and lets you monitor or steer them from a PWA or phone.",
+      "audience": "Developers running multiple Claude Code, Codex, OpenCode, Cursor, Grok, Pi or Copilot sessions.",
+      "ai_native_angle": "Treats local agent CLIs as durable tmux-backed operations with remote prompt handling, transcript streaming and phone-side approvals.",
+      "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled today shows 1,241 commits, 21 forks, agents/mobile/web/packages/deploy directories and current README positioning around local control.",
+      "runnability": "README gives bun/npm global CLI setup and localhost:8766 loopback install; no install, service launch or phone workflow was tested.",
+      "recommended_action": "Trial on one disposable workstation and focus on permission prompts, transcript privacy, loopback binding and mobile steering latency."
+    },
+    {
+      "rank": 3,
+      "full_name": "ClewCode/ClewCode",
+      "url": "https://github.com/ClewCode/ClewCode",
+      "category": "Local Multi-provider Coding Agent",
+      "score": 89,
+      "summary": "Terminal-native coding agent that runs in the repository with BYOK providers, local memory, tools, MCP, voice input and peer/swarm options.",
+      "audience": "Developers who want a local coding assistant with broad provider choice and auditable controls.",
+      "ai_native_angle": "Combines local agent loop, tool permissioning, SQLite memory, provider switching, MCP/plugins/skills and peer delegation into one CLI product.",
+      "growth_signal": "GitHub plugin search returned it in the created:>2026-08-05 set; GitHub page shows 691 commits, examples/docs/plugins/src folders and README claims 32+ providers, 76+ tools and no telemetry positioning.",
+      "runnability": "README includes curl/npm install, REPL and one-shot usage, Bun dev/build/test commands; no package install or provider setup was performed.",
+      "recommended_action": "Run a small repo task with a non-sensitive API key and compare permission UX, memory storage and provider switching against Codex CLI."
+    },
+    {
+      "rank": 4,
+      "full_name": "Kentucky-ai/opentakeoff",
+      "url": "https://github.com/Kentucky-ai/opentakeoff",
+      "category": "Vertical MCP Workbench / Construction Takeoff",
+      "score": 88,
+      "summary": "Browser canvas and MCP server for measuring construction drawings, producing auditable quantities and marked-up plansets.",
+      "audience": "Construction estimators, preconstruction teams and agent builders targeting domain measurement workflows.",
+      "ai_native_angle": "Exposes the same geometry engine through 40 MCP tools and a human canvas, so an agent and estimator can create comparable audited measurements.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 454 commits, 22 forks, demo/docs/mcp/server/web folders and Apache-2.0 positioning.",
+      "runnability": "README states npx -y opentakeoff-mcp, browser canvas, Dockerfile and demo assets; no PDF takeoff or MCP call was run locally.",
+      "recommended_action": "Use one public floor-plan PDF to test agent scale-setting, overlay verification and human-correction provenance."
+    },
+    {
+      "rank": 5,
+      "full_name": "slopus/rig",
+      "url": "https://github.com/slopus/rig",
+      "category": "Unified Coding-agent Harness",
+      "score": 86,
+      "summary": "Local harness that unifies Pi, Codex, Claude Code, Kimi Code and Grok Build-style coding-agent flows behind one terminal runtime.",
+      "audience": "Developers who already use several model-native coding CLIs and want a consistent local wrapper.",
+      "ai_native_angle": "Preserves provider-native credentials while adding durable sessions, subagents, MCP and a stable adapter layer for future clients.",
+      "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled 3 days ago shows 1,157 commits, 2 forks, docs/packages/scripts and README quickstart.",
+      "runnability": "README exposes npm install -g @slopus/rig, local sign-in reuse and rig usage; no install or credential discovery was tested.",
+      "recommended_action": "Evaluate as a routing/control abstraction only after auditing how it invokes each underlying CLI and stores session state."
+    },
+    {
+      "rank": 6,
+      "full_name": "stakwork/stakgraph",
+      "url": "https://github.com/stakwork/stakgraph",
+      "category": "Code Graph MCP for Agents",
+      "score": 84,
+      "summary": "Tree-sitter/LSP/Neo4j-backed source-code graph that gives coding agents compact structural context via CLI, MCP server and graph server.",
+      "audience": "Agent users working in medium-to-large codebases where raw file search burns tokens.",
+      "ai_native_angle": "Turns code structure, endpoints, models, tests and dependency edges into MCP-addressable agent context.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled yesterday shows 3,497 commits, 20 forks, CLI/MCP/gateway/standalone folders and install script.",
+      "runnability": "README claims pre-built binaries and CLI/MCP/graph-server modes; no binary install, parser benchmark or Neo4j server was run.",
+      "recommended_action": "Benchmark on one known repo against plain ripgrep/tree-sitter context and measure token reduction plus false edges."
+    },
+    {
+      "rank": 7,
+      "full_name": "different-ai-studio/teamclaw",
+      "url": "https://github.com/different-ai-studio/teamclaw",
+      "category": "Team AI Agent Desktop Workspace",
+      "score": 83,
+      "summary": "Local-first agent desktop workspace with roles, skills, RAG knowledge base, MCP support, channel gateways and permissioned file operations.",
+      "audience": "Solo builders and SMB teams that want private local agents shared through team skills and knowledge config.",
+      "ai_native_angle": "Bundles local ACP agent host, Feishu/Discord/Email/WeChat-style channels, workspace skills, knowledge indexing and agent-first diff review.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 620 commits, 15 forks, apps/services/templates/autoui-mcp folders and multilingual README.",
+      "runnability": "README lists desktop/workspace features and self-host deploy folder; no binary build, channel gateway or daemon test was performed.",
+      "recommended_action": "Watch and test only the local desktop loop first, especially file permission behavior and channel credential handling."
+    },
+    {
+      "rank": 8,
+      "full_name": "sbluemin/fleet-harness",
+      "url": "https://github.com/sbluemin/fleet-harness",
+      "category": "Multi-agent Coding Operations Console",
+      "score": 81,
+      "summary": "Local orchestration kit for commanding Claude Code, Codex, OpenCode and Cursor Agent through CLI, web console and optional desktop shell.",
+      "audience": "Developers comparing or coordinating several coding-agent backends in parallel.",
+      "ai_native_angle": "Models agent sessions as local operations with live terminals, formation view, project context panels, wiki and carrier settings.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 3 weeks ago shows 567 commits, 15 stars, 1 fork and 97 releases through v1.24.0 on 2026-07-11.",
+      "runnability": "README provides npm install, fleet, fleet console, Node 20 requirement and desktop release path; no local console or carrier run was tested.",
+      "recommended_action": "Use as a watchlist-plus trial for parallel agent supervision; verify that status, cost and terminal state stay faithful."
+    },
+    {
+      "rank": 9,
+      "full_name": "steipete/CodexBar",
+      "url": "https://github.com/steipete/CodexBar",
+      "category": "AI Coding Provider Usage Monitor",
+      "score": 79,
+      "summary": "macOS menu bar app and CLI that surfaces coding-provider limits, resets, credits, spend and status across Codex, Claude Code and many providers.",
+      "audience": "Heavy AI coding users who need to plan around rate limits and provider quota windows.",
+      "ai_native_angle": "Makes usage windows, provider sessions and local cost scans first-class operational context for agent work planning.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 4,794 commits, 1.7k forks and release/Homebrew/AUR install paths.",
+      "runnability": "README lists macOS app, Homebrew cask and CLI tarballs; no install, provider session read or cost scan was performed.",
+      "recommended_action": "Trial read-only first and inspect what local files/cookies each provider integration touches."
+    },
+    {
+      "rank": 10,
+      "full_name": "kuhlman-labs/fishhawk",
+      "url": "https://github.com/kuhlman-labs/fishhawk",
+      "category": "Governed Agent Software Factory Workflow",
+      "score": 78,
+      "summary": "Workflow engine for agent-driven software changes with plan, implement, review stages, human approvals and signed audit trails.",
+      "audience": "Teams experimenting with autonomous software delivery but needing policy and compliance evidence.",
+      "ai_native_angle": "Separates agent action from governance: policy gates, approvals, immutable audit and tool-agnostic runners around the coding workflow.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled last week shows 1,118 commits, 209 issues, 8 PRs and a README status for v0 control plane, runner, CLI, MCP server and Web UI.",
+      "runnability": "README gives local Postgres/MinIO quickstart with Go 1.25, Docker and Node 22 for Web UI; no workflow run was executed.",
+      "recommended_action": "Study its audit/compliance model before a local run; useful benchmark for approval-heavy coding-agent automation."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "jacksonjp0311-gif/Cortex",
+      "url": "https://github.com/jacksonjp0311-gif/Cortex",
+      "category": "Local Coding-agent Memory",
+      "score": 76,
+      "summary": "Local-first memory for AI coding agents with repo indexing, bounded context, provenance, drift checks and safety controls.",
+      "audience": "Agent users with repeated work in the same codebase.",
+      "ai_native_angle": "Treats durable verified context as the counterpart to temporary model attention.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 2 days ago shows 280 commits, 8 forks, benchmarks/docs/examples/tests and shell/PowerShell install scripts.",
+      "runnability": "Python CLI commands are documented, but no repo index or memory trial was run.",
+      "recommended_action": "Try on a medium repo only after checking what gets persisted and how stale facts are invalidated."
+    },
+    {
+      "rank": 2,
+      "full_name": "cockpit-dev/cockpit",
+      "url": "https://github.com/cockpit-dev/cockpit",
+      "category": "AI-driven App Runtime Verification",
+      "score": 75,
+      "summary": "Flutter and black-box mobile app E2E primitives exposed to CLI, MCP and future clients.",
+      "audience": "Mobile/Flutter teams seeking agent-readable app state and test automation.",
+      "ai_native_angle": "Gives agents typed access to widget, route, log, error, network and runtime state plus black-box device control.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 agent workflow results; GitHub page crawled 3 days ago shows 446 commits and examples/packages/plugins/skills folders.",
+      "runnability": "README positions YAML/JSON suites and MCP-adjacent resources; no Flutter or mobile device test was run.",
+      "recommended_action": "Watch for stable CLI/MCP docs and test on a toy Flutter app."
+    },
+    {
+      "rank": 3,
+      "full_name": "numtide/llm-agents.nix",
+      "url": "https://github.com/numtide/llm-agents.nix",
+      "category": "Agent Toolchain Packaging",
+      "score": 73,
+      "summary": "Nix packages for AI coding agents and developer tools, automatically updated daily.",
+      "audience": "Nix users and teams needing reproducible agent CLI installs.",
+      "ai_native_angle": "Turns volatile agent CLI distribution into reproducible package inputs for development environments.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 14,893 commits, 198 forks and packages for Amp, Antigravity CLI, Claude Code, Claude Desktop and more.",
+      "runnability": "README provides nix run commands; no Nix install or package execution was performed.",
+      "recommended_action": "Track as infrastructure, not product Top, unless package reliability becomes a recurring local bottleneck."
+    },
+    {
+      "rank": 4,
+      "full_name": "OSSDrop/OSSDrop",
+      "url": "https://github.com/OSSDrop/OSSDrop",
+      "category": "Open-source Product Discovery",
+      "score": 70,
+      "summary": "Community-curated Product Hunt alternative for open-source tools with categories, votes and automatically updated stars/trending.",
+      "audience": "Developers discovering OSS tools and makers launching projects.",
+      "ai_native_angle": "Indirect signal source for AI/coding-agent tools rather than an agent product itself.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 workflow results; GitHub page crawled 4 days ago shows 58 commits, 12 forks, data/scripts/assets and AI & Coding Agents category.",
+      "runnability": "Static/listing product shape is clear, but it is primarily a directory; no site build was run.",
+      "recommended_action": "Use as a discovery source, not as a Top AI-native product pick."
+    },
+    {
+      "rank": 5,
+      "full_name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "category": "AI Gateway for Coding Tools",
+      "score": 69,
+      "summary": "Large AI gateway aggregating providers/models with quota-aware fallback, dashboards, MCP/A2A and desktop/PWA surfaces.",
+      "audience": "Builders trying to route many LLM providers through one endpoint.",
+      "ai_native_angle": "Provider routing and free-tier accounting become operational substrate for agent/coding tools.",
+      "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 6,370 commits, 5.8k forks, many provider/dashboard/docker/test files, but the huge contributor/free-token framing needs extra scrutiny.",
+      "runnability": "Docker, PWA and package metadata exist; no gateway deployment or provider credential test was performed.",
+      "recommended_action": "Treat as high-risk watch: verify license, provider terms, secret handling and quota math before any trial."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "DDW-X/awesome-agent-skills",
+      "url": "https://github.com/DDW-X/awesome-agent-skills",
+      "skip_reason": "Awesome/skills collection; useful ecosystem map but not a runnable product surface."
+    },
+    {
+      "full_name": "ugliai/awesome-ai-tools",
+      "url": "https://github.com/ugliai/awesome-ai-tools",
+      "skip_reason": "AI tools directory, not an AI-native product with its own workflow."
+    },
+    {
+      "full_name": "justrobin14/langchain-for-beginners-r",
+      "url": "https://github.com/justrobin14/langchain-for-beginners-r",
+      "skip_reason": "Beginner/tutorial material rather than a productized app, CLI, API or agent workflow."
+    },
+    {
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "skip_reason": "Large curated app collection; kept as context but excluded by prompt/awesome-list downgrade rule."
+    },
+    {
+      "full_name": "linny006/awesome-agent-skills",
+      "url": "https://github.com/linny006/awesome-agent-skills",
+      "skip_reason": "Agent skills index; not promoted because it lacks a single durable user-facing product workflow."
+    },
+    {
+      "full_name": "Rodert/awesome-mcp",
+      "url": "https://github.com/Rodert/awesome-mcp",
+      "skip_reason": "MCP directory/list; useful for discovery but not a runnable AI-native product itself."
+    },
+    {
+      "full_name": "Krishita17/federal-ai-incident-reporting",
+      "url": "https://github.com/Krishita17/federal-ai-incident-reporting",
+      "skip_reason": "Potential policy/reporting app signal, but current search metadata did not show enough AI-native product depth for Top."
+    },
+    {
+      "full_name": "James19890801/feishu-codex-digital-employee",
+      "url": "https://github.com/James19890801/feishu-codex-digital-employee",
+      "skip_reason": "Small Feishu/Codex integration candidate; insufficient docs/root evidence in this pass to promote."
+    }
+  ]
+}

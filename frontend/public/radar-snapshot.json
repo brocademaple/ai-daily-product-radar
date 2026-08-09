@@ -1,6 +1,30 @@
 {
   "runs": [
     {
+      "id": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+      "runDate": "2026-08-09",
+      "generatedAt": "2026-08-09T12:40:41+08:00",
+      "dataWindow": "2026-08-06 00:00 to 2026-08-09 12:40 Asia/Shanghai; local GitHub API discovery failed, so this run uses public web search and GitHub README/repository snippets as directional continuity evidence.",
+      "sourceSummary": "git fetch origin succeeded. Local curl against GitHub API failed through the configured proxy because 127.0.0.1:7890 refused connections, and failed without proxy because api.github.com DNS could not resolve. Candidate discovery used public web search results and GitHub repository/README snippets. No third-party repository was cloned, installed, built, run, security-scanned or credential-tested.",
+      "trendObservations": "Agent workbenches are expanding from single CLI sessions into containerized runtimes with chat channels, schedulers, workflow DAGs, browser control, memory, permissions and quality evidence. MCP is productizing both as generic runtime infrastructure and as vertical software-control bridges for browsers, games, voice and video. Self-hosted AI OS projects need deployment-friction comparison, not just README feature counts. Long-term agent memory is becoming a searchable operational asset.",
+      "assumptions": "Crawler freshness and search visibility are directional only; this report does not claim exact 24-72 hour star deltas. Scores emphasize product surface, runnability clues, user scenario, documentation density and AI-native architecture. Strong historical baselines such as github/gh-aw and github/github-mcp-server were not repeated in JSON skip entries because that would incorrectly demote their latest board status. Local runtime, Docker, browser, desktop, voice, video, model-provider, payment and security audits were not performed.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-08-09\n\n数据窗口：2026-08-06 00:00 至 2026-08-09 12:40（Asia/Shanghai）。\n\n关键假设：本地 `curl` 访问 GitHub API 失败；走现有代理时 `127.0.0.1:7890` 拒连，取消代理后 `api.github.com` DNS 解析失败。因此本次使用公开 web 搜索与 GitHub 仓库/README 摘要做连续性发现，不声明精确 24-72 小时 star 增量。所有增长/活跃信号均为搜索可见性、近期 crawl/README 暴露、产品形态和可运行证据的方向性判断；未 clone、安装、构建或运行第三方仓库。\n\n## Top Projects\n\n1. [radutopala/loop](https://github.com/radutopala/loop) - Agent Container Workbench - Score 91\n   - 做什么：把 Claude 等 coding agent 放进 Docker/桌面/Slack/Discord 工作台，提供 chat、terminal、file editor、workflow DAG、scheduler、browser 和质量扫描。\n   - 面向谁：需要长期运行 agent 任务、跨聊天渠道调度、审计执行结果的工程团队和 power users。\n   - AI native 点：agent 会话、任务调度、MCP 工具、浏览器控制、记忆索引、质量引擎和安全 gate 都是产品主面。\n   - 增长/活跃信号：web 搜索显示仓库近期被 crawl；README 暴露 DockerRunner、Workflow Engine、Security Gate、Quality Engine、MCP server 和本地 browser bridge 等完整产品层。\n   - 可运行性判断：CLI 命令、daemon、MCP、本地/全局 onboard、Docker image 与 workflow 示例齐全；本次未实际运行。\n   - 建议动作：优先做一次 disposable repo 的 `loop onboard:local`/workflow 试跑，重点验证权限 gate 和日志留存。\n\n2. [hyhmrright/JARVIS](https://github.com/hyhmrright/JARVIS) - Self-hosted AI OS - Score 88\n   - 做什么：自托管 AI assistant 平台，包含 RAG、多 LLM failover、Visual Workflow Studio、Skill Market、多租户 workspace、多渠道消息和 observability。\n   - 面向谁：想用一套 Docker 部署内部 AI OS、渠道机器人和工作流平台的小团队。\n   - AI native 点：LangGraph ReAct、多 agent supervisor、sandboxed tools、skill market、RAG tools 和多渠道入口组成完整 agent 操作系统。\n   - 增长/活跃信号：搜索结果近期 crawl；README 展示截图、Workflow Studio、Settings、Skill Market、multi-channel 和 one docker compose up 入口。\n   - 可运行性判断：产品面和部署口径清晰；需要后续验证 compose、模型 provider、渠道凭证和沙箱边界。\n   - 建议动作：加入自托管 AI OS 对比池，对比 AnythingLLM、OpenAgent、Activepieces 的部署摩擦。\n\n3. [micro/go-micro](https://github.com/micro/go-micro) - Go Agent Harness - Score 86\n   - 做什么：用 Go 构建 agent harness 和 service framework，把服务端点、agent、workflow、MCP/A2A gateway 放进同一运行时。\n   - 面向谁：用 Go 做生产 agent 服务、内部工具和可调用业务服务的后端团队。\n   - AI native 点：服务 endpoint 自动变成 AI-callable tool，agent 有 plan/delegate、memory、guardrails、approval tool、durable flow 和 MCP/A2A gateway。\n   - 增长/活跃信号：搜索结果近期 crawl；README 将 harness、service discovery、durable flow、MCP gateway、A2A gateway作为核心卖点。\n   - 可运行性判断：README 有 examples、first-agent、mcp、agent-plan-delegate 等路径；本次未执行 Go 示例。\n   - 建议动作：把它作为“agent as distributed service”的后端基线，试写一个小型 service-to-agent demo。\n\n4. [Decentralised-AI/Archon-agent-builder](https://github.com/Decentralised-AI/Archon-agent-builder) - Agent Builder Workbench - Score 84\n   - 做什么：用 agentic coding workflow、RAG 知识库和 Streamlit UI 创建其他 AI agents。\n   - 面向谁：正在搭建垂直 agent、想把 framework docs 和工具生成流程产品化的开发者。\n   - AI native 点：reasoner 生成 scope，pydantic AI coder、refiner agents、MCP server、Supabase vector DB 和 workbench 共同驱动 agent 创建。\n   - 增长/活跃信号：搜索结果近期 crawl；README 提供 Docker 推荐路径、Streamlit UI、Graph Service、MCP 容器和本地 Python 安装。\n   - 可运行性判断：`python run_docker.py` 和本地安装路径明确；需要 OpenAI/Anthropic/OpenRouter/Ollama 与 Supabase。\n   - 建议动作：评估 agent builder 的“文档 RAG + refiner agents”结构能否复用到内部模板生成器。\n\n5. [SummerEngine/summer-engine-agent](https://github.com/SummerEngine/summer-engine-agent) - Game-dev Agent Skill Bridge - Score 81\n   - 做什么：为 Codex、Claude Code、Cursor、Copilot 等 agent 安装游戏开发 skills，并通过 MCP 连接本地 Summer Engine。\n   - 面向谁：想让 coding agent 直接检查、编辑、运行和截图游戏场景的游戏开发者。\n   - AI native 点：skills + MCP server 暴露 scene、diagnostics、runtime、visual screenshot 等工具，让 agent 具备游戏引擎操作能力。\n   - 增长/活跃信号：搜索结果显示 last week crawl；README 给出跨 agent 安装、engine app、login、MCP 工具列表和平台边界。\n   - 可运行性判断：CLI 路径清晰，但 engine app 约 1GB 且闭源；Linux 支持仍需手动等待。\n   - 建议动作：Watch；适合在需要“agent 操作复杂本地软件”时拆解 MCP tool 设计。\n\n6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) - Browser Automation CLI - Score 79\n   - 做什么：面向 AI agents 的浏览器自动化 CLI，支持 Chrome/Chromium、Lightpanda、Safari WebDriver 路径和 skill 安装。\n   - 面向谁：需要让 coding agent 稳定测试登录流、QA 流程和网页交互的前端/全栈团队。\n   - AI native 点：通过 `agent-browser open/snapshot/click/fill` 这种 agent-readable 控制面，让模型按引用元素执行浏览器任务。\n   - 增长/活跃信号：公开结果显示仓库近期发布并被 crawl；README 强调 Codex、Claude Code、Cursor、Gemini CLI、Copilot 等 agent 集成。\n   - 可运行性判断：CLI 和 `npx skills add vercel-labs/agent-browser` 路径明确；未在本机安装或跑浏览器任务。\n   - 建议动作：用一个固定登录/表单流程和 Stagehand、Browser Use 做稳定性对比。\n\n7. [orneryd/Mimir](https://github.com/orneryd/Mimir) - Agent Memory Bank - Score 76\n   - 做什么：本地可定制 memory bank，给代码索引、长期记忆、多 agent orchestration 提供语义向量搜索。\n   - 面向谁：长期项目、复杂 agent 编排、需要跨 session 学习失败经验的开发者。\n   - AI native 点：把 memory、semantic search、worker agent experience 和 drag-and-drop orchestration 做成可运行基础设施。\n   - 增长/活跃信号：搜索结果近期 crawl；README 暴露 5-minute quick start、IDE integration、Docker/Node 启动路径。\n   - 可运行性判断：Docker Desktop、Node 18+、`npm run start` / `docker compose up -d` 路径明确；未验证 embedding provider 和数据隐私。\n   - 建议动作：与本仓库/Obsidian 记忆工作流对比，看是否值得作为 agent memory 实验件。\n\n8. [browser-use/video-use](https://github.com/browser-use/video-use) - Agentic Video Editing Skill - Score 74\n   - 做什么：把原始素材交给 coding agents 生成剪辑成片，覆盖静音裁切、字幕、调色、动画 overlays 和自检。\n   - 面向谁：用 Claude Code/Codex 等 agent 处理视频内容的创作者和自动化团队。\n   - AI native 点：用 skill、项目记忆、并行子 agent、FFmpeg/Remotion/Manim/HyperFrames 工具链重构视频编辑流程。\n   - 增长/活跃信号：公开 GitHub 结果近期 crawl；README 展示安装提示、`project.md` 持久记忆和 agent 支持面。\n   - 可运行性判断：有 `install.md`、`SKILL.md`、pyproject、静态资源和示例；依赖 FFmpeg 与外部 API key，未本地渲染。\n   - 建议动作：保留为 AI 创作工作流样板，先审计素材隐私和渲染成本。\n\n## Watchlist\n\n- [cloudflare/agents](https://github.com/cloudflare/agents) - Agent runtime packages - Score 82 - 功能面极强，包含 persistent state、MCP、workflows、voice、browser agents、sandboxed code mode、x402；但偏平台 SDK，今天作为生态基准观察。\n- [the-open-agent/openagent](https://github.com/the-open-agent/openagent) - Personal AI assistant - Score 80 - 自托管 personal assistant，支持 RAG、computer-use、browser-use、coding agent 和单 binary 安装；此前成熟度需要复核。\n- [Agent Voice Response](https://github.com/agentvoiceresponse) - Voice agent telephony stack - Score 73 - Asterisk/FreePBX/VitalPBX 方向的实时语音 agent 组件，适合观察 enterprise voice integration。\n- [browserbase/stagehand](https://github.com/browserbase/stagehand) - Browser agent SDK - Score 72 - 已多次出现，继续作为浏览器 agent 可重复执行/缓存/自愈基线。\n- [activepieces/activepieces](https://github.com/activepieces/activepieces) - AI workflow automation - Score 71 - 强产品形态和 MCP 生态，但此前已有雷达历史，今天不挤占新 Top。\n\n## Skip Reasons\n\n- [aloth/awesome-ai-agents](https://github.com/aloth/awesome-ai-agents)：awesome list/目录型内容，适合作为发现源，缺少单一可运行产品面。\n- [Supersynergy/awesome-ai-agents-2025](https://github.com/Supersynergy/awesome-ai-agents-2025)：年度目录型内容，缺少单一可运行产品面。\n- [G1o22/awesome-ai-agents-2026](https://github.com/G1o22/awesome-ai-agents-2026)：AI agent 聚合列表，适合作为发现源，不适合作为 Top 项目。\n- [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers)：论文列表/研究导航，缺少可直接运行的用户产品形态。\n- [github.github.com/gh-aw](https://github.github.com/gh-aw/)：这是 GitHub Agentic Workflows 文档站，不是独立 GitHub 产品仓库。\n\n## 今日趋势观察\n\n1. Agent workbench 正在从单机 CLI 扩展成“容器 + 聊天渠道 + scheduler + workflow DAG + browser + memory”的运行平台，Loop 是今天最清晰的样本。\n2. MCP 的产品化路径分成两类：一类是通用 runtime/gateway，另一类是垂直软件控制桥，比如游戏引擎、浏览器、语音和视频编辑。\n3. 自托管 AI OS 仍在升温，但要区分真正的一键部署产品和功能清单式 README；JARVIS/OpenAgent/AnythingLLM 值得做部署摩擦对比。\n4. Agent memory 正从“聊天历史”变成可审计、可搜索、可跨项目迁移的长期资产；Mimir 这类项目可和现有 Obsidian/Codex 记忆流程互相校准。\n\n## 今日建议动作\n\n- 先试跑 `radutopala/loop` 的本地 onboard，在 disposable repo 中记录权限、日志、browser 和 workflow 体验。\n- 把 `micro/go-micro` 做一个小型 Go service-to-agent spike，验证“每个服务端点变成 AI tool”的工程价值。\n- 对 `JARVIS`、`OpenAgent`、`AnythingLLM` 做一张自托管 AI OS 部署摩擦表，避免只看 README 功能密度。\n\n## 数据观察窗口与关键假设\n\n- Window: 2026-08-06 00:00 to 2026-08-09 12:40 Asia/Shanghai.\n- Source path: local `git fetch` succeeded, but local GitHub API discovery failed via both configured proxy and no-proxy direct DNS. Public web search/GitHub snippets were used for candidate discovery.\n- Assumption: crawler freshness and search visibility are directional only; scores emphasize product surface, runnability clues, user scenario, documentation density and AI-native architecture.\n- Assumption: strong historical baselines such as `github/gh-aw` and `github/github-mcp-server` were not repeated in JSON skip entries because that would incorrectly demote their latest board status.\n- Assumption: no repository was cloned, installed, built, run, security-scanned, credential-tested, browser-tested or model-provider-tested in this automation run.",
+      "sourceFile": "2026-08-09.json",
+      "entryCount": 17
+    },
+    {
+      "id": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+      "runDate": "2026-08-08",
+      "generatedAt": "2026-08-08T17:30:00+08:00",
+      "dataWindow": "2026-08-05 00:00 to 2026-08-08 17:30 Asia/Shanghai; GitHub plugin repository search for created/pushed AI agent, MCP, RAG, LLM app, browser/code/voice agent, automation and workflow repositories, plus GitHub repository page README/root-structure spot checks.",
+      "sourceSummary": "Attempted shell curl GitHub Search API dumps to /tmp/radar_2026_08_08_*.json, first through configured proxy and then with proxy variables unset. All shell API requests failed before usable JSON was saved. Live discovery then used the connected GitHub search tool and web-opened GitHub repository pages for shortlisted candidates; no local runtime audit was performed.",
+      "trendObservations": "Agent control planes dominated this run: local coding-agent shells are becoming persistent operation consoles, while MCP is moving into vertical tools such as construction takeoff and code graphs. A second cluster packages the surrounding operations layer: quota visibility, reproducible CLI packaging, memory/context stores, approval/audit workflows and phone/PWA supervision.",
+      "assumptions": "Shell GitHub API discovery failed because the configured proxy 127.0.0.1:7890 refused connections and direct api.github.com DNS resolution failed. Candidate discovery used the connected GitHub repository search tool plus GitHub repository pages opened through web browsing. Search results were constrained with pushed:>2026-08-05 or created:>2026-08-05 queries where available, but exact star counts and push timestamps are page/plugin snapshots rather than independently replayed API JSON dumps. No third-party repository was cloned, installed, built, authenticated, scanned, or run. Runnability is inferred from README, root directories, install commands, Docker/package/test files and release/documentation signals.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-08-08\n\nLive discovery used GitHub plugin search plus GitHub repository page audits after shell GitHub API access failed. Full Chinese report: data/runs/2026-08-08.md.",
+      "sourceFile": "2026-08-08.json",
+      "entryCount": 23
+    },
+    {
       "id": "run:2026-07-31:2026-07-31T11:58:04+08:00",
       "runDate": "2026-07-31",
       "generatedAt": "2026-07-31T11:58:04+08:00",
@@ -586,6 +610,25 @@
       "skipReason": null
     },
     {
+      "fullName": "CoWork-OS/CoWork-OS",
+      "url": "https://github.com/CoWork-OS/CoWork-OS",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 93,
+      "latestScore": 93,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local AI Super App / Agent OS",
+      "summary": "GUI-first, CLI-capable local AI workbench for coding, documents, browser work, automations, providers, channels and agent operations.",
+      "audience": "Power users, founders and small teams who want one governed local workspace for agents and artifacts.",
+      "aiNativeAngle": "Makes agents, artifacts, channels, browser testing, memory, approvals and provider routing the core workspace primitives instead of adding chat on top of files.",
+      "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 workflow set; GitHub page crawled today shows 6,148 commits, 418 stars, 65 forks and a public adoption report generated 2026-08-08T04:19:54Z.",
+      "runnability": "README shows Dockerfiles, package metadata, desktop/native/server folders, CLI and getting-started docs; no local install or desktop runtime audit was performed.",
+      "recommendedAction": "High-priority product teardown: inspect local-first security boundaries, artifact workbench quality and whether Automation Studio can run a real recurring workflow.",
+      "skipReason": null
+    },
+    {
       "fullName": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "firstSeenDate": "2026-06-25",
@@ -849,6 +892,44 @@
       "growthSignal": "OSSInsight AI trending snapshot showed very strong 28-day star growth and high visibility in coding-agent discussions.",
       "runnability": "CLI-oriented product surface with install docs and active repo structure.",
       "recommendedAction": "Try on one contained repo task and compare edit quality, context handling, and rollback workflow.",
+      "skipReason": null
+    },
+    {
+      "fullName": "radutopala/loop",
+      "url": "https://github.com/radutopala/loop",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Container Workbench",
+      "summary": "Docker/desktop/chat workbench for coding agents with workflow DAGs, scheduler, browser control, memory and quality evidence.",
+      "audience": "Engineering teams and power users running long-lived agent tasks across local workspaces and chat channels.",
+      "aiNativeAngle": "Agent sessions, MCP tools, browser bridge, memory index, scheduler, workflow engine, quality scanner and security gate are core product surfaces.",
+      "growthSignal": "Public web search showed recent crawl visibility; README exposes DockerRunner, Workflow Engine, Security Gate, Quality Engine, MCP server and host browser bridge.",
+      "runnability": "CLI, daemon, MCP, local/global onboard, Docker image and workflow examples are documented; no local run was performed.",
+      "recommendedAction": "Run loop onboard:local in a disposable repository and verify permission gates, logs and workflow execution.",
+      "skipReason": null
+    },
+    {
+      "fullName": "BennyKok/omg.dev",
+      "url": "https://github.com/BennyKok/omg.dev",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Private Coding-agent Control Plane",
+      "summary": "Self-hosted control plane that runs coding agents on your own machine and lets you monitor or steer them from a PWA or phone.",
+      "audience": "Developers running multiple Claude Code, Codex, OpenCode, Cursor, Grok, Pi or Copilot sessions.",
+      "aiNativeAngle": "Treats local agent CLIs as durable tmux-backed operations with remote prompt handling, transcript streaming and phone-side approvals.",
+      "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled today shows 1,241 commits, 21 forks, agents/mobile/web/packages/deploy directories and current README positioning around local control.",
+      "runnability": "README gives bun/npm global CLI setup and localhost:8766 loopback install; no install, service launch or phone workflow was tested.",
+      "recommendedAction": "Trial on one disposable workstation and focus on permission prompts, transcript privacy, loopback binding and mobile steering latency.",
       "skipReason": null
     },
     {
@@ -1346,6 +1427,25 @@
       "skipReason": null
     },
     {
+      "fullName": "ClewCode/ClewCode",
+      "url": "https://github.com/ClewCode/ClewCode",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 89,
+      "latestScore": 89,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local Multi-provider Coding Agent",
+      "summary": "Terminal-native coding agent that runs in the repository with BYOK providers, local memory, tools, MCP, voice input and peer/swarm options.",
+      "audience": "Developers who want a local coding assistant with broad provider choice and auditable controls.",
+      "aiNativeAngle": "Combines local agent loop, tool permissioning, SQLite memory, provider switching, MCP/plugins/skills and peer delegation into one CLI product.",
+      "growthSignal": "GitHub plugin search returned it in the created:>2026-08-05 set; GitHub page shows 691 commits, examples/docs/plugins/src folders and README claims 32+ providers, 76+ tools and no telemetry positioning.",
+      "runnability": "README includes curl/npm install, REPL and one-shot usage, Bun dev/build/test commands; no package install or provider setup was performed.",
+      "recommendedAction": "Run a small repo task with a non-sensitive API key and compare permission UX, memory storage and provider switching against Codex CLI.",
+      "skipReason": null
+    },
+    {
       "fullName": "Cranot/roam-code",
       "url": "https://github.com/Cranot/roam-code",
       "firstSeenDate": "2026-07-08",
@@ -1476,6 +1576,44 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "hyhmrright/JARVIS",
+      "url": "https://github.com/hyhmrright/JARVIS",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Self-hosted AI OS",
+      "summary": "Self-hosted AI assistant platform with RAG, multi-LLM failover, workflow studio, skill market, multi-tenant workspaces and channels.",
+      "audience": "Small teams deploying an internal AI OS, channel bots and workflow automation stack.",
+      "aiNativeAngle": "LangGraph ReAct, multi-agent supervisor, sandboxed tools, skill market, RAG tools and multi-channel access form the product.",
+      "growthSignal": "Recent public crawl visibility; README shows screenshots, Workflow Studio, Settings, Skill Market, multi-channel features and one-docker-compose positioning.",
+      "runnability": "Product and deployment shape are clear; compose, provider credentials, channel credentials and sandbox boundaries still need live verification.",
+      "recommendedAction": "Add to the self-hosted AI OS comparison set against AnythingLLM, OpenAgent and Activepieces.",
+      "skipReason": null
+    },
+    {
+      "fullName": "Kentucky-ai/opentakeoff",
+      "url": "https://github.com/Kentucky-ai/opentakeoff",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Vertical MCP Workbench / Construction Takeoff",
+      "summary": "Browser canvas and MCP server for measuring construction drawings, producing auditable quantities and marked-up plansets.",
+      "audience": "Construction estimators, preconstruction teams and agent builders targeting domain measurement workflows.",
+      "aiNativeAngle": "Exposes the same geometry engine through 40 MCP tools and a human canvas, so an agent and estimator can create comparable audited measurements.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 454 commits, 22 forks, demo/docs/mcp/server/web folders and Apache-2.0 positioning.",
+      "runnability": "README states npx -y opentakeoff-mcp, browser canvas, Dockerfile and demo assets; no PDF takeoff or MCP call was run locally.",
+      "recommendedAction": "Use one public floor-plan PDF to test agent scale-setting, overlay verification and human-correction provenance.",
       "skipReason": null
     },
     {
@@ -2296,6 +2434,63 @@
       "skipReason": null
     },
     {
+      "fullName": "browserbase/stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "firstSeenDate": "2026-06-05",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 2,
+      "bestScore": 86,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Browser Agent SDK",
+      "summary": "Browser agent SDK focused on repeatable, cached and self-healing web automation.",
+      "audience": "Teams building production browser automation and extraction workflows.",
+      "aiNativeAngle": "Combines natural language actions with code paths for resilient browser agents.",
+      "growthSignal": "Mature, repeatedly visible browser-agent baseline.",
+      "runnability": "npx create-browser-app and examples are documented.",
+      "recommendedAction": "Use as a comparison baseline for agent-browser.",
+      "skipReason": null
+    },
+    {
+      "fullName": "micro/go-micro",
+      "url": "https://github.com/micro/go-micro",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Go Agent Harness",
+      "summary": "Go agent harness and service framework that unifies agents, services, workflows, MCP and A2A in one runtime.",
+      "audience": "Backend teams building production agent services, internal tools and AI-callable business endpoints in Go.",
+      "aiNativeAngle": "Every service endpoint can become an AI-callable tool; agents get planning, delegation, memory, guardrails, approvals and durable flows.",
+      "growthSignal": "Recent public crawl visibility; README positions harnesses, service discovery, durable flows, MCP gateway and A2A gateway as core features.",
+      "runnability": "Examples include first-agent, mcp and agent-plan-delegate paths; no Go example was executed in this run.",
+      "recommendedAction": "Prototype a small service-to-agent demo and evaluate the distributed-service framing.",
+      "skipReason": null
+    },
+    {
+      "fullName": "slopus/rig",
+      "url": "https://github.com/slopus/rig",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Unified Coding-agent Harness",
+      "summary": "Local harness that unifies Pi, Codex, Claude Code, Kimi Code and Grok Build-style coding-agent flows behind one terminal runtime.",
+      "audience": "Developers who already use several model-native coding CLIs and want a consistent local wrapper.",
+      "aiNativeAngle": "Preserves provider-native credentials while adding durable sessions, subagents, MCP and a stable adapter layer for future clients.",
+      "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled 3 days ago shows 1,157 commits, 2 forks, docs/packages/scripts and README quickstart.",
+      "runnability": "README exposes npm install -g @slopus/rig, local sign-in reuse and rig usage; no install or credential discovery was tested.",
+      "recommendedAction": "Evaluate as a routing/control abstraction only after auditing how it invokes each underlying CLI and stores session state.",
+      "skipReason": null
+    },
+    {
       "fullName": "Paresh-Maheshwari/morphe-ai",
       "url": "https://github.com/Paresh-Maheshwari/morphe-ai",
       "firstSeenDate": "2026-07-13",
@@ -2540,25 +2735,6 @@
       "growthSignal": "GitHub page showed 4.6k stars, 403 forks and 56 releases; README emphasizes 13.4% vulnerable marketplace-skill baseline and support for Codex, Claude Code, Cursor, Copilot and more.",
       "runnability": "npx CLI, global install, list/install/update/remove commands, MCP server setup and security docs are present; no local run audit performed.",
       "recommendedAction": "Compare against local Codex skill installation and audit whether lockfile/hash/audit concepts should be copied into internal skill workflows.",
-      "skipReason": null
-    },
-    {
-      "fullName": "browserbase/stagehand",
-      "url": "https://github.com/browserbase/stagehand",
-      "firstSeenDate": "2026-06-05",
-      "lastSeenDate": "2026-06-05",
-      "seenCount": 1,
-      "bestScore": 86,
-      "latestScore": 86,
-      "latestSection": "top",
-      "boardStatus": "top-picks",
-      "category": "Browser Agent SDK",
-      "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
-      "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
-      "aiNativeAngle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
-      "growthSignal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
-      "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
-      "recommendedAction": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches.",
       "skipReason": null
     },
     {
@@ -2980,6 +3156,63 @@
       "skipReason": null
     },
     {
+      "fullName": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "firstSeenDate": "2026-06-07",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 2,
+      "bestScore": 84,
+      "latestScore": 71,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI Workflow Automation",
+      "summary": "Open-source automation platform with AI agents, MCPs and hundreds of AI workflow integrations.",
+      "audience": "No-code automation builders and operations teams.",
+      "aiNativeAngle": "AI agents and MCP servers sit inside a broader workflow automation product.",
+      "growthSignal": "Strong product and ecosystem visibility, but already known in prior radar context.",
+      "runnability": "Mature app shape; not promoted today to preserve focus on fresher candidates.",
+      "recommendedAction": "Track as a mature automation benchmark.",
+      "skipReason": null
+    },
+    {
+      "fullName": "Decentralised-AI/Archon-agent-builder",
+      "url": "https://github.com/Decentralised-AI/Archon-agent-builder",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Builder Workbench",
+      "summary": "Agentic coding workflow and RAG-backed workbench for creating other AI agents through a Streamlit UI.",
+      "audience": "Developers building vertical agents and productized framework-documentation workflows.",
+      "aiNativeAngle": "Reasoner scope generation, pydantic AI coder, refiner agents, MCP server, Supabase vector DB and workbench drive agent creation.",
+      "growthSignal": "Recent public crawl visibility; README provides Docker setup, Streamlit UI, Graph Service, MCP container and local Python install paths.",
+      "runnability": "python run_docker.py and local install paths are documented; OpenAI, Anthropic, OpenRouter or Ollama plus Supabase are needed.",
+      "recommendedAction": "Evaluate whether the documentation RAG plus refiner-agent pattern can power internal template generators.",
+      "skipReason": null
+    },
+    {
+      "fullName": "stakwork/stakgraph",
+      "url": "https://github.com/stakwork/stakgraph",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Code Graph MCP for Agents",
+      "summary": "Tree-sitter/LSP/Neo4j-backed source-code graph that gives coding agents compact structural context via CLI, MCP server and graph server.",
+      "audience": "Agent users working in medium-to-large codebases where raw file search burns tokens.",
+      "aiNativeAngle": "Turns code structure, endpoints, models, tests and dependency edges into MCP-addressable agent context.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled yesterday shows 3,497 commits, 20 forks, CLI/MCP/gateway/standalone folders and install script.",
+      "runnability": "README claims pre-built binaries and CLI/MCP/graph-server modes; no binary install, parser benchmark or Neo4j server was run.",
+      "recommendedAction": "Benchmark on one known repo against plain ripgrep/tree-sitter context and measure token reduction plus false edges.",
+      "skipReason": null
+    },
+    {
       "fullName": "mikiarlo3/ai-copywriter",
       "url": "https://github.com/mikiarlo3/ai-copywriter",
       "firstSeenDate": "2026-07-26",
@@ -3398,25 +3631,6 @@
       "skipReason": null
     },
     {
-      "fullName": "activepieces/activepieces",
-      "url": "https://github.com/activepieces/activepieces",
-      "firstSeenDate": "2026-06-07",
-      "lastSeenDate": "2026-06-07",
-      "seenCount": 1,
-      "bestScore": 84,
-      "latestScore": 84,
-      "latestSection": "top",
-      "boardStatus": "top-picks",
-      "category": "AI Workflow Automation",
-      "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
-      "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
-      "aiNativeAngle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
-      "growthSignal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
-      "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
-      "recommendedAction": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark.",
-      "skipReason": null
-    },
-    {
       "fullName": "ShayneP/local-voice-ai",
       "url": "https://github.com/ShayneP/local-voice-ai",
       "firstSeenDate": "2026-06-05",
@@ -3604,6 +3818,25 @@
       "growthSignal": "README 给出 uv tool 安装与 session start/deploy；也提供自托管 docker compose；Star ~118。",
       "runnability": "CLI quick start（uv tool install + runtm session start/deploy）；自托管需 docker compose。",
       "recommendedAction": "先在本机走通 session start + deploy 的 happy path；再评估自托管成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "different-ai-studio/teamclaw",
+      "url": "https://github.com/different-ai-studio/teamclaw",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Team AI Agent Desktop Workspace",
+      "summary": "Local-first agent desktop workspace with roles, skills, RAG knowledge base, MCP support, channel gateways and permissioned file operations.",
+      "audience": "Solo builders and SMB teams that want private local agents shared through team skills and knowledge config.",
+      "aiNativeAngle": "Bundles local ACP agent host, Feishu/Discord/Email/WeChat-style channels, workspace skills, knowledge indexing and agent-first diff review.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 620 commits, 15 forks, apps/services/templates/autoui-mcp folders and multilingual README.",
+      "runnability": "README lists desktop/workspace features and self-host deploy folder; no binary build, channel gateway or daemon test was performed.",
+      "recommendedAction": "Watch and test only the local desktop loop first, especially file permission behavior and channel credential handling.",
       "skipReason": null
     },
     {
@@ -4003,6 +4236,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "cloudflare/agents",
+      "url": "https://github.com/cloudflare/agents",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Runtime Packages",
+      "summary": "Cloudflare agent packages covering persistent state, MCP, workflows, voice, browser agents, code mode and sandboxed execution.",
+      "audience": "Teams building production agents on Cloudflare Workers and Durable Objects.",
+      "aiNativeAngle": "Agent runtime primitives are packaged into deployable framework modules.",
+      "growthSignal": "Public snippets show broad current feature coverage and docs.",
+      "runnability": "Strong SDK/examples shape; platform coupling requires Cloudflare context.",
+      "recommendedAction": "Track as an ecosystem baseline rather than a daily Top repeat.",
       "skipReason": null
     },
     {
@@ -4557,6 +4809,44 @@
       "skipReason": null
     },
     {
+      "fullName": "SummerEngine/summer-engine-agent",
+      "url": "https://github.com/SummerEngine/summer-engine-agent",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Game-dev Agent Skill Bridge",
+      "summary": "Cross-agent skills and MCP bridge that let coding agents inspect, edit, run and screenshot Summer Engine game scenes.",
+      "audience": "Game developers who want coding agents to operate a local game engine instead of only editing files.",
+      "aiNativeAngle": "Skills plus MCP tools expose scene, diagnostics, runtime and visual screenshot capabilities to agents.",
+      "growthSignal": "Search result showed last-week crawl; README documents cross-agent install, engine app, login, MCP tools and platform boundaries.",
+      "runnability": "CLI path is clear, but the engine app is about 1 GB and closed source; Linux support remains limited.",
+      "recommendedAction": "Watch as a vertical example of MCP tool design for complex local software.",
+      "skipReason": null
+    },
+    {
+      "fullName": "sbluemin/fleet-harness",
+      "url": "https://github.com/sbluemin/fleet-harness",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Multi-agent Coding Operations Console",
+      "summary": "Local orchestration kit for commanding Claude Code, Codex, OpenCode and Cursor Agent through CLI, web console and optional desktop shell.",
+      "audience": "Developers comparing or coordinating several coding-agent backends in parallel.",
+      "aiNativeAngle": "Models agent sessions as local operations with live terminals, formation view, project context panels, wiki and carrier settings.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 3 weeks ago shows 567 commits, 15 stars, 1 fork and 97 releases through v1.24.0 on 2026-07-11.",
+      "runnability": "README provides npm install, fleet, fleet console, Node 20 requirement and desktop release path; no local console or carrier run was tested.",
+      "recommendedAction": "Use as a watchlist-plus trial for parallel agent supervision; verify that status, cost and terminal state stay faithful.",
+      "skipReason": null
+    },
+    {
       "fullName": "helixmap/sigwood",
       "url": "https://github.com/helixmap/sigwood",
       "firstSeenDate": "2026-07-12",
@@ -4782,6 +5072,25 @@
       "growthSignal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
       "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
       "recommendedAction": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。",
+      "skipReason": null
+    },
+    {
+      "fullName": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Personal AI Assistant",
+      "summary": "Self-hostable personal AI assistant with LLM, RAG, computer-use, browser-use and coding-agent support.",
+      "audience": "Individuals and teams wanting a local assistant workspace.",
+      "aiNativeAngle": "Combines RAG, tool management, agent loops and browser/code execution in one assistant.",
+      "growthSignal": "Public snippets show single-binary installer, demo and product UI claims.",
+      "runnability": "Installer path is clear; maturity should be reverified before promotion.",
+      "recommendedAction": "Re-audit alongside JARVIS and AnythingLLM.",
       "skipReason": null
     },
     {
@@ -5222,6 +5531,44 @@
       "skipReason": null
     },
     {
+      "fullName": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Browser Automation CLI",
+      "summary": "Browser automation CLI for AI agents with element snapshots, browser control and coding-assistant skill integration.",
+      "audience": "Frontend and full-stack teams using agents to test login flows, QA tasks and web interactions.",
+      "aiNativeAngle": "Agent-readable commands like open, snapshot, click and fill let models operate browser tasks through stable element references.",
+      "growthSignal": "Public result showed recent release/crawl visibility and README integration with Codex, Claude Code, Cursor, Gemini CLI and Copilot.",
+      "runnability": "CLI and npx skills add vercel-labs/agent-browser paths are documented; no local browser task was run.",
+      "recommendedAction": "Compare a fixed login or form workflow against Stagehand and Browser Use for stability.",
+      "skipReason": null
+    },
+    {
+      "fullName": "steipete/CodexBar",
+      "url": "https://github.com/steipete/CodexBar",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "AI Coding Provider Usage Monitor",
+      "summary": "macOS menu bar app and CLI that surfaces coding-provider limits, resets, credits, spend and status across Codex, Claude Code and many providers.",
+      "audience": "Heavy AI coding users who need to plan around rate limits and provider quota windows.",
+      "aiNativeAngle": "Makes usage windows, provider sessions and local cost scans first-class operational context for agent work planning.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 4,794 commits, 1.7k forks and release/Homebrew/AUR install paths.",
+      "runnability": "README lists macOS app, Homebrew cask and CLI tarballs; no install, provider session read or cost scan was performed.",
+      "recommendedAction": "Trial read-only first and inspect what local files/cookies each provider integration touches.",
+      "skipReason": null
+    },
+    {
       "fullName": "sandeepbazar/ocm-mcp-server",
       "url": "https://github.com/sandeepbazar/ocm-mcp-server",
       "firstSeenDate": "2026-07-26",
@@ -5523,6 +5870,25 @@
       "growthSignal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
       "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
       "recommendedAction": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。",
+      "skipReason": null
+    },
+    {
+      "fullName": "kuhlman-labs/fishhawk",
+      "url": "https://github.com/kuhlman-labs/fishhawk",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Governed Agent Software Factory Workflow",
+      "summary": "Workflow engine for agent-driven software changes with plan, implement, review stages, human approvals and signed audit trails.",
+      "audience": "Teams experimenting with autonomous software delivery but needing policy and compliance evidence.",
+      "aiNativeAngle": "Separates agent action from governance: policy gates, approvals, immutable audit and tool-agnostic runners around the coding workflow.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled last week shows 1,118 commits, 209 issues, 8 PRs and a README status for v0 control plane, runner, CLI, MCP server and Web UI.",
+      "runnability": "README gives local Postgres/MinIO quickstart with Go 1.25, Docker and Node 22 for Web UI; no workflow run was executed.",
+      "recommendedAction": "Study its audit/compliance model before a local run; useful benchmark for approval-heavy coding-agent automation.",
       "skipReason": null
     },
     {
@@ -6457,6 +6823,44 @@
       "skipReason": null
     },
     {
+      "fullName": "orneryd/Mimir",
+      "url": "https://github.com/orneryd/Mimir",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Memory Bank",
+      "summary": "Customizable local memory bank with semantic vector search for indexed code, stored memories and multi-agent orchestration.",
+      "audience": "Developers working on long-term projects, complex orchestration and cross-session learning from agent failures.",
+      "aiNativeAngle": "Memory, semantic search, worker-agent experience and drag-and-drop orchestration are packaged as agent infrastructure.",
+      "growthSignal": "Recent public crawl visibility; README exposes a 5-minute quick start, IDE integration and Docker/Node startup path.",
+      "runnability": "Docker Desktop, Node 18+, npm run start and docker compose up paths are documented; embedding and privacy boundaries were not verified.",
+      "recommendedAction": "Compare with the current Obsidian/Codex memory workflow before adopting.",
+      "skipReason": null
+    },
+    {
+      "fullName": "jacksonjp0311-gif/Cortex",
+      "url": "https://github.com/jacksonjp0311-gif/Cortex",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local Coding-agent Memory",
+      "summary": "Local-first memory for AI coding agents with repo indexing, bounded context, provenance, drift checks and safety controls.",
+      "audience": "Agent users with repeated work in the same codebase.",
+      "aiNativeAngle": "Treats durable verified context as the counterpart to temporary model attention.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 2 days ago shows 280 commits, 8 forks, benchmarks/docs/examples/tests and shell/PowerShell install scripts.",
+      "runnability": "Python CLI commands are documented, but no repo index or memory trial was run.",
+      "recommendedAction": "Try on a medium repo only after checking what gets persisted and how stale facts are invalidated.",
+      "skipReason": null
+    },
+    {
       "fullName": "0xwilliamortiz/agents-council",
       "url": "https://github.com/0xwilliamortiz/agents-council",
       "firstSeenDate": "2026-07-22",
@@ -6799,6 +7203,25 @@
       "skipReason": null
     },
     {
+      "fullName": "cockpit-dev/cockpit",
+      "url": "https://github.com/cockpit-dev/cockpit",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI-driven App Runtime Verification",
+      "summary": "Flutter and black-box mobile app E2E primitives exposed to CLI, MCP and future clients.",
+      "audience": "Mobile/Flutter teams seeking agent-readable app state and test automation.",
+      "aiNativeAngle": "Gives agents typed access to widget, route, log, error, network and runtime state plus black-box device control.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 agent workflow results; GitHub page crawled 3 days ago shows 446 commits and examples/packages/plugins/skills folders.",
+      "runnability": "README positions YAML/JSON suites and MCP-adjacent resources; no Flutter or mobile device test was run.",
+      "recommendedAction": "Watch for stable CLI/MCP docs and test on a toy Flutter app.",
+      "skipReason": null
+    },
+    {
       "fullName": "schowdary75/moonsconfig",
       "url": "https://github.com/schowdary75/moonsconfig",
       "firstSeenDate": "2026-07-26",
@@ -7062,6 +7485,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agentic Video Editing Skill",
+      "summary": "Skill-driven workflow that lets coding agents edit raw video into rendered output with cuts, subtitles, grading, overlays and self-checks.",
+      "audience": "Creators and automation teams using Claude Code, Codex or similar agents for video production.",
+      "aiNativeAngle": "Skills, project memory, parallel sub-agents and FFmpeg/Remotion/Manim/HyperFrames tools turn editing into an agent workflow.",
+      "growthSignal": "Recent public GitHub crawl visibility; README shows install prompt, project.md memory and support for multiple coding agents.",
+      "runnability": "install.md, SKILL.md, pyproject and examples exist; FFmpeg and external API keys are likely required, and no render was performed.",
+      "recommendedAction": "Keep as an AI creative workflow sample after auditing media privacy and render cost.",
       "skipReason": null
     },
     {
@@ -7537,6 +7979,44 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 4 stars and pushed_at 2026-05-19T13:53:08Z; README reports 114 unit tests.",
       "runnability": "README includes pip install -e, pytest tests/unit, examples/basic_usage.py, docs, and provider config, but roadmap says CLI/PyPI/Web UI and real expert execution are still pending.",
       "recommendedAction": "Keep at watchlist boundary until real LLM expert execution and CLI land.",
+      "skipReason": null
+    },
+    {
+      "fullName": "agentvoiceresponse/agentvoiceresponse",
+      "url": "https://github.com/agentvoiceresponse",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Voice Agent Telephony Stack",
+      "summary": "Voice-agent stack around Asterisk AudioSocket with ASR, LLM, TTS, STT and speech-to-speech components.",
+      "audience": "Teams integrating AI agents into telephony and contact-center systems.",
+      "aiNativeAngle": "Turns voice infrastructure into provider-swappable conversational-agent services.",
+      "growthSignal": "Recent public crawl visibility and enterprise telephony positioning.",
+      "runnability": "Docker-style production claims need live deployment validation.",
+      "recommendedAction": "Watch for enterprise voice integration patterns.",
+      "skipReason": null
+    },
+    {
+      "fullName": "numtide/llm-agents.nix",
+      "url": "https://github.com/numtide/llm-agents.nix",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Toolchain Packaging",
+      "summary": "Nix packages for AI coding agents and developer tools, automatically updated daily.",
+      "audience": "Nix users and teams needing reproducible agent CLI installs.",
+      "aiNativeAngle": "Turns volatile agent CLI distribution into reproducible package inputs for development environments.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 14,893 commits, 198 forks and packages for Amp, Antigravity CLI, Claude Code, Claude Desktop and more.",
+      "runnability": "README provides nix run commands; no Nix install or package execution was performed.",
+      "recommendedAction": "Track as infrastructure, not product Top, unless package reliability becomes a recurring local bottleneck.",
       "skipReason": null
     },
     {
@@ -8794,6 +9274,25 @@
       "skipReason": null
     },
     {
+      "fullName": "OSSDrop/OSSDrop",
+      "url": "https://github.com/OSSDrop/OSSDrop",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 70,
+      "latestScore": 70,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Open-source Product Discovery",
+      "summary": "Community-curated Product Hunt alternative for open-source tools with categories, votes and automatically updated stars/trending.",
+      "audience": "Developers discovering OSS tools and makers launching projects.",
+      "aiNativeAngle": "Indirect signal source for AI/coding-agent tools rather than an agent product itself.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 workflow results; GitHub page crawled 4 days ago shows 58 commits, 12 forks, data/scripts/assets and AI & Coding Agents category.",
+      "runnability": "Static/listing product shape is clear, but it is primarily a directory; no site build was run.",
+      "recommendedAction": "Use as a discovery source, not as a Top AI-native product pick.",
+      "skipReason": null
+    },
+    {
       "fullName": "24KaratAu/openhub",
       "url": "https://github.com/24KaratAu/openhub",
       "firstSeenDate": "2026-07-26",
@@ -9285,6 +9784,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。",
+      "skipReason": null
+    },
+    {
+      "fullName": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": 69,
+      "latestScore": 69,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI Gateway for Coding Tools",
+      "summary": "Large AI gateway aggregating providers/models with quota-aware fallback, dashboards, MCP/A2A and desktop/PWA surfaces.",
+      "audience": "Builders trying to route many LLM providers through one endpoint.",
+      "aiNativeAngle": "Provider routing and free-tier accounting become operational substrate for agent/coding tools.",
+      "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 6,370 commits, 5.8k forks, many provider/dashboard/docker/test files, but the huge contributor/free-token framing needs extra scrutiny.",
+      "runnability": "Docker, PWA and package metadata exist; no gateway deployment or provider credential test was performed.",
+      "recommendedAction": "Treat as high-risk watch: verify license, provider terms, secret handling and quota math before any trial.",
       "skipReason": null
     },
     {
@@ -10426,6 +10944,234 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "aloth/awesome-ai-agents",
+      "url": "https://github.com/aloth/awesome-ai-agents",
+      "firstSeenDate": "2026-08-09",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Awesome list and discovery source rather than one runnable AI-native product."
+    },
+    {
+      "fullName": "G1o22/awesome-ai-agents-2026",
+      "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+      "firstSeenDate": "2026-06-05",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "AI agent aggregation list; useful as a discovery source but not a Top product."
+    },
+    {
+      "fullName": "Supersynergy/awesome-ai-agents-2025",
+      "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+      "firstSeenDate": "2026-06-05",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Annual directory content rather than one runnable AI-native product."
+    },
+    {
+      "fullName": "VoltAgent/awesome-ai-agent-papers",
+      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+      "firstSeenDate": "2026-06-05",
+      "lastSeenDate": "2026-08-09",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Paper list and research navigation rather than a directly runnable user product."
+    },
+    {
+      "fullName": "DDW-X/awesome-agent-skills",
+      "url": "https://github.com/DDW-X/awesome-agent-skills",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Awesome/skills collection; useful ecosystem map but not a runnable product surface."
+    },
+    {
+      "fullName": "James19890801/feishu-codex-digital-employee",
+      "url": "https://github.com/James19890801/feishu-codex-digital-employee",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Small Feishu/Codex integration candidate; insufficient docs/root evidence in this pass to promote."
+    },
+    {
+      "fullName": "justrobin14/langchain-for-beginners-r",
+      "url": "https://github.com/justrobin14/langchain-for-beginners-r",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Beginner/tutorial material rather than a productized app, CLI, API or agent workflow."
+    },
+    {
+      "fullName": "Krishita17/federal-ai-incident-reporting",
+      "url": "https://github.com/Krishita17/federal-ai-incident-reporting",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Potential policy/reporting app signal, but current search metadata did not show enough AI-native product depth for Top."
+    },
+    {
+      "fullName": "linny006/awesome-agent-skills",
+      "url": "https://github.com/linny006/awesome-agent-skills",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Agent skills index; not promoted because it lacks a single durable user-facing product workflow."
+    },
+    {
+      "fullName": "Rodert/awesome-mcp",
+      "url": "https://github.com/Rodert/awesome-mcp",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "MCP directory/list; useful for discovery but not a runnable AI-native product itself."
+    },
+    {
+      "fullName": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Large curated app collection; kept as context but excluded by prompt/awesome-list downgrade rule."
+    },
+    {
+      "fullName": "ugliai/awesome-ai-tools",
+      "url": "https://github.com/ugliai/awesome-ai-tools",
+      "firstSeenDate": "2026-08-08",
+      "lastSeenDate": "2026-08-08",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "AI tools directory, not an AI-native product with its own workflow."
     },
     {
       "fullName": "awesome-4dgs/awesome-4dgs",
@@ -13088,63 +13834,6 @@
       "skipReason": "Strong editor product with AI relevance, but this cycle prioritized repositories whose primary surface is AI-native agent/workflow/RAG/product automation."
     },
     {
-      "fullName": "G1o22/awesome-ai-agents-2026",
-      "url": "https://github.com/G1o22/awesome-ai-agents-2026",
-      "firstSeenDate": "2026-06-05",
-      "lastSeenDate": "2026-06-05",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped."
-    },
-    {
-      "fullName": "Supersynergy/awesome-ai-agents-2025",
-      "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
-      "firstSeenDate": "2026-06-05",
-      "lastSeenDate": "2026-06-05",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Awesome list / directory of tools, not a single runnable AI native product."
-    },
-    {
-      "fullName": "VoltAgent/awesome-ai-agent-papers",
-      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
-      "firstSeenDate": "2026-06-05",
-      "lastSeenDate": "2026-06-05",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Research-paper list without runnable product surface."
-    },
-    {
       "fullName": "langchain-ai/langchain",
       "url": "https://github.com/langchain-ai/langchain",
       "firstSeenDate": "2026-06-04",
@@ -13633,6 +14322,40 @@
           "growth_signal": "GitHub snapshot showed about 28.7k stars, 4,818 commits, 295 releases, and latest v0.6.97 on 2026-05-30.",
           "runnability": "README documents npx simstudio, Docker Compose, hosted cloud, manual self-hosting, demos, screenshots, and docs.",
           "recommended_action": "Run locally and dissect workflow canvas, Copilot-generated nodes, and RAG upload flow."
+        }
+      }
+    ],
+    "CoWork-OS/CoWork-OS": [
+      {
+        "id": "CoWork-OS-CoWork-OS:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "CoWork-OS/CoWork-OS",
+        "url": "https://github.com/CoWork-OS/CoWork-OS",
+        "category": "Local AI Super App / Agent OS",
+        "score": 93,
+        "summary": "GUI-first, CLI-capable local AI workbench for coding, documents, browser work, automations, providers, channels and agent operations.",
+        "audience": "Power users, founders and small teams who want one governed local workspace for agents and artifacts.",
+        "aiNativeAngle": "Makes agents, artifacts, channels, browser testing, memory, approvals and provider routing the core workspace primitives instead of adding chat on top of files.",
+        "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 workflow set; GitHub page crawled today shows 6,148 commits, 418 stars, 65 forks and a public adoption report generated 2026-08-08T04:19:54Z.",
+        "runnability": "README shows Dockerfiles, package metadata, desktop/native/server folders, CLI and getting-started docs; no local install or desktop runtime audit was performed.",
+        "recommendedAction": "High-priority product teardown: inspect local-first security boundaries, artifact workbench quality and whether Automation Studio can run a real recurring workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "CoWork-OS/CoWork-OS",
+          "url": "https://github.com/CoWork-OS/CoWork-OS",
+          "category": "Local AI Super App / Agent OS",
+          "score": 93,
+          "summary": "GUI-first, CLI-capable local AI workbench for coding, documents, browser work, automations, providers, channels and agent operations.",
+          "audience": "Power users, founders and small teams who want one governed local workspace for agents and artifacts.",
+          "ai_native_angle": "Makes agents, artifacts, channels, browser testing, memory, approvals and provider routing the core workspace primitives instead of adding chat on top of files.",
+          "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 workflow set; GitHub page crawled today shows 6,148 commits, 418 stars, 65 forks and a public adoption report generated 2026-08-08T04:19:54Z.",
+          "runnability": "README shows Dockerfiles, package metadata, desktop/native/server folders, CLI and getting-started docs; no local install or desktop runtime audit was performed.",
+          "recommended_action": "High-priority product teardown: inspect local-first security boundaries, artifact workbench quality and whether Automation Studio can run a real recurring workflow."
         }
       }
     ],
@@ -14577,6 +15300,74 @@
           "growth_signal": "OSSInsight AI trending snapshot showed very strong 28-day star growth and high visibility in coding-agent discussions.",
           "runnability": "CLI-oriented product surface with install docs and active repo structure.",
           "recommended_action": "Try on one contained repo task and compare edit quality, context handling, and rollback workflow."
+        }
+      }
+    ],
+    "radutopala/loop": [
+      {
+        "id": "radutopala-loop:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "radutopala/loop",
+        "url": "https://github.com/radutopala/loop",
+        "category": "Agent Container Workbench",
+        "score": 91,
+        "summary": "Docker/desktop/chat workbench for coding agents with workflow DAGs, scheduler, browser control, memory and quality evidence.",
+        "audience": "Engineering teams and power users running long-lived agent tasks across local workspaces and chat channels.",
+        "aiNativeAngle": "Agent sessions, MCP tools, browser bridge, memory index, scheduler, workflow engine, quality scanner and security gate are core product surfaces.",
+        "growthSignal": "Public web search showed recent crawl visibility; README exposes DockerRunner, Workflow Engine, Security Gate, Quality Engine, MCP server and host browser bridge.",
+        "runnability": "CLI, daemon, MCP, local/global onboard, Docker image and workflow examples are documented; no local run was performed.",
+        "recommendedAction": "Run loop onboard:local in a disposable repository and verify permission gates, logs and workflow execution.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "radutopala/loop",
+          "url": "https://github.com/radutopala/loop",
+          "category": "Agent Container Workbench",
+          "score": 91,
+          "summary": "Docker/desktop/chat workbench for coding agents with workflow DAGs, scheduler, browser control, memory and quality evidence.",
+          "audience": "Engineering teams and power users running long-lived agent tasks across local workspaces and chat channels.",
+          "ai_native_angle": "Agent sessions, MCP tools, browser bridge, memory index, scheduler, workflow engine, quality scanner and security gate are core product surfaces.",
+          "growth_signal": "Public web search showed recent crawl visibility; README exposes DockerRunner, Workflow Engine, Security Gate, Quality Engine, MCP server and host browser bridge.",
+          "runnability": "CLI, daemon, MCP, local/global onboard, Docker image and workflow examples are documented; no local run was performed.",
+          "recommended_action": "Run loop onboard:local in a disposable repository and verify permission gates, logs and workflow execution."
+        }
+      }
+    ],
+    "BennyKok/omg.dev": [
+      {
+        "id": "BennyKok-omg.dev:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "BennyKok/omg.dev",
+        "url": "https://github.com/BennyKok/omg.dev",
+        "category": "Private Coding-agent Control Plane",
+        "score": 91,
+        "summary": "Self-hosted control plane that runs coding agents on your own machine and lets you monitor or steer them from a PWA or phone.",
+        "audience": "Developers running multiple Claude Code, Codex, OpenCode, Cursor, Grok, Pi or Copilot sessions.",
+        "aiNativeAngle": "Treats local agent CLIs as durable tmux-backed operations with remote prompt handling, transcript streaming and phone-side approvals.",
+        "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled today shows 1,241 commits, 21 forks, agents/mobile/web/packages/deploy directories and current README positioning around local control.",
+        "runnability": "README gives bun/npm global CLI setup and localhost:8766 loopback install; no install, service launch or phone workflow was tested.",
+        "recommendedAction": "Trial on one disposable workstation and focus on permission prompts, transcript privacy, loopback binding and mobile steering latency.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "BennyKok/omg.dev",
+          "url": "https://github.com/BennyKok/omg.dev",
+          "category": "Private Coding-agent Control Plane",
+          "score": 91,
+          "summary": "Self-hosted control plane that runs coding agents on your own machine and lets you monitor or steer them from a PWA or phone.",
+          "audience": "Developers running multiple Claude Code, Codex, OpenCode, Cursor, Grok, Pi or Copilot sessions.",
+          "ai_native_angle": "Treats local agent CLIs as durable tmux-backed operations with remote prompt handling, transcript streaming and phone-side approvals.",
+          "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled today shows 1,241 commits, 21 forks, agents/mobile/web/packages/deploy directories and current README positioning around local control.",
+          "runnability": "README gives bun/npm global CLI setup and localhost:8766 loopback install; no install, service launch or phone workflow was tested.",
+          "recommended_action": "Trial on one disposable workstation and focus on permission prompts, transcript privacy, loopback binding and mobile steering latency."
         }
       }
     ],
@@ -15904,6 +16695,40 @@
         }
       }
     ],
+    "ClewCode/ClewCode": [
+      {
+        "id": "ClewCode-ClewCode:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "ClewCode/ClewCode",
+        "url": "https://github.com/ClewCode/ClewCode",
+        "category": "Local Multi-provider Coding Agent",
+        "score": 89,
+        "summary": "Terminal-native coding agent that runs in the repository with BYOK providers, local memory, tools, MCP, voice input and peer/swarm options.",
+        "audience": "Developers who want a local coding assistant with broad provider choice and auditable controls.",
+        "aiNativeAngle": "Combines local agent loop, tool permissioning, SQLite memory, provider switching, MCP/plugins/skills and peer delegation into one CLI product.",
+        "growthSignal": "GitHub plugin search returned it in the created:>2026-08-05 set; GitHub page shows 691 commits, examples/docs/plugins/src folders and README claims 32+ providers, 76+ tools and no telemetry positioning.",
+        "runnability": "README includes curl/npm install, REPL and one-shot usage, Bun dev/build/test commands; no package install or provider setup was performed.",
+        "recommendedAction": "Run a small repo task with a non-sensitive API key and compare permission UX, memory storage and provider switching against Codex CLI.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "ClewCode/ClewCode",
+          "url": "https://github.com/ClewCode/ClewCode",
+          "category": "Local Multi-provider Coding Agent",
+          "score": 89,
+          "summary": "Terminal-native coding agent that runs in the repository with BYOK providers, local memory, tools, MCP, voice input and peer/swarm options.",
+          "audience": "Developers who want a local coding assistant with broad provider choice and auditable controls.",
+          "ai_native_angle": "Combines local agent loop, tool permissioning, SQLite memory, provider switching, MCP/plugins/skills and peer delegation into one CLI product.",
+          "growth_signal": "GitHub plugin search returned it in the created:>2026-08-05 set; GitHub page shows 691 commits, examples/docs/plugins/src folders and README claims 32+ providers, 76+ tools and no telemetry positioning.",
+          "runnability": "README includes curl/npm install, REPL and one-shot usage, Bun dev/build/test commands; no package install or provider setup was performed.",
+          "recommended_action": "Run a small repo task with a non-sensitive API key and compare permission UX, memory storage and provider switching against Codex CLI."
+        }
+      }
+    ],
     "Cranot/roam-code": [
       {
         "id": "Cranot-roam-code:2026-07-08T15:04:02+08:00:top:0",
@@ -16139,6 +16964,74 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "hyhmrright/JARVIS": [
+      {
+        "id": "hyhmrright-JARVIS:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "hyhmrright/JARVIS",
+        "url": "https://github.com/hyhmrright/JARVIS",
+        "category": "Self-hosted AI OS",
+        "score": 88,
+        "summary": "Self-hosted AI assistant platform with RAG, multi-LLM failover, workflow studio, skill market, multi-tenant workspaces and channels.",
+        "audience": "Small teams deploying an internal AI OS, channel bots and workflow automation stack.",
+        "aiNativeAngle": "LangGraph ReAct, multi-agent supervisor, sandboxed tools, skill market, RAG tools and multi-channel access form the product.",
+        "growthSignal": "Recent public crawl visibility; README shows screenshots, Workflow Studio, Settings, Skill Market, multi-channel features and one-docker-compose positioning.",
+        "runnability": "Product and deployment shape are clear; compose, provider credentials, channel credentials and sandbox boundaries still need live verification.",
+        "recommendedAction": "Add to the self-hosted AI OS comparison set against AnythingLLM, OpenAgent and Activepieces.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "hyhmrright/JARVIS",
+          "url": "https://github.com/hyhmrright/JARVIS",
+          "category": "Self-hosted AI OS",
+          "score": 88,
+          "summary": "Self-hosted AI assistant platform with RAG, multi-LLM failover, workflow studio, skill market, multi-tenant workspaces and channels.",
+          "audience": "Small teams deploying an internal AI OS, channel bots and workflow automation stack.",
+          "ai_native_angle": "LangGraph ReAct, multi-agent supervisor, sandboxed tools, skill market, RAG tools and multi-channel access form the product.",
+          "growth_signal": "Recent public crawl visibility; README shows screenshots, Workflow Studio, Settings, Skill Market, multi-channel features and one-docker-compose positioning.",
+          "runnability": "Product and deployment shape are clear; compose, provider credentials, channel credentials and sandbox boundaries still need live verification.",
+          "recommended_action": "Add to the self-hosted AI OS comparison set against AnythingLLM, OpenAgent and Activepieces."
+        }
+      }
+    ],
+    "Kentucky-ai/opentakeoff": [
+      {
+        "id": "Kentucky-ai-opentakeoff:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "Kentucky-ai/opentakeoff",
+        "url": "https://github.com/Kentucky-ai/opentakeoff",
+        "category": "Vertical MCP Workbench / Construction Takeoff",
+        "score": 88,
+        "summary": "Browser canvas and MCP server for measuring construction drawings, producing auditable quantities and marked-up plansets.",
+        "audience": "Construction estimators, preconstruction teams and agent builders targeting domain measurement workflows.",
+        "aiNativeAngle": "Exposes the same geometry engine through 40 MCP tools and a human canvas, so an agent and estimator can create comparable audited measurements.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 454 commits, 22 forks, demo/docs/mcp/server/web folders and Apache-2.0 positioning.",
+        "runnability": "README states npx -y opentakeoff-mcp, browser canvas, Dockerfile and demo assets; no PDF takeoff or MCP call was run locally.",
+        "recommendedAction": "Use one public floor-plan PDF to test agent scale-setting, overlay verification and human-correction provenance.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Kentucky-ai/opentakeoff",
+          "url": "https://github.com/Kentucky-ai/opentakeoff",
+          "category": "Vertical MCP Workbench / Construction Takeoff",
+          "score": 88,
+          "summary": "Browser canvas and MCP server for measuring construction drawings, producing auditable quantities and marked-up plansets.",
+          "audience": "Construction estimators, preconstruction teams and agent builders targeting domain measurement workflows.",
+          "ai_native_angle": "Exposes the same geometry engine through 40 MCP tools and a human canvas, so an agent and estimator can create comparable audited measurements.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 454 commits, 22 forks, demo/docs/mcp/server/web folders and Apache-2.0 positioning.",
+          "runnability": "README states npx -y opentakeoff-mcp, browser canvas, Dockerfile and demo assets; no PDF takeoff or MCP call was run locally.",
+          "recommended_action": "Use one public floor-plan PDF to test agent scale-setting, overlay verification and human-correction provenance."
         }
       }
     ],
@@ -18254,6 +19147,140 @@
         }
       }
     ],
+    "browserbase/stagehand": [
+      {
+        "id": "browserbase-stagehand:2026-08-09T12:40:41+08:00:watchlist:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "browserbase/stagehand",
+        "url": "https://github.com/browserbase/stagehand",
+        "category": "Browser Agent SDK",
+        "score": 72,
+        "summary": "Browser agent SDK focused on repeatable, cached and self-healing web automation.",
+        "audience": "Teams building production browser automation and extraction workflows.",
+        "aiNativeAngle": "Combines natural language actions with code paths for resilient browser agents.",
+        "growthSignal": "Mature, repeatedly visible browser-agent baseline.",
+        "runnability": "npx create-browser-app and examples are documented.",
+        "recommendedAction": "Use as a comparison baseline for agent-browser.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "browserbase/stagehand",
+          "url": "https://github.com/browserbase/stagehand",
+          "category": "Browser Agent SDK",
+          "score": 72,
+          "summary": "Browser agent SDK focused on repeatable, cached and self-healing web automation.",
+          "audience": "Teams building production browser automation and extraction workflows.",
+          "ai_native_angle": "Combines natural language actions with code paths for resilient browser agents.",
+          "growth_signal": "Mature, repeatedly visible browser-agent baseline.",
+          "runnability": "npx create-browser-app and examples are documented.",
+          "recommended_action": "Use as a comparison baseline for agent-browser."
+        }
+      },
+      {
+        "id": "browserbase-stagehand:2026-06-05T10:21:27+08:00:top:1",
+        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
+        "runDate": "2026-06-05",
+        "generatedAt": "2026-06-05T10:21:27+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "browserbase/stagehand",
+        "url": "https://github.com/browserbase/stagehand",
+        "category": "Browser Agent SDK",
+        "score": 86,
+        "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
+        "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
+        "aiNativeAngle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
+        "growthSignal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
+        "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
+        "recommendedAction": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "browserbase/stagehand",
+          "url": "https://github.com/browserbase/stagehand",
+          "category": "Browser Agent SDK",
+          "score": 86,
+          "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
+          "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
+          "ai_native_angle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
+          "growth_signal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
+          "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
+          "recommended_action": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches."
+        }
+      }
+    ],
+    "micro/go-micro": [
+      {
+        "id": "micro-go-micro:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "micro/go-micro",
+        "url": "https://github.com/micro/go-micro",
+        "category": "Go Agent Harness",
+        "score": 86,
+        "summary": "Go agent harness and service framework that unifies agents, services, workflows, MCP and A2A in one runtime.",
+        "audience": "Backend teams building production agent services, internal tools and AI-callable business endpoints in Go.",
+        "aiNativeAngle": "Every service endpoint can become an AI-callable tool; agents get planning, delegation, memory, guardrails, approvals and durable flows.",
+        "growthSignal": "Recent public crawl visibility; README positions harnesses, service discovery, durable flows, MCP gateway and A2A gateway as core features.",
+        "runnability": "Examples include first-agent, mcp and agent-plan-delegate paths; no Go example was executed in this run.",
+        "recommendedAction": "Prototype a small service-to-agent demo and evaluate the distributed-service framing.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "micro/go-micro",
+          "url": "https://github.com/micro/go-micro",
+          "category": "Go Agent Harness",
+          "score": 86,
+          "summary": "Go agent harness and service framework that unifies agents, services, workflows, MCP and A2A in one runtime.",
+          "audience": "Backend teams building production agent services, internal tools and AI-callable business endpoints in Go.",
+          "ai_native_angle": "Every service endpoint can become an AI-callable tool; agents get planning, delegation, memory, guardrails, approvals and durable flows.",
+          "growth_signal": "Recent public crawl visibility; README positions harnesses, service discovery, durable flows, MCP gateway and A2A gateway as core features.",
+          "runnability": "Examples include first-agent, mcp and agent-plan-delegate paths; no Go example was executed in this run.",
+          "recommended_action": "Prototype a small service-to-agent demo and evaluate the distributed-service framing."
+        }
+      }
+    ],
+    "slopus/rig": [
+      {
+        "id": "slopus-rig:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "slopus/rig",
+        "url": "https://github.com/slopus/rig",
+        "category": "Unified Coding-agent Harness",
+        "score": 86,
+        "summary": "Local harness that unifies Pi, Codex, Claude Code, Kimi Code and Grok Build-style coding-agent flows behind one terminal runtime.",
+        "audience": "Developers who already use several model-native coding CLIs and want a consistent local wrapper.",
+        "aiNativeAngle": "Preserves provider-native credentials while adding durable sessions, subagents, MCP and a stable adapter layer for future clients.",
+        "growthSignal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled 3 days ago shows 1,157 commits, 2 forks, docs/packages/scripts and README quickstart.",
+        "runnability": "README exposes npm install -g @slopus/rig, local sign-in reuse and rig usage; no install or credential discovery was tested.",
+        "recommendedAction": "Evaluate as a routing/control abstraction only after auditing how it invokes each underlying CLI and stores session state.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "slopus/rig",
+          "url": "https://github.com/slopus/rig",
+          "category": "Unified Coding-agent Harness",
+          "score": 86,
+          "summary": "Local harness that unifies Pi, Codex, Claude Code, Kimi Code and Grok Build-style coding-agent flows behind one terminal runtime.",
+          "audience": "Developers who already use several model-native coding CLIs and want a consistent local wrapper.",
+          "ai_native_angle": "Preserves provider-native credentials while adding durable sessions, subagents, MCP and a stable adapter layer for future clients.",
+          "growth_signal": "GitHub plugin search returned it in the pushed:>2026-08-05 MCP/agent set; GitHub page crawled 3 days ago shows 1,157 commits, 2 forks, docs/packages/scripts and README quickstart.",
+          "runnability": "README exposes npm install -g @slopus/rig, local sign-in reuse and rig usage; no install or credential discovery was tested.",
+          "recommended_action": "Evaluate as a routing/control abstraction only after auditing how it invokes each underlying CLI and stores session state."
+        }
+      }
+    ],
     "Paresh-Maheshwari/morphe-ai": [
       {
         "id": "Paresh-Maheshwari-morphe-ai:2026-07-13T15:35:16+08:00:top:0",
@@ -18693,40 +19720,6 @@
           "growth_signal": "GitHub page showed 4.6k stars, 403 forks and 56 releases; README emphasizes 13.4% vulnerable marketplace-skill baseline and support for Codex, Claude Code, Cursor, Copilot and more.",
           "runnability": "npx CLI, global install, list/install/update/remove commands, MCP server setup and security docs are present; no local run audit performed.",
           "recommended_action": "Compare against local Codex skill installation and audit whether lockfile/hash/audit concepts should be copied into internal skill workflows."
-        }
-      }
-    ],
-    "browserbase/stagehand": [
-      {
-        "id": "browserbase-stagehand:2026-06-05T10:21:27+08:00:top:0",
-        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
-        "runDate": "2026-06-05",
-        "generatedAt": "2026-06-05T10:21:27+08:00",
-        "section": "top",
-        "rank": 5,
-        "fullName": "browserbase/stagehand",
-        "url": "https://github.com/browserbase/stagehand",
-        "category": "Browser Agent SDK",
-        "score": 86,
-        "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
-        "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
-        "aiNativeAngle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
-        "growthSignal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
-        "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
-        "recommendedAction": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches.",
-        "skipReason": null,
-        "rawJson": {
-          "rank": 5,
-          "full_name": "browserbase/stagehand",
-          "url": "https://github.com/browserbase/stagehand",
-          "category": "Browser Agent SDK",
-          "score": 86,
-          "summary": "Browser automation framework that mixes natural-language actions with code for production web workflows.",
-          "audience": "Developers building reliable web automation, scraping, QA, and operations agents.",
-          "ai_native_angle": "Provides act/agent/extract primitives, preview, auto-caching, and self-healing for LLM-assisted browser control.",
-          "growth_signal": "Visible GitHub page shows about 22.9k stars, 1.5k forks, 1,310 commits, 95 issues, 138 PRs, and a Jun 3, 2026 latest release.",
-          "runnability": "Supports npx create-browser-app, pnpm build, examples, docs, and env examples.",
-          "recommended_action": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches."
         }
       }
     ],
@@ -19602,6 +20595,140 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "activepieces/activepieces": [
+      {
+        "id": "activepieces-activepieces:2026-08-09T12:40:41+08:00:watchlist:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "activepieces/activepieces",
+        "url": "https://github.com/activepieces/activepieces",
+        "category": "AI Workflow Automation",
+        "score": 71,
+        "summary": "Open-source automation platform with AI agents, MCPs and hundreds of AI workflow integrations.",
+        "audience": "No-code automation builders and operations teams.",
+        "aiNativeAngle": "AI agents and MCP servers sit inside a broader workflow automation product.",
+        "growthSignal": "Strong product and ecosystem visibility, but already known in prior radar context.",
+        "runnability": "Mature app shape; not promoted today to preserve focus on fresher candidates.",
+        "recommendedAction": "Track as a mature automation benchmark.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "activepieces/activepieces",
+          "url": "https://github.com/activepieces/activepieces",
+          "category": "AI Workflow Automation",
+          "score": 71,
+          "summary": "Open-source automation platform with AI agents, MCPs and hundreds of AI workflow integrations.",
+          "audience": "No-code automation builders and operations teams.",
+          "ai_native_angle": "AI agents and MCP servers sit inside a broader workflow automation product.",
+          "growth_signal": "Strong product and ecosystem visibility, but already known in prior radar context.",
+          "runnability": "Mature app shape; not promoted today to preserve focus on fresher candidates.",
+          "recommended_action": "Track as a mature automation benchmark."
+        }
+      },
+      {
+        "id": "activepieces-activepieces:2026-06-07T12:56:08+08:00:top:1",
+        "runId": "run:2026-06-07:2026-06-07T12:56:08+08:00",
+        "runDate": "2026-06-07",
+        "generatedAt": "2026-06-07T12:56:08+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "activepieces/activepieces",
+        "url": "https://github.com/activepieces/activepieces",
+        "category": "AI Workflow Automation",
+        "score": 84,
+        "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
+        "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
+        "aiNativeAngle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
+        "growthSignal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
+        "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
+        "recommendedAction": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "activepieces/activepieces",
+          "url": "https://github.com/activepieces/activepieces",
+          "category": "AI Workflow Automation",
+          "score": 84,
+          "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
+          "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
+          "ai_native_angle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
+          "growth_signal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
+          "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
+          "recommended_action": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark."
+        }
+      }
+    ],
+    "Decentralised-AI/Archon-agent-builder": [
+      {
+        "id": "Decentralised-AI-Archon-agent-builder:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "Decentralised-AI/Archon-agent-builder",
+        "url": "https://github.com/Decentralised-AI/Archon-agent-builder",
+        "category": "Agent Builder Workbench",
+        "score": 84,
+        "summary": "Agentic coding workflow and RAG-backed workbench for creating other AI agents through a Streamlit UI.",
+        "audience": "Developers building vertical agents and productized framework-documentation workflows.",
+        "aiNativeAngle": "Reasoner scope generation, pydantic AI coder, refiner agents, MCP server, Supabase vector DB and workbench drive agent creation.",
+        "growthSignal": "Recent public crawl visibility; README provides Docker setup, Streamlit UI, Graph Service, MCP container and local Python install paths.",
+        "runnability": "python run_docker.py and local install paths are documented; OpenAI, Anthropic, OpenRouter or Ollama plus Supabase are needed.",
+        "recommendedAction": "Evaluate whether the documentation RAG plus refiner-agent pattern can power internal template generators.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Decentralised-AI/Archon-agent-builder",
+          "url": "https://github.com/Decentralised-AI/Archon-agent-builder",
+          "category": "Agent Builder Workbench",
+          "score": 84,
+          "summary": "Agentic coding workflow and RAG-backed workbench for creating other AI agents through a Streamlit UI.",
+          "audience": "Developers building vertical agents and productized framework-documentation workflows.",
+          "ai_native_angle": "Reasoner scope generation, pydantic AI coder, refiner agents, MCP server, Supabase vector DB and workbench drive agent creation.",
+          "growth_signal": "Recent public crawl visibility; README provides Docker setup, Streamlit UI, Graph Service, MCP container and local Python install paths.",
+          "runnability": "python run_docker.py and local install paths are documented; OpenAI, Anthropic, OpenRouter or Ollama plus Supabase are needed.",
+          "recommended_action": "Evaluate whether the documentation RAG plus refiner-agent pattern can power internal template generators."
+        }
+      }
+    ],
+    "stakwork/stakgraph": [
+      {
+        "id": "stakwork-stakgraph:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "stakwork/stakgraph",
+        "url": "https://github.com/stakwork/stakgraph",
+        "category": "Code Graph MCP for Agents",
+        "score": 84,
+        "summary": "Tree-sitter/LSP/Neo4j-backed source-code graph that gives coding agents compact structural context via CLI, MCP server and graph server.",
+        "audience": "Agent users working in medium-to-large codebases where raw file search burns tokens.",
+        "aiNativeAngle": "Turns code structure, endpoints, models, tests and dependency edges into MCP-addressable agent context.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled yesterday shows 3,497 commits, 20 forks, CLI/MCP/gateway/standalone folders and install script.",
+        "runnability": "README claims pre-built binaries and CLI/MCP/graph-server modes; no binary install, parser benchmark or Neo4j server was run.",
+        "recommendedAction": "Benchmark on one known repo against plain ripgrep/tree-sitter context and measure token reduction plus false edges.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "stakwork/stakgraph",
+          "url": "https://github.com/stakwork/stakgraph",
+          "category": "Code Graph MCP for Agents",
+          "score": 84,
+          "summary": "Tree-sitter/LSP/Neo4j-backed source-code graph that gives coding agents compact structural context via CLI, MCP server and graph server.",
+          "audience": "Agent users working in medium-to-large codebases where raw file search burns tokens.",
+          "ai_native_angle": "Turns code structure, endpoints, models, tests and dependency edges into MCP-addressable agent context.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled yesterday shows 3,497 commits, 20 forks, CLI/MCP/gateway/standalone folders and install script.",
+          "runnability": "README claims pre-built binaries and CLI/MCP/graph-server modes; no binary install, parser benchmark or Neo4j server was run.",
+          "recommended_action": "Benchmark on one known repo against plain ripgrep/tree-sitter context and measure token reduction plus false edges."
         }
       }
     ],
@@ -20566,40 +21693,6 @@
         }
       }
     ],
-    "activepieces/activepieces": [
-      {
-        "id": "activepieces-activepieces:2026-06-07T12:56:08+08:00:top:0",
-        "runId": "run:2026-06-07:2026-06-07T12:56:08+08:00",
-        "runDate": "2026-06-07",
-        "generatedAt": "2026-06-07T12:56:08+08:00",
-        "section": "top",
-        "rank": 5,
-        "fullName": "activepieces/activepieces",
-        "url": "https://github.com/activepieces/activepieces",
-        "category": "AI Workflow Automation",
-        "score": 84,
-        "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
-        "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
-        "aiNativeAngle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
-        "growthSignal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
-        "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
-        "recommendedAction": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark.",
-        "skipReason": null,
-        "rawJson": {
-          "rank": 5,
-          "full_name": "activepieces/activepieces",
-          "url": "https://github.com/activepieces/activepieces",
-          "category": "AI Workflow Automation",
-          "score": 84,
-          "summary": "Open-source automation platform increasingly combining AI actions, MCP, agent workflows, and app connectors.",
-          "audience": "Ops, growth, internal-tools, SaaS automation, and AI workflow teams.",
-          "ai_native_angle": "AI agents/actions become workflow nodes across integrations in a self-hostable automation platform.",
-          "growth_signal": "GitHub topic page showed about 18.7k stars, 2.8k forks, and an update on 2026-06-06.",
-          "runnability": "Mature product with self-hostable automation platform structure; no fresh run audit this cycle.",
-          "recommended_action": "Track AI workflow nodes and MCP connectors as a Zapier/n8n plus agent benchmark."
-        }
-      }
-    ],
     "ShayneP/local-voice-ai": [
       {
         "id": "ShayneP-local-voice-ai:2026-06-05T10:21:27+08:00:top:0",
@@ -20968,6 +22061,40 @@
           "growth_signal": "README 给出 uv tool 安装与 session start/deploy；也提供自托管 docker compose；Star ~118。",
           "runnability": "CLI quick start（uv tool install + runtm session start/deploy）；自托管需 docker compose。",
           "recommended_action": "先在本机走通 session start + deploy 的 happy path；再评估自托管成本。"
+        }
+      }
+    ],
+    "different-ai-studio/teamclaw": [
+      {
+        "id": "different-ai-studio-teamclaw:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "different-ai-studio/teamclaw",
+        "url": "https://github.com/different-ai-studio/teamclaw",
+        "category": "Team AI Agent Desktop Workspace",
+        "score": 83,
+        "summary": "Local-first agent desktop workspace with roles, skills, RAG knowledge base, MCP support, channel gateways and permissioned file operations.",
+        "audience": "Solo builders and SMB teams that want private local agents shared through team skills and knowledge config.",
+        "aiNativeAngle": "Bundles local ACP agent host, Feishu/Discord/Email/WeChat-style channels, workspace skills, knowledge indexing and agent-first diff review.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 620 commits, 15 forks, apps/services/templates/autoui-mcp folders and multilingual README.",
+        "runnability": "README lists desktop/workspace features and self-host deploy folder; no binary build, channel gateway or daemon test was performed.",
+        "recommendedAction": "Watch and test only the local desktop loop first, especially file permission behavior and channel credential handling.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "different-ai-studio/teamclaw",
+          "url": "https://github.com/different-ai-studio/teamclaw",
+          "category": "Team AI Agent Desktop Workspace",
+          "score": 83,
+          "summary": "Local-first agent desktop workspace with roles, skills, RAG knowledge base, MCP support, channel gateways and permissioned file operations.",
+          "audience": "Solo builders and SMB teams that want private local agents shared through team skills and knowledge config.",
+          "ai_native_angle": "Bundles local ACP agent host, Feishu/Discord/Email/WeChat-style channels, workspace skills, knowledge indexing and agent-first diff review.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 620 commits, 15 forks, apps/services/templates/autoui-mcp folders and multilingual README.",
+          "runnability": "README lists desktop/workspace features and self-host deploy folder; no binary build, channel gateway or daemon test was performed.",
+          "recommended_action": "Watch and test only the local desktop loop first, especially file permission behavior and channel credential handling."
         }
       }
     ],
@@ -21864,6 +22991,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "cloudflare/agents": [
+      {
+        "id": "cloudflare-agents:2026-08-09T12:40:41+08:00:watchlist:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "cloudflare/agents",
+        "url": "https://github.com/cloudflare/agents",
+        "category": "Agent Runtime Packages",
+        "score": 82,
+        "summary": "Cloudflare agent packages covering persistent state, MCP, workflows, voice, browser agents, code mode and sandboxed execution.",
+        "audience": "Teams building production agents on Cloudflare Workers and Durable Objects.",
+        "aiNativeAngle": "Agent runtime primitives are packaged into deployable framework modules.",
+        "growthSignal": "Public snippets show broad current feature coverage and docs.",
+        "runnability": "Strong SDK/examples shape; platform coupling requires Cloudflare context.",
+        "recommendedAction": "Track as an ecosystem baseline rather than a daily Top repeat.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "cloudflare/agents",
+          "url": "https://github.com/cloudflare/agents",
+          "category": "Agent Runtime Packages",
+          "score": 82,
+          "summary": "Cloudflare agent packages covering persistent state, MCP, workflows, voice, browser agents, code mode and sandboxed execution.",
+          "audience": "Teams building production agents on Cloudflare Workers and Durable Objects.",
+          "ai_native_angle": "Agent runtime primitives are packaged into deployable framework modules.",
+          "growth_signal": "Public snippets show broad current feature coverage and docs.",
+          "runnability": "Strong SDK/examples shape; platform coupling requires Cloudflare context.",
+          "recommended_action": "Track as an ecosystem baseline rather than a daily Top repeat."
         }
       }
     ],
@@ -23010,6 +24171,74 @@
         }
       }
     ],
+    "SummerEngine/summer-engine-agent": [
+      {
+        "id": "SummerEngine-summer-engine-agent:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "SummerEngine/summer-engine-agent",
+        "url": "https://github.com/SummerEngine/summer-engine-agent",
+        "category": "Game-dev Agent Skill Bridge",
+        "score": 81,
+        "summary": "Cross-agent skills and MCP bridge that let coding agents inspect, edit, run and screenshot Summer Engine game scenes.",
+        "audience": "Game developers who want coding agents to operate a local game engine instead of only editing files.",
+        "aiNativeAngle": "Skills plus MCP tools expose scene, diagnostics, runtime and visual screenshot capabilities to agents.",
+        "growthSignal": "Search result showed last-week crawl; README documents cross-agent install, engine app, login, MCP tools and platform boundaries.",
+        "runnability": "CLI path is clear, but the engine app is about 1 GB and closed source; Linux support remains limited.",
+        "recommendedAction": "Watch as a vertical example of MCP tool design for complex local software.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "SummerEngine/summer-engine-agent",
+          "url": "https://github.com/SummerEngine/summer-engine-agent",
+          "category": "Game-dev Agent Skill Bridge",
+          "score": 81,
+          "summary": "Cross-agent skills and MCP bridge that let coding agents inspect, edit, run and screenshot Summer Engine game scenes.",
+          "audience": "Game developers who want coding agents to operate a local game engine instead of only editing files.",
+          "ai_native_angle": "Skills plus MCP tools expose scene, diagnostics, runtime and visual screenshot capabilities to agents.",
+          "growth_signal": "Search result showed last-week crawl; README documents cross-agent install, engine app, login, MCP tools and platform boundaries.",
+          "runnability": "CLI path is clear, but the engine app is about 1 GB and closed source; Linux support remains limited.",
+          "recommended_action": "Watch as a vertical example of MCP tool design for complex local software."
+        }
+      }
+    ],
+    "sbluemin/fleet-harness": [
+      {
+        "id": "sbluemin-fleet-harness:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "sbluemin/fleet-harness",
+        "url": "https://github.com/sbluemin/fleet-harness",
+        "category": "Multi-agent Coding Operations Console",
+        "score": 81,
+        "summary": "Local orchestration kit for commanding Claude Code, Codex, OpenCode and Cursor Agent through CLI, web console and optional desktop shell.",
+        "audience": "Developers comparing or coordinating several coding-agent backends in parallel.",
+        "aiNativeAngle": "Models agent sessions as local operations with live terminals, formation view, project context panels, wiki and carrier settings.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 3 weeks ago shows 567 commits, 15 stars, 1 fork and 97 releases through v1.24.0 on 2026-07-11.",
+        "runnability": "README provides npm install, fleet, fleet console, Node 20 requirement and desktop release path; no local console or carrier run was tested.",
+        "recommendedAction": "Use as a watchlist-plus trial for parallel agent supervision; verify that status, cost and terminal state stay faithful.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "sbluemin/fleet-harness",
+          "url": "https://github.com/sbluemin/fleet-harness",
+          "category": "Multi-agent Coding Operations Console",
+          "score": 81,
+          "summary": "Local orchestration kit for commanding Claude Code, Codex, OpenCode and Cursor Agent through CLI, web console and optional desktop shell.",
+          "audience": "Developers comparing or coordinating several coding-agent backends in parallel.",
+          "ai_native_angle": "Models agent sessions as local operations with live terminals, formation view, project context panels, wiki and carrier settings.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 3 weeks ago shows 567 commits, 15 stars, 1 fork and 97 releases through v1.24.0 on 2026-07-11.",
+          "runnability": "README provides npm install, fleet, fleet console, Node 20 requirement and desktop release path; no local console or carrier run was tested.",
+          "recommended_action": "Use as a watchlist-plus trial for parallel agent supervision; verify that status, cost and terminal state stay faithful."
+        }
+      }
+    ],
     "helixmap/sigwood": [
       {
         "id": "helixmap-sigwood:2026-07-12T18:10:00+08:00:top:0",
@@ -23477,6 +24706,40 @@
           "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
           "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
           "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+        }
+      }
+    ],
+    "the-open-agent/openagent": [
+      {
+        "id": "the-open-agent-openagent:2026-08-09T12:40:41+08:00:watchlist:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "the-open-agent/openagent",
+        "url": "https://github.com/the-open-agent/openagent",
+        "category": "Personal AI Assistant",
+        "score": 80,
+        "summary": "Self-hostable personal AI assistant with LLM, RAG, computer-use, browser-use and coding-agent support.",
+        "audience": "Individuals and teams wanting a local assistant workspace.",
+        "aiNativeAngle": "Combines RAG, tool management, agent loops and browser/code execution in one assistant.",
+        "growthSignal": "Public snippets show single-binary installer, demo and product UI claims.",
+        "runnability": "Installer path is clear; maturity should be reverified before promotion.",
+        "recommendedAction": "Re-audit alongside JARVIS and AnythingLLM.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "the-open-agent/openagent",
+          "url": "https://github.com/the-open-agent/openagent",
+          "category": "Personal AI Assistant",
+          "score": 80,
+          "summary": "Self-hostable personal AI assistant with LLM, RAG, computer-use, browser-use and coding-agent support.",
+          "audience": "Individuals and teams wanting a local assistant workspace.",
+          "ai_native_angle": "Combines RAG, tool management, agent loops and browser/code execution in one assistant.",
+          "growth_signal": "Public snippets show single-binary installer, demo and product UI claims.",
+          "runnability": "Installer path is clear; maturity should be reverified before promotion.",
+          "recommended_action": "Re-audit alongside JARVIS and AnythingLLM."
         }
       }
     ],
@@ -24475,6 +25738,74 @@
         }
       }
     ],
+    "vercel-labs/agent-browser": [
+      {
+        "id": "vercel-labs-agent-browser:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "vercel-labs/agent-browser",
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "category": "Browser Automation CLI",
+        "score": 79,
+        "summary": "Browser automation CLI for AI agents with element snapshots, browser control and coding-assistant skill integration.",
+        "audience": "Frontend and full-stack teams using agents to test login flows, QA tasks and web interactions.",
+        "aiNativeAngle": "Agent-readable commands like open, snapshot, click and fill let models operate browser tasks through stable element references.",
+        "growthSignal": "Public result showed recent release/crawl visibility and README integration with Codex, Claude Code, Cursor, Gemini CLI and Copilot.",
+        "runnability": "CLI and npx skills add vercel-labs/agent-browser paths are documented; no local browser task was run.",
+        "recommendedAction": "Compare a fixed login or form workflow against Stagehand and Browser Use for stability.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "vercel-labs/agent-browser",
+          "url": "https://github.com/vercel-labs/agent-browser",
+          "category": "Browser Automation CLI",
+          "score": 79,
+          "summary": "Browser automation CLI for AI agents with element snapshots, browser control and coding-assistant skill integration.",
+          "audience": "Frontend and full-stack teams using agents to test login flows, QA tasks and web interactions.",
+          "ai_native_angle": "Agent-readable commands like open, snapshot, click and fill let models operate browser tasks through stable element references.",
+          "growth_signal": "Public result showed recent release/crawl visibility and README integration with Codex, Claude Code, Cursor, Gemini CLI and Copilot.",
+          "runnability": "CLI and npx skills add vercel-labs/agent-browser paths are documented; no local browser task was run.",
+          "recommended_action": "Compare a fixed login or form workflow against Stagehand and Browser Use for stability."
+        }
+      }
+    ],
+    "steipete/CodexBar": [
+      {
+        "id": "steipete-CodexBar:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "steipete/CodexBar",
+        "url": "https://github.com/steipete/CodexBar",
+        "category": "AI Coding Provider Usage Monitor",
+        "score": 79,
+        "summary": "macOS menu bar app and CLI that surfaces coding-provider limits, resets, credits, spend and status across Codex, Claude Code and many providers.",
+        "audience": "Heavy AI coding users who need to plan around rate limits and provider quota windows.",
+        "aiNativeAngle": "Makes usage windows, provider sessions and local cost scans first-class operational context for agent work planning.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 4,794 commits, 1.7k forks and release/Homebrew/AUR install paths.",
+        "runnability": "README lists macOS app, Homebrew cask and CLI tarballs; no install, provider session read or cost scan was performed.",
+        "recommendedAction": "Trial read-only first and inspect what local files/cookies each provider integration touches.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "steipete/CodexBar",
+          "url": "https://github.com/steipete/CodexBar",
+          "category": "AI Coding Provider Usage Monitor",
+          "score": 79,
+          "summary": "macOS menu bar app and CLI that surfaces coding-provider limits, resets, credits, spend and status across Codex, Claude Code and many providers.",
+          "audience": "Heavy AI coding users who need to plan around rate limits and provider quota windows.",
+          "ai_native_angle": "Makes usage windows, provider sessions and local cost scans first-class operational context for agent work planning.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled today shows 4,794 commits, 1.7k forks and release/Homebrew/AUR install paths.",
+          "runnability": "README lists macOS app, Homebrew cask and CLI tarballs; no install, provider session read or cost scan was performed.",
+          "recommended_action": "Trial read-only first and inspect what local files/cookies each provider integration touches."
+        }
+      }
+    ],
     "sandeepbazar/ocm-mcp-server": [
       {
         "id": "sandeepbazar-ocm-mcp-server:2026-07-31T11:58:04+08:00:top:0",
@@ -25136,6 +26467,40 @@
           "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
           "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
           "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+        }
+      }
+    ],
+    "kuhlman-labs/fishhawk": [
+      {
+        "id": "kuhlman-labs-fishhawk:2026-08-08T17:30:00+08:00:top:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "kuhlman-labs/fishhawk",
+        "url": "https://github.com/kuhlman-labs/fishhawk",
+        "category": "Governed Agent Software Factory Workflow",
+        "score": 78,
+        "summary": "Workflow engine for agent-driven software changes with plan, implement, review stages, human approvals and signed audit trails.",
+        "audience": "Teams experimenting with autonomous software delivery but needing policy and compliance evidence.",
+        "aiNativeAngle": "Separates agent action from governance: policy gates, approvals, immutable audit and tool-agnostic runners around the coding workflow.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled last week shows 1,118 commits, 209 issues, 8 PRs and a README status for v0 control plane, runner, CLI, MCP server and Web UI.",
+        "runnability": "README gives local Postgres/MinIO quickstart with Go 1.25, Docker and Node 22 for Web UI; no workflow run was executed.",
+        "recommendedAction": "Study its audit/compliance model before a local run; useful benchmark for approval-heavy coding-agent automation.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "kuhlman-labs/fishhawk",
+          "url": "https://github.com/kuhlman-labs/fishhawk",
+          "category": "Governed Agent Software Factory Workflow",
+          "score": 78,
+          "summary": "Workflow engine for agent-driven software changes with plan, implement, review stages, human approvals and signed audit trails.",
+          "audience": "Teams experimenting with autonomous software delivery but needing policy and compliance evidence.",
+          "ai_native_angle": "Separates agent action from governance: policy gates, approvals, immutable audit and tool-agnostic runners around the coding workflow.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled last week shows 1,118 commits, 209 issues, 8 PRs and a README status for v0 control plane, runner, CLI, MCP server and Web UI.",
+          "runnability": "README gives local Postgres/MinIO quickstart with Go 1.25, Docker and Node 22 for Web UI; no workflow run was executed.",
+          "recommended_action": "Study its audit/compliance model before a local run; useful benchmark for approval-heavy coding-agent automation."
         }
       }
     ],
@@ -26960,6 +28325,74 @@
         }
       }
     ],
+    "orneryd/Mimir": [
+      {
+        "id": "orneryd-Mimir:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "orneryd/Mimir",
+        "url": "https://github.com/orneryd/Mimir",
+        "category": "Agent Memory Bank",
+        "score": 76,
+        "summary": "Customizable local memory bank with semantic vector search for indexed code, stored memories and multi-agent orchestration.",
+        "audience": "Developers working on long-term projects, complex orchestration and cross-session learning from agent failures.",
+        "aiNativeAngle": "Memory, semantic search, worker-agent experience and drag-and-drop orchestration are packaged as agent infrastructure.",
+        "growthSignal": "Recent public crawl visibility; README exposes a 5-minute quick start, IDE integration and Docker/Node startup path.",
+        "runnability": "Docker Desktop, Node 18+, npm run start and docker compose up paths are documented; embedding and privacy boundaries were not verified.",
+        "recommendedAction": "Compare with the current Obsidian/Codex memory workflow before adopting.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "orneryd/Mimir",
+          "url": "https://github.com/orneryd/Mimir",
+          "category": "Agent Memory Bank",
+          "score": 76,
+          "summary": "Customizable local memory bank with semantic vector search for indexed code, stored memories and multi-agent orchestration.",
+          "audience": "Developers working on long-term projects, complex orchestration and cross-session learning from agent failures.",
+          "ai_native_angle": "Memory, semantic search, worker-agent experience and drag-and-drop orchestration are packaged as agent infrastructure.",
+          "growth_signal": "Recent public crawl visibility; README exposes a 5-minute quick start, IDE integration and Docker/Node startup path.",
+          "runnability": "Docker Desktop, Node 18+, npm run start and docker compose up paths are documented; embedding and privacy boundaries were not verified.",
+          "recommended_action": "Compare with the current Obsidian/Codex memory workflow before adopting."
+        }
+      }
+    ],
+    "jacksonjp0311-gif/Cortex": [
+      {
+        "id": "jacksonjp0311-gif-Cortex:2026-08-08T17:30:00+08:00:watchlist:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "jacksonjp0311-gif/Cortex",
+        "url": "https://github.com/jacksonjp0311-gif/Cortex",
+        "category": "Local Coding-agent Memory",
+        "score": 76,
+        "summary": "Local-first memory for AI coding agents with repo indexing, bounded context, provenance, drift checks and safety controls.",
+        "audience": "Agent users with repeated work in the same codebase.",
+        "aiNativeAngle": "Treats durable verified context as the counterpart to temporary model attention.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 2 days ago shows 280 commits, 8 forks, benchmarks/docs/examples/tests and shell/PowerShell install scripts.",
+        "runnability": "Python CLI commands are documented, but no repo index or memory trial was run.",
+        "recommendedAction": "Try on a medium repo only after checking what gets persisted and how stale facts are invalidated.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "jacksonjp0311-gif/Cortex",
+          "url": "https://github.com/jacksonjp0311-gif/Cortex",
+          "category": "Local Coding-agent Memory",
+          "score": 76,
+          "summary": "Local-first memory for AI coding agents with repo indexing, bounded context, provenance, drift checks and safety controls.",
+          "audience": "Agent users with repeated work in the same codebase.",
+          "ai_native_angle": "Treats durable verified context as the counterpart to temporary model attention.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 MCP/agent results; GitHub page crawled 2 days ago shows 280 commits, 8 forks, benchmarks/docs/examples/tests and shell/PowerShell install scripts.",
+          "runnability": "Python CLI commands are documented, but no repo index or memory trial was run.",
+          "recommended_action": "Try on a medium repo only after checking what gets persisted and how stale facts are invalidated."
+        }
+      }
+    ],
     "0xwilliamortiz/agents-council": [
       {
         "id": "0xwilliamortiz-agents-council:2026-07-22T01:36:00+08:00:top:0",
@@ -27595,6 +29028,40 @@
           "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
           "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
           "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+        }
+      }
+    ],
+    "cockpit-dev/cockpit": [
+      {
+        "id": "cockpit-dev-cockpit:2026-08-08T17:30:00+08:00:watchlist:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "cockpit-dev/cockpit",
+        "url": "https://github.com/cockpit-dev/cockpit",
+        "category": "AI-driven App Runtime Verification",
+        "score": 75,
+        "summary": "Flutter and black-box mobile app E2E primitives exposed to CLI, MCP and future clients.",
+        "audience": "Mobile/Flutter teams seeking agent-readable app state and test automation.",
+        "aiNativeAngle": "Gives agents typed access to widget, route, log, error, network and runtime state plus black-box device control.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 agent workflow results; GitHub page crawled 3 days ago shows 446 commits and examples/packages/plugins/skills folders.",
+        "runnability": "README positions YAML/JSON suites and MCP-adjacent resources; no Flutter or mobile device test was run.",
+        "recommendedAction": "Watch for stable CLI/MCP docs and test on a toy Flutter app.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "cockpit-dev/cockpit",
+          "url": "https://github.com/cockpit-dev/cockpit",
+          "category": "AI-driven App Runtime Verification",
+          "score": 75,
+          "summary": "Flutter and black-box mobile app E2E primitives exposed to CLI, MCP and future clients.",
+          "audience": "Mobile/Flutter teams seeking agent-readable app state and test automation.",
+          "ai_native_angle": "Gives agents typed access to widget, route, log, error, network and runtime state plus black-box device control.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 agent workflow results; GitHub page crawled 3 days ago shows 446 commits and examples/packages/plugins/skills folders.",
+          "runnability": "README positions YAML/JSON suites and MCP-adjacent resources; no Flutter or mobile device test was run.",
+          "recommended_action": "Watch for stable CLI/MCP docs and test on a toy Flutter app."
         }
       }
     ],
@@ -28288,6 +29755,40 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "browser-use/video-use": [
+      {
+        "id": "browser-use-video-use:2026-08-09T12:40:41+08:00:top:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "browser-use/video-use",
+        "url": "https://github.com/browser-use/video-use",
+        "category": "Agentic Video Editing Skill",
+        "score": 74,
+        "summary": "Skill-driven workflow that lets coding agents edit raw video into rendered output with cuts, subtitles, grading, overlays and self-checks.",
+        "audience": "Creators and automation teams using Claude Code, Codex or similar agents for video production.",
+        "aiNativeAngle": "Skills, project memory, parallel sub-agents and FFmpeg/Remotion/Manim/HyperFrames tools turn editing into an agent workflow.",
+        "growthSignal": "Recent public GitHub crawl visibility; README shows install prompt, project.md memory and support for multiple coding agents.",
+        "runnability": "install.md, SKILL.md, pyproject and examples exist; FFmpeg and external API keys are likely required, and no render was performed.",
+        "recommendedAction": "Keep as an AI creative workflow sample after auditing media privacy and render cost.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use",
+          "category": "Agentic Video Editing Skill",
+          "score": 74,
+          "summary": "Skill-driven workflow that lets coding agents edit raw video into rendered output with cuts, subtitles, grading, overlays and self-checks.",
+          "audience": "Creators and automation teams using Claude Code, Codex or similar agents for video production.",
+          "ai_native_angle": "Skills, project memory, parallel sub-agents and FFmpeg/Remotion/Manim/HyperFrames tools turn editing into an agent workflow.",
+          "growth_signal": "Recent public GitHub crawl visibility; README shows install prompt, project.md memory and support for multiple coding agents.",
+          "runnability": "install.md, SKILL.md, pyproject and examples exist; FFmpeg and external API keys are likely required, and no render was performed.",
+          "recommended_action": "Keep as an AI creative workflow sample after auditing media privacy and render cost."
         }
       }
     ],
@@ -29294,6 +30795,74 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 4 stars and pushed_at 2026-05-19T13:53:08Z; README reports 114 unit tests.",
           "runnability": "README includes pip install -e, pytest tests/unit, examples/basic_usage.py, docs, and provider config, but roadmap says CLI/PyPI/Web UI and real expert execution are still pending.",
           "recommended_action": "Keep at watchlist boundary until real LLM expert execution and CLI land."
+        }
+      }
+    ],
+    "agentvoiceresponse/agentvoiceresponse": [
+      {
+        "id": "agentvoiceresponse-agentvoiceresponse:2026-08-09T12:40:41+08:00:watchlist:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "agentvoiceresponse/agentvoiceresponse",
+        "url": "https://github.com/agentvoiceresponse",
+        "category": "Voice Agent Telephony Stack",
+        "score": 73,
+        "summary": "Voice-agent stack around Asterisk AudioSocket with ASR, LLM, TTS, STT and speech-to-speech components.",
+        "audience": "Teams integrating AI agents into telephony and contact-center systems.",
+        "aiNativeAngle": "Turns voice infrastructure into provider-swappable conversational-agent services.",
+        "growthSignal": "Recent public crawl visibility and enterprise telephony positioning.",
+        "runnability": "Docker-style production claims need live deployment validation.",
+        "recommendedAction": "Watch for enterprise voice integration patterns.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "agentvoiceresponse/agentvoiceresponse",
+          "url": "https://github.com/agentvoiceresponse",
+          "category": "Voice Agent Telephony Stack",
+          "score": 73,
+          "summary": "Voice-agent stack around Asterisk AudioSocket with ASR, LLM, TTS, STT and speech-to-speech components.",
+          "audience": "Teams integrating AI agents into telephony and contact-center systems.",
+          "ai_native_angle": "Turns voice infrastructure into provider-swappable conversational-agent services.",
+          "growth_signal": "Recent public crawl visibility and enterprise telephony positioning.",
+          "runnability": "Docker-style production claims need live deployment validation.",
+          "recommended_action": "Watch for enterprise voice integration patterns."
+        }
+      }
+    ],
+    "numtide/llm-agents.nix": [
+      {
+        "id": "numtide-llm-agents.nix:2026-08-08T17:30:00+08:00:watchlist:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "numtide/llm-agents.nix",
+        "url": "https://github.com/numtide/llm-agents.nix",
+        "category": "Agent Toolchain Packaging",
+        "score": 73,
+        "summary": "Nix packages for AI coding agents and developer tools, automatically updated daily.",
+        "audience": "Nix users and teams needing reproducible agent CLI installs.",
+        "aiNativeAngle": "Turns volatile agent CLI distribution into reproducible package inputs for development environments.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 14,893 commits, 198 forks and packages for Amp, Antigravity CLI, Claude Code, Claude Desktop and more.",
+        "runnability": "README provides nix run commands; no Nix install or package execution was performed.",
+        "recommendedAction": "Track as infrastructure, not product Top, unless package reliability becomes a recurring local bottleneck.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "numtide/llm-agents.nix",
+          "url": "https://github.com/numtide/llm-agents.nix",
+          "category": "Agent Toolchain Packaging",
+          "score": 73,
+          "summary": "Nix packages for AI coding agents and developer tools, automatically updated daily.",
+          "audience": "Nix users and teams needing reproducible agent CLI installs.",
+          "ai_native_angle": "Turns volatile agent CLI distribution into reproducible package inputs for development environments.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 14,893 commits, 198 forks and packages for Amp, Antigravity CLI, Claude Code, Claude Desktop and more.",
+          "runnability": "README provides nix run commands; no Nix install or package execution was performed.",
+          "recommended_action": "Track as infrastructure, not product Top, unless package reliability becomes a recurring local bottleneck."
         }
       }
     ],
@@ -31844,6 +33413,40 @@
         }
       }
     ],
+    "OSSDrop/OSSDrop": [
+      {
+        "id": "OSSDrop-OSSDrop:2026-08-08T17:30:00+08:00:watchlist:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "OSSDrop/OSSDrop",
+        "url": "https://github.com/OSSDrop/OSSDrop",
+        "category": "Open-source Product Discovery",
+        "score": 70,
+        "summary": "Community-curated Product Hunt alternative for open-source tools with categories, votes and automatically updated stars/trending.",
+        "audience": "Developers discovering OSS tools and makers launching projects.",
+        "aiNativeAngle": "Indirect signal source for AI/coding-agent tools rather than an agent product itself.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 workflow results; GitHub page crawled 4 days ago shows 58 commits, 12 forks, data/scripts/assets and AI & Coding Agents category.",
+        "runnability": "Static/listing product shape is clear, but it is primarily a directory; no site build was run.",
+        "recommendedAction": "Use as a discovery source, not as a Top AI-native product pick.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "OSSDrop/OSSDrop",
+          "url": "https://github.com/OSSDrop/OSSDrop",
+          "category": "Open-source Product Discovery",
+          "score": 70,
+          "summary": "Community-curated Product Hunt alternative for open-source tools with categories, votes and automatically updated stars/trending.",
+          "audience": "Developers discovering OSS tools and makers launching projects.",
+          "ai_native_angle": "Indirect signal source for AI/coding-agent tools rather than an agent product itself.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 workflow results; GitHub page crawled 4 days ago shows 58 commits, 12 forks, data/scripts/assets and AI & Coding Agents category.",
+          "runnability": "Static/listing product shape is clear, but it is primarily a directory; no site build was run.",
+          "recommended_action": "Use as a discovery source, not as a Top AI-native product pick."
+        }
+      }
+    ],
     "24KaratAu/openhub": [
       {
         "id": "24KaratAu-openhub:2026-07-27T00:30:00+08:00:watchlist:0",
@@ -32756,6 +34359,40 @@
           "score": 70,
           "summary": "以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。",
           "recommended_action": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。"
+        }
+      }
+    ],
+    "diegosouzapw/OmniRoute": [
+      {
+        "id": "diegosouzapw-OmniRoute:2026-08-08T17:30:00+08:00:watchlist:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "diegosouzapw/OmniRoute",
+        "url": "https://github.com/diegosouzapw/OmniRoute",
+        "category": "AI Gateway for Coding Tools",
+        "score": 69,
+        "summary": "Large AI gateway aggregating providers/models with quota-aware fallback, dashboards, MCP/A2A and desktop/PWA surfaces.",
+        "audience": "Builders trying to route many LLM providers through one endpoint.",
+        "aiNativeAngle": "Provider routing and free-tier accounting become operational substrate for agent/coding tools.",
+        "growthSignal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 6,370 commits, 5.8k forks, many provider/dashboard/docker/test files, but the huge contributor/free-token framing needs extra scrutiny.",
+        "runnability": "Docker, PWA and package metadata exist; no gateway deployment or provider credential test was performed.",
+        "recommendedAction": "Treat as high-risk watch: verify license, provider terms, secret handling and quota math before any trial.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "category": "AI Gateway for Coding Tools",
+          "score": 69,
+          "summary": "Large AI gateway aggregating providers/models with quota-aware fallback, dashboards, MCP/A2A and desktop/PWA surfaces.",
+          "audience": "Builders trying to route many LLM providers through one endpoint.",
+          "ai_native_angle": "Provider routing and free-tier accounting become operational substrate for agent/coding tools.",
+          "growth_signal": "GitHub plugin search returned it in pushed:>2026-08-05 results; GitHub page crawled today shows 6,370 commits, 5.8k forks, many provider/dashboard/docker/test files, but the huge contributor/free-token framing needs extra scrutiny.",
+          "runnability": "Docker, PWA and package metadata exist; no gateway deployment or provider credential test was performed.",
+          "recommended_action": "Treat as high-risk watch: verify license, provider terms, secret handling and quota math before any trial."
         }
       }
     ],
@@ -35148,6 +36785,390 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "aloth/awesome-ai-agents": [
+      {
+        "id": "aloth-awesome-ai-agents:2026-08-09T12:40:41+08:00:skip:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "aloth/awesome-ai-agents",
+        "url": "https://github.com/aloth/awesome-ai-agents",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome list and discovery source rather than one runnable AI-native product.",
+        "rawJson": {
+          "full_name": "aloth/awesome-ai-agents",
+          "url": "https://github.com/aloth/awesome-ai-agents",
+          "skip_reason": "Awesome list and discovery source rather than one runnable AI-native product."
+        }
+      }
+    ],
+    "G1o22/awesome-ai-agents-2026": [
+      {
+        "id": "G1o22-awesome-ai-agents-2026:2026-08-09T12:40:41+08:00:skip:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "G1o22/awesome-ai-agents-2026",
+        "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "AI agent aggregation list; useful as a discovery source but not a Top product.",
+        "rawJson": {
+          "full_name": "G1o22/awesome-ai-agents-2026",
+          "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+          "skip_reason": "AI agent aggregation list; useful as a discovery source but not a Top product."
+        }
+      },
+      {
+        "id": "G1o22-awesome-ai-agents-2026:2026-06-05T10:21:27+08:00:skip:1",
+        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
+        "runDate": "2026-06-05",
+        "generatedAt": "2026-06-05T10:21:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "G1o22/awesome-ai-agents-2026",
+        "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped.",
+        "rawJson": {
+          "full_name": "G1o22/awesome-ai-agents-2026",
+          "url": "https://github.com/G1o22/awesome-ai-agents-2026",
+          "skip_reason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped."
+        }
+      }
+    ],
+    "Supersynergy/awesome-ai-agents-2025": [
+      {
+        "id": "Supersynergy-awesome-ai-agents-2025:2026-08-09T12:40:41+08:00:skip:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Supersynergy/awesome-ai-agents-2025",
+        "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Annual directory content rather than one runnable AI-native product.",
+        "rawJson": {
+          "full_name": "Supersynergy/awesome-ai-agents-2025",
+          "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+          "skip_reason": "Annual directory content rather than one runnable AI-native product."
+        }
+      },
+      {
+        "id": "Supersynergy-awesome-ai-agents-2025:2026-06-05T10:21:27+08:00:skip:1",
+        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
+        "runDate": "2026-06-05",
+        "generatedAt": "2026-06-05T10:21:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Supersynergy/awesome-ai-agents-2025",
+        "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome list / directory of tools, not a single runnable AI native product.",
+        "rawJson": {
+          "full_name": "Supersynergy/awesome-ai-agents-2025",
+          "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
+          "skip_reason": "Awesome list / directory of tools, not a single runnable AI native product."
+        }
+      }
+    ],
+    "VoltAgent/awesome-ai-agent-papers": [
+      {
+        "id": "VoltAgent-awesome-ai-agent-papers:2026-08-09T12:40:41+08:00:skip:0",
+        "runId": "run:2026-08-09:2026-08-09T12:40:41+08:00",
+        "runDate": "2026-08-09",
+        "generatedAt": "2026-08-09T12:40:41+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "VoltAgent/awesome-ai-agent-papers",
+        "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Paper list and research navigation rather than a directly runnable user product.",
+        "rawJson": {
+          "full_name": "VoltAgent/awesome-ai-agent-papers",
+          "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+          "skip_reason": "Paper list and research navigation rather than a directly runnable user product."
+        }
+      },
+      {
+        "id": "VoltAgent-awesome-ai-agent-papers:2026-06-05T10:21:27+08:00:skip:1",
+        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
+        "runDate": "2026-06-05",
+        "generatedAt": "2026-06-05T10:21:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "VoltAgent/awesome-ai-agent-papers",
+        "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Research-paper list without runnable product surface.",
+        "rawJson": {
+          "full_name": "VoltAgent/awesome-ai-agent-papers",
+          "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+          "skip_reason": "Research-paper list without runnable product surface."
+        }
+      }
+    ],
+    "DDW-X/awesome-agent-skills": [
+      {
+        "id": "DDW-X-awesome-agent-skills:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "DDW-X/awesome-agent-skills",
+        "url": "https://github.com/DDW-X/awesome-agent-skills",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome/skills collection; useful ecosystem map but not a runnable product surface.",
+        "rawJson": {
+          "full_name": "DDW-X/awesome-agent-skills",
+          "url": "https://github.com/DDW-X/awesome-agent-skills",
+          "skip_reason": "Awesome/skills collection; useful ecosystem map but not a runnable product surface."
+        }
+      }
+    ],
+    "James19890801/feishu-codex-digital-employee": [
+      {
+        "id": "James19890801-feishu-codex-digital-employee:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "James19890801/feishu-codex-digital-employee",
+        "url": "https://github.com/James19890801/feishu-codex-digital-employee",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Small Feishu/Codex integration candidate; insufficient docs/root evidence in this pass to promote.",
+        "rawJson": {
+          "full_name": "James19890801/feishu-codex-digital-employee",
+          "url": "https://github.com/James19890801/feishu-codex-digital-employee",
+          "skip_reason": "Small Feishu/Codex integration candidate; insufficient docs/root evidence in this pass to promote."
+        }
+      }
+    ],
+    "justrobin14/langchain-for-beginners-r": [
+      {
+        "id": "justrobin14-langchain-for-beginners-r:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "justrobin14/langchain-for-beginners-r",
+        "url": "https://github.com/justrobin14/langchain-for-beginners-r",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Beginner/tutorial material rather than a productized app, CLI, API or agent workflow.",
+        "rawJson": {
+          "full_name": "justrobin14/langchain-for-beginners-r",
+          "url": "https://github.com/justrobin14/langchain-for-beginners-r",
+          "skip_reason": "Beginner/tutorial material rather than a productized app, CLI, API or agent workflow."
+        }
+      }
+    ],
+    "Krishita17/federal-ai-incident-reporting": [
+      {
+        "id": "Krishita17-federal-ai-incident-reporting:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Krishita17/federal-ai-incident-reporting",
+        "url": "https://github.com/Krishita17/federal-ai-incident-reporting",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Potential policy/reporting app signal, but current search metadata did not show enough AI-native product depth for Top.",
+        "rawJson": {
+          "full_name": "Krishita17/federal-ai-incident-reporting",
+          "url": "https://github.com/Krishita17/federal-ai-incident-reporting",
+          "skip_reason": "Potential policy/reporting app signal, but current search metadata did not show enough AI-native product depth for Top."
+        }
+      }
+    ],
+    "linny006/awesome-agent-skills": [
+      {
+        "id": "linny006-awesome-agent-skills:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "linny006/awesome-agent-skills",
+        "url": "https://github.com/linny006/awesome-agent-skills",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Agent skills index; not promoted because it lacks a single durable user-facing product workflow.",
+        "rawJson": {
+          "full_name": "linny006/awesome-agent-skills",
+          "url": "https://github.com/linny006/awesome-agent-skills",
+          "skip_reason": "Agent skills index; not promoted because it lacks a single durable user-facing product workflow."
+        }
+      }
+    ],
+    "Rodert/awesome-mcp": [
+      {
+        "id": "Rodert-awesome-mcp:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Rodert/awesome-mcp",
+        "url": "https://github.com/Rodert/awesome-mcp",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "MCP directory/list; useful for discovery but not a runnable AI-native product itself.",
+        "rawJson": {
+          "full_name": "Rodert/awesome-mcp",
+          "url": "https://github.com/Rodert/awesome-mcp",
+          "skip_reason": "MCP directory/list; useful for discovery but not a runnable AI-native product itself."
+        }
+      }
+    ],
+    "Shubhamsaboo/awesome-llm-apps": [
+      {
+        "id": "Shubhamsaboo-awesome-llm-apps:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Shubhamsaboo/awesome-llm-apps",
+        "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Large curated app collection; kept as context but excluded by prompt/awesome-list downgrade rule.",
+        "rawJson": {
+          "full_name": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "skip_reason": "Large curated app collection; kept as context but excluded by prompt/awesome-list downgrade rule."
+        }
+      }
+    ],
+    "ugliai/awesome-ai-tools": [
+      {
+        "id": "ugliai-awesome-ai-tools:2026-08-08T17:30:00+08:00:skip:0",
+        "runId": "run:2026-08-08:2026-08-08T17:30:00+08:00",
+        "runDate": "2026-08-08",
+        "generatedAt": "2026-08-08T17:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "ugliai/awesome-ai-tools",
+        "url": "https://github.com/ugliai/awesome-ai-tools",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "AI tools directory, not an AI-native product with its own workflow.",
+        "rawJson": {
+          "full_name": "ugliai/awesome-ai-tools",
+          "url": "https://github.com/ugliai/awesome-ai-tools",
+          "skip_reason": "AI tools directory, not an AI-native product with its own workflow."
         }
       }
     ],
@@ -39868,84 +41889,6 @@
           "full_name": "zed-industries/zed",
           "url": "https://github.com/zed-industries/zed",
           "skip_reason": "Strong editor product with AI relevance, but this cycle prioritized repositories whose primary surface is AI-native agent/workflow/RAG/product automation."
-        }
-      }
-    ],
-    "G1o22/awesome-ai-agents-2026": [
-      {
-        "id": "G1o22-awesome-ai-agents-2026:2026-06-05T10:21:27+08:00:skip:0",
-        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
-        "runDate": "2026-06-05",
-        "generatedAt": "2026-06-05T10:21:27+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "G1o22/awesome-ai-agents-2026",
-        "url": "https://github.com/G1o22/awesome-ai-agents-2026",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped.",
-        "rawJson": {
-          "full_name": "G1o22/awesome-ai-agents-2026",
-          "url": "https://github.com/G1o22/awesome-ai-agents-2026",
-          "skip_reason": "Curated collection with broad secondhand descriptions; useful as discovery source but not product-shaped."
-        }
-      }
-    ],
-    "Supersynergy/awesome-ai-agents-2025": [
-      {
-        "id": "Supersynergy-awesome-ai-agents-2025:2026-06-05T10:21:27+08:00:skip:0",
-        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
-        "runDate": "2026-06-05",
-        "generatedAt": "2026-06-05T10:21:27+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "Supersynergy/awesome-ai-agents-2025",
-        "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Awesome list / directory of tools, not a single runnable AI native product.",
-        "rawJson": {
-          "full_name": "Supersynergy/awesome-ai-agents-2025",
-          "url": "https://github.com/Supersynergy/awesome-ai-agents-2025",
-          "skip_reason": "Awesome list / directory of tools, not a single runnable AI native product."
-        }
-      }
-    ],
-    "VoltAgent/awesome-ai-agent-papers": [
-      {
-        "id": "VoltAgent-awesome-ai-agent-papers:2026-06-05T10:21:27+08:00:skip:0",
-        "runId": "run:2026-06-05:2026-06-05T10:21:27+08:00",
-        "runDate": "2026-06-05",
-        "generatedAt": "2026-06-05T10:21:27+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "VoltAgent/awesome-ai-agent-papers",
-        "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Research-paper list without runnable product surface.",
-        "rawJson": {
-          "full_name": "VoltAgent/awesome-ai-agent-papers",
-          "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
-          "skip_reason": "Research-paper list without runnable product surface."
         }
       }
     ],
