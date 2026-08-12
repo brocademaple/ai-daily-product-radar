@@ -1,0 +1,240 @@
+{
+  "run_date": "2026-08-12",
+  "generated_at": "2026-08-12T12:07:07+08:00",
+  "data_window": "2026-08-09 00:00 to 2026-08-12 12:07 Asia/Shanghai. GitHub Search API responses were saved to /tmp/radar_2026_08_12_*.json; two broad queries timed out and smaller queries plus README audits were used.",
+  "source_summary": "git fetch origin succeeded on main. Candidate discovery used GitHub Search API queries for newly created or recently pushed AI agent, MCP, browser agent, code agent, RAG, voice agent and workflow repositories. Selected README files were saved under /tmp/radar_2026_08_12_repo_audit and inspected for product shape, install/usage clues and AI-native surface. No third-party repository was cloned, installed, built, run, browser-tested, voice-tested, credential-tested or security-scanned.",
+  "trend_observations": "Agent control is moving toward system-level surfaces such as menu bar monitors, desktop Accessibility control, screenshot/voice feedback and MCP permission layers. MCP security and context handoff are becoming products rather than library footnotes. Browser-agent infrastructure remains crowded, but new runtimes need task benchmarks before speed claims matter. Vertical business agents are packaging workflow, RAG, approval/record sync and observability into scened products. Self-hosted assistants increasingly bundle memory, voice, channels and systemd/Docker, with real differentiation in deployment friction and safety boundaries.",
+  "assumptions": "Stars and forks are point-in-time GitHub API metadata from saved responses, not exact 24-hour deltas. Scores emphasize product surface, runnability clues, user scenario, documentation density, recent creation/update and AI-native architecture. README/root evidence is directional. No clone, install, Docker, npm, Python, Swift/Xcode, browser, desktop permission, voice, model-provider, credential or security audit was performed.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-08-12\n\n数据窗口：2026-08-09 00:00 至 2026-08-12 12:07（Asia/Shanghai）。\n\n关键假设：本次优先用 GitHub Search API 的 24-72 小时创建/更新窗口做候选发现，原始响应已保存到 `/tmp/radar_2026_08_12_*.json`。`created AI agent` 与较宽的 `updated agent MCP` 两条查询在 20 秒内超时；随后用较小查询补足。对入选候选拉取了 README 到 `/tmp/radar_2026_08_12_repo_audit/`，但没有 clone、安装、构建、运行、登录、浏览器、语音、桌面权限、模型 provider 或安全审计。\n\n## Top Projects\n\n1. [metedata/Remarc](https://github.com/metedata/Remarc) - Agent Feedback Layer - Score 88\n   - 做什么：macOS 菜单栏反馈层，让用户对文字、截图、网页元素或语音评论建卡，并把上下文交给 Codex、Claude Code、Cursor 或 MCP 客户端。\n   - 面向谁：需要把 UI/产品/代码反馈精确交给 coding agent 的独立开发者和产品团队。\n   - AI native 点：把截图、元素、录音、评论 session、状态流转、Markdown/JSON export 和 MCP/插件交接做成 agent 可读上下文。\n   - 增长/活跃信号：2026-08-10 创建，2026-08-11 更新，20 stars；README 有安装、权限、agent integrations、隐私和源码构建说明。\n   - 可运行性判断：有 Release 下载、SwiftUI/AppKit 源码、MCP vendored artifact 和构建步骤；本次未授权 macOS 权限或启动应用。\n   - 建议动作：优先试用一次“截图评论 -> Codex 读取 -> 修复 -> resolve”的闭环，验证上下文保真度。\n\n2. [Pinvou/pinvou-agent](https://github.com/Pinvou/pinvou-agent) - Desktop AI Agent - Score 84\n   - 做什么：面向 tools、files、knowledge、workflows 和 real deliverables 的开源桌面 AI agent。\n   - 面向谁：希望把本地文件、知识库、工具和工作流统一进一个桌面 agent 的个人和小团队。\n   - AI native 点：桌面 UI、工具调用、知识上下文、工作流和可交付物生产是主产品面。\n   - 增长/活跃信号：2026-07-24 创建，2026-08-12 更新，643 stars；README 约 12 KB，产品定位和运行说明较完整。\n   - 可运行性判断：README 明确桌面 agent 形态和本地启动路径；未做安装和 provider 凭证验证。\n   - 建议动作：加入本地 AI desktop agent 对比池，与 Skales、OpenAgent、AIfred 做部署摩擦比较。\n\n3. [helloyulife/CoderBar](https://github.com/helloyulife/CoderBar) - macOS Agent Control - Score 82\n   - 做什么：原生 macOS 菜单栏 agent 控制器，用于监控、批准、提问和快速回到 Codex/Claude 任务。\n   - 面向谁：长时间同时运行多个 coding agent、需要轻量监督与批准入口的 macOS 开发者。\n   - AI native 点：把 agent 状态、approval、ask-back、jump-back 变成系统级菜单栏控制面。\n   - 增长/活跃信号：2026-08-11 创建并更新，36 stars；README 有 Swift/macOS 产品说明和使用口径。\n   - 可运行性判断：看起来是原生 Swift 项目，产品面清晰；本次未打开 Xcode 或运行签名构建。\n   - 建议动作：观察是否支持 Codex task/thread 深链与通知去重；适合做轻量 agent supervisor 原型。\n\n4. [sunhao123456sun-svg/toolpermit](https://github.com/sunhao123456sun-svg/toolpermit) - MCP Permission Firewall - Score 81\n   - 做什么：本地优先的 MCP tool-call 权限策略、一次性批准和脱敏审计层，放在 MCP client 与 stdio server 之间。\n   - 面向谁：需要把 MCP 工具暴露给 agent、但担心高风险调用、重复批准和审计缺口的开发者。\n   - AI native 点：围绕 canonical request、policy、session、allow/ask/deny、offline replay 和 CLI/UI 审批构建 agent 安全控制面。\n   - 增长/活跃信号：2026-08-11 创建并更新，34 stars；README 有 CI badge、quickstart、策略与 replay 说明。\n   - 可运行性判断：Python 项目，CLI/策略思路清楚；本次未接入真实 MCP server 做拦截测试。\n   - 建议动作：用一个文件系统 MCP 做最小实验，验证 one-time approval 是否能阻止参数漂移。\n\n5. [xfreeze2/desktop-harness](https://github.com/xfreeze2/desktop-harness) - Mac Desktop Control CLI - Score 79\n   - 做什么：给 Grok Build、Codex CLI、Claude Code 等 agent 使用的 macOS AX-first 桌面控制 CLI 与 agent skill。\n   - 面向谁：希望 agent 能操作真实 Mac 应用，但又想少依赖截图视觉猜测的自动化用户。\n   - AI native 点：Accessibility tree、window/app/action API、warm daemon、skill 文件、安全边界和 voice scaffold 都围绕 agent 操作本机设计。\n   - 增长/活跃信号：2026-08-10 创建，2026-08-11 更新，28 stars；README 有 install、permissions、quick use、selftest、API surface 和 safety。\n   - 可运行性判断：安装脚本和 smoke test 明确；需要 Accessibility/Screen Recording 权限，本次未执行。\n   - 建议动作：与 Browser/Computer Use 工具链做一次低风险 TextEdit smoke test 对比。\n\n6. [yangzc/ainote](https://github.com/yangzc/ainote) - Visual Agent Workflow Platform - Score 78\n   - 做什么：AI agent workflow platform，包含可视化流程编排、拖拽表单、知识库 RAG、多模型 LLM、数字员工、Tauri 桌面和钉钉 bot。\n   - 面向谁：希望自托管低代码 agent 工作流和企业知识助手的团队。\n   - AI native 点：把 visual flow、RAG、multi-model、digital workers、desktop app 和 IM bot 组合为 AI workflow 产品。\n   - 增长/活跃信号：2026-08-11 创建，2026-08-12 更新，19 stars；README 约 18 KB，有桌面/工作流/知识库说明。\n   - 可运行性判断：产品结构清晰，但需要核验依赖、数据库、模型和钉钉配置；本次未启动。\n   - 建议动作：Watch；如果后续持续更新，适合作为中文企业 agent workflow 样本。\n\n7. [Peuqui/AIfred-Intelligence](https://github.com/Peuqui/AIfred-Intelligence) - Self-hosted Multi-agent Assistant - Score 77\n   - 做什么：自托管 multi-agent assistant，包含 debate modes、voice、RAG long-term memory、web research、tool-calling、Web UI、Telegram/Discord/Email/EPIM。\n   - 面向谁：想在本地/自托管环境中运行语音、记忆、研究和多 agent 讨论的 power users。\n   - AI native 点：多 agent 角色、RAG cache、语音 TTS/STT、工具调用、多 backend 和系统服务部署是核心。\n   - 增长/活跃信号：2026-08-12 更新，33 stars；README 超 120 KB，包含 Docker、ChromaDB、TTS、systemd、配置和限制说明。\n   - 可运行性判断：文档极完整但部署面重，依赖 Docker、LLM backend、TTS/ASR 和多服务配置；未本地运行。\n   - 建议动作：作为“重型 self-hosted assistant”标尺，重点审计多用户权限与资源消耗。\n\n8. [lexmount/moli](https://github.com/lexmount/moli) - Rust Browser For Agents - Score 75\n   - 做什么：Rust 构建的 AI agents browser，定位为更快的浏览器自动化运行时。\n   - 面向谁：需要替代传统 Playwright/Chromium 自动化成本的 agent/browser infra 开发者。\n   - AI native 点：浏览器本身被定位为 agent 执行层，目标是降低自动化延迟和运行摩擦。\n   - 增长/活跃信号：2026-08-10 创建，2026-08-12 更新，106 stars；README 约 10 KB，具备早期产品叙述。\n   - 可运行性判断：Rust 项目有代码和 README，但成熟度仍需验证；未 cargo build 或跑浏览器任务。\n   - 建议动作：Watch；等出现可重复 benchmark 后再与 agent-browser、Browser4、Lightpanda 对比。\n\n9. [z15114664687-dot/hr-onboarding-agent](https://github.com/z15114664687-dot/hr-onboarding-agent) - HR Onboarding Agent - Score 73\n   - 做什么：面向飞书/Lark 的 HR onboarding agent，支持可配置 workflows、文档 OCR/review、Bitable sync、reminders 和 zero-credential demo。\n   - 面向谁：需要把入职流程、资料审核和飞书多维表格同步自动化的 HR/运营团队。\n   - AI native 点：把 OCR、文档审核、任务提醒、Bitable 记录和 workflow 编排组合成垂直业务 agent。\n   - 增长/活跃信号：2026-08-11 创建并更新，18 stars；README 约 9 KB，强调 zero-credential demo 与 Feishu/Lark 场景。\n   - 可运行性判断：业务场景明确，适合 demo；真实飞书权限和 OCR provider 需要实测。\n   - 建议动作：保留为垂直 agent 样本，后续可复刻成 onboarding/采购/合同三类流程对比。\n\n10. [ashish39403/agentic-rag-enterprise-assistant](https://github.com/ashish39403/agentic-rag-enterprise-assistant) - Enterprise Agentic RAG - Score 71\n   - 做什么：生产风格 Enterprise Agentic RAG，使用 FastAPI、LangGraph、Qdrant、NeMo Guardrails、Langfuse tracing、reranking、Streamlit UI 和 evaluation pipelines。\n   - 面向谁：需要 agentic RAG 参考架构、评测和可观测性的企业 AI 工程团队。\n   - AI native 点：检索、guardrails、observability、reranking、workflow 和评估管线围绕企业 agent answer loop 设计。\n   - 增长/活跃信号：2026-08-10 创建，2 stars；README 约 7.6 KB，技术栈完整但社区信号很早。\n   - 可运行性判断：架构与组件清楚，但真实数据、评估脚本和部署完整度需验证；未启动服务。\n   - 建议动作：Watch；不按 star 排序，而按“企业 RAG 产品骨架”保留跟踪。\n\n## Watchlist\n\n- [NVIDIA-AI-Blueprints/retail-shopping-assistant](https://github.com/NVIDIA-AI-Blueprints/retail-shopping-assistant) - Retail AI Blueprint - Score 80 - 多 agent、实时 streaming、image search、shopping cart 和 Docker compose 结构完整；但 NIM/NVIDIA 依赖较重，先作 blueprint 基准。\n- [Intent-Lab/VisionClaw](https://github.com/Intent-Lab/VisionClaw) - Smart-glasses Agent - Score 79 - Meta Ray-Ban voice + vision + OpenClaw action layer，产品感强；硬件和 Gemini Live 依赖需要实测。\n- [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) - Social Web Agent CLI - Score 78 - 用 CLI 给 agent 读 Twitter/Reddit/YouTube/GitHub/Bilibili/小红书，增长信号强；需要核验合规和平台稳定性。\n- [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) - Tool-output Compression - Score 76 - MCP server/proxy/library 形态清晰，能压缩 logs/RAG/tool outputs；偏基础设施，今天作为 agent context 成本基准。\n- [simstudioai/sim](https://github.com/simstudioai/sim) - Agent Workflow Workspace - Score 74 - 成熟协作式 agent workflow 产品，今天活跃但不是新鲜发现，继续作为工作流平台基准。\n\n## Skip Reasons\n\n- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)：curated list/资源集合，不是单一可运行产品。\n- [enescingoz/awesome-n8n-templates](https://github.com/enescingoz/awesome-n8n-templates)：模板集合，适合发现 workflow idea，但不作为 Top 产品。\n- [ayi-ai/nie-grassroots-logic](https://github.com/ayi-ai/nie-grassroots-logic)：Agent Skill 内容包，主题有趣但更像方法论/知识技能，不是独立产品。\n- [Kianzzz/book-sales-video](https://github.com/Kianzzz/book-sales-video)：垂直内容 Agent Skill，暂缺足够通用产品面，放入类型观察。\n- [wanshuiyin/HERO-Anti-OverDefense](https://github.com/wanshuiyin/HERO-Anti-OverDefense)：paste-in contract/Markdown 约束文档，缺少可运行软件产品面。\n- [Prathamesh01110/MARCOS](https://github.com/Prathamesh01110/MARCOS)：多 agent reinforcement 研究/框架信号，缺少明确用户产品与运行说明。\n\n## 今日趋势观察\n\n1. Agent control 正在从 IDE 插件走向系统层：菜单栏、桌面 AX、截图评论、语音评论和审批 firewall 都在变成 agent 操作界面。\n2. MCP 安全和上下文交接开始产品化：ToolPermit 管工具调用，Remarc 管反馈上下文，二者都强调“可审计的 handoff”。\n3. 浏览器 agent 仍在基础设施竞赛中，但今天的新信号偏早期 runtime；需要用固定任务 benchmark 分辨 README 速度承诺。\n4. 垂直业务 agent 继续出现，HR onboarding、retail shopping、enterprise RAG 的共同点是把 workflow、RAG、审批/记录同步和可观测性打包成场景产品。\n5. 自托管 assistant 趋向“多 backend + memory + voice + channels + systemd/Docker”，真实差异不在功能清单，而在部署摩擦、权限边界和资源消耗。\n\n## 今日建议动作\n\n- 先试 `Remarc` 的反馈闭环，把一个真实 UI 截图评论交给 Codex 修复，记录上下文是否完整。\n- 用 `ToolPermit` 包一层低风险 MCP server，验证 approval hash 是否绑定到参数级请求。\n- 对 `CoderBar`、`desktop-harness`、`Pinvou` 做 macOS agent-control 三件套比较：通知、权限、agent handoff、失败恢复。\n- 把 `AIfred` 与 `Pinvou` 放进 self-hosted/desktop assistant 对比表，重点记录硬件、provider、voice 和多用户安全成本。\n\n## 数据观察窗口与关键假设\n\n- Window: 2026-08-09 00:00 to 2026-08-12 12:07 Asia/Shanghai.\n- Source path: `git fetch origin` succeeded. GitHub Search API responses were saved under `/tmp/radar_2026_08_12_*.json`; two broad queries timed out, smaller queries succeeded.\n- README audit: selected candidates were saved under `/tmp/radar_2026_08_12_repo_audit/`; README size and install/usage/demo/MCP/RAG/workflow keywords were inspected locally.\n- Assumption: stars and forks are GitHub API point-in-time metadata from the saved responses, not precise 24-hour deltas.\n- Assumption: no repository was cloned, installed, built, run, browser-tested, voice-tested, credential-tested, security-scanned or provider-tested in this automation run.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "metedata/Remarc",
+      "url": "https://github.com/metedata/Remarc",
+      "category": "Agent 反馈层",
+      "score": 88,
+      "summary": "macOS 菜单栏反馈层，捕获文字、截图、网页元素和语音评论，并把上下文交给 coding agent。",
+      "audience": "需要把 UI、产品和代码反馈精确交给 coding agent 的开发者和产品团队。",
+      "ai_native_angle": "评论、截图、录音、session、状态、导出和 MCP/插件交接都变成 agent 可读上下文。",
+      "growth_signal": "2026-08-10 创建，2026-08-11 更新，20 stars；README 包含安装、权限、agent integrations、隐私和源码构建说明。",
+      "runnability": "Release 下载、SwiftUI/AppKit 源码、MCP artifact 和构建步骤已记录；未测试 macOS 权限或应用启动。",
+      "recommended_action": "跑一次截图评论到 Codex 修复再 resolve 的闭环，验证上下文保真度。"
+    },
+    {
+      "rank": 2,
+      "full_name": "Pinvou/pinvou-agent",
+      "url": "https://github.com/Pinvou/pinvou-agent",
+      "category": "桌面 AI Agent",
+      "score": 84,
+      "summary": "面向 tools、files、knowledge、workflows 和 real deliverables 的开源桌面 AI agent。",
+      "audience": "希望把本地文件、知识、工具和工作流统一进桌面 agent 的个人和小团队。",
+      "ai_native_angle": "桌面 UI、工具调用、知识上下文、工作流和可交付物生产是主产品面。",
+      "growth_signal": "2026-07-24 创建，2026-08-12 更新，643 stars；README 约 12 KB，具备产品定位和运行线索。",
+      "runnability": "桌面 agent 形态和启动路径已记录；未执行安装和 provider 凭证检查。",
+      "recommended_action": "加入本地桌面 agent 对比池，与 Skales、OpenAgent、AIfred 比较。"
+    },
+    {
+      "rank": 3,
+      "full_name": "helloyulife/CoderBar",
+      "url": "https://github.com/helloyulife/CoderBar",
+      "category": "macOS Agent 控制",
+      "score": 82,
+      "summary": "原生 macOS 菜单栏控制器，用于监控、批准、提问并跳回 Codex 和 Claude 任务。",
+      "audience": "需要监督多个长时间运行 coding agent 的 macOS 开发者。",
+      "ai_native_angle": "agent 状态、approval、ask-back 和 jump-back 成为系统级控制面。",
+      "growth_signal": "2026-08-11 创建并更新，36 stars；README 记录了 Swift/macOS 产品形态。",
+      "runnability": "看起来是原生 Swift 项目；未尝试 Xcode 或签名构建。",
+      "recommended_action": "观察是否支持 Codex task 深链和通知去重。"
+    },
+    {
+      "rank": 4,
+      "full_name": "sunhao123456sun-svg/toolpermit",
+      "url": "https://github.com/sunhao123456sun-svg/toolpermit",
+      "category": "MCP 权限防火墙",
+      "score": 81,
+      "summary": "本地优先的 MCP tool-call 权限策略、一次性批准和脱敏审计层。",
+      "audience": "需要把 MCP 工具暴露给 agent，同时保留风险控制和审计轨迹的开发者。",
+      "ai_native_angle": "canonical request、policy、session、allow/ask/deny、offline replay 和 CLI/UI approval 包住 agent 工具层。",
+      "growth_signal": "2026-08-11 创建并更新，34 stars；README 包含 CI、quickstart、policy 和 replay 细节。",
+      "runnability": "Python CLI/策略设计清楚；未测试真实 MCP server 拦截。",
+      "recommended_action": "包一层低风险 filesystem MCP server，测试一次性批准能否阻止参数漂移。"
+    },
+    {
+      "rank": 5,
+      "full_name": "xfreeze2/desktop-harness",
+      "url": "https://github.com/xfreeze2/desktop-harness",
+      "category": "Mac 桌面控制 CLI",
+      "score": 79,
+      "summary": "给 Grok Build、Codex CLI、Claude Code 和 shell-capable agents 使用的 AX-first macOS 桌面控制 CLI 与 agent skill。",
+      "audience": "希望 agent 操作真实 Mac 应用、同时减少截图猜测的自动化用户。",
+      "ai_native_angle": "Accessibility tree 控制、action API、warm daemon、skills、安全规则和 voice scaffold 都围绕 agent 操作设计。",
+      "growth_signal": "2026-08-10 创建，2026-08-11 更新，28 stars；README 覆盖 install、permissions、quick use、selftest、API 和 safety。",
+      "runnability": "安装脚本和 smoke test 已记录；未授予或测试 Accessibility、Screen Recording 权限。",
+      "recommended_action": "用低风险 TextEdit smoke test 对比现有 Browser/Computer Use 路径。"
+    },
+    {
+      "rank": 6,
+      "full_name": "yangzc/ainote",
+      "url": "https://github.com/yangzc/ainote",
+      "category": "可视化 Agent 工作流平台",
+      "score": 78,
+      "summary": "包含可视化编排、拖拽表单、知识库 RAG、多模型 LLM、数字员工、Tauri 桌面和钉钉 bot 的 AI workflow 平台。",
+      "audience": "构建自托管低代码 agent 工作流和企业知识助手的团队。",
+      "ai_native_angle": "visual flow、RAG、多模型路由、digital workers、桌面 app 和 IM bot 被打包成 AI workflow 产品。",
+      "growth_signal": "2026-08-11 创建，2026-08-12 更新，19 stars；README 约 18 KB，描述桌面、工作流和知识库产品面。",
+      "runnability": "产品结构清楚；依赖、数据库、模型和钉钉配置仍需实测。",
+      "recommended_action": "继续观察；若持续更新，可作为中文企业 agent workflow 样本。"
+    },
+    {
+      "rank": 7,
+      "full_name": "Peuqui/AIfred-Intelligence",
+      "url": "https://github.com/Peuqui/AIfred-Intelligence",
+      "category": "自托管多 Agent Assistant",
+      "score": 77,
+      "summary": "自托管 multi-agent assistant，包含 debate modes、voice、RAG 长期记忆、web research、tool-calling、Web UI 和多渠道。",
+      "audience": "运行本地或自托管语音、记忆、研究和多 agent 讨论系统的 power users。",
+      "ai_native_angle": "多 agent 角色、RAG cache、TTS/STT、工具调用、多 backend 和系统服务构成产品主体。",
+      "growth_signal": "2026-08-12 更新，33 stars；README 超 120 KB，记录 Docker、ChromaDB、TTS、systemd、配置和限制。",
+      "runnability": "文档很完整但部署较重；未运行 Docker、LLM backend、TTS/ASR 和多服务。",
+      "recommended_action": "作为重型 self-hosted assistant 基线，重点看多用户权限和资源成本。"
+    },
+    {
+      "rank": 8,
+      "full_name": "lexmount/moli",
+      "url": "https://github.com/lexmount/moli",
+      "category": "面向 Agents 的 Rust 浏览器",
+      "score": 75,
+      "summary": "Rust 构建的 AI agents browser，定位为更快的浏览器自动化运行时。",
+      "audience": "寻找传统 Playwright 或 Chromium 自动化成本替代方案的 agent/browser infra 开发者。",
+      "ai_native_angle": "浏览器运行时本身被设计为 agent execution layer。",
+      "growth_signal": "2026-08-10 创建，2026-08-12 更新，106 stars；README 约 10 KB，有早期产品叙述。",
+      "runnability": "有 Rust 代码和 README，但成熟度需验证；未 cargo build 或运行浏览器任务。",
+      "recommended_action": "等待可重复 benchmark 后再与 agent-browser、Browser4、Lightpanda 对比。"
+    },
+    {
+      "rank": 9,
+      "full_name": "z15114664687-dot/hr-onboarding-agent",
+      "url": "https://github.com/z15114664687-dot/hr-onboarding-agent",
+      "category": "HR Onboarding Agent",
+      "score": 73,
+      "summary": "面向飞书/Lark 的 HR onboarding agent，包含可配置 workflows、文档 OCR/review、Bitable sync、reminders 和 zero-credential demo。",
+      "audience": "自动化入职、文档审核和飞书多维表格同步的 HR 与运营团队。",
+      "ai_native_angle": "OCR、文档审核、提醒、Bitable 记录和 workflow 编排组成垂直业务 agent。",
+      "growth_signal": "2026-08-11 创建并更新，18 stars；README 约 9 KB，聚焦 Feishu/Lark 场景。",
+      "runnability": "业务场景和 demo 姿态清楚；真实飞书权限和 OCR provider 表现需测试。",
+      "recommended_action": "作为 onboarding、采购、合同审核等垂直 agent 对比样本继续跟踪。"
+    },
+    {
+      "rank": 10,
+      "full_name": "ashish39403/agentic-rag-enterprise-assistant",
+      "url": "https://github.com/ashish39403/agentic-rag-enterprise-assistant",
+      "category": "企业 Agentic RAG",
+      "score": 71,
+      "summary": "生产风格 enterprise agentic RAG，使用 FastAPI、LangGraph、Qdrant、NeMo Guardrails、Langfuse、reranking、Streamlit UI 和 evaluation pipelines。",
+      "audience": "寻找 agentic RAG、评估和可观测性参考架构的企业 AI 工程团队。",
+      "ai_native_angle": "检索、guardrails、可观测性、reranking、workflow 和评估管线围绕 agent answer loop 组织。",
+      "growth_signal": "2026-08-10 创建，2 stars；README 约 7.6 KB，技术栈完整但社区信号早期。",
+      "runnability": "架构和组件清楚；样例数据、评估脚本和部署完整度需要验证。",
+      "recommended_action": "尽管 star 低，仍按企业 RAG 产品骨架继续观察。"
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "NVIDIA-AI-Blueprints/retail-shopping-assistant",
+      "url": "https://github.com/NVIDIA-AI-Blueprints/retail-shopping-assistant",
+      "category": "零售 AI Blueprint",
+      "score": 80,
+      "summary": "包含多 agent 架构、streaming、image search、shopping cart 和 Docker compose 的零售 assistant blueprint。",
+      "audience": "原型验证购物顾问的零售和 solution 团队。",
+      "ai_native_angle": "LangGraph agents、视觉搜索和购物车管理被打包成垂直零售 assistant。",
+      "growth_signal": "2026-08-11 更新，91 stars；README 记录 Docker 和部署路径。",
+      "runnability": "NIM/NVIDIA 依赖较重，未测试。",
+      "recommended_action": "作为 blueprint benchmark，而非轻量 Top。"
+    },
+    {
+      "rank": 2,
+      "full_name": "Intent-Lab/VisionClaw",
+      "url": "https://github.com/Intent-Lab/VisionClaw",
+      "category": "智能眼镜 Agent",
+      "score": 79,
+      "summary": "面向 Meta Ray-Ban 的实时 AI assistant，带 voice、vision 和 agentic actions。",
+      "audience": "探索 wearable voice/vision assistant 的构建者。",
+      "ai_native_angle": "Gemini Live 与 OpenClaw action layer 将语音/视觉上下文连接到 agent 动作。",
+      "growth_signal": "2026-08-12 更新，2503 stars。",
+      "runnability": "硬件和 Gemini Live 依赖需要单独测试。",
+      "recommended_action": "跟踪 wearable agent UX 模式。"
+    },
+    {
+      "rank": 3,
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "Social Web Agent CLI",
+      "score": 78,
+      "summary": "让 agents 读/搜 Twitter、Reddit、YouTube、GitHub、Bilibili 和小红书的 CLI。",
+      "audience": "需要广泛社交网络上下文的研究、内容和监控 agents。",
+      "ai_native_angle": "社交网络表面被转换成 agent-callable tools。",
+      "growth_signal": "2026-08-12 更新，star 可见性强。",
+      "runnability": "合规和平台稳定性需要谨慎审计。",
+      "recommended_action": "作为 research-agent context source 继续观察。"
+    },
+    {
+      "rank": 4,
+      "full_name": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "category": "工具输出压缩",
+      "score": 76,
+      "summary": "在 tool outputs、logs、files 和 RAG chunks 到达 LLM 前压缩它们的 library、proxy 和 MCP server。",
+      "audience": "优化 coding-agent 与 RAG 上下文成本的团队。",
+      "ai_native_angle": "上下文压缩被定位为 agent runtime primitive。",
+      "growth_signal": "2026-08-12 更新，可见度高。",
+      "runnability": "基础设施形态清楚；任务质量影响需要 benchmark。",
+      "recommended_action": "作为 context-cost benchmark。"
+    },
+    {
+      "rank": 5,
+      "full_name": "simstudioai/sim",
+      "url": "https://github.com/simstudioai/sim",
+      "category": "Agent 工作流工作空间",
+      "score": 74,
+      "summary": "用于构建、部署和监控 AI agents 与 workflows 的协作式工作空间。",
+      "audience": "构建可视化 agent workflows 的团队。",
+      "ai_native_angle": "agent workflow building、deployment 和 monitoring 是核心产品。",
+      "growth_signal": "2026-08-12 更新，成熟生态可见。",
+      "runnability": "已知成熟产品；今天不挤占新鲜候选。",
+      "recommended_action": "继续作为 workflow-platform benchmark。"
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "skip_reason": "Curated list/resource collection rather than one runnable product."
+    },
+    {
+      "full_name": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "skip_reason": "Template collection useful for workflow discovery, but not a standalone AI-native product."
+    },
+    {
+      "full_name": "ayi-ai/nie-grassroots-logic",
+      "url": "https://github.com/ayi-ai/nie-grassroots-logic",
+      "skip_reason": "Agent Skill content/methodology package rather than an independent product surface."
+    },
+    {
+      "full_name": "Kianzzz/book-sales-video",
+      "url": "https://github.com/Kianzzz/book-sales-video",
+      "skip_reason": "Vertical content Agent Skill with limited general product surface."
+    },
+    {
+      "full_name": "wanshuiyin/HERO-Anti-OverDefense",
+      "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
+      "skip_reason": "Paste-in contract/Markdown guidance, not runnable software."
+    },
+    {
+      "full_name": "Prathamesh01110/MARCOS",
+      "url": "https://github.com/Prathamesh01110/MARCOS",
+      "skip_reason": "Research/framework signal without enough user-facing product and runnability evidence."
+    }
+  ]
+}
