@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+      "runDate": "2026-08-14",
+      "generatedAt": "2026-08-14T10:46:00+08:00",
+      "dataWindow": "2026-08-11 00:00 to 2026-08-14 10:46 Asia/Shanghai. GitHub Search API raw responses were saved under /tmp/radar_2026_08_14_*.json and selected repository metadata/README audits under /tmp/radar_2026_08_14_repo_audit/.",
+      "sourceSummary": "git fetch origin succeeded on main. Discovery used GitHub Search API queries for repositories created since 2026-08-11 matching AI agent, MCP, LLM app and browser agent terms. Selected repository metadata and README heads were collected locally. No third-party repository was cloned, installed, built, run, browser-tested, device-permission-tested, credential-tested or security-scanned.",
+      "trendObservations": "The strongest fresh product signal is agent execution moving onto real, persistent surfaces: paired iPhone control, visible browser sessions and desktop computer use. Multi-agent engineering is becoming a governed coordination product through worktree isolation, write leases, verification evidence and merge queues. MCP differentiation is shifting toward action control, device execution and auditable real-browser state. RAG candidates are more compelling when ingestion, retrieval, a usable visualization or desktop UI, and callable access are one closed-loop product.",
+      "assumptions": "Stars, forks and timestamps are point-in-time GitHub API metadata, not exact growth deltas. Scores emphasize product surface, clear audience, recent creation or updates, README/source runnability clues and AI-native architecture. README evidence is directional. No install, Docker, npm, Cargo, Swift/Xcode, browser, mobile device, model provider, OAuth, security or production deployment audit was performed.",
+      "markdownReport": "data/runs/2026-08-14.md",
+      "sourceFile": "2026-08-14.json",
+      "entryCount": 19
+    },
+    {
       "id": "run:2026-08-13:2026-08-13T11:17:03+08:00",
       "runDate": "2026-08-13",
       "generatedAt": "2026-08-13T11:17:03+08:00",
@@ -1622,6 +1634,25 @@
       "skipReason": null
     },
     {
+      "fullName": "nickatnight96/iphone-mirror-mcp",
+      "url": "https://github.com/nickatnight96/iphone-mirror-mcp",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "iPhone MCP 自动化",
+      "summary": "通过 macOS iPhone 镜像和 MCP 控制真实 iPhone，并自动化 Xcode、simulator 和设备测试。",
+      "audience": "需要真实 iOS 设备验证的 coding-agent 和移动开发者。",
+      "aiNativeAngle": "63 个 MCP 工具将设备动作、可见屏幕和测试反馈变成 agent execution layer。",
+      "growthSignal": "2026-08-12 创建、2026-08-14 更新；MIT、Swift 6、CI、install.sh 和清晰 action chain 可见。",
+      "runnability": "安装脚本、系统前提和工具链明确；未验证配对设备、权限或真实应用运行。",
+      "recommendedAction": "用无敏感 sample app 验证 read-screen/tap/assert 闭环。",
+      "skipReason": null
+    },
+    {
       "fullName": "kirodotdev/KiroCrew",
       "url": "https://github.com/kirodotdev/KiroCrew",
       "firstSeenDate": "2026-08-13",
@@ -2515,6 +2546,25 @@
       "skipReason": null
     },
     {
+      "fullName": "harlixay7/AgentXFlow",
+      "url": "https://github.com/harlixay7/AgentXFlow",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "多 Agent 工程协调桌面端",
+      "summary": "用隔离 worktree、写入 lease、diff 审计、验证门和 merge queue 协调并行 coding agents。",
+      "audience": "希望控制多 agent 同仓库冲突与合并顺序的开发团队。",
+      "aiNativeAngle": "任务、文件范围锁、验证证据和合并序列是 agent 协作产品面，并由桌面 UI/MCP daemon 暴露。",
+      "growthSignal": "2026-08-13 创建、2026-08-14 更新；Rust/Tauri/React、MIT，README 有 proof bundle 和 scope violation 设计。",
+      "runnability": "工程边界具体但仍是 v0.1.0-beta；未启动 daemon 或验证并发锁。",
+      "recommendedAction": "用两个样本 worktree 验证重叠 glob 拒绝和串行 merge。",
+      "skipReason": null
+    },
+    {
       "fullName": "browserbase/stagehand",
       "url": "https://github.com/browserbase/stagehand",
       "firstSeenDate": "2026-06-05",
@@ -3234,6 +3284,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "clownjee/knowledge-import-pipeline",
+      "url": "https://github.com/clownjee/knowledge-import-pipeline",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "教材知识图谱与 MCP",
+      "summary": "将 PDF 教材转成异步抽取、向量检索、知识依赖图和只读 MCP 查询的完整平台。",
+      "audience": "建设教育知识库和检索助手的教研或学习产品团队。",
+      "aiNativeAngle": "ingest、embedding、LLM 关系判断、图谱 UI 和 MCP 组成闭环。",
+      "growthSignal": "2026-08-12 创建、8 月 14 日更新、11 stars；Apache-2.0，README 含 demo、流程与完整技术栈。",
+      "runnability": "Vue/Spring/pgvector/Redis 依赖明确；未执行 PDF 导入或配置模型服务。",
+      "recommendedAction": "以公开授权材料验证抽取可复现性和来源边界。",
       "skipReason": null
     },
     {
@@ -4377,6 +4446,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Netroforge/bronom",
+      "url": "https://github.com/Netroforge/bronom",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "持久可见 Agent Browser",
+      "summary": "保留标签、登录态、站点权限和人类交互锁的 Electron 浏览器，经 MCP 暴露实时标签。",
+      "audience": "需要长期真实浏览器会话和人工接管的 agent 自动化用户。",
+      "aiNativeAngle": "profile、tab state、human lock 与 MCP endpoint 构成持久 agent execution surface。",
+      "growthSignal": "2026-08-12 创建、8 月 14 日更新；README 记录 persistent partition、状态文件和 tray 生命周期。",
+      "runnability": "产品行为描述具体；未安装、登录、连通 MCP 或测试 lock 恢复。",
+      "recommendedAction": "先比较会话持久性和人工锁，再碰敏感账号。",
+      "skipReason": null
+    },
+    {
       "fullName": "Sma1lboy/kobe",
       "url": "https://github.com/Sma1lboy/kobe",
       "firstSeenDate": "2026-07-08",
@@ -4963,6 +5051,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
       "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
       "recommendedAction": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。",
+      "skipReason": null
+    },
+    {
+      "fullName": "JeekLee/Gardevoir",
+      "url": "https://github.com/JeekLee/Gardevoir",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Action Guardrail Proxy",
+      "summary": "面向 LLM 应用的 OpenAI-compatible guardrail proxy，强调 agent action control。",
+      "audience": "需要在 agent 工具动作前放入策略控制与审计边界的团队。",
+      "aiNativeAngle": "将风险判断置于 action path，适合接入 MCP 与工作流副作用。",
+      "growthSignal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 action-control proxy 定位。",
+      "runnability": "README 细审请求超时；未验证规则、延迟、默认拒绝和兼容性。",
+      "recommendedAction": "先代理无副作用工具调用，验证 fail-closed 行为。",
       "skipReason": null
     },
     {
@@ -5761,6 +5868,25 @@
       "growthSignal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
       "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
       "recommendedAction": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。",
+      "skipReason": null
+    },
+    {
+      "fullName": "ethelindcyanobacterial210/EchoMind",
+      "url": "https://github.com/ethelindcyanobacterial210/EchoMind",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local-first RAG Desktop",
+      "summary": "Rust/Tauri 桌面知识库，聚焦本地文档、RAG 问答和自带 API key 的私有助手。",
+      "audience": "重视本地文件与个人知识管理的 RAG 用户。",
+      "aiNativeAngle": "文档 ingest、私有知识库和对话检索是主产品。",
+      "growthSignal": "2026-08-13 创建、8 月 14 日更新；MIT，topics 覆盖 local-first、RAG、Tauri 和 PKM，README 有 release 安装线索。",
+      "runnability": "发布下载和桌面形态可见；未安装，且离线叙述与 API key 的数据路径需复核。",
+      "recommendedAction": "先厘清索引与 provider 数据边界，再进入对比。",
       "skipReason": null
     },
     {
@@ -6809,6 +6935,25 @@
       "skipReason": null
     },
     {
+      "fullName": "pooriaarab/agentify",
+      "url": "https://github.com/pooriaarab/agentify",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-ready Product Auditor",
+      "summary": "审计目录或 URL 的 agent-ready 工件，并通过 CLI、library 和 MCP 生成缺失入口。",
+      "audience": "希望让已有产品更易被 agents 发现、理解和调用的团队。",
+      "aiNativeAngle": "将 agent-facing 接口和说明转为可执行 audit/generation 产品。",
+      "growthSignal": "2026-08-14 创建并持续更新；MIT，README 给出 npm、CLI、library、MCP 和 init/generate。",
+      "runnability": "命令和工件明确；未安装或验证 audit 准确率。",
+      "recommendedAction": "对公开 Pages 做只读 audit，比较建议与现有文档。",
+      "skipReason": null
+    },
+    {
       "fullName": "shixinnt/codex-image-context-runtime",
       "url": "https://github.com/shixinnt/codex-image-context-runtime",
       "firstSeenDate": "2026-08-13",
@@ -7186,6 +7331,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "TideSparrow/computer-use-dsh",
+      "url": "https://github.com/TideSparrow/computer-use-dsh",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Desktop computer-use plugin",
+      "summary": "跨 macOS/Linux/Windows 的截图、点击、输入和应用控制 DSH plugin。",
+      "audience": "需要跨桌面 OS 执行操作的 agent 用户。",
+      "aiNativeAngle": "把通用桌面动作作为 coding agent plugin 的主界面。",
+      "growthSignal": "2026-08-14 新建并获得 1 star。",
+      "runnability": "搜索摘要提供能力线索；未审计权限和 DSH 兼容性。",
+      "recommendedAction": "先审计最小权限和平台差异。",
       "skipReason": null
     },
     {
@@ -7588,6 +7752,25 @@
       "skipReason": null
     },
     {
+      "fullName": "0xIbra/agent-webbridge-cli",
+      "url": "https://github.com/0xIbra/agent-webbridge-cli",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Real Chrome CDP relay",
+      "summary": "MV3 extension 与本地 daemon 将真实 Chrome 会话桥接给脚本 agent。",
+      "audience": "需要复用登录 Chrome session 的 browser agents。",
+      "aiNativeAngle": "真实会话通过轻量 CDP relay 转为 agent 可控资源。",
+      "growthSignal": "2026-08-14 新建；搜索摘要强调 local relay 与 token 节省。",
+      "runnability": "未安装 extension、检查权限或验证网页动作。",
+      "recommendedAction": "先核对扩展权限与 session 隔离。",
+      "skipReason": null
+    },
+    {
       "fullName": "memoket/memoket-kite",
       "url": "https://github.com/memoket/memoket-kite",
       "firstSeenDate": "2026-08-13",
@@ -7908,6 +8091,44 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "RNCDev/webapp-agent-studio",
+      "url": "https://github.com/RNCDev/webapp-agent-studio",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Browser evidence workspace",
+      "summary": "在真实浏览器中驱动 web app 并保留 agent 可读证据和修复记录。",
+      "audience": "需要可复盘浏览器 agent 操作的产品/QA 团队。",
+      "aiNativeAngle": "把浏览器执行证据与修复历史作为 agent 工作空间。",
+      "growthSignal": "2026-08-14 创建并更新。",
+      "runnability": "需要更多 README/演示证据。",
+      "recommendedAction": "补审计后再决定是否升入 Top。",
+      "skipReason": null
+    },
+    {
+      "fullName": "werhner/ags",
+      "url": "https://github.com/werhner/ags",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Coding Agent Session CLI",
+      "summary": "非交互 CLI，用来列出、恢复和删除本地 AI coding-agent sessions。",
+      "audience": "需要管理多个本地 agent 会话的终端用户。",
+      "aiNativeAngle": "将 agent session 作为一等本地工作对象管理。",
+      "growthSignal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 CLI 定位。",
+      "runnability": "尚需审计 README、兼容范围与删除保护；未安装或访问本机 sessions。",
+      "recommendedAction": "先确认只读 discovery 与删除保护，再纳入对比。",
       "skipReason": null
     },
     {
@@ -8424,6 +8645,25 @@
       "skipReason": null
     },
     {
+      "fullName": "capt-marbles/village-os",
+      "url": "https://github.com/capt-marbles/village-os",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local-first agent workspace",
+      "summary": "自托管本地优先 agent workspace，结合 durable cloud coordination 与用户控制浏览器。",
+      "audience": "希望自托管协作 agent workspace 的用户。",
+      "aiNativeAngle": "agent 协作与可控浏览器是工作空间核心。",
+      "growthSignal": "2026-08-13 创建、8 月 13 日更新。",
+      "runnability": "部署和隐私模型尚未审计。",
+      "recommendedAction": "先验证部署路径、数据边界和恢复语义。",
+      "skipReason": null
+    },
+    {
       "fullName": "yeahdongcn/nautilus-studio",
       "url": "https://github.com/yeahdongcn/nautilus-studio",
       "firstSeenDate": "2026-08-13",
@@ -8820,6 +9060,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "topcss/mindmap",
+      "url": "https://github.com/topcss/mindmap",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent-readable mindmap format",
+      "summary": "纯文本 mindmap 格式，带单页 Web app、VS Code extension 与 LLM skill。",
+      "audience": "希望人类与 LLM 共同维护结构化脑图的用户。",
+      "aiNativeAngle": "同一纯文本工件同时服务可视化编辑与 LLM 处理。",
+      "growthSignal": "2026-08-14 创建并更新。",
+      "runnability": "需要验证格式兼容性和真实 adoption。",
+      "recommendedAction": "关注作为 agent-readable artifact 的采用情况。",
       "skipReason": null
     },
     {
@@ -11462,6 +11721,120 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "bradeGithub/DSH-Plugins-Marketplace",
+      "url": "https://github.com/bradeGithub/DSH-Plugins-Marketplace",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Plugin directory/marketplace, not one independently runnable AI-native product loop."
+    },
+    {
+      "fullName": "ezmakeai/bumi-digital-mcp",
+      "url": "https://github.com/ezmakeai/bumi-digital-mcp",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Single-purpose media API MCP wrapper without enough workflow or user-experience evidence."
+    },
+    {
+      "fullName": "guanyanning789-lgtm/AI-Lab-Agent-OS",
+      "url": "https://github.com/guanyanning789-lgtm/AI-Lab-Agent-OS",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Description and documentation signals are too weak to judge product shape or runnability."
+    },
+    {
+      "fullName": "GustQueiroz/ouroboros-autonomous-engineering",
+      "url": "https://github.com/GustQueiroz/ouroboros-autonomous-engineering",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Autonomous engineering experiment/benchmark rather than a clearly deliverable product."
+    },
+    {
+      "fullName": "MicroHEROX/dsh-exa-mcp",
+      "url": "https://github.com/MicroHEROX/dsh-exa-mcp",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Thin bridge to a remote MCP endpoint with limited independent product surface."
+    },
+    {
+      "fullName": "roanpy/agent-media-pipeline",
+      "url": "https://github.com/roanpy/agent-media-pipeline",
+      "firstSeenDate": "2026-08-14",
+      "lastSeenDate": "2026-08-14",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Media-download automation needs source-authorization and platform-terms review before promotion."
     },
     {
       "fullName": "0xnyn/airship",
@@ -17849,6 +18222,40 @@
         }
       }
     ],
+    "nickatnight96/iphone-mirror-mcp": [
+      {
+        "id": "nickatnight96-iphone-mirror-mcp:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "nickatnight96/iphone-mirror-mcp",
+        "url": "https://github.com/nickatnight96/iphone-mirror-mcp",
+        "category": "iPhone MCP 自动化",
+        "score": 88,
+        "summary": "通过 macOS iPhone 镜像和 MCP 控制真实 iPhone，并自动化 Xcode、simulator 和设备测试。",
+        "audience": "需要真实 iOS 设备验证的 coding-agent 和移动开发者。",
+        "aiNativeAngle": "63 个 MCP 工具将设备动作、可见屏幕和测试反馈变成 agent execution layer。",
+        "growthSignal": "2026-08-12 创建、2026-08-14 更新；MIT、Swift 6、CI、install.sh 和清晰 action chain 可见。",
+        "runnability": "安装脚本、系统前提和工具链明确；未验证配对设备、权限或真实应用运行。",
+        "recommendedAction": "用无敏感 sample app 验证 read-screen/tap/assert 闭环。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "nickatnight96/iphone-mirror-mcp",
+          "url": "https://github.com/nickatnight96/iphone-mirror-mcp",
+          "category": "iPhone MCP 自动化",
+          "score": 88,
+          "summary": "通过 macOS iPhone 镜像和 MCP 控制真实 iPhone，并自动化 Xcode、simulator 和设备测试。",
+          "audience": "需要真实 iOS 设备验证的 coding-agent 和移动开发者。",
+          "ai_native_angle": "63 个 MCP 工具将设备动作、可见屏幕和测试反馈变成 agent execution layer。",
+          "growth_signal": "2026-08-12 创建、2026-08-14 更新；MIT、Swift 6、CI、install.sh 和清晰 action chain 可见。",
+          "runnability": "安装脚本、系统前提和工具链明确；未验证配对设备、权限或真实应用运行。",
+          "recommended_action": "用无敏感 sample app 验证 read-screen/tap/assert 闭环。"
+        }
+      }
+    ],
     "kirodotdev/KiroCrew": [
       {
         "id": "kirodotdev-KiroCrew:2026-08-13T11:17:03+08:00:top:0",
@@ -20129,6 +20536,40 @@
         }
       }
     ],
+    "harlixay7/AgentXFlow": [
+      {
+        "id": "harlixay7-AgentXFlow:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "harlixay7/AgentXFlow",
+        "url": "https://github.com/harlixay7/AgentXFlow",
+        "category": "多 Agent 工程协调桌面端",
+        "score": 86,
+        "summary": "用隔离 worktree、写入 lease、diff 审计、验证门和 merge queue 协调并行 coding agents。",
+        "audience": "希望控制多 agent 同仓库冲突与合并顺序的开发团队。",
+        "aiNativeAngle": "任务、文件范围锁、验证证据和合并序列是 agent 协作产品面，并由桌面 UI/MCP daemon 暴露。",
+        "growthSignal": "2026-08-13 创建、2026-08-14 更新；Rust/Tauri/React、MIT，README 有 proof bundle 和 scope violation 设计。",
+        "runnability": "工程边界具体但仍是 v0.1.0-beta；未启动 daemon 或验证并发锁。",
+        "recommendedAction": "用两个样本 worktree 验证重叠 glob 拒绝和串行 merge。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "harlixay7/AgentXFlow",
+          "url": "https://github.com/harlixay7/AgentXFlow",
+          "category": "多 Agent 工程协调桌面端",
+          "score": 86,
+          "summary": "用隔离 worktree、写入 lease、diff 审计、验证门和 merge queue 协调并行 coding agents。",
+          "audience": "希望控制多 agent 同仓库冲突与合并顺序的开发团队。",
+          "ai_native_angle": "任务、文件范围锁、验证证据和合并序列是 agent 协作产品面，并由桌面 UI/MCP daemon 暴露。",
+          "growth_signal": "2026-08-13 创建、2026-08-14 更新；Rust/Tauri/React、MIT，README 有 proof bundle 和 scope violation 设计。",
+          "runnability": "工程边界具体但仍是 v0.1.0-beta；未启动 daemon 或验证并发锁。",
+          "recommended_action": "用两个样本 worktree 验证重叠 glob 拒绝和串行 merge。"
+        }
+      }
+    ],
     "browserbase/stagehand": [
       {
         "id": "browserbase-stagehand:2026-08-09T12:40:41+08:00:watchlist:0",
@@ -21577,6 +22018,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "clownjee/knowledge-import-pipeline": [
+      {
+        "id": "clownjee-knowledge-import-pipeline:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "clownjee/knowledge-import-pipeline",
+        "url": "https://github.com/clownjee/knowledge-import-pipeline",
+        "category": "教材知识图谱与 MCP",
+        "score": 84,
+        "summary": "将 PDF 教材转成异步抽取、向量检索、知识依赖图和只读 MCP 查询的完整平台。",
+        "audience": "建设教育知识库和检索助手的教研或学习产品团队。",
+        "aiNativeAngle": "ingest、embedding、LLM 关系判断、图谱 UI 和 MCP 组成闭环。",
+        "growthSignal": "2026-08-12 创建、8 月 14 日更新、11 stars；Apache-2.0，README 含 demo、流程与完整技术栈。",
+        "runnability": "Vue/Spring/pgvector/Redis 依赖明确；未执行 PDF 导入或配置模型服务。",
+        "recommendedAction": "以公开授权材料验证抽取可复现性和来源边界。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "clownjee/knowledge-import-pipeline",
+          "url": "https://github.com/clownjee/knowledge-import-pipeline",
+          "category": "教材知识图谱与 MCP",
+          "score": 84,
+          "summary": "将 PDF 教材转成异步抽取、向量检索、知识依赖图和只读 MCP 查询的完整平台。",
+          "audience": "建设教育知识库和检索助手的教研或学习产品团队。",
+          "ai_native_angle": "ingest、embedding、LLM 关系判断、图谱 UI 和 MCP 组成闭环。",
+          "growth_signal": "2026-08-12 创建、8 月 14 日更新、11 stars；Apache-2.0，README 含 demo、流程与完整技术栈。",
+          "runnability": "Vue/Spring/pgvector/Redis 依赖明确；未执行 PDF 导入或配置模型服务。",
+          "recommended_action": "以公开授权材料验证抽取可复现性和来源边界。"
         }
       }
     ],
@@ -24078,6 +24553,40 @@
         }
       }
     ],
+    "Netroforge/bronom": [
+      {
+        "id": "Netroforge-bronom:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "Netroforge/bronom",
+        "url": "https://github.com/Netroforge/bronom",
+        "category": "持久可见 Agent Browser",
+        "score": 82,
+        "summary": "保留标签、登录态、站点权限和人类交互锁的 Electron 浏览器，经 MCP 暴露实时标签。",
+        "audience": "需要长期真实浏览器会话和人工接管的 agent 自动化用户。",
+        "aiNativeAngle": "profile、tab state、human lock 与 MCP endpoint 构成持久 agent execution surface。",
+        "growthSignal": "2026-08-12 创建、8 月 14 日更新；README 记录 persistent partition、状态文件和 tray 生命周期。",
+        "runnability": "产品行为描述具体；未安装、登录、连通 MCP 或测试 lock 恢复。",
+        "recommendedAction": "先比较会话持久性和人工锁，再碰敏感账号。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Netroforge/bronom",
+          "url": "https://github.com/Netroforge/bronom",
+          "category": "持久可见 Agent Browser",
+          "score": 82,
+          "summary": "保留标签、登录态、站点权限和人类交互锁的 Electron 浏览器，经 MCP 暴露实时标签。",
+          "audience": "需要长期真实浏览器会话和人工接管的 agent 自动化用户。",
+          "ai_native_angle": "profile、tab state、human lock 与 MCP endpoint 构成持久 agent execution surface。",
+          "growth_signal": "2026-08-12 创建、8 月 14 日更新；README 记录 persistent partition、状态文件和 tray 生命周期。",
+          "runnability": "产品行为描述具体；未安装、登录、连通 MCP 或测试 lock 恢复。",
+          "recommended_action": "先比较会话持久性和人工锁，再碰敏感账号。"
+        }
+      }
+    ],
     "Sma1lboy/kobe": [
       {
         "id": "Sma1lboy-kobe:2026-08-13T11:17:03+08:00:top:0",
@@ -25318,6 +25827,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
           "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
           "recommended_action": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。"
+        }
+      }
+    ],
+    "JeekLee/Gardevoir": [
+      {
+        "id": "JeekLee-Gardevoir:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "JeekLee/Gardevoir",
+        "url": "https://github.com/JeekLee/Gardevoir",
+        "category": "Agent Action Guardrail Proxy",
+        "score": 81,
+        "summary": "面向 LLM 应用的 OpenAI-compatible guardrail proxy，强调 agent action control。",
+        "audience": "需要在 agent 工具动作前放入策略控制与审计边界的团队。",
+        "aiNativeAngle": "将风险判断置于 action path，适合接入 MCP 与工作流副作用。",
+        "growthSignal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 action-control proxy 定位。",
+        "runnability": "README 细审请求超时；未验证规则、延迟、默认拒绝和兼容性。",
+        "recommendedAction": "先代理无副作用工具调用，验证 fail-closed 行为。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "JeekLee/Gardevoir",
+          "url": "https://github.com/JeekLee/Gardevoir",
+          "category": "Agent Action Guardrail Proxy",
+          "score": 81,
+          "summary": "面向 LLM 应用的 OpenAI-compatible guardrail proxy，强调 agent action control。",
+          "audience": "需要在 agent 工具动作前放入策略控制与审计边界的团队。",
+          "ai_native_angle": "将风险判断置于 action path，适合接入 MCP 与工作流副作用。",
+          "growth_signal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 action-control proxy 定位。",
+          "runnability": "README 细审请求超时；未验证规则、延迟、默认拒绝和兼容性。",
+          "recommended_action": "先代理无副作用工具调用，验证 fail-closed 行为。"
         }
       }
     ],
@@ -27021,6 +27564,40 @@
           "growth_signal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
           "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
           "recommended_action": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。"
+        }
+      }
+    ],
+    "ethelindcyanobacterial210/EchoMind": [
+      {
+        "id": "ethelindcyanobacterial210-EchoMind:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "ethelindcyanobacterial210/EchoMind",
+        "url": "https://github.com/ethelindcyanobacterial210/EchoMind",
+        "category": "Local-first RAG Desktop",
+        "score": 79,
+        "summary": "Rust/Tauri 桌面知识库，聚焦本地文档、RAG 问答和自带 API key 的私有助手。",
+        "audience": "重视本地文件与个人知识管理的 RAG 用户。",
+        "aiNativeAngle": "文档 ingest、私有知识库和对话检索是主产品。",
+        "growthSignal": "2026-08-13 创建、8 月 14 日更新；MIT，topics 覆盖 local-first、RAG、Tauri 和 PKM，README 有 release 安装线索。",
+        "runnability": "发布下载和桌面形态可见；未安装，且离线叙述与 API key 的数据路径需复核。",
+        "recommendedAction": "先厘清索引与 provider 数据边界，再进入对比。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "ethelindcyanobacterial210/EchoMind",
+          "url": "https://github.com/ethelindcyanobacterial210/EchoMind",
+          "category": "Local-first RAG Desktop",
+          "score": 79,
+          "summary": "Rust/Tauri 桌面知识库，聚焦本地文档、RAG 问答和自带 API key 的私有助手。",
+          "audience": "重视本地文件与个人知识管理的 RAG 用户。",
+          "ai_native_angle": "文档 ingest、私有知识库和对话检索是主产品。",
+          "growth_signal": "2026-08-13 创建、8 月 14 日更新；MIT，topics 覆盖 local-first、RAG、Tauri 和 PKM，README 有 release 安装线索。",
+          "runnability": "发布下载和桌面形态可见；未安装，且离线叙述与 API key 的数据路径需复核。",
+          "recommended_action": "先厘清索引与 provider 数据边界，再进入对比。"
         }
       }
     ],
@@ -29075,6 +29652,40 @@
         }
       }
     ],
+    "pooriaarab/agentify": [
+      {
+        "id": "pooriaarab-agentify:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "pooriaarab/agentify",
+        "url": "https://github.com/pooriaarab/agentify",
+        "category": "Agent-ready Product Auditor",
+        "score": 77,
+        "summary": "审计目录或 URL 的 agent-ready 工件，并通过 CLI、library 和 MCP 生成缺失入口。",
+        "audience": "希望让已有产品更易被 agents 发现、理解和调用的团队。",
+        "aiNativeAngle": "将 agent-facing 接口和说明转为可执行 audit/generation 产品。",
+        "growthSignal": "2026-08-14 创建并持续更新；MIT，README 给出 npm、CLI、library、MCP 和 init/generate。",
+        "runnability": "命令和工件明确；未安装或验证 audit 准确率。",
+        "recommendedAction": "对公开 Pages 做只读 audit，比较建议与现有文档。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "pooriaarab/agentify",
+          "url": "https://github.com/pooriaarab/agentify",
+          "category": "Agent-ready Product Auditor",
+          "score": 77,
+          "summary": "审计目录或 URL 的 agent-ready 工件，并通过 CLI、library 和 MCP 生成缺失入口。",
+          "audience": "希望让已有产品更易被 agents 发现、理解和调用的团队。",
+          "ai_native_angle": "将 agent-facing 接口和说明转为可执行 audit/generation 产品。",
+          "growth_signal": "2026-08-14 创建并持续更新；MIT，README 给出 npm、CLI、library、MCP 和 init/generate。",
+          "runnability": "命令和工件明确；未安装或验证 audit 准确率。",
+          "recommended_action": "对公开 Pages 做只读 audit，比较建议与现有文档。"
+        }
+      }
+    ],
     "shixinnt/codex-image-context-runtime": [
       {
         "id": "shixinnt-codex-image-context-runtime:2026-08-13T11:17:03+08:00:top:0",
@@ -29849,6 +30460,40 @@
         }
       }
     ],
+    "TideSparrow/computer-use-dsh": [
+      {
+        "id": "TideSparrow-computer-use-dsh:2026-08-14T10:46:00+08:00:watchlist:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "TideSparrow/computer-use-dsh",
+        "url": "https://github.com/TideSparrow/computer-use-dsh",
+        "category": "Desktop computer-use plugin",
+        "score": 76,
+        "summary": "跨 macOS/Linux/Windows 的截图、点击、输入和应用控制 DSH plugin。",
+        "audience": "需要跨桌面 OS 执行操作的 agent 用户。",
+        "aiNativeAngle": "把通用桌面动作作为 coding agent plugin 的主界面。",
+        "growthSignal": "2026-08-14 新建并获得 1 star。",
+        "runnability": "搜索摘要提供能力线索；未审计权限和 DSH 兼容性。",
+        "recommendedAction": "先审计最小权限和平台差异。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "TideSparrow/computer-use-dsh",
+          "url": "https://github.com/TideSparrow/computer-use-dsh",
+          "category": "Desktop computer-use plugin",
+          "score": 76,
+          "summary": "跨 macOS/Linux/Windows 的截图、点击、输入和应用控制 DSH plugin。",
+          "audience": "需要跨桌面 OS 执行操作的 agent 用户。",
+          "ai_native_angle": "把通用桌面动作作为 coding agent plugin 的主界面。",
+          "growth_signal": "2026-08-14 新建并获得 1 star。",
+          "runnability": "搜索摘要提供能力线索；未审计权限和 DSH 兼容性。",
+          "recommended_action": "先审计最小权限和平台差异。"
+        }
+      }
+    ],
     "headroomlabs-ai/headroom": [
       {
         "id": "headroomlabs-ai-headroom:2026-08-12T12:07:07+08:00:watchlist:0",
@@ -30586,6 +31231,40 @@
           "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
           "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
           "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+        }
+      }
+    ],
+    "0xIbra/agent-webbridge-cli": [
+      {
+        "id": "0xIbra-agent-webbridge-cli:2026-08-14T10:46:00+08:00:watchlist:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "0xIbra/agent-webbridge-cli",
+        "url": "https://github.com/0xIbra/agent-webbridge-cli",
+        "category": "Real Chrome CDP relay",
+        "score": 75,
+        "summary": "MV3 extension 与本地 daemon 将真实 Chrome 会话桥接给脚本 agent。",
+        "audience": "需要复用登录 Chrome session 的 browser agents。",
+        "aiNativeAngle": "真实会话通过轻量 CDP relay 转为 agent 可控资源。",
+        "growthSignal": "2026-08-14 新建；搜索摘要强调 local relay 与 token 节省。",
+        "runnability": "未安装 extension、检查权限或验证网页动作。",
+        "recommendedAction": "先核对扩展权限与 session 隔离。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "0xIbra/agent-webbridge-cli",
+          "url": "https://github.com/0xIbra/agent-webbridge-cli",
+          "category": "Real Chrome CDP relay",
+          "score": 75,
+          "summary": "MV3 extension 与本地 daemon 将真实 Chrome 会话桥接给脚本 agent。",
+          "audience": "需要复用登录 Chrome session 的 browser agents。",
+          "ai_native_angle": "真实会话通过轻量 CDP relay 转为 agent 可控资源。",
+          "growth_signal": "2026-08-14 新建；搜索摘要强调 local relay 与 token 节省。",
+          "runnability": "未安装 extension、检查权限或验证网页动作。",
+          "recommended_action": "先核对扩展权限与 session 隔离。"
         }
       }
     ],
@@ -31381,6 +32060,74 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "RNCDev/webapp-agent-studio": [
+      {
+        "id": "RNCDev-webapp-agent-studio:2026-08-14T10:46:00+08:00:watchlist:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "RNCDev/webapp-agent-studio",
+        "url": "https://github.com/RNCDev/webapp-agent-studio",
+        "category": "Browser evidence workspace",
+        "score": 74,
+        "summary": "在真实浏览器中驱动 web app 并保留 agent 可读证据和修复记录。",
+        "audience": "需要可复盘浏览器 agent 操作的产品/QA 团队。",
+        "aiNativeAngle": "把浏览器执行证据与修复历史作为 agent 工作空间。",
+        "growthSignal": "2026-08-14 创建并更新。",
+        "runnability": "需要更多 README/演示证据。",
+        "recommendedAction": "补审计后再决定是否升入 Top。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "RNCDev/webapp-agent-studio",
+          "url": "https://github.com/RNCDev/webapp-agent-studio",
+          "category": "Browser evidence workspace",
+          "score": 74,
+          "summary": "在真实浏览器中驱动 web app 并保留 agent 可读证据和修复记录。",
+          "audience": "需要可复盘浏览器 agent 操作的产品/QA 团队。",
+          "ai_native_angle": "把浏览器执行证据与修复历史作为 agent 工作空间。",
+          "growth_signal": "2026-08-14 创建并更新。",
+          "runnability": "需要更多 README/演示证据。",
+          "recommended_action": "补审计后再决定是否升入 Top。"
+        }
+      }
+    ],
+    "werhner/ags": [
+      {
+        "id": "werhner-ags:2026-08-14T10:46:00+08:00:top:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "werhner/ags",
+        "url": "https://github.com/werhner/ags",
+        "category": "Coding Agent Session CLI",
+        "score": 74,
+        "summary": "非交互 CLI，用来列出、恢复和删除本地 AI coding-agent sessions。",
+        "audience": "需要管理多个本地 agent 会话的终端用户。",
+        "aiNativeAngle": "将 agent session 作为一等本地工作对象管理。",
+        "growthSignal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 CLI 定位。",
+        "runnability": "尚需审计 README、兼容范围与删除保护；未安装或访问本机 sessions。",
+        "recommendedAction": "先确认只读 discovery 与删除保护，再纳入对比。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "werhner/ags",
+          "url": "https://github.com/werhner/ags",
+          "category": "Coding Agent Session CLI",
+          "score": 74,
+          "summary": "非交互 CLI，用来列出、恢复和删除本地 AI coding-agent sessions。",
+          "audience": "需要管理多个本地 agent 会话的终端用户。",
+          "ai_native_angle": "将 agent session 作为一等本地工作对象管理。",
+          "growth_signal": "2026-08-12 创建、8 月 14 日更新；搜索元数据显示 CLI 定位。",
+          "runnability": "尚需审计 README、兼容范围与删除保护；未安装或访问本机 sessions。",
+          "recommended_action": "先确认只读 discovery 与删除保护，再纳入对比。"
         }
       }
     ],
@@ -32458,6 +33205,40 @@
         }
       }
     ],
+    "capt-marbles/village-os": [
+      {
+        "id": "capt-marbles-village-os:2026-08-14T10:46:00+08:00:watchlist:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "capt-marbles/village-os",
+        "url": "https://github.com/capt-marbles/village-os",
+        "category": "Local-first agent workspace",
+        "score": 73,
+        "summary": "自托管本地优先 agent workspace，结合 durable cloud coordination 与用户控制浏览器。",
+        "audience": "希望自托管协作 agent workspace 的用户。",
+        "aiNativeAngle": "agent 协作与可控浏览器是工作空间核心。",
+        "growthSignal": "2026-08-13 创建、8 月 13 日更新。",
+        "runnability": "部署和隐私模型尚未审计。",
+        "recommendedAction": "先验证部署路径、数据边界和恢复语义。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "capt-marbles/village-os",
+          "url": "https://github.com/capt-marbles/village-os",
+          "category": "Local-first agent workspace",
+          "score": 73,
+          "summary": "自托管本地优先 agent workspace，结合 durable cloud coordination 与用户控制浏览器。",
+          "audience": "希望自托管协作 agent workspace 的用户。",
+          "ai_native_angle": "agent 协作与可控浏览器是工作空间核心。",
+          "growth_signal": "2026-08-13 创建、8 月 13 日更新。",
+          "runnability": "部署和隐私模型尚未审计。",
+          "recommended_action": "先验证部署路径、数据边界和恢复语义。"
+        }
+      }
+    ],
     "yeahdongcn/nautilus-studio": [
       {
         "id": "yeahdongcn-nautilus-studio:2026-08-13T11:17:03+08:00:watchlist:0",
@@ -33284,6 +34065,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "topcss/mindmap": [
+      {
+        "id": "topcss-mindmap:2026-08-14T10:46:00+08:00:watchlist:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "topcss/mindmap",
+        "url": "https://github.com/topcss/mindmap",
+        "category": "Agent-readable mindmap format",
+        "score": 72,
+        "summary": "纯文本 mindmap 格式，带单页 Web app、VS Code extension 与 LLM skill。",
+        "audience": "希望人类与 LLM 共同维护结构化脑图的用户。",
+        "aiNativeAngle": "同一纯文本工件同时服务可视化编辑与 LLM 处理。",
+        "growthSignal": "2026-08-14 创建并更新。",
+        "runnability": "需要验证格式兼容性和真实 adoption。",
+        "recommendedAction": "关注作为 agent-readable artifact 的采用情况。",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "topcss/mindmap",
+          "url": "https://github.com/topcss/mindmap",
+          "category": "Agent-readable mindmap format",
+          "score": 72,
+          "summary": "纯文本 mindmap 格式，带单页 Web app、VS Code extension 与 LLM skill。",
+          "audience": "希望人类与 LLM 共同维护结构化脑图的用户。",
+          "ai_native_angle": "同一纯文本工件同时服务可视化编辑与 LLM 处理。",
+          "growth_signal": "2026-08-14 创建并更新。",
+          "runnability": "需要验证格式兼容性和真实 adoption。",
+          "recommended_action": "关注作为 agent-readable artifact 的采用情况。"
         }
       }
     ],
@@ -38581,6 +39396,162 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "bradeGithub/DSH-Plugins-Marketplace": [
+      {
+        "id": "bradeGithub-DSH-Plugins-Marketplace:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "bradeGithub/DSH-Plugins-Marketplace",
+        "url": "https://github.com/bradeGithub/DSH-Plugins-Marketplace",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Plugin directory/marketplace, not one independently runnable AI-native product loop.",
+        "rawJson": {
+          "full_name": "bradeGithub/DSH-Plugins-Marketplace",
+          "url": "https://github.com/bradeGithub/DSH-Plugins-Marketplace",
+          "skip_reason": "Plugin directory/marketplace, not one independently runnable AI-native product loop."
+        }
+      }
+    ],
+    "ezmakeai/bumi-digital-mcp": [
+      {
+        "id": "ezmakeai-bumi-digital-mcp:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "ezmakeai/bumi-digital-mcp",
+        "url": "https://github.com/ezmakeai/bumi-digital-mcp",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Single-purpose media API MCP wrapper without enough workflow or user-experience evidence.",
+        "rawJson": {
+          "full_name": "ezmakeai/bumi-digital-mcp",
+          "url": "https://github.com/ezmakeai/bumi-digital-mcp",
+          "skip_reason": "Single-purpose media API MCP wrapper without enough workflow or user-experience evidence."
+        }
+      }
+    ],
+    "guanyanning789-lgtm/AI-Lab-Agent-OS": [
+      {
+        "id": "guanyanning789-lgtm-AI-Lab-Agent-OS:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "guanyanning789-lgtm/AI-Lab-Agent-OS",
+        "url": "https://github.com/guanyanning789-lgtm/AI-Lab-Agent-OS",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Description and documentation signals are too weak to judge product shape or runnability.",
+        "rawJson": {
+          "full_name": "guanyanning789-lgtm/AI-Lab-Agent-OS",
+          "url": "https://github.com/guanyanning789-lgtm/AI-Lab-Agent-OS",
+          "skip_reason": "Description and documentation signals are too weak to judge product shape or runnability."
+        }
+      }
+    ],
+    "GustQueiroz/ouroboros-autonomous-engineering": [
+      {
+        "id": "GustQueiroz-ouroboros-autonomous-engineering:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "GustQueiroz/ouroboros-autonomous-engineering",
+        "url": "https://github.com/GustQueiroz/ouroboros-autonomous-engineering",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Autonomous engineering experiment/benchmark rather than a clearly deliverable product.",
+        "rawJson": {
+          "full_name": "GustQueiroz/ouroboros-autonomous-engineering",
+          "url": "https://github.com/GustQueiroz/ouroboros-autonomous-engineering",
+          "skip_reason": "Autonomous engineering experiment/benchmark rather than a clearly deliverable product."
+        }
+      }
+    ],
+    "MicroHEROX/dsh-exa-mcp": [
+      {
+        "id": "MicroHEROX-dsh-exa-mcp:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "MicroHEROX/dsh-exa-mcp",
+        "url": "https://github.com/MicroHEROX/dsh-exa-mcp",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Thin bridge to a remote MCP endpoint with limited independent product surface.",
+        "rawJson": {
+          "full_name": "MicroHEROX/dsh-exa-mcp",
+          "url": "https://github.com/MicroHEROX/dsh-exa-mcp",
+          "skip_reason": "Thin bridge to a remote MCP endpoint with limited independent product surface."
+        }
+      }
+    ],
+    "roanpy/agent-media-pipeline": [
+      {
+        "id": "roanpy-agent-media-pipeline:2026-08-14T10:46:00+08:00:skip:0",
+        "runId": "run:2026-08-14:2026-08-14T10:46:00+08:00",
+        "runDate": "2026-08-14",
+        "generatedAt": "2026-08-14T10:46:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "roanpy/agent-media-pipeline",
+        "url": "https://github.com/roanpy/agent-media-pipeline",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Media-download automation needs source-authorization and platform-terms review before promotion.",
+        "rawJson": {
+          "full_name": "roanpy/agent-media-pipeline",
+          "url": "https://github.com/roanpy/agent-media-pipeline",
+          "skip_reason": "Media-download automation needs source-authorization and platform-terms review before promotion."
         }
       }
     ],
