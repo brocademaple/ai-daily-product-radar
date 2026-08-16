@@ -1,0 +1,253 @@
+{
+  "run_date": "2026-08-16",
+  "generated_at": "2026-08-16T10:20:00+08:00",
+  "data_window": "2026-08-13 00:00 to 2026-08-16 10:20 Asia/Shanghai. GitHub Search API raw responses were saved under /tmp/radar_2026_08_16_*.json and selected repository README/content audits under /tmp/radar_2026_08_16_repo_audit/.",
+  "source_summary": "git fetch origin succeeded on main. Discovery used GitHub Search API queries for repositories created since 2026-08-13 matching AI agent, LLM app, RAG, MCP, AI workflow, browser agent, code agent, voice agent, assistant, automation and copilot terms. Selected repository metadata, README files and root contents were fetched through the GitHub API until the unauthenticated API returned rate-limit 403 responses. No third-party repository was cloned, installed, built, run, browser-tested, credential-tested, hardware-tested, donation-tested, provider-tested or security-scanned.",
+  "trend_observations": "Fresh AI-native product activity is again centered on agent execution infrastructure: repo-local workflow memory and MCP exposure, model/team selection for coding CLIs, web access infrastructure for agents, and governed local runtimes. A second cluster is emerging around self-hosted personal or household assistants with explicit memory boundaries, agent research evidence databases, and browser/image/workflow workbenches. The strongest candidates expose concrete CLI/API/UI paths plus state, audit, policy or human-checkpoint surfaces; thin model frameworks, scaffold-only memory projects and unsafe money-moving tools remain lower confidence.",
+  "assumptions": "Stars, forks and timestamps are point-in-time GitHub API metadata, not exact growth deltas. Scores emphasize product surface, user scenario clarity, runnability evidence, README/root-content completeness, safety posture and recent creation/update signals. README claims are directional and were not independently runtime-verified. GitHub API rate limiting prevented complete README audits for several lower-ranked candidates; those are treated as watchlist or skipped signals only. No install, Docker, npm, Bun, Cargo, Python, Java, Android, browser extension, model-provider, OAuth, payment, security or production deployment audit was performed.",
+  "markdown_report": "data/runs/2026-08-16.md",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Sidiora-Labs/codify",
+      "url": "https://github.com/Sidiora-Labs/codify",
+      "category": "Repo-local Agent Workflow Engine",
+      "score": 90,
+      "summary": "Single-binary C11 workflow engine that keeps project graph, specs, tasks, memories and change impact in a local SQLite database and exposes them to humans and MCP agents.",
+      "audience": "Developers and teams that want coding agents to work from tracked specs, code context and local project memory instead of repeatedly rediscovering a repo.",
+      "ai_native_angle": "Turns repo understanding, spec execution, memory recall, route/symbol impact and commit attribution into MCP tools and JSON CLI surfaces for coding agents.",
+      "growth_signal": "Created 2026-08-13, updated 2026-08-16, 13 stars and 2 forks; README documents installation, CLI commands, MCP server, spec workflow, watcher and integration tests.",
+      "runnability": "Makefile, source, tests, docs, SECURITY and integration-test paths are visible; no local build or MCP install was performed.",
+      "recommended_action": "Build the binary in a disposable repo and compare cg context/impact output against existing code-search workflows before connecting it to an agent."
+    },
+    {
+      "rank": 2,
+      "full_name": "HamadYMarafi/squadcli",
+      "url": "https://github.com/HamadYMarafi/squadcli",
+      "category": "Coding-agent Model Team CLI",
+      "score": 86,
+      "summary": "Terminal tool that drafts a benchmark-informed team of models and casts them into Claude Code, Codex or opencode as category-specific native agents.",
+      "audience": "Developers who already use coding CLIs and want per-task model routing, a captain protocol and cross-vendor verification without building their own harness.",
+      "ai_native_angle": "Models become delegated agent roles with append-only ledger, host-native formats, second-opinion fallback and optional Codex verifier rather than a single chat endpoint.",
+      "growth_signal": "Created 2026-08-16 and updated the same day; README has quickstart, demo terminal output, host prerequisites, OpenRouter notes and benchmark rationale.",
+      "runnability": "package.json, tests and TypeScript source are present; CLI host dependencies and API keys were not configured or run.",
+      "recommended_action": "Try the dry path with synthetic project tasks, then inspect generated agent files and ledger semantics before using live subscriptions."
+    },
+    {
+      "rank": 3,
+      "full_name": "changluya/openreach",
+      "url": "https://github.com/changluya/openreach",
+      "category": "Agent Web Access Infrastructure",
+      "score": 85,
+      "summary": "Java/Spring Boot service that gives AI agents unified search, image search and web read APIs with provider routing, Docker deployment and a Python skill/CLI.",
+      "audience": "Agent builders who need a self-hosted web-access layer with China/global provider fallback and a narrower public API surface.",
+      "ai_native_angle": "Separates agent web access into Search/Image Search/Read endpoints, provider chains, smoke tests, public attack-surface guards and a skill wrapper.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16, 1 star; README documents Docker quick start, API verification, allowlists, provider matrix and no-key default chain.",
+      "runnability": "Docker, Compose, Maven and smoke-test commands are documented; no local Java build or endpoint test was run.",
+      "recommended_action": "Run Docker locally with non-sensitive queries and verify provider fallback, SSRF/allowlist behavior and response shape under failure."
+    },
+    {
+      "rank": 4,
+      "full_name": "Cat-tj/hermes-aios-control-plane",
+      "url": "https://github.com/Cat-tj/hermes-aios-control-plane",
+      "category": "Agent Control Plane Web UI",
+      "score": 84,
+      "summary": "Python/vanilla-JS Web UI for Hermes Agent that bridges CLI sessions, provider setup, chat, Kanban/workspace views, file browsing, noVNC and Docker deployment.",
+      "audience": "Self-hosted agent users who want browser control over terminal-native agent state, sessions, providers and workspace operations.",
+      "ai_native_angle": "Makes a terminal agent into an inspectable control plane with CLI session import, state DB bridge, gateway status, approvals/clarify via SSE and deployment hardening notes.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16; README is unusually complete with quick start, Docker modes, security headers, troubleshooting, CI and known source-boundary limits.",
+      "runnability": "Bootstrap/start scripts, Dockerfiles and tests are visible; no Hermes backend, provider credentials or browser smoke test was run.",
+      "recommended_action": "Evaluate only with a sandbox Hermes profile first, focusing on session import, workspace boundaries and provider-secret isolation."
+    },
+    {
+      "rank": 5,
+      "full_name": "HERRY423/BioNexus",
+      "url": "https://github.com/HERRY423/BioNexus",
+      "category": "Agentic Biology MCP Toolkit",
+      "score": 83,
+      "summary": "Computational-biology agent toolkit with MCP database tools, Agent Plugins packaging, evidence cards, scientific abstention and research-use-only compliance framing.",
+      "audience": "Bioinformatics researchers and scientific-agent builders who need structured database access and evidence grading inside coding-agent environments.",
+      "ai_native_angle": "Wraps domain tools as MCP/agent plugins with capability contracts, deterministic EvidenceCard grading and explicit abstention/compliance language.",
+      "growth_signal": "Created 2026-08-14, updated 2026-08-16, 2 stars; README claims 217 tests, quick starts for Codex/Claude/Cursor, local MCP tools and hosted biological endpoints.",
+      "runnability": "Python packaging, setup scripts, plugin manifests and tests are present; no biological query, package install or compliance validation was performed.",
+      "recommended_action": "Test one zero-key MCP biological lookup and verify evidence-card fields against source databases before relying on scientific claims."
+    },
+    {
+      "rank": 6,
+      "full_name": "anisayakmitra-in/PANDORA-AGENT",
+      "url": "https://github.com/anisayakmitra-in/PANDORA-AGENT",
+      "category": "Governed CLI Agent Runtime",
+      "score": 81,
+      "summary": "Rust-first CLI agent runtime built around durable sessions, multi-provider runs, modular workflows and scoped one-shot effect permits.",
+      "audience": "Developers exploring local terminal agents where tool effects need explicit authority and human checkpoints before system changes.",
+      "ai_native_angle": "Places a ReferenceMonitor between agent intentions and effect executors, framing every side effect as a governed permit instead of ambient tool access.",
+      "growth_signal": "Created 2026-08-14, updated 2026-08-16; topics include governed-execution, human-in-the-loop, durable-sessions and rust-cli; README documents prerelease and install path.",
+      "runnability": "Cargo workspace, crates, npm packaging and release docs are visible; prerelease CLI was not installed or tested.",
+      "recommended_action": "Audit the permit model with harmless file effects and check whether enforcement lives in code paths, not just documentation."
+    },
+    {
+      "rank": 7,
+      "full_name": "expectedparrot/epiq",
+      "url": "https://github.com/expectedparrot/epiq",
+      "category": "Evidence-backed Agent Research DB",
+      "score": 79,
+      "summary": "Local-first epistemic database where agents and people record typed questions, immutable evidence, temporally scoped claims and lineage-preserving derived views.",
+      "audience": "Research teams using agents to collect and revise evidence while preserving why a claim was accepted, retracted or superseded.",
+      "ai_native_angle": "Treats agent research output as a structured, versioned evidence database with append-only events and time-travel queries instead of a chat transcript.",
+      "growth_signal": "Created 2026-08-16, updated the same day; README documents SQLite canonical storage, CLI/demo path, tests and evidence-required assertions.",
+      "runnability": "Python source, tests, examples and uv lock are present; no CLI demo or database migration was run.",
+      "recommended_action": "Run the vertical-slice demo and test a retraction/supersede workflow against a small research question."
+    },
+    {
+      "rank": 8,
+      "full_name": "malongan/image-workbench",
+      "url": "https://github.com/malongan/image-workbench",
+      "category": "Node-based AI Image Workbench",
+      "score": 78,
+      "summary": "Standalone node-graph image-generation workbench with infinite canvas, prompt/reference/image nodes, history, custom OpenAI-compatible service settings and Docker/NAS deployment.",
+      "audience": "Creators who need a simple local visual workflow surface around third-party image APIs without a full AI framework.",
+      "ai_native_angle": "Moves image generation into a persistent graph workspace with prompt variants, node wiring, service configuration and local result storage.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16; README has localhost quick start, Docker Compose, API endpoints and explicit local config/storage notes.",
+      "runnability": "Node server, packaged frontend, Dockerfile and compose file are present; API key storage is plaintext and no provider call was tested.",
+      "recommended_action": "Run locally with a throwaway API key and review data/config.json permissions plus output-file retention before serious use."
+    },
+    {
+      "rank": 9,
+      "full_name": "akiyamasho/yet-another-agent-orchestrator",
+      "url": "https://github.com/akiyamasho/yet-another-agent-orchestrator",
+      "category": "Local Agent Orchestrator UI",
+      "score": 76,
+      "summary": "Local Electron command center for Codex and Claude Code projects, tasks, chats, subagents, transcripts, changed files and image previews.",
+      "audience": "Developers who want a local visual dashboard for multiple coding-agent tasks and project states.",
+      "ai_native_angle": "Agent conversations, task lists, project maps, transcripts and changed-file context are treated as first-class local UI objects.",
+      "growth_signal": "Created 2026-08-16, updated the same day; README includes screenshots, install/build notes, Electron app structure and synthetic demo data.",
+      "runnability": "Next/Electron source and package files are visible; no app build, provider integration or real-agent attachment was tested.",
+      "recommended_action": "Run against synthetic data first, then inspect how it discovers real Codex/Claude state before trusting it with workspaces."
+    },
+    {
+      "rank": 10,
+      "full_name": "brendadeeznuts1111/bun-automation-platform",
+      "url": "https://github.com/brendadeeznuts1111/bun-automation-platform",
+      "category": "Browser Automation API Platform",
+      "score": 74,
+      "summary": "Bun-based headless browser automation platform with REST API, worker pool, screenshots, SQLite persistence, Mermaid rendering and architecture diagrams.",
+      "audience": "Automation builders who need an API service for browser-session queues, screenshots and audit logging.",
+      "ai_native_angle": "Not strictly an AI agent by itself, but provides a task/session/screenshot substrate that can be driven by agents through authenticated APIs.",
+      "growth_signal": "Created 2026-08-14, updated 2026-08-16; README documents quick start, API endpoints, testing, architecture and 56 passing tests badge.",
+      "runnability": "Bun lockfile, TypeScript source and tests are visible; no Bun install, browser launch or REST API smoke test was run.",
+      "recommended_action": "Keep as infrastructure watch: verify auth, queue semantics and screenshot storage before putting it behind an agent."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "BlueHeisenberg/kenward",
+      "url": "https://github.com/BlueHeisenberg/kenward",
+      "category": "Household AI Assistant Memory",
+      "score": 73,
+      "summary": "Self-hosted Telegram-native household assistant with separate private/group memory boundaries and local routing ambitions.",
+      "audience": "Families or small groups exploring self-hosted assistants with per-person memory privacy.",
+      "ai_native_angle": "Memory boundary is the product thesis: separate stores, keys and processes rather than a shared assistant memory table.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16; repo has Dockerfile, Go code, config example, docs and SECURITY, but README says it is not installable yet.",
+      "runnability": "Explicitly in development; not installable, so held in watchlist.",
+      "recommended_action": "Recheck after a tagged install path or working Telegram demo appears."
+    },
+    {
+      "rank": 2,
+      "full_name": "ajfrai/givewell-donate",
+      "url": "https://github.com/ajfrai/givewell-donate",
+      "category": "Agent-callable Donation MCP",
+      "score": 72,
+      "summary": "MCP server and HTTP API that lets agents donate BTC/ETH/USDC to GiveWell while humans use card checkout.",
+      "audience": "Builders studying agent payments and charitable donation functions.",
+      "ai_native_angle": "Makes donation a callable tool with AGENTS.md guidance and discovery surfaces for agents.",
+      "growth_signal": "Created 2026-08-16, updated the same day; topics include agent-payments, MCP, x402 and donations; README has install/API docs.",
+      "runnability": "Payment-bearing workflow was not tested; safety model looks risky because README mentions no approval/auth limits in one path.",
+      "recommended_action": "Use only as a protocol case study until authorization and human-approval guarantees are clear."
+    },
+    {
+      "rank": 3,
+      "full_name": "mabw/dsh-plugins",
+      "url": "https://github.com/mabw/dsh-plugins",
+      "category": "DeepSeek Harness UI Plugins",
+      "score": 71,
+      "summary": "DeepSeek Harness plugin collection for rich UI cards/forms and assistant launcher/subagent workflows.",
+      "audience": "DSH users who want richer tool output and one-click persona subagents inside the composer.",
+      "ai_native_angle": "Adds agent-facing UI primitives and continuable subagent launch surfaces to an existing harness.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16; README has package-specific install commands and task-tree persistence notes.",
+      "runnability": "Plugin collection rather than one product; no DSH install or package validation was run.",
+      "recommended_action": "Watch the aui-render package as a UI affordance pattern for agent tool results."
+    },
+    {
+      "rank": 4,
+      "full_name": "MetaCortex-Dynamics/governed-agent-memory",
+      "url": "https://github.com/MetaCortex-Dynamics/governed-agent-memory",
+      "category": "Governed Agent Memory Scaffold",
+      "score": 69,
+      "summary": "Scaffold for governed memory with planned CockroachDB vector index, four-valued evaluation and append-only demo effect.",
+      "audience": "Developers interested in memory governance patterns more than immediate product use.",
+      "ai_native_angle": "The thesis is governance-first memory, but README states the planned capabilities are not implemented.",
+      "growth_signal": "Created 2026-08-16, updated the same day; repo has src, schema, scripts, tests, docs and security folders.",
+      "runnability": "Compiling scaffold only; no implemented capability claim.",
+      "recommended_action": "Revisit once the planned demo route and memory adapter are implemented."
+    },
+    {
+      "rank": 5,
+      "full_name": "verbalogicproject-creator/localmind",
+      "url": "https://github.com/verbalogicproject-creator/localmind",
+      "category": "Android Local RAG Assistant",
+      "score": 68,
+      "summary": "Kotlin/Termux local-first RAG assistant concept over llama.cpp, OpenCL and Hexagon NPU according to repository metadata.",
+      "audience": "Android builders exploring on-device local AI and RAG assistants.",
+      "ai_native_angle": "Local mobile inference plus retrieval would be compelling, but README was absent in this audit.",
+      "growth_signal": "Created 2026-08-15, updated 2026-08-16, 1 star; root contents include Android app, native, contracts and Gradle files.",
+      "runnability": "No README was available through the API; no Android build or model setup was tested.",
+      "recommended_action": "Wait for setup docs and reproducible device targets."
+    },
+    {
+      "rank": 6,
+      "full_name": "Kludex/zigai",
+      "url": "https://github.com/Kludex/zigai",
+      "category": "Zig LLM Agent Framework",
+      "score": 67,
+      "summary": "Provider-agnostic LLM agent framework for Zig discovered in search metadata.",
+      "audience": "Zig developers who want native agent abstractions.",
+      "ai_native_angle": "Could expand agent development into Zig ecosystems, but current audit lacked README due to rate limit.",
+      "growth_signal": "Created 2026-08-14, updated 2026-08-16, 3 stars; language is Zig.",
+      "runnability": "README audit was blocked by unauthenticated API rate limit.",
+      "recommended_action": "Re-audit after rate limit resets; promote only if examples and tool-calling APIs are concrete."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "MetaCortex-Dynamics/governed-agent-memory",
+      "url": "https://github.com/MetaCortex-Dynamics/governed-agent-memory",
+      "skip_reason": "Held out of Top because README explicitly says planned capabilities are unimplemented scaffold."
+    },
+    {
+      "full_name": "ajfrai/givewell-donate",
+      "url": "https://github.com/ajfrai/givewell-donate",
+      "skip_reason": "Money-moving agent workflow needs stronger authorization, approval and failure-mode review before promotion."
+    },
+    {
+      "full_name": "THEWOLFWALKER/dsh-coyote",
+      "url": "https://github.com/THEWOLFWALKER/dsh-coyote",
+      "skip_reason": "E-stim/control plugin is sensitive physical-actuation territory; README audit was blocked and safety posture cannot be verified."
+    },
+    {
+      "full_name": "Biznomad/agent-skills",
+      "url": "https://github.com/Biznomad/agent-skills",
+      "skip_reason": "Large skill collection/catalog; useful ecosystem signal but not a single runnable product loop."
+    },
+    {
+      "full_name": "mindori/pycon2026-start",
+      "url": "https://github.com/mindori/pycon2026-start",
+      "skip_reason": "Tutorial starter explicitly described as incomplete starting point, not a product."
+    },
+    {
+      "full_name": "BarryGon911/Building-and-Deploying-Free-AI-Customer-Support-Agents",
+      "url": "https://github.com/BarryGon911/Building-and-Deploying-Free-AI-Customer-Support-Agents",
+      "skip_reason": "Course/tutorial repository pattern from prior discovery; not treated as maintained product."
+    }
+  ]
+}
