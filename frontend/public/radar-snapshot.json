@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+      "runDate": "2026-08-17",
+      "generatedAt": "2026-08-17T11:15:03+08:00",
+      "dataWindow": "2026-08-14 00:00 to 2026-08-17 11:15 Asia/Shanghai. GitHub Search API raw responses were saved under /tmp/radar_2026_08_17_*.json and selected repository README/content audits under /tmp/radar_2026_08_17_repo_audit/.",
+      "sourceSummary": "git fetch origin succeeded on main and the worktree already had unrelated frontend/deploy changes that were preserved unstaged. Discovery used GitHub Search API queries for repositories created since 2026-08-14 matching AI agent, LLM app, RAG, MCP, workflow automation, browser agent, code agent, voice agent and copilot terms. Selected repository metadata, README files and root contents were fetched through the GitHub API. No third-party repository was cloned, installed, built, run, browser-tested, credential-tested, provider-tested, payment-tested, mobile-tested or security-scanned.",
+      "trendObservations": "The freshest AI-native product activity is clustered around agent operating layers: durable memory engines, portable agent identity/governance, inline audit proxies, quota/token observability and desktop/mobile shells for coding-agent harnesses. DeepSeek Harness continues to attract plugin and distribution work, but the strongest items are the ones with concrete install/build paths, state models, CI or safety boundaries. A parallel enterprise-app cluster is moving from generic RAG demos toward admin consoles, tenant isolation, semantic query validation and operational dashboards.",
+      "assumptions": "Scores are point-in-time editorial rankings based on GitHub metadata, README/root-content evidence, visible runnable surfaces, product shape, documentation completeness, safety posture and recent creation/update signals. Stars and forks are GitHub API snapshots rather than exact growth deltas. README claims were not independently runtime-verified. DSH ecosystem projects are ranked lower when they are lists, skins or prompt/skill collections rather than standalone product surfaces. No install, Docker, npm, pnpm, Bun, Cargo, Java, Python, Android, browser, provider, WeChat, database, payment or production deployment audit was performed.",
+      "markdownReport": "data/runs/2026-08-17.md",
+      "sourceFile": "2026-08-17.json",
+      "entryCount": 23
+    },
+    {
       "id": "run:2026-08-16:2026-08-16T10:20:00+08:00",
       "runDate": "2026-08-16",
       "generatedAt": "2026-08-16T10:20:00+08:00",
@@ -955,6 +967,25 @@
       "skipReason": null
     },
     {
+      "fullName": "AreevAI/areev",
+      "url": "https://github.com/AreevAI/areev",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Embedded Agent Memory Engine",
+      "summary": "Rust memory engine for AI agents with immutable content-addressed grains, CAL context assembly, governed self-improvement and durable journaled runs.",
+      "audience": "Agent platform builders and local-first teams that need fast, auditable memory inside voice, coding or workflow agents.",
+      "aiNativeAngle": "Treats memory as an embedded agent substrate: provenance, recall, context assembly and replayable runs are built for model loops rather than a generic database wrapper.",
+      "growthSignal": "Created 2026-08-16 and updated 2026-08-17; root includes Cargo workspace, crates, adapters, extensive docs, SECURITY, CI badges and bilingual README.",
+      "runnability": "README describes install and Rust MSRV; source, lockfile and tests are visible. No cargo build, package install or recall benchmark was run.",
+      "recommendedAction": "Run a small local memory file through CAL recall and inspect provenance/replay guarantees before embedding it in an agent.",
+      "skipReason": null
+    },
+    {
       "fullName": "radutopala/loop",
       "url": "https://github.com/radutopala/loop",
       "firstSeenDate": "2026-08-09",
@@ -1696,6 +1727,25 @@
       "skipReason": null
     },
     {
+      "fullName": "prellr/apiary",
+      "url": "https://github.com/prellr/apiary",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Portable Agent Host",
+      "summary": "Rust host for durable AI principals with self-owned nostr identity, manifest-declared skillsets, signed episodic memory and human-ratified governance.",
+      "audience": "Teams exploring portable agents that should outlive one chat provider or one application workspace.",
+      "aiNativeAngle": "Separates the agent from the model by giving it cryptographic identity, connector manifests, permission floors and signed memory logs.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17, with Cargo workspace, crates, docs and README claiming phases 0-3 live-proven against real relays/MCP/model runs.",
+      "runnability": "Rust workspace and service folders are present; live nostr, MCP and model-provider claims were not reproduced.",
+      "recommendedAction": "Audit the manifest and permission model with one low-risk connector, then verify signed event logs can be replayed offline.",
+      "skipReason": null
+    },
+    {
       "fullName": "Deep99739/Threadline",
       "url": "https://github.com/Deep99739/Threadline",
       "firstSeenDate": "2026-08-15",
@@ -2304,6 +2354,25 @@
       "skipReason": null
     },
     {
+      "fullName": "stef41/agentvisor-ai",
+      "url": "https://github.com/stef41/agentvisor-ai",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 87,
+      "latestScore": 87,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Traffic Audit Proxy",
+      "summary": "Inline Rust proxy for agent LLM/MCP traffic with identity, quota, policy, compression, loop controls, OCSF events and signed receipts.",
+      "audience": "Teams that need auditor-friendly control over agent calls without rewriting every application integration.",
+      "aiNativeAngle": "Turns agent traffic into enforceable sessions with pre-call policy checks, trajectories and offline-verifiable receipts.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has Makefile, Cargo workspace, Docker/deploy folders, security audit docs, benchmarks and CI badges.",
+      "runnability": "README shows a one-line OpenAI base_url proxy change; no proxy launch, receipt verification or policy test was run.",
+      "recommendedAction": "Place it before a toy OpenAI-compatible client and verify quota, loop and signed receipt behavior before production traffic.",
+      "skipReason": null
+    },
+    {
       "fullName": "7757/Fan-Browser-Agent",
       "url": "https://github.com/7757/Fan-Browser-Agent",
       "firstSeenDate": "2026-08-15",
@@ -2643,6 +2712,25 @@
       "growthSignal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
       "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
       "recommendedAction": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails.",
+      "skipReason": null
+    },
+    {
+      "fullName": "majiayu000/dsh-desk",
+      "url": "https://github.com/majiayu000/dsh-desk",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Coding Agent Desktop Distribution",
+      "summary": "Installable Tauri desktop distribution for DeepSeek Harness with bundled runtime, plugin review surfaces and daily upstream compatibility checks.",
+      "audience": "Developers who want DSH as a desktop app without managing Node, terminal commands or runtime drift.",
+      "aiNativeAngle": "Packages the coding-agent harness as a managed desktop runtime with compatibility radar and trusted plugin review rather than a loose CLI setup.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 1 fork; README links preview downloads, CI, compatibility evidence and Tauri/source folders.",
+      "runnability": "Tauri, pnpm workspace and release links are visible; no desktop build, signature check or DSH launch was performed.",
+      "recommendedAction": "Test the preview in a disposable workspace and inspect runtime pinning plus plugin verification before using real projects.",
       "skipReason": null
     },
     {
@@ -3444,6 +3532,25 @@
       "skipReason": null
     },
     {
+      "fullName": "zh667/TokenLedger",
+      "url": "https://github.com/zh667/TokenLedger",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Token Accounting Plugin",
+      "summary": "DeepSeek Harness Web GUI plugin that attributes token usage to relay sites, projects, windows and models with zero extra credentials.",
+      "audience": "DSH users routing through multiple relay sites or project workspaces who need usage attribution without manual spreadsheets.",
+      "aiNativeAngle": "Makes cost, cache, subscription windows and relay attribution visible inside the agent harness using host provider config and session context.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17, 22 stars and 4 forks; README details attribution, balances, exports, diagnostics and test/demo boundaries.",
+      "runnability": "JavaScript package, Cordis patch, docs and tests are present; no DSH plugin install or token-path validation was run.",
+      "recommendedAction": "Install on a test DSH profile and compare exported JSON against raw provider/session logs.",
+      "skipReason": null
+    },
+    {
       "fullName": "Cat-tj/hermes-aios-control-plane",
       "url": "https://github.com/Cat-tj/hermes-aios-control-plane",
       "firstSeenDate": "2026-08-16",
@@ -4204,6 +4311,25 @@
       "skipReason": null
     },
     {
+      "fullName": "deepcode-lab/deepseek-harness-mobile",
+      "url": "https://github.com/deepcode-lab/deepseek-harness-mobile",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Mobile Coding Agent Shell",
+      "summary": "Android shell for DSH with embedded Termux runtime snapshot, proot Ubuntu container, WebView UI, SAF bridge and engine watchdog.",
+      "audience": "Developers experimenting with local coding agents on Android devices or mobile companion workflows.",
+      "aiNativeAngle": "Moves a full bash-capable coding-agent runtime into an APK with offline runtime extraction and controlled workspace bridging.",
+      "growthSignal": "Created 2026-08-15, updated 2026-08-17; repo includes Kotlin app, Gradle files, docs, tests, AGENTS and bilingual README.",
+      "runnability": "Android build files and runtime design are visible; no APK build, device install, proot bootstrap or SAF permission test was performed.",
+      "recommendedAction": "Build a debug APK on a throwaway device and verify workspace boundary, downloaded rootfs hash checks and long-running agent behavior.",
+      "skipReason": null
+    },
+    {
       "fullName": "HERRY423/BioNexus",
       "url": "https://github.com/HERRY423/BioNexus",
       "firstSeenDate": "2026-08-16",
@@ -4657,6 +4783,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "chadixearth/graphyloop",
+      "url": "https://github.com/chadixearth/graphyloop",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Cross-harness Agent Workflow Kit",
+      "summary": "Workflow kit that wires OpenCode, Claude Code, Codex, Cursor and DSH with a 25-agent squad, persistent memory, MCP server and 5-gate delivery workflow.",
+      "audience": "AI-coding power users who want repeatable multi-agent process scaffolding across different harnesses.",
+      "aiNativeAngle": "Treats harness coordination, memory, gates and specialist agents as the product layer around model execution.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has npm package metadata, MCP server, adapters, hooks, skills, templates, tests and CI badge.",
+      "runnability": "README advertises one-command setup and zero runtime dependencies; no npx install or harness integration was executed.",
+      "recommendedAction": "Try on a small repo and verify whether generated agents/gates improve handoff quality without adding brittle process overhead.",
       "skipReason": null
     },
     {
@@ -5284,6 +5429,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
       "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
       "recommendedAction": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。",
+      "skipReason": null
+    },
+    {
+      "fullName": "zeprefer/agent-rag",
+      "url": "https://github.com/zeprefer/agent-rag",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Enterprise RAG Agent App",
+      "summary": "Enterprise knowledge-base RAG/Agent project with admin console, user chat, FastAPI backend, PostgreSQL/pgvector, Redis, MinIO, Celery and DashScope integration.",
+      "audience": "Enterprise teams needing a more complete starting point for tenant-aware knowledge-base chat and document operations.",
+      "aiNativeAngle": "Combines knowledge-base administration, async indexing, multi-turn chat, citations, tenant isolation and model-provider adapters into one product surface.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17; README includes scope, Chinese/English description, Docker Compose, backend/frontend/sample_data and SECURITY.",
+      "runnability": "Docker Compose and project folders are present; no database startup, model credentials or document ingest test was run.",
+      "recommendedAction": "Run locally with sample data and inspect tenant isolation, citation traceability and upload scanning before adapting it.",
       "skipReason": null
     },
     {
@@ -6142,6 +6306,25 @@
       "skipReason": null
     },
     {
+      "fullName": "lethuan127/SemantiQL",
+      "url": "https://github.com/lethuan127/SemantiQL",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Semantic SQL Guard Layer",
+      "summary": "Python semantic layer that lets LLMs query business models instead of raw tables, validating metrics, filters, time grains and SQL generation.",
+      "audience": "Analytics and data-app builders who need AI database access with a refusal path when a query cannot be validated.",
+      "aiNativeAngle": "Converts LLM database access into semantic SQL against governed dimensions/measures, with doctor checks and adapter validation.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo includes docs, examples, tests, pyproject, uv lock, DuckDB/Postgres adapters and roadmap.",
+      "runnability": "README says the core engine runs today while MCP server and benchmark are not built; no uv sync or sample query was run.",
+      "recommendedAction": "Run the quickstart against DuckDB and test refusal behavior for ambiguous or invalid business metrics.",
+      "skipReason": null
+    },
+    {
       "fullName": "expectedparrot/epiq",
       "url": "https://github.com/expectedparrot/epiq",
       "firstSeenDate": "2026-08-16",
@@ -6595,6 +6778,25 @@
       "growthSignal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
       "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
       "recommendedAction": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。",
+      "skipReason": null
+    },
+    {
+      "fullName": "laruence/wechatian",
+      "url": "https://github.com/laruence/wechatian",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-ready WeChat Obsidian Bridge",
+      "summary": "Obsidian plugin that bridges WeChat messages/media/articles into a vault and lets agents send outbound messages through a file-based outbox using Tencent ilink.",
+      "audience": "Personal knowledge-base users who want chat, media and agent notifications captured in Obsidian without unofficial WeChat protocol hacks.",
+      "aiNativeAngle": "Agent communication is reduced to a local outbox protocol and an Agent.md instruction file inside the vault.",
+      "growthSignal": "Created 2026-08-16, updated 2026-08-17, 11 stars; repo has manifest, package files, smoke folder, source and README with QR login/inbox/outbox details.",
+      "runnability": "Obsidian/plugin and ilink flows were not installed or tested; outbound messaging depends on official gateway binding.",
+      "recommendedAction": "Test only with a non-sensitive vault and verify attachment decryption/storage plus outbound audit notes.",
       "skipReason": null
     },
     {
@@ -7681,6 +7883,25 @@
       "skipReason": null
     },
     {
+      "fullName": "WTStarMark/QAQ",
+      "url": "https://github.com/WTStarMark/QAQ",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "DSH Launch Resilience Guard",
+      "summary": "Supervises DSH web, reads real DOM through headless Chrome/CDP, catches UI red screens and rolls back to the last known-good config.",
+      "audience": "DSH users with plugin-heavy profiles who need safer launch recovery.",
+      "aiNativeAngle": "Focuses on harness reliability using DOM-level health checks that normal process monitors miss.",
+      "growthSignal": "Created 2026-08-15, updated 2026-08-17, 3 stars and 1 fork; README has screenshots, requirements, pnpm workspace and tests.",
+      "runnability": "Requires Node 22, browser binary and DSH on PATH; not run here.",
+      "recommendedAction": "Watch for real-world recovery reports and test with deliberately broken plugin config.",
+      "skipReason": null
+    },
+    {
       "fullName": "akiyamasho/yet-another-agent-orchestrator",
       "url": "https://github.com/akiyamasho/yet-another-agent-orchestrator",
       "firstSeenDate": "2026-08-16",
@@ -8137,6 +8358,25 @@
       "skipReason": null
     },
     {
+      "fullName": "CHENHUI-X/dsh-client-ui-dashboard",
+      "url": "https://github.com/CHENHUI-X/dsh-client-ui-dashboard",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "DSH Conversation Metrics Dashboard",
+      "summary": "Adds a live dashboard tab to DSH conversations with token, context pressure, cost, tool error and sparkline metrics.",
+      "audience": "DSH users who need operational visibility while long conversations run.",
+      "aiNativeAngle": "Turns live agent execution telemetry into an in-harness UI surface.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 2 forks; README details metrics and package files are present.",
+      "runnability": "No plugin install or live DSH session was tested.",
+      "recommendedAction": "Pair with TokenLedger in a test DSH profile to compare session metrics and attribution.",
+      "skipReason": null
+    },
+    {
       "fullName": "GhagSagar23/ai_guardrails",
       "url": "https://github.com/GhagSagar23/ai_guardrails",
       "firstSeenDate": "2026-08-15",
@@ -8495,6 +8735,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "omnigauge/omnigauge",
+      "url": "https://github.com/omnigauge/omnigauge",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI Plan Quota CLI",
+      "summary": "Terminal dashboard for Claude Code, OpenAI Codex and Grok CLI quota, tokens, burn rate, reset time and optional API spend.",
+      "audience": "Developers running multiple AI coding subscriptions who need quota visibility before long tasks.",
+      "aiNativeAngle": "Reads usage from local files and CLI quota panels, turning subscription windows into operational agent-planning signals.",
+      "growthSignal": "Created 2026-08-15, updated 2026-08-17; README has install script, providers, tests, site assets and explicit key-handling language.",
+      "runnability": "No install or local quota file inspection was performed.",
+      "recommendedAction": "Run read-only mode and verify it never needs provider keys for subscription usage display.",
       "skipReason": null
     },
     {
@@ -9087,6 +9346,25 @@
       "skipReason": null
     },
     {
+      "fullName": "db3-studio/info-guard",
+      "url": "https://github.com/db3-studio/info-guard",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Secret Redaction Layer",
+      "summary": "Exact-value redaction layer for Hermes Agent using a JSON pattern file, preflight leak scan and interactive setup.",
+      "audience": "Hermes Agent users who need display-time masking of known secret values beyond key-name patterns.",
+      "aiNativeAngle": "Adds a single redaction chokepoint for tool output, logs, transcripts and file reads inside an agent runtime.",
+      "growthSignal": "Created 2026-08-16, updated 2026-08-17; repo has install/uninstall scripts, tests, examples and safety-property docs.",
+      "runnability": "Hermes integration and fail-safe masking were not tested.",
+      "recommendedAction": "Verify with synthetic secrets and broken pattern files before trusting real credentials.",
+      "skipReason": null
+    },
+    {
       "fullName": "BlueHeisenberg/kenward",
       "url": "https://github.com/BlueHeisenberg/kenward",
       "firstSeenDate": "2026-08-16",
@@ -9540,6 +9818,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "yueseqaz/sakura-database-skill",
+      "url": "https://github.com/yueseqaz/sakura-database-skill",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Database Skill",
+      "summary": "TypeScript CLI/MCP skill for AI agents to discover MySQL schemas, execute bounded query plans and preview transactional mutations.",
+      "audience": "Agent builders who need database access with deterministic validation and audit layers.",
+      "aiNativeAngle": "Agent writes structured query/mutation/schema plans; the runtime validates, masks, paginates, explains and audits.",
+      "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has SKILL.md, references, agents, scripts, package files and README workflow diagram.",
+      "runnability": "No MySQL connection, MCP server or mutation preview was run.",
+      "recommendedAction": "Test against a disposable MySQL schema and inspect approval/rollback behavior.",
       "skipReason": null
     },
     {
@@ -10205,6 +10502,25 @@
       "growthSignal": "GitHub 页面显示 5.6k stars、4 issues、10 PRs、548 commits。",
       "runnability": "README 提供 macOS/Linux/WSL 一行安装，文档覆盖 workspace、memory、continuity、agent harness。",
       "recommendedAction": "关注 workspace/memory/continuity 模型是否形成可复用 agent OS 形态。",
+      "skipReason": null
+    },
+    {
+      "fullName": "anshrajore/atelier-mcp",
+      "url": "https://github.com/anshrajore/atelier-mcp",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 71,
+      "latestScore": 71,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "AI App Quality Gate MCP",
+      "summary": "MCP server and skill pack that adds post-generation UI/UX and backend quality gates for vibe-coded applications.",
+      "audience": "Developers using Cursor, Windsurf, Claude Code, Copilot or Antigravity to generate app code.",
+      "aiNativeAngle": "Makes critique and quality gates callable as agent tools/adapters after generation.",
+      "growthSignal": "Created 2026-08-16, updated 2026-08-17; repo has adapters, MCP server, skills, corpus, benchmarks and setup script.",
+      "runnability": "Claims and benchmark usefulness were not verified.",
+      "recommendedAction": "Use as a benchmarkable QA pattern only after checking false positives on real app diffs.",
       "skipReason": null
     },
     {
@@ -11136,6 +11452,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。",
+      "skipReason": null
+    },
+    {
+      "fullName": "carlovsk1/vidgrid",
+      "url": "https://github.com/carlovsk1/vidgrid",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": 69,
+      "latestScore": 69,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Video-to-Grid Agent Utility",
+      "summary": "Shell utility and Claude plugin that turns video URLs into frame-grid contact sheets plus transcripts so a model can inspect video context.",
+      "audience": "Agents or researchers that need low-cost visual context from social/video URLs.",
+      "aiNativeAngle": "Optimizes video observation for multimodal model input by packaging frames and transcript together.",
+      "growthSignal": "Created and updated 2026-08-17; repo includes command files, plugin metadata and concise README.",
+      "runnability": "Downloader, transcript generation and platform compatibility were not tested.",
+      "recommendedAction": "Recheck after broader platform/error-handling docs and a test fixture appear.",
       "skipReason": null
     },
     {
@@ -12334,6 +12669,120 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+      "url": "https://github.com/abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Activator/unlock positioning for AI apps is likely unsafe or policy-abusive and does not fit the product radar quality bar."
+    },
+    {
+      "fullName": "beancookie/awesome-dsh-plugin",
+      "url": "https://github.com/beancookie/awesome-dsh-plugin",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Useful ecosystem index with strong stars/forks, but it is a curated list/site rather than a directly runnable AI-native product."
+    },
+    {
+      "fullName": "BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+      "url": "https://github.com/BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Concrete voice-agent scenario, but appears to be a mock/demo finance collections implementation; payment/identity/safety claims need much stronger evidence."
+    },
+    {
+      "fullName": "daboge-beach/dsh-skin-studio",
+      "url": "https://github.com/daboge-beach/dsh-skin-studio",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "DSH skin/gallery work is UI customization rather than an AI-native product surface or agent workflow primitive."
+    },
+    {
+      "fullName": "surendranb/writing-skills",
+      "url": "https://github.com/surendranb/writing-skills",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Well-packaged agent skill collection, but the core artifact is writing-style procedures and installers rather than a product workflow with its own user surface."
+    },
+    {
+      "fullName": "U-SIE/U-SIE",
+      "url": "https://github.com/U-SIE/U-SIE",
+      "firstSeenDate": "2026-08-17",
+      "lastSeenDate": "2026-08-17",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Concept-heavy sovereign AI intake project with document-style README and limited visible product/runtime structure in this audit."
     },
     {
       "fullName": "BarryGon911/Building-and-Deploying-Free-AI-Customer-Support-Agents",
@@ -17276,6 +17725,40 @@
         }
       }
     ],
+    "AreevAI/areev": [
+      {
+        "id": "AreevAI-areev:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "AreevAI/areev",
+        "url": "https://github.com/AreevAI/areev",
+        "category": "Embedded Agent Memory Engine",
+        "score": 91,
+        "summary": "Rust memory engine for AI agents with immutable content-addressed grains, CAL context assembly, governed self-improvement and durable journaled runs.",
+        "audience": "Agent platform builders and local-first teams that need fast, auditable memory inside voice, coding or workflow agents.",
+        "aiNativeAngle": "Treats memory as an embedded agent substrate: provenance, recall, context assembly and replayable runs are built for model loops rather than a generic database wrapper.",
+        "growthSignal": "Created 2026-08-16 and updated 2026-08-17; root includes Cargo workspace, crates, adapters, extensive docs, SECURITY, CI badges and bilingual README.",
+        "runnability": "README describes install and Rust MSRV; source, lockfile and tests are visible. No cargo build, package install or recall benchmark was run.",
+        "recommendedAction": "Run a small local memory file through CAL recall and inspect provenance/replay guarantees before embedding it in an agent.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "AreevAI/areev",
+          "url": "https://github.com/AreevAI/areev",
+          "category": "Embedded Agent Memory Engine",
+          "score": 91,
+          "summary": "Rust memory engine for AI agents with immutable content-addressed grains, CAL context assembly, governed self-improvement and durable journaled runs.",
+          "audience": "Agent platform builders and local-first teams that need fast, auditable memory inside voice, coding or workflow agents.",
+          "ai_native_angle": "Treats memory as an embedded agent substrate: provenance, recall, context assembly and replayable runs are built for model loops rather than a generic database wrapper.",
+          "growth_signal": "Created 2026-08-16 and updated 2026-08-17; root includes Cargo workspace, crates, adapters, extensive docs, SECURITY, CI badges and bilingual README.",
+          "runnability": "README describes install and Rust MSRV; source, lockfile and tests are visible. No cargo build, package install or recall benchmark was run.",
+          "recommended_action": "Run a small local memory file through CAL recall and inspect provenance/replay guarantees before embedding it in an agent."
+        }
+      }
+    ],
     "radutopala/loop": [
       {
         "id": "radutopala-loop:2026-08-09T12:40:41+08:00:top:0",
@@ -19074,6 +19557,40 @@
         }
       }
     ],
+    "prellr/apiary": [
+      {
+        "id": "prellr-apiary:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "prellr/apiary",
+        "url": "https://github.com/prellr/apiary",
+        "category": "Portable Agent Host",
+        "score": 88,
+        "summary": "Rust host for durable AI principals with self-owned nostr identity, manifest-declared skillsets, signed episodic memory and human-ratified governance.",
+        "audience": "Teams exploring portable agents that should outlive one chat provider or one application workspace.",
+        "aiNativeAngle": "Separates the agent from the model by giving it cryptographic identity, connector manifests, permission floors and signed memory logs.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17, with Cargo workspace, crates, docs and README claiming phases 0-3 live-proven against real relays/MCP/model runs.",
+        "runnability": "Rust workspace and service folders are present; live nostr, MCP and model-provider claims were not reproduced.",
+        "recommendedAction": "Audit the manifest and permission model with one low-risk connector, then verify signed event logs can be replayed offline.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "prellr/apiary",
+          "url": "https://github.com/prellr/apiary",
+          "category": "Portable Agent Host",
+          "score": 88,
+          "summary": "Rust host for durable AI principals with self-owned nostr identity, manifest-declared skillsets, signed episodic memory and human-ratified governance.",
+          "audience": "Teams exploring portable agents that should outlive one chat provider or one application workspace.",
+          "ai_native_angle": "Separates the agent from the model by giving it cryptographic identity, connector manifests, permission floors and signed memory logs.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17, with Cargo workspace, crates, docs and README claiming phases 0-3 live-proven against real relays/MCP/model runs.",
+          "runnability": "Rust workspace and service folders are present; live nostr, MCP and model-provider claims were not reproduced.",
+          "recommended_action": "Audit the manifest and permission model with one low-risk connector, then verify signed event logs can be replayed offline."
+        }
+      }
+    ],
     "Deep99739/Threadline": [
       {
         "id": "Deep99739-Threadline:2026-08-15T10:55:00+08:00:top:0",
@@ -20780,6 +21297,40 @@
         }
       }
     ],
+    "stef41/agentvisor-ai": [
+      {
+        "id": "stef41-agentvisor-ai:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "stef41/agentvisor-ai",
+        "url": "https://github.com/stef41/agentvisor-ai",
+        "category": "Agent Traffic Audit Proxy",
+        "score": 87,
+        "summary": "Inline Rust proxy for agent LLM/MCP traffic with identity, quota, policy, compression, loop controls, OCSF events and signed receipts.",
+        "audience": "Teams that need auditor-friendly control over agent calls without rewriting every application integration.",
+        "aiNativeAngle": "Turns agent traffic into enforceable sessions with pre-call policy checks, trajectories and offline-verifiable receipts.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has Makefile, Cargo workspace, Docker/deploy folders, security audit docs, benchmarks and CI badges.",
+        "runnability": "README shows a one-line OpenAI base_url proxy change; no proxy launch, receipt verification or policy test was run.",
+        "recommendedAction": "Place it before a toy OpenAI-compatible client and verify quota, loop and signed receipt behavior before production traffic.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "stef41/agentvisor-ai",
+          "url": "https://github.com/stef41/agentvisor-ai",
+          "category": "Agent Traffic Audit Proxy",
+          "score": 87,
+          "summary": "Inline Rust proxy for agent LLM/MCP traffic with identity, quota, policy, compression, loop controls, OCSF events and signed receipts.",
+          "audience": "Teams that need auditor-friendly control over agent calls without rewriting every application integration.",
+          "ai_native_angle": "Turns agent traffic into enforceable sessions with pre-call policy checks, trajectories and offline-verifiable receipts.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17; repo has Makefile, Cargo workspace, Docker/deploy folders, security audit docs, benchmarks and CI badges.",
+          "runnability": "README shows a one-line OpenAI base_url proxy change; no proxy launch, receipt verification or policy test was run.",
+          "recommended_action": "Place it before a toy OpenAI-compatible client and verify quota, loop and signed receipt behavior before production traffic."
+        }
+      }
+    ],
     "7757/Fan-Browser-Agent": [
       {
         "id": "7757-Fan-Browser-Agent:2026-08-15T10:55:00+08:00:top:0",
@@ -21453,6 +22004,40 @@
           "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
           "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
           "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+        }
+      }
+    ],
+    "majiayu000/dsh-desk": [
+      {
+        "id": "majiayu000-dsh-desk:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "majiayu000/dsh-desk",
+        "url": "https://github.com/majiayu000/dsh-desk",
+        "category": "Coding Agent Desktop Distribution",
+        "score": 86,
+        "summary": "Installable Tauri desktop distribution for DeepSeek Harness with bundled runtime, plugin review surfaces and daily upstream compatibility checks.",
+        "audience": "Developers who want DSH as a desktop app without managing Node, terminal commands or runtime drift.",
+        "aiNativeAngle": "Packages the coding-agent harness as a managed desktop runtime with compatibility radar and trusted plugin review rather than a loose CLI setup.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 1 fork; README links preview downloads, CI, compatibility evidence and Tauri/source folders.",
+        "runnability": "Tauri, pnpm workspace and release links are visible; no desktop build, signature check or DSH launch was performed.",
+        "recommendedAction": "Test the preview in a disposable workspace and inspect runtime pinning plus plugin verification before using real projects.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "majiayu000/dsh-desk",
+          "url": "https://github.com/majiayu000/dsh-desk",
+          "category": "Coding Agent Desktop Distribution",
+          "score": 86,
+          "summary": "Installable Tauri desktop distribution for DeepSeek Harness with bundled runtime, plugin review surfaces and daily upstream compatibility checks.",
+          "audience": "Developers who want DSH as a desktop app without managing Node, terminal commands or runtime drift.",
+          "ai_native_angle": "Packages the coding-agent harness as a managed desktop runtime with compatibility radar and trusted plugin review rather than a loose CLI setup.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 1 fork; README links preview downloads, CI, compatibility evidence and Tauri/source folders.",
+          "runnability": "Tauri, pnpm workspace and release links are visible; no desktop build, signature check or DSH launch was performed.",
+          "recommended_action": "Test the preview in a disposable workspace and inspect runtime pinning plus plugin verification before using real projects."
         }
       }
     ],
@@ -23040,6 +23625,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "zh667/TokenLedger": [
+      {
+        "id": "zh667-TokenLedger:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "zh667/TokenLedger",
+        "url": "https://github.com/zh667/TokenLedger",
+        "category": "Agent Token Accounting Plugin",
+        "score": 84,
+        "summary": "DeepSeek Harness Web GUI plugin that attributes token usage to relay sites, projects, windows and models with zero extra credentials.",
+        "audience": "DSH users routing through multiple relay sites or project workspaces who need usage attribution without manual spreadsheets.",
+        "aiNativeAngle": "Makes cost, cache, subscription windows and relay attribution visible inside the agent harness using host provider config and session context.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17, 22 stars and 4 forks; README details attribution, balances, exports, diagnostics and test/demo boundaries.",
+        "runnability": "JavaScript package, Cordis patch, docs and tests are present; no DSH plugin install or token-path validation was run.",
+        "recommendedAction": "Install on a test DSH profile and compare exported JSON against raw provider/session logs.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "zh667/TokenLedger",
+          "url": "https://github.com/zh667/TokenLedger",
+          "category": "Agent Token Accounting Plugin",
+          "score": 84,
+          "summary": "DeepSeek Harness Web GUI plugin that attributes token usage to relay sites, projects, windows and models with zero extra credentials.",
+          "audience": "DSH users routing through multiple relay sites or project workspaces who need usage attribution without manual spreadsheets.",
+          "ai_native_angle": "Makes cost, cache, subscription windows and relay attribution visible inside the agent harness using host provider config and session context.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17, 22 stars and 4 forks; README details attribution, balances, exports, diagnostics and test/demo boundaries.",
+          "runnability": "JavaScript package, Cordis patch, docs and tests are present; no DSH plugin install or token-path validation was run.",
+          "recommended_action": "Install on a test DSH profile and compare exported JSON against raw provider/session logs."
         }
       }
     ],
@@ -24679,6 +25298,40 @@
         }
       }
     ],
+    "deepcode-lab/deepseek-harness-mobile": [
+      {
+        "id": "deepcode-lab-deepseek-harness-mobile:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "deepcode-lab/deepseek-harness-mobile",
+        "url": "https://github.com/deepcode-lab/deepseek-harness-mobile",
+        "category": "Mobile Coding Agent Shell",
+        "score": 83,
+        "summary": "Android shell for DSH with embedded Termux runtime snapshot, proot Ubuntu container, WebView UI, SAF bridge and engine watchdog.",
+        "audience": "Developers experimenting with local coding agents on Android devices or mobile companion workflows.",
+        "aiNativeAngle": "Moves a full bash-capable coding-agent runtime into an APK with offline runtime extraction and controlled workspace bridging.",
+        "growthSignal": "Created 2026-08-15, updated 2026-08-17; repo includes Kotlin app, Gradle files, docs, tests, AGENTS and bilingual README.",
+        "runnability": "Android build files and runtime design are visible; no APK build, device install, proot bootstrap or SAF permission test was performed.",
+        "recommendedAction": "Build a debug APK on a throwaway device and verify workspace boundary, downloaded rootfs hash checks and long-running agent behavior.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "deepcode-lab/deepseek-harness-mobile",
+          "url": "https://github.com/deepcode-lab/deepseek-harness-mobile",
+          "category": "Mobile Coding Agent Shell",
+          "score": 83,
+          "summary": "Android shell for DSH with embedded Termux runtime snapshot, proot Ubuntu container, WebView UI, SAF bridge and engine watchdog.",
+          "audience": "Developers experimenting with local coding agents on Android devices or mobile companion workflows.",
+          "ai_native_angle": "Moves a full bash-capable coding-agent runtime into an APK with offline runtime extraction and controlled workspace bridging.",
+          "growth_signal": "Created 2026-08-15, updated 2026-08-17; repo includes Kotlin app, Gradle files, docs, tests, AGENTS and bilingual README.",
+          "runnability": "Android build files and runtime design are visible; no APK build, device install, proot bootstrap or SAF permission test was performed.",
+          "recommended_action": "Build a debug APK on a throwaway device and verify workspace boundary, downloaded rootfs hash checks and long-running agent behavior."
+        }
+      }
+    ],
     "HERRY423/BioNexus": [
       {
         "id": "HERRY423-BioNexus:2026-08-16T10:20:00+08:00:top:0",
@@ -25674,6 +26327,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "chadixearth/graphyloop": [
+      {
+        "id": "chadixearth-graphyloop:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "chadixearth/graphyloop",
+        "url": "https://github.com/chadixearth/graphyloop",
+        "category": "Cross-harness Agent Workflow Kit",
+        "score": 82,
+        "summary": "Workflow kit that wires OpenCode, Claude Code, Codex, Cursor and DSH with a 25-agent squad, persistent memory, MCP server and 5-gate delivery workflow.",
+        "audience": "AI-coding power users who want repeatable multi-agent process scaffolding across different harnesses.",
+        "aiNativeAngle": "Treats harness coordination, memory, gates and specialist agents as the product layer around model execution.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has npm package metadata, MCP server, adapters, hooks, skills, templates, tests and CI badge.",
+        "runnability": "README advertises one-command setup and zero runtime dependencies; no npx install or harness integration was executed.",
+        "recommendedAction": "Try on a small repo and verify whether generated agents/gates improve handoff quality without adding brittle process overhead.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "chadixearth/graphyloop",
+          "url": "https://github.com/chadixearth/graphyloop",
+          "category": "Cross-harness Agent Workflow Kit",
+          "score": 82,
+          "summary": "Workflow kit that wires OpenCode, Claude Code, Codex, Cursor and DSH with a 25-agent squad, persistent memory, MCP server and 5-gate delivery workflow.",
+          "audience": "AI-coding power users who want repeatable multi-agent process scaffolding across different harnesses.",
+          "ai_native_angle": "Treats harness coordination, memory, gates and specialist agents as the product layer around model execution.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17; repo has npm package metadata, MCP server, adapters, hooks, skills, templates, tests and CI badge.",
+          "runnability": "README advertises one-command setup and zero runtime dependencies; no npx install or harness integration was executed.",
+          "recommended_action": "Try on a small repo and verify whether generated agents/gates improve handoff quality without adding brittle process overhead."
         }
       }
     ],
@@ -26985,6 +27672,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 10, 2026）；Star ~475；提供 PyPI 安装入口与 UI 端口。",
           "runnability": "pip 安装后 `clouds-coder` 启动，默认提供 Agent UI 与 Skills Studio。",
           "recommended_action": "本地装 PyPI 版本起服务；重点体验恢复机制与 Skills Studio 的交互闭环。"
+        }
+      }
+    ],
+    "zeprefer/agent-rag": [
+      {
+        "id": "zeprefer-agent-rag:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "zeprefer/agent-rag",
+        "url": "https://github.com/zeprefer/agent-rag",
+        "category": "Enterprise RAG Agent App",
+        "score": 81,
+        "summary": "Enterprise knowledge-base RAG/Agent project with admin console, user chat, FastAPI backend, PostgreSQL/pgvector, Redis, MinIO, Celery and DashScope integration.",
+        "audience": "Enterprise teams needing a more complete starting point for tenant-aware knowledge-base chat and document operations.",
+        "aiNativeAngle": "Combines knowledge-base administration, async indexing, multi-turn chat, citations, tenant isolation and model-provider adapters into one product surface.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17; README includes scope, Chinese/English description, Docker Compose, backend/frontend/sample_data and SECURITY.",
+        "runnability": "Docker Compose and project folders are present; no database startup, model credentials or document ingest test was run.",
+        "recommendedAction": "Run locally with sample data and inspect tenant isolation, citation traceability and upload scanning before adapting it.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "zeprefer/agent-rag",
+          "url": "https://github.com/zeprefer/agent-rag",
+          "category": "Enterprise RAG Agent App",
+          "score": 81,
+          "summary": "Enterprise knowledge-base RAG/Agent project with admin console, user chat, FastAPI backend, PostgreSQL/pgvector, Redis, MinIO, Celery and DashScope integration.",
+          "audience": "Enterprise teams needing a more complete starting point for tenant-aware knowledge-base chat and document operations.",
+          "ai_native_angle": "Combines knowledge-base administration, async indexing, multi-turn chat, citations, tenant isolation and model-provider adapters into one product surface.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17; README includes scope, Chinese/English description, Docker Compose, backend/frontend/sample_data and SECURITY.",
+          "runnability": "Docker Compose and project folders are present; no database startup, model credentials or document ingest test was run.",
+          "recommended_action": "Run locally with sample data and inspect tenant isolation, citation traceability and upload scanning before adapting it."
         }
       }
     ],
@@ -28793,6 +29514,40 @@
         }
       }
     ],
+    "lethuan127/SemantiQL": [
+      {
+        "id": "lethuan127-SemantiQL:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "lethuan127/SemantiQL",
+        "url": "https://github.com/lethuan127/SemantiQL",
+        "category": "Semantic SQL Guard Layer",
+        "score": 79,
+        "summary": "Python semantic layer that lets LLMs query business models instead of raw tables, validating metrics, filters, time grains and SQL generation.",
+        "audience": "Analytics and data-app builders who need AI database access with a refusal path when a query cannot be validated.",
+        "aiNativeAngle": "Converts LLM database access into semantic SQL against governed dimensions/measures, with doctor checks and adapter validation.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo includes docs, examples, tests, pyproject, uv lock, DuckDB/Postgres adapters and roadmap.",
+        "runnability": "README says the core engine runs today while MCP server and benchmark are not built; no uv sync or sample query was run.",
+        "recommendedAction": "Run the quickstart against DuckDB and test refusal behavior for ambiguous or invalid business metrics.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "lethuan127/SemantiQL",
+          "url": "https://github.com/lethuan127/SemantiQL",
+          "category": "Semantic SQL Guard Layer",
+          "score": 79,
+          "summary": "Python semantic layer that lets LLMs query business models instead of raw tables, validating metrics, filters, time grains and SQL generation.",
+          "audience": "Analytics and data-app builders who need AI database access with a refusal path when a query cannot be validated.",
+          "ai_native_angle": "Converts LLM database access into semantic SQL against governed dimensions/measures, with doctor checks and adapter validation.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17; repo includes docs, examples, tests, pyproject, uv lock, DuckDB/Postgres adapters and roadmap.",
+          "runnability": "README says the core engine runs today while MCP server and benchmark are not built; no uv sync or sample query was run.",
+          "recommended_action": "Run the quickstart against DuckDB and test refusal behavior for ambiguous or invalid business metrics."
+        }
+      }
+    ],
     "expectedparrot/epiq": [
       {
         "id": "expectedparrot-epiq:2026-08-16T10:20:00+08:00:top:0",
@@ -29726,6 +30481,40 @@
           "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
           "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
           "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+        }
+      }
+    ],
+    "laruence/wechatian": [
+      {
+        "id": "laruence-wechatian:2026-08-17T11:15:03+08:00:top:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "laruence/wechatian",
+        "url": "https://github.com/laruence/wechatian",
+        "category": "Agent-ready WeChat Obsidian Bridge",
+        "score": 78,
+        "summary": "Obsidian plugin that bridges WeChat messages/media/articles into a vault and lets agents send outbound messages through a file-based outbox using Tencent ilink.",
+        "audience": "Personal knowledge-base users who want chat, media and agent notifications captured in Obsidian without unofficial WeChat protocol hacks.",
+        "aiNativeAngle": "Agent communication is reduced to a local outbox protocol and an Agent.md instruction file inside the vault.",
+        "growthSignal": "Created 2026-08-16, updated 2026-08-17, 11 stars; repo has manifest, package files, smoke folder, source and README with QR login/inbox/outbox details.",
+        "runnability": "Obsidian/plugin and ilink flows were not installed or tested; outbound messaging depends on official gateway binding.",
+        "recommendedAction": "Test only with a non-sensitive vault and verify attachment decryption/storage plus outbound audit notes.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "laruence/wechatian",
+          "url": "https://github.com/laruence/wechatian",
+          "category": "Agent-ready WeChat Obsidian Bridge",
+          "score": 78,
+          "summary": "Obsidian plugin that bridges WeChat messages/media/articles into a vault and lets agents send outbound messages through a file-based outbox using Tencent ilink.",
+          "audience": "Personal knowledge-base users who want chat, media and agent notifications captured in Obsidian without unofficial WeChat protocol hacks.",
+          "ai_native_angle": "Agent communication is reduced to a local outbox protocol and an Agent.md instruction file inside the vault.",
+          "growth_signal": "Created 2026-08-16, updated 2026-08-17, 11 stars; repo has manifest, package files, smoke folder, source and README with QR login/inbox/outbox details.",
+          "runnability": "Obsidian/plugin and ilink flows were not installed or tested; outbound messaging depends on official gateway binding.",
+          "recommended_action": "Test only with a non-sensitive vault and verify attachment decryption/storage plus outbound audit notes."
         }
       }
     ],
@@ -31822,6 +32611,40 @@
         }
       }
     ],
+    "WTStarMark/QAQ": [
+      {
+        "id": "WTStarMark-QAQ:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "WTStarMark/QAQ",
+        "url": "https://github.com/WTStarMark/QAQ",
+        "category": "DSH Launch Resilience Guard",
+        "score": 76,
+        "summary": "Supervises DSH web, reads real DOM through headless Chrome/CDP, catches UI red screens and rolls back to the last known-good config.",
+        "audience": "DSH users with plugin-heavy profiles who need safer launch recovery.",
+        "aiNativeAngle": "Focuses on harness reliability using DOM-level health checks that normal process monitors miss.",
+        "growthSignal": "Created 2026-08-15, updated 2026-08-17, 3 stars and 1 fork; README has screenshots, requirements, pnpm workspace and tests.",
+        "runnability": "Requires Node 22, browser binary and DSH on PATH; not run here.",
+        "recommendedAction": "Watch for real-world recovery reports and test with deliberately broken plugin config.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "WTStarMark/QAQ",
+          "url": "https://github.com/WTStarMark/QAQ",
+          "category": "DSH Launch Resilience Guard",
+          "score": 76,
+          "summary": "Supervises DSH web, reads real DOM through headless Chrome/CDP, catches UI red screens and rolls back to the last known-good config.",
+          "audience": "DSH users with plugin-heavy profiles who need safer launch recovery.",
+          "ai_native_angle": "Focuses on harness reliability using DOM-level health checks that normal process monitors miss.",
+          "growth_signal": "Created 2026-08-15, updated 2026-08-17, 3 stars and 1 fork; README has screenshots, requirements, pnpm workspace and tests.",
+          "runnability": "Requires Node 22, browser binary and DSH on PATH; not run here.",
+          "recommended_action": "Watch for real-world recovery reports and test with deliberately broken plugin config."
+        }
+      }
+    ],
     "akiyamasho/yet-another-agent-orchestrator": [
       {
         "id": "akiyamasho-yet-another-agent-orchestrator:2026-08-16T10:20:00+08:00:top:0",
@@ -32661,6 +33484,40 @@
           "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
           "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
           "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+        }
+      }
+    ],
+    "CHENHUI-X/dsh-client-ui-dashboard": [
+      {
+        "id": "CHENHUI-X-dsh-client-ui-dashboard:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "CHENHUI-X/dsh-client-ui-dashboard",
+        "url": "https://github.com/CHENHUI-X/dsh-client-ui-dashboard",
+        "category": "DSH Conversation Metrics Dashboard",
+        "score": 75,
+        "summary": "Adds a live dashboard tab to DSH conversations with token, context pressure, cost, tool error and sparkline metrics.",
+        "audience": "DSH users who need operational visibility while long conversations run.",
+        "aiNativeAngle": "Turns live agent execution telemetry into an in-harness UI surface.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 2 forks; README details metrics and package files are present.",
+        "runnability": "No plugin install or live DSH session was tested.",
+        "recommendedAction": "Pair with TokenLedger in a test DSH profile to compare session metrics and attribution.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "CHENHUI-X/dsh-client-ui-dashboard",
+          "url": "https://github.com/CHENHUI-X/dsh-client-ui-dashboard",
+          "category": "DSH Conversation Metrics Dashboard",
+          "score": 75,
+          "summary": "Adds a live dashboard tab to DSH conversations with token, context pressure, cost, tool error and sparkline metrics.",
+          "audience": "DSH users who need operational visibility while long conversations run.",
+          "ai_native_angle": "Turns live agent execution telemetry into an in-harness UI surface.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17, 8 stars and 2 forks; README details metrics and package files are present.",
+          "runnability": "No plugin install or live DSH session was tested.",
+          "recommended_action": "Pair with TokenLedger in a test DSH profile to compare session metrics and attribution."
         }
       }
     ],
@@ -33524,6 +34381,40 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "omnigauge/omnigauge": [
+      {
+        "id": "omnigauge-omnigauge:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "omnigauge/omnigauge",
+        "url": "https://github.com/omnigauge/omnigauge",
+        "category": "AI Plan Quota CLI",
+        "score": 74,
+        "summary": "Terminal dashboard for Claude Code, OpenAI Codex and Grok CLI quota, tokens, burn rate, reset time and optional API spend.",
+        "audience": "Developers running multiple AI coding subscriptions who need quota visibility before long tasks.",
+        "aiNativeAngle": "Reads usage from local files and CLI quota panels, turning subscription windows into operational agent-planning signals.",
+        "growthSignal": "Created 2026-08-15, updated 2026-08-17; README has install script, providers, tests, site assets and explicit key-handling language.",
+        "runnability": "No install or local quota file inspection was performed.",
+        "recommendedAction": "Run read-only mode and verify it never needs provider keys for subscription usage display.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "omnigauge/omnigauge",
+          "url": "https://github.com/omnigauge/omnigauge",
+          "category": "AI Plan Quota CLI",
+          "score": 74,
+          "summary": "Terminal dashboard for Claude Code, OpenAI Codex and Grok CLI quota, tokens, burn rate, reset time and optional API spend.",
+          "audience": "Developers running multiple AI coding subscriptions who need quota visibility before long tasks.",
+          "ai_native_angle": "Reads usage from local files and CLI quota panels, turning subscription windows into operational agent-planning signals.",
+          "growth_signal": "Created 2026-08-15, updated 2026-08-17; README has install script, providers, tests, site assets and explicit key-handling language.",
+          "runnability": "No install or local quota file inspection was performed.",
+          "recommended_action": "Run read-only mode and verify it never needs provider keys for subscription usage display."
         }
       }
     ],
@@ -34737,6 +35628,40 @@
         }
       }
     ],
+    "db3-studio/info-guard": [
+      {
+        "id": "db3-studio-info-guard:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "db3-studio/info-guard",
+        "url": "https://github.com/db3-studio/info-guard",
+        "category": "Agent Secret Redaction Layer",
+        "score": 73,
+        "summary": "Exact-value redaction layer for Hermes Agent using a JSON pattern file, preflight leak scan and interactive setup.",
+        "audience": "Hermes Agent users who need display-time masking of known secret values beyond key-name patterns.",
+        "aiNativeAngle": "Adds a single redaction chokepoint for tool output, logs, transcripts and file reads inside an agent runtime.",
+        "growthSignal": "Created 2026-08-16, updated 2026-08-17; repo has install/uninstall scripts, tests, examples and safety-property docs.",
+        "runnability": "Hermes integration and fail-safe masking were not tested.",
+        "recommendedAction": "Verify with synthetic secrets and broken pattern files before trusting real credentials.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "db3-studio/info-guard",
+          "url": "https://github.com/db3-studio/info-guard",
+          "category": "Agent Secret Redaction Layer",
+          "score": 73,
+          "summary": "Exact-value redaction layer for Hermes Agent using a JSON pattern file, preflight leak scan and interactive setup.",
+          "audience": "Hermes Agent users who need display-time masking of known secret values beyond key-name patterns.",
+          "ai_native_angle": "Adds a single redaction chokepoint for tool output, logs, transcripts and file reads inside an agent runtime.",
+          "growth_signal": "Created 2026-08-16, updated 2026-08-17; repo has install/uninstall scripts, tests, examples and safety-property docs.",
+          "runnability": "Hermes integration and fail-safe masking were not tested.",
+          "recommended_action": "Verify with synthetic secrets and broken pattern files before trusting real credentials."
+        }
+      }
+    ],
     "BlueHeisenberg/kenward": [
       {
         "id": "BlueHeisenberg-kenward:2026-08-16T10:20:00+08:00:watchlist:0",
@@ -35665,6 +36590,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "yueseqaz/sakura-database-skill": [
+      {
+        "id": "yueseqaz-sakura-database-skill:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "yueseqaz/sakura-database-skill",
+        "url": "https://github.com/yueseqaz/sakura-database-skill",
+        "category": "Agent Database Skill",
+        "score": 72,
+        "summary": "TypeScript CLI/MCP skill for AI agents to discover MySQL schemas, execute bounded query plans and preview transactional mutations.",
+        "audience": "Agent builders who need database access with deterministic validation and audit layers.",
+        "aiNativeAngle": "Agent writes structured query/mutation/schema plans; the runtime validates, masks, paginates, explains and audits.",
+        "growthSignal": "Created 2026-08-14, updated 2026-08-17; repo has SKILL.md, references, agents, scripts, package files and README workflow diagram.",
+        "runnability": "No MySQL connection, MCP server or mutation preview was run.",
+        "recommendedAction": "Test against a disposable MySQL schema and inspect approval/rollback behavior.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "yueseqaz/sakura-database-skill",
+          "url": "https://github.com/yueseqaz/sakura-database-skill",
+          "category": "Agent Database Skill",
+          "score": 72,
+          "summary": "TypeScript CLI/MCP skill for AI agents to discover MySQL schemas, execute bounded query plans and preview transactional mutations.",
+          "audience": "Agent builders who need database access with deterministic validation and audit layers.",
+          "ai_native_angle": "Agent writes structured query/mutation/schema plans; the runtime validates, masks, paginates, explains and audits.",
+          "growth_signal": "Created 2026-08-14, updated 2026-08-17; repo has SKILL.md, references, agents, scripts, package files and README workflow diagram.",
+          "runnability": "No MySQL connection, MCP server or mutation preview was run.",
+          "recommended_action": "Test against a disposable MySQL schema and inspect approval/rollback behavior."
         }
       }
     ],
@@ -37025,6 +37984,40 @@
           "growth_signal": "GitHub 页面显示 5.6k stars、4 issues、10 PRs、548 commits。",
           "runnability": "README 提供 macOS/Linux/WSL 一行安装，文档覆盖 workspace、memory、continuity、agent harness。",
           "recommended_action": "关注 workspace/memory/continuity 模型是否形成可复用 agent OS 形态。"
+        }
+      }
+    ],
+    "anshrajore/atelier-mcp": [
+      {
+        "id": "anshrajore-atelier-mcp:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "anshrajore/atelier-mcp",
+        "url": "https://github.com/anshrajore/atelier-mcp",
+        "category": "AI App Quality Gate MCP",
+        "score": 71,
+        "summary": "MCP server and skill pack that adds post-generation UI/UX and backend quality gates for vibe-coded applications.",
+        "audience": "Developers using Cursor, Windsurf, Claude Code, Copilot or Antigravity to generate app code.",
+        "aiNativeAngle": "Makes critique and quality gates callable as agent tools/adapters after generation.",
+        "growthSignal": "Created 2026-08-16, updated 2026-08-17; repo has adapters, MCP server, skills, corpus, benchmarks and setup script.",
+        "runnability": "Claims and benchmark usefulness were not verified.",
+        "recommendedAction": "Use as a benchmarkable QA pattern only after checking false positives on real app diffs.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "anshrajore/atelier-mcp",
+          "url": "https://github.com/anshrajore/atelier-mcp",
+          "category": "AI App Quality Gate MCP",
+          "score": 71,
+          "summary": "MCP server and skill pack that adds post-generation UI/UX and backend quality gates for vibe-coded applications.",
+          "audience": "Developers using Cursor, Windsurf, Claude Code, Copilot or Antigravity to generate app code.",
+          "ai_native_angle": "Makes critique and quality gates callable as agent tools/adapters after generation.",
+          "growth_signal": "Created 2026-08-16, updated 2026-08-17; repo has adapters, MCP server, skills, corpus, benchmarks and setup script.",
+          "runnability": "Claims and benchmark usefulness were not verified.",
+          "recommended_action": "Use as a benchmarkable QA pattern only after checking false positives on real app diffs."
         }
       }
     ],
@@ -38764,6 +39757,40 @@
           "score": 70,
           "summary": "以 context graph 为核心的 agent runtime 平台，适合做更系统化的“上下文操作系统”。",
           "recommended_action": "若你在做 RAG→Graph 化或上下文工程，建议深入其数据模型与查询层。"
+        }
+      }
+    ],
+    "carlovsk1/vidgrid": [
+      {
+        "id": "carlovsk1-vidgrid:2026-08-17T11:15:03+08:00:watchlist:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "watchlist",
+        "rank": 7,
+        "fullName": "carlovsk1/vidgrid",
+        "url": "https://github.com/carlovsk1/vidgrid",
+        "category": "Video-to-Grid Agent Utility",
+        "score": 69,
+        "summary": "Shell utility and Claude plugin that turns video URLs into frame-grid contact sheets plus transcripts so a model can inspect video context.",
+        "audience": "Agents or researchers that need low-cost visual context from social/video URLs.",
+        "aiNativeAngle": "Optimizes video observation for multimodal model input by packaging frames and transcript together.",
+        "growthSignal": "Created and updated 2026-08-17; repo includes command files, plugin metadata and concise README.",
+        "runnability": "Downloader, transcript generation and platform compatibility were not tested.",
+        "recommendedAction": "Recheck after broader platform/error-handling docs and a test fixture appear.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "carlovsk1/vidgrid",
+          "url": "https://github.com/carlovsk1/vidgrid",
+          "category": "Video-to-Grid Agent Utility",
+          "score": 69,
+          "summary": "Shell utility and Claude plugin that turns video URLs into frame-grid contact sheets plus transcripts so a model can inspect video context.",
+          "audience": "Agents or researchers that need low-cost visual context from social/video URLs.",
+          "ai_native_angle": "Optimizes video observation for multimodal model input by packaging frames and transcript together.",
+          "growth_signal": "Created and updated 2026-08-17; repo includes command files, plugin metadata and concise README.",
+          "runnability": "Downloader, transcript generation and platform compatibility were not tested.",
+          "recommended_action": "Recheck after broader platform/error-handling docs and a test fixture appear."
         }
       }
     ],
@@ -41282,6 +42309,162 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "abnormalscruple-85/Premium-Activator-Tool-Windows-2026": [
+      {
+        "id": "abnormalscruple-85-Premium-Activator-Tool-Windows-2026:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+        "url": "https://github.com/abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Activator/unlock positioning for AI apps is likely unsafe or policy-abusive and does not fit the product radar quality bar.",
+        "rawJson": {
+          "full_name": "abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+          "url": "https://github.com/abnormalscruple-85/Premium-Activator-Tool-Windows-2026",
+          "skip_reason": "Activator/unlock positioning for AI apps is likely unsafe or policy-abusive and does not fit the product radar quality bar."
+        }
+      }
+    ],
+    "beancookie/awesome-dsh-plugin": [
+      {
+        "id": "beancookie-awesome-dsh-plugin:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "beancookie/awesome-dsh-plugin",
+        "url": "https://github.com/beancookie/awesome-dsh-plugin",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Useful ecosystem index with strong stars/forks, but it is a curated list/site rather than a directly runnable AI-native product.",
+        "rawJson": {
+          "full_name": "beancookie/awesome-dsh-plugin",
+          "url": "https://github.com/beancookie/awesome-dsh-plugin",
+          "skip_reason": "Useful ecosystem index with strong stars/forks, but it is a curated list/site rather than a directly runnable AI-native product."
+        }
+      }
+    ],
+    "BUNNY-NIRMALA/kapture-finance-collections-voice-agent": [
+      {
+        "id": "BUNNY-NIRMALA-kapture-finance-collections-voice-agent:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+        "url": "https://github.com/BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Concrete voice-agent scenario, but appears to be a mock/demo finance collections implementation; payment/identity/safety claims need much stronger evidence.",
+        "rawJson": {
+          "full_name": "BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+          "url": "https://github.com/BUNNY-NIRMALA/kapture-finance-collections-voice-agent",
+          "skip_reason": "Concrete voice-agent scenario, but appears to be a mock/demo finance collections implementation; payment/identity/safety claims need much stronger evidence."
+        }
+      }
+    ],
+    "daboge-beach/dsh-skin-studio": [
+      {
+        "id": "daboge-beach-dsh-skin-studio:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "daboge-beach/dsh-skin-studio",
+        "url": "https://github.com/daboge-beach/dsh-skin-studio",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "DSH skin/gallery work is UI customization rather than an AI-native product surface or agent workflow primitive.",
+        "rawJson": {
+          "full_name": "daboge-beach/dsh-skin-studio",
+          "url": "https://github.com/daboge-beach/dsh-skin-studio",
+          "skip_reason": "DSH skin/gallery work is UI customization rather than an AI-native product surface or agent workflow primitive."
+        }
+      }
+    ],
+    "surendranb/writing-skills": [
+      {
+        "id": "surendranb-writing-skills:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "surendranb/writing-skills",
+        "url": "https://github.com/surendranb/writing-skills",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Well-packaged agent skill collection, but the core artifact is writing-style procedures and installers rather than a product workflow with its own user surface.",
+        "rawJson": {
+          "full_name": "surendranb/writing-skills",
+          "url": "https://github.com/surendranb/writing-skills",
+          "skip_reason": "Well-packaged agent skill collection, but the core artifact is writing-style procedures and installers rather than a product workflow with its own user surface."
+        }
+      }
+    ],
+    "U-SIE/U-SIE": [
+      {
+        "id": "U-SIE-U-SIE:2026-08-17T11:15:03+08:00:skip:0",
+        "runId": "run:2026-08-17:2026-08-17T11:15:03+08:00",
+        "runDate": "2026-08-17",
+        "generatedAt": "2026-08-17T11:15:03+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "U-SIE/U-SIE",
+        "url": "https://github.com/U-SIE/U-SIE",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Concept-heavy sovereign AI intake project with document-style README and limited visible product/runtime structure in this audit.",
+        "rawJson": {
+          "full_name": "U-SIE/U-SIE",
+          "url": "https://github.com/U-SIE/U-SIE",
+          "skip_reason": "Concept-heavy sovereign AI intake project with document-style README and limited visible product/runtime structure in this audit."
         }
       }
     ],
