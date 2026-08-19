@@ -30,8 +30,8 @@ AI Daily Product Radar 是一个开源雷达看板，用来整理 Codex 每天�
 ## 在线体验
 
 - GitHub Pages: <https://brocademaple.github.io/ai-daily-product-radar/>
-- 当前公开数据: 55 期历史日报，843 个去重 GitHub 项目，1044 条项目历史记录
-- 最新数据窗口: 2026-08-17
+- 当前公开数据: 56 期历史日报，866 个去重 GitHub 项目，1067 条项目历史记录
+- 最新数据窗口: 2026-08-19
 - 展示模式: 静态 snapshot，无需后端服务
 
 ## 你可以在看板里做什么
