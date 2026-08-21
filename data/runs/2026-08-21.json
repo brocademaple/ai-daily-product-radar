@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-08-21",
+  "generated_at": "2026-08-21T10:19:51+08:00",
+  "data_window": "2026-08-18 00:00 to 2026-08-21 10:20 Asia/Shanghai. GitHub Search API queries covered ai agent, mcp agent, browser agent, code agent, voice agent, RAG agent, and AI workflow with both created:>=2026-08-18 and pushed:>=2026-08-18 sort=updated strategies. Raw responses were saved under /tmp/radar_2026_08_21_*.json; selected README and repository metadata audits were saved under /tmp/radar_2026_08_21_readmes/.",
+  "source_summary": "git fetch origin succeeded on main; pre-existing unrelated frontend/deploy worktree changes and the untracked 2026-08-19 Lark retry note were preserved unstaged. Discovery used unauthenticated GitHub Search API metadata plus selected README audits through the GitHub API raw README endpoint. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-handshake-tested, credential-tested, provider-tested, payment-tested, security-scanned or deployed.",
+  "trend_observations": "Today clustered around native/local coding agents, evidence and memory layers for long-running agents, MCP/tool-call governance, desktop/browser computer-use substrates, multi-agent workflow builders and vertical MCP product surfaces. The strongest projects expose concrete CLI, desktop, API, MCP, Docker, live-demo, release, screenshot or documentation surfaces. Thin prompt guides, course/event repositories, resource collections and concept-only READMEs were downgraded.",
+  "assumptions": "Scores are editorial point-in-time rankings based on GitHub Search API metadata, README evidence, visible product surface, install/build cues, documentation completeness, repository freshness and AI-native workflow depth. Stars and forks are snapshots from unauthenticated GitHub Search API, not exact growth deltas. README claims were not independently runtime-verified. Pure skill/content collections, learning notes, prompt collections, event/course repos, thin wrappers and concept-only READMEs were downgraded or skipped.",
+  "markdown_report": "data/runs/2026-08-21.md",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "1ay1/agentty",
+      "url": "https://github.com/1ay1/agentty",
+      "category": "Native Terminal Coding Agent",
+      "score": 91,
+      "summary": "C++ terminal coding agent packaged as a small static binary with provider choice, sandboxed shell calls, SSH air-gap mode, skills, memory and local RAG.",
+      "audience": "Developers who want a fast local coding-agent CLI without Node/Python runtime overhead.",
+      "ai_native_angle": "Treats agent runtime speed, sandboxing, local retrieval and workspace-scoped file tools as first-class product primitives.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 606 stars and 17 forks, releases, install script, demo GIF and active documentation.",
+      "runnability": "README gives a direct install command and CLI launch path; no binary install, provider auth, shell sandbox, SSH relay or local RAG run was tested.",
+      "recommended_action": "Trial on a disposable repository and compare cold start, tool latency, sandbox boundaries and memory behavior against existing coding agents."
+    },
+    {
+      "rank": 2,
+      "full_name": "ModelEngine-Group/nexent",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "category": "Zero-code Agent Generation Platform",
+      "score": 89,
+      "summary": "Self-hostable platform for generating production-grade AI agents with tools, skills, memory, orchestration, feedback loops and control planes.",
+      "audience": "Teams that want agent-building workflows packaged behind a web platform and Docker/Kubernetes deployment path.",
+      "ai_native_angle": "Uses natural-language agent creation plus harness constraints as the core interface instead of exposing only SDK primitives.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 5829 stars and 719 forks, Docker deployment docs, demo video, Helm/Kubernetes paths and public docs.",
+      "runnability": "README has concrete Docker and Kubernetes install flows; no deployment, image pull, model configuration, agent generation or auth flow was tested.",
+      "recommended_action": "Evaluate the Docker path with one internal workflow and inspect how generated agents expose logs, memory and rollback controls."
+    },
+    {
+      "rank": 3,
+      "full_name": "DemonDamon/AgenticX",
+      "url": "https://github.com/DemonDamon/AgenticX",
+      "category": "Multi-agent Platform and Desktop Studio",
+      "score": 88,
+      "summary": "Python SDK, CLI, Studio server and Machi desktop app for meta-agent orchestration, providers, MCP hub, memory, avatar/group chat, skill ecosystem and IM gateway.",
+      "audience": "Builders who need a full-stack multi-agent platform spanning development, operations, chat surfaces and local/enterprise workflows.",
+      "ai_native_angle": "Combines agent construction, runtime control, memory, skills, MCP and communication gateways into one product surface.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 215 stars and 45 forks, public website, README product positioning and multi-surface architecture.",
+      "runnability": "Product scope and packaging are strong, but no SDK install, Studio launch, desktop app launch, MCP hub test or Feishu/WeChat gateway test was run.",
+      "recommended_action": "Run the smallest documented SDK/CLI example first, then verify whether Studio state and desktop state stay consistent."
+    },
+    {
+      "rank": 4,
+      "full_name": "Mindburn-Labs/helm-ai-kernel",
+      "url": "https://github.com/Mindburn-Labs/helm-ai-kernel",
+      "category": "Agent Action Firewall",
+      "score": 86,
+      "summary": "Local fail-closed firewall for AI-agent actions that can quarantine MCP tools, proxy OpenAI-compatible requests, emit signed receipts and verify EvidencePacks offline.",
+      "audience": "Teams letting agents call tools or shell commands and needing auditable policy enforcement at the action boundary.",
+      "ai_native_angle": "Inserts receipts, deny/escalate/allow decisions and offline verification into the agent execution path.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 56 stars and 3 forks, docs site, brew install path, quickstart, CLI reference and security model docs.",
+      "runnability": "README claims a five-minute local proof and no cloud/model key requirement; no brew install, policy run, MCP quarantine or receipt verification was tested.",
+      "recommended_action": "Replay a small local destructive-action scenario and inspect signed receipt integrity before adopting for real workstations."
+    },
+    {
+      "rank": 5,
+      "full_name": "BugraAkdemir/memo",
+      "url": "https://github.com/BugraAkdemir/memo",
+      "category": "Local-first Personal AI Assistant",
+      "score": 85,
+      "summary": "Go + Flutter assistant with local RAG memory, sandboxed agent tools, proactive habits, reminders, local model management and WhatsApp/calendar integrations.",
+      "audience": "Users who want a private local assistant that can remember, act on files/commands and bridge daily communication.",
+      "ai_native_angle": "Moves memory, tool execution, proactive suggestions and messaging into a local app rather than a stateless chat surface.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 6 stars and 1 fork, homepage, screenshots, video assets and detailed feature docs.",
+      "runnability": "README shows substantial UI and agent behavior evidence; no Flutter/Go build, local model download, WhatsApp login or command sandbox test was run.",
+      "recommended_action": "Test the file-action sandbox and memory deletion/export semantics before connecting personal accounts."
+    },
+    {
+      "rank": 6,
+      "full_name": "SeeRay11/OpenFlow",
+      "url": "https://github.com/SeeRay11/OpenFlow",
+      "category": "Visual Multi-agent Workflow Builder",
+      "score": 84,
+      "summary": "Visual canvas for wiring planner, architect, coder and other role cards into runnable multi-agent pipelines backed by OpenCode.",
+      "audience": "Developers who want to design and launch multi-agent coding workflows without hand-editing orchestration files.",
+      "ai_native_angle": "Makes role wiring, parallel agent execution and project targeting visible and editable as the product experience.",
+      "growth_signal": "Created 2026-08-18 and updated 2026-08-21; GitHub API showed 10 stars, install/run instructions and explicit pre-flight safeguards.",
+      "runnability": "README documents Bun install, OpenCode server and Flow dev server paths; no install, canvas run, agent merge or file-write safeguard was tested.",
+      "recommended_action": "Try with a throwaway OPENFLOW_PROJECT and verify pre-flight refusal behavior before pointing it at a real repo."
+    },
+    {
+      "rank": 7,
+      "full_name": "NORTHTEKDevs/ghost",
+      "url": "https://github.com/NORTHTEKDevs/ghost",
+      "category": "Desktop Computer-use Layer",
+      "score": 83,
+      "summary": "Windows/Linux computer-use layer with CLI, REST API and MCP server for driving native desktop apps in the background with act-then-verify semantics.",
+      "audience": "Agent builders who need programmatic control over native applications without stealing focus from the user.",
+      "ai_native_angle": "Turns desktop UI automation into an MCP-addressable, verifiable substrate for agents.",
+      "growth_signal": "Updated 2026-08-21; GitHub API showed 1 star and a homepage, while README describes CLI, HTTP and MCP surfaces plus background verification.",
+      "runnability": "README has examples and platform claims; no Windows/Linux install, MCP handshake, screenshot capture, element locator or parallel request test was run.",
+      "recommended_action": "Watch for reproducible demos and test on one non-sensitive desktop app before considering production use."
+    },
+    {
+      "rank": 8,
+      "full_name": "Adam-Ghanem/Helix",
+      "url": "https://github.com/Adam-Ghanem/Helix",
+      "category": "Durable Agent Orchestration Runtime",
+      "score": 82,
+      "summary": "Provider-neutral multi-agent runtime with durable JSONL event store, task DAGs, approval gates, scheduler, HTTP API, CLI, TypeScript SDK and dashboard shell.",
+      "audience": "Builders who want agent execution state, policy, recovery and observability owned by a runtime rather than by a single model provider.",
+      "ai_native_angle": "Separates the LLM from execution state, scheduling, permissions, recovery, telemetry and evidence.",
+      "growth_signal": "Created 2026-08-20 and updated 2026-08-21; README states runnable vertical slice with pnpm verify, API and CLI commands.",
+      "runnability": "README is unusually concrete for a new repo; no pnpm install, tests, API launch, CLI run or recovery replay was performed.",
+      "recommended_action": "Run the golden demo and inspect event replay plus approval gates before trusting broader orchestration claims."
+    },
+    {
+      "rank": 9,
+      "full_name": "Alex0AI/tracefact",
+      "url": "https://github.com/Alex0AI/tracefact",
+      "category": "Agent Run Reliability Report",
+      "score": 81,
+      "summary": "Converts Codex, Gemini CLI, Browser Use, JSONL and OpenTelemetry traces into evidence-linked reports, SARIF outputs and replay capsules.",
+      "audience": "Teams reviewing browser/coding agent runs and needing evidence beyond model-written summaries.",
+      "ai_native_angle": "Makes agent execution traces portable, replayable and claim-linked, with uncertainty surfaced when evidence is missing.",
+      "growth_signal": "Created 2026-08-20; README has live demo, terminal GIF, CLI commands, Open Agent Trace Schema and read-only MCP server docs.",
+      "runnability": "README includes local build/analyze commands and browser demo; no trace import, report generation, replay verification or MCP server run was tested.",
+      "recommended_action": "Feed it one real Codex JSONL run and compare report claims to known terminal evidence."
+    },
+    {
+      "rank": 10,
+      "full_name": "ArihantDeva/heimdall",
+      "url": "https://github.com/ArihantDeva/heimdall",
+      "category": "Verified Agent Memory Layer",
+      "score": 79,
+      "summary": "Self-healing knowledge layer for coding agents with ranked search, trust verdicts, edit-log sync, stale pruning, telemetry and agent tools.",
+      "audience": "Coding-agent users who repeatedly lose project-specific context across sessions or act on stale paths.",
+      "ai_native_angle": "Adds verification and staleness checks to agent memory retrieval instead of treating memory hits as automatically reliable.",
+      "growth_signal": "Created 2026-08-20 and updated 2026-08-21; GitHub API showed 5 stars and README details trust verdicts, hooks and CLI tools.",
+      "runnability": "README describes concrete scripts and a Graft-style backend contract; no install, index build, edit-log sync or verdict accuracy check was run.",
+      "recommended_action": "Watch for a minimal reproducible demo with a small repo rename/edit scenario."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "Haroon-jay/wctx",
+      "url": "https://github.com/Haroon-jay/wctx",
+      "category": "Cross-repo Coding-agent Context MCP",
+      "score": 76,
+      "summary": "Local-first MCP server that turns finished sessions into findings with commit provenance, stale checks and evidence verification.",
+      "audience": "Teams with repeated cross-repository coding-agent work.",
+      "ai_native_angle": "Treats past agent sessions as queryable, verifiable context rather than loose notes.",
+      "growth_signal": "Created 2026-08-19 and updated 2026-08-20; README shows pnpm install, doctor command and MCP setup.",
+      "runnability": "No install, database check, MCP registration or evidence verification command was run.",
+      "recommended_action": "Watch for real multi-repo examples and conflict handling."
+    },
+    {
+      "rank": 2,
+      "full_name": "PeterLeeXX/GroundRail",
+      "url": "https://github.com/PeterLeeXX/GroundRail",
+      "category": "Coding-agent Guardrail Skill",
+      "score": 75,
+      "summary": "Agent Skill for fact, plan, execute, review and handoff gates across Codex, Claude Code and compatible hosts.",
+      "audience": "Users running longer coding tasks who want repeatable process boundaries.",
+      "ai_native_angle": "Packages agent working discipline as an installable skill with explicit state and review gates.",
+      "growth_signal": "Created 2026-08-18 and updated 2026-08-20; GitHub API showed 17 stars and README has install commands.",
+      "runnability": "No skill install or host recognition test was run.",
+      "recommended_action": "Watch adoption and compare with existing local project skills before installing globally."
+    },
+    {
+      "rank": 3,
+      "full_name": "Daily-AC/wanctl",
+      "url": "https://github.com/Daily-AC/wanctl",
+      "category": "Encrypted Remote Device Control for Agents",
+      "score": 74,
+      "summary": "One Go binary for relay, portal, agent, controller and MCP roles carrying commands/files/logs through an end-to-end encrypted relay.",
+      "audience": "Users who need human or agent access to remote machines across WAN boundaries.",
+      "ai_native_angle": "Makes remote exec/file/log device operations controllable by both CLI and MCP clients.",
+      "growth_signal": "Created 2026-08-20 and updated the same day; README points to architecture and security audit docs.",
+      "runnability": "No relay, token, local proof, MCP role or encryption check was tested.",
+      "recommended_action": "Track security model maturity before exposing any real devices."
+    },
+    {
+      "rank": 4,
+      "full_name": "Artsrun/web-agent-machine",
+      "url": "https://github.com/Artsrun/web-agent-machine",
+      "category": "Browser-native Agent Substrate",
+      "score": 73,
+      "summary": "Capability-secured browser runtime with Agent Kernel, WASM, Workers, WebGPU, FileAgent and BrowserAgent concepts.",
+      "audience": "Builders exploring browser-contained agent execution and local model routing.",
+      "ai_native_angle": "Treats the browser itself as the hardware abstraction layer for agents.",
+      "growth_signal": "Created 2026-08-19 and updated 2026-08-20; README has live demo URL and Playwright install cue.",
+      "runnability": "Live demo was not opened and no Playwright/browser test was run.",
+      "recommended_action": "Watch until demos show repeatable agent actions and capability prompts."
+    },
+    {
+      "rank": 5,
+      "full_name": "Pablo-aps/prove-it",
+      "url": "https://github.com/Pablo-aps/prove-it",
+      "category": "Adversarial Verification Skill",
+      "score": 72,
+      "summary": "Agent Skill that forces coding agents to look for evidence against their own success claims before returning a verdict.",
+      "audience": "Teams reviewing AI coding-agent fixes, deployments and CI claims.",
+      "ai_native_angle": "Converts skeptical verification into a reusable agent runtime procedure.",
+      "growth_signal": "Created 2026-08-18 and updated 2026-08-19; GitHub API showed 15 stars and a skills.sh install path.",
+      "runnability": "No skill install, validation run or verdict comparison was performed.",
+      "recommended_action": "Watch for examples on deployed-version verification and CI false positives."
+    },
+    {
+      "rank": 6,
+      "full_name": "Data-System-School/agent-skills",
+      "url": "https://github.com/Data-System-School/agent-skills",
+      "category": "Evidence-backed Agent Skills",
+      "score": 71,
+      "summary": "Portable Markdown skills for coding agents, starting with repository investigation modes that label claims by evidence strength.",
+      "audience": "Agent users who want reusable investigation and verification protocols.",
+      "ai_native_angle": "Makes evidence ledgers and claim labels part of the skill contract.",
+      "growth_signal": "Created 2026-08-19 and updated 2026-08-20; README lists install paths for Claude and Codex plus end-to-end examples.",
+      "runnability": "No skill copy/symlink or investigation run was tested.",
+      "recommended_action": "Watch for more skill coverage beyond investigation."
+    },
+    {
+      "rank": 7,
+      "full_name": "Cuneiform-LLC/clearlist-mcp",
+      "url": "https://github.com/Cuneiform-LLC/clearlist-mcp",
+      "category": "Vertical Commerce MCP Surface",
+      "score": 70,
+      "summary": "MCP server and Agent Skill for ClearList, an AI resale manager that lets agents onboard sellers, create listings, publish sale pages and manage buyers.",
+      "audience": "People clearing inventory who want an agent to run a resale workflow end to end.",
+      "ai_native_angle": "Exposes a real vertical SaaS workflow to agents through MCP and installable skills.",
+      "growth_signal": "Updated 2026-08-21; README has API docs, OpenAPI spec, MCP server card and install commands.",
+      "runnability": "No account flow, MCP server build, listing creation or buyer queue action was tested.",
+      "recommended_action": "Watch for public sandbox credentials or demo fixtures before attempting a workflow."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Awesome-AI-Pedia/Awesome-AI-Pedia",
+      "url": "https://github.com/Awesome-AI-Pedia/Awesome-AI-Pedia",
+      "skip_reason": "Large AI resource/navigation collection; useful reference, but not a directly runnable product for today's radar."
+    },
+    {
+      "full_name": "0end1/ai-agent-study",
+      "url": "https://github.com/0end1/ai-agent-study",
+      "skip_reason": "Study notes and conceptual learning material rather than a product runtime."
+    },
+    {
+      "full_name": "CKcolorful/Code-Agent-Learning",
+      "url": "https://github.com/CKcolorful/Code-Agent-Learning",
+      "skip_reason": "Learning repo with papers/minimal harness experiments; lower product surface than installable tools."
+    },
+    {
+      "full_name": "MSA-83/ai-system-prompts-collection",
+      "url": "https://github.com/MSA-83/ai-system-prompts-collection",
+      "skip_reason": "Prompt/config collection with browsable website, but core value is reference content."
+    },
+    {
+      "full_name": "Neeeophytee/agent-stylebooks",
+      "url": "https://github.com/Neeeophytee/agent-stylebooks",
+      "skip_reason": "Well-packaged editorial skills, but more content-pack/skill-library than AI-native product workflow."
+    },
+    {
+      "full_name": "LIDR-academy/ai_agents_event",
+      "url": "https://github.com/LIDR-academy/ai_agents_event",
+      "skip_reason": "Event/course material signal, not a product codebase."
+    },
+    {
+      "full_name": "Calazansmacchiutti/agentic-rag-eval",
+      "url": "https://github.com/Calazansmacchiutti/agentic-rag-eval",
+      "skip_reason": "Thin agentic RAG evaluation repo with insufficient README/product evidence in this pass."
+    },
+    {
+      "full_name": "Anonymous-H2R/llm-form-agent",
+      "url": "https://github.com/Anonymous-H2R/llm-form-agent",
+      "skip_reason": "Browser form-filling agent concept is relevant, but public signal is too early and unaudited for Top/Watchlist today."
+    }
+  ]
+}
