@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-08-22",
+  "generated_at": "2026-08-22T14:35:00+08:00",
+  "data_window": "2026-08-20 00:00 to 2026-08-22 14:35 Asia/Shanghai. GitHub Search API queries covered `ai agent`, `mcp agent`, `browser agent`, `code agent`, `RAG agent`, `AI workflow`, `voice agent`, and `copilot agent` using created/pushed windows and sort=updated. Raw responses were saved under `/tmp/radar_2026_08_22_*.json`; selected README audits were saved under `/tmp/radar_2026_08_22_readmes/`.",
+  "source_summary": "git fetch origin succeeded on `main...origin/main`; pre-existing unrelated frontend/deploy worktree changes and the old untracked `data/runs/2026-08-19-lark-message.md` were preserved unstaged. Discovery used unauthenticated GitHub Search API metadata plus selected README raw downloads. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-handshake-tested, credential-tested, provider-tested, payment-tested, security-scanned or deployed.",
+  "trend_observations": "Today’s strongest cluster is agent infrastructure becoming productized: native coding-agent CLIs, GitHub-native workflow controls, operator consoles, desktop/browser execution layers, command guardrails, trace-to-test reliability, and local retrieval/memory surfaces. The useful distinction was not star count alone; README evidence for install paths, screenshots, demos, CLI/API/MCP surfaces, Docker/self-host flows and permission boundaries mattered more than broad AI branding.",
+  "assumptions": "Scores are editorial point-in-time rankings based on GitHub Search API metadata, README evidence, visible product surface, install/build cues, documentation completeness, repository freshness and AI-native workflow depth. Stars/forks are unauthenticated API snapshots, not exact growth deltas. README claims were not independently runtime-verified. Mature infrastructure, framework-only repos, skill catalogs, courses, prompt/resource collections, generated marketing repos and concept-only READMEs were downgraded or skipped.",
+  "markdown_report": "data/runs/2026-08-22.md",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "can1357/oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "category": "Native Terminal Coding Agent",
+      "score": 92,
+      "summary": "Terminal AI coding agent with hash-anchored edits, optimized tool harness, LSP, browser support, subagents and multiple install paths including shell, Homebrew, Bun and Nix.",
+      "audience": "Developers who want a high-performance local coding-agent CLI with richer tool context than a plain chat wrapper.",
+      "ai_native_angle": "Treats code edits, browser actions, LSP context, subagents and local tool execution as one native agent runtime rather than bolting AI onto an editor.",
+      "growth_signal": "GitHub Search API snapshot showed 26353 stars and 2566 forks; created 2025-12-31, updated 2026-08-22, pushed 2026-08-22. README exposes direct install commands, demos/screenshots, browser and tool-harness claims.",
+      "runnability": "README has concrete install/run paths; no binary install, provider auth, browser action, LSP integration or repository mutation was tested.",
+      "recommended_action": "Trial on a disposable repo and compare edit anchoring, browser behavior and rollback boundaries against the current coding-agent stack."
+    },
+    {
+      "rank": 2,
+      "full_name": "rocketride-org/rocketride-server",
+      "url": "https://github.com/rocketride-org/rocketride-server",
+      "category": "AI Workflow Pipeline Engine",
+      "score": 90,
+      "summary": "C++-core AI pipeline engine with Python-extensible nodes, 50+ nodes, model/vector-provider integrations, VS Code extension, SDKs, Docker deployment and MCP server packaging.",
+      "audience": "Teams building repeatable LLM/RAG/agent workflows that need visual or file-backed pipeline definitions plus local and cloud deployment options.",
+      "ai_native_angle": "Makes AI workflow graphs, provider routing, IDE editing, MCP exposure and deployable pipeline artifacts the product surface.",
+      "growth_signal": "GitHub Search API snapshot showed 6964 stars and 2767 forks; created 2026-02-11, updated 2026-08-22, pushed 2026-08-22. README includes pipeline screenshots, Docker/local/cloud run paths, SDK cues and MCP server link.",
+      "runnability": "README offers self-host, Docker and IDE paths; no Docker launch, VS Code extension test, pipeline run, MCP server check or provider configuration was performed.",
+      "recommended_action": "Run one local `.pipe` example and inspect how failures, secrets and provider swaps are represented."
+    },
+    {
+      "rank": 3,
+      "full_name": "github/gh-aw",
+      "url": "https://github.com/github/gh-aw",
+      "category": "GitHub Agentic Workflows",
+      "score": 89,
+      "summary": "GitHub CLI extension for running agentic workflows around repositories, issues, branches and pull-request work from the GitHub-native command surface.",
+      "audience": "Engineering teams already using GitHub CLI who want agent workflows to live near repository operations instead of inside a separate SaaS console.",
+      "ai_native_angle": "Uses GitHub’s own CLI and permission model as the control plane for agentic software-work loops.",
+      "growth_signal": "GitHub Search API snapshot showed 4978 stars and 501 forks; created 2025-08-12, updated 2026-08-22, pushed 2026-08-22. Partial README audit captured quickstart and extension install path before timeout; high update activity in search metadata.",
+      "runnability": "README quickstart shows `gh extension install github/gh-aw`; no extension install, auth check, workflow execution or repo write was tested.",
+      "recommended_action": "Evaluate in a non-critical repository and inspect permission prompts plus PR traceability."
+    },
+    {
+      "rank": 4,
+      "full_name": "kenryu42/cc-safety-net",
+      "url": "https://github.com/kenryu42/cc-safety-net",
+      "category": "Coding-agent Guardrail CLI",
+      "score": 87,
+      "summary": "Universal guardrail hook for coding CLIs that blocks destructive git/filesystem commands and secret-file access before agent commands execute.",
+      "audience": "Users running Codex, Claude Code, Copilot CLI, OpenCode, Cursor or similar coding agents on real worktrees.",
+      "ai_native_angle": "Moves agent safety from post-hoc review into the command hook boundary where file, git and credential access happen.",
+      "growth_signal": "GitHub Search API snapshot showed 1502 stars and 74 forks; created 2025-12-25, updated 2026-08-22, pushed 2026-08-22. README documents v2 secret protection, interactive installer and support for many coding-agent CLIs.",
+      "runnability": "Quickstart uses `npx -y cc-safety-net@latest install`; no hook install, destructive-command simulation, secret-read block or uninstall path was tested.",
+      "recommended_action": "Test on a throwaway CLI profile and verify false positives around legitimate build/test commands."
+    },
+    {
+      "rank": 5,
+      "full_name": "risa-labs-inc/BossConsole",
+      "url": "https://github.com/risa-labs-inc/BossConsole",
+      "category": "Multi-agent Operator Console",
+      "score": 86,
+      "summary": "Native JVM operator console for Claude Code, Codex, Gemini and OpenCode with real browser, terminal, editor, secrets and a large built-in MCP/toolbox surface.",
+      "audience": "Researchers and teams who want to supervise multiple agent sessions with visible browser/terminal/editor context from one desktop app.",
+      "ai_native_angle": "Packages agent supervision as an operator console with tools, plugins, browser state and multi-threaded runtime as first-class UX.",
+      "growth_signal": "GitHub Search API snapshot showed 223 stars and 8 forks; created 2026-07-21, updated 2026-08-22, pushed 2026-08-22. README points to prebuilt installers, screenshots and comparison tables covering MCP, browser and runtime surfaces.",
+      "runnability": "README has release/install direction and product screenshots; no installer, tool permission, browser session, secret handling or multi-agent run was tested.",
+      "recommended_action": "Watch release stability and trial one read-only browser/repo session before trusting write actions."
+    },
+    {
+      "rank": 6,
+      "full_name": "Jwuthri/Tracely",
+      "url": "https://github.com/Jwuthri/Tracely",
+      "category": "Agent Trace Regression Platform",
+      "score": 85,
+      "summary": "Trace-native CI/CD platform that converts production AI-agent failures into frozen regression cases with API, worker, UI, Postgres, ClickHouse, Redis and MinIO stack.",
+      "audience": "Teams shipping agents in production who need failed runs to become reproducible CI checks.",
+      "ai_native_angle": "Uses the recorded agent run itself as the test artifact, closing the loop from observability to regression prevention.",
+      "growth_signal": "GitHub Search API snapshot showed 910 stars and 35 forks; created 2026-06-03, updated 2026-08-22, pushed 2026-08-22. README shows one-click self-host stack, demo/screenshot signals and trace-to-test positioning.",
+      "runnability": "README describes full self-host stack; no compose launch, trace import, regression replay or CI integration was tested.",
+      "recommended_action": "Feed it one known failed agent trace and verify whether the replay blocks the expected PR path."
+    },
+    {
+      "rank": 7,
+      "full_name": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "category": "Agent-ready Search and RAG Index",
+      "score": 84,
+      "summary": "Single-binary autoindex engine for code, docs, logs and PDFs with Elasticsearch-compatible API, MCP-native positioning and token-efficient search/RAG for agents.",
+      "audience": "Developers and agent builders who need fast local retrieval without making agents grep entire repositories or document sets.",
+      "ai_native_angle": "Optimizes retrieval around agent token budgets and agent memory/search needs rather than only human search UX.",
+      "growth_signal": "GitHub Search API snapshot showed 1564 stars and 284 forks; created 2026-06-30, updated 2026-08-22, pushed 2026-08-22. README highlights one-prompt install, single static binary, MCP-native docs and search/RAG use cases.",
+      "runnability": "Install docs and CLI cues are present; no binary install, index creation, MCP client setup or retrieval-quality comparison was run.",
+      "recommended_action": "Index one medium repo and compare token spend plus recall against ripgrep and existing RAG tools."
+    },
+    {
+      "rank": 8,
+      "full_name": "Fangyuan025/Chaty",
+      "url": "https://github.com/Fangyuan025/Chaty",
+      "category": "Local AI Desktop Workbench",
+      "score": 83,
+      "summary": "Private on-device desktop AI app with GGUF/MLX local models, coding agent, RAG knowledge base, Deep Research, vision, voice and browser automation claims.",
+      "audience": "Users who want a local/offline-capable AI workspace with model control and personal data kept on device.",
+      "ai_native_angle": "Combines local model setup, permission-gated coding actions, RAG, browser automation and voice into a desktop product surface.",
+      "growth_signal": "GitHub Search API snapshot showed 36 stars and 3 forks; created 2026-06-04, updated 2026-08-22, pushed 2026-08-22. README includes demo GIF, screenshots, install cues and detailed local-agent/browser features.",
+      "runnability": "README provides strong UI evidence; no app launch, model download, permission grant, Chrome automation or offline-mode test was performed.",
+      "recommended_action": "Test first-launch model setup and permission prompts before adding personal files."
+    },
+    {
+      "rank": 9,
+      "full_name": "engasnm111/lnwjud",
+      "url": "https://github.com/engasnm111/lnwjud",
+      "category": "Windows MCP Agent Gateway",
+      "score": 82,
+      "summary": "Windows-first local AI-agent runtime and MCP gateway exposing 210+ tools for files, Git, process management, WSL, desktop/browser automation, observability and secure MCP tunnels.",
+      "audience": "Windows users who want remote AI clients to act through local MCP tools while keeping execution on their machine.",
+      "ai_native_angle": "Turns a Windows workstation into a tool-rich, observable MCP substrate for remote agents.",
+      "growth_signal": "GitHub Search API snapshot showed 36 stars and 19 forks; created 2026-08-10, updated 2026-08-22, pushed 2026-08-22. README is extensive, with MCP badges, screenshots, quickstart cues and secure tunnel references.",
+      "runnability": "No Windows install, MCP registration, secure tunnel, browser/desktop action or permission boundary test was run.",
+      "recommended_action": "Wait for independent demos or test in a Windows VM with non-sensitive files."
+    },
+    {
+      "rank": 10,
+      "full_name": "midagedev/gadak",
+      "url": "https://github.com/midagedev/gadak",
+      "category": "Local SaaS Mirror and Agent SQL/MCP",
+      "score": 80,
+      "summary": "Local SQLite mirror for Jira and Confluence with macOS app, web UI, CLI, Datasette demo and agent-accessible SQL/MCP search over work data.",
+      "audience": "Teams and individuals who need offline, queryable project knowledge for agents without repeatedly calling SaaS APIs.",
+      "ai_native_angle": "Converts SaaS work context into a local, inspectable database and MCP/SQL surface that agents can query deterministically.",
+      "growth_signal": "GitHub Search API snapshot showed 17 stars and 2 forks; created 2026-08-04, updated 2026-08-22, pushed 2026-08-22. README links a live demo, desktop install notes, CLI paths and e2e demo evidence.",
+      "runnability": "Live demo and install docs exist; no Jira/Confluence auth, sync, desktop launch, SQL query or MCP endpoint test was performed.",
+      "recommended_action": "Try the demo snapshot first, then test a tiny read-only SaaS sync with credentials scoped to non-sensitive data."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "askimo-ai/askimo",
+      "url": "https://github.com/askimo-ai/askimo",
+      "category": "Offline-capable AI Client",
+      "score": 77,
+      "summary": "AI client for chat, file/web search, RAG, plans, MCP tools and multi-step AI workflows with offline-capable local execution.",
+      "audience": "Users wanting a single local app for chat, scripts, workflow plans and MCP tools.",
+      "ai_native_angle": "Bundles chat, retrieval, tool use and workflow execution into one desktop-style agent client.",
+      "growth_signal": "GitHub Search API snapshot showed 354 stars and 75 forks; created 2025-08-05, updated 2026-08-22, pushed 2026-08-22. README includes plan/RAG GIF demos, DockerAI badge and MCP tool examples.",
+      "runnability": "No install, script execution, MCP tool call or offline-mode test was run.",
+      "recommended_action": "Watch for stable releases and permissions around script execution."
+    },
+    {
+      "rank": 2,
+      "full_name": "dcierra/darwinrelay",
+      "url": "https://github.com/dcierra/darwinrelay",
+      "category": "Mac Local Agent Relay",
+      "score": 76,
+      "summary": "MCP-neutral local relay that lets ChatGPT or other MCP clients use Mac shell, files, PTY, browser, native desktop control and Codex history.",
+      "audience": "Mac users who want cloud reasoning clients connected to local execution surfaces.",
+      "ai_native_angle": "Separates reasoning client from local action runtime while exposing Mac-native tools through MCP.",
+      "growth_signal": "GitHub Search API snapshot showed 0 stars and 0 forks; created 2026-08-19, updated 2026-08-22, pushed 2026-08-22. Created within the window and README documents shell/files/browser/desktop control.",
+      "runnability": "No MCP client pairing, browser control, desktop permission or file mutation test was run.",
+      "recommended_action": "Watch permission design and try only read-only tools first."
+    },
+    {
+      "rank": 3,
+      "full_name": "torotoroTRPG/browser-whiskor",
+      "url": "https://github.com/torotoroTRPG/browser-whiskor",
+      "category": "Browser Perception MCP",
+      "score": 75,
+      "summary": "Browser automation/perception server exposing click/type/navigate/scroll plus token-lean page representations over MCP and HTTP.",
+      "audience": "Agent builders who need browser state with less token bloat than raw DOM or screenshots.",
+      "ai_native_angle": "Optimizes browser perception and action surfaces for LLM agents, including compact layout maps and deltas.",
+      "growth_signal": "GitHub Search API snapshot showed 0 stars and 0 forks; created 2026-05-20, updated 2026-08-22, pushed 2026-08-22. README is detailed, with MCP badge, HTTP/API and token-lean representation claims.",
+      "runnability": "No MCP handshake, browser launch, selector/action accuracy or page-delta test was performed.",
+      "recommended_action": "Compare on one authenticated workflow against Playwright MCP and Chrome DevTools MCP."
+    },
+    {
+      "rank": 4,
+      "full_name": "2672243194/agentbrain",
+      "url": "https://github.com/2672243194/agentbrain",
+      "category": "Markdown Agent Memory MCP",
+      "score": 74,
+      "summary": "Plain-Markdown vault plus thin MCP server for local-first long-term agent memory, CJK-aware search and cross-client onboarding.",
+      "audience": "Users who want shared agent memory across Codex, Claude Code, Cursor and other MCP clients.",
+      "ai_native_angle": "Treats portable Markdown files as the durable memory substrate while MCP provides live agent access.",
+      "growth_signal": "GitHub Search API snapshot showed 4 stars and 1 forks; created 2026-08-20, updated 2026-08-22, pushed 2026-08-22. Created 2026-08-20 and README shows pip install plus MCP configuration snippets.",
+      "runnability": "No pip install, vault initialization, MCP registration, search or memory update test was run.",
+      "recommended_action": "Watch for conflict resolution and stale-memory verification examples."
+    },
+    {
+      "rank": 5,
+      "full_name": "k-k1/agent-fleet",
+      "url": "https://github.com/k-k1/agent-fleet",
+      "category": "Self-hosted Coding Agent Fleet Console",
+      "score": 73,
+      "summary": "Self-hosted web console for running coding agents in isolated per-user workspaces with Docker/native runtimes, scheduling and usage accounting.",
+      "audience": "Small teams operating multiple CLI coding agents across shared infrastructure.",
+      "ai_native_angle": "Turns individual agent CLIs into a managed fleet with isolation, scheduling and accounting surfaces.",
+      "growth_signal": "GitHub Search API snapshot showed 1 stars and 0 forks; created 2026-06-26, updated 2026-08-22, pushed 2026-08-22. README shows Docker/ECS/native runtime positioning, screenshots and self-host flow.",
+      "runnability": "No Docker compose, agent engine, workspace isolation, scheduler or accounting test was run.",
+      "recommended_action": "Watch security model and workspace cleanup behavior before team use."
+    },
+    {
+      "rank": 6,
+      "full_name": "antoinedc/MantaUI",
+      "url": "https://github.com/antoinedc/MantaUI",
+      "category": "Remote Coding Agent Client",
+      "score": 72,
+      "summary": "Desktop, mobile and web client for self-hosted Claude Code/opencode sessions running in real tmux on Linux or Mac boxes.",
+      "audience": "Users who want to drive coding agents from desktop, phone or browser while execution stays on their own machine.",
+      "ai_native_angle": "Makes pairing, remote HTTPS access and live session management the product layer over terminal agents.",
+      "growth_signal": "GitHub Search API snapshot showed 1 stars and 0 forks; created 2026-05-16, updated 2026-08-22, pushed 2026-08-22. README includes screenshots, installer flow and pairing-code instructions.",
+      "runnability": "No installer, pairing, tmux session, mobile client or auth mode was tested.",
+      "recommended_action": "Track release trust and test on a non-sensitive host only."
+    },
+    {
+      "rank": 7,
+      "full_name": "markfietje/brain-server",
+      "url": "https://github.com/markfietje/brain-server",
+      "category": "Self-hosted Agent Memory Server",
+      "score": 71,
+      "summary": "Rust hybrid RAG and temporal knowledge-graph server with OpenAI-compatible embeddings, MCP server, CLI and Dioxus GUI surfaces.",
+      "audience": "Agent builders needing a private memory server with auditability and human-in-the-loop governance.",
+      "ai_native_angle": "Provides memory as a local service that agents can query through standard APIs and MCP while humans inspect state in a GUI.",
+      "growth_signal": "GitHub Search API snapshot showed 0 stars and 0 forks; created 2026-08-04, updated 2026-08-22, pushed 2026-08-22. README has Docker quickstart, MCP server, CLI and GUI claims.",
+      "runnability": "No Docker launch, embedding backend, MCP setup, temporal query or GUI inspection was run.",
+      "recommended_action": "Watch for benchmarked retrieval quality and memory deletion/export semantics."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "skip_reason": "Strong AI-observability/MCP signal, but already a large established analytics platform; useful context but not a fresh product-discovery pick for today."
+    },
+    {
+      "full_name": "elizaOS/eliza",
+      "url": "https://github.com/elizaOS/eliza",
+      "skip_reason": "Major open-source agent OS with active updates, but broad ecosystem infrastructure already well known and less actionable as a new radar product today."
+    },
+    {
+      "full_name": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "skip_reason": "Excellent voice-agent framework, but framework/library surface is less product-shaped than today’s selected deployable consoles and workbenches."
+    },
+    {
+      "full_name": "agentskillexchange/skills",
+      "url": "https://github.com/agentskillexchange/skills",
+      "skip_reason": "Curated skill catalog rather than a directly runnable end-user product or runtime."
+    },
+    {
+      "full_name": "Belkins/ai-dive-deep",
+      "url": "https://github.com/Belkins/ai-dive-deep",
+      "skip_reason": "Interactive playbook/content product, but today’s filter prioritizes runnable agent tools over editorial/manual material."
+    },
+    {
+      "full_name": "kila234/multi-agent-ide-nexus",
+      "url": "https://github.com/kila234/multi-agent-ide-nexus",
+      "skip_reason": "Marketing/tutorial-like multi-agent kit signal with weak independent product evidence in this pass."
+    },
+    {
+      "full_name": "DaniiN2/idea-anvil",
+      "url": "https://github.com/DaniiN2/idea-anvil",
+      "skip_reason": "AI coding-agent pipeline description looks generated/thin; insufficient README/runtime evidence for Top or Watchlist."
+    },
+    {
+      "full_name": "honeygame786/link-rewrite-pipeline",
+      "url": "https://github.com/honeygame786/link-rewrite-pipeline",
+      "skip_reason": "Automation idea is relevant, but public signal appears small and insufficiently documented for today’s shortlist."
+    }
+  ]
+}
