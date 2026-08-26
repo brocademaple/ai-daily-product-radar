@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+      "runDate": "2026-08-26",
+      "generatedAt": "2026-08-26T22:35:00+08:00",
+      "dataWindow": "2026-08-23 00:00 to 2026-08-26 22:35 Asia/Shanghai. GitHub Search API queries covered `ai agent`, `mcp agent`, `browser agent`, `code agent`, `RAG agent`, `voice agent`, `AI assistant`, `copilot agent`, `AI workflow`, `LLM app`, and `automation agent` with created/pushed windows and sort=stars/updated. Raw responses were saved under `/tmp/radar_2026_08_26_*.json`; selected README audits were saved under `/tmp/radar_2026_08_26_readmes/`.",
+      "sourceSummary": "git fetch origin succeeded on `main...origin/main`; pre-existing unrelated frontend/deploy worktree changes and the old untracked `data/runs/2026-08-19-lark-message.md` were preserved unstaged. Discovery used unauthenticated GitHub Search API metadata plus selected README raw downloads. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-handshake-tested, credential-tested, provider-tested, payment-tested, security-scanned or deployed.",
+      "trendObservations": "Today’s strongest cluster is agents gaining operational interfaces: dedicated agent inboxes, logged-in browser control, job/application workflows, restart reconciliation, security fix agents, visual verification, browser/voice/RAG frontends, and transaction-safety layers. README evidence for install paths, demos, Docker/API/MCP surfaces, evaluation receipts, permission boundaries and domain-specific workflow artifacts mattered more than raw stars.",
+      "assumptions": "Scores are editorial point-in-time rankings based on GitHub Search API metadata, README evidence, visible product surface, install/build cues, documentation completeness, repository freshness and AI-native workflow depth. Stars/forks are unauthenticated API snapshots, not exact growth deltas. README claims were not independently runtime-verified. Mature platforms, generic skill catalogs, pure course/content repos, thin wrappers, generated marketing READMEs and projects without clear runnable surfaces were downgraded or skipped. The 2026-08-25 scheduler wake did not leave a committed run in `data/runs`, so this run advances the public dataset from latest committed run 2026-08-24 to 2026-08-26.",
+      "markdownReport": "data/runs/2026-08-26.md",
+      "sourceFile": "2026-08-26.json",
+      "entryCount": 25
+    },
+    {
       "id": "run:2026-08-24:2026-08-24T12:08:15+08:00",
       "runDate": "2026-08-24",
       "generatedAt": "2026-08-24T12:08:15+08:00",
@@ -834,6 +846,25 @@
       "growthSignal": "GitHub snapshot showed about 70k stars, 2,186 commits, and product directories for backend, frontend, docker, docs, and skills.",
       "runnability": "README documents make docker-start, make up, make dev, localhost:2026, MCP server configuration, and IM channel setup.",
       "recommendedAction": "Track as a long-task agent architecture benchmark; audit its Lark/Slack/WeChat task gateways.",
+      "skipReason": null
+    },
+    {
+      "fullName": "truespar/sentio",
+      "url": "https://github.com/truespar/sentio",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 92,
+      "latestScore": 92,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Email Infrastructure",
+      "summary": "Multi-tenant Rust mail server that gives AI agents real inboxes, inbound webhooks, threaded REST replies, anti-spam controls and an MCP-facing email tool layer.",
+      "audience": "Agent-platform builders who need agents to receive and answer customer or system email as first-class participants.",
+      "aiNativeAngle": "Turns email into a native agent I/O channel instead of forcing agents through scraped inboxes or human-forwarded messages.",
+      "growthSignal": "GitHub Search API snapshot showed 198 stars and 14 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes Docker quickstart, manual install, API testing UI, MCP section, DKIM/SPF/DMARC/ARC and tenant/security framing.",
+      "runnability": "README has strong service/API evidence; no DNS setup, mail deliverability, webhook signing, MCP server, spam filtering or multi-tenant isolation was tested.",
+      "recommendedAction": "Prototype with a disposable domain and one agent mailbox; verify deliverability, webhook replay, rate limits and audit logs before production use.",
       "skipReason": null
     },
     {
@@ -1730,6 +1761,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Stupidoodle/swissdevjobs-cli",
+      "url": "https://github.com/Stupidoodle/swissdevjobs-cli",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 89,
+      "latestScore": 89,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-assisted Job Search CLI/MCP",
+      "summary": "Zero-dependency Python CLI, MCP server and Claude Code plugin for salary-transparent tech-job search and application workflow automation across multiple countries.",
+      "audience": "Job seekers and career agents that need a structured, scriptable job-search surface with salary filters and saved application state.",
+      "aiNativeAngle": "Exposes job discovery and application preparation as CLI/MCP tools so an agent can search, filter and prepare applications without browser scraping every step.",
+      "growthSignal": "GitHub Search API snapshot showed 74 stars and 10 forks; created 2026-08-24, pushed 2026-08-26 and updated 2026-08-26. README is long, includes install/use flows and positions terminal plus agent workflows explicitly.",
+      "runnability": "README provides concrete CLI/MCP orientation; no package install, data-source verification, application submission, anti-spam safety or regional coverage audit was performed.",
+      "recommendedAction": "Try read-only searches first and inspect whether application actions are previewed clearly before letting an agent file anything.",
+      "skipReason": null
+    },
+    {
       "fullName": "ModelEngine-Group/nexent",
       "url": "https://github.com/ModelEngine-Group/nexent",
       "firstSeenDate": "2026-08-19",
@@ -1936,6 +1986,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "w-partners/Wbrowser",
+      "url": "https://github.com/w-partners/Wbrowser",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Logged-in Chrome Agent Bridge",
+      "summary": "Cross-platform tool that lets an assistant drive a real Chrome profile the user logged into by hand, with visible agent tabs, MCP readiness and take-over controls.",
+      "audience": "Users who want agents to operate authenticated dashboards without migrating to a new browser or pasting credentials into chat.",
+      "aiNativeAngle": "Makes existing logged-in browser state an agent tool while keeping password entry human-controlled and visible.",
+      "growthSignal": "GitHub Search API snapshot showed 28 stars and 7 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-25. README has demo GIF, platform verification table, Chrome profile caveats and MCP-oriented positioning.",
+      "runnability": "Strong browser-product evidence, but no Chrome launch, profile handoff, CDP command, MCP handshake, login boundary or takeover path was tested.",
+      "recommendedAction": "Test on a low-risk authenticated web app and inspect whether tab ownership, profile separation and human takeover remain clear.",
       "skipReason": null
     },
     {
@@ -3041,6 +3110,25 @@
       "skipReason": null
     },
     {
+      "fullName": "MaxHu-xuan/task-state-guard",
+      "url": "https://github.com/MaxHu-xuan/task-state-guard",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent Restart Reconciliation Guardrail",
+      "summary": "SQLite-backed guardrail and CLI for reconciling stuck AI-agent task states after restarts/timeouts, separating terminal state from delivery state and enforcing dry-run previews.",
+      "audience": "Teams running long-lived background agents or automations where restarts can leave tasks half-closed or falsely marked complete.",
+      "aiNativeAngle": "Codifies the failure boundary between agent claims, workflow state and actual delivery state so recovery can be audited instead of guessed.",
+      "growthSignal": "GitHub Search API snapshot showed 29 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI, pip install, demos, SQLite WAL notes, ACL/DACL boundaries and CLI details.",
+      "runnability": "README has install/demo evidence; no package install, SQLite reconciliation, ACL behavior, Windows DACL behavior or failure replay was tested.",
+      "recommendedAction": "Run the demo on synthetic stuck states and compare the contract against this automation’s retry-note pattern.",
+      "skipReason": null
+    },
+    {
       "fullName": "risa-labs-inc/BossConsole",
       "url": "https://github.com/risa-labs-inc/BossConsole",
       "firstSeenDate": "2026-07-22",
@@ -3649,6 +3737,25 @@
       "skipReason": null
     },
     {
+      "fullName": "PrismorSec/patchbot",
+      "url": "https://github.com/PrismorSec/patchbot",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Security Fix Agent Pipeline",
+      "summary": "Vulnerability scanner that combines package inventories, threat feeds, scanner inputs and optional coding-agent repair to open verified fix PRs through CLI, GitHub Action or managed-agent deployment.",
+      "audience": "Security and platform teams that want dependency/security findings routed into reproducible fix PR workflows.",
+      "aiNativeAngle": "Uses a coding agent only when a bump breaks tests or needs code changes, then re-scans before opening the PR.",
+      "growthSignal": "GitHub Search API snapshot showed 15 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes demo GIF, GitHub Action badge, pip install paths, scanner/feed/plugin model and managed-agent flow.",
+      "runnability": "README shows a plausible CLI/action product; no scanner run, feed import, package bump, failing-test repair, PR creation or managed-agent deployment was tested.",
+      "recommendedAction": "Evaluate on a toy repo with known advisories and inspect false-positive handling before connecting private repos.",
+      "skipReason": null
+    },
+    {
       "fullName": "HanyuanWang/LiveStream-Agent-Studio",
       "url": "https://github.com/HanyuanWang/LiveStream-Agent-Studio",
       "firstSeenDate": "2026-08-24",
@@ -4007,6 +4114,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "strado-io/strado",
+      "url": "https://github.com/strado-io/strado",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Parallel Coding Agent Workbench",
+      "summary": "Desktop workbench for running coding agents in isolated worktrees with embedded IDE, terminals, browser previews, Jira-aware tickets and per-task session context.",
+      "audience": "Developers coordinating multiple coding-agent sessions who need visible worktrees, previews and steering controls in one app.",
+      "aiNativeAngle": "Treats task/worktree/browser/IDE context as the unit of agent execution, making verification and steering part of the product surface.",
+      "growthSignal": "GitHub Search API snapshot showed 7 stars and 0 forks; created 2026-08-23, pushed 2026-08-26 and updated 2026-08-26. README includes hero screenshot, CI badge, worktree isolation, embedded browser details and desktop run notes.",
+      "runnability": "README has strong product screenshots and npm desktop commands; no desktop build, Jira integration, preview MCP, browser scope or parallel agent run was tested.",
+      "recommendedAction": "Watch closely and trial on one disposable repo to compare against Orca/ADHDev-style workbenches.",
       "skipReason": null
     },
     {
@@ -4865,6 +4991,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Morningstar202604/AgentSeed",
+      "url": "https://github.com/Morningstar202604/AgentSeed",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Hard-gated Coding Agent Verification",
+      "summary": "Hybrid Agent Plugin skill plus MCP server that forces spec-driven development and code verification before a coding agent can mark work done.",
+      "audience": "Teams using Claude Code, Cursor, VS Code, Copilot or similar coding agents and needing mechanical proof gates against hallucinated APIs or fake test passes.",
+      "aiNativeAngle": "Combines behavioral instructions with six MCP tools so evidence comes from code checks rather than model self-report.",
+      "growthSignal": "GitHub Search API snapshot showed 12 stars and 3 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, live demo, install/release references and supported-client claims.",
+      "runnability": "README documents tools and checks; no plugin install, MCP registration, host compatibility, TypeScript/Python detection quality or bypass test was performed.",
+      "recommendedAction": "Compare with existing verify scripts by installing into a sandbox agent host and trying known hallucinated API fixtures.",
+      "skipReason": null
+    },
+    {
       "fullName": "Fangyuan025/Chaty",
       "url": "https://github.com/Fangyuan025/Chaty",
       "firstSeenDate": "2026-08-22",
@@ -5413,6 +5558,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "noisefloor-oss/visual-diff",
+      "url": "https://github.com/noisefloor-oss/visual-diff",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-driven Visual Regression CLI",
+      "summary": "Deterministic design-to-implementation pixel comparison system intended for coding agents, with browser screenshots, diff scoring and report generation.",
+      "audience": "Frontend teams that need agents to prove UI changes against expected visuals instead of relying on textual claims.",
+      "aiNativeAngle": "Makes pixel-level visual comparison a repeatable tool that coding agents can call as part of implementation closure.",
+      "growthSignal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README is substantial and mentions deterministic visual comparison, CI-style evidence and agent-driven workflows.",
+      "runnability": "README evidence is promising; no Playwright run, screenshot baseline, diff threshold, font/rendering stability or CI artifact review was performed.",
+      "recommendedAction": "Try it on one known UI fixture and compare generated evidence with the current manual Playwright screenshot process.",
       "skipReason": null
     },
     {
@@ -6119,6 +6283,25 @@
       "skipReason": null
     },
     {
+      "fullName": "liangdabiao/deepseek-v4-flash-vision-video-rag",
+      "url": "https://github.com/liangdabiao/deepseek-v4-flash-vision-video-rag",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Video Vision RAG Agent Skill",
+      "summary": "DeepSeek vision-video RAG workflow that indexes video frames, answers questions with timestamp citations, and generates a self-contained HTML preview with playable clips and keyframes.",
+      "audience": "Creators, analysts and support teams who need auditable question answering over video rather than raw transcript search.",
+      "aiNativeAngle": "Pairs local coarse retrieval, visual reranking and deep reading so the answer carries time-coded evidence artifacts an agent can show back.",
+      "growthSignal": "GitHub Search API snapshot showed 41 stars and 2 forks; created 2026-08-24, pushed 2026-08-24 and updated 2026-08-26. README describes frame extraction, timestamp citations and HTML preview output.",
+      "runnability": "README describes an end-to-end artifact path; no model key, video indexing, clip rendering, HTML preview, citation accuracy or scanned-frame edge case was tested.",
+      "recommendedAction": "Test against a short internal screen recording and verify timestamp precision plus artifact portability.",
+      "skipReason": null
+    },
+    {
       "fullName": "Alex0AI/tracefact",
       "url": "https://github.com/Alex0AI/tracefact",
       "firstSeenDate": "2026-08-21",
@@ -6515,6 +6698,25 @@
       "growthSignal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
       "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
       "recommendedAction": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。",
+      "skipReason": null
+    },
+    {
+      "fullName": "samsgates/FlowCommit",
+      "url": "https://github.com/samsgates/FlowCommit",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Transaction Safety Layer for Agents",
+      "summary": "Open-source transaction safety layer for enterprise RPA and AI agents with contracts, idempotency, policy enforcement, approvals, compensation, reconciliation, CLI/API and Docker Compose.",
+      "audience": "Teams deploying agents into consequential business workflows where duplicate actions and partial failures matter.",
+      "aiNativeAngle": "Wraps API, browser, MCP and human-task actions in auditable transaction semantics so agents have external safety rails for real-world effects.",
+      "growthSignal": "GitHub Search API snapshot showed 1 star and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README lists Fastify REST API, CLI, Docker Compose, reference refund workflow, OPA policy and approval semantics.",
+      "runnability": "README shows product architecture, but no install, DAG execution, policy decision, approval gate, compensation action or evidence receipt was tested.",
+      "recommendedAction": "Keep as a design reference and run only synthetic refund/order workflows until effect verification is demonstrated.",
       "skipReason": null
     },
     {
@@ -7601,6 +7803,25 @@
       "skipReason": null
     },
     {
+      "fullName": "ooocooc/open-skill-sunset",
+      "url": "https://github.com/ooocooc/open-skill-sunset",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent Skill Retirement Auditor",
+      "summary": "Tooling to audit and safely retire stale generic AI-agent instructions.",
+      "audience": "Teams maintaining many reusable agent skills and needing a cleanup workflow.",
+      "aiNativeAngle": "Treats instruction aging and retirement as an operational lifecycle for agents.",
+      "growthSignal": "GitHub Search API snapshot showed 72 stars and 2 forks; created and pushed 2026-08-26. README has focused audit/retirement framing.",
+      "runnability": "No install, audit report, replacement map or host integration was tested.",
+      "recommendedAction": "Watch for real-world skill inventory examples before using it on production memory/skills.",
+      "skipReason": null
+    },
+    {
       "fullName": "aiopshwang/goal-to-proof",
       "url": "https://github.com/aiopshwang/goal-to-proof",
       "firstSeenDate": "2026-08-24",
@@ -8342,6 +8563,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Renaissance-AI-Solutions/consistorium",
+      "url": "https://github.com/Renaissance-AI-Solutions/consistorium",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local Repo Intelligence MCP",
+      "summary": "Local-first MCP server exposing live git state, allowlisted docs, durable tasks and agent handoffs to conversational models.",
+      "audience": "Teams splitting strategic reasoning and coding-agent execution across multiple clients.",
+      "aiNativeAngle": "Labels live observations separately from agent records, reducing stale-summary confusion for coding agents.",
+      "growthSignal": "GitHub Search API snapshot showed 9 stars and 2 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, demo GIF, npm quickstart and MCP client setup.",
+      "runnability": "No npm install, MCP connection, git-state query, doc allowlist or handoff workflow was tested.",
+      "recommendedAction": "Compare its memory/live-observation model with this repo’s automation memory workflow.",
+      "skipReason": null
+    },
+    {
       "fullName": "adamfreeman2024-eng/agentbazaar",
       "url": "https://github.com/adamfreeman2024-eng/agentbazaar",
       "firstSeenDate": "2026-08-24",
@@ -8776,6 +9016,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "alchaincyf/huashu-chrome",
+      "url": "https://github.com/alchaincyf/huashu-chrome",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Chrome MCP Extension",
+      "summary": "MCP plus Chrome extension that lets multiple AI-agent clients control the user’s existing logged-in Chrome.",
+      "audience": "Chinese agent users who want Claude Code, Codex, Cursor or Gemini CLI to operate personal Chrome state.",
+      "aiNativeAngle": "Moves browser control into an MCP extension boundary with existing login state.",
+      "growthSignal": "GitHub Search API snapshot showed 7 stars and 2 forks; created and pushed 2026-08-26. README includes universal-client positioning and Chrome extension/MCP framing.",
+      "runnability": "No extension install, browser permission audit, MCP tool call or login-state isolation test was performed.",
+      "recommendedAction": "Watch alongside Wbrowser; inspect permission and tab-isolation design before using real accounts.",
       "skipReason": null
     },
     {
@@ -9349,6 +9608,25 @@
       "skipReason": null
     },
     {
+      "fullName": "pokemon225/ax-platform-mcp",
+      "url": "https://github.com/pokemon225/ax-platform-mcp",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent-native Collaboration Network",
+      "summary": "Remote MCP server for long-running agent collaboration with messaging, tasks, shared context, search and MCP apps.",
+      "audience": "Builders experimenting with always-on agent networks and durable agent channels.",
+      "aiNativeAngle": "Frames collaboration primitives around agent identity, wake-up semantics, thread continuity and task routing.",
+      "growthSignal": "GitHub Search API snapshot showed 11 stars and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README discusses agent channels and durable routing concepts.",
+      "runnability": "No remote MCP connection, auth, task routing, mention wake-up or attachment workflow was tested.",
+      "recommendedAction": "Track for protocol clarity and real adapters before depending on it.",
+      "skipReason": null
+    },
+    {
       "fullName": "Hhz0823/YoloCut",
       "url": "https://github.com/Hhz0823/YoloCut",
       "firstSeenDate": "2026-08-24",
@@ -9821,6 +10099,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "theisegoria/game-asset-mcp",
+      "url": "https://github.com/theisegoria/game-asset-mcp",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Game Asset Generation MCP",
+      "summary": "MCP server for agentic game-asset generation, validation and retexturing with local mesh checks, optional Blender repair and provider-cost reporting.",
+      "audience": "Game developers who want agents to produce and validate usable 3D assets with provenance and budget controls.",
+      "aiNativeAngle": "Gives asset generation a tool-call pipeline with validation verdicts and spend-aware provider boundaries.",
+      "growthSignal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-24, pushed 2026-08-25 and updated 2026-08-25. README includes detailed pipeline, tool list, Blender notes and npx install path.",
+      "runnability": "No MCP server run, Blender integration, provider API call, mesh validation, PBR texture extraction or spend report was tested.",
+      "recommendedAction": "Use as a watchlist candidate for creative-agent pipelines; test first with owned simple meshes.",
       "skipReason": null
     },
     {
@@ -10527,6 +10824,25 @@
       "skipReason": null
     },
     {
+      "fullName": "CaineWind/LivePhoneCall",
+      "url": "https://github.com/CaineWind/LivePhoneCall",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local-first Voice Agent PWA",
+      "summary": "Chinese/English local-first voice conversation stack with streaming Qwen3 ASR/TTS, pluggable LLMs, FastAPI, SQLite, Vue PWA and Windows Docker deployment.",
+      "audience": "Builders of bilingual voice-agent prototypes who need a reproducible local deployment surface.",
+      "aiNativeAngle": "Separates voice, agent and TTS workers behind a local FastAPI interface with per-agent voice/model settings.",
+      "growthSignal": "GitHub Search API snapshot showed 2 stars and 0 forks; created and pushed 2026-08-23. README has architecture, deployment script and Docker/WSL2 notes.",
+      "runnability": "No Docker build, ASR/TTS model load, PWA install, microphone path, latency or bilingual conversation test was performed.",
+      "recommendedAction": "Watch for demo audio and model-size guidance before a serious local trial.",
+      "skipReason": null
+    },
+    {
       "fullName": "stufently/telegram-ai-cli",
       "url": "https://github.com/stufently/telegram-ai-cli",
       "firstSeenDate": "2026-08-24",
@@ -11094,6 +11410,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "covan-ai/covan",
+      "url": "https://github.com/covan-ai/covan",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Self-hostable Team AI Agent",
+      "summary": "Shared self-hostable AI agent for teams where everyone trains it together while interacting privately.",
+      "audience": "Small teams seeking a communal knowledge agent with private per-user conversations.",
+      "aiNativeAngle": "Combines shared training/context with private user-agent interaction rather than one global chat transcript.",
+      "growthSignal": "GitHub Search API snapshot showed 2 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README has self-hostable positioning and team-agent framing.",
+      "runnability": "No self-host install, permission model, ingestion workflow, private-chat separation or team-training behavior was tested.",
+      "recommendedAction": "Watch for docs on identity, permissions and data deletion before adoption.",
       "skipReason": null
     },
     {
@@ -14230,6 +14565,158 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "api-evangelist/stackmint",
+      "url": "https://github.com/api-evangelist/stackmint",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Looks like descriptive API/product catalog content rather than a runnable open-source repo in this pass."
+    },
+    {
+      "fullName": "cdavid817/agent-book",
+      "url": "https://github.com/cdavid817/agent-book",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Book/tutorial content with companion material; useful learning signal but not primarily a product surface."
+    },
+    {
+      "fullName": "createwithalli/Hi-Alli-Here",
+      "url": "https://github.com/createwithalli/Hi-Alli-Here",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Personal/profile repository surfaced by keyword match, not an AI-native product candidate."
+    },
+    {
+      "fullName": "Faer-cpu/ai-agent",
+      "url": "https://github.com/Faer-cpu/ai-agent",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Description says “for show” and README/runtime evidence was too thin."
+    },
+    {
+      "fullName": "langfuse/langfuse-docs",
+      "url": "https://github.com/langfuse/langfuse-docs",
+      "firstSeenDate": "2026-06-25",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Documentation repo for a mature platform; valuable but not a fresh product discovery for today."
+    },
+    {
+      "fullName": "prajapatishubham336/LangChain-Groq-LLM-Applications",
+      "url": "https://github.com/prajapatishubham336/LangChain-Groq-LLM-Applications",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Collection of sample LLM apps; lower product specificity than the shortlist."
+    },
+    {
+      "fullName": "ra1nyxin/immersive-vibration-response-skill",
+      "url": "https://github.com/ra1nyxin/immersive-vibration-response-skill",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Adult wearable-control skill; outside this radar’s product/workflow scope and not appropriate for public shortlist."
+    },
+    {
+      "fullName": "rajath-raman/awesome-llm-apps",
+      "url": "https://github.com/rajath-raman/awesome-llm-apps",
+      "firstSeenDate": "2026-08-26",
+      "lastSeenDate": "2026-08-26",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Awesome/list-style repository, not a runnable product."
     },
     {
       "fullName": "atinux/docster",
@@ -17519,25 +18006,6 @@
       "skipReason": "Thin single-service MCP wrapper with limited standalone workflow/product surface."
     },
     {
-      "fullName": "langfuse/langfuse-docs",
-      "url": "https://github.com/langfuse/langfuse-docs",
-      "firstSeenDate": "2026-06-25",
-      "lastSeenDate": "2026-06-25",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Documentation repository for an established observability product, not a new runnable product repo."
-    },
-    {
       "fullName": "QAInsights/awesome-ai-tools",
       "url": "https://github.com/QAInsights/awesome-ai-tools",
       "firstSeenDate": "2026-06-05",
@@ -19229,6 +19697,40 @@
           "growth_signal": "GitHub snapshot showed about 70k stars, 2,186 commits, and product directories for backend, frontend, docker, docs, and skills.",
           "runnability": "README documents make docker-start, make up, make dev, localhost:2026, MCP server configuration, and IM channel setup.",
           "recommended_action": "Track as a long-task agent architecture benchmark; audit its Lark/Slack/WeChat task gateways."
+        }
+      }
+    ],
+    "truespar/sentio": [
+      {
+        "id": "truespar-sentio:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "truespar/sentio",
+        "url": "https://github.com/truespar/sentio",
+        "category": "Agent Email Infrastructure",
+        "score": 92,
+        "summary": "Multi-tenant Rust mail server that gives AI agents real inboxes, inbound webhooks, threaded REST replies, anti-spam controls and an MCP-facing email tool layer.",
+        "audience": "Agent-platform builders who need agents to receive and answer customer or system email as first-class participants.",
+        "aiNativeAngle": "Turns email into a native agent I/O channel instead of forcing agents through scraped inboxes or human-forwarded messages.",
+        "growthSignal": "GitHub Search API snapshot showed 198 stars and 14 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes Docker quickstart, manual install, API testing UI, MCP section, DKIM/SPF/DMARC/ARC and tenant/security framing.",
+        "runnability": "README has strong service/API evidence; no DNS setup, mail deliverability, webhook signing, MCP server, spam filtering or multi-tenant isolation was tested.",
+        "recommendedAction": "Prototype with a disposable domain and one agent mailbox; verify deliverability, webhook replay, rate limits and audit logs before production use.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "truespar/sentio",
+          "url": "https://github.com/truespar/sentio",
+          "category": "Agent Email Infrastructure",
+          "score": 92,
+          "summary": "Multi-tenant Rust mail server that gives AI agents real inboxes, inbound webhooks, threaded REST replies, anti-spam controls and an MCP-facing email tool layer.",
+          "audience": "Agent-platform builders who need agents to receive and answer customer or system email as first-class participants.",
+          "ai_native_angle": "Turns email into a native agent I/O channel instead of forcing agents through scraped inboxes or human-forwarded messages.",
+          "growth_signal": "GitHub Search API snapshot showed 198 stars and 14 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes Docker quickstart, manual install, API testing UI, MCP section, DKIM/SPF/DMARC/ARC and tenant/security framing.",
+          "runnability": "README has strong service/API evidence; no DNS setup, mail deliverability, webhook signing, MCP server, spam filtering or multi-tenant isolation was tested.",
+          "recommended_action": "Prototype with a disposable domain and one agent mailbox; verify deliverability, webhook replay, rate limits and audit logs before production use."
         }
       }
     ],
@@ -21763,6 +22265,40 @@
         }
       }
     ],
+    "Stupidoodle/swissdevjobs-cli": [
+      {
+        "id": "Stupidoodle-swissdevjobs-cli:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "Stupidoodle/swissdevjobs-cli",
+        "url": "https://github.com/Stupidoodle/swissdevjobs-cli",
+        "category": "Agent-assisted Job Search CLI/MCP",
+        "score": 89,
+        "summary": "Zero-dependency Python CLI, MCP server and Claude Code plugin for salary-transparent tech-job search and application workflow automation across multiple countries.",
+        "audience": "Job seekers and career agents that need a structured, scriptable job-search surface with salary filters and saved application state.",
+        "aiNativeAngle": "Exposes job discovery and application preparation as CLI/MCP tools so an agent can search, filter and prepare applications without browser scraping every step.",
+        "growthSignal": "GitHub Search API snapshot showed 74 stars and 10 forks; created 2026-08-24, pushed 2026-08-26 and updated 2026-08-26. README is long, includes install/use flows and positions terminal plus agent workflows explicitly.",
+        "runnability": "README provides concrete CLI/MCP orientation; no package install, data-source verification, application submission, anti-spam safety or regional coverage audit was performed.",
+        "recommendedAction": "Try read-only searches first and inspect whether application actions are previewed clearly before letting an agent file anything.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Stupidoodle/swissdevjobs-cli",
+          "url": "https://github.com/Stupidoodle/swissdevjobs-cli",
+          "category": "Agent-assisted Job Search CLI/MCP",
+          "score": 89,
+          "summary": "Zero-dependency Python CLI, MCP server and Claude Code plugin for salary-transparent tech-job search and application workflow automation across multiple countries.",
+          "audience": "Job seekers and career agents that need a structured, scriptable job-search surface with salary filters and saved application state.",
+          "ai_native_angle": "Exposes job discovery and application preparation as CLI/MCP tools so an agent can search, filter and prepare applications without browser scraping every step.",
+          "growth_signal": "GitHub Search API snapshot showed 74 stars and 10 forks; created 2026-08-24, pushed 2026-08-26 and updated 2026-08-26. README is long, includes install/use flows and positions terminal plus agent workflows explicitly.",
+          "runnability": "README provides concrete CLI/MCP orientation; no package install, data-source verification, application submission, anti-spam safety or regional coverage audit was performed.",
+          "recommended_action": "Try read-only searches first and inspect whether application actions are previewed clearly before letting an agent file anything."
+        }
+      }
+    ],
     "ModelEngine-Group/nexent": [
       {
         "id": "ModelEngine-Group-nexent:2026-08-21T10:19:51+08:00:top:0",
@@ -22158,6 +22694,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "w-partners/Wbrowser": [
+      {
+        "id": "w-partners-Wbrowser:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "w-partners/Wbrowser",
+        "url": "https://github.com/w-partners/Wbrowser",
+        "category": "Logged-in Chrome Agent Bridge",
+        "score": 88,
+        "summary": "Cross-platform tool that lets an assistant drive a real Chrome profile the user logged into by hand, with visible agent tabs, MCP readiness and take-over controls.",
+        "audience": "Users who want agents to operate authenticated dashboards without migrating to a new browser or pasting credentials into chat.",
+        "aiNativeAngle": "Makes existing logged-in browser state an agent tool while keeping password entry human-controlled and visible.",
+        "growthSignal": "GitHub Search API snapshot showed 28 stars and 7 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-25. README has demo GIF, platform verification table, Chrome profile caveats and MCP-oriented positioning.",
+        "runnability": "Strong browser-product evidence, but no Chrome launch, profile handoff, CDP command, MCP handshake, login boundary or takeover path was tested.",
+        "recommendedAction": "Test on a low-risk authenticated web app and inspect whether tab ownership, profile separation and human takeover remain clear.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "w-partners/Wbrowser",
+          "url": "https://github.com/w-partners/Wbrowser",
+          "category": "Logged-in Chrome Agent Bridge",
+          "score": 88,
+          "summary": "Cross-platform tool that lets an assistant drive a real Chrome profile the user logged into by hand, with visible agent tabs, MCP readiness and take-over controls.",
+          "audience": "Users who want agents to operate authenticated dashboards without migrating to a new browser or pasting credentials into chat.",
+          "ai_native_angle": "Makes existing logged-in browser state an agent tool while keeping password entry human-controlled and visible.",
+          "growth_signal": "GitHub Search API snapshot showed 28 stars and 7 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-25. README has demo GIF, platform verification table, Chrome profile caveats and MCP-oriented positioning.",
+          "runnability": "Strong browser-product evidence, but no Chrome launch, profile handoff, CDP command, MCP handshake, login boundary or takeover path was tested.",
+          "recommended_action": "Test on a low-risk authenticated web app and inspect whether tab ownership, profile separation and human takeover remain clear."
         }
       }
     ],
@@ -24879,6 +25449,40 @@
         }
       }
     ],
+    "MaxHu-xuan/task-state-guard": [
+      {
+        "id": "MaxHu-xuan-task-state-guard:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "MaxHu-xuan/task-state-guard",
+        "url": "https://github.com/MaxHu-xuan/task-state-guard",
+        "category": "Agent Restart Reconciliation Guardrail",
+        "score": 86,
+        "summary": "SQLite-backed guardrail and CLI for reconciling stuck AI-agent task states after restarts/timeouts, separating terminal state from delivery state and enforcing dry-run previews.",
+        "audience": "Teams running long-lived background agents or automations where restarts can leave tasks half-closed or falsely marked complete.",
+        "aiNativeAngle": "Codifies the failure boundary between agent claims, workflow state and actual delivery state so recovery can be audited instead of guessed.",
+        "growthSignal": "GitHub Search API snapshot showed 29 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI, pip install, demos, SQLite WAL notes, ACL/DACL boundaries and CLI details.",
+        "runnability": "README has install/demo evidence; no package install, SQLite reconciliation, ACL behavior, Windows DACL behavior or failure replay was tested.",
+        "recommendedAction": "Run the demo on synthetic stuck states and compare the contract against this automation’s retry-note pattern.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "MaxHu-xuan/task-state-guard",
+          "url": "https://github.com/MaxHu-xuan/task-state-guard",
+          "category": "Agent Restart Reconciliation Guardrail",
+          "score": 86,
+          "summary": "SQLite-backed guardrail and CLI for reconciling stuck AI-agent task states after restarts/timeouts, separating terminal state from delivery state and enforcing dry-run previews.",
+          "audience": "Teams running long-lived background agents or automations where restarts can leave tasks half-closed or falsely marked complete.",
+          "ai_native_angle": "Codifies the failure boundary between agent claims, workflow state and actual delivery state so recovery can be audited instead of guessed.",
+          "growth_signal": "GitHub Search API snapshot showed 29 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI, pip install, demos, SQLite WAL notes, ACL/DACL boundaries and CLI details.",
+          "runnability": "README has install/demo evidence; no package install, SQLite reconciliation, ACL behavior, Windows DACL behavior or failure replay was tested.",
+          "recommended_action": "Run the demo on synthetic stuck states and compare the contract against this automation’s retry-note pattern."
+        }
+      }
+    ],
     "risa-labs-inc/BossConsole": [
       {
         "id": "risa-labs-inc-BossConsole:2026-08-22T14:35:00+08:00:top:0",
@@ -26031,6 +26635,40 @@
         }
       }
     ],
+    "PrismorSec/patchbot": [
+      {
+        "id": "PrismorSec-patchbot:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "PrismorSec/patchbot",
+        "url": "https://github.com/PrismorSec/patchbot",
+        "category": "Security Fix Agent Pipeline",
+        "score": 85,
+        "summary": "Vulnerability scanner that combines package inventories, threat feeds, scanner inputs and optional coding-agent repair to open verified fix PRs through CLI, GitHub Action or managed-agent deployment.",
+        "audience": "Security and platform teams that want dependency/security findings routed into reproducible fix PR workflows.",
+        "aiNativeAngle": "Uses a coding agent only when a bump breaks tests or needs code changes, then re-scans before opening the PR.",
+        "growthSignal": "GitHub Search API snapshot showed 15 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes demo GIF, GitHub Action badge, pip install paths, scanner/feed/plugin model and managed-agent flow.",
+        "runnability": "README shows a plausible CLI/action product; no scanner run, feed import, package bump, failing-test repair, PR creation or managed-agent deployment was tested.",
+        "recommendedAction": "Evaluate on a toy repo with known advisories and inspect false-positive handling before connecting private repos.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "PrismorSec/patchbot",
+          "url": "https://github.com/PrismorSec/patchbot",
+          "category": "Security Fix Agent Pipeline",
+          "score": 85,
+          "summary": "Vulnerability scanner that combines package inventories, threat feeds, scanner inputs and optional coding-agent repair to open verified fix PRs through CLI, GitHub Action or managed-agent deployment.",
+          "audience": "Security and platform teams that want dependency/security findings routed into reproducible fix PR workflows.",
+          "ai_native_angle": "Uses a coding agent only when a bump breaks tests or needs code changes, then re-scans before opening the PR.",
+          "growth_signal": "GitHub Search API snapshot showed 15 stars and 1 fork; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes demo GIF, GitHub Action badge, pip install paths, scanner/feed/plugin model and managed-agent flow.",
+          "runnability": "README shows a plausible CLI/action product; no scanner run, feed import, package bump, failing-test repair, PR creation or managed-agent deployment was tested.",
+          "recommended_action": "Evaluate on a toy repo with known advisories and inspect false-positive handling before connecting private repos."
+        }
+      }
+    ],
     "HanyuanWang/LiveStream-Agent-Studio": [
       {
         "id": "HanyuanWang-LiveStream-Agent-Studio:2026-08-24T12:08:15+08:00:top:0",
@@ -26801,6 +27439,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "strado-io/strado": [
+      {
+        "id": "strado-io-strado:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "strado-io/strado",
+        "url": "https://github.com/strado-io/strado",
+        "category": "Parallel Coding Agent Workbench",
+        "score": 84,
+        "summary": "Desktop workbench for running coding agents in isolated worktrees with embedded IDE, terminals, browser previews, Jira-aware tickets and per-task session context.",
+        "audience": "Developers coordinating multiple coding-agent sessions who need visible worktrees, previews and steering controls in one app.",
+        "aiNativeAngle": "Treats task/worktree/browser/IDE context as the unit of agent execution, making verification and steering part of the product surface.",
+        "growthSignal": "GitHub Search API snapshot showed 7 stars and 0 forks; created 2026-08-23, pushed 2026-08-26 and updated 2026-08-26. README includes hero screenshot, CI badge, worktree isolation, embedded browser details and desktop run notes.",
+        "runnability": "README has strong product screenshots and npm desktop commands; no desktop build, Jira integration, preview MCP, browser scope or parallel agent run was tested.",
+        "recommendedAction": "Watch closely and trial on one disposable repo to compare against Orca/ADHDev-style workbenches.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "strado-io/strado",
+          "url": "https://github.com/strado-io/strado",
+          "category": "Parallel Coding Agent Workbench",
+          "score": 84,
+          "summary": "Desktop workbench for running coding agents in isolated worktrees with embedded IDE, terminals, browser previews, Jira-aware tickets and per-task session context.",
+          "audience": "Developers coordinating multiple coding-agent sessions who need visible worktrees, previews and steering controls in one app.",
+          "ai_native_angle": "Treats task/worktree/browser/IDE context as the unit of agent execution, making verification and steering part of the product surface.",
+          "growth_signal": "GitHub Search API snapshot showed 7 stars and 0 forks; created 2026-08-23, pushed 2026-08-26 and updated 2026-08-26. README includes hero screenshot, CI badge, worktree isolation, embedded browser details and desktop run notes.",
+          "runnability": "README has strong product screenshots and npm desktop commands; no desktop build, Jira integration, preview MCP, browser scope or parallel agent run was tested.",
+          "recommended_action": "Watch closely and trial on one disposable repo to compare against Orca/ADHDev-style workbenches."
         }
       }
     ],
@@ -28610,6 +29282,40 @@
         }
       }
     ],
+    "Morningstar202604/AgentSeed": [
+      {
+        "id": "Morningstar202604-AgentSeed:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "Morningstar202604/AgentSeed",
+        "url": "https://github.com/Morningstar202604/AgentSeed",
+        "category": "Hard-gated Coding Agent Verification",
+        "score": 83,
+        "summary": "Hybrid Agent Plugin skill plus MCP server that forces spec-driven development and code verification before a coding agent can mark work done.",
+        "audience": "Teams using Claude Code, Cursor, VS Code, Copilot or similar coding agents and needing mechanical proof gates against hallucinated APIs or fake test passes.",
+        "aiNativeAngle": "Combines behavioral instructions with six MCP tools so evidence comes from code checks rather than model self-report.",
+        "growthSignal": "GitHub Search API snapshot showed 12 stars and 3 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, live demo, install/release references and supported-client claims.",
+        "runnability": "README documents tools and checks; no plugin install, MCP registration, host compatibility, TypeScript/Python detection quality or bypass test was performed.",
+        "recommendedAction": "Compare with existing verify scripts by installing into a sandbox agent host and trying known hallucinated API fixtures.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "Morningstar202604/AgentSeed",
+          "url": "https://github.com/Morningstar202604/AgentSeed",
+          "category": "Hard-gated Coding Agent Verification",
+          "score": 83,
+          "summary": "Hybrid Agent Plugin skill plus MCP server that forces spec-driven development and code verification before a coding agent can mark work done.",
+          "audience": "Teams using Claude Code, Cursor, VS Code, Copilot or similar coding agents and needing mechanical proof gates against hallucinated APIs or fake test passes.",
+          "ai_native_angle": "Combines behavioral instructions with six MCP tools so evidence comes from code checks rather than model self-report.",
+          "growth_signal": "GitHub Search API snapshot showed 12 stars and 3 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, live demo, install/release references and supported-client claims.",
+          "runnability": "README documents tools and checks; no plugin install, MCP registration, host compatibility, TypeScript/Python detection quality or bypass test was performed.",
+          "recommended_action": "Compare with existing verify scripts by installing into a sandbox agent host and trying known hallucinated API fixtures."
+        }
+      }
+    ],
     "Fangyuan025/Chaty": [
       {
         "id": "Fangyuan025-Chaty:2026-08-22T14:35:00+08:00:top:0",
@@ -29775,6 +30481,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "noisefloor-oss/visual-diff": [
+      {
+        "id": "noisefloor-oss-visual-diff:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "noisefloor-oss/visual-diff",
+        "url": "https://github.com/noisefloor-oss/visual-diff",
+        "category": "Agent-driven Visual Regression CLI",
+        "score": 82,
+        "summary": "Deterministic design-to-implementation pixel comparison system intended for coding agents, with browser screenshots, diff scoring and report generation.",
+        "audience": "Frontend teams that need agents to prove UI changes against expected visuals instead of relying on textual claims.",
+        "aiNativeAngle": "Makes pixel-level visual comparison a repeatable tool that coding agents can call as part of implementation closure.",
+        "growthSignal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README is substantial and mentions deterministic visual comparison, CI-style evidence and agent-driven workflows.",
+        "runnability": "README evidence is promising; no Playwright run, screenshot baseline, diff threshold, font/rendering stability or CI artifact review was performed.",
+        "recommendedAction": "Try it on one known UI fixture and compare generated evidence with the current manual Playwright screenshot process.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "noisefloor-oss/visual-diff",
+          "url": "https://github.com/noisefloor-oss/visual-diff",
+          "category": "Agent-driven Visual Regression CLI",
+          "score": 82,
+          "summary": "Deterministic design-to-implementation pixel comparison system intended for coding agents, with browser screenshots, diff scoring and report generation.",
+          "audience": "Frontend teams that need agents to prove UI changes against expected visuals instead of relying on textual claims.",
+          "ai_native_angle": "Makes pixel-level visual comparison a repeatable tool that coding agents can call as part of implementation closure.",
+          "growth_signal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README is substantial and mentions deterministic visual comparison, CI-style evidence and agent-driven workflows.",
+          "runnability": "README evidence is promising; no Playwright run, screenshot baseline, diff threshold, font/rendering stability or CI artifact review was performed.",
+          "recommended_action": "Try it on one known UI fixture and compare generated evidence with the current manual Playwright screenshot process."
         }
       }
     ],
@@ -31249,6 +31989,40 @@
         }
       }
     ],
+    "liangdabiao/deepseek-v4-flash-vision-video-rag": [
+      {
+        "id": "liangdabiao-deepseek-v4-flash-vision-video-rag:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "liangdabiao/deepseek-v4-flash-vision-video-rag",
+        "url": "https://github.com/liangdabiao/deepseek-v4-flash-vision-video-rag",
+        "category": "Video Vision RAG Agent Skill",
+        "score": 81,
+        "summary": "DeepSeek vision-video RAG workflow that indexes video frames, answers questions with timestamp citations, and generates a self-contained HTML preview with playable clips and keyframes.",
+        "audience": "Creators, analysts and support teams who need auditable question answering over video rather than raw transcript search.",
+        "aiNativeAngle": "Pairs local coarse retrieval, visual reranking and deep reading so the answer carries time-coded evidence artifacts an agent can show back.",
+        "growthSignal": "GitHub Search API snapshot showed 41 stars and 2 forks; created 2026-08-24, pushed 2026-08-24 and updated 2026-08-26. README describes frame extraction, timestamp citations and HTML preview output.",
+        "runnability": "README describes an end-to-end artifact path; no model key, video indexing, clip rendering, HTML preview, citation accuracy or scanned-frame edge case was tested.",
+        "recommendedAction": "Test against a short internal screen recording and verify timestamp precision plus artifact portability.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "liangdabiao/deepseek-v4-flash-vision-video-rag",
+          "url": "https://github.com/liangdabiao/deepseek-v4-flash-vision-video-rag",
+          "category": "Video Vision RAG Agent Skill",
+          "score": 81,
+          "summary": "DeepSeek vision-video RAG workflow that indexes video frames, answers questions with timestamp citations, and generates a self-contained HTML preview with playable clips and keyframes.",
+          "audience": "Creators, analysts and support teams who need auditable question answering over video rather than raw transcript search.",
+          "ai_native_angle": "Pairs local coarse retrieval, visual reranking and deep reading so the answer carries time-coded evidence artifacts an agent can show back.",
+          "growth_signal": "GitHub Search API snapshot showed 41 stars and 2 forks; created 2026-08-24, pushed 2026-08-24 and updated 2026-08-26. README describes frame extraction, timestamp citations and HTML preview output.",
+          "runnability": "README describes an end-to-end artifact path; no model key, video indexing, clip rendering, HTML preview, citation accuracy or scanned-frame edge case was tested.",
+          "recommended_action": "Test against a short internal screen recording and verify timestamp precision plus artifact portability."
+        }
+      }
+    ],
     "Alex0AI/tracefact": [
       {
         "id": "Alex0AI-tracefact:2026-08-21T10:19:51+08:00:top:0",
@@ -32022,6 +32796,40 @@
           "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
           "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
           "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+        }
+      }
+    ],
+    "samsgates/FlowCommit": [
+      {
+        "id": "samsgates-FlowCommit:2026-08-26T22:35:00+08:00:top:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "samsgates/FlowCommit",
+        "url": "https://github.com/samsgates/FlowCommit",
+        "category": "Transaction Safety Layer for Agents",
+        "score": 80,
+        "summary": "Open-source transaction safety layer for enterprise RPA and AI agents with contracts, idempotency, policy enforcement, approvals, compensation, reconciliation, CLI/API and Docker Compose.",
+        "audience": "Teams deploying agents into consequential business workflows where duplicate actions and partial failures matter.",
+        "aiNativeAngle": "Wraps API, browser, MCP and human-task actions in auditable transaction semantics so agents have external safety rails for real-world effects.",
+        "growthSignal": "GitHub Search API snapshot showed 1 star and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README lists Fastify REST API, CLI, Docker Compose, reference refund workflow, OPA policy and approval semantics.",
+        "runnability": "README shows product architecture, but no install, DAG execution, policy decision, approval gate, compensation action or evidence receipt was tested.",
+        "recommendedAction": "Keep as a design reference and run only synthetic refund/order workflows until effect verification is demonstrated.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "samsgates/FlowCommit",
+          "url": "https://github.com/samsgates/FlowCommit",
+          "category": "Transaction Safety Layer for Agents",
+          "score": 80,
+          "summary": "Open-source transaction safety layer for enterprise RPA and AI agents with contracts, idempotency, policy enforcement, approvals, compensation, reconciliation, CLI/API and Docker Compose.",
+          "audience": "Teams deploying agents into consequential business workflows where duplicate actions and partial failures matter.",
+          "ai_native_angle": "Wraps API, browser, MCP and human-task actions in auditable transaction semantics so agents have external safety rails for real-world effects.",
+          "growth_signal": "GitHub Search API snapshot showed 1 star and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README lists Fastify REST API, CLI, Docker Compose, reference refund workflow, OPA policy and approval semantics.",
+          "runnability": "README shows product architecture, but no install, DAG execution, policy decision, approval gate, compensation action or evidence receipt was tested.",
+          "recommended_action": "Keep as a design reference and run only synthetic refund/order workflows until effect verification is demonstrated."
         }
       }
     ],
@@ -34296,6 +35104,40 @@
         }
       }
     ],
+    "ooocooc/open-skill-sunset": [
+      {
+        "id": "ooocooc-open-skill-sunset:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "ooocooc/open-skill-sunset",
+        "url": "https://github.com/ooocooc/open-skill-sunset",
+        "category": "Agent Skill Retirement Auditor",
+        "score": 78,
+        "summary": "Tooling to audit and safely retire stale generic AI-agent instructions.",
+        "audience": "Teams maintaining many reusable agent skills and needing a cleanup workflow.",
+        "aiNativeAngle": "Treats instruction aging and retirement as an operational lifecycle for agents.",
+        "growthSignal": "GitHub Search API snapshot showed 72 stars and 2 forks; created and pushed 2026-08-26. README has focused audit/retirement framing.",
+        "runnability": "No install, audit report, replacement map or host integration was tested.",
+        "recommendedAction": "Watch for real-world skill inventory examples before using it on production memory/skills.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "ooocooc/open-skill-sunset",
+          "url": "https://github.com/ooocooc/open-skill-sunset",
+          "category": "Agent Skill Retirement Auditor",
+          "score": 78,
+          "summary": "Tooling to audit and safely retire stale generic AI-agent instructions.",
+          "audience": "Teams maintaining many reusable agent skills and needing a cleanup workflow.",
+          "ai_native_angle": "Treats instruction aging and retirement as an operational lifecycle for agents.",
+          "growth_signal": "GitHub Search API snapshot showed 72 stars and 2 forks; created and pushed 2026-08-26. README has focused audit/retirement framing.",
+          "runnability": "No install, audit report, replacement map or host integration was tested.",
+          "recommended_action": "Watch for real-world skill inventory examples before using it on production memory/skills."
+        }
+      }
+    ],
     "aiopshwang/goal-to-proof": [
       {
         "id": "aiopshwang-goal-to-proof:2026-08-24T12:08:15+08:00:top:0",
@@ -35683,6 +36525,40 @@
         }
       }
     ],
+    "Renaissance-AI-Solutions/consistorium": [
+      {
+        "id": "Renaissance-AI-Solutions-consistorium:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "Renaissance-AI-Solutions/consistorium",
+        "url": "https://github.com/Renaissance-AI-Solutions/consistorium",
+        "category": "Local Repo Intelligence MCP",
+        "score": 77,
+        "summary": "Local-first MCP server exposing live git state, allowlisted docs, durable tasks and agent handoffs to conversational models.",
+        "audience": "Teams splitting strategic reasoning and coding-agent execution across multiple clients.",
+        "aiNativeAngle": "Labels live observations separately from agent records, reducing stale-summary confusion for coding agents.",
+        "growthSignal": "GitHub Search API snapshot showed 9 stars and 2 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, demo GIF, npm quickstart and MCP client setup.",
+        "runnability": "No npm install, MCP connection, git-state query, doc allowlist or handoff workflow was tested.",
+        "recommendedAction": "Compare its memory/live-observation model with this repo’s automation memory workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Renaissance-AI-Solutions/consistorium",
+          "url": "https://github.com/Renaissance-AI-Solutions/consistorium",
+          "category": "Local Repo Intelligence MCP",
+          "score": 77,
+          "summary": "Local-first MCP server exposing live git state, allowlisted docs, durable tasks and agent handoffs to conversational models.",
+          "audience": "Teams splitting strategic reasoning and coding-agent execution across multiple clients.",
+          "ai_native_angle": "Labels live observations separately from agent records, reducing stale-summary confusion for coding agents.",
+          "growth_signal": "GitHub Search API snapshot showed 9 stars and 2 forks; created 2026-08-23, pushed 2026-08-25 and updated 2026-08-26. README includes CI badge, demo GIF, npm quickstart and MCP client setup.",
+          "runnability": "No npm install, MCP connection, git-state query, doc allowlist or handoff workflow was tested.",
+          "recommended_action": "Compare its memory/live-observation model with this repo’s automation memory workflow."
+        }
+      }
+    ],
     "adamfreeman2024-eng/agentbazaar": [
       {
         "id": "adamfreeman2024-eng-agentbazaar:2026-08-24T12:08:15+08:00:top:0",
@@ -36556,6 +37432,40 @@
           "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
           "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
           "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+        }
+      }
+    ],
+    "alchaincyf/huashu-chrome": [
+      {
+        "id": "alchaincyf-huashu-chrome:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "alchaincyf/huashu-chrome",
+        "url": "https://github.com/alchaincyf/huashu-chrome",
+        "category": "Chrome MCP Extension",
+        "score": 76,
+        "summary": "MCP plus Chrome extension that lets multiple AI-agent clients control the user’s existing logged-in Chrome.",
+        "audience": "Chinese agent users who want Claude Code, Codex, Cursor or Gemini CLI to operate personal Chrome state.",
+        "aiNativeAngle": "Moves browser control into an MCP extension boundary with existing login state.",
+        "growthSignal": "GitHub Search API snapshot showed 7 stars and 2 forks; created and pushed 2026-08-26. README includes universal-client positioning and Chrome extension/MCP framing.",
+        "runnability": "No extension install, browser permission audit, MCP tool call or login-state isolation test was performed.",
+        "recommendedAction": "Watch alongside Wbrowser; inspect permission and tab-isolation design before using real accounts.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "alchaincyf/huashu-chrome",
+          "url": "https://github.com/alchaincyf/huashu-chrome",
+          "category": "Chrome MCP Extension",
+          "score": 76,
+          "summary": "MCP plus Chrome extension that lets multiple AI-agent clients control the user’s existing logged-in Chrome.",
+          "audience": "Chinese agent users who want Claude Code, Codex, Cursor or Gemini CLI to operate personal Chrome state.",
+          "ai_native_angle": "Moves browser control into an MCP extension boundary with existing login state.",
+          "growth_signal": "GitHub Search API snapshot showed 7 stars and 2 forks; created and pushed 2026-08-26. README includes universal-client positioning and Chrome extension/MCP framing.",
+          "runnability": "No extension install, browser permission audit, MCP tool call or login-state isolation test was performed.",
+          "recommended_action": "Watch alongside Wbrowser; inspect permission and tab-isolation design before using real accounts."
         }
       }
     ],
@@ -37602,6 +38512,40 @@
           "growth_signal": "Recent MCP search visibility from a major enterprise vendor.",
           "runnability": "Product/infrastructure shaped; meaningful testing likely requires Salesforce context and credentials.",
           "recommended_action": "Track as an enterprise MCP pattern, especially auth and governance choices."
+        }
+      }
+    ],
+    "pokemon225/ax-platform-mcp": [
+      {
+        "id": "pokemon225-ax-platform-mcp:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "pokemon225/ax-platform-mcp",
+        "url": "https://github.com/pokemon225/ax-platform-mcp",
+        "category": "Agent-native Collaboration Network",
+        "score": 75,
+        "summary": "Remote MCP server for long-running agent collaboration with messaging, tasks, shared context, search and MCP apps.",
+        "audience": "Builders experimenting with always-on agent networks and durable agent channels.",
+        "aiNativeAngle": "Frames collaboration primitives around agent identity, wake-up semantics, thread continuity and task routing.",
+        "growthSignal": "GitHub Search API snapshot showed 11 stars and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README discusses agent channels and durable routing concepts.",
+        "runnability": "No remote MCP connection, auth, task routing, mention wake-up or attachment workflow was tested.",
+        "recommendedAction": "Track for protocol clarity and real adapters before depending on it.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "pokemon225/ax-platform-mcp",
+          "url": "https://github.com/pokemon225/ax-platform-mcp",
+          "category": "Agent-native Collaboration Network",
+          "score": 75,
+          "summary": "Remote MCP server for long-running agent collaboration with messaging, tasks, shared context, search and MCP apps.",
+          "audience": "Builders experimenting with always-on agent networks and durable agent channels.",
+          "ai_native_angle": "Frames collaboration primitives around agent identity, wake-up semantics, thread continuity and task routing.",
+          "growth_signal": "GitHub Search API snapshot showed 11 stars and 0 forks; created 2026-08-25, pushed 2026-08-25 and updated 2026-08-25. README discusses agent channels and durable routing concepts.",
+          "runnability": "No remote MCP connection, auth, task routing, mention wake-up or attachment workflow was tested.",
+          "recommended_action": "Track for protocol clarity and real adapters before depending on it."
         }
       }
     ],
@@ -38669,6 +39613,40 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "theisegoria/game-asset-mcp": [
+      {
+        "id": "theisegoria-game-asset-mcp:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "theisegoria/game-asset-mcp",
+        "url": "https://github.com/theisegoria/game-asset-mcp",
+        "category": "Game Asset Generation MCP",
+        "score": 74,
+        "summary": "MCP server for agentic game-asset generation, validation and retexturing with local mesh checks, optional Blender repair and provider-cost reporting.",
+        "audience": "Game developers who want agents to produce and validate usable 3D assets with provenance and budget controls.",
+        "aiNativeAngle": "Gives asset generation a tool-call pipeline with validation verdicts and spend-aware provider boundaries.",
+        "growthSignal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-24, pushed 2026-08-25 and updated 2026-08-25. README includes detailed pipeline, tool list, Blender notes and npx install path.",
+        "runnability": "No MCP server run, Blender integration, provider API call, mesh validation, PBR texture extraction or spend report was tested.",
+        "recommendedAction": "Use as a watchlist candidate for creative-agent pipelines; test first with owned simple meshes.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "theisegoria/game-asset-mcp",
+          "url": "https://github.com/theisegoria/game-asset-mcp",
+          "category": "Game Asset Generation MCP",
+          "score": 74,
+          "summary": "MCP server for agentic game-asset generation, validation and retexturing with local mesh checks, optional Blender repair and provider-cost reporting.",
+          "audience": "Game developers who want agents to produce and validate usable 3D assets with provenance and budget controls.",
+          "ai_native_angle": "Gives asset generation a tool-call pipeline with validation verdicts and spend-aware provider boundaries.",
+          "growth_signal": "GitHub Search API snapshot showed 8 stars and 0 forks; created 2026-08-24, pushed 2026-08-25 and updated 2026-08-25. README includes detailed pipeline, tool list, Blender notes and npx install path.",
+          "runnability": "No MCP server run, Blender integration, provider API call, mesh validation, PBR texture extraction or spend report was tested.",
+          "recommended_action": "Use as a watchlist candidate for creative-agent pipelines; test first with owned simple meshes."
         }
       }
     ],
@@ -40086,6 +41064,40 @@
         }
       }
     ],
+    "CaineWind/LivePhoneCall": [
+      {
+        "id": "CaineWind-LivePhoneCall:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "CaineWind/LivePhoneCall",
+        "url": "https://github.com/CaineWind/LivePhoneCall",
+        "category": "Local-first Voice Agent PWA",
+        "score": 73,
+        "summary": "Chinese/English local-first voice conversation stack with streaming Qwen3 ASR/TTS, pluggable LLMs, FastAPI, SQLite, Vue PWA and Windows Docker deployment.",
+        "audience": "Builders of bilingual voice-agent prototypes who need a reproducible local deployment surface.",
+        "aiNativeAngle": "Separates voice, agent and TTS workers behind a local FastAPI interface with per-agent voice/model settings.",
+        "growthSignal": "GitHub Search API snapshot showed 2 stars and 0 forks; created and pushed 2026-08-23. README has architecture, deployment script and Docker/WSL2 notes.",
+        "runnability": "No Docker build, ASR/TTS model load, PWA install, microphone path, latency or bilingual conversation test was performed.",
+        "recommendedAction": "Watch for demo audio and model-size guidance before a serious local trial.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "CaineWind/LivePhoneCall",
+          "url": "https://github.com/CaineWind/LivePhoneCall",
+          "category": "Local-first Voice Agent PWA",
+          "score": 73,
+          "summary": "Chinese/English local-first voice conversation stack with streaming Qwen3 ASR/TTS, pluggable LLMs, FastAPI, SQLite, Vue PWA and Windows Docker deployment.",
+          "audience": "Builders of bilingual voice-agent prototypes who need a reproducible local deployment surface.",
+          "ai_native_angle": "Separates voice, agent and TTS workers behind a local FastAPI interface with per-agent voice/model settings.",
+          "growth_signal": "GitHub Search API snapshot showed 2 stars and 0 forks; created and pushed 2026-08-23. README has architecture, deployment script and Docker/WSL2 notes.",
+          "runnability": "No Docker build, ASR/TTS model load, PWA install, microphone path, latency or bilingual conversation test was performed.",
+          "recommended_action": "Watch for demo audio and model-size guidance before a serious local trial."
+        }
+      }
+    ],
     "stufently/telegram-ai-cli": [
       {
         "id": "stufently-telegram-ai-cli:2026-08-24T12:08:15+08:00:watchlist:0",
@@ -41218,6 +42230,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "covan-ai/covan": [
+      {
+        "id": "covan-ai-covan:2026-08-26T22:35:00+08:00:watchlist:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "watchlist",
+        "rank": 7,
+        "fullName": "covan-ai/covan",
+        "url": "https://github.com/covan-ai/covan",
+        "category": "Self-hostable Team AI Agent",
+        "score": 72,
+        "summary": "Shared self-hostable AI agent for teams where everyone trains it together while interacting privately.",
+        "audience": "Small teams seeking a communal knowledge agent with private per-user conversations.",
+        "aiNativeAngle": "Combines shared training/context with private user-agent interaction rather than one global chat transcript.",
+        "growthSignal": "GitHub Search API snapshot showed 2 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README has self-hostable positioning and team-agent framing.",
+        "runnability": "No self-host install, permission model, ingestion workflow, private-chat separation or team-training behavior was tested.",
+        "recommendedAction": "Watch for docs on identity, permissions and data deletion before adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "covan-ai/covan",
+          "url": "https://github.com/covan-ai/covan",
+          "category": "Self-hostable Team AI Agent",
+          "score": 72,
+          "summary": "Shared self-hostable AI agent for teams where everyone trains it together while interacting privately.",
+          "audience": "Small teams seeking a communal knowledge agent with private per-user conversations.",
+          "ai_native_angle": "Combines shared training/context with private user-agent interaction rather than one global chat transcript.",
+          "growth_signal": "GitHub Search API snapshot showed 2 stars and 0 forks; created 2026-08-25, pushed 2026-08-26 and updated 2026-08-26. README has self-hostable positioning and team-agent framing.",
+          "runnability": "No self-host install, permission model, ingestion workflow, private-chat separation or team-training behavior was tested.",
+          "recommended_action": "Watch for docs on identity, permissions and data deletion before adoption."
         }
       }
     ],
@@ -47450,6 +48496,238 @@
         }
       }
     ],
+    "api-evangelist/stackmint": [
+      {
+        "id": "api-evangelist-stackmint:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "api-evangelist/stackmint",
+        "url": "https://github.com/api-evangelist/stackmint",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Looks like descriptive API/product catalog content rather than a runnable open-source repo in this pass.",
+        "rawJson": {
+          "full_name": "api-evangelist/stackmint",
+          "url": "https://github.com/api-evangelist/stackmint",
+          "skip_reason": "Looks like descriptive API/product catalog content rather than a runnable open-source repo in this pass."
+        }
+      }
+    ],
+    "cdavid817/agent-book": [
+      {
+        "id": "cdavid817-agent-book:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "cdavid817/agent-book",
+        "url": "https://github.com/cdavid817/agent-book",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Book/tutorial content with companion material; useful learning signal but not primarily a product surface.",
+        "rawJson": {
+          "full_name": "cdavid817/agent-book",
+          "url": "https://github.com/cdavid817/agent-book",
+          "skip_reason": "Book/tutorial content with companion material; useful learning signal but not primarily a product surface."
+        }
+      }
+    ],
+    "createwithalli/Hi-Alli-Here": [
+      {
+        "id": "createwithalli-Hi-Alli-Here:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "createwithalli/Hi-Alli-Here",
+        "url": "https://github.com/createwithalli/Hi-Alli-Here",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Personal/profile repository surfaced by keyword match, not an AI-native product candidate.",
+        "rawJson": {
+          "full_name": "createwithalli/Hi-Alli-Here",
+          "url": "https://github.com/createwithalli/Hi-Alli-Here",
+          "skip_reason": "Personal/profile repository surfaced by keyword match, not an AI-native product candidate."
+        }
+      }
+    ],
+    "Faer-cpu/ai-agent": [
+      {
+        "id": "Faer-cpu-ai-agent:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Faer-cpu/ai-agent",
+        "url": "https://github.com/Faer-cpu/ai-agent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Description says “for show” and README/runtime evidence was too thin.",
+        "rawJson": {
+          "full_name": "Faer-cpu/ai-agent",
+          "url": "https://github.com/Faer-cpu/ai-agent",
+          "skip_reason": "Description says “for show” and README/runtime evidence was too thin."
+        }
+      }
+    ],
+    "langfuse/langfuse-docs": [
+      {
+        "id": "langfuse-langfuse-docs:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "langfuse/langfuse-docs",
+        "url": "https://github.com/langfuse/langfuse-docs",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Documentation repo for a mature platform; valuable but not a fresh product discovery for today.",
+        "rawJson": {
+          "full_name": "langfuse/langfuse-docs",
+          "url": "https://github.com/langfuse/langfuse-docs",
+          "skip_reason": "Documentation repo for a mature platform; valuable but not a fresh product discovery for today."
+        }
+      },
+      {
+        "id": "langfuse-langfuse-docs:2026-06-25T10:30:00+08:00:skip:1",
+        "runId": "run:2026-06-25:2026-06-25T10:30:00+08:00",
+        "runDate": "2026-06-25",
+        "generatedAt": "2026-06-25T10:30:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "langfuse/langfuse-docs",
+        "url": "https://github.com/langfuse/langfuse-docs",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Documentation repository for an established observability product, not a new runnable product repo.",
+        "rawJson": {
+          "full_name": "langfuse/langfuse-docs",
+          "url": "https://github.com/langfuse/langfuse-docs",
+          "skip_reason": "Documentation repository for an established observability product, not a new runnable product repo."
+        }
+      }
+    ],
+    "prajapatishubham336/LangChain-Groq-LLM-Applications": [
+      {
+        "id": "prajapatishubham336-LangChain-Groq-LLM-Applications:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "prajapatishubham336/LangChain-Groq-LLM-Applications",
+        "url": "https://github.com/prajapatishubham336/LangChain-Groq-LLM-Applications",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Collection of sample LLM apps; lower product specificity than the shortlist.",
+        "rawJson": {
+          "full_name": "prajapatishubham336/LangChain-Groq-LLM-Applications",
+          "url": "https://github.com/prajapatishubham336/LangChain-Groq-LLM-Applications",
+          "skip_reason": "Collection of sample LLM apps; lower product specificity than the shortlist."
+        }
+      }
+    ],
+    "ra1nyxin/immersive-vibration-response-skill": [
+      {
+        "id": "ra1nyxin-immersive-vibration-response-skill:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "ra1nyxin/immersive-vibration-response-skill",
+        "url": "https://github.com/ra1nyxin/immersive-vibration-response-skill",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Adult wearable-control skill; outside this radar’s product/workflow scope and not appropriate for public shortlist.",
+        "rawJson": {
+          "full_name": "ra1nyxin/immersive-vibration-response-skill",
+          "url": "https://github.com/ra1nyxin/immersive-vibration-response-skill",
+          "skip_reason": "Adult wearable-control skill; outside this radar’s product/workflow scope and not appropriate for public shortlist."
+        }
+      }
+    ],
+    "rajath-raman/awesome-llm-apps": [
+      {
+        "id": "rajath-raman-awesome-llm-apps:2026-08-26T22:35:00+08:00:skip:0",
+        "runId": "run:2026-08-26:2026-08-26T22:35:00+08:00",
+        "runDate": "2026-08-26",
+        "generatedAt": "2026-08-26T22:35:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "rajath-raman/awesome-llm-apps",
+        "url": "https://github.com/rajath-raman/awesome-llm-apps",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Awesome/list-style repository, not a runnable product.",
+        "rawJson": {
+          "full_name": "rajath-raman/awesome-llm-apps",
+          "url": "https://github.com/rajath-raman/awesome-llm-apps",
+          "skip_reason": "Awesome/list-style repository, not a runnable product."
+        }
+      }
+    ],
     "atinux/docster": [
       {
         "id": "atinux-docster:2026-08-24T12:08:15+08:00:skip:0",
@@ -52809,32 +54087,6 @@
           "full_name": "justoneapi/justoneapi-mcp",
           "url": "https://github.com/justoneapi/justoneapi-mcp",
           "skip_reason": "Thin MCP wrapper around one API surface; insufficient independent workflow/product depth."
-        }
-      }
-    ],
-    "langfuse/langfuse-docs": [
-      {
-        "id": "langfuse-langfuse-docs:2026-06-25T10:30:00+08:00:skip:0",
-        "runId": "run:2026-06-25:2026-06-25T10:30:00+08:00",
-        "runDate": "2026-06-25",
-        "generatedAt": "2026-06-25T10:30:00+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "langfuse/langfuse-docs",
-        "url": "https://github.com/langfuse/langfuse-docs",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Documentation repository for an established observability product, not a new runnable product repo.",
-        "rawJson": {
-          "full_name": "langfuse/langfuse-docs",
-          "url": "https://github.com/langfuse/langfuse-docs",
-          "skip_reason": "Documentation repository for an established observability product, not a new runnable product repo."
         }
       }
     ],
