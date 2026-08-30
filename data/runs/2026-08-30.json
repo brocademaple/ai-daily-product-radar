@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-08-30",
+  "generated_at": "2026-08-30T12:20:00+08:00",
+  "data_window": "2026-08-27 00:00 to 2026-08-30 12:20 Asia/Shanghai. GitHub Search API queries covered AI agent, MCP agent, browser agent, code agent, RAG agent, voice agent, AI assistant, copilot agent, AI workflow, LLM app, automation agent and active recently pushed repositories. Raw responses were saved under /tmp/radar_2026_08_30_*.json; selected README audits were saved under /tmp/radar_2026_08_30_readmes/.",
+  "source_summary": "git fetch origin succeeded on main...origin/main. Pre-existing unrelated frontend/deploy dirty files and old untracked data/runs/2026-08-19-lark-message.md were preserved unstaged. Discovery used unauthenticated GitHub Search API metadata and selected README raw downloads. README fetching later hit unauthenticated GitHub API rate limits for several lower-ranked candidates. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-handshake-tested, credential-tested, provider-tested, payment-tested, security-scanned or deployed.",
+  "trend_observations": "The strongest new cluster is not generic chatbots but operational control layers around agents: model gateways, durable coworker sessions, execution recovery, usage/cost ledgers, phone/browser/GUI bridges, multimodal memory, symbolic memory and build-vs-buy guardrails. The center of gravity moved from single-agent demos toward auditable boundaries around real work: credentials, approvals, event logs, local execution, cost, rollback and human takeover.",
+  "assumptions": "Scores are editorial point-in-time rankings based on GitHub Search API metadata, README evidence, visible product surface, install/build cues, documentation completeness, repository freshness and AI-native workflow depth. Stars/forks are unauthenticated API snapshots, not exact growth deltas. README claims were not independently runtime-verified. Mature platforms, pure prompt or skill collections, paper-first research repos, thin Windows utilities, marketing-only repos and projects without clear runnable surfaces were downgraded or skipped. The prior automation memory has no completed 2026-08-28 or 2026-08-29 public run, so this run advances the committed dataset from 2026-08-26 to 2026-08-30.",
+  "markdown_report": "data/runs/2026-08-30.md",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "hkqr/my-free-code",
+      "url": "https://github.com/hkqr/my-free-code",
+      "category": "Coding Agent Model Gateway",
+      "score": 91,
+      "summary": "FastAPI multi-provider gateway for Claude Code and other coding agents, exposing Anthropic Messages, OpenAI Responses, model discovery, token counting, local admin UI and launcher adapters.",
+      "audience": "Developers and teams that want coding agents to route across paid, free and local model providers without changing each client by hand.",
+      "ai_native_angle": "Makes model routing, fallback, thinking-mode mapping and coding-agent launch configuration a first-class runtime surface for agents.",
+      "growth_signal": "GitHub Search API snapshot showed 274 stars and 96 forks; created 2026-08-27, updated 2026-08-30, and appeared in AI-agent, code-agent and vertical queries. README includes install commands, admin UI endpoints, protocol list, provider catalog and launcher examples.",
+      "runnability": "README has concrete Python install/start flow and HTTP endpoints. No gateway boot, provider credential, streaming, tool-call, fallback or client-launch test was performed.",
+      "recommended_action": "Prototype against one disposable Codex/Claude Code client and verify streamed tool calls, fallback behavior and provider identity mapping."
+    },
+    {
+      "rank": 2,
+      "full_name": "useagenthq/useagent",
+      "url": "https://github.com/useagenthq/useagent",
+      "category": "Team AI Coworker Control Plane",
+      "score": 89,
+      "summary": "Self-hosted workspace for handing work to Claude Code, Codex and OpenCode in durable sandboxed sessions with web UI, event timelines, tools, memory, Slack and artifact return.",
+      "audience": "Teams that want agent work to look like assignable coworker sessions with visible state, approvals and finished artifacts.",
+      "ai_native_angle": "Treats the agent run itself as a durable product object: event-sourced session, isolated computer, trusted tool gateway, approvals and artifact handoff.",
+      "growth_signal": "GitHub Search API snapshot showed 26 stars; created 2026-08-29, pushed and updated 2026-08-30. README includes UI screenshots, Bun/Postgres quickstart, self-hosting path, architecture diagram and supported engines.",
+      "runnability": "Strong product/UI evidence, but no Bun install, Postgres/pgvector boot, sandbox provider, Slack app, engine adapter or artifact renderer was tested.",
+      "recommended_action": "Watch as a serious open-source coworker layer; trial only in a disposable workspace because alpha APIs and infrastructure assumptions are explicit."
+    },
+    {
+      "rank": 3,
+      "full_name": "usedotai/dot-reflex",
+      "url": "https://github.com/usedotai/dot-reflex",
+      "category": "Agent Execution Recovery Controller",
+      "score": 88,
+      "summary": "QLoRA-based controller that reads compact agent trajectories and returns machine-readable recovery decisions such as verify, retry differently, rollback, branch, switch model or ask a human.",
+      "audience": "Agent framework builders who need a separate loop supervisor to catch false completion, missing evidence and repeated failure states.",
+      "ai_native_angle": "Separates worker-agent execution from recovery control, giving agent loops an explicit evidence gate instead of relying on the same model to judge itself.",
+      "growth_signal": "GitHub Search API snapshot showed 97 stars; created and pushed 2026-08-28, updated 2026-08-29. README includes schema, CLI/server examples, integration guidance, benchmark caveats and training receipt.",
+      "runnability": "Documented CLI and localhost HTTP server path require Linux/NVIDIA GPU for reference runtime. No model download, inference, schema validation or harness integration was tested.",
+      "recommended_action": "Use the trajectory schema as a design reference now; test the controller on synthetic false-completion traces before adopting its model output."
+    },
+    {
+      "rank": 4,
+      "full_name": "damejan80/tokentab",
+      "url": "https://github.com/damejan80/tokentab",
+      "category": "Local Agent Usage Analytics",
+      "score": 87,
+      "summary": "Local CLI and standard-library web dashboard that parses Claude Code, Codex and Gemini CLI logs to report token usage and cost by model, project, day and activity type.",
+      "audience": "Heavy coding-agent users who need real local spend visibility across tools without uploading private session logs.",
+      "ai_native_angle": "Turns the artifacts agents already leave on disk into an operational cost ledger and makes Codex/Claude/Gemini usage comparable.",
+      "growth_signal": "GitHub Search API snapshot showed 251 stars and 25 forks; created 2026-08-27 and updated 2026-08-30. README has install commands, dashboard screenshot, provider paths, JSON output and pricing-table caveats.",
+      "runnability": "README gives a simple Python install and localhost dashboard path. No install, parser accuracy, pricing freshness, Cursor stub or private-log handling was tested.",
+      "recommended_action": "Run locally against a copied log folder and compare totals with vendor dashboards before relying on monthly cost decisions."
+    },
+    {
+      "rank": 5,
+      "full_name": "kingbootoshi/facetime-bridge",
+      "url": "https://github.com/kingbootoshi/facetime-bridge",
+      "category": "Voice Agent Telephony Bridge",
+      "score": 86,
+      "summary": "Local macOS bridge that controls FaceTime Audio through strict Accessibility actions, BlackHole audio routing, caller authorization, doctor checks and a browser MediaStream workbench.",
+      "audience": "Voice-agent builders who need provider-neutral two-way audio over an already configured FaceTime account.",
+      "ai_native_angle": "Exposes a real consumer calling surface as an agent-controllable local bridge while keeping iCloud sign-in, caller authority and audio provider choice outside the model.",
+      "growth_signal": "GitHub Search API snapshot showed 99 stars and 17 forks; created 2026-08-27, pushed and updated 2026-08-29. README includes security behavior, CLI, setup/doctor, gRPC/audio contracts and integration docs.",
+      "runnability": "Detailed macOS/Bun/Homebrew path exists. No FaceTime login, Accessibility grant, BlackHole setup, gRPC daemon, audio workbench, caller authorization or hangup flow was tested.",
+      "recommended_action": "Evaluate only with a dedicated iCloud account and test the doctor/probe path before connecting any AI voice stack."
+    },
+    {
+      "rank": 6,
+      "full_name": "xiaotianfotos/indexed",
+      "url": "https://github.com/xiaotianfotos/indexed",
+      "category": "Multimodal Video Memory",
+      "score": 84,
+      "summary": "Chrome-extension first product that indexes user-selected YouTube/Bilibili video segments and transcripts into multimodal memory for human search and future AI-agent access.",
+      "audience": "Researchers, creators and AI users who need to retrieve exact visual moments from watched videos as reusable context.",
+      "ai_native_angle": "Turns video consumption into structured visual/text memory with timestamps, model profiles and planned CLI/AI Skill interfaces.",
+      "growth_signal": "GitHub Search API snapshot showed 31 stars and 3 forks; created 2026-08-27, updated 2026-08-29. README is bilingual and documents architecture, extension status, local install docs and roadmap.",
+      "runnability": "Current source claims Chrome MV3 capture and direct embedding/vector-store configuration. No extension install, embedding service, OSS Vectors connection, search quality or credential isolation test was performed.",
+      "recommended_action": "Track closely and test on a small owned video set once packaged extension releases or local dashboard hardening land."
+    },
+    {
+      "rank": 7,
+      "full_name": "Asuka008/SynthexCode",
+      "url": "https://github.com/Asuka008/SynthexCode",
+      "category": "Terminal Coding Agent",
+      "score": 83,
+      "summary": "Python/Textual terminal-native coding assistant with multi-provider models, file/bash tools, subagents, MCP support, memory, hooks, sandbox permissions, worktrees and remote browser UI.",
+      "audience": "Developers who want a Claude Code-like local terminal agent with visible commands, permissions and extensible agent/team primitives.",
+      "ai_native_angle": "Bundles the core agent loop, MCP loading, memory, skills, subagents and worktree isolation into one terminal product surface.",
+      "growth_signal": "GitHub Search API snapshot showed 31 stars; created and pushed 2026-08-27, updated 2026-08-30. README includes feature list, uv quickstart, config example, CLI modes and project structure.",
+      "runnability": "Concrete uv/Python path exists. No install, provider config, sandbox, MCP server, worktree switch, remote UI or pytest run was performed.",
+      "recommended_action": "Compare architecture against existing coding-agent hosts, especially permission handling and event/log surfaces."
+    },
+    {
+      "rank": 8,
+      "full_name": "affirmitv/ghosthands",
+      "url": "https://github.com/affirmitv/ghosthands",
+      "category": "Pixel GUI Automation Agent",
+      "score": 82,
+      "summary": "Screen-driving agent loop using a vision planner, grounding model and Raspberry Pi Pico USB-HID mouse/keyboard to operate native apps outside browser DOM automation.",
+      "audience": "Automation builders who need agents to manipulate arbitrary GUI surfaces, remote desktops or non-web apps with visual logs.",
+      "ai_native_angle": "Combines screenshot reasoning, grounding and physical HID actions so the agent interacts with the same pixels and input layer a human uses.",
+      "growth_signal": "GitHub Search API snapshot showed 30 stars and 3 forks; created 2026-08-27, pushed and updated 2026-08-30. README includes quickstart, hardware split, loop diagram, logs, safety stops and examples.",
+      "runnability": "README has hardware/software setup, but no Pico flash, screen capture, OpenRouter call, grounding model, GUI task, safety checkpoint or log replay was tested.",
+      "recommended_action": "Treat as high-risk but important; run only on an isolated machine/account and verify abort/approval behavior first."
+    },
+    {
+      "rank": 9,
+      "full_name": "JordyZomer/lemmalog",
+      "url": "https://github.com/JordyZomer/lemmalog",
+      "category": "Rule-based Agent Memory Engine",
+      "score": 81,
+      "summary": "Rust Datalog engine for LLM agent memory with stratified rules, provenance-tracked facts, incremental derivation and an MCP server for harness integration.",
+      "audience": "Agent runtime builders looking for explicit symbolic memory, provenance and derived facts instead of opaque vector-only recall.",
+      "ai_native_angle": "Gives agent memory a queryable rule layer and MCP boundary so derived beliefs can be traced back to source facts.",
+      "growth_signal": "GitHub Search API snapshot showed 153 stars and 11 forks; created 2026-08-27, pushed 2026-08-28 and updated 2026-08-30. Query hits included LLM and MCP-agent searches.",
+      "runnability": "README was fetched successfully but not fully audited in this run. No Rust build, Datalog query, provenance trace, incremental update or MCP handshake was tested.",
+      "recommended_action": "Audit examples and license next; compare with vector-memory systems for tasks where explainable derived state matters."
+    },
+    {
+      "rank": 10,
+      "full_name": "Emanuelel/dont-reinvent",
+      "url": "https://github.com/Emanuelel/dont-reinvent",
+      "category": "Build-vs-Buy Agent Skill",
+      "score": 79,
+      "summary": "Claude/Codex-compatible skill that asks coding agents to check open-source and commercial alternatives, including license, maintenance and security, before building non-trivial code from scratch.",
+      "audience": "Engineering teams trying to reduce agent overbuilding and token waste during implementation planning.",
+      "ai_native_angle": "Introduces an explicit procurement/reuse checkpoint into the agent workflow, turning dependency choice into a repeatable tool-backed habit.",
+      "growth_signal": "GitHub Search API snapshot showed 22 stars and 1 fork; created 2026-08-27, updated 2026-08-29, and appeared in AI-agent, code-agent and MCP queries. README includes demo GIF, install commands, evaluation examples and required connector list.",
+      "runnability": "Install path is clear, but it depends on external search/security connectors. No skill install, GitHub MCP read, Socket scan, package vetting or agent-host behavior was tested.",
+      "recommended_action": "Use as a lightweight policy reference; only depend on its verdicts when the required connector chain is actually connected."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "Nanako0129/sepia",
+      "url": "https://github.com/Nanako0129/sepia",
+      "category": "Agent Writing Skill",
+      "score": 78,
+      "summary": "Portable de-AI writing skill for fiction and professional prose across Claude Code, Codex, Grok Build and Antigravity.",
+      "audience": "Writers and agent users who want venue-specific revision protocols instead of generic humanizer rewrites.",
+      "ai_native_angle": "Packages writing diagnosis and rewrite operations as a reusable agent skill with research-backed routing.",
+      "growth_signal": "GitHub Search API snapshot showed 689 stars and 37 forks; created 2026-08-28, pushed 2026-08-29 and updated 2026-08-30. README has install paths and detailed skill layout.",
+      "runnability": "A skill package rather than a standalone app; no install or output quality audit was performed.",
+      "recommended_action": "Watch for real before/after examples and host compatibility reports."
+    },
+    {
+      "rank": 2,
+      "full_name": "cbrock84/headcount",
+      "url": "https://github.com/cbrock84/headcount",
+      "category": "Agent Skill Organization Pack",
+      "score": 76,
+      "summary": "Company-like department structure of independently installable Claude Code skills.",
+      "audience": "Power users organizing many specialized agent instructions.",
+      "ai_native_angle": "Models an agent organization as installable skill departments.",
+      "growth_signal": "GitHub Search API snapshot showed 316 stars and 42 forks; created 2026-08-28, pushed and updated 2026-08-30.",
+      "runnability": "README fetched successfully; language is Markdown and product code surface appears limited.",
+      "recommended_action": "Inspect only as a skill taxonomy reference before adopting any department wholesale."
+    },
+    {
+      "rank": 3,
+      "full_name": "Endokelp/Only-Skill-You-Need",
+      "url": "https://github.com/Endokelp/Only-Skill-You-Need",
+      "category": "Skill Router",
+      "score": 75,
+      "summary": "Beginner-oriented agent skill bootstrapper and task router for Claude Code, Cursor and related agents.",
+      "audience": "New agent users who want one entry skill to route tasks.",
+      "ai_native_angle": "Attempts to make skill selection itself agent-native.",
+      "growth_signal": "GitHub Search API snapshot showed 37 stars; created and pushed 2026-08-27.",
+      "runnability": "README indicates install assets, but no routing quality or host behavior was tested.",
+      "recommended_action": "Watch for objective routing benchmarks and narrower maintained skill targets."
+    },
+    {
+      "rank": 4,
+      "full_name": "aleksandr-alhoff/seo-landing",
+      "url": "https://github.com/aleksandr-alhoff/seo-landing",
+      "category": "Technical SEO Agent Skill",
+      "score": 74,
+      "summary": "Agent skill for landing-page technical SEO, Core Web Vitals and schema-oriented checks.",
+      "audience": "Builders asking coding agents to create or improve SEO landing pages.",
+      "ai_native_angle": "Turns SEO checklist work into a reusable coding-agent capability.",
+      "growth_signal": "GitHub Search API snapshot showed 45 stars and 5 forks; created 2026-08-28 and updated 2026-08-30.",
+      "runnability": "No README deep audit, Lighthouse run, schema validation or generated landing page test was performed.",
+      "recommended_action": "Keep for future landing-page QA, but require measured PageSpeed evidence."
+    },
+    {
+      "rank": 5,
+      "full_name": "naderelewa/Product-to-Prod",
+      "url": "https://github.com/naderelewa/Product-to-Prod",
+      "category": "Product Management Agent Skill",
+      "score": 73,
+      "summary": "AI product-management skill/plugin pack for PRDs, specs, RICE, backlog, roadmap and release verification.",
+      "audience": "PMs and builders using agents for product planning artifacts.",
+      "ai_native_angle": "Makes evidence-tagged product thinking available as agent skills.",
+      "growth_signal": "GitHub Search API snapshot showed 20 stars; created 2026-08-28 and updated 2026-08-30.",
+      "runnability": "No install, template quality, evidence tagging or workflow integration was tested.",
+      "recommended_action": "Watch as a PM-method reference rather than as a product runtime."
+    },
+    {
+      "rank": 6,
+      "full_name": "rpmalouin/AI-Research-Assistant",
+      "url": "https://github.com/rpmalouin/AI-Research-Assistant",
+      "category": "Research Assistant Prototype",
+      "score": 72,
+      "summary": "New Python AI research assistant candidate with sparse visible metadata in search results.",
+      "audience": "Researchers looking for lightweight assistant workflows.",
+      "ai_native_angle": "Potentially wraps research tasks in a runnable assistant, but README evidence was unavailable due to API rate limiting.",
+      "growth_signal": "GitHub Search API snapshot showed 29 stars and 1 fork; created 2026-08-29.",
+      "runnability": "README fetch hit unauthenticated GitHub API rate limit; no product-surface audit was completed.",
+      "recommended_action": "Re-audit README and files after rate limit resets before promoting."
+    },
+    {
+      "rank": 7,
+      "full_name": "baidu-baige/LoongSage",
+      "url": "https://github.com/baidu-baige/LoongSage",
+      "category": "Agentic RL Framework",
+      "score": 70,
+      "summary": "Production-grade Agentic RL framework candidate for frontier LLMs.",
+      "audience": "Research and infra teams training/evaluating agentic models.",
+      "ai_native_angle": "Useful for agent training loops, but closer to framework/research infrastructure than end-user product.",
+      "growth_signal": "GitHub Search API snapshot showed 32 stars and 1 fork; created 2026-08-28, updated 2026-08-29.",
+      "runnability": "README fetch hit API rate limit; no recipe or validation audit was completed.",
+      "recommended_action": "Track only if validated recipes map to product-agent behavior."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "MirroS-Lab/Code-as-World",
+      "url": "https://github.com/MirroS-Lab/Code-as-World",
+      "skip_reason": "Interesting agentic physical-reasoning research, but README evidence points to paper/research code more than a product workflow for users."
+    },
+    {
+      "full_name": "MUJI0807/RK3588-Dual-Camera-AI-Perception-System",
+      "url": "https://github.com/MUJI0807/RK3588-Dual-Camera-AI-Perception-System",
+      "skip_reason": "Hardware vision/perception system is outside the AI-native product-agent focus for today and README audit was rate-limited."
+    },
+    {
+      "full_name": "glossycannon/AI-Old-Video-Restoration-Tool",
+      "url": "https://github.com/glossycannon/AI-Old-Video-Restoration-Tool",
+      "skip_reason": "Appears to be a narrow Windows media utility; search metadata did not show agent workflow depth or auditable product docs."
+    },
+    {
+      "full_name": "glossycannon/Local-Background-Removal-Tool",
+      "url": "https://github.com/glossycannon/Local-Background-Removal-Tool",
+      "skip_reason": "Single-purpose background-removal utility with weak AI-agent/native workflow signal in metadata."
+    },
+    {
+      "full_name": "glossycannon/Claude-Codex-Cursor-Token-Saver",
+      "url": "https://github.com/glossycannon/Claude-Codex-Cursor-Token-Saver",
+      "skip_reason": "Potentially relevant to coding-agent context, but README audit was rate-limited and metadata suggests thin optimizer packaging."
+    },
+    {
+      "full_name": "nil-sakariya/uninstall-copilot",
+      "url": "https://github.com/nil-sakariya/uninstall-copilot",
+      "skip_reason": "Windows Copilot removal utility, not an AI-native product with agentic workflow depth."
+    },
+    {
+      "full_name": "meharabPigeon/remove-windows-ai",
+      "url": "https://github.com/meharabPigeon/remove-windows-ai",
+      "skip_reason": "Concept/utility around removing Windows AI features; product surface and runnable code evidence were too thin for radar inclusion."
+    },
+    {
+      "full_name": "growingsqueeg/Delta-Force-Cheat-Mod-Menu-Aim-ESP",
+      "url": "https://github.com/growingsqueeg/Delta-Force-Cheat-Mod-Menu-Aim-ESP",
+      "skip_reason": "Game cheat/mod-menu repository is outside acceptable product radar scope and not an AI-agent workflow candidate."
+    }
+  ]
+}
