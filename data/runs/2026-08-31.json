@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-08-31",
+  "generated_at": "2026-08-31T10:45:00+08:00",
+  "data_window": "2026-08-28 00:00 to 2026-08-31 10:45 Asia/Shanghai. GitHub Search API batches covered newly created and recently pushed AI agent, LLM app, MCP agent, browser agent, code agent, RAG agent, voice agent, AI workflow and automation-agent repositories. Raw responses were saved under /tmp/radar_2026_08_31_*.json; selected GitHub repository metadata, root contents and README audits were saved under /tmp/radar_2026_08_31_repos/ and /tmp/radar_2026_08_31_readmes/.",
+  "source_summary": "git fetch origin succeeded on main...origin/main. Pre-existing unrelated frontend/deploy dirty files and old untracked data/runs/2026-08-19-lark-message.md were preserved unstaged. Discovery used unauthenticated GitHub Search API metadata plus selected GitHub API repository/root-content and raw README downloads. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-handshake-tested, credential-tested, provider-tested, payment-tested, security-scanned or deployed.",
+  "trend_observations": "The strongest cluster today is agent operations infrastructure: local-first control planes for many coding agents, task intake hubs, browser/desktop action bridges, delivery-evidence gates, loop guards, verified memory and agent-safe secrets. New products are less about another chatbot and more about making agent work observable, bounded, repeatable and connected to the user's existing browser, notes, inboxes, logs and credentials.",
+  "assumptions": "Scores are editorial point-in-time rankings based on GitHub Search API metadata, README evidence, root file structure, install/build cues, documentation completeness, repository freshness and AI-native workflow depth. Stars/forks are unauthenticated API snapshots, not exact growth deltas. README claims were not independently runtime-verified. Mature platforms already seen in earlier radar runs were downgraded unless today's update exposed a materially new product angle. Pure skill collections, paper/research-first repos, prompt lists, thin utilities, generic media tools and marketing-only repos were downgraded or skipped; type-level skip reasons are kept in Markdown instead of being fabricated as GitHub repo entries.",
+  "markdown_report": "data/runs/2026-08-31.md",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "codeaholicguy/ai-devkit",
+      "url": "https://github.com/codeaholicguy/ai-devkit",
+      "category": "Coding Agent Control Plane",
+      "score": 91,
+      "summary": "Local-first operating layer for Claude Code, Codex CLI, Gemini CLI, opencode, Pi, Cursor and related coding agents, with shared config, live agent console, cross-agent messaging, local SQLite memory and reusable engineering skills.",
+      "audience": "Developers and teams whose AI coding setup has grown into several agents, terminals, memories and project rule files.",
+      "ai_native_angle": "Treats multiple coding agents as an operational fleet: one config, one console, searchable memory, message routing and workflow skills that travel with the repo.",
+      "growth_signal": "GitHub Search snapshot showed 1,601 stars and 244 forks; pushed 2026-08-31 and appeared in AI-agent and code-agent queries. README audit found .codex/.claude/.cursor plugin folders, packages, skills, templates, e2e tests, npm package badges and a product screenshot.",
+      "runnability": "Strong runnable signal through npm/package workspace, console commands and project-local setup wizard. No npm install, agent attachment, memory MCP run or console session was tested.",
+      "recommended_action": "Trial in a disposable repository to compare how well it reconciles Codex, Claude Code and Cursor rules without polluting project configuration."
+    },
+    {
+      "rank": 2,
+      "full_name": "ldbumble/taskuary",
+      "url": "https://github.com/ldbumble/taskuary",
+      "category": "Local-first AI Task Hub",
+      "score": 89,
+      "summary": "Inbox-to-agent task hub that turns email, Teams, Slack and reports into one timeline, applies AI triage, then routes approved work to coding agents such as Claude Code, Codex and Gemini.",
+      "audience": "Knowledge workers and engineering operators who want external work intake, approvals and coding-agent delegation in one local-first surface.",
+      "ai_native_angle": "Makes the handoff from human inbox to agent execution a product object, with timelines, approvals, reports and local task state instead of loose chat prompts.",
+      "growth_signal": "Search snapshot showed 43 stars and 9 forks; created 2026-08-17 and pushed/updated 2026-08-31. Root audit found Dockerfile, docker-compose, PyPI-style package files, docs, website, tests, assets and security docs.",
+      "runnability": "Good product signal with Python package, Docker path and docs. No inbox connector, Slack/Teams integration, AI triage, approval flow or agent handoff was executed.",
+      "recommended_action": "Watch as a practical “agent work intake” pattern; test first with synthetic email/report fixtures before connecting real accounts."
+    },
+    {
+      "rank": 3,
+      "full_name": "MarcoPorcellato/matryca-plumber",
+      "url": "https://github.com/MarcoPorcellato/matryca-plumber",
+      "category": "Human-owned Agent Memory Plane",
+      "score": 88,
+      "summary": "Local-first daemon for Logseq/Markdown knowledge graphs, exposing structured pages, blocks, search, context and maintenance operations to humans and agents through CLI and FastMCP.",
+      "audience": "PKM users and agent builders who want AI access to durable notes while keeping source-of-truth Markdown under user control.",
+      "ai_native_angle": "Frames memory as a shared human/agent workspace: agents receive addressable graph operations instead of arbitrary file edits or opaque vendor memory.",
+      "growth_signal": "Search snapshot showed 96 stars and 17 forks; pushed/updated 2026-08-31 and hit both AI-agent and RAG/MCP queries. README/root audit found PyPI badges, CI, Makefile, docs, llms.txt, governance/security docs, demo GIF and uvx/uv install commands.",
+      "runnability": "Clear uvx/uv CLI and optional service path exist. No Logseq graph, Shadow profile, MCP connection, safe-write path or context-load workflow was tested.",
+      "recommended_action": "Use as a serious reference for personal Feishu/Obsidian/Logseq memory boundaries; verify read/write safety on a copied vault only."
+    },
+    {
+      "rank": 4,
+      "full_name": "tsaijamey/frago",
+      "url": "https://github.com/tsaijamey/frago",
+      "category": "Agent OS / Browser Workbench",
+      "score": 87,
+      "summary": "Multi-runtime automation layer that gives AI agents recipes, real signed-in browser access, session workbench, persistent run context, external intake channels and a desktop-like stage.",
+      "audience": "Users who want agent work to run through their own machine/browser with visible sessions instead of renting isolated cloud browsers.",
+      "ai_native_angle": "Turns repeated agent work into recipe artifacts and gives agents a prepared local OS surface: browser, context lookup, channels, profiles and session receipts.",
+      "growth_signal": "Search snapshot showed 59 stars and 13 forks; pushed/updated 2026-08-31. README audit found install scripts, Tauri source, docs, recipes, user guide, screenshots and browser/desktop/workbench flows.",
+      "runnability": "Strong product evidence, but no installer, browser extension, recipe execution, signed-in browser run, provider profile or Tauri desktop path was tested.",
+      "recommended_action": "Compare with browser-use/Comet-style workflows on a harmless logged-in site; focus on tab isolation and replayability."
+    },
+    {
+      "rank": 5,
+      "full_name": "kwam1na/agent-delivery-harness",
+      "url": "https://github.com/kwam1na/agent-delivery-harness",
+      "category": "Agent Delivery Evidence Gate",
+      "score": 86,
+      "summary": "Fail-closed merge-admission harness for AI coding agents, with kernel validator, conformance kit, CLI, MCP server and GitHub Action around delivery-evidence records.",
+      "audience": "Engineering teams that need agent-authored code to prove exact review and validation state before merge.",
+      "ai_native_angle": "Defines “done” for autonomous coding agents as verifiable evidence tied to a repository candidate, and makes agents unable to waive missing review or validation.",
+      "growth_signal": "Search snapshot showed a low-star early repo but pushed/updated 2026-08-31; README/root audit found npm workspaces, delivery kernel, docs, qualifications, scripts, GitHub workflow, package dry-run checks and 89-vector conformance language.",
+      "runnability": "Good engineering signal with npm ci, typecheck, sensor, provider qualification and tests. No local npm install, MCP server, GitHub Action or PR gate was run.",
+      "recommended_action": "Study the evidence schema immediately; adapt the fail-closed idea to coding-agent review pipelines before trusting agent self-reports."
+    },
+    {
+      "rank": 6,
+      "full_name": "srv1n/rzn-browser",
+      "url": "https://github.com/srv1n/rzn-browser",
+      "category": "Owned-browser Agent Automation",
+      "score": 85,
+      "summary": "Rust/browser-extension system for repeatable workflows in the user's own Chrome/Edge profile, with native host, supervisor socket, workflow catalog, LLM auto mode and MCP browser tools.",
+      "audience": "Automation builders who need agents to use a real signed-in browser profile while preserving local ownership and workflow review.",
+      "ai_native_angle": "Rejects rented browser sessions and exposes the user's browser as an agent action surface with workflow manifests, doctors, supervisors and MCP parity.",
+      "growth_signal": "Search snapshot showed 2 stars but appeared in both browser-agent and MCP-agent queries; pushed/updated 2026-08-31. README audit found Cargo workspace, extension, install scripts, workflow validation commands, skills, schema and explicit security warnings.",
+      "runnability": "Concrete install/doctor/run commands exist, but no native-host registration, extension load, live browser target, workflow run or MCP handshake was tested.",
+      "recommended_action": "Evaluate on a separate Chrome profile; start with read-only workflows and inspect side-effect warnings before any posting/upload action."
+    },
+    {
+      "rank": 7,
+      "full_name": "Hyr1sky/TheGrandQuiz",
+      "url": "https://github.com/Hyr1sky/TheGrandQuiz",
+      "category": "Observable Learning Agent",
+      "score": 83,
+      "summary": "Local-first learning and quiz agent with CLI/local web UI, grounded ingestion, approval of candidate knowledge points, trace database, token/error reporting, record/replay and offline evals.",
+      "audience": "Learners and education-tool builders who want AI tutoring workflows to be auditable instead of opaque answer generation.",
+      "ai_native_angle": "Wraps AI learning in an agent runtime with exact scope, HITL assessment, trace replay and evals, making each learning interaction inspectable.",
+      "growth_signal": "Search snapshot showed 33 stars; created 2026-06-12 and pushed/updated 2026-08-31. Root audit found pyproject, uv.lock, web app, docs, tests, CI, assets and detailed quickstart/eval commands.",
+      "runnability": "Good CLI/web evidence with uv, grandquiz commands and frontend checks. No LLM setup, ingest, quiz, trace replay or local web run was performed.",
+      "recommended_action": "Use as a reference for education-agent observability; test with a tiny markdown corpus and compare trace quality to ordinary RAG chat."
+    },
+    {
+      "rank": 8,
+      "full_name": "MildyNora/envault",
+      "url": "https://github.com/MildyNora/envault",
+      "category": "Agent-safe Secrets Vault",
+      "score": 82,
+      "summary": "Local encrypted secrets vault for coding agents: humans manage keys in a TUI/dashboard, agents see secret names/ciphers and run commands with injected, masked environment variables.",
+      "audience": "Developers who want agents to use API keys during builds/tests without exposing plaintext secrets to model context or repo files.",
+      "ai_native_angle": "Turns secret access into an explicit agent workflow with named capabilities, biometric prompts, audit logs, skill install and masked command execution.",
+      "growth_signal": "Search snapshot showed 18 stars and 1 fork; created 2026-08-28, pushed 2026-08-30 and updated 2026-08-31. Root audit found Rust Cargo files, install scripts, plugin/skill assets, examples, docs, tests and security docs.",
+      "runnability": "Clear brew/script/source install path and dashboard flow exist. No vault creation, OS keychain, Touch ID/Windows Hello, agent skill install, env injection or output masking was tested.",
+      "recommended_action": "High-priority safety review for local agent workflows; test only with dummy secrets and inspect audit log guarantees."
+    },
+    {
+      "rank": 9,
+      "full_name": "OMD-123/agent-loop-guard",
+      "url": "https://github.com/OMD-123/agent-loop-guard",
+      "category": "Agent Loop Safety Library",
+      "score": 80,
+      "summary": "Provider-independent TypeScript guard that observes agent steps and blocks runaway loops, repeated tool calls, circular patterns, overlong runs and step-budget failures.",
+      "audience": "Developers building JavaScript/TypeScript agent loops who need small safety rails without taking a framework dependency.",
+      "ai_native_angle": "Adds a deterministic observer before each agent step, separating loop safety from model reasoning and tool execution.",
+      "growth_signal": "Search snapshot showed 11 stars; created 2026-08-29 and pushed 2026-08-30. README/root audit found npm package, package-lock, examples, tests, Vitest config, TypeScript build config and CI badge.",
+      "runnability": "Very clear npm install and example path. No package install, example run, detector stress test or framework integration was performed.",
+      "recommended_action": "Add to the agent-runtime utility shortlist; test against synthetic repeated-tool and circular-plan traces."
+    },
+    {
+      "rank": 10,
+      "full_name": "DOMCHURCH/Gnosis",
+      "url": "https://github.com/DOMCHURCH/Gnosis",
+      "category": "Visual Coding Agent Workbench",
+      "score": 79,
+      "summary": "Terminal coding agent with model switching, subagents, MCP, Obsidian memory, browser UI, web PTY, file browser, approvals and a 3D office-floor visualization of agent activity.",
+      "audience": "Developers who want coding-agent state to be visible and steerable through a desktop/browser UI rather than terminal scrollback only.",
+      "ai_native_angle": "Makes agent activity spatial and inspectable, combining model routing, memory, MCP tools, approvals and live UI into one workbench surface.",
+      "growth_signal": "Search snapshot showed 18 stars and 3 forks; pushed/updated 2026-08-31. README/root audit found npm package badge, Electron files, docs, evals, screenshots, installer scripts, Playwright/MCP assets and 101-test-suite claim.",
+      "runnability": "Strong UI/product evidence with npm and installer paths. No Windows installer, Node/Python optional support, model configuration, browser UI, 3D floor, subagent or eval run was tested.",
+      "recommended_action": "Watch for UX ideas around agent observability; verify practical stability before adopting as a daily coding host."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "aureliocpr-ctrl/verimem",
+      "url": "https://github.com/aureliocpr-ctrl/verimem",
+      "category": "Verified Agent Memory",
+      "score": 78,
+      "summary": "Gated/provenance-carrying memory for agents with CLI, SDK, MCP and trust console; strong concept but many benchmark caveats need careful reading.",
+      "audience": "Agent builders who need memory to abstain or show provenance under contradiction.",
+      "ai_native_angle": "Makes every read/write accountable instead of treating remembered claims as truth.",
+      "growth_signal": "2 stars but pushed/updated 2026-08-31; README/root audit is unusually detailed with Docker, CLI, MCP, console and benchmark sections.",
+      "runnability": "No pip install, local store, judge model, MCP connection or trust-console run was tested.",
+      "recommended_action": "Re-audit benchmark claims and licensing before using as a memory substrate."
+    },
+    {
+      "rank": 2,
+      "full_name": "jiabaobei/memory-bridge",
+      "url": "https://github.com/jiabaobei/memory-bridge",
+      "category": "Cross-platform Agent Memory Bridge",
+      "score": 76,
+      "summary": "Chinese/English shared memory layer with MCP, CLI, SDK plans and platform init for many coding-agent clients.",
+      "audience": "Users running agents across multiple devices, IDEs and MCP hosts.",
+      "ai_native_angle": "Attempts to make memory portable across client surfaces through a narrow MCP tool set.",
+      "growth_signal": "11 stars; created 2026-08-29 and pushed 2026-08-30. Root audit found docs, examples, tests, pyproject and platform matrix.",
+      "runnability": "No install, membridge init, MCP client setup or retrieval-quality test was performed.",
+      "recommended_action": "Track as a Chinese-localized memory UX reference; require real embedding/backend proof."
+    },
+    {
+      "rank": 3,
+      "full_name": "TheSmokeDev/hermes-talk",
+      "url": "https://github.com/TheSmokeDev/hermes-talk",
+      "category": "Realtime Voice Agent Plugin",
+      "score": 75,
+      "summary": "Hermes Agent plugin for realtime duplex voice, live tools, memory, concurrent delegation, terminal, dashboard and Discord.",
+      "audience": "Voice-agent builders already experimenting with Hermes Agent.",
+      "ai_native_angle": "Uses voice as an orchestration surface that can delegate agent work and report back with live session state.",
+      "growth_signal": "24 stars and 2 forks; pushed/updated 2026-08-31 with dashboard GIF, docs, plugin.yaml, pyproject and many talk_* modules.",
+      "runnability": "No Hermes host, OpenAI Realtime credentials, audio path, Discord connector or dashboard session was tested.",
+      "recommended_action": "Watch for reusable voice-delegation patterns, but isolate credentials and consent flows."
+    },
+    {
+      "rank": 4,
+      "full_name": "git-syl/hermes-agent-demo",
+      "url": "https://github.com/git-syl/hermes-agent-demo",
+      "category": "Spring AI Agent Runtime Demo",
+      "score": 74,
+      "summary": "Spring Boot 4 / Spring AI agent runtime demo with model routing, subagents, skills, Docker sandbox, MCP, RAG and HITL approvals streamed as SSE.",
+      "audience": "Java teams evaluating agent runtime architecture.",
+      "ai_native_angle": "Packages many agent runtime concerns into one observable Spring stack.",
+      "growth_signal": "10 stars; created 2026-08-29 and updated 2026-08-31. Root audit found pom.xml, docker, docs, screenshots and Chinese/English READMEs.",
+      "runnability": "No Maven build, Docker sandbox, SSE frontend or model-provider setup was tested.",
+      "recommended_action": "Use as a Java reference only after checking generated-code quality and boundaries."
+    },
+    {
+      "rank": 5,
+      "full_name": "powerfooI/herdr-studio",
+      "url": "https://github.com/powerfooI/herdr-studio",
+      "category": "Agent Session Web Client",
+      "score": 73,
+      "summary": "Web/PWA client for Herdr sessions with workspace, terminal, file, diff and agent inspection surfaces.",
+      "audience": "Users already using Herdr who want mobile/browser access to local agent sessions.",
+      "ai_native_angle": "Turns agent run state into a browsable workbench over a local socket API.",
+      "growth_signal": "27 stars and 5 forks; pushed/updated 2026-08-31; root audit found web/server folders, bun.lock, docs and feature/security files.",
+      "runnability": "No Herdr server, socket API, terminal session or PWA path was tested.",
+      "recommended_action": "Watch as an agent-dashboard UX reference; dependency on Herdr limits standalone value."
+    },
+    {
+      "rank": 6,
+      "full_name": "PsSave/trayt",
+      "url": "https://github.com/PsSave/trayt",
+      "category": "Agent Quota Tray Dashboard",
+      "score": 72,
+      "summary": "Linux/Windows system tray dashboard for Claude Code, Codex CLI and future coding-agent quota/session usage.",
+      "audience": "Heavy AI coding-agent users watching session and weekly limits.",
+      "ai_native_angle": "Makes agent quota windows visible as ambient local UI.",
+      "growth_signal": "7 stars; created 2026-08-28 and pushed 2026-08-30. Root audit found Electron/Vite project, docs, resources and package scripts.",
+      "runnability": "No install, parser validation or provider quota comparison was performed.",
+      "recommended_action": "Compare with Tokentab and Agent Notch; promote only if parsing is accurate."
+    },
+    {
+      "rank": 7,
+      "full_name": "tongriyaotxt/open-mhs",
+      "url": "https://github.com/tongriyaotxt/open-mhs",
+      "category": "Hardware Control Standard for Agents",
+      "score": 70,
+      "summary": "Open Model Hardware Standard implementation for AI-agent hardware control with Python package and examples.",
+      "audience": "IoT/robotics developers exploring capability-bounded hardware actions.",
+      "ai_native_angle": "Tries to standardize physical hardware actions for agent callers.",
+      "growth_signal": "7 stars; created/pushed 2026-08-28 with PyPI badge, pyproject, src and examples.",
+      "runnability": "No package install, simulator, hardware target, permission model or MCP bridge was tested.",
+      "recommended_action": "Track, but require safety model and simulator evidence before hands-on use."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Unknown-333/awesome-data-engineering-skills",
+      "url": "https://github.com/Unknown-333/awesome-data-engineering-skills",
+      "skip_reason": "Useful agent-skill collection for data engineering, but it is primarily a curated skill pack rather than a runnable product surface."
+    },
+    {
+      "full_name": "Skywalkeryeahyeah/Paper-review-agent",
+      "url": "https://github.com/Skywalkeryeahyeah/Paper-review-agent",
+      "skip_reason": "Academic-paper review prototype is relevant but closer to paper/RAG workflow demo; defer until runnability and review-quality evidence are stronger."
+    },
+    {
+      "full_name": "RobZombAI/H3MLX",
+      "url": "https://github.com/RobZombAI/H3MLX",
+      "skip_reason": "Apple Silicon MiniMax-H3/video-generation suite and agent skill is hardware/model-specific and benchmark-heavy; product surface is less general for today."
+    },
+    {
+      "full_name": "fajrisilmi12-cyber/hermes-socmed-function",
+      "url": "https://github.com/fajrisilmi12-cyber/hermes-socmed-function",
+      "skip_reason": "Hermes social posting skills have a clear workflow but only a small skills folder/root surface; social account posting risk requires more audit before promotion."
+    },
+    {
+      "full_name": "irhamkaraman/vortexis-extension-agent",
+      "url": "https://github.com/irhamkaraman/vortexis-extension-agent",
+      "skip_reason": "Browser copilot extension has a runnable Vite/TypeScript surface but 0-star metadata and marketing-heavy README made it lower confidence than RZN/frago."
+    },
+    {
+      "full_name": "sebastianbrzustowicz/Agentic-GraphRAG-Blueprint",
+      "url": "https://github.com/sebastianbrzustowicz/Agentic-GraphRAG-Blueprint",
+      "skip_reason": "Cloud GraphRAG blueprint has Docker/frontend/backend evidence, but it reads more like reference architecture than a finished AI-native product."
+    },
+    {
+      "full_name": "adityarya24/agent-notch",
+      "url": "https://github.com/adityarya24/agent-notch",
+      "skip_reason": "Agent quota HUD is product-shaped, but narrower and less evidenced than Envault/Loop Guard/Gnosis for today."
+    },
+    {
+      "full_name": "chillison/Closure",
+      "url": "https://github.com/chillison/Closure",
+      "skip_reason": "AI novel-writing IDE appears product-shaped, but it is a fork of OrisonSpace and outside today's agent-ops focus."
+    }
+  ]
+}
