@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-09-03",
+  "generated_at": "2026-09-03T12:19:27+08:00",
+  "data_window": "GitHub Search API and repository README/root-content audit for repositories created since 2026-08-31 or pushed since 2026-09-01. Search snapshots were saved under /tmp/radar_2026_09_03_*.json; selected repository audits were saved under /tmp/radar_2026_09_03_repo_audit/.",
+  "source_summary": "Queried AI agent, LLM/RAG, MCP agent, browser agent, code agent, and voice assistant surfaces through the GitHub Search API, then reviewed repository metadata, root files, README claims, demos, tests, Docker/package files, and setup instructions for 21 shortlisted repositories. No third-party repository was cloned, installed, built, executed, browser-tested, mobile-tested, provider-tested, credential-tested, safety-tested, or deployed locally.",
+  "trend_observations": "WebMCP is becoming a product primitive across local folders, storefronts, recovery admin, hardware diagnostics, analytics studios, and repair loops. Human sovereignty is a repeated differentiator through checkout gates, physical actuation approval, browser handoff, repair publishing approval, and local-file privacy. Coding-agent infrastructure is moving from prompts to controllable operating surfaces such as visual graphs, worktrees, session migration, browser/session CLI, and office/desk metaphors. Strongest runnability signals were tests, Docker, smoke commands, demo media, and no-key mock modes.",
+  "assumptions": "Scores are based on GitHub API metadata plus README/root-content evidence, not local runtime proof. Star and fork counts are raw GitHub API counts at collection time; no 24-hour star-delta API was available in this unauthenticated run. Type-level skips such as prompt collections, pure README catalogues, thin wrappers, classroom tasks, and no-code repositories are described in markdown_report without fabricating GitHub repository entries.",
+  "markdown_report": "Top focus for 2026-09-03: WebMCP/local-file workspaces, mobile browser agents, visual coding-agent orchestration, browser-owned hardware diagnostics, autonomous software factory loops, human escalation for browser agents, agent-first work databases, job-search agent workspaces, multi-session Chrome control, and WebMCP tool repair. Watchlist covers recovery admin, commerce checkout gates, browser-render MCP, adversarial browser-agent testing, agent config rollback, and teaching shopping agents. Skip reasons cover research harnesses, SDK mirrors, course exercises, showcases, and immature assistant scaffolds.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "Harshkumar62367/Crate",
+      "url": "https://github.com/Harshkumar62367/Crate",
+      "category": "WebMCP local knowledge workspace",
+      "score": 91,
+      "summary": "Turns a local folder of PDFs, code, notes, CSVs, screenshots, and images into an in-browser searchable workspace exposed to visiting agents through WebMCP tools.",
+      "audience": "Knowledge workers and developers who want an agent to inspect local files without uploading them.",
+      "ai_native_angle": "The human sees a reader while the agent receives typed tools for status, search, citation, and export against the same browser-owned IndexedDB state.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-02; README includes WebMCP Challenge positioning, Docker, local dev commands, tests, OCR, embeddings, citation UI, and explicit agent-side instructions.",
+      "runnability": "High from README/root audit: Next.js app, npm run dev, Dockerfile, Vitest config, 64 claimed unit tests, and no external server requirement for the core local index.",
+      "recommended_action": "Clone for a focused WebMCP/local-file pattern review; test large-folder indexing and citation-ring UX."
+    },
+    {
+      "rank": 2,
+      "full_name": "Bilal140202/comet-x-browser",
+      "url": "https://github.com/Bilal140202/comet-x-browser",
+      "category": "Mobile browser agent",
+      "score": 90,
+      "summary": "Android WebView browser where an autonomous DOM/vision agent can browse, act, verify, and pause for human takeover.",
+      "audience": "Users who want a mobile-first agent browser with persistent cookies, downloads, tabs, and provider fallback.",
+      "ai_native_angle": "Combines hybrid perception, action validation, safety policy, model capability negotiation, human takeover, memory, and red-team/self-test pages inside a browser product.",
+      "growth_signal": "Created 2026-09-02, pushed 2026-09-03; README claims 134 unit tests, Android project files, provider discovery docs, and injection/phish/challenge test pages.",
+      "runnability": "Medium-high: Android Gradle project and docs are present, but this run did not build an APK or verify device permissions.",
+      "recommended_action": "Watch closely; run an Android build and safety-loop smoke test before deeper adoption."
+    },
+    {
+      "rank": 3,
+      "full_name": "AmarS2001/agent-graph",
+      "url": "https://github.com/AmarS2001/agent-graph",
+      "category": "Visual coding-agent orchestration",
+      "score": 88,
+      "summary": "Visual node-graph workflow engine for orchestrating Claude Code, Codex, Aider, and other coding agents against isolated Git worktrees.",
+      "audience": "Engineering teams experimenting with multi-agent pipelines, scheduled refactors, QA review agents, and repeatable local automation.",
+      "ai_native_angle": "Agent nodes, tool execution nodes, isolated worktrees, persistent sessions, live CLI streaming, and cron triggers turn coding-agent operations into a product surface.",
+      "growth_signal": "Created and pushed 2026-09-03; root contains Go backend, frontend, images, architecture docs, and README screenshots.",
+      "runnability": "Medium-high: Go module plus frontend directory and CLI/web entrypoint are visible, but no local build was run.",
+      "recommended_action": "Prototype with one repo and two agent nodes; inspect whether host CLI discovery handles Codex safely."
+    },
+    {
+      "rank": 4,
+      "full_name": "Fadyio/Ohmni",
+      "url": "https://github.com/Fadyio/Ohmni",
+      "category": "WebMCP hardware diagnostics",
+      "score": 87,
+      "summary": "Lets an AI agent investigate virtual or physical hardware faults through browser-owned diagnostic instruments and human-approved physical interventions.",
+      "audience": "Hardware labs, embedded developers, and educators who need agent-assisted troubleshooting with explicit verification.",
+      "ai_native_angle": "WebMCP exposes 19 diagnostic tools with red/amber gates, hidden-state firewalling, hypothesis confirmation, and repeatable post-repair tests.",
+      "growth_signal": "Created 2026-09-02, pushed 2026-09-03; TypeScript/Vite/Bun app with server, tests, docs, artifacts, and safety-gated tool descriptions.",
+      "runnability": "Medium-high: bun install and bun run dev path is documented; physical-device paths remain unaudited.",
+      "recommended_action": "Study as a reference for agent tool safety in physical-world workflows."
+    },
+    {
+      "rank": 5,
+      "full_name": "casamart/ForgeAI",
+      "url": "https://github.com/casamart/ForgeAI",
+      "category": "Autonomous software factory demo",
+      "score": 86,
+      "summary": "Plans, builds, tests, repairs, browser-QAs, and reports on software inside isolated Solari environments.",
+      "audience": "Agent engineering teams evaluating end-to-end build/repair/verification loops.",
+      "ai_native_angle": "Treats planning, sandbox execution, browser QA, debugging, repair, and engineering-report emission as a single evidence-gated product loop.",
+      "growth_signal": "Created 2026-09-01 and pushed 2026-09-03; README includes dashboard GIF, multiple smoke-test commands, Dockerfile, monorepo packages, docs, examples, and Railway config.",
+      "runnability": "High from docs: mock-provider smoke tests do not require an API key; Solari-backed full path was not credential-tested.",
+      "recommended_action": "Run npm run ai:smoke and npm run demo:repair; compare evidence reports with current internal coding-agent QA loops."
+    },
+    {
+      "rank": 6,
+      "full_name": "Sy-D/handraise",
+      "url": "https://github.com/Sy-D/handraise",
+      "category": "Human escalation for browser agents",
+      "score": 84,
+      "summary": "Lets a cloud browser agent hand a stuck live session to a human through a phone link, then resume in the same browser session.",
+      "audience": "Teams running browser agents that hit 2FA, login, payment, or sensitive approval moments.",
+      "ai_native_angle": "Adds a first-class human takeover/approval protocol to agent browsing, preserving cookies, page state, and task continuity.",
+      "growth_signal": "Created 2026-09-01, pushed 2026-09-03; README shows npm install, API snippets, demo/benchmarks/e2e/tests, CI badge, and measured rescue claims.",
+      "runnability": "Medium: npm package shape is strong, but the primary path depends on a Solari API key.",
+      "recommended_action": "Keep on watch for browser-agent operations; test with a non-sensitive 2FA-style workflow."
+    },
+    {
+      "rank": 7,
+      "full_name": "grunion-ai/weave",
+      "url": "https://github.com/grunion-ai/weave",
+      "category": "Agent-first work management database",
+      "score": 83,
+      "summary": "Self-hosted work platform with tables, relations, formulas, workflows, documents, REST, CLI, and built-in MCP server over one SQLite file.",
+      "audience": "Small teams that want Airtable/Notion-like work management where agents and humans operate the same data model.",
+      "ai_native_angle": "UI, REST API, CLI, and MCP expose the same engine; undo tooling acknowledges agent mistakes as a normal workflow.",
+      "growth_signal": "Created 2026-08-16 and pushed 2026-09-03; README has screenshots, quickstart, MCP positioning, tests, docs, and zero-runtime-dependency claim.",
+      "runnability": "High from root audit: package scripts, test directory, public assets, docs, and wrangler example are present; runtime not executed.",
+      "recommended_action": "Compare against the radar board's own project-pool needs; consider as a future agent-operated table substrate."
+    },
+    {
+      "rank": 8,
+      "full_name": "JonnesLin/job-agent",
+      "url": "https://github.com/JonnesLin/job-agent",
+      "category": "Job-search agent workspace",
+      "score": 82,
+      "summary": "Privacy-conscious self-hosted job application assistant with tailored resumes, reports, web app, CLI, browser extension, Docker, and local data.",
+      "audience": "Job seekers who want agent help while retaining data control and repeatable application records.",
+      "ai_native_angle": "Combines local operator CLI, multi-user web app, browser extension, reports, and provider-compatible AI behind a self-hosted workflow.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-02; repo includes Docker Compose, Caddy, tests, docs, demo, templates, extension, and CI.",
+      "runnability": "High from root audit: uv run cli.py serve --public, Docker Compose, and .env.example are documented.",
+      "recommended_action": "Run locally with dummy data; inspect extension permissions and resume/report generation quality."
+    },
+    {
+      "rank": 9,
+      "full_name": "lumanlight/chrome-agent-cli",
+      "url": "https://github.com/lumanlight/chrome-agent-cli",
+      "category": "Multi-session browser control CLI",
+      "score": 81,
+      "summary": "Creates isolated Chrome sessions with separate profiles, debugging ports, sockets, CDP passthrough, screenshots, DOM snapshots, and network capture.",
+      "audience": "Developers and agent operators who need concurrent browser sessions without login/state bleed.",
+      "ai_native_angle": "Makes browser state a named, scriptable resource for agents, with no focus stealing and automatic wrapper recovery.",
+      "growth_signal": "Created and pushed 2026-09-03; README includes npm install, CLI examples, tests, assets, TypeScript source, and Chinese README.",
+      "runnability": "Medium-high: package and Vitest config are present, but it depends on local Chrome/Chromium and chrome-devtools-mcp.",
+      "recommended_action": "Trial as a local browser isolation layer for recurring research automations."
+    },
+    {
+      "rank": 10,
+      "full_name": "regents-ai/patchbay",
+      "url": "https://github.com/regents-ai/patchbay",
+      "category": "WebMCP tool repair loop",
+      "score": 80,
+      "summary": "Phoenix LiveView demo where an agent reports a broken WebMCP tool, a human approves a bounded repair, the browser hot-swaps the tool, and the same agent retries with a receipt.",
+      "audience": "Builders of browser-owned agent tools who need repair, approval, and evidence loops.",
+      "ai_native_angle": "The product centers on generation/version receipts, human approval, deterministic canaries, browser-observed tool changes, and verified reports.",
+      "growth_signal": "Created 2026-09-01, pushed 2026-09-03; README includes local setup, Docker/Postgres files, WebMCP docs, tests, and fallback demo mode.",
+      "runnability": "Medium: strong setup docs, but local path needs Elixir/Phoenix plus PostgreSQL.",
+      "recommended_action": "Extract the receipt/verifier pattern for agent tool registries; run only after dependency setup."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "ericthayer/mend",
+      "url": "https://github.com/ericthayer/mend",
+      "category": "WebMCP recovery administration",
+      "score": 78,
+      "summary": "Local-first recovery workspace where browser agents structure case facts, tasks, and drafts after household disruptions.",
+      "audience": "People dealing with insurance, landlord, repair, and recovery admin after disruptive events.",
+      "ai_native_angle": "WebMCP tools are scoped to staged, local, human-approved recovery actions.",
+      "growth_signal": "Created 2026-09-03 and pushed 2026-09-03 with test/build commands in README.",
+      "runnability": "Medium: WebMCP app shape and commands are documented, but root surface looked lighter than Top picks.",
+      "recommended_action": "Watch for richer demo media and case templates."
+    },
+    {
+      "rank": 2,
+      "full_name": "Dubjay18/shopfront-copilot",
+      "url": "https://github.com/Dubjay18/shopfront-copilot",
+      "category": "Commerce WebMCP checkout gate",
+      "score": 77,
+      "summary": "Storefront where shoppers and AI agents browse, compare, cart, and watch prices while checkout remains human-only.",
+      "audience": "Commerce teams exploring agent-assisted shopping with explicit purchase safety.",
+      "ai_native_angle": "The agent calls the same client-side tools as the UI while irreversible purchase completion is excluded from tool access.",
+      "growth_signal": "Created 2026-09-03 with Next.js app, static catalog, WebMCP guardrails, and local dev instructions.",
+      "runnability": "Medium-high: npm app and WebMCP tools are present; real checkout is intentionally simulated.",
+      "recommended_action": "Watch for reusable checkout-gate components."
+    },
+    {
+      "rank": 3,
+      "full_name": "Masngo/omnidata-webmcp",
+      "url": "https://github.com/Masngo/omnidata-webmcp",
+      "category": "In-browser analytics studio",
+      "score": 74,
+      "summary": "Agent-native analytics studio using DuckDB WASM and WebMCP.",
+      "audience": "Analysts who want agents to inspect local datasets in a browser.",
+      "ai_native_angle": "WebMCP exposes browser-local analytics state to agents.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-03 with Next.js/Tailwind root files.",
+      "runnability": "Medium: project files are present, but README evidence was thinner in this audit.",
+      "recommended_action": "Recheck after README/demo grows."
+    },
+    {
+      "rank": 4,
+      "full_name": "RodRomer/render-mcp",
+      "url": "https://github.com/RodRomer/render-mcp",
+      "category": "Remote browser-render MCP",
+      "score": 73,
+      "summary": "MCP server that renders screenshots, PDFs, and post-JavaScript HTML from a real browser without local install.",
+      "audience": "Agents and developers that need browser rendering from constrained environments.",
+      "ai_native_angle": "Provides visual/browser perception as a remote MCP utility with explicit network and injection limits.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-03 with Cloudflare/Wrangler and plugin files.",
+      "runnability": "Medium: very simple client setup claim, but this run did not validate the hosted service.",
+      "recommended_action": "Use as an infrastructure watch item rather than a full workflow product."
+    },
+    {
+      "rank": 5,
+      "full_name": "Shushant17711/mirage",
+      "url": "https://github.com/Shushant17711/mirage",
+      "category": "Browser-agent adversarial benchmark",
+      "score": 72,
+      "summary": "Controlled adversarial web for measuring browser-agent prompt-injection failures with replay evidence.",
+      "audience": "Browser-agent builders who need repeatable safety tests.",
+      "ai_native_angle": "Frames browser prompt-injection as a scored, replayable product workflow rather than anecdotal screenshots.",
+      "growth_signal": "Created 2026-09-03 and pushed 2026-09-03; README describes 107 attack runs and quickstart.",
+      "runnability": "Medium: Python target/runner structure is present; README still marks demo media as pending.",
+      "recommended_action": "Revisit once demo assets and public benchmark examples are complete."
+    },
+    {
+      "rank": 6,
+      "full_name": "LuckTerence/trustline",
+      "url": "https://github.com/LuckTerence/trustline",
+      "category": "Agent config integrity CLI",
+      "score": 71,
+      "summary": "Trusted baseline and auto-rollback layer for agent configuration files such as AGENTS.md, CLAUDE.md, and .mcp.json.",
+      "audience": "Developers installing untrusted repos, skills, or MCP servers.",
+      "ai_native_angle": "Moves instruction-integrity protection outside the agent loop into OS-level file monitoring and rollback.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-03; README includes pip install, CI, docs, tests, and demo tape.",
+      "runnability": "Medium-high: Python package and tests are present; product scope is narrow.",
+      "recommended_action": "Evaluate as a guardrail utility for agent workspaces."
+    },
+    {
+      "rank": 7,
+      "full_name": "prasannakoppolu/axiomcart-ai-assistant",
+      "url": "https://github.com/prasannakoppolu/axiomcart-ai-assistant",
+      "category": "Voice-first LangGraph teaching app",
+      "score": 70,
+      "summary": "Voice-first Python shopping assistant with LangGraph orchestration, FastAPI streaming, telemetry, and teaching UI.",
+      "audience": "Developers learning agent routing, human input checkpoints, and voice commerce workflows.",
+      "ai_native_angle": "Specialist subgraphs, deterministic catalog tools, checkpointed human input, and speech UI make the teaching flow agent-native.",
+      "growth_signal": "Created 2026-09-02 and pushed 2026-09-03; root contains FastAPI, docs, public UI, tests, uv lock, and architecture diagram.",
+      "runnability": "Medium-high: uvicorn local run and CLI are documented, but provider keys are needed for full speech path.",
+      "recommended_action": "Keep as teaching/demo reference, not a production commerce pick."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "AI-as-Infrastructure/aiinfra-atlas",
+      "url": "https://github.com/AI-as-Infrastructure/aiinfra-atlas",
+      "skip_reason": "RAG evaluation harness for research infrastructure; useful but closer to benchmark/research deliverable than product workflow."
+    },
+    {
+      "full_name": "Dakera-AI/dakera-js",
+      "url": "https://github.com/Dakera-AI/dakera-js",
+      "skip_reason": "SDK/client package for an agent-memory product; wrapper/client shape is less suitable for today's radar than the full product surface."
+    },
+    {
+      "full_name": "Dakera-AI/dakera-py",
+      "url": "https://github.com/Dakera-AI/dakera-py",
+      "skip_reason": "Same SDK-family reason; keep the underlying memory system in broader landscape tracking."
+    },
+    {
+      "full_name": "MontyGovernance/montycat_node",
+      "url": "https://github.com/MontyGovernance/montycat_node",
+      "skip_reason": "Language client for a vector/NoSQL system; insufficient standalone workflow."
+    },
+    {
+      "full_name": "MontyGovernance/montycat_python",
+      "url": "https://github.com/MontyGovernance/montycat_python",
+      "skip_reason": "Language client for the same platform; skip duplicate SDK surface."
+    },
+    {
+      "full_name": "MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+      "url": "https://github.com/MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+      "skip_reason": "Exercise/course artifact, not a durable runnable product."
+    },
+    {
+      "full_name": "AlexKlick/agentic-systems-showcase",
+      "url": "https://github.com/AlexKlick/agentic-systems-showcase",
+      "skip_reason": "Browser-only interaction showcase; good pattern gallery but low evidence of reusable product."
+    },
+    {
+      "full_name": "amritanshu3408/personal-ai-assistant",
+      "url": "https://github.com/amritanshu3408/personal-ai-assistant",
+      "skip_reason": "Ambitious Electron/FastAPI assistant created today, but README/root evidence suggests early scaffold and Windows-only scripts; revisit after tests/demo mature."
+    }
+  ]
+}

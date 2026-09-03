@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+      "runDate": "2026-09-03",
+      "generatedAt": "2026-09-03T12:19:27+08:00",
+      "dataWindow": "GitHub Search API and repository README/root-content audit for repositories created since 2026-08-31 or pushed since 2026-09-01. Search snapshots were saved under /tmp/radar_2026_09_03_*.json; selected repository audits were saved under /tmp/radar_2026_09_03_repo_audit/.",
+      "sourceSummary": "Queried AI agent, LLM/RAG, MCP agent, browser agent, code agent, and voice assistant surfaces through the GitHub Search API, then reviewed repository metadata, root files, README claims, demos, tests, Docker/package files, and setup instructions for 21 shortlisted repositories. No third-party repository was cloned, installed, built, executed, browser-tested, mobile-tested, provider-tested, credential-tested, safety-tested, or deployed locally.",
+      "trendObservations": "WebMCP is becoming a product primitive across local folders, storefronts, recovery admin, hardware diagnostics, analytics studios, and repair loops. Human sovereignty is a repeated differentiator through checkout gates, physical actuation approval, browser handoff, repair publishing approval, and local-file privacy. Coding-agent infrastructure is moving from prompts to controllable operating surfaces such as visual graphs, worktrees, session migration, browser/session CLI, and office/desk metaphors. Strongest runnability signals were tests, Docker, smoke commands, demo media, and no-key mock modes.",
+      "assumptions": "Scores are based on GitHub API metadata plus README/root-content evidence, not local runtime proof. Star and fork counts are raw GitHub API counts at collection time; no 24-hour star-delta API was available in this unauthenticated run. Type-level skips such as prompt collections, pure README catalogues, thin wrappers, classroom tasks, and no-code repositories are described in markdown_report without fabricating GitHub repository entries.",
+      "markdownReport": "Top focus for 2026-09-03: WebMCP/local-file workspaces, mobile browser agents, visual coding-agent orchestration, browser-owned hardware diagnostics, autonomous software factory loops, human escalation for browser agents, agent-first work databases, job-search agent workspaces, multi-session Chrome control, and WebMCP tool repair. Watchlist covers recovery admin, commerce checkout gates, browser-render MCP, adversarial browser-agent testing, agent config rollback, and teaching shopping agents. Skip reasons cover research harnesses, SDK mirrors, course exercises, showcases, and immature assistant scaffolds.",
+      "sourceFile": "2026-09-03.json",
+      "entryCount": 25
+    },
+    {
       "id": "run:2026-08-31:2026-08-31T10:45:00+08:00",
       "runDate": "2026-08-31",
       "generatedAt": "2026-08-31T10:45:00+08:00",
@@ -1120,6 +1132,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Harshkumar62367/Crate",
+      "url": "https://github.com/Harshkumar62367/Crate",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "WebMCP local knowledge workspace",
+      "summary": "Turns a local folder of PDFs, code, notes, CSVs, screenshots, and images into an in-browser searchable workspace exposed to visiting agents through WebMCP tools.",
+      "audience": "Knowledge workers and developers who want an agent to inspect local files without uploading them.",
+      "aiNativeAngle": "The human sees a reader while the agent receives typed tools for status, search, citation, and export against the same browser-owned IndexedDB state.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-02; README includes WebMCP Challenge positioning, Docker, local dev commands, tests, OCR, embeddings, citation UI, and explicit agent-side instructions.",
+      "runnability": "High from README/root audit: Next.js app, npm run dev, Dockerfile, Vitest config, 64 claimed unit tests, and no external server requirement for the core local index.",
+      "recommendedAction": "Clone for a focused WebMCP/local-file pattern review; test large-folder indexing and citation-ring UX.",
+      "skipReason": null
+    },
+    {
       "fullName": "codeaholicguy/ai-devkit",
       "url": "https://github.com/codeaholicguy/ai-devkit",
       "firstSeenDate": "2026-08-31",
@@ -1440,6 +1471,25 @@
       "growthSignal": "GitHub 页面显示约 124k stars、5k+ issues、542 PRs、625 commits；仓库含 demo.gif、plugins、examples。",
       "runnability": "README 推荐 curl 安装脚本、Homebrew、Windows install.ps1/WinGet；进入项目目录运行 `claude`。",
       "recommendedAction": "跟 opencode/Codex/Gemini CLI 做同仓库对比；重点评估插件生态和权限/审计体验。",
+      "skipReason": null
+    },
+    {
+      "fullName": "Bilal140202/comet-x-browser",
+      "url": "https://github.com/Bilal140202/comet-x-browser",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 90,
+      "latestScore": 90,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Mobile browser agent",
+      "summary": "Android WebView browser where an autonomous DOM/vision agent can browse, act, verify, and pause for human takeover.",
+      "audience": "Users who want a mobile-first agent browser with persistent cookies, downloads, tabs, and provider fallback.",
+      "aiNativeAngle": "Combines hybrid perception, action validation, safety policy, model capability negotiation, human takeover, memory, and red-team/self-test pages inside a browser product.",
+      "growthSignal": "Created 2026-09-02, pushed 2026-09-03; README claims 134 unit tests, Android project files, provider discovery docs, and injection/phish/challenge test pages.",
+      "runnability": "Medium-high: Android Gradle project and docs are present, but this run did not build an APK or verify device permissions.",
+      "recommendedAction": "Watch closely; run an Android build and safety-loop smoke test before deeper adoption.",
       "skipReason": null
     },
     {
@@ -2086,6 +2136,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "AmarS2001/agent-graph",
+      "url": "https://github.com/AmarS2001/agent-graph",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Visual coding-agent orchestration",
+      "summary": "Visual node-graph workflow engine for orchestrating Claude Code, Codex, Aider, and other coding agents against isolated Git worktrees.",
+      "audience": "Engineering teams experimenting with multi-agent pipelines, scheduled refactors, QA review agents, and repeatable local automation.",
+      "aiNativeAngle": "Agent nodes, tool execution nodes, isolated worktrees, persistent sessions, live CLI streaming, and cron triggers turn coding-agent operations into a product surface.",
+      "growthSignal": "Created and pushed 2026-09-03; root contains Go backend, frontend, images, architecture docs, and README screenshots.",
+      "runnability": "Medium-high: Go module plus frontend directory and CLI/web entrypoint are visible, but no local build was run.",
+      "recommendedAction": "Prototype with one repo and two agent nodes; inspect whether host CLI discovery handles Codex safely.",
       "skipReason": null
     },
     {
@@ -2830,6 +2899,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Fadyio/Ohmni",
+      "url": "https://github.com/Fadyio/Ohmni",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 87,
+      "latestScore": 87,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "WebMCP hardware diagnostics",
+      "summary": "Lets an AI agent investigate virtual or physical hardware faults through browser-owned diagnostic instruments and human-approved physical interventions.",
+      "audience": "Hardware labs, embedded developers, and educators who need agent-assisted troubleshooting with explicit verification.",
+      "aiNativeAngle": "WebMCP exposes 19 diagnostic tools with red/amber gates, hidden-state firewalling, hypothesis confirmation, and repeatable post-repair tests.",
+      "growthSignal": "Created 2026-09-02, pushed 2026-09-03; TypeScript/Vite/Bun app with server, tests, docs, artifacts, and safety-gated tool descriptions.",
+      "runnability": "Medium-high: bun install and bun run dev path is documented; physical-device paths remain unaudited.",
+      "recommendedAction": "Study as a reference for agent tool safety in physical-world workflows.",
+      "skipReason": null
+    },
+    {
       "fullName": "tsaijamey/frago",
       "url": "https://github.com/tsaijamey/frago",
       "firstSeenDate": "2026-08-31",
@@ -3283,6 +3371,25 @@
       "growthSignal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
       "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
       "recommendedAction": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails.",
+      "skipReason": null
+    },
+    {
+      "fullName": "casamart/ForgeAI",
+      "url": "https://github.com/casamart/ForgeAI",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Autonomous software factory demo",
+      "summary": "Plans, builds, tests, repairs, browser-QAs, and reports on software inside isolated Solari environments.",
+      "audience": "Agent engineering teams evaluating end-to-end build/repair/verification loops.",
+      "aiNativeAngle": "Treats planning, sandbox execution, browser QA, debugging, repair, and engineering-report emission as a single evidence-gated product loop.",
+      "growthSignal": "Created 2026-09-01 and pushed 2026-09-03; README includes dashboard GIF, multiple smoke-test commands, Dockerfile, monorepo packages, docs, examples, and Railway config.",
+      "runnability": "High from docs: mock-provider smoke tests do not require an API key; Solari-backed full path was not credential-tested.",
+      "recommendedAction": "Run npm run ai:smoke and npm run demo:repair; compare evidence reports with current internal coding-agent QA loops.",
       "skipReason": null
     },
     {
@@ -4350,6 +4457,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Sy-D/handraise",
+      "url": "https://github.com/Sy-D/handraise",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Human escalation for browser agents",
+      "summary": "Lets a cloud browser agent hand a stuck live session to a human through a phone link, then resume in the same browser session.",
+      "audience": "Teams running browser agents that hit 2FA, login, payment, or sensitive approval moments.",
+      "aiNativeAngle": "Adds a first-class human takeover/approval protocol to agent browsing, preserving cookies, page state, and task continuity.",
+      "growthSignal": "Created 2026-09-01, pushed 2026-09-03; README shows npm install, API snippets, demo/benchmarks/e2e/tests, CI badge, and measured rescue claims.",
+      "runnability": "Medium: npm package shape is strong, but the primary path depends on a Solari API key.",
+      "recommendedAction": "Keep on watch for browser-agent operations; test with a non-sensitive 2FA-style workflow.",
+      "skipReason": null
+    },
+    {
       "fullName": "xiaotianfotos/indexed",
       "url": "https://github.com/xiaotianfotos/indexed",
       "firstSeenDate": "2026-08-30",
@@ -5243,6 +5369,25 @@
       "skipReason": null
     },
     {
+      "fullName": "grunion-ai/weave",
+      "url": "https://github.com/grunion-ai/weave",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent-first work management database",
+      "summary": "Self-hosted work platform with tables, relations, formulas, workflows, documents, REST, CLI, and built-in MCP server over one SQLite file.",
+      "audience": "Small teams that want Airtable/Notion-like work management where agents and humans operate the same data model.",
+      "aiNativeAngle": "UI, REST API, CLI, and MCP expose the same engine; undo tooling acknowledges agent mistakes as a normal workflow.",
+      "growthSignal": "Created 2026-08-16 and pushed 2026-09-03; README has screenshots, quickstart, MCP positioning, tests, docs, and zero-runtime-dependency claim.",
+      "runnability": "High from root audit: package scripts, test directory, public assets, docs, and wrangler example are present; runtime not executed.",
+      "recommendedAction": "Compare against the radar board's own project-pool needs; consider as a future agent-operated table substrate.",
+      "skipReason": null
+    },
+    {
       "fullName": "Hyr1sky/TheGrandQuiz",
       "url": "https://github.com/Hyr1sky/TheGrandQuiz",
       "firstSeenDate": "2026-08-31",
@@ -5848,6 +5993,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "JonnesLin/job-agent",
+      "url": "https://github.com/JonnesLin/job-agent",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Job-search agent workspace",
+      "summary": "Privacy-conscious self-hosted job application assistant with tailored resumes, reports, web app, CLI, browser extension, Docker, and local data.",
+      "audience": "Job seekers who want agent help while retaining data control and repeatable application records.",
+      "aiNativeAngle": "Combines local operator CLI, multi-user web app, browser extension, reports, and provider-compatible AI behind a self-hosted workflow.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-02; repo includes Docker Compose, Caddy, tests, docs, demo, templates, extension, and CI.",
+      "runnability": "High from root audit: uv run cli.py serve --public, Docker Compose, and .env.example are documented.",
+      "recommendedAction": "Run locally with dummy data; inspect extension permissions and resume/report generation quality.",
       "skipReason": null
     },
     {
@@ -6611,6 +6775,25 @@
       "skipReason": null
     },
     {
+      "fullName": "lumanlight/chrome-agent-cli",
+      "url": "https://github.com/lumanlight/chrome-agent-cli",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Multi-session browser control CLI",
+      "summary": "Creates isolated Chrome sessions with separate profiles, debugging ports, sockets, CDP passthrough, screenshots, DOM snapshots, and network capture.",
+      "audience": "Developers and agent operators who need concurrent browser sessions without login/state bleed.",
+      "aiNativeAngle": "Makes browser state a named, scriptable resource for agents, with no focus stealing and automatic wrapper recovery.",
+      "growthSignal": "Created and pushed 2026-09-03; README includes npm install, CLI examples, tests, assets, TypeScript source, and Chinese README.",
+      "runnability": "Medium-high: package and Vitest config are present, but it depends on local Chrome/Chromium and chrome-devtools-mcp.",
+      "recommendedAction": "Trial as a local browser isolation layer for recurring research automations.",
+      "skipReason": null
+    },
+    {
       "fullName": "JordyZomer/lemmalog",
       "url": "https://github.com/JordyZomer/lemmalog",
       "firstSeenDate": "2026-08-30",
@@ -7045,6 +7228,25 @@
       "growthSignal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
       "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
       "recommendedAction": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。",
+      "skipReason": null
+    },
+    {
+      "fullName": "regents-ai/patchbay",
+      "url": "https://github.com/regents-ai/patchbay",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "WebMCP tool repair loop",
+      "summary": "Phoenix LiveView demo where an agent reports a broken WebMCP tool, a human approves a bounded repair, the browser hot-swaps the tool, and the same agent retries with a receipt.",
+      "audience": "Builders of browser-owned agent tools who need repair, approval, and evidence loops.",
+      "aiNativeAngle": "The product centers on generation/version receipts, human approval, deterministic canaries, browser-observed tool changes, and verified reports.",
+      "growthSignal": "Created 2026-09-01, pushed 2026-09-03; README includes local setup, Docker/Postgres files, WebMCP docs, tests, and fallback demo mode.",
+      "runnability": "Medium: strong setup docs, but local path needs Elixir/Phoenix plus PostgreSQL.",
+      "recommendedAction": "Extract the receipt/verifier pattern for agent tool registries; run only after dependency setup.",
       "skipReason": null
     },
     {
@@ -8207,6 +8409,25 @@
       "skipReason": null
     },
     {
+      "fullName": "ericthayer/mend",
+      "url": "https://github.com/ericthayer/mend",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "WebMCP recovery administration",
+      "summary": "Local-first recovery workspace where browser agents structure case facts, tasks, and drafts after household disruptions.",
+      "audience": "People dealing with insurance, landlord, repair, and recovery admin after disruptive events.",
+      "aiNativeAngle": "WebMCP tools are scoped to staged, local, human-approved recovery actions.",
+      "growthSignal": "Created 2026-09-03 and pushed 2026-09-03 with test/build commands in README.",
+      "runnability": "Medium: WebMCP app shape and commands are documented, but root surface looked lighter than Top picks.",
+      "recommendedAction": "Watch for richer demo media and case templates.",
+      "skipReason": null
+    },
+    {
       "fullName": "aureliocpr-ctrl/verimem",
       "url": "https://github.com/aureliocpr-ctrl/verimem",
       "firstSeenDate": "2026-08-31",
@@ -9002,6 +9223,25 @@
       "growthSignal": "agent-runtime topic 显示近期更新（May 12, 2026）；Star ~85；README 有安装与核心命令示例。",
       "runnability": "cargo install 或 brew 安装；提供 holon run/serve/daemon/tui 等命令。",
       "recommendedAction": "用一个真实 repo 做 holon run + holon serve；评估任务/唤醒模型是否可对接你现有自动化。",
+      "skipReason": null
+    },
+    {
+      "fullName": "Dubjay18/shopfront-copilot",
+      "url": "https://github.com/Dubjay18/shopfront-copilot",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Commerce WebMCP checkout gate",
+      "summary": "Storefront where shoppers and AI agents browse, compare, cart, and watch prices while checkout remains human-only.",
+      "audience": "Commerce teams exploring agent-assisted shopping with explicit purchase safety.",
+      "aiNativeAngle": "The agent calls the same client-side tools as the UI while irreversible purchase completion is excluded from tool access.",
+      "growthSignal": "Created 2026-09-03 with Next.js app, static catalog, WebMCP guardrails, and local dev instructions.",
+      "runnability": "Medium-high: npm app and WebMCP tools are present; real checkout is intentionally simulated.",
+      "recommendedAction": "Watch for reusable checkout-gate components.",
       "skipReason": null
     },
     {
@@ -10620,6 +10860,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Masngo/omnidata-webmcp",
+      "url": "https://github.com/Masngo/omnidata-webmcp",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "In-browser analytics studio",
+      "summary": "Agent-native analytics studio using DuckDB WASM and WebMCP.",
+      "audience": "Analysts who want agents to inspect local datasets in a browser.",
+      "aiNativeAngle": "WebMCP exposes browser-local analytics state to agents.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-03 with Next.js/Tailwind root files.",
+      "runnability": "Medium: project files are present, but README evidence was thinner in this audit.",
+      "recommendedAction": "Recheck after README/demo grows.",
+      "skipReason": null
+    },
+    {
       "fullName": "git-syl/hermes-agent-demo",
       "url": "https://github.com/git-syl/hermes-agent-demo",
       "firstSeenDate": "2026-08-31",
@@ -11380,6 +11639,25 @@
       "skipReason": null
     },
     {
+      "fullName": "RodRomer/render-mcp",
+      "url": "https://github.com/RodRomer/render-mcp",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Remote browser-render MCP",
+      "summary": "MCP server that renders screenshots, PDFs, and post-JavaScript HTML from a real browser without local install.",
+      "audience": "Agents and developers that need browser rendering from constrained environments.",
+      "aiNativeAngle": "Provides visual/browser perception as a remote MCP utility with explicit network and injection limits.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-03 with Cloudflare/Wrangler and plugin files.",
+      "runnability": "Medium: very simple client setup claim, but this run did not validate the hosted service.",
+      "recommendedAction": "Use as an infrastructure watch item rather than a full workflow product.",
+      "skipReason": null
+    },
+    {
       "fullName": "powerfooI/herdr-studio",
       "url": "https://github.com/powerfooI/herdr-studio",
       "firstSeenDate": "2026-08-31",
@@ -12004,6 +12282,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "Shushant17711/mirage",
+      "url": "https://github.com/Shushant17711/mirage",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Browser-agent adversarial benchmark",
+      "summary": "Controlled adversarial web for measuring browser-agent prompt-injection failures with replay evidence.",
+      "audience": "Browser-agent builders who need repeatable safety tests.",
+      "aiNativeAngle": "Frames browser prompt-injection as a scored, replayable product workflow rather than anecdotal screenshots.",
+      "growthSignal": "Created 2026-09-03 and pushed 2026-09-03; README describes 107 attack runs and quickstart.",
+      "runnability": "Medium: Python target/runner structure is present; README still marks demo media as pending.",
+      "recommendedAction": "Revisit once demo assets and public benchmark examples are complete.",
       "skipReason": null
     },
     {
@@ -12843,6 +13140,25 @@
       "skipReason": null
     },
     {
+      "fullName": "LuckTerence/trustline",
+      "url": "https://github.com/LuckTerence/trustline",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 71,
+      "latestScore": 71,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent config integrity CLI",
+      "summary": "Trusted baseline and auto-rollback layer for agent configuration files such as AGENTS.md, CLAUDE.md, and .mcp.json.",
+      "audience": "Developers installing untrusted repos, skills, or MCP servers.",
+      "aiNativeAngle": "Moves instruction-integrity protection outside the agent loop into OS-level file monitoring and rollback.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-03; README includes pip install, CI, docs, tests, and demo tape.",
+      "runnability": "Medium-high: Python package and tests are present; product scope is narrow.",
+      "recommendedAction": "Evaluate as a guardrail utility for agent workspaces.",
+      "skipReason": null
+    },
+    {
       "fullName": "ianf-ai/take-ur-turn",
       "url": "https://github.com/ianf-ai/take-ur-turn",
       "firstSeenDate": "2026-08-24",
@@ -13372,6 +13688,25 @@
       "growthSignal": null,
       "runnability": null,
       "recommendedAction": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。",
+      "skipReason": null
+    },
+    {
+      "fullName": "prasannakoppolu/axiomcart-ai-assistant",
+      "url": "https://github.com/prasannakoppolu/axiomcart-ai-assistant",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": 70,
+      "latestScore": 70,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Voice-first LangGraph teaching app",
+      "summary": "Voice-first Python shopping assistant with LangGraph orchestration, FastAPI streaming, telemetry, and teaching UI.",
+      "audience": "Developers learning agent routing, human input checkpoints, and voice commerce workflows.",
+      "aiNativeAngle": "Specialist subgraphs, deterministic catalog tools, checkpointed human input, and speech UI make the teaching flow agent-native.",
+      "growthSignal": "Created 2026-09-02 and pushed 2026-09-03; root contains FastAPI, docs, public UI, tests, uv lock, and architecture diagram.",
+      "runnability": "Medium-high: uvicorn local run and CLI are documented, but provider keys are needed for full speech path.",
+      "recommendedAction": "Keep as teaching/demo reference, not a production commerce pick.",
       "skipReason": null
     },
     {
@@ -15235,6 +15570,158 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "AI-as-Infrastructure/aiinfra-atlas",
+      "url": "https://github.com/AI-as-Infrastructure/aiinfra-atlas",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "RAG evaluation harness for research infrastructure; useful but closer to benchmark/research deliverable than product workflow."
+    },
+    {
+      "fullName": "AlexKlick/agentic-systems-showcase",
+      "url": "https://github.com/AlexKlick/agentic-systems-showcase",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Browser-only interaction showcase; good pattern gallery but low evidence of reusable product."
+    },
+    {
+      "fullName": "amritanshu3408/personal-ai-assistant",
+      "url": "https://github.com/amritanshu3408/personal-ai-assistant",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Ambitious Electron/FastAPI assistant created today, but README/root evidence suggests early scaffold and Windows-only scripts; revisit after tests/demo mature."
+    },
+    {
+      "fullName": "Dakera-AI/dakera-js",
+      "url": "https://github.com/Dakera-AI/dakera-js",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "SDK/client package for an agent-memory product; wrapper/client shape is less suitable for today's radar than the full product surface."
+    },
+    {
+      "fullName": "Dakera-AI/dakera-py",
+      "url": "https://github.com/Dakera-AI/dakera-py",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Same SDK-family reason; keep the underlying memory system in broader landscape tracking."
+    },
+    {
+      "fullName": "MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+      "url": "https://github.com/MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Exercise/course artifact, not a durable runnable product."
+    },
+    {
+      "fullName": "MontyGovernance/montycat_node",
+      "url": "https://github.com/MontyGovernance/montycat_node",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Language client for a vector/NoSQL system; insufficient standalone workflow."
+    },
+    {
+      "fullName": "MontyGovernance/montycat_python",
+      "url": "https://github.com/MontyGovernance/montycat_python",
+      "firstSeenDate": "2026-09-03",
+      "lastSeenDate": "2026-09-03",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Language client for the same platform; skip duplicate SDK surface."
     },
     {
       "fullName": "adityarya24/agent-notch",
@@ -21513,6 +22000,40 @@
         }
       }
     ],
+    "Harshkumar62367/Crate": [
+      {
+        "id": "Harshkumar62367-Crate:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "Harshkumar62367/Crate",
+        "url": "https://github.com/Harshkumar62367/Crate",
+        "category": "WebMCP local knowledge workspace",
+        "score": 91,
+        "summary": "Turns a local folder of PDFs, code, notes, CSVs, screenshots, and images into an in-browser searchable workspace exposed to visiting agents through WebMCP tools.",
+        "audience": "Knowledge workers and developers who want an agent to inspect local files without uploading them.",
+        "aiNativeAngle": "The human sees a reader while the agent receives typed tools for status, search, citation, and export against the same browser-owned IndexedDB state.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-02; README includes WebMCP Challenge positioning, Docker, local dev commands, tests, OCR, embeddings, citation UI, and explicit agent-side instructions.",
+        "runnability": "High from README/root audit: Next.js app, npm run dev, Dockerfile, Vitest config, 64 claimed unit tests, and no external server requirement for the core local index.",
+        "recommendedAction": "Clone for a focused WebMCP/local-file pattern review; test large-folder indexing and citation-ring UX.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "Harshkumar62367/Crate",
+          "url": "https://github.com/Harshkumar62367/Crate",
+          "category": "WebMCP local knowledge workspace",
+          "score": 91,
+          "summary": "Turns a local folder of PDFs, code, notes, CSVs, screenshots, and images into an in-browser searchable workspace exposed to visiting agents through WebMCP tools.",
+          "audience": "Knowledge workers and developers who want an agent to inspect local files without uploading them.",
+          "ai_native_angle": "The human sees a reader while the agent receives typed tools for status, search, citation, and export against the same browser-owned IndexedDB state.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-02; README includes WebMCP Challenge positioning, Docker, local dev commands, tests, OCR, embeddings, citation UI, and explicit agent-side instructions.",
+          "runnability": "High from README/root audit: Next.js app, npm run dev, Dockerfile, Vitest config, 64 claimed unit tests, and no external server requirement for the core local index.",
+          "recommended_action": "Clone for a focused WebMCP/local-file pattern review; test large-folder indexing and citation-ring UX."
+        }
+      }
+    ],
     "codeaholicguy/ai-devkit": [
       {
         "id": "codeaholicguy-ai-devkit:2026-08-31T10:45:00+08:00:top:0",
@@ -22440,6 +22961,40 @@
           "growth_signal": "GitHub 页面显示约 124k stars、5k+ issues、542 PRs、625 commits；仓库含 demo.gif、plugins、examples。",
           "runnability": "README 推荐 curl 安装脚本、Homebrew、Windows install.ps1/WinGet；进入项目目录运行 `claude`。",
           "recommended_action": "跟 opencode/Codex/Gemini CLI 做同仓库对比；重点评估插件生态和权限/审计体验。"
+        }
+      }
+    ],
+    "Bilal140202/comet-x-browser": [
+      {
+        "id": "Bilal140202-comet-x-browser:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "Bilal140202/comet-x-browser",
+        "url": "https://github.com/Bilal140202/comet-x-browser",
+        "category": "Mobile browser agent",
+        "score": 90,
+        "summary": "Android WebView browser where an autonomous DOM/vision agent can browse, act, verify, and pause for human takeover.",
+        "audience": "Users who want a mobile-first agent browser with persistent cookies, downloads, tabs, and provider fallback.",
+        "aiNativeAngle": "Combines hybrid perception, action validation, safety policy, model capability negotiation, human takeover, memory, and red-team/self-test pages inside a browser product.",
+        "growthSignal": "Created 2026-09-02, pushed 2026-09-03; README claims 134 unit tests, Android project files, provider discovery docs, and injection/phish/challenge test pages.",
+        "runnability": "Medium-high: Android Gradle project and docs are present, but this run did not build an APK or verify device permissions.",
+        "recommendedAction": "Watch closely; run an Android build and safety-loop smoke test before deeper adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Bilal140202/comet-x-browser",
+          "url": "https://github.com/Bilal140202/comet-x-browser",
+          "category": "Mobile browser agent",
+          "score": 90,
+          "summary": "Android WebView browser where an autonomous DOM/vision agent can browse, act, verify, and pause for human takeover.",
+          "audience": "Users who want a mobile-first agent browser with persistent cookies, downloads, tabs, and provider fallback.",
+          "ai_native_angle": "Combines hybrid perception, action validation, safety policy, model capability negotiation, human takeover, memory, and red-team/self-test pages inside a browser product.",
+          "growth_signal": "Created 2026-09-02, pushed 2026-09-03; README claims 134 unit tests, Android project files, provider discovery docs, and injection/phish/challenge test pages.",
+          "runnability": "Medium-high: Android Gradle project and docs are present, but this run did not build an APK or verify device permissions.",
+          "recommended_action": "Watch closely; run an Android build and safety-loop smoke test before deeper adoption."
         }
       }
     ],
@@ -23804,6 +24359,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "AmarS2001/agent-graph": [
+      {
+        "id": "AmarS2001-agent-graph:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "AmarS2001/agent-graph",
+        "url": "https://github.com/AmarS2001/agent-graph",
+        "category": "Visual coding-agent orchestration",
+        "score": 88,
+        "summary": "Visual node-graph workflow engine for orchestrating Claude Code, Codex, Aider, and other coding agents against isolated Git worktrees.",
+        "audience": "Engineering teams experimenting with multi-agent pipelines, scheduled refactors, QA review agents, and repeatable local automation.",
+        "aiNativeAngle": "Agent nodes, tool execution nodes, isolated worktrees, persistent sessions, live CLI streaming, and cron triggers turn coding-agent operations into a product surface.",
+        "growthSignal": "Created and pushed 2026-09-03; root contains Go backend, frontend, images, architecture docs, and README screenshots.",
+        "runnability": "Medium-high: Go module plus frontend directory and CLI/web entrypoint are visible, but no local build was run.",
+        "recommendedAction": "Prototype with one repo and two agent nodes; inspect whether host CLI discovery handles Codex safely.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "AmarS2001/agent-graph",
+          "url": "https://github.com/AmarS2001/agent-graph",
+          "category": "Visual coding-agent orchestration",
+          "score": 88,
+          "summary": "Visual node-graph workflow engine for orchestrating Claude Code, Codex, Aider, and other coding agents against isolated Git worktrees.",
+          "audience": "Engineering teams experimenting with multi-agent pipelines, scheduled refactors, QA review agents, and repeatable local automation.",
+          "ai_native_angle": "Agent nodes, tool execution nodes, isolated worktrees, persistent sessions, live CLI streaming, and cron triggers turn coding-agent operations into a product surface.",
+          "growth_signal": "Created and pushed 2026-09-03; root contains Go backend, frontend, images, architecture docs, and README screenshots.",
+          "runnability": "Medium-high: Go module plus frontend directory and CLI/web entrypoint are visible, but no local build was run.",
+          "recommended_action": "Prototype with one repo and two agent nodes; inspect whether host CLI discovery handles Codex safely."
         }
       }
     ],
@@ -25783,6 +26372,40 @@
         }
       }
     ],
+    "Fadyio/Ohmni": [
+      {
+        "id": "Fadyio-Ohmni:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "Fadyio/Ohmni",
+        "url": "https://github.com/Fadyio/Ohmni",
+        "category": "WebMCP hardware diagnostics",
+        "score": 87,
+        "summary": "Lets an AI agent investigate virtual or physical hardware faults through browser-owned diagnostic instruments and human-approved physical interventions.",
+        "audience": "Hardware labs, embedded developers, and educators who need agent-assisted troubleshooting with explicit verification.",
+        "aiNativeAngle": "WebMCP exposes 19 diagnostic tools with red/amber gates, hidden-state firewalling, hypothesis confirmation, and repeatable post-repair tests.",
+        "growthSignal": "Created 2026-09-02, pushed 2026-09-03; TypeScript/Vite/Bun app with server, tests, docs, artifacts, and safety-gated tool descriptions.",
+        "runnability": "Medium-high: bun install and bun run dev path is documented; physical-device paths remain unaudited.",
+        "recommendedAction": "Study as a reference for agent tool safety in physical-world workflows.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Fadyio/Ohmni",
+          "url": "https://github.com/Fadyio/Ohmni",
+          "category": "WebMCP hardware diagnostics",
+          "score": 87,
+          "summary": "Lets an AI agent investigate virtual or physical hardware faults through browser-owned diagnostic instruments and human-approved physical interventions.",
+          "audience": "Hardware labs, embedded developers, and educators who need agent-assisted troubleshooting with explicit verification.",
+          "ai_native_angle": "WebMCP exposes 19 diagnostic tools with red/amber gates, hidden-state firewalling, hypothesis confirmation, and repeatable post-repair tests.",
+          "growth_signal": "Created 2026-09-02, pushed 2026-09-03; TypeScript/Vite/Bun app with server, tests, docs, artifacts, and safety-gated tool descriptions.",
+          "runnability": "Medium-high: bun install and bun run dev path is documented; physical-device paths remain unaudited.",
+          "recommended_action": "Study as a reference for agent tool safety in physical-world workflows."
+        }
+      }
+    ],
     "tsaijamey/frago": [
       {
         "id": "tsaijamey-frago:2026-08-31T10:45:00+08:00:top:0",
@@ -26692,6 +27315,40 @@
           "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
           "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
           "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+        }
+      }
+    ],
+    "casamart/ForgeAI": [
+      {
+        "id": "casamart-ForgeAI:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "casamart/ForgeAI",
+        "url": "https://github.com/casamart/ForgeAI",
+        "category": "Autonomous software factory demo",
+        "score": 86,
+        "summary": "Plans, builds, tests, repairs, browser-QAs, and reports on software inside isolated Solari environments.",
+        "audience": "Agent engineering teams evaluating end-to-end build/repair/verification loops.",
+        "aiNativeAngle": "Treats planning, sandbox execution, browser QA, debugging, repair, and engineering-report emission as a single evidence-gated product loop.",
+        "growthSignal": "Created 2026-09-01 and pushed 2026-09-03; README includes dashboard GIF, multiple smoke-test commands, Dockerfile, monorepo packages, docs, examples, and Railway config.",
+        "runnability": "High from docs: mock-provider smoke tests do not require an API key; Solari-backed full path was not credential-tested.",
+        "recommendedAction": "Run npm run ai:smoke and npm run demo:repair; compare evidence reports with current internal coding-agent QA loops.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "casamart/ForgeAI",
+          "url": "https://github.com/casamart/ForgeAI",
+          "category": "Autonomous software factory demo",
+          "score": 86,
+          "summary": "Plans, builds, tests, repairs, browser-QAs, and reports on software inside isolated Solari environments.",
+          "audience": "Agent engineering teams evaluating end-to-end build/repair/verification loops.",
+          "ai_native_angle": "Treats planning, sandbox execution, browser QA, debugging, repair, and engineering-report emission as a single evidence-gated product loop.",
+          "growth_signal": "Created 2026-09-01 and pushed 2026-09-03; README includes dashboard GIF, multiple smoke-test commands, Dockerfile, monorepo packages, docs, examples, and Railway config.",
+          "runnability": "High from docs: mock-provider smoke tests do not require an API key; Solari-backed full path was not credential-tested.",
+          "recommended_action": "Run npm run ai:smoke and npm run demo:repair; compare evidence reports with current internal coding-agent QA loops."
         }
       }
     ],
@@ -28790,6 +29447,40 @@
         }
       }
     ],
+    "Sy-D/handraise": [
+      {
+        "id": "Sy-D-handraise:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "Sy-D/handraise",
+        "url": "https://github.com/Sy-D/handraise",
+        "category": "Human escalation for browser agents",
+        "score": 84,
+        "summary": "Lets a cloud browser agent hand a stuck live session to a human through a phone link, then resume in the same browser session.",
+        "audience": "Teams running browser agents that hit 2FA, login, payment, or sensitive approval moments.",
+        "aiNativeAngle": "Adds a first-class human takeover/approval protocol to agent browsing, preserving cookies, page state, and task continuity.",
+        "growthSignal": "Created 2026-09-01, pushed 2026-09-03; README shows npm install, API snippets, demo/benchmarks/e2e/tests, CI badge, and measured rescue claims.",
+        "runnability": "Medium: npm package shape is strong, but the primary path depends on a Solari API key.",
+        "recommendedAction": "Keep on watch for browser-agent operations; test with a non-sensitive 2FA-style workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "Sy-D/handraise",
+          "url": "https://github.com/Sy-D/handraise",
+          "category": "Human escalation for browser agents",
+          "score": 84,
+          "summary": "Lets a cloud browser agent hand a stuck live session to a human through a phone link, then resume in the same browser session.",
+          "audience": "Teams running browser agents that hit 2FA, login, payment, or sensitive approval moments.",
+          "ai_native_angle": "Adds a first-class human takeover/approval protocol to agent browsing, preserving cookies, page state, and task continuity.",
+          "growth_signal": "Created 2026-09-01, pushed 2026-09-03; README shows npm install, API snippets, demo/benchmarks/e2e/tests, CI badge, and measured rescue claims.",
+          "runnability": "Medium: npm package shape is strong, but the primary path depends on a Solari API key.",
+          "recommended_action": "Keep on watch for browser-agent operations; test with a non-sensitive 2FA-style workflow."
+        }
+      }
+    ],
     "xiaotianfotos/indexed": [
       {
         "id": "xiaotianfotos-indexed:2026-08-30T12:20:00+08:00:top:0",
@@ -30664,6 +31355,40 @@
         }
       }
     ],
+    "grunion-ai/weave": [
+      {
+        "id": "grunion-ai-weave:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "grunion-ai/weave",
+        "url": "https://github.com/grunion-ai/weave",
+        "category": "Agent-first work management database",
+        "score": 83,
+        "summary": "Self-hosted work platform with tables, relations, formulas, workflows, documents, REST, CLI, and built-in MCP server over one SQLite file.",
+        "audience": "Small teams that want Airtable/Notion-like work management where agents and humans operate the same data model.",
+        "aiNativeAngle": "UI, REST API, CLI, and MCP expose the same engine; undo tooling acknowledges agent mistakes as a normal workflow.",
+        "growthSignal": "Created 2026-08-16 and pushed 2026-09-03; README has screenshots, quickstart, MCP positioning, tests, docs, and zero-runtime-dependency claim.",
+        "runnability": "High from root audit: package scripts, test directory, public assets, docs, and wrangler example are present; runtime not executed.",
+        "recommendedAction": "Compare against the radar board's own project-pool needs; consider as a future agent-operated table substrate.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "grunion-ai/weave",
+          "url": "https://github.com/grunion-ai/weave",
+          "category": "Agent-first work management database",
+          "score": 83,
+          "summary": "Self-hosted work platform with tables, relations, formulas, workflows, documents, REST, CLI, and built-in MCP server over one SQLite file.",
+          "audience": "Small teams that want Airtable/Notion-like work management where agents and humans operate the same data model.",
+          "ai_native_angle": "UI, REST API, CLI, and MCP expose the same engine; undo tooling acknowledges agent mistakes as a normal workflow.",
+          "growth_signal": "Created 2026-08-16 and pushed 2026-09-03; README has screenshots, quickstart, MCP positioning, tests, docs, and zero-runtime-dependency claim.",
+          "runnability": "High from root audit: package scripts, test directory, public assets, docs, and wrangler example are present; runtime not executed.",
+          "recommended_action": "Compare against the radar board's own project-pool needs; consider as a future agent-operated table substrate."
+        }
+      }
+    ],
     "Hyr1sky/TheGrandQuiz": [
       {
         "id": "Hyr1sky-TheGrandQuiz:2026-08-31T10:45:00+08:00:top:0",
@@ -31931,6 +32656,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "JonnesLin/job-agent": [
+      {
+        "id": "JonnesLin-job-agent:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "JonnesLin/job-agent",
+        "url": "https://github.com/JonnesLin/job-agent",
+        "category": "Job-search agent workspace",
+        "score": 82,
+        "summary": "Privacy-conscious self-hosted job application assistant with tailored resumes, reports, web app, CLI, browser extension, Docker, and local data.",
+        "audience": "Job seekers who want agent help while retaining data control and repeatable application records.",
+        "aiNativeAngle": "Combines local operator CLI, multi-user web app, browser extension, reports, and provider-compatible AI behind a self-hosted workflow.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-02; repo includes Docker Compose, Caddy, tests, docs, demo, templates, extension, and CI.",
+        "runnability": "High from root audit: uv run cli.py serve --public, Docker Compose, and .env.example are documented.",
+        "recommendedAction": "Run locally with dummy data; inspect extension permissions and resume/report generation quality.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "JonnesLin/job-agent",
+          "url": "https://github.com/JonnesLin/job-agent",
+          "category": "Job-search agent workspace",
+          "score": 82,
+          "summary": "Privacy-conscious self-hosted job application assistant with tailored resumes, reports, web app, CLI, browser extension, Docker, and local data.",
+          "audience": "Job seekers who want agent help while retaining data control and repeatable application records.",
+          "ai_native_angle": "Combines local operator CLI, multi-user web app, browser extension, reports, and provider-compatible AI behind a self-hosted workflow.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-02; repo includes Docker Compose, Caddy, tests, docs, demo, templates, extension, and CI.",
+          "runnability": "High from root audit: uv run cli.py serve --public, Docker Compose, and .env.example are documented.",
+          "recommended_action": "Run locally with dummy data; inspect extension permissions and resume/report generation quality."
         }
       }
     ],
@@ -33507,6 +34266,40 @@
         }
       }
     ],
+    "lumanlight/chrome-agent-cli": [
+      {
+        "id": "lumanlight-chrome-agent-cli:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "lumanlight/chrome-agent-cli",
+        "url": "https://github.com/lumanlight/chrome-agent-cli",
+        "category": "Multi-session browser control CLI",
+        "score": 81,
+        "summary": "Creates isolated Chrome sessions with separate profiles, debugging ports, sockets, CDP passthrough, screenshots, DOM snapshots, and network capture.",
+        "audience": "Developers and agent operators who need concurrent browser sessions without login/state bleed.",
+        "aiNativeAngle": "Makes browser state a named, scriptable resource for agents, with no focus stealing and automatic wrapper recovery.",
+        "growthSignal": "Created and pushed 2026-09-03; README includes npm install, CLI examples, tests, assets, TypeScript source, and Chinese README.",
+        "runnability": "Medium-high: package and Vitest config are present, but it depends on local Chrome/Chromium and chrome-devtools-mcp.",
+        "recommendedAction": "Trial as a local browser isolation layer for recurring research automations.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "lumanlight/chrome-agent-cli",
+          "url": "https://github.com/lumanlight/chrome-agent-cli",
+          "category": "Multi-session browser control CLI",
+          "score": 81,
+          "summary": "Creates isolated Chrome sessions with separate profiles, debugging ports, sockets, CDP passthrough, screenshots, DOM snapshots, and network capture.",
+          "audience": "Developers and agent operators who need concurrent browser sessions without login/state bleed.",
+          "ai_native_angle": "Makes browser state a named, scriptable resource for agents, with no focus stealing and automatic wrapper recovery.",
+          "growth_signal": "Created and pushed 2026-09-03; README includes npm install, CLI examples, tests, assets, TypeScript source, and Chinese README.",
+          "runnability": "Medium-high: package and Vitest config are present, but it depends on local Chrome/Chromium and chrome-devtools-mcp.",
+          "recommended_action": "Trial as a local browser isolation layer for recurring research automations."
+        }
+      }
+    ],
     "JordyZomer/lemmalog": [
       {
         "id": "JordyZomer-lemmalog:2026-08-30T12:20:00+08:00:top:0",
@@ -34348,6 +35141,40 @@
           "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
           "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
           "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+        }
+      }
+    ],
+    "regents-ai/patchbay": [
+      {
+        "id": "regents-ai-patchbay:2026-09-03T12:19:27+08:00:top:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "regents-ai/patchbay",
+        "url": "https://github.com/regents-ai/patchbay",
+        "category": "WebMCP tool repair loop",
+        "score": 80,
+        "summary": "Phoenix LiveView demo where an agent reports a broken WebMCP tool, a human approves a bounded repair, the browser hot-swaps the tool, and the same agent retries with a receipt.",
+        "audience": "Builders of browser-owned agent tools who need repair, approval, and evidence loops.",
+        "aiNativeAngle": "The product centers on generation/version receipts, human approval, deterministic canaries, browser-observed tool changes, and verified reports.",
+        "growthSignal": "Created 2026-09-01, pushed 2026-09-03; README includes local setup, Docker/Postgres files, WebMCP docs, tests, and fallback demo mode.",
+        "runnability": "Medium: strong setup docs, but local path needs Elixir/Phoenix plus PostgreSQL.",
+        "recommendedAction": "Extract the receipt/verifier pattern for agent tool registries; run only after dependency setup.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "regents-ai/patchbay",
+          "url": "https://github.com/regents-ai/patchbay",
+          "category": "WebMCP tool repair loop",
+          "score": 80,
+          "summary": "Phoenix LiveView demo where an agent reports a broken WebMCP tool, a human approves a bounded repair, the browser hot-swaps the tool, and the same agent retries with a receipt.",
+          "audience": "Builders of browser-owned agent tools who need repair, approval, and evidence loops.",
+          "ai_native_angle": "The product centers on generation/version receipts, human approval, deterministic canaries, browser-observed tool changes, and verified reports.",
+          "growth_signal": "Created 2026-09-01, pushed 2026-09-03; README includes local setup, Docker/Postgres files, WebMCP docs, tests, and fallback demo mode.",
+          "runnability": "Medium: strong setup docs, but local path needs Elixir/Phoenix plus PostgreSQL.",
+          "recommended_action": "Extract the receipt/verifier pattern for agent tool registries; run only after dependency setup."
         }
       }
     ],
@@ -36758,6 +37585,40 @@
         }
       }
     ],
+    "ericthayer/mend": [
+      {
+        "id": "ericthayer-mend:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "ericthayer/mend",
+        "url": "https://github.com/ericthayer/mend",
+        "category": "WebMCP recovery administration",
+        "score": 78,
+        "summary": "Local-first recovery workspace where browser agents structure case facts, tasks, and drafts after household disruptions.",
+        "audience": "People dealing with insurance, landlord, repair, and recovery admin after disruptive events.",
+        "aiNativeAngle": "WebMCP tools are scoped to staged, local, human-approved recovery actions.",
+        "growthSignal": "Created 2026-09-03 and pushed 2026-09-03 with test/build commands in README.",
+        "runnability": "Medium: WebMCP app shape and commands are documented, but root surface looked lighter than Top picks.",
+        "recommendedAction": "Watch for richer demo media and case templates.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "ericthayer/mend",
+          "url": "https://github.com/ericthayer/mend",
+          "category": "WebMCP recovery administration",
+          "score": 78,
+          "summary": "Local-first recovery workspace where browser agents structure case facts, tasks, and drafts after household disruptions.",
+          "audience": "People dealing with insurance, landlord, repair, and recovery admin after disruptive events.",
+          "ai_native_angle": "WebMCP tools are scoped to staged, local, human-approved recovery actions.",
+          "growth_signal": "Created 2026-09-03 and pushed 2026-09-03 with test/build commands in README.",
+          "runnability": "Medium: WebMCP app shape and commands are documented, but root surface looked lighter than Top picks.",
+          "recommended_action": "Watch for richer demo media and case templates."
+        }
+      }
+    ],
     "aureliocpr-ctrl/verimem": [
       {
         "id": "aureliocpr-ctrl-verimem:2026-08-31T10:45:00+08:00:watchlist:0",
@@ -38244,6 +39105,40 @@
           "growth_signal": "agent-runtime topic 显示近期更新（May 12, 2026）；Star ~85；README 有安装与核心命令示例。",
           "runnability": "cargo install 或 brew 安装；提供 holon run/serve/daemon/tui 等命令。",
           "recommended_action": "用一个真实 repo 做 holon run + holon serve；评估任务/唤醒模型是否可对接你现有自动化。"
+        }
+      }
+    ],
+    "Dubjay18/shopfront-copilot": [
+      {
+        "id": "Dubjay18-shopfront-copilot:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "Dubjay18/shopfront-copilot",
+        "url": "https://github.com/Dubjay18/shopfront-copilot",
+        "category": "Commerce WebMCP checkout gate",
+        "score": 77,
+        "summary": "Storefront where shoppers and AI agents browse, compare, cart, and watch prices while checkout remains human-only.",
+        "audience": "Commerce teams exploring agent-assisted shopping with explicit purchase safety.",
+        "aiNativeAngle": "The agent calls the same client-side tools as the UI while irreversible purchase completion is excluded from tool access.",
+        "growthSignal": "Created 2026-09-03 with Next.js app, static catalog, WebMCP guardrails, and local dev instructions.",
+        "runnability": "Medium-high: npm app and WebMCP tools are present; real checkout is intentionally simulated.",
+        "recommendedAction": "Watch for reusable checkout-gate components.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Dubjay18/shopfront-copilot",
+          "url": "https://github.com/Dubjay18/shopfront-copilot",
+          "category": "Commerce WebMCP checkout gate",
+          "score": 77,
+          "summary": "Storefront where shoppers and AI agents browse, compare, cart, and watch prices while checkout remains human-only.",
+          "audience": "Commerce teams exploring agent-assisted shopping with explicit purchase safety.",
+          "ai_native_angle": "The agent calls the same client-side tools as the UI while irreversible purchase completion is excluded from tool access.",
+          "growth_signal": "Created 2026-09-03 with Next.js app, static catalog, WebMCP guardrails, and local dev instructions.",
+          "runnability": "Medium-high: npm app and WebMCP tools are present; real checkout is intentionally simulated.",
+          "recommended_action": "Watch for reusable checkout-gate components."
         }
       }
     ],
@@ -41474,6 +42369,40 @@
         }
       }
     ],
+    "Masngo/omnidata-webmcp": [
+      {
+        "id": "Masngo-omnidata-webmcp:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "Masngo/omnidata-webmcp",
+        "url": "https://github.com/Masngo/omnidata-webmcp",
+        "category": "In-browser analytics studio",
+        "score": 74,
+        "summary": "Agent-native analytics studio using DuckDB WASM and WebMCP.",
+        "audience": "Analysts who want agents to inspect local datasets in a browser.",
+        "aiNativeAngle": "WebMCP exposes browser-local analytics state to agents.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-03 with Next.js/Tailwind root files.",
+        "runnability": "Medium: project files are present, but README evidence was thinner in this audit.",
+        "recommendedAction": "Recheck after README/demo grows.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "Masngo/omnidata-webmcp",
+          "url": "https://github.com/Masngo/omnidata-webmcp",
+          "category": "In-browser analytics studio",
+          "score": 74,
+          "summary": "Agent-native analytics studio using DuckDB WASM and WebMCP.",
+          "audience": "Analysts who want agents to inspect local datasets in a browser.",
+          "ai_native_angle": "WebMCP exposes browser-local analytics state to agents.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-03 with Next.js/Tailwind root files.",
+          "runnability": "Medium: project files are present, but README evidence was thinner in this audit.",
+          "recommended_action": "Recheck after README/demo grows."
+        }
+      }
+    ],
     "git-syl/hermes-agent-demo": [
       {
         "id": "git-syl-hermes-agent-demo:2026-08-31T10:45:00+08:00:watchlist:0",
@@ -42990,6 +43919,40 @@
         }
       }
     ],
+    "RodRomer/render-mcp": [
+      {
+        "id": "RodRomer-render-mcp:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "RodRomer/render-mcp",
+        "url": "https://github.com/RodRomer/render-mcp",
+        "category": "Remote browser-render MCP",
+        "score": 73,
+        "summary": "MCP server that renders screenshots, PDFs, and post-JavaScript HTML from a real browser without local install.",
+        "audience": "Agents and developers that need browser rendering from constrained environments.",
+        "aiNativeAngle": "Provides visual/browser perception as a remote MCP utility with explicit network and injection limits.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-03 with Cloudflare/Wrangler and plugin files.",
+        "runnability": "Medium: very simple client setup claim, but this run did not validate the hosted service.",
+        "recommendedAction": "Use as an infrastructure watch item rather than a full workflow product.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "RodRomer/render-mcp",
+          "url": "https://github.com/RodRomer/render-mcp",
+          "category": "Remote browser-render MCP",
+          "score": 73,
+          "summary": "MCP server that renders screenshots, PDFs, and post-JavaScript HTML from a real browser without local install.",
+          "audience": "Agents and developers that need browser rendering from constrained environments.",
+          "ai_native_angle": "Provides visual/browser perception as a remote MCP utility with explicit network and injection limits.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-03 with Cloudflare/Wrangler and plugin files.",
+          "runnability": "Medium: very simple client setup claim, but this run did not validate the hosted service.",
+          "recommended_action": "Use as an infrastructure watch item rather than a full workflow product."
+        }
+      }
+    ],
     "powerfooI/herdr-studio": [
       {
         "id": "powerfooI-herdr-studio:2026-08-31T10:45:00+08:00:watchlist:0",
@@ -44224,6 +45187,40 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "Shushant17711/mirage": [
+      {
+        "id": "Shushant17711-mirage:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "Shushant17711/mirage",
+        "url": "https://github.com/Shushant17711/mirage",
+        "category": "Browser-agent adversarial benchmark",
+        "score": 72,
+        "summary": "Controlled adversarial web for measuring browser-agent prompt-injection failures with replay evidence.",
+        "audience": "Browser-agent builders who need repeatable safety tests.",
+        "aiNativeAngle": "Frames browser prompt-injection as a scored, replayable product workflow rather than anecdotal screenshots.",
+        "growthSignal": "Created 2026-09-03 and pushed 2026-09-03; README describes 107 attack runs and quickstart.",
+        "runnability": "Medium: Python target/runner structure is present; README still marks demo media as pending.",
+        "recommendedAction": "Revisit once demo assets and public benchmark examples are complete.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "Shushant17711/mirage",
+          "url": "https://github.com/Shushant17711/mirage",
+          "category": "Browser-agent adversarial benchmark",
+          "score": 72,
+          "summary": "Controlled adversarial web for measuring browser-agent prompt-injection failures with replay evidence.",
+          "audience": "Browser-agent builders who need repeatable safety tests.",
+          "ai_native_angle": "Frames browser prompt-injection as a scored, replayable product workflow rather than anecdotal screenshots.",
+          "growth_signal": "Created 2026-09-03 and pushed 2026-09-03; README describes 107 attack runs and quickstart.",
+          "runnability": "Medium: Python target/runner structure is present; README still marks demo media as pending.",
+          "recommended_action": "Revisit once demo assets and public benchmark examples are complete."
         }
       }
     ],
@@ -45893,6 +46890,40 @@
         }
       }
     ],
+    "LuckTerence/trustline": [
+      {
+        "id": "LuckTerence-trustline:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "LuckTerence/trustline",
+        "url": "https://github.com/LuckTerence/trustline",
+        "category": "Agent config integrity CLI",
+        "score": 71,
+        "summary": "Trusted baseline and auto-rollback layer for agent configuration files such as AGENTS.md, CLAUDE.md, and .mcp.json.",
+        "audience": "Developers installing untrusted repos, skills, or MCP servers.",
+        "aiNativeAngle": "Moves instruction-integrity protection outside the agent loop into OS-level file monitoring and rollback.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-03; README includes pip install, CI, docs, tests, and demo tape.",
+        "runnability": "Medium-high: Python package and tests are present; product scope is narrow.",
+        "recommendedAction": "Evaluate as a guardrail utility for agent workspaces.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "LuckTerence/trustline",
+          "url": "https://github.com/LuckTerence/trustline",
+          "category": "Agent config integrity CLI",
+          "score": 71,
+          "summary": "Trusted baseline and auto-rollback layer for agent configuration files such as AGENTS.md, CLAUDE.md, and .mcp.json.",
+          "audience": "Developers installing untrusted repos, skills, or MCP servers.",
+          "ai_native_angle": "Moves instruction-integrity protection outside the agent loop into OS-level file monitoring and rollback.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-03; README includes pip install, CI, docs, tests, and demo tape.",
+          "runnability": "Medium-high: Python package and tests are present; product scope is narrow.",
+          "recommended_action": "Evaluate as a guardrail utility for agent workspaces."
+        }
+      }
+    ],
     "ianf-ai/take-ur-turn": [
       {
         "id": "ianf-ai-take-ur-turn:2026-08-24T12:08:15+08:00:watchlist:0",
@@ -46884,6 +47915,40 @@
           "score": 71,
           "summary": "面向 AI agent 的沙箱基础设施（代码执行、browser use 等），偏底层组件。",
           "recommended_action": "若你在做 agent 执行隔离/浏览器沙箱，可跟进其架构与接口稳定性。"
+        }
+      }
+    ],
+    "prasannakoppolu/axiomcart-ai-assistant": [
+      {
+        "id": "prasannakoppolu-axiomcart-ai-assistant:2026-09-03T12:19:27+08:00:watchlist:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "watchlist",
+        "rank": 7,
+        "fullName": "prasannakoppolu/axiomcart-ai-assistant",
+        "url": "https://github.com/prasannakoppolu/axiomcart-ai-assistant",
+        "category": "Voice-first LangGraph teaching app",
+        "score": 70,
+        "summary": "Voice-first Python shopping assistant with LangGraph orchestration, FastAPI streaming, telemetry, and teaching UI.",
+        "audience": "Developers learning agent routing, human input checkpoints, and voice commerce workflows.",
+        "aiNativeAngle": "Specialist subgraphs, deterministic catalog tools, checkpointed human input, and speech UI make the teaching flow agent-native.",
+        "growthSignal": "Created 2026-09-02 and pushed 2026-09-03; root contains FastAPI, docs, public UI, tests, uv lock, and architecture diagram.",
+        "runnability": "Medium-high: uvicorn local run and CLI are documented, but provider keys are needed for full speech path.",
+        "recommendedAction": "Keep as teaching/demo reference, not a production commerce pick.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "prasannakoppolu/axiomcart-ai-assistant",
+          "url": "https://github.com/prasannakoppolu/axiomcart-ai-assistant",
+          "category": "Voice-first LangGraph teaching app",
+          "score": 70,
+          "summary": "Voice-first Python shopping assistant with LangGraph orchestration, FastAPI streaming, telemetry, and teaching UI.",
+          "audience": "Developers learning agent routing, human input checkpoints, and voice commerce workflows.",
+          "ai_native_angle": "Specialist subgraphs, deterministic catalog tools, checkpointed human input, and speech UI make the teaching flow agent-native.",
+          "growth_signal": "Created 2026-09-02 and pushed 2026-09-03; root contains FastAPI, docs, public UI, tests, uv lock, and architecture diagram.",
+          "runnability": "Medium-high: uvicorn local run and CLI are documented, but provider keys are needed for full speech path.",
+          "recommended_action": "Keep as teaching/demo reference, not a production commerce pick."
         }
       }
     ],
@@ -50623,6 +51688,214 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "AI-as-Infrastructure/aiinfra-atlas": [
+      {
+        "id": "AI-as-Infrastructure-aiinfra-atlas:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "AI-as-Infrastructure/aiinfra-atlas",
+        "url": "https://github.com/AI-as-Infrastructure/aiinfra-atlas",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "RAG evaluation harness for research infrastructure; useful but closer to benchmark/research deliverable than product workflow.",
+        "rawJson": {
+          "full_name": "AI-as-Infrastructure/aiinfra-atlas",
+          "url": "https://github.com/AI-as-Infrastructure/aiinfra-atlas",
+          "skip_reason": "RAG evaluation harness for research infrastructure; useful but closer to benchmark/research deliverable than product workflow."
+        }
+      }
+    ],
+    "AlexKlick/agentic-systems-showcase": [
+      {
+        "id": "AlexKlick-agentic-systems-showcase:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "AlexKlick/agentic-systems-showcase",
+        "url": "https://github.com/AlexKlick/agentic-systems-showcase",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Browser-only interaction showcase; good pattern gallery but low evidence of reusable product.",
+        "rawJson": {
+          "full_name": "AlexKlick/agentic-systems-showcase",
+          "url": "https://github.com/AlexKlick/agentic-systems-showcase",
+          "skip_reason": "Browser-only interaction showcase; good pattern gallery but low evidence of reusable product."
+        }
+      }
+    ],
+    "amritanshu3408/personal-ai-assistant": [
+      {
+        "id": "amritanshu3408-personal-ai-assistant:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "amritanshu3408/personal-ai-assistant",
+        "url": "https://github.com/amritanshu3408/personal-ai-assistant",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Ambitious Electron/FastAPI assistant created today, but README/root evidence suggests early scaffold and Windows-only scripts; revisit after tests/demo mature.",
+        "rawJson": {
+          "full_name": "amritanshu3408/personal-ai-assistant",
+          "url": "https://github.com/amritanshu3408/personal-ai-assistant",
+          "skip_reason": "Ambitious Electron/FastAPI assistant created today, but README/root evidence suggests early scaffold and Windows-only scripts; revisit after tests/demo mature."
+        }
+      }
+    ],
+    "Dakera-AI/dakera-js": [
+      {
+        "id": "Dakera-AI-dakera-js:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Dakera-AI/dakera-js",
+        "url": "https://github.com/Dakera-AI/dakera-js",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "SDK/client package for an agent-memory product; wrapper/client shape is less suitable for today's radar than the full product surface.",
+        "rawJson": {
+          "full_name": "Dakera-AI/dakera-js",
+          "url": "https://github.com/Dakera-AI/dakera-js",
+          "skip_reason": "SDK/client package for an agent-memory product; wrapper/client shape is less suitable for today's radar than the full product surface."
+        }
+      }
+    ],
+    "Dakera-AI/dakera-py": [
+      {
+        "id": "Dakera-AI-dakera-py:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Dakera-AI/dakera-py",
+        "url": "https://github.com/Dakera-AI/dakera-py",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Same SDK-family reason; keep the underlying memory system in broader landscape tracking.",
+        "rawJson": {
+          "full_name": "Dakera-AI/dakera-py",
+          "url": "https://github.com/Dakera-AI/dakera-py",
+          "skip_reason": "Same SDK-family reason; keep the underlying memory system in broader landscape tracking."
+        }
+      }
+    ],
+    "MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team": [
+      {
+        "id": "MansoorSaad-skills-agent-orchestration-build-your-ai-dream-team:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+        "url": "https://github.com/MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Exercise/course artifact, not a durable runnable product.",
+        "rawJson": {
+          "full_name": "MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+          "url": "https://github.com/MansoorSaad/skills-agent-orchestration-build-your-ai-dream-team",
+          "skip_reason": "Exercise/course artifact, not a durable runnable product."
+        }
+      }
+    ],
+    "MontyGovernance/montycat_node": [
+      {
+        "id": "MontyGovernance-montycat_node:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "MontyGovernance/montycat_node",
+        "url": "https://github.com/MontyGovernance/montycat_node",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Language client for a vector/NoSQL system; insufficient standalone workflow.",
+        "rawJson": {
+          "full_name": "MontyGovernance/montycat_node",
+          "url": "https://github.com/MontyGovernance/montycat_node",
+          "skip_reason": "Language client for a vector/NoSQL system; insufficient standalone workflow."
+        }
+      }
+    ],
+    "MontyGovernance/montycat_python": [
+      {
+        "id": "MontyGovernance-montycat_python:2026-09-03T12:19:27+08:00:skip:0",
+        "runId": "run:2026-09-03:2026-09-03T12:19:27+08:00",
+        "runDate": "2026-09-03",
+        "generatedAt": "2026-09-03T12:19:27+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "MontyGovernance/montycat_python",
+        "url": "https://github.com/MontyGovernance/montycat_python",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Language client for the same platform; skip duplicate SDK surface.",
+        "rawJson": {
+          "full_name": "MontyGovernance/montycat_python",
+          "url": "https://github.com/MontyGovernance/montycat_python",
+          "skip_reason": "Language client for the same platform; skip duplicate SDK surface."
         }
       }
     ],
