@@ -1,0 +1,276 @@
+{
+  "run_date": "2026-09-08",
+  "generated_at": "2026-09-08T14:22:00+08:00",
+  "data_window": "GitHub Search API queries for AI agent, coding agent, browser agent, MCP AI, RAG, LLM app, voice agent, AI workflow, copilot, automation agent and assistant repositories created or pushed from 2026-09-06 through 2026-09-08. Raw search snapshots were saved under /tmp/radar_2026_09_08_api/; selected repository metadata, root-content and README audits were saved under /tmp/radar_2026_09_08_readmes/.",
+  "source_summary": "Queried 16 GitHub Search API surfaces and deduplicated 712 repositories. Reviewed metadata, topics, root files, README sections, package/Docker/test clues, install paths, demos/screenshots and API/CLI/UI claims for 51 shortlisted repositories. Some late README/root requests hit unauthenticated GitHub API rate limits, so lower-confidence candidates were kept in watchlist or skipped. No third-party repository was cloned, installed, built, executed, browser-tested, mobile-tested, provider-tested, credential-tested, payment-tested, security-tested or deployed locally.",
+  "trend_observations": "The strongest product signal this window is agent infrastructure becoming operational software: context databases, portable agent rooms, multi-agent harnesses, sandbox/runtime layers, auth gateways, policy-gated PR automation and browser runtimes. Mature coding-agent CLIs remain highly active but are less useful as daily discoveries unless a distinct new product surface appears. Newly created repos are especially noisy: many are single-purpose skill packs, generated templates, benchmark state folders or unsafe session-transfer utilities. Strong runnability signals were Dockerfiles, docker-compose, package workspaces, pyproject/Cargo/Go manifests, tests, env examples, quick-start sections, screenshots, CLI folders, desktop/web UI claims and examples.",
+  "assumptions": "Scores are based on GitHub API metadata and README/root-content evidence collected on 2026-09-08, not local runtime proof. Star/fork counts are raw GitHub API values at collection time and may include atypical or promotional growth; no authenticated star-delta or traffic API was used. Repositories that are mature incumbents, official vendor agents, pure skill packs, benchmarks, generated templates, security-risky session bridges or README-heavy marketing surfaces were downgraded or skipped even when active.",
+  "markdown_report": "Top focus for 2026-09-08: context databases for agents, parallel coding-agent ADEs, harness abstraction, SaaS auth gateways, shared agent rooms, secure sandboxes, agentic backend platforms, source-cited memory wikis, headless browser runtimes and policy-gated PR control planes. Watchlist covers MCP artifact canvases, live voice-agent operator consoles, private email assistants, kanban schedulers for agents, local browser agents, delegated authority passes and adversarial agent-security harnesses. Skip reasons cover mature incumbents, canonical vendor tools, broad category leaders, generated skill packs, unsafe session-transfer positioning and thin benchmark/template surfaces.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "category": "Agent context database",
+      "score": 91,
+      "summary": "Self-evolving context database that unifies agent memory, knowledge RAG and skills for long-running AI agents.",
+      "audience": "Teams building agents that need durable context, retrieval and skill memory across sessions.",
+      "ai_native_angle": "Treats memory, RAG and skills as one evolving substrate for agent work rather than separate prompt-time utilities.",
+      "growth_signal": "Created 2026-01-05, pushed 2026-09-08; GitHub API showed 35,960 stars and 2,745 forks. Root audit found Dockerfile, docker-compose, Cargo and Python package metadata, Caddyfile, docs and README quick-start/demo/MCP/CLI signals.",
+      "runnability": "High from root evidence: Docker, Python/Rust package paths and docs are present; no local provider or storage setup was tested.",
+      "recommended_action": "Review the context schema and self-evolution boundary; compare with existing automation memory and retrieval patterns."
+    },
+    {
+      "rank": 2,
+      "full_name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "category": "Parallel coding-agent ADE",
+      "score": 90,
+      "summary": "Agent development environment for running fleets of coding agents across desktop, mobile and remote runtime surfaces.",
+      "audience": "Engineers coordinating multiple Claude Code, Codex, Cursor, OpenCode or Pi sessions in parallel worktrees.",
+      "ai_native_angle": "Makes parallel agent sessions, terminals, worktrees and notifications a first-class development workspace.",
+      "growth_signal": "Created 2026-03-17, pushed 2026-09-08; GitHub API showed 63,696 stars and 4,230 forks. Root audit found Electron/Vite package files, docs, examples, mobile/native folders and desktop CLI clues.",
+      "runnability": "Medium-high: package manifests and multi-surface app folders are present; macOS/mobile builds were not run.",
+      "recommended_action": "Keep watching approval, failure recovery and mobile companion patterns for long-running coding-agent work."
+    },
+    {
+      "rank": 3,
+      "full_name": "omnigent-ai/omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "category": "Agent meta-harness",
+      "score": 88,
+      "summary": "Framework and meta-harness for orchestrating Claude Code, Codex, Cursor, Pi and custom agents with policy, sandboxing and collaboration.",
+      "audience": "Agent-platform teams that need to swap harnesses and standardize governance without rewriting workflows.",
+      "ai_native_angle": "Normalizes agent harnesses as replaceable runtime backends with policies, web UI/desktop hints and session control.",
+      "growth_signal": "Created 2026-06-11, pushed 2026-09-08; GitHub API showed 9,768 stars and 1,518 forks. Root audit found Python and pnpm package metadata, deploy/design/editor folders, examples, docs and README quick-start/install/UI/API clues.",
+      "runnability": "Medium-high from package and docs evidence; no harness adapters or sandboxes were connected locally.",
+      "recommended_action": "Audit adapter boundaries, cancellation semantics and policy enforcement before any real-repo pilot."
+    },
+    {
+      "rank": 4,
+      "full_name": "oomol-lab/open-connector",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "category": "Auth gateway for AI agents",
+      "score": 87,
+      "summary": "Open-source gateway connecting SaaS providers to AI agents through SDK, CLI, MCP, HTTP and OpenAPI.",
+      "audience": "Builders who need controlled SaaS integrations for assistants and workflow agents.",
+      "ai_native_angle": "Turns OAuth/connectors into an agent-facing platform surface, with MCP and OpenAPI as first-class delivery paths.",
+      "growth_signal": "Created 2026-06-29, pushed 2026-09-08; GitHub API showed 5,614 stars and 483 forks. Root audit found docker-compose, package files, deploy assets and README quick-start/Docker/MCP/CLI/API claims.",
+      "runnability": "Medium-high: self-host and package clues are visible; real SaaS OAuth/provider behavior was not credential-tested.",
+      "recommended_action": "Inspect token storage, permission scoping and connector isolation before pairing with production accounts."
+    },
+    {
+      "rank": 5,
+      "full_name": "Team-Commonly/commonly",
+      "url": "https://github.com/Team-Commonly/commonly",
+      "category": "Shared room for humans and agents",
+      "score": 86,
+      "summary": "Self-hosted room where cross-vendor agents get names, memory, skills and workstations alongside humans.",
+      "audience": "Teams experimenting with persistent multi-agent collaboration under their own infrastructure.",
+      "ai_native_angle": "Productizes the agent room: identity, memory, skills, workstations and cross-runtime collaboration become the core UX.",
+      "growth_signal": "Created 2025-02-03, pushed 2026-09-08; GitHub API showed 1,326 stars and 185 forks. Root audit found docker-compose, env examples, package files, docs and README quick-start/demo/screenshot/MCP/API signals.",
+      "runnability": "Medium-high: self-host clues are strong; no runtime integrations were connected.",
+      "recommended_action": "Compare room-level memory and workstation isolation against single-thread coding-agent workflows."
+    },
+    {
+      "rank": 6,
+      "full_name": "TencentCloud/CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "category": "Concurrent sandbox runtime for agents",
+      "score": 85,
+      "summary": "Lightweight concurrent sandbox infrastructure for safely running agent workloads.",
+      "audience": "Infrastructure teams that need isolated execution environments for autonomous or semi-autonomous agents.",
+      "ai_native_angle": "Frames sandboxing as core agent runtime infrastructure, with API, CLI and container-oriented components.",
+      "growth_signal": "Created 2026-04-10, pushed 2026-09-08; GitHub API showed 11,849 stars and 1,102 forks. Root audit found many Cube* runtime components, Makefile, docs and README quick-start/install/demo/Docker/API clues.",
+      "runnability": "Medium: component structure and docs are visible, but no container/runtime smoke test was run.",
+      "recommended_action": "Review isolation model, egress controls and lifecycle APIs for coding-agent execution."
+    },
+    {
+      "rank": 7,
+      "full_name": "InsForge/InsForge",
+      "url": "https://github.com/InsForge/InsForge",
+      "category": "Backend platform for agentic coding",
+      "score": 84,
+      "summary": "All-in-one backend platform giving coding agents database, auth, storage, compute, hosting and AI gateway capabilities.",
+      "audience": "Developers using coding agents to ship full-stack apps without hand-assembling backend primitives.",
+      "ai_native_angle": "Makes the backend itself agent-ready: database, auth, storage, compute and gateway are packaged for coding-agent consumption.",
+      "growth_signal": "Created 2025-07-29, pushed 2026-09-08; GitHub API showed 12,876 stars and 1,170 forks. Root audit found Dockerfile, docker-compose, env examples, package files, docs and install/Docker/MCP/API clues.",
+      "runnability": "High from Docker/package evidence; no deployment, auth or data-plane test was run.",
+      "recommended_action": "Evaluate as a reference for agent-consumable backend scaffolding and permission defaults."
+    },
+    {
+      "rank": 8,
+      "full_name": "7xuanlu/wenlan",
+      "url": "https://github.com/7xuanlu/wenlan",
+      "category": "Source-cited agent knowledge base",
+      "score": 83,
+      "summary": "Local-first knowledge base where agents capture what they learn and distill it into source-cited wiki pages.",
+      "audience": "Developers and teams that want AI agents to maintain trustworthy project knowledge over time.",
+      "ai_native_angle": "Moves agent memory from chat recall into a maintained, cited wiki that agents can update and reuse.",
+      "growth_signal": "Created 2026-04-19, pushed 2026-09-08; GitHub API showed 64 stars and 5 forks. Root audit found Cargo, package files, plugin folders, changelog/history, config and README MCP/CLI/desktop clues.",
+      "runnability": "Medium-high: Rust and package paths exist; citation quality and update workflow were not tested.",
+      "recommended_action": "Pilot on a small project and verify whether citations survive agent edits and compaction."
+    },
+    {
+      "rank": 9,
+      "full_name": "lexmount/moli",
+      "url": "https://github.com/lexmount/moli",
+      "category": "Headless browser runtime for agents",
+      "score": 82,
+      "summary": "Rust headless browser positioned for AI agents, web automation and cloud-browser workloads.",
+      "audience": "Teams building web agents, crawlers, scraping tools or browser automation where runtime control matters.",
+      "ai_native_angle": "Focuses browser runtime performance and compatibility on agent workloads rather than human browsing.",
+      "growth_signal": "Created 2026-08-10, pushed 2026-09-08; GitHub API showed 1,789 stars and 116 forks. Root audit found Cargo workspace, docs, assets, benchmarks and README quick-start/install/screenshot/CLI/API clues.",
+      "runnability": "Medium-high: Rust build surface is clear; no cargo build or browser task was executed.",
+      "recommended_action": "Test against a form-heavy target and compare compatibility with Playwright/Chrome baselines."
+    },
+    {
+      "rank": 10,
+      "full_name": "tiammomo/RepoSteward",
+      "url": "https://github.com/tiammomo/RepoSteward",
+      "category": "Policy-gated coding-agent PR control plane",
+      "score": 81,
+      "summary": "Local-first control plane that turns GitHub issues into verified, human-reviewed pull requests with coding agents.",
+      "audience": "Engineering teams that want issue-to-PR automation with explicit policy and review gates.",
+      "ai_native_angle": "Wraps coding-agent output in a governed delivery loop: issue intake, verification, policy gates and human PR review.",
+      "growth_signal": "Created 2026-08-21, pushed 2026-09-08; GitHub API showed 27 stars and 7 forks. Root audit found pyproject, uv lock, Docker folder, docs, examples, tests and README install/Docker/MCP/CLI/API clues.",
+      "runnability": "Medium: local package and Docker clues exist; GitHub credentials and PR workflow were not tested.",
+      "recommended_action": "Run on a disposable repo and inspect audit logs, idempotency and PR diff ownership."
+    }
+  ],
+  "watchlist": [
+    {
+      "rank": 1,
+      "full_name": "sidequery/artifacts",
+      "url": "https://github.com/sidequery/artifacts",
+      "category": "MCP artifact canvas",
+      "score": 78,
+      "summary": "Canvas/artifacts surface for agents across terminal, ChatGPT, Claude Desktop and MCP clients.",
+      "audience": "Builders who want agents to produce inspectable UI artifacts instead of plain text only.",
+      "ai_native_angle": "Makes generated artifacts a portable MCP-facing work surface.",
+      "growth_signal": "Created 2026-09-07, pushed 2026-09-08; 2 stars, 0 forks. Root audit found Dockerfile, Bun package, Cloudflare config, e2e, examples, docs and README install/screenshot/MCP/API clues.",
+      "runnability": "Medium-high from package/Docker evidence; early repo with low adoption.",
+      "recommended_action": "Watch for stable MCP client compatibility and artifact persistence."
+    },
+    {
+      "rank": 2,
+      "full_name": "jacob-split/speak",
+      "url": "https://github.com/jacob-split/speak",
+      "category": "Voice-agent operator workspace",
+      "score": 77,
+      "summary": "Operator workspace for live voice agents, human supervision, communication history and proof-backed actions.",
+      "audience": "Teams deploying voice agents that need supervision and action evidence.",
+      "ai_native_angle": "Treats voice conversations as supervised operations with history and proof surfaces.",
+      "growth_signal": "Created 2026-09-07, pushed 2026-09-07; 2 stars, 1 fork. Root audit found React package files, env example, docs, design previews and README screenshot/MCP/API clues.",
+      "runnability": "Medium: UI/package evidence exists; telephony/provider setup was not tested.",
+      "recommended_action": "Track whether the proof-backed action model is concrete beyond demo flows."
+    },
+    {
+      "rank": 3,
+      "full_name": "Ccyuan233/mail-gpt",
+      "url": "https://github.com/Ccyuan233/mail-gpt",
+      "category": "Private email assistant",
+      "score": 76,
+      "summary": "Local private email assistant using Gmail, SQLite and ChatGPT-authenticated Codex CLI.",
+      "audience": "Individuals who want local email triage and drafting with a coding-agent-controlled workflow.",
+      "ai_native_angle": "Combines mailbox state, SQLite persistence and Codex CLI into a task-specific assistant loop.",
+      "growth_signal": "Created 2026-09-06, pushed 2026-09-07; 2 stars, 0 forks. Root audit found requirements, env example, tests, PowerShell autostart scripts and README Docker/MCP/CLI/Web UI/API clues.",
+      "runnability": "Medium: local code/test clues exist; Gmail auth and privacy behavior were not tested.",
+      "recommended_action": "Review OAuth scope, local storage and delete/send safeguards before use."
+    },
+    {
+      "rank": 4,
+      "full_name": "dualface/kander",
+      "url": "https://github.com/dualface/kander",
+      "category": "Kanban scheduler for agents",
+      "score": 75,
+      "summary": "Kanban-style task orchestration tool for scheduling multiple AI agents.",
+      "audience": "Teams that want a visual queue for multi-agent execution and status.",
+      "ai_native_angle": "Uses a board metaphor to allocate and track agent work across tasks.",
+      "growth_signal": "Created 2026-09-05, pushed 2026-09-08; 29 stars, 3 forks. Root audit found Go module, Makefile, docs, cmd/internal structure and rules/scripts.",
+      "runnability": "Medium: Go project shape is present; README/API detail looked thinner than top picks.",
+      "recommended_action": "Watch for UI screenshots, examples and concrete agent adapter docs."
+    },
+    {
+      "rank": 5,
+      "full_name": "nicedreamzapp/browser-agent",
+      "url": "https://github.com/nicedreamzapp/browser-agent",
+      "category": "Local Apple Silicon browser agent",
+      "score": 74,
+      "summary": "Local browser agent using MLX and Chrome DevTools Protocol for Apple Silicon automation.",
+      "audience": "Mac users exploring offline/on-device web automation.",
+      "ai_native_angle": "Pairs local models with real browser control for private web-agent workflows.",
+      "growth_signal": "Created 2026-03-27, pushed 2026-09-08; 27 stars, 7 forks. Root audit found a compact Python app and README demo/screenshot/MCP/CLI/API claims.",
+      "runnability": "Medium-low: promising positioning but root surface is small; no Apple Silicon runtime test was run.",
+      "recommended_action": "Run only on throwaway browser profiles and inspect iframe/shadow-DOM reliability."
+    },
+    {
+      "rank": 6,
+      "full_name": "pigeonlabsHQ/pigeon",
+      "url": "https://github.com/pigeonlabsHQ/pigeon",
+      "category": "Delegated agent authority",
+      "score": 73,
+      "summary": "Pass/spec model for declaring what an AI agent is allowed to do.",
+      "audience": "Agent developers thinking about permission delegation and accountable execution.",
+      "ai_native_angle": "Models delegated authority as a portable artifact for agents before execution.",
+      "growth_signal": "Created 2026-09-06, pushed 2026-09-06; 29 stars, 2 forks. Root audit found pyproject, architecture/spec/security docs, demo, examples, scripts and tests.",
+      "runnability": "Medium: library/test surface exists; integration into real agents remains unproven.",
+      "recommended_action": "Track for compatibility with MCP/action-approval systems."
+    },
+    {
+      "rank": 7,
+      "full_name": "msaleme/red-team-blue-team-agent-fabric",
+      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
+      "category": "Agent security evaluation harness",
+      "score": 72,
+      "summary": "Adversarial testing harness for MCP, A2A, x402/L402, decision governance, skill supply chain and human-in-the-loop agent risks.",
+      "audience": "Security teams evaluating agentic systems and protocol integrations.",
+      "ai_native_angle": "Turns agent governance and protocol safety into executable test surfaces.",
+      "growth_signal": "Created 2025-11-15, pushed 2026-09-08; 30 stars, 7 forks. Root audit found pyproject, env example, playbooks, evaluation protocols, changelog and README quick-start/demo/MCP/CLI clues.",
+      "runnability": "Medium: test-harness evidence is strong; claimed compliance coverage was not independently verified.",
+      "recommended_action": "Use as a source of threat-model cases, then validate tests against local agent stacks."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "skip_reason": "Mature high-signal coding-agent incumbent; active but not a fresh product discovery for this daily window."
+    },
+    {
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "skip_reason": "Canonical vendor coding agent; track for official release changes separately, not as a new radar pick."
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Large established AI workflow/RAG platform; activity is expected category maintenance rather than new discovery."
+    },
+    {
+      "full_name": "QwenLM/qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "skip_reason": "Official model-family coding agent with strong activity, but vendor canonical status makes it less useful as a product radar discovery."
+    },
+    {
+      "full_name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "skip_reason": "Product-shaped design-agent desktop app, but unusually high stars/forks and broad marketing claims need independent verification before ranking."
+    },
+    {
+      "full_name": "Raknaos/lightpanda-session-bridge",
+      "url": "https://github.com/Raknaos/lightpanda-session-bridge",
+      "skip_reason": "Session-transfer/OAuth-bypass positioning is safety-sensitive; skip until security model and legitimate use boundaries are clear."
+    },
+    {
+      "full_name": "Alpha-Park/genpark-stateful-agent-dag-node-executor-skill",
+      "url": "https://github.com/Alpha-Park/genpark-stateful-agent-dag-node-executor-skill",
+      "skip_reason": "Part of a large burst of narrow generated skill packages; useful pattern signal but not a standalone product surface."
+    },
+    {
+      "full_name": "gonzalo-cordova-pou/voice-ai-benchmarks",
+      "url": "https://github.com/gonzalo-cordova-pou/voice-ai-benchmarks",
+      "skip_reason": "Benchmark directory rather than runnable product/workflow; keep as research reference only."
+    }
+  ]
+}
