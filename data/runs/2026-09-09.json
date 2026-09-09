@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-09",
+  "generated_at": "2026-09-09T19:53:08+08:00",
+  "data_window": "GitHub Search API queries for AI agent, LLM app, RAG, MCP, browser agent, code agent, voice agent, workflow, copilot, and assistant repositories created or pushed from 2026-09-06 through 2026-09-09. Raw search snapshots were saved under /tmp/radar_2026_09_09_api/; selected repository metadata, root-content and README audits were saved under /tmp/radar_2026_09_09_readmes/.",
+  "source_summary": "Queried 9 GitHub Search API surfaces and deduplicated 433 repositories. Reviewed metadata, topics, root files, README headings, package/Docker/test clues, install paths, docs, examples, plugin folders, desktop/mobile paths, and runtime claims for 42 shortlisted repositories. No third-party repository was cloned, installed, built, executed, browser-tested, mobile-tested, provider-tested, credential-tested, payment-tested, safety-tested, or deployed locally.",
+  "trend_observations": "Agent operations infrastructure dominated this window: context compression, code graphs, memory, transcript capture, worktree management, and session runtimes. Coding-agent products are moving from single CLI tools toward fleet control surfaces with desktop/mobile orchestration, agent teams, remote daemons, and browser supervision. Browser/computer-use products increasingly emphasize state isolation and logged-in context sharing, but safety and credential-boundary claims need verification. Design, media, and pipeline tools are becoming agent-addressable artifact workbenches rather than passive editors. Star counts were unusually high across several new repositories, so scoring confidence leans on root/README/product evidence more than raw popularity.",
+  "assumptions": "Scores are based on GitHub API metadata and README/root-content evidence collected on 2026-09-09, not local runtime proof. Star/fork counts are raw GitHub API values at collection time; no authenticated traffic, release-download, or star-delta API was used. Runnability is inferred from package files, Docker/config files, docs, examples, tests, and quick-start sections. Mature incumbents, canonical vendor products, awesome lists, skill/prompt collections, pure benchmarks, and yesterday's picks were downgraded or skipped.",
+  "markdown_report": "Top focus for 2026-09-09: agent-driven design workbenches, context compression, local code graphs, terminal coding agents, multi-agent orchestration, coding-agent runtimes, provider-specific coding CLIs, Codex workflow hooks, cross-device agent orchestration, and isolated browser state for agents. Watchlist covers portable agent memory, AI pipeline AIDEs, worktree managers, homelab AI servers, desktop real-work agents, agent OS evolution loops, and agent transcript history. Skip reasons cover yesterday's already-published picks, mature incumbents, canonical vendor products, awesome/list repositories, skill packages, and suspicious raw popularity surfaces.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "category": "Agent-driven design workbench",
+      "score": 91,
+      "summary": "Local-first desktop and web design environment where coding agents can produce prototypes, dashboards, slides, images, video, HTML/PDF/PPTX/MP4 exports, and design-system artifacts.",
+      "audience": "Product teams and AI-coding users who want design artifacts generated and iterated from agent sessions.",
+      "ai_native_angle": "Treats the coding agent as the design engine, with BYOK model routing and compatibility claims across Claude Code, Codex, Cursor, DeepSeek Harness, OpenCode, and related CLIs.",
+      "growth_signal": "Created 2026-04-28 and pushed 2026-09-09; GitHub API showed 95,054 stars and 10,994 forks. Root audit found apps, packages, plugins, e2e, design templates, docs, changelog, quickstart, and privacy docs.",
+      "runnability": "Medium-high from repository shape and docs; local model, export, and desktop flows were not executed.",
+      "recommended_action": "Inspect export boundaries and how agent-authored design files are versioned before using it for production-facing artifacts."
+    },
+    {
+      "rank": 2,
+      "full_name": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "category": "Context compression layer for agents",
+      "score": 90,
+      "summary": "Compresses tool outputs, logs, files, and RAG chunks before they reach the LLM, offered as library, proxy, and MCP server.",
+      "audience": "Teams running long coding-agent sessions that hit context-window, cost, or noisy-tool-output limits.",
+      "ai_native_angle": "Adds a runtime layer between tools and model calls, preserving important error lines and structured facts while reducing prompt load.",
+      "growth_signal": "Created 2026-01-07 and pushed 2026-09-09; GitHub API showed 70,949 stars and 5,439 forks. Root audit found Dockerfile, docker-compose, Cargo/Python packages, examples, docs, tests, env examples, security tooling, and demo assets.",
+      "runnability": "High from install and test clues; compression quality and provider behavior were not independently benchmarked.",
+      "recommended_action": "Run against this radar pipeline's verbose tool logs and measure recall on fatal lines, counts, and file paths."
+    },
+    {
+      "rank": 3,
+      "full_name": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "category": "Local code knowledge graph for agents",
+      "score": 88,
+      "summary": "Builds a local pre-indexed semantic code graph for Claude Code, Codex, Gemini, Cursor, OpenCode, Antigravity, Kiro, Copilot, and Hermes Agent.",
+      "audience": "Developers who want coding agents to retrieve precise code context without repeated expensive repository scans.",
+      "ai_native_angle": "Makes codebase understanding a persistent local substrate shared by multiple agent hosts.",
+      "growth_signal": "Created 2026-01-18 and pushed 2026-09-09; GitHub API showed 70,211 stars and 4,487 forks. Root audit found CLI install scripts, package files, tests, telemetry dashboard/worker, docs, site, and TypeScript source.",
+      "runnability": "Medium-high from CLI, tests, and install docs; no local index was built in this run.",
+      "recommended_action": "Compare retrieval output against existing rg workflows on one large repo before granting persistent indexing access."
+    },
+    {
+      "rank": 4,
+      "full_name": "Hmbown/Codewhale",
+      "url": "https://github.com/Hmbown/Codewhale",
+      "category": "Terminal coding agent",
+      "score": 86,
+      "summary": "Rust terminal coding agent with install, GUI frontend, safety, documentation, and multilingual README surfaces.",
+      "audience": "Developers who want an open terminal-based coding agent with visible implementation and local-first ergonomics.",
+      "ai_native_angle": "Positions the agent as an executable developer tool rather than an IDE side panel, with safety and GUI paths documented.",
+      "growth_signal": "Created 2026-01-19 and pushed 2026-09-09; GitHub API showed 40,934 stars and 3,555 forks. Root audit found Cargo workspace, Dockerfile, devcontainer, package files, docs, env example, product/design docs, and many localized READMEs.",
+      "runnability": "Medium-high from Rust/package/Docker clues; no CLI or GUI session was run.",
+      "recommended_action": "Evaluate command safety, approval handling, and failure recovery before trusting it on a dirty worktree."
+    },
+    {
+      "rank": 5,
+      "full_name": "Yeachan-Heo/oh-my-claudecode",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "category": "Multi-agent orchestration for Claude Code",
+      "score": 85,
+      "summary": "Teams-first orchestration layer for Claude Code, with agents, missions, commands, hooks, bridges, examples, and benchmark-style assets.",
+      "audience": "Users standardizing multiple Claude Code roles and workflows across larger projects.",
+      "ai_native_angle": "Packages agent roles and multi-agent routines as a maintained runtime layer around an existing coding agent.",
+      "growth_signal": "Created 2026-01-09 and pushed 2026-09-09; GitHub API showed 39,065 stars and 3,497 forks. Root audit found package files, docs, examples, tests, generated assets, commands, agents, hooks, bridge, and localized READMEs.",
+      "runnability": "Medium from root evidence; it remains Claude Code-centered and installed behavior was not tested.",
+      "recommended_action": "Mine its mission/role structure for reusable guardrails, but keep product evaluation separate from star-count claims."
+    },
+    {
+      "rank": 6,
+      "full_name": "herdrdev/herdr",
+      "url": "https://github.com/herdrdev/herdr",
+      "category": "Runtime for coding agents",
+      "score": 84,
+      "summary": "Runtime layer for coding agents, with Rust implementation, docs, skills, packaging, Nix/flake support, tests, and vendor assets.",
+      "audience": "Developers who want a structured place for agent sessions to live beyond single terminal transcripts.",
+      "ai_native_angle": "Treats agent execution as a runtime with installable skills, project instructions, docs, and operational packaging.",
+      "growth_signal": "Created 2026-03-27 and pushed 2026-09-08; GitHub API showed 36,959 stars and 2,708 forks. Root audit found Cargo workspace, docs, tests, packaging, distribution, skills, scripts, and Rust toolchain config.",
+      "runnability": "Medium-high from Rust packaging and tests; no runtime session was started.",
+      "recommended_action": "Watch for durable session state and whether it can isolate concurrent agents safely."
+    },
+    {
+      "rank": 7,
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "category": "DeepSeek-native coding-agent CLI",
+      "score": 83,
+      "summary": "Go-based coding agent with CLI/TUI, desktop app path, VS Code extension path, SDK, benchmarks, docs, and prefix-cache-oriented design.",
+      "audience": "Developers exploring DeepSeek-focused coding-agent loops with lower repeated-context cost.",
+      "ai_native_angle": "Optimizes the agent loop around provider-specific prefix-cache stability and long-running sessions.",
+      "growth_signal": "Created 2026-04-21 and pushed 2026-09-09; GitHub API showed 35,461 stars and 2,382 forks. Root audit found Go modules, Makefile, docs, desktop, npm package, SDK, workers, tests, env example, and release config.",
+      "runnability": "Medium-high from CLI/desktop/extension docs; no DeepSeek credential or cache behavior was tested.",
+      "recommended_action": "Audit model-key handling and cache invalidation before using it for real repository work."
+    },
+    {
+      "rank": 8,
+      "full_name": "Yeachan-Heo/oh-my-codex",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+      "category": "Codex workflow/hook layer",
+      "score": 82,
+      "summary": "Adds hooks, agent teams, HUDs, missions, skills, templates, prompts, plugins, and runtime help around Codex.",
+      "audience": "Codex users who want a more opinionated session wrapper and reusable workflow packs.",
+      "ai_native_angle": "Codifies agent-host customization as a product surface: prompts, hooks, missions, skills, and visual/runtime assistants.",
+      "growth_signal": "Created 2026-02-02 and pushed 2026-09-09; GitHub API showed 33,054 stars and 2,533 forks. Root audit found TypeScript and Rust packages, docs, playground, plugins, prompts, skills, templates, missions, and changelog.",
+      "runnability": "Medium: strong file-shape evidence, but no Codex session wrapper was installed.",
+      "recommended_action": "Compare its AGENTS merge policy with this repo's stricter project-skill rules before adoption."
+    },
+    {
+      "rank": 9,
+      "full_name": "getpaseo/paseo",
+      "url": "https://github.com/getpaseo/paseo",
+      "category": "Desktop/mobile coding-agent orchestrator",
+      "score": 81,
+      "summary": "Orchestrates multiple coding agents from desktop, mobile, CLI/headless, Docker, and remote daemon paths.",
+      "audience": "Developers coordinating several agent sessions across local and remote machines.",
+      "ai_native_angle": "Makes the coordination surface cross-device, with plugin examples and daemon-oriented remote workflows.",
+      "growth_signal": "Created 2025-10-13 and pushed 2026-09-09; GitHub API showed 16,622 stars and 1,839 forks. Root audit found packages, docker folder, fastlane, plugin examples, public docs, skills, scripts, package files, and multilingual READMEs.",
+      "runnability": "Medium-high from desktop/CLI/Docker docs; mobile and remote-daemon flows were not tested.",
+      "recommended_action": "Test with disposable worktrees and verify how it handles handoff, secrets, and failed remote tasks."
+    },
+    {
+      "rank": 10,
+      "full_name": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "category": "Logged-in browser state for agents",
+      "score": 80,
+      "summary": "Browser automation surface designed to share logged-in browser state with coding agents without disturbing the user's active browser.",
+      "audience": "Agent users who need browser context and logged-in state while keeping human browsing separate.",
+      "ai_native_angle": "Moves browser state sharing into an agent-specific runtime concern with Codex/Claude plugin surfaces.",
+      "growth_signal": "Created 2026-04-16 and pushed 2026-09-09; GitHub API showed 15,468 stars and 806 forks. Root audit found Codex/Claude plugin folders, docs, assets, install docs, package folder, skills, and specs.",
+      "runnability": "Medium: product and plugin claims are strong, but browser isolation and credential boundaries were not verified.",
+      "recommended_action": "Only trial with non-sensitive accounts; inspect state-sharing boundaries and audit logs first."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "EverMind-AI/EverOS",
+      "url": "https://github.com/EverMind-AI/EverOS",
+      "category": "Portable agent memory",
+      "score": 78,
+      "summary": "Portable local-first Markdown memory layer for agents.",
+      "audience": "Agent users who want user-owned memory across apps and workflows.",
+      "ai_native_angle": "Makes memory a local, editable substrate that follows the agent across tools.",
+      "growth_signal": "Created 2025-10-28 and pushed 2026-09-09; root audit found pyproject, docs, examples, tests, config, env example, and quickstart.",
+      "runnability": "Medium-high from Python package and demo clues; no local memory import was tested.",
+      "recommended_action": "Compare with existing automation memory before adopting another memory layer."
+    },
+    {
+      "full_name": "rocketride-org/rocketride-server",
+      "url": "https://github.com/rocketride-org/rocketride-server",
+      "category": "AI pipeline AIDE",
+      "score": 77,
+      "summary": "AI pipeline engine with IDE, SDK, Docker, examples, docs, and multi-provider claims.",
+      "audience": "Teams building and debugging production LLM workflows.",
+      "ai_native_angle": "Frames pipeline authoring as an AI development environment, not just a workflow runtime.",
+      "growth_signal": "Created 2026-02-11 and pushed 2026-09-09; root audit found apps, packages, nodes, examples, deploy, docs, and package metadata.",
+      "runnability": "Medium-high from Docker/examples/package clues; provider integrations were not tested.",
+      "recommended_action": "Runtime-test one small pipeline if pipeline AIDEs become a recurring radar theme."
+    },
+    {
+      "full_name": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "category": "Parallel-agent worktree manager",
+      "score": 76,
+      "summary": "Rust CLI for Git worktree management designed for parallel AI-agent workflows.",
+      "audience": "Developers dispatching multiple agents across isolated branches/worktrees.",
+      "ai_native_angle": "Turns worktree setup, task isolation, and handoff into agent-oriented operations.",
+      "growth_signal": "Created 2025-10-17 and pushed 2026-09-09; root audit found Cargo workspace, docs, tests, hooks, templates, plugins, and skills.",
+      "runnability": "Medium-high from CLI shape; no local worktree task was run.",
+      "recommended_action": "Compare with native git worktree scripts in this repo's automation flow."
+    },
+    {
+      "full_name": "Osmantic/ODS",
+      "url": "https://github.com/Osmantic/ODS",
+      "category": "Homelab AI server",
+      "score": 75,
+      "summary": "Private AI server bundling inference, chat UI, voice, agents, workflows, RAG, and image generation.",
+      "audience": "Local-first users turning personal machines into AI workstations.",
+      "ai_native_angle": "Packages agent, voice, workflow, and model-serving surfaces into one local deployment system.",
+      "growth_signal": "Created 2026-02-09 and pushed 2026-09-09; root audit found installers, architecture/security docs, contribution docs, and ODS package folder.",
+      "runnability": "Medium: install scripts exist, but broad hardware/provider assumptions were not tested.",
+      "recommended_action": "Audit installer side effects before running on a primary machine."
+    },
+    {
+      "full_name": "netease-youdao/LobsterAI",
+      "url": "https://github.com/netease-youdao/LobsterAI",
+      "category": "Desktop real-work AI agent",
+      "score": 74,
+      "summary": "Desktop AI agent for data analysis, slides, docs, video, web research, and IM remote control.",
+      "audience": "Users wanting an OpenClaw-style desktop coworker that can be controlled from chat apps.",
+      "ai_native_angle": "Connects desktop tool execution, scheduled tasks, expert kits, MCP servers, and IM control into one product.",
+      "growth_signal": "Created 2026-02-12 and pushed 2026-09-09; root audit found Electron/TypeScript app, docs, tests, env example, build config, extensions, and skills.",
+      "runnability": "Medium from desktop app shape; credentialed IM and desktop-control flows were not tested.",
+      "recommended_action": "Treat as safety-sensitive until permissions and action logs are verified."
+    },
+    {
+      "full_name": "Q00/ouroboros",
+      "url": "https://github.com/Q00/ouroboros",
+      "category": "Self-evolving agent OS",
+      "score": 74,
+      "summary": "Agent OS with interview-gated, staged evaluation and budgeted evolution loops across many runtimes.",
+      "audience": "Advanced agent users exploring controlled self-improvement and shared runtime policy.",
+      "ai_native_angle": "Makes evolution loops, MCP integration, hooks, and runtime adapters first-class agent infrastructure.",
+      "growth_signal": "Created 2026-01-14 and pushed 2026-09-09; root audit found plugins, hooks, integrations, examples, docs, tests, env example, and telemetry docs.",
+      "runnability": "Medium-high from install and examples; self-evolution trust model was not tested.",
+      "recommended_action": "Study the gating mechanism before any hands-on run."
+    },
+    {
+      "full_name": "entireio/cli",
+      "url": "https://github.com/entireio/cli",
+      "category": "Agent transcript history",
+      "score": 73,
+      "summary": "Git-hooked CLI that captures agent sessions and indexes transcripts alongside commits.",
+      "audience": "Teams that need auditability and recovery around AI-authored code changes.",
+      "ai_native_angle": "Links prompts, responses, touched files, and checkpoints to repository history without stuffing transcripts into Git commits.",
+      "growth_signal": "Created 2026-01-02 and pushed 2026-09-09; root audit found Go modules, docs, e2e, redact tooling, scripts, API, and multiple agent-host config folders.",
+      "runnability": "Medium-high from CLI/docs/e2e clues; no git-hook installation was performed.",
+      "recommended_action": "Pilot on a throwaway repo and inspect redaction defaults."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "skip_reason": "Strong product, but already covered as a Top project on 2026-09-08."
+    },
+    {
+      "full_name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "skip_reason": "Already covered on 2026-09-08 and partly vendor/corporate platform shaped."
+    },
+    {
+      "full_name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "skip_reason": "Mature workflow automation incumbent; not a fresh radar candidate despite current AI activity."
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Mature agent/RAG platform incumbent; useful benchmark, but not a new discovery."
+    },
+    {
+      "full_name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "skip_reason": "Canonical vendor coding-agent product, not suitable as a daily open-source discovery pick."
+    },
+    {
+      "full_name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "skip_reason": "Canonical vendor agent product and already central to the user's workflow."
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "skip_reason": "Valuable skill collection, but collection/instruction package rather than standalone product runtime."
+    },
+    {
+      "full_name": "github/awesome-copilot",
+      "url": "https://github.com/github/awesome-copilot",
+      "skip_reason": "Awesome/list-style repository; excluded by prompt-collection/list downgrade rule."
+    },
+    {
+      "full_name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "skip_reason": "Mature browser-agent library; keep as benchmark rather than daily new-product pick."
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "skip_reason": "Mostly agent skill/plugin framing; less product-complete than the selected runtime/workbench entries."
+    }
+  ]
+}
