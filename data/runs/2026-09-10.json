@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-10",
+  "generated_at": "2026-09-10T11:18:00+08:00",
+  "data_window": "GitHub Search API queries for AI agent, LLM app, RAG, MCP, browser/computer-use agent, code agent/Codex, voice assistant, workflow, automation, copilot, and related repositories created or pushed from 2026-09-07 through 2026-09-10. Raw search snapshots were saved under /tmp/radar_2026_09_10_api/; selected repository metadata, root-content, and README audits were saved under /tmp/radar_2026_09_10_readmes/.",
+  "source_summary": "Queried 8 GitHub Search API surfaces and deduplicated 393 repositories across AI agent, LLM app, RAG, MCP, browser/computer-use agent, code agent/Codex, voice assistant, workflow, automation, and copilot themes. Reviewed 13 shortlisted repositories with GitHub API metadata, root contents, and README excerpts before unauthenticated rate limiting blocked further audits. Selection prioritized product-shaped AI-native surfaces with CLI/UI/API/MCP/plugin paths, install docs, examples/tests/Docker/package evidence, and clear user workflows.",
+  "trend_observations": "Today shifted from yesterday's code-agent workbench repeat cluster toward agent-operable infrastructure around browsers, security, video, memory, personal agents, and vertical workflows. The strongest audited projects expose concrete command/UI/MCP/plugin paths rather than only a framework README. Browser-agent tooling split into two useful shapes: DevTools evidence for debugging and a dedicated browser automation CLI for task execution. Agent-generated media is becoming code-like through HTML/frame specifications and reusable skills. Security automation is also moving into proof-producing agents, but those projects need strict disposable-target testing before adoption. GitHub API rate limiting constrained late README audits, so metadata-only watchlist items are deliberately kept below audited Top picks.",
+  "assumptions": "Scores are based on live GitHub Search API snapshots saved under /tmp/radar_2026_09_10_api/ and selected GitHub repository metadata, root-content, and README audits saved under /tmp/radar_2026_09_10_readmes/. Unauthenticated GitHub API rate limits started during the second audit batch, so several watchlist items are metadata-only and explicitly marked that way. No third-party repository was cloned, installed, built, run, browser-tested, MCP-connected, credential-tested, provider-tested, payment-tested, security-tested, or deployed locally. Star/fork counts are raw GitHub API snapshots at collection time and may include abnormal popularity artifacts; product shape, root files, docs, examples, tests, Docker/package clues, and clear user workflow weighed more than raw stars. Mature incumbents, yesterday's picks, educational repos, awesome lists, provider-access wrappers, suspicious free-token projects, prompt/skill collections, and repositories without a concrete user workflow were downgraded or skipped.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-09-10\n\n数据窗口：2026-09-07T00:00:00Z to 2026-09-10T03:18:00Z；GitHub Search API 查询 AI agent、LLM app、RAG、MCP、browser/computer-use agent、code agent/Codex、voice assistant、workflow、automation、copilot 等主题，外加 13 个候选的 README/root audit。\n\n信息来源：Queried 8 GitHub Search API surfaces and deduplicated 393 repositories across AI agent, LLM app, RAG, MCP, browser/computer-use agent, code agent/Codex, voice assistant, workflow, automation, and copilot themes. Reviewed 13 shortlisted repositories with GitHub API metadata, root contents, and README excerpts before unauthenticated rate limiting blocked further audits. Selection prioritized product-shaped AI-native surfaces with CLI/UI/API/MCP/plugin paths, install docs, examples/tests/Docker/package evidence, and clear user workflows.\n\n关键假设：Scores are based on live GitHub Search API snapshots saved under /tmp/radar_2026_09_10_api/ and selected GitHub repository metadata, root-content, and README audits saved under /tmp/radar_2026_09_10_readmes/. Unauthenticated GitHub API rate limits started during the second audit batch, so several watchlist items are metadata-only and explicitly marked that way. No third-party repository was cloned, installed, built, run, browser-tested, MCP-connected, credential-tested, provider-tested, payment-tested, security-tested, or deployed locally. Star/fork counts are raw GitHub API snapshots at collection time and may include abnormal popularity artifacts; product shape, root files, docs, examples, tests, Docker/package clues, and clear user workflow weighed more than raw stars. Mature incumbents, yesterday's picks, educational repos, awesome lists, provider-access wrappers, suspicious free-token projects, prompt/skill collections, and repositories without a concrete user workflow were downgraded or skipped.\n\n## 今日趋势观察\n\nToday shifted from yesterday's code-agent workbench repeat cluster toward agent-operable infrastructure around browsers, security, video, memory, personal agents, and vertical workflows. The strongest audited projects expose concrete command/UI/MCP/plugin paths rather than only a framework README. Browser-agent tooling split into two useful shapes: DevTools evidence for debugging and a dedicated browser automation CLI for task execution. Agent-generated media is becoming code-like through HTML/frame specifications and reusable skills. Security automation is also moving into proof-producing agents, but those projects need strict disposable-target testing before adoption. GitHub API rate limiting constrained late README audits, so metadata-only watchlist items are deliberately kept below audited Top picks.\n\n## Top Projects\n\n### 1. [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)\n- 分类：Browser debugging MCP for coding agents\n- AI Native Product Score：91\n- 做什么：Chrome DevTools MCP server that lets coding agents inspect, debug, profile, and drive Chrome through DevTools and Puppeteer-style capabilities.\n- 面向谁：Coding-agent users and frontend teams who need browser state, console/network/performance evidence, and DOM debugging inside agent loops.\n- AI native 点：Turns live browser debugging into a first-class MCP tool surface for agents instead of a human-only DevTools workflow.\n- 增长/活跃信号：Pushed 2026-09-10; GitHub API showed 51.5k stars and 3.6k forks. Root audit found .claude-plugin, .cursor-plugin, mcp.json, server.json, skills, docs, tests, Puppeteer config, npm package files, and client configuration docs.\n- 可运行性判断：High from npm/npx install path, MCP client configuration, documented tools, tests, and Chrome requirements; no local MCP session was launched.\n- 建议动作：Use in the next frontend/browser QA loop to capture console, network, and performance evidence rather than relying on screenshots alone.\n\n### 2. [KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)\n- 分类：Autonomous AI pentesting agent\n- AI Native Product Score：89\n- 做什么：AI pentester for web applications and APIs that reads source, identifies attack paths, runs exploit checks, and emits SARIF/report artifacts.\n- 面向谁：Security-conscious product teams shipping web apps quickly with AI-assisted coding.\n- AI native 点：Makes the agent responsible for proof-oriented security exploration: source analysis, target execution, exploit validation, benchmark reports, and CI/CD output.\n- 增长/活跃信号：Pushed 2026-09-08; GitHub API showed 47.9k stars and 5.5k forks. Root audit found apps, benchmark, sample-reports, Dockerfile, docker-compose, docs, workspaces, package files, and GitHub Actions references.\n- 可运行性判断：Medium-high from npx quick start, Docker worker requirement, setup wizard, sample reports, and SARIF clues; exploit behavior and sandbox boundaries were not tested.\n- 建议动作：Trial only on a disposable intentionally vulnerable target and inspect container/network permissions before pointing it at private code.\n\n### 3. [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)\n- 分类：Agent-native HTML to video renderer\n- AI Native Product Score：88\n- 做什么：Framework where coding agents write HTML/frame specifications and render videos, motion graphics, explainers, ads, and documentation clips.\n- 面向谁：Product, growth, education, and developer-relations teams using agents to create repeatable video artifacts from code-like inputs.\n- AI native 点：Packages video creation as skills, router workflows, themes, CLI, and agent instructions, making media output addressable by Codex/Claude/Cursor-style agents.\n- 增长/活跃信号：Pushed 2026-09-10; GitHub API showed 48.4k stars and 4.4k forks. Root audit found .codex-plugin, .claude-plugin, .cursor-plugin, skills-manifest, packages, docs, examples, registry, themes, Dockerfile.test, scripts, and npm package clues.\n- 可运行性判断：Medium-high from npx skill install/init paths and package evidence; no FFmpeg/browser render was run locally.\n- 建议动作：Test a tiny radar explainer clip and verify deterministic rendering, font packaging, and CI artifact size.\n\n### 4. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)\n- 分类：Persistent cross-agent memory\n- AI Native Product Score：87\n- 做什么：Captures agent sessions, compresses them, indexes memory, and reinjects relevant context into future sessions across Claude Code, Codex, OpenCode, Gemini, and related hosts.\n- 面向谁：Agent-heavy developers who lose project memory across terminal, desktop, and web coding sessions.\n- AI native 点：Treats transcript capture, compression, search, MCP tools, hooks, and host-specific plugins as one memory product layer.\n- 增长/活跃信号：Pushed 2026-09-09; GitHub API showed 93.6k stars and 8.2k forks. Root audit found .codex-plugin, .claude-plugin, .cursor-plugin, Docker compose, docs, workers, tests, transcript-watch example, RAG folders, install scripts, and gateway components.\n- 可运行性判断：Medium-high from installer/plugin/docker evidence; memory recall quality, privacy defaults, and host injection behavior were not verified.\n- 建议动作：Compare against this automation memory on one known task, focusing on exact path/count recall and whether stale facts are downgraded.\n\n### 5. [HKUDS/nanobot](https://github.com/HKUDS/nanobot)\n- 分类：Self-hosted personal agent framework\n- AI Native Product Score：86\n- 做什么：Ultra-lightweight Python personal AI agent with WebUI, TUI, tools, memory, MCP, multi-agent workflows, automation, chat apps, and scheduled work.\n- 面向谁：Users who want a self-hosted personal agent hub that can combine chat, tools, recurring tasks, and web UI without a large platform.\n- AI native 点：Brings agent state, tools, browser UI, schedules, chat channels, and MCP into a single local-first installable assistant runtime.\n- 增长/活跃信号：Pushed 2026-09-09; GitHub API showed 48.0k stars and 8.5k forks. Root audit found Dockerfile, docker-compose variants, docs, pyproject, scripts, tests, TUI, WebUI, packages, and install script.\n- 可运行性判断：High from curl installer, pip/pipx package, Docker deploy, quick start, and WebUI docs; no personal-agent run was started.\n- 建议动作：Evaluate as a lightweight local personal-agent baseline, but test scheduling and tool permissions with throwaway accounts first.\n\n### 6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)\n- 分类：Browser automation CLI for AI agents\n- AI Native Product Score：85\n- 做什么：Agent-focused browser automation CLI with npm/Homebrew/Cargo install paths, schemas, skills, benchmarks, evals, and examples.\n- 面向谁：Agent app builders who need a controllable browser runtime without wiring raw Playwright/Puppeteer into every project.\n- AI native 点：Frames browser automation as an agent-facing command and skill substrate with selectors, CLI updates, examples, evals, and host plugin clues.\n- 增长/活跃信号：Pushed 2026-09-10; GitHub API showed 42.3k stars and 2.8k forks. Root audit found .claude-plugin, schema, benchmarks, cli, docker, docs, evals, examples, package files, packages, scripts, skill-data, skills, and tests.\n- 可运行性判断：High from npm, Homebrew, Cargo, source install, and quick-start docs; no browser was launched.\n- 建议动作：Benchmark against Chrome DevTools MCP for frontend QA: DevTools evidence depth versus simpler browser task execution.\n\n### 7. [tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman)\n- 分类：Local-first personal AI desktop\n- AI Native Product Score：84\n- 做什么：Mac/Windows/Linux personal AI with local-first memory, agent orchestration, deep research, desktop app, Docker path, and multi-agent host integrations.\n- 面向谁：Privacy-minded users who want personal memory, research, and agent orchestration in a desktop-owned environment.\n- AI native 点：Positions memory, orchestrator, deep researcher, workflows, and external coding agents as parts of one human-owned AI operating surface.\n- 增长/活跃信号：Pushed 2026-09-09; GitHub API showed 39.6k stars and 3.9k forks. Root audit found Tauri/Rust/TypeScript workspace, INSTALL docs, app, packages, docs, examples, e2e, tests, Dockerfile, docker-compose, fastlane, and worktrees.\n- 可运行性判断：Medium-high from installer docs and dev commands; desktop shell, memory backend, and privacy claims were not tested.\n- 建议动作：Track as a personal-agent OS candidate and inspect local storage/export boundaries before importing private notes.\n\n### 8. [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops)\n- 分类：AI job-search operations agent\n- AI Native Product Score：82\n- 做什么：Local AI job-search workflow for scanning job portals, evaluating postings, tailoring CVs, drafting cover letters, and tracking applications inside coding CLIs.\n- 面向谁：Job seekers comfortable running Claude Code/Codex/OpenCode-style workflows over personal career materials.\n- AI native 点：Turns a messy personal workflow into agent-operable files, contracts, archetypes, inboxes, reports, PDFs, trackers, and CLI instructions.\n- 增长/活跃信号：Pushed 2026-09-09; GitHub API showed 70.8k stars and 13.4k forks. Root audit found .codex-plugin, .claude-plugin, AGENTS/CODEX docs, Dockerfile, data contract, governance/legal docs, many localized READMEs, scripts, examples, and package files.\n- 可运行性判断：Medium from extensive docs and agent-host plugins; job-board scraping durability and private-data handling were not tested.\n- 建议动作：Use as a vertical-agent case study, not with real CV data until storage, export, and portal terms are reviewed.\n\n### 9. [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)\n- 分类：AI internal app builder over MCP\n- AI Native Product Score：81\n- 做什么：Open-source internal app platform now exposing ToolJet AI and coding-agent/MCP app-building paths for dashboards, workflows, and business tools.\n- 面向谁：Ops and engineering teams building internal tools from prompts, visual builders, and agent-driven app-generation flows.\n- AI native 点：Connects low-code internal tools with Claude Code, Codex, Cursor, and MCP plugins so agents can create concrete apps rather than only propose designs.\n- 增长/活跃信号：Pushed 2026-09-10; GitHub API showed 40.9k stars and 5.4k forks. Root audit found .agents, .claude, CLI, cypress tests, docker-compose, deploy, docs, frontend/server packages, marketplace, plugins, queryPanel, and quick-start docs.\n- 可运行性判断：High for mature Docker/self-host platform; the new agent/MCP app-building path was not exercised.\n- 建议动作：If internal tool generation becomes a radar theme, run the Docker quickstart and test one agent-built CRUD dashboard.\n\n### 10. [earendil-works/pi](https://github.com/earendil-works/pi)\n- 分类：Unified agent toolkit and coding CLI\n- AI Native Product Score：80\n- 做什么：TypeScript agent toolkit with unified LLM API, agent loop, TUI, coding-agent CLI, permissions/containerization notes, and supply-chain hardening.\n- 面向谁：Developers building or evaluating small coding-agent CLIs who want a package-oriented toolkit with isolation guidance.\n- AI native 点：Treats agent execution as composable packages spanning model APIs, coding loops, TUI, permissions, containerization, and sharable sessions.\n- 增长/活跃信号：Pushed 2026-09-09; GitHub API showed 103.5k stars and 12.9k forks. Root audit found package workspace, scripts, tests, TUI plan, security docs, and npm package evidence.\n- 可运行性判断：Medium from package/test/build clues; no CLI session or model-provider integration was run.\n- 建议动作：Review its permission/container model and compare the minimal loop against OpenAI Codex and mini-SWE-agent baselines.\n\n## Watchlist\n\n- [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) — Desktop AI productivity studio，Score 78。Electron/TypeScript desktop studio for smart chat, agents, assistants, and unified model access. 建议：Watch for concrete autonomous-agent task flows beyond broad chat productivity.\n- [volcengine/OpenViking](https://github.com/volcengine/OpenViking) — Self-evolving context database，Score 77。Context database unifying agent memory, knowledge RAG, and skills. 建议：Audit README/root files next run before promoting.\n- [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) — Local AI agent routing control plane，Score 76。Local control plane for routing Claude Code and related agent traffic across models and tools. 建议：Watch for config safety and secret handling before trial.\n- [PDFMathTranslate/PDFMathTranslate](https://github.com/PDFMathTranslate/PDFMathTranslate) — AI document translation with MCP，Score 75。PDF scientific-paper translation preserving layout, with CLI/GUI/MCP/Docker/Zotero surfaces. 建议：Audit with a small public PDF before any private document use.\n- [ruvnet/ruflo](https://github.com/ruvnet/ruflo) — Agent meta-harness，Score 74。Multi-agent swarm and workflow harness with memory, RAG, skills, MCP server, and Codex/Claude integration claims. 建议：Keep below audited products until examples/tests are reviewed.\n- [multica-ai/multica](https://github.com/multica-ai/multica) — Human/AI team workspace，Score 73。Self-hostable workspace positioned around humans and AI agents working as one team. 建议：Review next run for concrete UI, auth, and task ownership model.\n- [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) — Multi-channel super assistant，Score 72。Python super AI assistant and agent harness with planning, tools, skills, memory, knowledge, multi-agent, multi-model, and chat-channel integrations. 建议：Watch as China-market multi-channel assistant reference.\n\n## Skip Reasons\n\n- [affaan-m/ECC](https://github.com/affaan-m/ECC)：Already skipped in prior radar due abnormal raw popularity and broad skill/harness claims; today root audit still reads more like agent-method/plugin bundle than a clearly bounded product to promote.\n- [nexu-io/open-design](https://github.com/nexu-io/open-design)：Strong project but already ranked Top 1 on 2026-09-09; skipped today to avoid repeating yesterday without a distinct new signal.\n- [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)：Strong context-compression layer but already ranked Top 2 on 2026-09-09; no fresh audit beyond yesterday before GitHub rate limit.\n- [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)：Strong code-graph substrate but already ranked Top 3 on 2026-09-09; not repeated as a fresh Top pick.\n- [farion1231/cc-switch](https://github.com/farion1231/cc-switch)：Product shape exists, but README excerpt was dominated by discount/API relay marketing claims; requires deeper trust and official-channel validation before promotion.\n- [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)：Provider/API proxy promising access to multiple coding-agent subscriptions and free/discounted models; compliance and credential-risk concerns make it unsuitable for Top.\n- [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code)：Free-token/free-provider positioning is compliance-risky and weaker than audited product surfaces.\n- [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)：Large useful resource collection, but awesome/list content is outside product-shaped radar criteria.\n- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book)：Book/course repository with code examples; useful learning material but not a standalone AI-native product.\n- [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)：Educational curriculum, not a runnable product surface for this radar.\n\n类型级降权：昨天已进入 Top 且无新增差异信号的项目、成熟通用平台、awesome/list/课程/书稿、prompt/skill-only collection、provider/free-token wrapper、模型营销下载页、只有 README 无入口的仓库，本轮不作为 Top；类型级原因只写在报告里，不伪造成 JSON repo。\n\n## 今日建议动作\n\n1. 优先把 Chrome DevTools MCP 接入下一轮前端验证，记录 console/network/performance evidence。\n2. 用 disposable target 试 Shannon，确认 AI pentest agent 的容器隔离、SARIF 输出和误报率。\n3. 用 Hyperframes 生成一个 15-30 秒 radar explainer，验证 agent-authored media 是否适合自动化发布。\n4. 对 claude-mem / nanobot / openhuman 做 memory 边界对比，重点看 stale facts、隐私导出和调度权限。\n5. 继续追踪 OpenViking、claude-code-router、PDFMathTranslate 等 metadata-only watchlist，下次先补 README/root audit。\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "category": "Browser debugging MCP for coding agents",
+      "score": 91,
+      "summary": "Chrome DevTools MCP server that lets coding agents inspect, debug, profile, and drive Chrome through DevTools and Puppeteer-style capabilities.",
+      "audience": "Coding-agent users and frontend teams who need browser state, console/network/performance evidence, and DOM debugging inside agent loops.",
+      "ai_native_angle": "Turns live browser debugging into a first-class MCP tool surface for agents instead of a human-only DevTools workflow.",
+      "growth_signal": "Pushed 2026-09-10; GitHub API showed 51.5k stars and 3.6k forks. Root audit found .claude-plugin, .cursor-plugin, mcp.json, server.json, skills, docs, tests, Puppeteer config, npm package files, and client configuration docs.",
+      "runnability": "High from npm/npx install path, MCP client configuration, documented tools, tests, and Chrome requirements; no local MCP session was launched.",
+      "recommended_action": "Use in the next frontend/browser QA loop to capture console, network, and performance evidence rather than relying on screenshots alone."
+    },
+    {
+      "rank": 2,
+      "full_name": "KeygraphHQ/shannon",
+      "url": "https://github.com/KeygraphHQ/shannon",
+      "category": "Autonomous AI pentesting agent",
+      "score": 89,
+      "summary": "AI pentester for web applications and APIs that reads source, identifies attack paths, runs exploit checks, and emits SARIF/report artifacts.",
+      "audience": "Security-conscious product teams shipping web apps quickly with AI-assisted coding.",
+      "ai_native_angle": "Makes the agent responsible for proof-oriented security exploration: source analysis, target execution, exploit validation, benchmark reports, and CI/CD output.",
+      "growth_signal": "Pushed 2026-09-08; GitHub API showed 47.9k stars and 5.5k forks. Root audit found apps, benchmark, sample-reports, Dockerfile, docker-compose, docs, workspaces, package files, and GitHub Actions references.",
+      "runnability": "Medium-high from npx quick start, Docker worker requirement, setup wizard, sample reports, and SARIF clues; exploit behavior and sandbox boundaries were not tested.",
+      "recommended_action": "Trial only on a disposable intentionally vulnerable target and inspect container/network permissions before pointing it at private code."
+    },
+    {
+      "rank": 3,
+      "full_name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "category": "Agent-native HTML to video renderer",
+      "score": 88,
+      "summary": "Framework where coding agents write HTML/frame specifications and render videos, motion graphics, explainers, ads, and documentation clips.",
+      "audience": "Product, growth, education, and developer-relations teams using agents to create repeatable video artifacts from code-like inputs.",
+      "ai_native_angle": "Packages video creation as skills, router workflows, themes, CLI, and agent instructions, making media output addressable by Codex/Claude/Cursor-style agents.",
+      "growth_signal": "Pushed 2026-09-10; GitHub API showed 48.4k stars and 4.4k forks. Root audit found .codex-plugin, .claude-plugin, .cursor-plugin, skills-manifest, packages, docs, examples, registry, themes, Dockerfile.test, scripts, and npm package clues.",
+      "runnability": "Medium-high from npx skill install/init paths and package evidence; no FFmpeg/browser render was run locally.",
+      "recommended_action": "Test a tiny radar explainer clip and verify deterministic rendering, font packaging, and CI artifact size."
+    },
+    {
+      "rank": 4,
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "category": "Persistent cross-agent memory",
+      "score": 87,
+      "summary": "Captures agent sessions, compresses them, indexes memory, and reinjects relevant context into future sessions across Claude Code, Codex, OpenCode, Gemini, and related hosts.",
+      "audience": "Agent-heavy developers who lose project memory across terminal, desktop, and web coding sessions.",
+      "ai_native_angle": "Treats transcript capture, compression, search, MCP tools, hooks, and host-specific plugins as one memory product layer.",
+      "growth_signal": "Pushed 2026-09-09; GitHub API showed 93.6k stars and 8.2k forks. Root audit found .codex-plugin, .claude-plugin, .cursor-plugin, Docker compose, docs, workers, tests, transcript-watch example, RAG folders, install scripts, and gateway components.",
+      "runnability": "Medium-high from installer/plugin/docker evidence; memory recall quality, privacy defaults, and host injection behavior were not verified.",
+      "recommended_action": "Compare against this automation memory on one known task, focusing on exact path/count recall and whether stale facts are downgraded."
+    },
+    {
+      "rank": 5,
+      "full_name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "category": "Self-hosted personal agent framework",
+      "score": 86,
+      "summary": "Ultra-lightweight Python personal AI agent with WebUI, TUI, tools, memory, MCP, multi-agent workflows, automation, chat apps, and scheduled work.",
+      "audience": "Users who want a self-hosted personal agent hub that can combine chat, tools, recurring tasks, and web UI without a large platform.",
+      "ai_native_angle": "Brings agent state, tools, browser UI, schedules, chat channels, and MCP into a single local-first installable assistant runtime.",
+      "growth_signal": "Pushed 2026-09-09; GitHub API showed 48.0k stars and 8.5k forks. Root audit found Dockerfile, docker-compose variants, docs, pyproject, scripts, tests, TUI, WebUI, packages, and install script.",
+      "runnability": "High from curl installer, pip/pipx package, Docker deploy, quick start, and WebUI docs; no personal-agent run was started.",
+      "recommended_action": "Evaluate as a lightweight local personal-agent baseline, but test scheduling and tool permissions with throwaway accounts first."
+    },
+    {
+      "rank": 6,
+      "full_name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "category": "Browser automation CLI for AI agents",
+      "score": 85,
+      "summary": "Agent-focused browser automation CLI with npm/Homebrew/Cargo install paths, schemas, skills, benchmarks, evals, and examples.",
+      "audience": "Agent app builders who need a controllable browser runtime without wiring raw Playwright/Puppeteer into every project.",
+      "ai_native_angle": "Frames browser automation as an agent-facing command and skill substrate with selectors, CLI updates, examples, evals, and host plugin clues.",
+      "growth_signal": "Pushed 2026-09-10; GitHub API showed 42.3k stars and 2.8k forks. Root audit found .claude-plugin, schema, benchmarks, cli, docker, docs, evals, examples, package files, packages, scripts, skill-data, skills, and tests.",
+      "runnability": "High from npm, Homebrew, Cargo, source install, and quick-start docs; no browser was launched.",
+      "recommended_action": "Benchmark against Chrome DevTools MCP for frontend QA: DevTools evidence depth versus simpler browser task execution."
+    },
+    {
+      "rank": 7,
+      "full_name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "category": "Local-first personal AI desktop",
+      "score": 84,
+      "summary": "Mac/Windows/Linux personal AI with local-first memory, agent orchestration, deep research, desktop app, Docker path, and multi-agent host integrations.",
+      "audience": "Privacy-minded users who want personal memory, research, and agent orchestration in a desktop-owned environment.",
+      "ai_native_angle": "Positions memory, orchestrator, deep researcher, workflows, and external coding agents as parts of one human-owned AI operating surface.",
+      "growth_signal": "Pushed 2026-09-09; GitHub API showed 39.6k stars and 3.9k forks. Root audit found Tauri/Rust/TypeScript workspace, INSTALL docs, app, packages, docs, examples, e2e, tests, Dockerfile, docker-compose, fastlane, and worktrees.",
+      "runnability": "Medium-high from installer docs and dev commands; desktop shell, memory backend, and privacy claims were not tested.",
+      "recommended_action": "Track as a personal-agent OS candidate and inspect local storage/export boundaries before importing private notes."
+    },
+    {
+      "rank": 8,
+      "full_name": "career-ops-hq/career-ops",
+      "url": "https://github.com/career-ops-hq/career-ops",
+      "category": "AI job-search operations agent",
+      "score": 82,
+      "summary": "Local AI job-search workflow for scanning job portals, evaluating postings, tailoring CVs, drafting cover letters, and tracking applications inside coding CLIs.",
+      "audience": "Job seekers comfortable running Claude Code/Codex/OpenCode-style workflows over personal career materials.",
+      "ai_native_angle": "Turns a messy personal workflow into agent-operable files, contracts, archetypes, inboxes, reports, PDFs, trackers, and CLI instructions.",
+      "growth_signal": "Pushed 2026-09-09; GitHub API showed 70.8k stars and 13.4k forks. Root audit found .codex-plugin, .claude-plugin, AGENTS/CODEX docs, Dockerfile, data contract, governance/legal docs, many localized READMEs, scripts, examples, and package files.",
+      "runnability": "Medium from extensive docs and agent-host plugins; job-board scraping durability and private-data handling were not tested.",
+      "recommended_action": "Use as a vertical-agent case study, not with real CV data until storage, export, and portal terms are reviewed."
+    },
+    {
+      "rank": 9,
+      "full_name": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "category": "AI internal app builder over MCP",
+      "score": 81,
+      "summary": "Open-source internal app platform now exposing ToolJet AI and coding-agent/MCP app-building paths for dashboards, workflows, and business tools.",
+      "audience": "Ops and engineering teams building internal tools from prompts, visual builders, and agent-driven app-generation flows.",
+      "ai_native_angle": "Connects low-code internal tools with Claude Code, Codex, Cursor, and MCP plugins so agents can create concrete apps rather than only propose designs.",
+      "growth_signal": "Pushed 2026-09-10; GitHub API showed 40.9k stars and 5.4k forks. Root audit found .agents, .claude, CLI, cypress tests, docker-compose, deploy, docs, frontend/server packages, marketplace, plugins, queryPanel, and quick-start docs.",
+      "runnability": "High for mature Docker/self-host platform; the new agent/MCP app-building path was not exercised.",
+      "recommended_action": "If internal tool generation becomes a radar theme, run the Docker quickstart and test one agent-built CRUD dashboard."
+    },
+    {
+      "rank": 10,
+      "full_name": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "category": "Unified agent toolkit and coding CLI",
+      "score": 80,
+      "summary": "TypeScript agent toolkit with unified LLM API, agent loop, TUI, coding-agent CLI, permissions/containerization notes, and supply-chain hardening.",
+      "audience": "Developers building or evaluating small coding-agent CLIs who want a package-oriented toolkit with isolation guidance.",
+      "ai_native_angle": "Treats agent execution as composable packages spanning model APIs, coding loops, TUI, permissions, containerization, and sharable sessions.",
+      "growth_signal": "Pushed 2026-09-09; GitHub API showed 103.5k stars and 12.9k forks. Root audit found package workspace, scripts, tests, TUI plan, security docs, and npm package evidence.",
+      "runnability": "Medium from package/test/build clues; no CLI session or model-provider integration was run.",
+      "recommended_action": "Review its permission/container model and compare the minimal loop against OpenAI Codex and mini-SWE-agent baselines."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "category": "Desktop AI productivity studio",
+      "score": 78,
+      "summary": "Electron/TypeScript desktop studio for smart chat, agents, assistants, and unified model access.",
+      "audience": "Power users managing many assistants and model providers from a desktop app.",
+      "ai_native_angle": "Adds agent skills and Codex/Claude-compatible surfaces to a mature assistant studio.",
+      "growth_signal": "Pushed 2026-09-10; root audit found Electron build files, docs, tests, migrations, packages, resources, privacy/security docs, and .agents/.claude metadata.",
+      "runnability": "Medium-high from mature app shape; agent-specific workflows were not tested.",
+      "recommended_action": "Watch for concrete autonomous-agent task flows beyond broad chat productivity."
+    },
+    {
+      "full_name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "category": "Self-evolving context database",
+      "score": 77,
+      "summary": "Context database unifying agent memory, knowledge RAG, and skills.",
+      "audience": "Agent platform builders looking for governed memory/RAG substrate.",
+      "ai_native_angle": "Makes context storage a self-evolving agent infrastructure layer.",
+      "growth_signal": "Search API showed pushed 2026-09-10 with 36.3k stars and 2.8k forks before rate limits blocked README audit.",
+      "runnability": "Metadata-only today because GitHub repo audit hit unauthenticated API rate limits.",
+      "recommended_action": "Audit README/root files next run before promoting."
+    },
+    {
+      "full_name": "musistudio/claude-code-router",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "category": "Local AI agent routing control plane",
+      "score": 76,
+      "summary": "Local control plane for routing Claude Code and related agent traffic across models and tools.",
+      "audience": "Heavy coding-agent users juggling model routes, tools, and cost/availability tradeoffs.",
+      "ai_native_angle": "Moves provider routing and tool orchestration into the local agent loop.",
+      "growth_signal": "Search API showed pushed 2026-09-09 with 37.2k stars and 3.1k forks; README audit was blocked by rate limit.",
+      "runnability": "Metadata-only; needs root-file validation.",
+      "recommended_action": "Watch for config safety and secret handling before trial."
+    },
+    {
+      "full_name": "PDFMathTranslate/PDFMathTranslate",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+      "category": "AI document translation with MCP",
+      "score": 75,
+      "summary": "PDF scientific-paper translation preserving layout, with CLI/GUI/MCP/Docker/Zotero surfaces.",
+      "audience": "Researchers and translators handling math-heavy PDFs.",
+      "ai_native_angle": "Makes document transformation agent-addressable through MCP plus conventional CLI/GUI paths.",
+      "growth_signal": "Search API showed pushed 2026-09-10 with 36.8k stars and 3.3k forks; README audit was blocked by rate limit.",
+      "runnability": "Metadata-only today; historically repo shape appears product-like from search topics.",
+      "recommended_action": "Audit with a small public PDF before any private document use."
+    },
+    {
+      "full_name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "category": "Agent meta-harness",
+      "score": 74,
+      "summary": "Multi-agent swarm and workflow harness with memory, RAG, skills, MCP server, and Codex/Claude integration claims.",
+      "audience": "Builders exploring agent swarms and meta-harness architectures.",
+      "ai_native_angle": "Unifies swarms, skills, memory, and provider-specific coding-agent hosts.",
+      "growth_signal": "Search API showed pushed 2026-09-10 with 71.8k stars and 8.5k forks; rate limit blocked root audit.",
+      "runnability": "Metadata-only; needs skepticism around broad claims and popularity.",
+      "recommended_action": "Keep below audited products until examples/tests are reviewed."
+    },
+    {
+      "full_name": "multica-ai/multica",
+      "url": "https://github.com/multica-ai/multica",
+      "category": "Human/AI team workspace",
+      "score": 73,
+      "summary": "Self-hostable workspace positioned around humans and AI agents working as one team.",
+      "audience": "Teams experimenting with shared human-agent operations.",
+      "ai_native_angle": "Frames collaboration primitives around human-agent team membership rather than isolated chat.",
+      "growth_signal": "Search API showed pushed 2026-09-09 with 49.4k stars and 6.4k forks; audit blocked by rate limit.",
+      "runnability": "Metadata-only; product surface still needs README/root verification.",
+      "recommended_action": "Review next run for concrete UI, auth, and task ownership model."
+    },
+    {
+      "full_name": "zhayujie/CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "category": "Multi-channel super assistant",
+      "score": 72,
+      "summary": "Python super AI assistant and agent harness with planning, tools, skills, memory, knowledge, multi-agent, multi-model, and chat-channel integrations.",
+      "audience": "Users wanting a chat-channel-first assistant framework spanning IM platforms and model providers.",
+      "ai_native_angle": "Combines multi-channel chat ops with agent planning, tools, memory, and MCP.",
+      "growth_signal": "Search API showed pushed 2026-09-10 with 46.9k stars and 10.3k forks; audit blocked by rate limit.",
+      "runnability": "Metadata-only today; channel auth and action boundaries need direct audit.",
+      "recommended_action": "Watch as China-market multi-channel assistant reference."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "skip_reason": "Already skipped in prior radar due abnormal raw popularity and broad skill/harness claims; today root audit still reads more like agent-method/plugin bundle than a clearly bounded product to promote."
+    },
+    {
+      "full_name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "skip_reason": "Strong project but already ranked Top 1 on 2026-09-09; skipped today to avoid repeating yesterday without a distinct new signal."
+    },
+    {
+      "full_name": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "skip_reason": "Strong context-compression layer but already ranked Top 2 on 2026-09-09; no fresh audit beyond yesterday before GitHub rate limit."
+    },
+    {
+      "full_name": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "skip_reason": "Strong code-graph substrate but already ranked Top 3 on 2026-09-09; not repeated as a fresh Top pick."
+    },
+    {
+      "full_name": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "skip_reason": "Product shape exists, but README excerpt was dominated by discount/API relay marketing claims; requires deeper trust and official-channel validation before promotion."
+    },
+    {
+      "full_name": "router-for-me/CLIProxyAPI",
+      "url": "https://github.com/router-for-me/CLIProxyAPI",
+      "skip_reason": "Provider/API proxy promising access to multiple coding-agent subscriptions and free/discounted models; compliance and credential-risk concerns make it unsuitable for Top."
+    },
+    {
+      "full_name": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "skip_reason": "Free-token/free-provider positioning is compliance-risky and weaker than audited product surfaces."
+    },
+    {
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "skip_reason": "Large useful resource collection, but awesome/list content is outside product-shaped radar criteria."
+    },
+    {
+      "full_name": "bojieli/ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "skip_reason": "Book/course repository with code examples; useful learning material but not a standalone AI-native product."
+    },
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "skip_reason": "Educational curriculum, not a runnable product surface for this radar."
+    }
+  ]
+}
