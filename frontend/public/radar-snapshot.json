@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+      "runDate": "2026-09-11",
+      "generatedAt": "2026-09-11T14:27:51+08:00",
+      "dataWindow": "GitHub Search API queries for AI agent, LLM app, RAG, MCP, browser agent, code agent, voice agent, AI workflow, automation agent, and copilot agent repositories created or pushed from 2026-09-08 through 2026-09-11. Raw search snapshots were saved under /tmp/radar_2026_09_11_api/; selected repository metadata, root-content, and README audits were saved under /tmp/radar_2026_09_11_readmes/.",
+      "sourceSummary": "Queried 10 GitHub Search API surfaces and deduplicated 440 repositories. Audited 23 shortlisted repositories with GitHub API repository metadata, root contents, and README excerpts. Selection prioritized concrete agent-operable products with CLI, MCP, VS Code, desktop, browser, queue, security, video, or service workflow evidence, then demoted code-coming-soon projects, thin demos, financial/trading surfaces with trust risk, pure protocol sketches, and repos lacking a bounded user workflow.",
+      "trendObservations": "Today is a small-new-product day rather than a mega-star day. The strongest pattern is operational infrastructure around coding agents: phone supervision, queue control, read-only GitHub context gateways, cross-agent session handoff, provenance-aware version control, and secret redaction. Agent video and demo tooling also moved from prompt assets toward MCP/CLI pipelines that can record, render, and review artifacts. Vertical agents are getting more serious about receipts and human gates, especially job-search and contact-center workflows. Several physical-world, finance, and protocol projects are intriguing but remain below Top until code, permissions, and safety boundaries are clearer.",
+      "assumptions": "Scores are based on live GitHub Search API snapshots and selected GitHub API README/root audits saved under /tmp/radar_2026_09_11_api/ and /tmp/radar_2026_09_11_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, MCP-connected, credential-tested, provider-tested, phone-tested, security-tested, trading-tested, drone-tested, or deployed locally. Star and fork counts are raw GitHub API snapshots at collection time; because most projects are brand new, file structure, install path, tests/examples/docs, and explicit human-control boundaries weighed more than popularity. Projects promising code later, broad portfolio pages, pure lessons, suspicious free/model wrappers, or platform-sensitive automation without strong consent controls were skipped or downgraded.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-09-11\n\n数据窗口：2026-09-08T00:00:00Z to 2026-09-11T06:27:51Z；GitHub Search API 查询 AI agent、LLM app、RAG、MCP、browser agent、code agent、voice agent、AI workflow、automation agent、copilot agent 等主题，并对 23 个候选做 README/root audit。\n\n信息来源：Queried 10 GitHub Search API surfaces and deduplicated 440 repositories. Audited 23 shortlisted repositories with GitHub API repository metadata, root contents, and README excerpts. Selection prioritized concrete agent-operable products with CLI, MCP, VS Code, desktop, browser, queue, security, video, or service workflow evidence, then demoted code-coming-soon projects, thin demos, financial/trading surfaces with trust risk, pure protocol sketches, and repos lacking a bounded user workflow.\n\n关键假设：Scores are based on live GitHub Search API snapshots and selected GitHub API README/root audits saved under /tmp/radar_2026_09_11_api/ and /tmp/radar_2026_09_11_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, MCP-connected, credential-tested, provider-tested, phone-tested, security-tested, trading-tested, drone-tested, or deployed locally. Star and fork counts are raw GitHub API snapshots at collection time; because most projects are brand new, file structure, install path, tests/examples/docs, and explicit human-control boundaries weighed more than popularity. Projects promising code later, broad portfolio pages, pure lessons, suspicious free/model wrappers, or platform-sensitive automation without strong consent controls were skipped or downgraded.\n\n## 今日趋势观察\n\nToday is a small-new-product day rather than a mega-star day. The strongest pattern is operational infrastructure around coding agents: phone supervision, queue control, read-only GitHub context gateways, cross-agent session handoff, provenance-aware version control, and secret redaction. Agent video and demo tooling also moved from prompt assets toward MCP/CLI pipelines that can record, render, and review artifacts. Vertical agents are getting more serious about receipts and human gates, especially job-search and contact-center workflows. Several physical-world, finance, and protocol projects are intriguing but remain below Top until code, permissions, and safety boundaries are clearer.\n\n## Top Projects\n\n### 1. [viminizer/remux](https://github.com/viminizer/remux)\n- 分类：Mobile supervision for coding-agent sessions\n- AI Native Product Score：90\n- 做什么：One Go binary with embedded Tailscale and a React PWA for supervising Mac tmux sessions and coding agents from a phone.\n- 面向谁：Developers running long Claude Code, Codex, or terminal-agent sessions who need to read progress and answer questions away from the laptop.\n- AI native 点：Turns the human approval and instruction loop into a phone-first control surface over live coding-agent work, with session visibility rather than blind background automation.\n- 增长/活跃信号：Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found AGENTS.md, CLAUDE.md, Go sources, install.go, preflight.go, docs, scripts, and embedded web UI assets.\n- 可运行性判断：High from single-binary Go structure, install/preflight files, docs, and web UI folder; no tmux/Tailscale/phone session was launched.\n- 建议动作：Prototype on a disposable tmux project and verify approval latency, network exposure, and recovery when the phone disconnects.\n\n### 2. [Drop-to-run/drop2run-cli](https://github.com/Drop-to-run/drop2run-cli)\n- 分类：Agent output publishing CLI and MCP server\n- AI Native Product Score：88\n- 做什么：CLI and MCP packages for publishing static sites or agent outputs to HTTPS links without git or build configuration.\n- 面向谁：Agent builders and product teams who need quick shareable artifacts from local agent runs.\n- AI native 点：Makes publication a direct tool call or CLI action inside an agent loop, compressing the handoff from generated folder to reviewable public URL.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found packages, SECURITY.md, glama metadata, README install notes, and MCP listing badges.\n- 可运行性判断：Medium-high from package workspace and documented CLI/MCP shape; credentials and hosted publishing were not exercised.\n- 建议动作：Use for a small static artifact only after reviewing token storage, account permissions, and deletion controls.\n\n### 3. [bohanyt/github-but-fast](https://github.com/bohanyt/github-but-fast)\n- 分类：Read-only GitHub Code Mode MCP gateway\n- AI Native Product Score：87\n- 做什么：Token-efficient remote MCP gateway that lets an agent query GitHub REST endpoints through compact sandboxed JavaScript programs.\n- 面向谁：Agents that spend too many tool calls inspecting GitHub issues, PRs, commits, files, and repo metadata.\n- AI native 点：Reframes GitHub exploration as read-only code execution over fresh API data, reducing context and round trips for MCP-capable agents.\n- 增长/活跃信号：Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Cloudflare wrangler config, src, tests, docs, scripts, package files, env examples, and explicit read-only positioning.\n- 可运行性判断：Medium-high from TypeScript package, tests, docs, and deploy config; Cloudflare runtime and auth scopes were not tested.\n- 建议动作：Compare against direct GitHub API reads on one PR review and measure whether compact results preserve enough evidence.\n\n### 4. [adarshcod30/AGENTIQ](https://github.com/adarshcod30/AGENTIQ)\n- 分类：Permission-gated API testing and security validation\n- AI Native Product Score：86\n- 做什么：Agentic API testing and security validation layer where agents act through audited, permission-gated, SSRF-guarded MCP tools.\n- 面向谁：Teams that want AI-assisted API probing while keeping network, SSRF, and mutation permissions explicit.\n- AI native 点：Places the agent behind a constrained tool layer, making security testing more governable than free-form agent HTTP access.\n- 增长/活跃信号：Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Dockerfile, web UI, server, docs, evaluation, fixtures, package-lock, CI workflow, and environment examples.\n- 可运行性判断：Medium-high from Docker/web/server/test fixtures; SSRF guard effectiveness and permission prompts were not tested.\n- 建议动作：Run only against a toy API first and inspect audit logs, default deny behavior, and mutation controls.\n\n### 5. [lucasrosati/greenlight](https://github.com/lucasrosati/greenlight)\n- 分类：Human-gated queue for headless Claude Code\n- AI Native Product Score：85\n- 做什么：Serial task queue that runs headless Claude Code, opens PRs, waits for named CI gates, and requires a human before merge.\n- 面向谁：Developers who want background coding-agent throughput without losing ownership of merge decisions.\n- AI native 点：Turns multiple coding requests into an auditable queue with clean-base execution, PR detection, sha-bound CI gates, and human merge handoff.\n- 增长/活跃信号：Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found greenlight.sh, lib, docs, examples, prompts, state, logs, and GitHub workflow files.\n- 可运行性判断：Medium from shell-based implementation and examples; no GitHub PR or CI integration was run.\n- 建议动作：Trial in a throwaway repo and verify that failures stop the queue and preserve enough task state for review.\n\n### 6. [Watakumi/izuna](https://github.com/Watakumi/izuna)\n- 分类：Forgejo-backed macOS GUI for Claude Code\n- AI Native Product Score：84\n- 做什么：macOS Electron app that drives Claude Code headlessly and exposes conversation, tool calls, diffs, approvals, and Forgejo pull requests in a GUI.\n- 面向谁：People who self-host Forgejo and want agent work to land in a sandbox before upstream GitHub promotion.\n- AI native 点：Makes a local coding agent visible and reviewable through a desktop app plus Forgejo PR workflow, keeping approvals with a human.\n- 增长/活跃信号：Created 2026-09-09 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Electron/Vite config, src, harness, templates, docs, tests, SECURITY.md, Forgejo/GitHub metadata, and pnpm workspace files.\n- 可运行性判断：Medium-high from complete desktop project structure; macOS app, Forgejo integration, and Claude CLI control were not launched.\n- 建议动作：Watch closely as a self-hosted alternative to browser-only coding-agent control planes.\n\n### 7. [Mouseww/veil](https://github.com/Mouseww/veil)\n- 分类：Local secret-redaction proxy for coding agents\n- AI Native Product Score：83\n- 做什么：Rust local proxy and UI that redacts secrets before requests reach Claude, Codex, Trae, and other coding agents.\n- 面向谁：Developers who paste logs, env files, customer examples, or connection strings into model-backed coding workflows.\n- AI native 点：Moves data-loss prevention into the local agent path so the model receives placeholders while the machine keeps the original secret mapping.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found Cargo workspace, crates, plugin, UI, docs, scripts, release notes, bilingual README, and no-telemetry positioning.\n- 可运行性判断：Medium-high from Rust workspace and release/download docs; redaction coverage, bypass risks, and proxy compatibility were not tested.\n- 建议动作：Evaluate with synthetic secrets and confirm reversible mapping, logs, and failure behavior before using with real credentials.\n\n### 8. [flavioduque/demomotion](https://github.com/flavioduque/demomotion)\n- 分类：MCP product-demo video recorder\n- AI Native Product Score：82\n- 做什么：Agent-first product demo video pipeline where an agent operates a web app, records deterministically, and renders a polished MP4.\n- 面向谁：Product teams and developer advocates who need repeatable demo videos from live web apps.\n- AI native 点：Combines browser operation, recording, rendering, docs, fixtures, skills, and packages into an agent-addressable demo production loop.\n- 增长/活跃信号：Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found apps, packages, skills, docs, fixtures, scripts, release checklist, security docs, and pnpm workspace files.\n- 可运行性判断：Medium from package/workspace evidence; no browser recording or MP4 render was run locally.\n- 建议动作：Try a tiny static app demo and compare deterministic replay quality against manual screen capture.\n\n### 9. [xirichuyi/boss-job-agent](https://github.com/xirichuyi/boss-job-agent)\n- 分类：Self-hosted job-search agent with visible browser receipts\n- AI Native Product Score：81\n- 做什么：Codex CLI and visible Chromium based personal job-search assistant for reading jobs, tailoring messages, and handling HR conversations with durable receipts.\n- 面向谁：Job seekers comfortable self-hosting a platform-sensitive automation workflow and keeping manual control over risky actions.\n- AI native 点：Shows a vertical agent with config, visible browser automation, receipts, default no-send behavior, and explicit platform-boundary disclaimers.\n- 增长/活跃信号：Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 22 stars and 2 forks. Root audit found architecture/security docs, config, deploy, examples, prompts, scripts, tests, TypeScript sources, and setup instructions.\n- 可运行性判断：Medium from docs/tests and visible-browser design; platform login, captcha handling, messaging, and terms compliance were not tested.\n- 建议动作：Study its receipt and human-gate model, but do not connect a real job account before reviewing platform rules.\n\n### 10. [Roy-Wanyoike/Orvexa](https://github.com/Roy-Wanyoike/Orvexa)\n- 分类：AI-native contact center OS\n- AI Native Product Score：80\n- 做什么：Event-driven Go contact-center platform with interaction, intelligence, execution, and control planes for channels, AI agents, routing, workflows, tool gateway, and analytics.\n- 面向谁：Teams exploring self-hosted customer-support infrastructure where human and AI agents share routing and workflow state.\n- AI native 点：Treats customer conversations, memory, routing, tool use, and analytics as one agent-aware operating layer rather than a chatbot bolt-on.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found cmd, api, internal, pkg, migrations, docs, tests, QA, Makefile, Docker compose, and env examples.\n- 可运行性判断：Medium-high from Go service structure, migrations, tests, and Docker dev file; channel integrations and LLM adapters were not run.\n- 建议动作：Keep on watch as an infrastructure candidate and test locally only with fake channels and synthetic conversations.\n\n## Watchlist\n\n- [handyutils/sctxx](https://github.com/handyutils/sctxx) — Cross-agent session context extractor，Score 78。Rust CLI and skill wrapper that turns coding-agent transcripts from Claude Code, Codex CLI, or Pi into compact provenance-linked handoff artifacts. 建议：Test against one completed Codex transcript and compare factual recall with current automation memory.\n- [0x11c11e/deskfish](https://github.com/0x11c11e/deskfish) — VS Code sandbox desktop for agents，Score 77。VS Code extension that gives an AI a sandboxed Linux desktop with chat sidebar and live view. 建议：Audit package files and sandbox isolation next run before promoting.\n- [NitrusAphalion/tessra](https://github.com/NitrusAphalion/tessra) — Agent-era version control with claims and evidence，Score 76。Rust version-control system aiming to record why code changed and what is known true about a result. 建议：Track for evidence/provenance concepts and test only in a throwaway repo.\n- [IsLand1314/Drift](https://github.com/IsLand1314/Drift) — Local read-only coding-agent runtime，Score 75。Go runtime for local repository understanding with streaming model interaction, limited read_file calls, context budgets, memory, permissions, and TUI/web ambitions. 建议：Revisit when write/verify loop, MCP loading, or TUI/web surface ships.\n- [sblattj/agent-harness](https://github.com/sblattj/agent-harness) — Coding-agent orchestration and observability harness，Score 74。Headless orchestration layer for Claude Code, Codex CLI, OpenCode, Gemini, and Kiro with normalized events, token accounting, ATIF artifacts, and OpenTelemetry spans. 建议：Watch for stable adapters and sample trajectories before adoption.\n- [take365/VideoEditingAgents](https://github.com/take365/VideoEditingAgents) — Local video-production workspace for AI agents，Score 73。Japanese local template for using Codex-style agents to create image, narration, and subtitle videos with samples and review HTML. 建议：Compare with demomotion for artifact review and local dependency burden.\n- [yangxijia111/rh-agent-bridge](https://github.com/yangxijia111/rh-agent-bridge) — RunningHub and ComfyUI agent bridge，Score 72。TypeScript MCP plus CLI bridge for RunningHub/ComfyUI workflows with API-first and browser-fallback operation. 建议：Keep as a creative-agent bridge candidate for a future ComfyUI automation trial.\n\n## Skip Reasons\n\n- [LZR-S/Flying-Agent](https://github.com/LZR-S/Flying-Agent)：README says code is coming soon; physical drone-agent idea is intriguing, but no runnable code surface was present today.\n- [OneHaydenZhang/ManekiAI-Celo](https://github.com/OneHaydenZhang/ManekiAI-Celo)：Autonomous trading and on-chain payment scope is high-risk; needs strong safety, custody, and compliance review before product promotion.\n- [gfam-git/orca](https://github.com/gfam-git/orca)：Interesting OpenAPI-as-remote-CLI protocol sketch, but root audit found only AGENTS.md and README.md, so it lacks runnable product evidence.\n- [agenticflow-tech/omnisearch_agent](https://github.com/agenticflow-tech/omnisearch_agent)：Streamlit live-search agent is product-shaped but thin, with only app.py and requirements; keep below richer agent workflow products.\n- [zzkai098/cici](https://github.com/zzkai098/cici)：Small transparent coding agent is useful as an educational baseline, but not enough differentiated product surface for today's Top list.\n- [Adot442/AI_Swarm](https://github.com/Adot442/AI_Swarm)：Low-level swarm project description is broad and early; no clear user-facing workflow was audited.\n- [Bredcool/agentic-repository-debugger](https://github.com/Bredcool/agentic-repository-debugger)：Benchmark/evaluation repo for repository-level debugging agents, valuable for testing but outside product-shaped radar criteria.\n- [runapi-ai/gpt-image-2.5](https://github.com/runapi-ai/gpt-image-2.5)：Skill/provider wrapper for image generation agents, likely useful but too provider-wrapper-shaped for Top without deeper trust and runtime audit.\n- [ddekadt/cornell-agentic-ai](https://github.com/ddekadt/cornell-agentic-ai)：Workshop/education material for agentic AI, not a standalone runnable product.\n- [Twancity/-AI-Product-Builder-Portfolio](https://github.com/Twancity/-AI-Product-Builder-Portfolio)：Portfolio repository rather than a reusable product surface.\n\n类型级降权：只有 README 没有入口的仓库、课程/workshop/portfolio、纯 benchmark、provider wrapper、平台敏感且缺少 consent 设计的自动化、金融/链上交易代理、physical-world agent 但无代码项目，本轮不作为 Top；类型级原因只写在报告里，不伪造成 JSON repo。\n\n## 今日建议动作\n\n1. 先试 remux 或 greenlight 这类 human-in-loop 控制层，验证长跑 coding-agent 的可见性和停止点。\n2. 用 AGENTIQ/Veil 做一组 synthetic secret 和 toy API 测试，确认 agent action guardrail 是否真能落地。\n3. 把 demomotion 与 VideoEditingAgents 放到同一条 artifact review 流里比较，重点看可重复录制和本地依赖。\n4. 对 GitHub But Fast 和 sctxx 做一次同 repo 信息压缩对比，看谁更适合跨任务延续。\n5. 对 boss-job-agent 只研究 receipts 和默认 no-send 设计，暂不接真实账号。\n",
+      "sourceFile": "2026-09-11.json",
+      "entryCount": 27
+    },
+    {
       "id": "run:2026-09-10:2026-09-10T11:18:00+08:00",
       "runDate": "2026-09-10",
       "generatedAt": "2026-09-10T11:18:00+08:00",
@@ -1579,6 +1591,25 @@
       "skipReason": null
     },
     {
+      "fullName": "viminizer/remux",
+      "url": "https://github.com/viminizer/remux",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 90,
+      "latestScore": 90,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Mobile supervision for coding-agent sessions",
+      "summary": "One Go binary with embedded Tailscale and a React PWA for supervising Mac tmux sessions and coding agents from a phone.",
+      "audience": "Developers running long Claude Code, Codex, or terminal-agent sessions who need to read progress and answer questions away from the laptop.",
+      "aiNativeAngle": "Turns the human approval and instruction loop into a phone-first control surface over live coding-agent work, with session visibility rather than blind background automation.",
+      "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found AGENTS.md, CLAUDE.md, Go sources, install.go, preflight.go, docs, scripts, and embedded web UI assets.",
+      "runnability": "High from single-binary Go structure, install/preflight files, docs, and web UI folder; no tmux/Tailscale/phone session was launched.",
+      "recommendedAction": "Prototype on a disposable tmux project and verify approval latency, network exposure, and recovery when the phone disconnects.",
+      "skipReason": null
+    },
+    {
       "fullName": "headroomlabs-ai/headroom",
       "url": "https://github.com/headroomlabs-ai/headroom",
       "firstSeenDate": "2026-08-12",
@@ -2279,6 +2310,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "Drop-to-run/drop2run-cli",
+      "url": "https://github.com/Drop-to-run/drop2run-cli",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Agent output publishing CLI and MCP server",
+      "summary": "CLI and MCP packages for publishing static sites or agent outputs to HTTPS links without git or build configuration.",
+      "audience": "Agent builders and product teams who need quick shareable artifacts from local agent runs.",
+      "aiNativeAngle": "Makes publication a direct tool call or CLI action inside an agent loop, compressing the handoff from generated folder to reviewable public URL.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found packages, SECURITY.md, glama metadata, README install notes, and MCP listing badges.",
+      "runnability": "Medium-high from package workspace and documented CLI/MCP shape; credentials and hosted publishing were not exercised.",
+      "recommendedAction": "Use for a small static artifact only after reviewing token storage, account permissions, and deletion controls.",
       "skipReason": null
     },
     {
@@ -3042,6 +3092,25 @@
       "skipReason": null
     },
     {
+      "fullName": "bohanyt/github-but-fast",
+      "url": "https://github.com/bohanyt/github-but-fast",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 87,
+      "latestScore": 87,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Read-only GitHub Code Mode MCP gateway",
+      "summary": "Token-efficient remote MCP gateway that lets an agent query GitHub REST endpoints through compact sandboxed JavaScript programs.",
+      "audience": "Agents that spend too many tool calls inspecting GitHub issues, PRs, commits, files, and repo metadata.",
+      "aiNativeAngle": "Reframes GitHub exploration as read-only code execution over fresh API data, reducing context and round trips for MCP-capable agents.",
+      "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Cloudflare wrangler config, src, tests, docs, scripts, package files, env examples, and explicit read-only positioning.",
+      "runnability": "Medium-high from TypeScript package, tests, docs, and deploy config; Cloudflare runtime and auth scopes were not tested.",
+      "recommendedAction": "Compare against direct GitHub API reads on one PR review and measure whether compact results preserve enough evidence.",
+      "skipReason": null
+    },
+    {
       "fullName": "HKUDS/nanobot",
       "url": "https://github.com/HKUDS/nanobot",
       "firstSeenDate": "2026-09-06",
@@ -3552,6 +3621,25 @@
       "growthSignal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
       "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
       "recommendedAction": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails.",
+      "skipReason": null
+    },
+    {
+      "fullName": "adarshcod30/AGENTIQ",
+      "url": "https://github.com/adarshcod30/AGENTIQ",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Permission-gated API testing and security validation",
+      "summary": "Agentic API testing and security validation layer where agents act through audited, permission-gated, SSRF-guarded MCP tools.",
+      "audience": "Teams that want AI-assisted API probing while keeping network, SSRF, and mutation permissions explicit.",
+      "aiNativeAngle": "Places the agent behind a constrained tool layer, making security testing more governable than free-form agent HTTP access.",
+      "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Dockerfile, web UI, server, docs, evaluation, fixtures, package-lock, CI workflow, and environment examples.",
+      "runnability": "Medium-high from Docker/web/server/test fixtures; SSRF guard effectiveness and permission prompts were not tested.",
+      "recommendedAction": "Run only against a toy API first and inspect audit logs, default deny behavior, and mutation controls.",
       "skipReason": null
     },
     {
@@ -4277,6 +4365,25 @@
       "skipReason": null
     },
     {
+      "fullName": "lucasrosati/greenlight",
+      "url": "https://github.com/lucasrosati/greenlight",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Human-gated queue for headless Claude Code",
+      "summary": "Serial task queue that runs headless Claude Code, opens PRs, waits for named CI gates, and requires a human before merge.",
+      "audience": "Developers who want background coding-agent throughput without losing ownership of merge decisions.",
+      "aiNativeAngle": "Turns multiple coding requests into an auditable queue with clean-base execution, PR detection, sha-bound CI gates, and human merge handoff.",
+      "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found greenlight.sh, lib, docs, examples, prompts, state, logs, and GitHub workflow files.",
+      "runnability": "Medium from shell-based implementation and examples; no GitHub PR or CI integration was run.",
+      "recommendedAction": "Trial in a throwaway repo and verify that failures stop the queue and preserve enough task state for review.",
+      "skipReason": null
+    },
+    {
       "fullName": "vercel-labs/agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
       "firstSeenDate": "2026-08-09",
@@ -4749,6 +4856,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "Watakumi/izuna",
+      "url": "https://github.com/Watakumi/izuna",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Forgejo-backed macOS GUI for Claude Code",
+      "summary": "macOS Electron app that drives Claude Code headlessly and exposes conversation, tool calls, diffs, approvals, and Forgejo pull requests in a GUI.",
+      "audience": "People who self-host Forgejo and want agent work to land in a sandbox before upstream GitHub promotion.",
+      "aiNativeAngle": "Makes a local coding agent visible and reviewable through a desktop app plus Forgejo PR workflow, keeping approvals with a human.",
+      "growthSignal": "Created 2026-09-09 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Electron/Vite config, src, harness, templates, docs, tests, SECURITY.md, Forgejo/GitHub metadata, and pnpm workspace files.",
+      "runnability": "Medium-high from complete desktop project structure; macOS app, Forgejo integration, and Claude CLI control were not launched.",
+      "recommendedAction": "Watch closely as a self-hosted alternative to browser-only coding-agent control planes.",
       "skipReason": null
     },
     {
@@ -5721,6 +5847,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Mouseww/veil",
+      "url": "https://github.com/Mouseww/veil",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local secret-redaction proxy for coding agents",
+      "summary": "Rust local proxy and UI that redacts secrets before requests reach Claude, Codex, Trae, and other coding agents.",
+      "audience": "Developers who paste logs, env files, customer examples, or connection strings into model-backed coding workflows.",
+      "aiNativeAngle": "Moves data-loss prevention into the local agent path so the model receives placeholders while the machine keeps the original secret mapping.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found Cargo workspace, crates, plugin, UI, docs, scripts, release notes, bilingual README, and no-telemetry positioning.",
+      "runnability": "Medium-high from Rust workspace and release/download docs; redaction coverage, bypass risks, and proxy compatibility were not tested.",
+      "recommendedAction": "Evaluate with synthetic secrets and confirm reversible mapping, logs, and failure behavior before using with real credentials.",
+      "skipReason": null
+    },
+    {
       "fullName": "CherryHQ/cherry-studio",
       "url": "https://github.com/CherryHQ/cherry-studio",
       "firstSeenDate": "2026-06-07",
@@ -6383,6 +6528,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "flavioduque/demomotion",
+      "url": "https://github.com/flavioduque/demomotion",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "MCP product-demo video recorder",
+      "summary": "Agent-first product demo video pipeline where an agent operates a web app, records deterministically, and renders a polished MP4.",
+      "audience": "Product teams and developer advocates who need repeatable demo videos from live web apps.",
+      "aiNativeAngle": "Combines browser operation, recording, rendering, docs, fixtures, skills, and packages into an agent-addressable demo production loop.",
+      "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found apps, packages, skills, docs, fixtures, scripts, release checklist, security docs, and pnpm workspace files.",
+      "runnability": "Medium from package/workspace evidence; no browser recording or MP4 render was run locally.",
+      "recommendedAction": "Try a tiny static app demo and compare deterministic replay quality against manual screen capture.",
       "skipReason": null
     },
     {
@@ -7241,6 +7405,25 @@
       "skipReason": null
     },
     {
+      "fullName": "xirichuyi/boss-job-agent",
+      "url": "https://github.com/xirichuyi/boss-job-agent",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Self-hosted job-search agent with visible browser receipts",
+      "summary": "Codex CLI and visible Chromium based personal job-search assistant for reading jobs, tailoring messages, and handling HR conversations with durable receipts.",
+      "audience": "Job seekers comfortable self-hosting a platform-sensitive automation workflow and keeping manual control over risky actions.",
+      "aiNativeAngle": "Shows a vertical agent with config, visible browser automation, receipts, default no-send behavior, and explicit platform-boundary disclaimers.",
+      "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 22 stars and 2 forks. Root audit found architecture/security docs, config, deploy, examples, prompts, scripts, tests, TypeScript sources, and setup instructions.",
+      "runnability": "Medium from docs/tests and visible-browser design; platform login, captcha handling, messaging, and terms compliance were not tested.",
+      "recommendedAction": "Study its receipt and human-gate model, but do not connect a real job account before reviewing platform rules.",
+      "skipReason": null
+    },
+    {
       "fullName": "ToolJet/ToolJet",
       "url": "https://github.com/ToolJet/ToolJet",
       "firstSeenDate": "2026-09-10",
@@ -7770,6 +7953,25 @@
       "growthSignal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
       "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
       "recommendedAction": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。",
+      "skipReason": null
+    },
+    {
+      "fullName": "Roy-Wanyoike/Orvexa",
+      "url": "https://github.com/Roy-Wanyoike/Orvexa",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "AI-native contact center OS",
+      "summary": "Event-driven Go contact-center platform with interaction, intelligence, execution, and control planes for channels, AI agents, routing, workflows, tool gateway, and analytics.",
+      "audience": "Teams exploring self-hosted customer-support infrastructure where human and AI agents share routing and workflow state.",
+      "aiNativeAngle": "Treats customer conversations, memory, routing, tool use, and analytics as one agent-aware operating layer rather than a chatbot bolt-on.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found cmd, api, internal, pkg, migrations, docs, tests, QA, Makefile, Docker compose, and env examples.",
+      "runnability": "Medium-high from Go service structure, migrations, tests, and Docker dev file; channel integrations and LLM adapters were not run.",
+      "recommendedAction": "Keep on watch as an infrastructure candidate and test locally only with fake channels and synthetic conversations.",
       "skipReason": null
     },
     {
@@ -8970,6 +9172,25 @@
       "skipReason": null
     },
     {
+      "fullName": "handyutils/sctxx",
+      "url": "https://github.com/handyutils/sctxx",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Cross-agent session context extractor",
+      "summary": "Rust CLI and skill wrapper that turns coding-agent transcripts from Claude Code, Codex CLI, or Pi into compact provenance-linked handoff artifacts.",
+      "audience": "Teams moving work across agent hosts or recovering from context limits.",
+      "aiNativeAngle": "Makes handoff artifacts an explicit product object with schemas, docs, npm package hints, tests, and website docs.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, schemas, prompts, skill, specs, docs, tests, website, npm folder, and release metadata.",
+      "runnability": "Medium-high from CLI/library evidence; transcript parsers and provenance links were not exercised.",
+      "recommendedAction": "Test against one completed Codex transcript and compare factual recall with current automation memory.",
+      "skipReason": null
+    },
+    {
       "fullName": "addyosmani/agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
       "firstSeenDate": "2026-06-15",
@@ -9844,6 +10065,25 @@
       "skipReason": null
     },
     {
+      "fullName": "0x11c11e/deskfish",
+      "url": "https://github.com/0x11c11e/deskfish",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "VS Code sandbox desktop for agents",
+      "summary": "VS Code extension that gives an AI a sandboxed Linux desktop with chat sidebar and live view.",
+      "audience": "Developers who want to watch an agent operate its own isolated desktop.",
+      "aiNativeAngle": "Creates a visible computer-use surface inside the editor rather than asking agents to operate the developer desktop directly.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; README evidence was strong, but GitHub contents response was incomplete in this audit.",
+      "runnability": "Metadata/README-only today; needs root-file and extension runtime validation.",
+      "recommendedAction": "Audit package files and sandbox isolation next run before promoting.",
+      "skipReason": null
+    },
+    {
       "fullName": "jacob-split/speak",
       "url": "https://github.com/jacob-split/speak",
       "firstSeenDate": "2026-09-08",
@@ -10354,6 +10594,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "NitrusAphalion/tessra",
+      "url": "https://github.com/NitrusAphalion/tessra",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agent-era version control with claims and evidence",
+      "summary": "Rust version-control system aiming to record why code changed and what is known true about a result.",
+      "audience": "Agent-heavy teams needing provenance and confidence evidence beyond normal git diffs.",
+      "aiNativeAngle": "Builds agent evidence, claims, and MCP hints into a VCS-shaped workflow.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, crates, docs, spec, changelog, .mcp.json, developing guide, and CI files.",
+      "runnability": "Medium from Rust workspace and docs; interoperability with git and practical workflow were not tested.",
+      "recommendedAction": "Track for evidence/provenance concepts and test only in a throwaway repo.",
       "skipReason": null
     },
     {
@@ -11041,6 +11300,25 @@
       "skipReason": null
     },
     {
+      "fullName": "IsLand1314/Drift",
+      "url": "https://github.com/IsLand1314/Drift",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local read-only coding-agent runtime",
+      "summary": "Go runtime for local repository understanding with streaming model interaction, limited read_file calls, context budgets, memory, permissions, and TUI/web ambitions.",
+      "audience": "Developers wanting a transparent small coding agent that starts with read-only repository understanding.",
+      "aiNativeAngle": "Interesting because it states hard read limits and no write/execute abilities in the current milestone.",
+      "growthSignal": "Created and pushed 2026-09-11; root audit found cmd, internal, docs, spec, go.mod, and milestone-focused Chinese README.",
+      "runnability": "Medium-low today because current milestone is read-only and early; no model request was run.",
+      "recommendedAction": "Revisit when write/verify loop, MCP loading, or TUI/web surface ships.",
+      "skipReason": null
+    },
+    {
       "fullName": "PDFMathTranslate/PDFMathTranslate",
       "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
       "firstSeenDate": "2026-09-10",
@@ -11627,6 +11905,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "sblattj/agent-harness",
+      "url": "https://github.com/sblattj/agent-harness",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Coding-agent orchestration and observability harness",
+      "summary": "Headless orchestration layer for Claude Code, Codex CLI, OpenCode, Gemini, and Kiro with normalized events, token accounting, ATIF artifacts, and OpenTelemetry spans.",
+      "audience": "Researchers and platform builders comparing coding-agent runs and cost traces.",
+      "aiNativeAngle": "Treats agent CLI sessions as observable runs with normalized telemetry rather than opaque terminal logs.",
+      "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found src, docs, examples, tests, trials, TypeScript config, package files, and README work-in-progress warning.",
+      "runnability": "Medium from tests/docs, downgraded for explicit WIP status; no agent adapter was run.",
+      "recommendedAction": "Watch for stable adapters and sample trajectories before adoption.",
       "skipReason": null
     },
     {
@@ -12504,6 +12801,25 @@
       "skipReason": null
     },
     {
+      "fullName": "take365/VideoEditingAgents",
+      "url": "https://github.com/take365/VideoEditingAgents",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 73,
+      "latestScore": 73,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Local video-production workspace for AI agents",
+      "summary": "Japanese local template for using Codex-style agents to create image, narration, and subtitle videos with samples and review HTML.",
+      "audience": "Creators who want an agent-readable local video production workspace.",
+      "aiNativeAngle": "Packages samples, scripts, templates, webapp, review HTML, and release assets around agent-operated video creation.",
+      "growthSignal": "Created 2026-09-09 and pushed 2026-09-11; root audit found docs, scripts, templates, sample sources, samples, webapp, workspaces, and requirements files.",
+      "runnability": "Medium from sample/release evidence; no generation pipeline was executed.",
+      "recommendedAction": "Compare with demomotion for artifact review and local dependency burden.",
+      "skipReason": null
+    },
+    {
       "fullName": "pigeonlabsHQ/pigeon",
       "url": "https://github.com/pigeonlabsHQ/pigeon",
       "firstSeenDate": "2026-09-08",
@@ -13147,6 +13463,25 @@
       "growthSignal": "RAG/GraphRAG 方向仍有社区热度。",
       "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
       "recommendedAction": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。",
+      "skipReason": null
+    },
+    {
+      "fullName": "yangxijia111/rh-agent-bridge",
+      "url": "https://github.com/yangxijia111/rh-agent-bridge",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": 72,
+      "latestScore": 72,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "RunningHub and ComfyUI agent bridge",
+      "summary": "TypeScript MCP plus CLI bridge for RunningHub/ComfyUI workflows with API-first and browser-fallback operation.",
+      "audience": "AI image/video workflow users who need agents to trigger and monitor ComfyUI-like tasks.",
+      "aiNativeAngle": "Makes creative workflow execution addressable through both MCP and CLI while retaining browser fallback.",
+      "growthSignal": "Created and pushed 2026-09-11; root audit found examples, src, tests, package files, Vitest config, env example, and bilingual README.",
+      "runnability": "Medium from tests/examples; external service credentials and browser fallback were not tested.",
+      "recommendedAction": "Keep as a creative-agent bridge candidate for a future ComfyUI automation trial.",
       "skipReason": null
     },
     {
@@ -16473,6 +16808,196 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "Adot442/AI_Swarm",
+      "url": "https://github.com/Adot442/AI_Swarm",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Low-level swarm project description is broad and early; no clear user-facing workflow was audited."
+    },
+    {
+      "fullName": "agenticflow-tech/omnisearch_agent",
+      "url": "https://github.com/agenticflow-tech/omnisearch_agent",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Streamlit live-search agent is product-shaped but thin, with only app.py and requirements; keep below richer agent workflow products."
+    },
+    {
+      "fullName": "Bredcool/agentic-repository-debugger",
+      "url": "https://github.com/Bredcool/agentic-repository-debugger",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Benchmark/evaluation repo for repository-level debugging agents, valuable for testing but outside product-shaped radar criteria."
+    },
+    {
+      "fullName": "ddekadt/cornell-agentic-ai",
+      "url": "https://github.com/ddekadt/cornell-agentic-ai",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Workshop/education material for agentic AI, not a standalone runnable product."
+    },
+    {
+      "fullName": "gfam-git/orca",
+      "url": "https://github.com/gfam-git/orca",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Interesting OpenAPI-as-remote-CLI protocol sketch, but root audit found only AGENTS.md and README.md, so it lacks runnable product evidence."
+    },
+    {
+      "fullName": "LZR-S/Flying-Agent",
+      "url": "https://github.com/LZR-S/Flying-Agent",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "README says code is coming soon; physical drone-agent idea is intriguing, but no runnable code surface was present today."
+    },
+    {
+      "fullName": "OneHaydenZhang/ManekiAI-Celo",
+      "url": "https://github.com/OneHaydenZhang/ManekiAI-Celo",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Autonomous trading and on-chain payment scope is high-risk; needs strong safety, custody, and compliance review before product promotion."
+    },
+    {
+      "fullName": "runapi-ai/gpt-image-2.5",
+      "url": "https://github.com/runapi-ai/gpt-image-2.5",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Skill/provider wrapper for image generation agents, likely useful but too provider-wrapper-shaped for Top without deeper trust and runtime audit."
+    },
+    {
+      "fullName": "Twancity/-AI-Product-Builder-Portfolio",
+      "url": "https://github.com/Twancity/-AI-Product-Builder-Portfolio",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Portfolio repository rather than a reusable product surface."
+    },
+    {
+      "fullName": "zzkai098/cici",
+      "url": "https://github.com/zzkai098/cici",
+      "firstSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-11",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Small transparent coding agent is useful as an educational baseline, but not enough differentiated product surface for today's Top list."
     },
     {
       "fullName": "affaan-m/ECC",
@@ -24823,6 +25348,40 @@
         }
       }
     ],
+    "viminizer/remux": [
+      {
+        "id": "viminizer-remux:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "viminizer/remux",
+        "url": "https://github.com/viminizer/remux",
+        "category": "Mobile supervision for coding-agent sessions",
+        "score": 90,
+        "summary": "One Go binary with embedded Tailscale and a React PWA for supervising Mac tmux sessions and coding agents from a phone.",
+        "audience": "Developers running long Claude Code, Codex, or terminal-agent sessions who need to read progress and answer questions away from the laptop.",
+        "aiNativeAngle": "Turns the human approval and instruction loop into a phone-first control surface over live coding-agent work, with session visibility rather than blind background automation.",
+        "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found AGENTS.md, CLAUDE.md, Go sources, install.go, preflight.go, docs, scripts, and embedded web UI assets.",
+        "runnability": "High from single-binary Go structure, install/preflight files, docs, and web UI folder; no tmux/Tailscale/phone session was launched.",
+        "recommendedAction": "Prototype on a disposable tmux project and verify approval latency, network exposure, and recovery when the phone disconnects.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "viminizer/remux",
+          "url": "https://github.com/viminizer/remux",
+          "category": "Mobile supervision for coding-agent sessions",
+          "score": 90,
+          "summary": "One Go binary with embedded Tailscale and a React PWA for supervising Mac tmux sessions and coding agents from a phone.",
+          "audience": "Developers running long Claude Code, Codex, or terminal-agent sessions who need to read progress and answer questions away from the laptop.",
+          "ai_native_angle": "Turns the human approval and instruction loop into a phone-first control surface over live coding-agent work, with session visibility rather than blind background automation.",
+          "growth_signal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found AGENTS.md, CLAUDE.md, Go sources, install.go, preflight.go, docs, scripts, and embedded web UI assets.",
+          "runnability": "High from single-binary Go structure, install/preflight files, docs, and web UI folder; no tmux/Tailscale/phone session was launched.",
+          "recommended_action": "Prototype on a disposable tmux project and verify approval latency, network exposure, and recovery when the phone disconnects."
+        }
+      }
+    ],
     "headroomlabs-ai/headroom": [
       {
         "id": "headroomlabs-ai-headroom:2026-09-10T11:18:00+08:00:skip:0",
@@ -26468,6 +27027,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "Drop-to-run/drop2run-cli": [
+      {
+        "id": "Drop-to-run-drop2run-cli:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "Drop-to-run/drop2run-cli",
+        "url": "https://github.com/Drop-to-run/drop2run-cli",
+        "category": "Agent output publishing CLI and MCP server",
+        "score": 88,
+        "summary": "CLI and MCP packages for publishing static sites or agent outputs to HTTPS links without git or build configuration.",
+        "audience": "Agent builders and product teams who need quick shareable artifacts from local agent runs.",
+        "aiNativeAngle": "Makes publication a direct tool call or CLI action inside an agent loop, compressing the handoff from generated folder to reviewable public URL.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found packages, SECURITY.md, glama metadata, README install notes, and MCP listing badges.",
+        "runnability": "Medium-high from package workspace and documented CLI/MCP shape; credentials and hosted publishing were not exercised.",
+        "recommendedAction": "Use for a small static artifact only after reviewing token storage, account permissions, and deletion controls.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "Drop-to-run/drop2run-cli",
+          "url": "https://github.com/Drop-to-run/drop2run-cli",
+          "category": "Agent output publishing CLI and MCP server",
+          "score": 88,
+          "summary": "CLI and MCP packages for publishing static sites or agent outputs to HTTPS links without git or build configuration.",
+          "audience": "Agent builders and product teams who need quick shareable artifacts from local agent runs.",
+          "ai_native_angle": "Makes publication a direct tool call or CLI action inside an agent loop, compressing the handoff from generated folder to reviewable public URL.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found packages, SECURITY.md, glama metadata, README install notes, and MCP listing badges.",
+          "runnability": "Medium-high from package workspace and documented CLI/MCP shape; credentials and hosted publishing were not exercised.",
+          "recommended_action": "Use for a small static artifact only after reviewing token storage, account permissions, and deletion controls."
         }
       }
     ],
@@ -28584,6 +29177,40 @@
         }
       }
     ],
+    "bohanyt/github-but-fast": [
+      {
+        "id": "bohanyt-github-but-fast:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "bohanyt/github-but-fast",
+        "url": "https://github.com/bohanyt/github-but-fast",
+        "category": "Read-only GitHub Code Mode MCP gateway",
+        "score": 87,
+        "summary": "Token-efficient remote MCP gateway that lets an agent query GitHub REST endpoints through compact sandboxed JavaScript programs.",
+        "audience": "Agents that spend too many tool calls inspecting GitHub issues, PRs, commits, files, and repo metadata.",
+        "aiNativeAngle": "Reframes GitHub exploration as read-only code execution over fresh API data, reducing context and round trips for MCP-capable agents.",
+        "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Cloudflare wrangler config, src, tests, docs, scripts, package files, env examples, and explicit read-only positioning.",
+        "runnability": "Medium-high from TypeScript package, tests, docs, and deploy config; Cloudflare runtime and auth scopes were not tested.",
+        "recommendedAction": "Compare against direct GitHub API reads on one PR review and measure whether compact results preserve enough evidence.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "bohanyt/github-but-fast",
+          "url": "https://github.com/bohanyt/github-but-fast",
+          "category": "Read-only GitHub Code Mode MCP gateway",
+          "score": 87,
+          "summary": "Token-efficient remote MCP gateway that lets an agent query GitHub REST endpoints through compact sandboxed JavaScript programs.",
+          "audience": "Agents that spend too many tool calls inspecting GitHub issues, PRs, commits, files, and repo metadata.",
+          "ai_native_angle": "Reframes GitHub exploration as read-only code execution over fresh API data, reducing context and round trips for MCP-capable agents.",
+          "growth_signal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Cloudflare wrangler config, src, tests, docs, scripts, package files, env examples, and explicit read-only positioning.",
+          "runnability": "Medium-high from TypeScript package, tests, docs, and deploy config; Cloudflare runtime and auth scopes were not tested.",
+          "recommended_action": "Compare against direct GitHub API reads on one PR review and measure whether compact results preserve enough evidence."
+        }
+      }
+    ],
     "HKUDS/nanobot": [
       {
         "id": "HKUDS-nanobot:2026-09-10T11:18:00+08:00:top:0",
@@ -29627,6 +30254,40 @@
           "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
           "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
           "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+        }
+      }
+    ],
+    "adarshcod30/AGENTIQ": [
+      {
+        "id": "adarshcod30-AGENTIQ:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "adarshcod30/AGENTIQ",
+        "url": "https://github.com/adarshcod30/AGENTIQ",
+        "category": "Permission-gated API testing and security validation",
+        "score": 86,
+        "summary": "Agentic API testing and security validation layer where agents act through audited, permission-gated, SSRF-guarded MCP tools.",
+        "audience": "Teams that want AI-assisted API probing while keeping network, SSRF, and mutation permissions explicit.",
+        "aiNativeAngle": "Places the agent behind a constrained tool layer, making security testing more governable than free-form agent HTTP access.",
+        "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Dockerfile, web UI, server, docs, evaluation, fixtures, package-lock, CI workflow, and environment examples.",
+        "runnability": "Medium-high from Docker/web/server/test fixtures; SSRF guard effectiveness and permission prompts were not tested.",
+        "recommendedAction": "Run only against a toy API first and inspect audit logs, default deny behavior, and mutation controls.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "adarshcod30/AGENTIQ",
+          "url": "https://github.com/adarshcod30/AGENTIQ",
+          "category": "Permission-gated API testing and security validation",
+          "score": 86,
+          "summary": "Agentic API testing and security validation layer where agents act through audited, permission-gated, SSRF-guarded MCP tools.",
+          "audience": "Teams that want AI-assisted API probing while keeping network, SSRF, and mutation permissions explicit.",
+          "ai_native_angle": "Places the agent behind a constrained tool layer, making security testing more governable than free-form agent HTTP access.",
+          "growth_signal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Dockerfile, web UI, server, docs, evaluation, fixtures, package-lock, CI workflow, and environment examples.",
+          "runnability": "Medium-high from Docker/web/server/test fixtures; SSRF guard effectiveness and permission prompts were not tested.",
+          "recommended_action": "Run only against a toy API first and inspect audit logs, default deny behavior, and mutation controls."
         }
       }
     ],
@@ -30986,6 +31647,40 @@
         }
       }
     ],
+    "lucasrosati/greenlight": [
+      {
+        "id": "lucasrosati-greenlight:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "lucasrosati/greenlight",
+        "url": "https://github.com/lucasrosati/greenlight",
+        "category": "Human-gated queue for headless Claude Code",
+        "score": 85,
+        "summary": "Serial task queue that runs headless Claude Code, opens PRs, waits for named CI gates, and requires a human before merge.",
+        "audience": "Developers who want background coding-agent throughput without losing ownership of merge decisions.",
+        "aiNativeAngle": "Turns multiple coding requests into an auditable queue with clean-base execution, PR detection, sha-bound CI gates, and human merge handoff.",
+        "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found greenlight.sh, lib, docs, examples, prompts, state, logs, and GitHub workflow files.",
+        "runnability": "Medium from shell-based implementation and examples; no GitHub PR or CI integration was run.",
+        "recommendedAction": "Trial in a throwaway repo and verify that failures stop the queue and preserve enough task state for review.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "lucasrosati/greenlight",
+          "url": "https://github.com/lucasrosati/greenlight",
+          "category": "Human-gated queue for headless Claude Code",
+          "score": 85,
+          "summary": "Serial task queue that runs headless Claude Code, opens PRs, waits for named CI gates, and requires a human before merge.",
+          "audience": "Developers who want background coding-agent throughput without losing ownership of merge decisions.",
+          "ai_native_angle": "Turns multiple coding requests into an auditable queue with clean-base execution, PR detection, sha-bound CI gates, and human merge handoff.",
+          "growth_signal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found greenlight.sh, lib, docs, examples, prompts, state, logs, and GitHub workflow files.",
+          "runnability": "Medium from shell-based implementation and examples; no GitHub PR or CI integration was run.",
+          "recommended_action": "Trial in a throwaway repo and verify that failures stop the queue and preserve enough task state for review."
+        }
+      }
+    ],
     "vercel-labs/agent-browser": [
       {
         "id": "vercel-labs-agent-browser:2026-09-10T11:18:00+08:00:top:0",
@@ -31992,6 +32687,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "Watakumi/izuna": [
+      {
+        "id": "Watakumi-izuna:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "Watakumi/izuna",
+        "url": "https://github.com/Watakumi/izuna",
+        "category": "Forgejo-backed macOS GUI for Claude Code",
+        "score": 84,
+        "summary": "macOS Electron app that drives Claude Code headlessly and exposes conversation, tool calls, diffs, approvals, and Forgejo pull requests in a GUI.",
+        "audience": "People who self-host Forgejo and want agent work to land in a sandbox before upstream GitHub promotion.",
+        "aiNativeAngle": "Makes a local coding agent visible and reviewable through a desktop app plus Forgejo PR workflow, keeping approvals with a human.",
+        "growthSignal": "Created 2026-09-09 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Electron/Vite config, src, harness, templates, docs, tests, SECURITY.md, Forgejo/GitHub metadata, and pnpm workspace files.",
+        "runnability": "Medium-high from complete desktop project structure; macOS app, Forgejo integration, and Claude CLI control were not launched.",
+        "recommendedAction": "Watch closely as a self-hosted alternative to browser-only coding-agent control planes.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "Watakumi/izuna",
+          "url": "https://github.com/Watakumi/izuna",
+          "category": "Forgejo-backed macOS GUI for Claude Code",
+          "score": 84,
+          "summary": "macOS Electron app that drives Claude Code headlessly and exposes conversation, tool calls, diffs, approvals, and Forgejo pull requests in a GUI.",
+          "audience": "People who self-host Forgejo and want agent work to land in a sandbox before upstream GitHub promotion.",
+          "ai_native_angle": "Makes a local coding agent visible and reviewable through a desktop app plus Forgejo PR workflow, keeping approvals with a human.",
+          "growth_signal": "Created 2026-09-09 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Electron/Vite config, src, harness, templates, docs, tests, SECURITY.md, Forgejo/GitHub metadata, and pnpm workspace files.",
+          "runnability": "Medium-high from complete desktop project structure; macOS app, Forgejo integration, and Claude CLI control were not launched.",
+          "recommended_action": "Watch closely as a self-hosted alternative to browser-only coding-agent control planes."
         }
       }
     ],
@@ -34036,6 +34765,40 @@
         }
       }
     ],
+    "Mouseww/veil": [
+      {
+        "id": "Mouseww-veil:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "Mouseww/veil",
+        "url": "https://github.com/Mouseww/veil",
+        "category": "Local secret-redaction proxy for coding agents",
+        "score": 83,
+        "summary": "Rust local proxy and UI that redacts secrets before requests reach Claude, Codex, Trae, and other coding agents.",
+        "audience": "Developers who paste logs, env files, customer examples, or connection strings into model-backed coding workflows.",
+        "aiNativeAngle": "Moves data-loss prevention into the local agent path so the model receives placeholders while the machine keeps the original secret mapping.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found Cargo workspace, crates, plugin, UI, docs, scripts, release notes, bilingual README, and no-telemetry positioning.",
+        "runnability": "Medium-high from Rust workspace and release/download docs; redaction coverage, bypass risks, and proxy compatibility were not tested.",
+        "recommendedAction": "Evaluate with synthetic secrets and confirm reversible mapping, logs, and failure behavior before using with real credentials.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "Mouseww/veil",
+          "url": "https://github.com/Mouseww/veil",
+          "category": "Local secret-redaction proxy for coding agents",
+          "score": 83,
+          "summary": "Rust local proxy and UI that redacts secrets before requests reach Claude, Codex, Trae, and other coding agents.",
+          "audience": "Developers who paste logs, env files, customer examples, or connection strings into model-backed coding workflows.",
+          "ai_native_angle": "Moves data-loss prevention into the local agent path so the model receives placeholders while the machine keeps the original secret mapping.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 1 star. Root audit found Cargo workspace, crates, plugin, UI, docs, scripts, release notes, bilingual README, and no-telemetry positioning.",
+          "runnability": "Medium-high from Rust workspace and release/download docs; redaction coverage, bypass risks, and proxy compatibility were not tested.",
+          "recommended_action": "Evaluate with synthetic secrets and confirm reversible mapping, logs, and failure behavior before using with real credentials."
+        }
+      }
+    ],
     "CherryHQ/cherry-studio": [
       {
         "id": "CherryHQ-cherry-studio:2026-09-10T11:18:00+08:00:watchlist:0",
@@ -35436,6 +36199,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "flavioduque/demomotion": [
+      {
+        "id": "flavioduque-demomotion:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "flavioduque/demomotion",
+        "url": "https://github.com/flavioduque/demomotion",
+        "category": "MCP product-demo video recorder",
+        "score": 82,
+        "summary": "Agent-first product demo video pipeline where an agent operates a web app, records deterministically, and renders a polished MP4.",
+        "audience": "Product teams and developer advocates who need repeatable demo videos from live web apps.",
+        "aiNativeAngle": "Combines browser operation, recording, rendering, docs, fixtures, skills, and packages into an agent-addressable demo production loop.",
+        "growthSignal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found apps, packages, skills, docs, fixtures, scripts, release checklist, security docs, and pnpm workspace files.",
+        "runnability": "Medium from package/workspace evidence; no browser recording or MP4 render was run locally.",
+        "recommendedAction": "Try a tiny static app demo and compare deterministic replay quality against manual screen capture.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "flavioduque/demomotion",
+          "url": "https://github.com/flavioduque/demomotion",
+          "category": "MCP product-demo video recorder",
+          "score": 82,
+          "summary": "Agent-first product demo video pipeline where an agent operates a web app, records deterministically, and renders a polished MP4.",
+          "audience": "Product teams and developer advocates who need repeatable demo videos from live web apps.",
+          "ai_native_angle": "Combines browser operation, recording, rendering, docs, fixtures, skills, and packages into an agent-addressable demo production loop.",
+          "growth_signal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found apps, packages, skills, docs, fixtures, scripts, release checklist, security docs, and pnpm workspace files.",
+          "runnability": "Medium from package/workspace evidence; no browser recording or MP4 render was run locally.",
+          "recommended_action": "Try a tiny static app demo and compare deterministic replay quality against manual screen capture."
         }
       }
     ],
@@ -37214,6 +38011,40 @@
         }
       }
     ],
+    "xirichuyi/boss-job-agent": [
+      {
+        "id": "xirichuyi-boss-job-agent:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "xirichuyi/boss-job-agent",
+        "url": "https://github.com/xirichuyi/boss-job-agent",
+        "category": "Self-hosted job-search agent with visible browser receipts",
+        "score": 81,
+        "summary": "Codex CLI and visible Chromium based personal job-search assistant for reading jobs, tailoring messages, and handling HR conversations with durable receipts.",
+        "audience": "Job seekers comfortable self-hosting a platform-sensitive automation workflow and keeping manual control over risky actions.",
+        "aiNativeAngle": "Shows a vertical agent with config, visible browser automation, receipts, default no-send behavior, and explicit platform-boundary disclaimers.",
+        "growthSignal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 22 stars and 2 forks. Root audit found architecture/security docs, config, deploy, examples, prompts, scripts, tests, TypeScript sources, and setup instructions.",
+        "runnability": "Medium from docs/tests and visible-browser design; platform login, captcha handling, messaging, and terms compliance were not tested.",
+        "recommendedAction": "Study its receipt and human-gate model, but do not connect a real job account before reviewing platform rules.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "xirichuyi/boss-job-agent",
+          "url": "https://github.com/xirichuyi/boss-job-agent",
+          "category": "Self-hosted job-search agent with visible browser receipts",
+          "score": 81,
+          "summary": "Codex CLI and visible Chromium based personal job-search assistant for reading jobs, tailoring messages, and handling HR conversations with durable receipts.",
+          "audience": "Job seekers comfortable self-hosting a platform-sensitive automation workflow and keeping manual control over risky actions.",
+          "ai_native_angle": "Shows a vertical agent with config, visible browser automation, receipts, default no-send behavior, and explicit platform-boundary disclaimers.",
+          "growth_signal": "Created 2026-09-08 and pushed 2026-09-11; GitHub API showed 22 stars and 2 forks. Root audit found architecture/security docs, config, deploy, examples, prompts, scripts, tests, TypeScript sources, and setup instructions.",
+          "runnability": "Medium from docs/tests and visible-browser design; platform login, captcha handling, messaging, and terms compliance were not tested.",
+          "recommended_action": "Study its receipt and human-gate model, but do not connect a real job account before reviewing platform rules."
+        }
+      }
+    ],
     "ToolJet/ToolJet": [
       {
         "id": "ToolJet-ToolJet:2026-09-10T11:18:00+08:00:top:0",
@@ -38225,6 +39056,40 @@
           "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
           "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
           "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+        }
+      }
+    ],
+    "Roy-Wanyoike/Orvexa": [
+      {
+        "id": "Roy-Wanyoike-Orvexa:2026-09-11T14:27:51+08:00:top:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "Roy-Wanyoike/Orvexa",
+        "url": "https://github.com/Roy-Wanyoike/Orvexa",
+        "category": "AI-native contact center OS",
+        "score": 80,
+        "summary": "Event-driven Go contact-center platform with interaction, intelligence, execution, and control planes for channels, AI agents, routing, workflows, tool gateway, and analytics.",
+        "audience": "Teams exploring self-hosted customer-support infrastructure where human and AI agents share routing and workflow state.",
+        "aiNativeAngle": "Treats customer conversations, memory, routing, tool use, and analytics as one agent-aware operating layer rather than a chatbot bolt-on.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found cmd, api, internal, pkg, migrations, docs, tests, QA, Makefile, Docker compose, and env examples.",
+        "runnability": "Medium-high from Go service structure, migrations, tests, and Docker dev file; channel integrations and LLM adapters were not run.",
+        "recommendedAction": "Keep on watch as an infrastructure candidate and test locally only with fake channels and synthetic conversations.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "Roy-Wanyoike/Orvexa",
+          "url": "https://github.com/Roy-Wanyoike/Orvexa",
+          "category": "AI-native contact center OS",
+          "score": 80,
+          "summary": "Event-driven Go contact-center platform with interaction, intelligence, execution, and control planes for channels, AI agents, routing, workflows, tool gateway, and analytics.",
+          "audience": "Teams exploring self-hosted customer-support infrastructure where human and AI agents share routing and workflow state.",
+          "ai_native_angle": "Treats customer conversations, memory, routing, tool use, and analytics as one agent-aware operating layer rather than a chatbot bolt-on.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found cmd, api, internal, pkg, migrations, docs, tests, QA, Makefile, Docker compose, and env examples.",
+          "runnability": "Medium-high from Go service structure, migrations, tests, and Docker dev file; channel integrations and LLM adapters were not run.",
+          "recommended_action": "Keep on watch as an infrastructure candidate and test locally only with fake channels and synthetic conversations."
         }
       }
     ],
@@ -40703,6 +41568,39 @@
         }
       }
     ],
+    "handyutils/sctxx": [
+      {
+        "id": "handyutils-sctxx:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "handyutils/sctxx",
+        "url": "https://github.com/handyutils/sctxx",
+        "category": "Cross-agent session context extractor",
+        "score": 78,
+        "summary": "Rust CLI and skill wrapper that turns coding-agent transcripts from Claude Code, Codex CLI, or Pi into compact provenance-linked handoff artifacts.",
+        "audience": "Teams moving work across agent hosts or recovering from context limits.",
+        "aiNativeAngle": "Makes handoff artifacts an explicit product object with schemas, docs, npm package hints, tests, and website docs.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, schemas, prompts, skill, specs, docs, tests, website, npm folder, and release metadata.",
+        "runnability": "Medium-high from CLI/library evidence; transcript parsers and provenance links were not exercised.",
+        "recommendedAction": "Test against one completed Codex transcript and compare factual recall with current automation memory.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "handyutils/sctxx",
+          "url": "https://github.com/handyutils/sctxx",
+          "category": "Cross-agent session context extractor",
+          "score": 78,
+          "summary": "Rust CLI and skill wrapper that turns coding-agent transcripts from Claude Code, Codex CLI, or Pi into compact provenance-linked handoff artifacts.",
+          "audience": "Teams moving work across agent hosts or recovering from context limits.",
+          "ai_native_angle": "Makes handoff artifacts an explicit product object with schemas, docs, npm package hints, tests, and website docs.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, schemas, prompts, skill, specs, docs, tests, website, npm folder, and release metadata.",
+          "runnability": "Medium-high from CLI/library evidence; transcript parsers and provenance links were not exercised.",
+          "recommended_action": "Test against one completed Codex transcript and compare factual recall with current automation memory."
+        }
+      }
+    ],
     "addyosmani/agent-skills": [
       {
         "id": "addyosmani-agent-skills:2026-09-09T19:53:08+08:00:skip:0",
@@ -42351,6 +43249,39 @@
         }
       }
     ],
+    "0x11c11e/deskfish": [
+      {
+        "id": "0x11c11e-deskfish:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "0x11c11e/deskfish",
+        "url": "https://github.com/0x11c11e/deskfish",
+        "category": "VS Code sandbox desktop for agents",
+        "score": 77,
+        "summary": "VS Code extension that gives an AI a sandboxed Linux desktop with chat sidebar and live view.",
+        "audience": "Developers who want to watch an agent operate its own isolated desktop.",
+        "aiNativeAngle": "Creates a visible computer-use surface inside the editor rather than asking agents to operate the developer desktop directly.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; README evidence was strong, but GitHub contents response was incomplete in this audit.",
+        "runnability": "Metadata/README-only today; needs root-file and extension runtime validation.",
+        "recommendedAction": "Audit package files and sandbox isolation next run before promoting.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "0x11c11e/deskfish",
+          "url": "https://github.com/0x11c11e/deskfish",
+          "category": "VS Code sandbox desktop for agents",
+          "score": 77,
+          "summary": "VS Code extension that gives an AI a sandboxed Linux desktop with chat sidebar and live view.",
+          "audience": "Developers who want to watch an agent operate its own isolated desktop.",
+          "ai_native_angle": "Creates a visible computer-use surface inside the editor rather than asking agents to operate the developer desktop directly.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; README evidence was strong, but GitHub contents response was incomplete in this audit.",
+          "runnability": "Metadata/README-only today; needs root-file and extension runtime validation.",
+          "recommended_action": "Audit package files and sandbox isolation next run before promoting."
+        }
+      }
+    ],
     "jacob-split/speak": [
       {
         "id": "jacob-split-speak:2026-09-08T14:22:00+08:00:watchlist:0",
@@ -43360,6 +44291,39 @@
           "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
           "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
           "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+        }
+      }
+    ],
+    "NitrusAphalion/tessra": [
+      {
+        "id": "NitrusAphalion-tessra:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "NitrusAphalion/tessra",
+        "url": "https://github.com/NitrusAphalion/tessra",
+        "category": "Agent-era version control with claims and evidence",
+        "score": 76,
+        "summary": "Rust version-control system aiming to record why code changed and what is known true about a result.",
+        "audience": "Agent-heavy teams needing provenance and confidence evidence beyond normal git diffs.",
+        "aiNativeAngle": "Builds agent evidence, claims, and MCP hints into a VCS-shaped workflow.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, crates, docs, spec, changelog, .mcp.json, developing guide, and CI files.",
+        "runnability": "Medium from Rust workspace and docs; interoperability with git and practical workflow were not tested.",
+        "recommendedAction": "Track for evidence/provenance concepts and test only in a throwaway repo.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "NitrusAphalion/tessra",
+          "url": "https://github.com/NitrusAphalion/tessra",
+          "category": "Agent-era version control with claims and evidence",
+          "score": 76,
+          "summary": "Rust version-control system aiming to record why code changed and what is known true about a result.",
+          "audience": "Agent-heavy teams needing provenance and confidence evidence beyond normal git diffs.",
+          "ai_native_angle": "Builds agent evidence, claims, and MCP hints into a VCS-shaped workflow.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; root audit found Cargo workspace, crates, docs, spec, changelog, .mcp.json, developing guide, and CI files.",
+          "runnability": "Medium from Rust workspace and docs; interoperability with git and practical workflow were not tested.",
+          "recommended_action": "Track for evidence/provenance concepts and test only in a throwaway repo."
         }
       }
     ],
@@ -44673,6 +45637,39 @@
         }
       }
     ],
+    "IsLand1314/Drift": [
+      {
+        "id": "IsLand1314-Drift:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "IsLand1314/Drift",
+        "url": "https://github.com/IsLand1314/Drift",
+        "category": "Local read-only coding-agent runtime",
+        "score": 75,
+        "summary": "Go runtime for local repository understanding with streaming model interaction, limited read_file calls, context budgets, memory, permissions, and TUI/web ambitions.",
+        "audience": "Developers wanting a transparent small coding agent that starts with read-only repository understanding.",
+        "aiNativeAngle": "Interesting because it states hard read limits and no write/execute abilities in the current milestone.",
+        "growthSignal": "Created and pushed 2026-09-11; root audit found cmd, internal, docs, spec, go.mod, and milestone-focused Chinese README.",
+        "runnability": "Medium-low today because current milestone is read-only and early; no model request was run.",
+        "recommendedAction": "Revisit when write/verify loop, MCP loading, or TUI/web surface ships.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "IsLand1314/Drift",
+          "url": "https://github.com/IsLand1314/Drift",
+          "category": "Local read-only coding-agent runtime",
+          "score": 75,
+          "summary": "Go runtime for local repository understanding with streaming model interaction, limited read_file calls, context budgets, memory, permissions, and TUI/web ambitions.",
+          "audience": "Developers wanting a transparent small coding agent that starts with read-only repository understanding.",
+          "ai_native_angle": "Interesting because it states hard read limits and no write/execute abilities in the current milestone.",
+          "growth_signal": "Created and pushed 2026-09-11; root audit found cmd, internal, docs, spec, go.mod, and milestone-focused Chinese README.",
+          "runnability": "Medium-low today because current milestone is read-only and early; no model request was run.",
+          "recommended_action": "Revisit when write/verify loop, MCP loading, or TUI/web surface ships."
+        }
+      }
+    ],
     "PDFMathTranslate/PDFMathTranslate": [
       {
         "id": "PDFMathTranslate-PDFMathTranslate:2026-09-10T11:18:00+08:00:watchlist:0",
@@ -45939,6 +46936,39 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "sblattj/agent-harness": [
+      {
+        "id": "sblattj-agent-harness:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "sblattj/agent-harness",
+        "url": "https://github.com/sblattj/agent-harness",
+        "category": "Coding-agent orchestration and observability harness",
+        "score": 74,
+        "summary": "Headless orchestration layer for Claude Code, Codex CLI, OpenCode, Gemini, and Kiro with normalized events, token accounting, ATIF artifacts, and OpenTelemetry spans.",
+        "audience": "Researchers and platform builders comparing coding-agent runs and cost traces.",
+        "aiNativeAngle": "Treats agent CLI sessions as observable runs with normalized telemetry rather than opaque terminal logs.",
+        "growthSignal": "Created 2026-09-10 and pushed 2026-09-11; root audit found src, docs, examples, tests, trials, TypeScript config, package files, and README work-in-progress warning.",
+        "runnability": "Medium from tests/docs, downgraded for explicit WIP status; no agent adapter was run.",
+        "recommendedAction": "Watch for stable adapters and sample trajectories before adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "sblattj/agent-harness",
+          "url": "https://github.com/sblattj/agent-harness",
+          "category": "Coding-agent orchestration and observability harness",
+          "score": 74,
+          "summary": "Headless orchestration layer for Claude Code, Codex CLI, OpenCode, Gemini, and Kiro with normalized events, token accounting, ATIF artifacts, and OpenTelemetry spans.",
+          "audience": "Researchers and platform builders comparing coding-agent runs and cost traces.",
+          "ai_native_angle": "Treats agent CLI sessions as observable runs with normalized telemetry rather than opaque terminal logs.",
+          "growth_signal": "Created 2026-09-10 and pushed 2026-09-11; root audit found src, docs, examples, tests, trials, TypeScript config, package files, and README work-in-progress warning.",
+          "runnability": "Medium from tests/docs, downgraded for explicit WIP status; no agent adapter was run.",
+          "recommended_action": "Watch for stable adapters and sample trajectories before adoption."
         }
       }
     ],
@@ -47659,6 +48689,39 @@
         }
       }
     ],
+    "take365/VideoEditingAgents": [
+      {
+        "id": "take365-VideoEditingAgents:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "take365/VideoEditingAgents",
+        "url": "https://github.com/take365/VideoEditingAgents",
+        "category": "Local video-production workspace for AI agents",
+        "score": 73,
+        "summary": "Japanese local template for using Codex-style agents to create image, narration, and subtitle videos with samples and review HTML.",
+        "audience": "Creators who want an agent-readable local video production workspace.",
+        "aiNativeAngle": "Packages samples, scripts, templates, webapp, review HTML, and release assets around agent-operated video creation.",
+        "growthSignal": "Created 2026-09-09 and pushed 2026-09-11; root audit found docs, scripts, templates, sample sources, samples, webapp, workspaces, and requirements files.",
+        "runnability": "Medium from sample/release evidence; no generation pipeline was executed.",
+        "recommendedAction": "Compare with demomotion for artifact review and local dependency burden.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "take365/VideoEditingAgents",
+          "url": "https://github.com/take365/VideoEditingAgents",
+          "category": "Local video-production workspace for AI agents",
+          "score": 73,
+          "summary": "Japanese local template for using Codex-style agents to create image, narration, and subtitle videos with samples and review HTML.",
+          "audience": "Creators who want an agent-readable local video production workspace.",
+          "ai_native_angle": "Packages samples, scripts, templates, webapp, review HTML, and release assets around agent-operated video creation.",
+          "growth_signal": "Created 2026-09-09 and pushed 2026-09-11; root audit found docs, scripts, templates, sample sources, samples, webapp, workspaces, and requirements files.",
+          "runnability": "Medium from sample/release evidence; no generation pipeline was executed.",
+          "recommended_action": "Compare with demomotion for artifact review and local dependency burden."
+        }
+      }
+    ],
     "pigeonlabsHQ/pigeon": [
       {
         "id": "pigeonlabsHQ-pigeon:2026-09-08T14:22:00+08:00:watchlist:0",
@@ -48928,6 +49991,39 @@
           "growth_signal": "RAG/GraphRAG 方向仍有社区热度。",
           "runnability": "需要进一步核验 UI/API 服务与 demo 成熟度。",
           "recommended_action": "若文档解析/RAG 是主线，观察是否出现可运行 UI/API 服务。"
+        }
+      }
+    ],
+    "yangxijia111/rh-agent-bridge": [
+      {
+        "id": "yangxijia111-rh-agent-bridge:2026-09-11T14:27:51+08:00:watchlist:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "watchlist",
+        "rank": 7,
+        "fullName": "yangxijia111/rh-agent-bridge",
+        "url": "https://github.com/yangxijia111/rh-agent-bridge",
+        "category": "RunningHub and ComfyUI agent bridge",
+        "score": 72,
+        "summary": "TypeScript MCP plus CLI bridge for RunningHub/ComfyUI workflows with API-first and browser-fallback operation.",
+        "audience": "AI image/video workflow users who need agents to trigger and monitor ComfyUI-like tasks.",
+        "aiNativeAngle": "Makes creative workflow execution addressable through both MCP and CLI while retaining browser fallback.",
+        "growthSignal": "Created and pushed 2026-09-11; root audit found examples, src, tests, package files, Vitest config, env example, and bilingual README.",
+        "runnability": "Medium from tests/examples; external service credentials and browser fallback were not tested.",
+        "recommendedAction": "Keep as a creative-agent bridge candidate for a future ComfyUI automation trial.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "yangxijia111/rh-agent-bridge",
+          "url": "https://github.com/yangxijia111/rh-agent-bridge",
+          "category": "RunningHub and ComfyUI agent bridge",
+          "score": 72,
+          "summary": "TypeScript MCP plus CLI bridge for RunningHub/ComfyUI workflows with API-first and browser-fallback operation.",
+          "audience": "AI image/video workflow users who need agents to trigger and monitor ComfyUI-like tasks.",
+          "ai_native_angle": "Makes creative workflow execution addressable through both MCP and CLI while retaining browser fallback.",
+          "growth_signal": "Created and pushed 2026-09-11; root audit found examples, src, tests, package files, Vitest config, env example, and bilingual README.",
+          "runnability": "Medium from tests/examples; external service credentials and browser fallback were not tested.",
+          "recommended_action": "Keep as a creative-agent bridge candidate for a future ComfyUI automation trial."
         }
       }
     ],
@@ -55498,6 +56594,266 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "Adot442/AI_Swarm": [
+      {
+        "id": "Adot442-AI_Swarm:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Adot442/AI_Swarm",
+        "url": "https://github.com/Adot442/AI_Swarm",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Low-level swarm project description is broad and early; no clear user-facing workflow was audited.",
+        "rawJson": {
+          "full_name": "Adot442/AI_Swarm",
+          "url": "https://github.com/Adot442/AI_Swarm",
+          "skip_reason": "Low-level swarm project description is broad and early; no clear user-facing workflow was audited."
+        }
+      }
+    ],
+    "agenticflow-tech/omnisearch_agent": [
+      {
+        "id": "agenticflow-tech-omnisearch_agent:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "agenticflow-tech/omnisearch_agent",
+        "url": "https://github.com/agenticflow-tech/omnisearch_agent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Streamlit live-search agent is product-shaped but thin, with only app.py and requirements; keep below richer agent workflow products.",
+        "rawJson": {
+          "full_name": "agenticflow-tech/omnisearch_agent",
+          "url": "https://github.com/agenticflow-tech/omnisearch_agent",
+          "skip_reason": "Streamlit live-search agent is product-shaped but thin, with only app.py and requirements; keep below richer agent workflow products."
+        }
+      }
+    ],
+    "Bredcool/agentic-repository-debugger": [
+      {
+        "id": "Bredcool-agentic-repository-debugger:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Bredcool/agentic-repository-debugger",
+        "url": "https://github.com/Bredcool/agentic-repository-debugger",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Benchmark/evaluation repo for repository-level debugging agents, valuable for testing but outside product-shaped radar criteria.",
+        "rawJson": {
+          "full_name": "Bredcool/agentic-repository-debugger",
+          "url": "https://github.com/Bredcool/agentic-repository-debugger",
+          "skip_reason": "Benchmark/evaluation repo for repository-level debugging agents, valuable for testing but outside product-shaped radar criteria."
+        }
+      }
+    ],
+    "ddekadt/cornell-agentic-ai": [
+      {
+        "id": "ddekadt-cornell-agentic-ai:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "ddekadt/cornell-agentic-ai",
+        "url": "https://github.com/ddekadt/cornell-agentic-ai",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Workshop/education material for agentic AI, not a standalone runnable product.",
+        "rawJson": {
+          "full_name": "ddekadt/cornell-agentic-ai",
+          "url": "https://github.com/ddekadt/cornell-agentic-ai",
+          "skip_reason": "Workshop/education material for agentic AI, not a standalone runnable product."
+        }
+      }
+    ],
+    "gfam-git/orca": [
+      {
+        "id": "gfam-git-orca:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "gfam-git/orca",
+        "url": "https://github.com/gfam-git/orca",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Interesting OpenAPI-as-remote-CLI protocol sketch, but root audit found only AGENTS.md and README.md, so it lacks runnable product evidence.",
+        "rawJson": {
+          "full_name": "gfam-git/orca",
+          "url": "https://github.com/gfam-git/orca",
+          "skip_reason": "Interesting OpenAPI-as-remote-CLI protocol sketch, but root audit found only AGENTS.md and README.md, so it lacks runnable product evidence."
+        }
+      }
+    ],
+    "LZR-S/Flying-Agent": [
+      {
+        "id": "LZR-S-Flying-Agent:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "LZR-S/Flying-Agent",
+        "url": "https://github.com/LZR-S/Flying-Agent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "README says code is coming soon; physical drone-agent idea is intriguing, but no runnable code surface was present today.",
+        "rawJson": {
+          "full_name": "LZR-S/Flying-Agent",
+          "url": "https://github.com/LZR-S/Flying-Agent",
+          "skip_reason": "README says code is coming soon; physical drone-agent idea is intriguing, but no runnable code surface was present today."
+        }
+      }
+    ],
+    "OneHaydenZhang/ManekiAI-Celo": [
+      {
+        "id": "OneHaydenZhang-ManekiAI-Celo:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "OneHaydenZhang/ManekiAI-Celo",
+        "url": "https://github.com/OneHaydenZhang/ManekiAI-Celo",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Autonomous trading and on-chain payment scope is high-risk; needs strong safety, custody, and compliance review before product promotion.",
+        "rawJson": {
+          "full_name": "OneHaydenZhang/ManekiAI-Celo",
+          "url": "https://github.com/OneHaydenZhang/ManekiAI-Celo",
+          "skip_reason": "Autonomous trading and on-chain payment scope is high-risk; needs strong safety, custody, and compliance review before product promotion."
+        }
+      }
+    ],
+    "runapi-ai/gpt-image-2.5": [
+      {
+        "id": "runapi-ai-gpt-image-2.5:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "runapi-ai/gpt-image-2.5",
+        "url": "https://github.com/runapi-ai/gpt-image-2.5",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Skill/provider wrapper for image generation agents, likely useful but too provider-wrapper-shaped for Top without deeper trust and runtime audit.",
+        "rawJson": {
+          "full_name": "runapi-ai/gpt-image-2.5",
+          "url": "https://github.com/runapi-ai/gpt-image-2.5",
+          "skip_reason": "Skill/provider wrapper for image generation agents, likely useful but too provider-wrapper-shaped for Top without deeper trust and runtime audit."
+        }
+      }
+    ],
+    "Twancity/-AI-Product-Builder-Portfolio": [
+      {
+        "id": "Twancity--AI-Product-Builder-Portfolio:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Twancity/-AI-Product-Builder-Portfolio",
+        "url": "https://github.com/Twancity/-AI-Product-Builder-Portfolio",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Portfolio repository rather than a reusable product surface.",
+        "rawJson": {
+          "full_name": "Twancity/-AI-Product-Builder-Portfolio",
+          "url": "https://github.com/Twancity/-AI-Product-Builder-Portfolio",
+          "skip_reason": "Portfolio repository rather than a reusable product surface."
+        }
+      }
+    ],
+    "zzkai098/cici": [
+      {
+        "id": "zzkai098-cici:2026-09-11T14:27:51+08:00:skip:0",
+        "runId": "run:2026-09-11:2026-09-11T14:27:51+08:00",
+        "runDate": "2026-09-11",
+        "generatedAt": "2026-09-11T14:27:51+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "zzkai098/cici",
+        "url": "https://github.com/zzkai098/cici",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Small transparent coding agent is useful as an educational baseline, but not enough differentiated product surface for today's Top list.",
+        "rawJson": {
+          "full_name": "zzkai098/cici",
+          "url": "https://github.com/zzkai098/cici",
+          "skip_reason": "Small transparent coding agent is useful as an educational baseline, but not enough differentiated product surface for today's Top list."
         }
       }
     ],
