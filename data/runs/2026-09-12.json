@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-12",
+  "generated_at": "2026-09-12T10:26:46+08:00",
+  "data_window": "GitHub Search API queries for AI agent, LLM app, RAG, MCP server, browser agent, code agent, voice agent, AI workflow, automation agent, and copilot agent repositories created from 2026-09-09 through 2026-09-12. Raw search snapshots were saved under /tmp/radar_2026_09_12_api/; selected repository metadata, root-content, and README audits were saved under /tmp/radar_2026_09_12_readmes/.",
+  "source_summary": "Queried 10 GitHub Search API surfaces and deduplicated 285 repositories. Audited 33 shortlisted repositories with GitHub API repository metadata, root contents, and README excerpts. Selection prioritized runnable AI-native products with CLI, MCP, native app, browser, mobile, voice, workflow, or governance surfaces; thin prompt packs, code-coming-soon shells, platform-risk automation, benchmark-only repositories, and suspicious software-download listings were downgraded or skipped.",
+  "trend_observations": "Today is unusually strong for agent-control infrastructure. The best projects are not generic chatbots: they wrap agents in rollback, least-privilege, fail-closed, authority-resolution, browser-reality, real-document, Android-accessibility, or voice-diagnostic loops. MCP keeps spreading into niche personal data and creative workflows, while job-search and contractor voice agents are adding explicit human checkpoints. The weak side of the window is familiar: many repos use agent language for portfolios, educational exercises, trading/crypto workbenches, or safety-sensitive automation without enough consent and verification structure.",
+  "assumptions": "Scores are based on live GitHub Search API snapshots and selected GitHub API README/root audits saved under /tmp/radar_2026_09_12_api/ and /tmp/radar_2026_09_12_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, phone-tested, Office-tested, MCP-connected, credential-tested, provider-tested, security-tested, trading-tested, or deployed locally. Star and fork counts are raw GitHub API snapshots at collection time; because most projects are brand new, file structure, install path, tests/examples/docs, explicit human-control boundaries, and reversible operations weighed more than popularity. A few README fetches were retried after transient GitHub connection resets; missing runtime proof is reflected in runnability notes.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-09-12\n\n数据窗口：2026-09-09T00:00:00Z to 2026-09-12T02:26:46Z；GitHub Search API 查询 AI agent、LLM app、RAG、MCP server、browser agent、code agent、voice agent、AI workflow、automation agent、copilot agent 等主题，并对 33 个候选做 README/root audit。\n\n信息来源：Queried 10 GitHub Search API surfaces and deduplicated 285 repositories. Audited 33 shortlisted repositories with GitHub API repository metadata, root contents, and README excerpts. Selection prioritized runnable AI-native products with CLI, MCP, native app, browser, mobile, voice, workflow, or governance surfaces; thin prompt packs, code-coming-soon shells, platform-risk automation, benchmark-only repositories, and suspicious software-download listings were downgraded or skipped.\n\n关键假设：Scores are based on live GitHub Search API snapshots and selected GitHub API README/root audits saved under /tmp/radar_2026_09_12_api/ and /tmp/radar_2026_09_12_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, phone-tested, Office-tested, MCP-connected, credential-tested, provider-tested, security-tested, trading-tested, or deployed locally. Star and fork counts are raw GitHub API snapshots at collection time; because most projects are brand new, file structure, install path, tests/examples/docs, explicit human-control boundaries, and reversible operations weighed more than popularity. A few README fetches were retried after transient GitHub connection resets; missing runtime proof is reflected in runnability notes.\n\n## 今日趋势观察\n\nToday is unusually strong for agent-control infrastructure. The best projects are not generic chatbots: they wrap agents in rollback, least-privilege, fail-closed, authority-resolution, browser-reality, real-document, Android-accessibility, or voice-diagnostic loops. MCP keeps spreading into niche personal data and creative workflows, while job-search and contractor voice agents are adding explicit human checkpoints. The weak side of the window is familiar: many repos use agent language for portfolios, educational exercises, trading/crypto workbenches, or safety-sensitive automation without enough consent and verification structure.\n\n## Top Projects\n\n### 1. [FarazHayder/n8n-mcp-guard](https://github.com/FarazHayder/n8n-mcp-guard)\n- 分类：Rollback-verified MCP guard for n8n agents\n- AI Native Product Score：91\n- 做什么：MCP server that lets an agent create or change n8n workflows only after backup, version checks, and live readback verification.\n- 面向谁：Automation builders who want coding agents to edit n8n workflows without losing the ability to recover.\n- AI native 点：Places a reversible guardrail directly in the agent tool path, turning workflow mutation into a checked transaction instead of blind MCP write access.\n- 增长/活跃信号：Created and pushed 2026-09-12; GitHub API showed 2 stars. Root audit found package files, src, tests, CI, SECURITY.md, AGENTS.md, CLAUDE.md, and README setup notes.\n- 可运行性判断：High from TypeScript package, tests, npm badge, env example, and explicit MCP workflow; no n8n instance or MCP client was connected.\n- 建议动作：Trial against a disposable n8n instance and inspect backup restore, refusal paths, and readback mismatch behavior.\n\n### 2. [flashback7766/FlashAgent](https://github.com/flashback7766/FlashAgent)\n- 分类：Local-first Rust coding agent\n- AI Native Product Score：89\n- 做什么：Native Rust terminal coding agent for local models through LM Studio, Ollama, llama.cpp, and vLLM, with no Electron and no telemetry positioning.\n- 面向谁：Developers who want a lightweight local coding-agent loop using local or OpenAI-compatible model endpoints.\n- AI native 点：Moves the coding agent runtime into a small native binary with local tool calling, install scripts, architecture docs, packaging, and model-provider flexibility.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-12; GitHub API showed 1 star. Root audit found Cargo workspace, crates, docs, install scripts, packaging, CHANGELOG, SECURITY.md, and architecture/context docs.\n- 可运行性判断：High from Rust workspace and installer evidence; binary, local model connection, and tool execution were not run.\n- 建议动作：Test with a tiny repo and local Ollama model, then compare latency and edit reliability against heavier coding-agent CLIs.\n\n### 3. [ECD5A/Tkach-Security](https://github.com/ECD5A/Tkach-Security)\n- 分类：Fail-closed agent security boundary\n- AI Native Product Score：88\n- 做什么：Rust security boundary for AI agents with deterministic authorization, provenance-aware flow, bounded gateway, CLI, HTTP, and MCP adapters.\n- 面向谁：Teams experimenting with agent tool access who need deny-by-default authorization and auditable data-flow constraints.\n- AI native 点：Treats compromised model output as expected and puts policy, provenance, gateway limits, SDKs, fuzzing, and adapters around the agent.\n- 增长/活跃信号：Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 1 star. Root audit found Cargo workspace, Dockerfile, crates, SDK, examples, fuzz, tools, docs, SECURITY.md, and CI metadata.\n- 可运行性判断：Medium-high from Rust/Docker/project structure; authorization semantics and MCP/HTTP adapters were not exercised.\n- 建议动作：Keep high on the security watchlist and run only with synthetic secrets until fail-closed behavior is independently verified.\n\n### 4. [suhui-organization/pod](https://github.com/suhui-organization/pod)\n- 分类：Least-privilege compiler for agent tool use\n- AI Native Product Score：87\n- 做什么：Records real agent calls, compiles a least-privilege policy, enforces it, and keeps tamper-evident evidence.\n- 面向谁：Agent platform builders and security reviewers who want policy generated from observed behavior rather than hand-written guesswork.\n- AI native 点：Closes the loop from observation to policy to enforcement to proof, matching the way long-running agents accumulate real permissions over time.\n- 增长/活跃信号：Created 2026-09-09 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found apps, packages, cloud, deploy, docs, examples, PRODUCT.md, DESIGN.md, SECURITY.md, and CI.\n- 可运行性判断：Medium-high from TypeScript workspace and docs; no agent run was recorded or enforced locally.\n- 建议动作：Evaluate with a toy tool set and check whether compiled policies are understandable enough for human approval.\n\n### 5. [BHUVAN-RJ/Auto-Apply](https://github.com/BHUVAN-RJ/Auto-Apply)\n- 分类：Human-gated job application agent\n- AI Native Product Score：86\n- 做什么：Semi-autonomous pipeline that tailors a LaTeX resume to a posting, fills the application form, then stops before human submission.\n- 面向谁：Job seekers who want help with repetitive tailoring and form filling while retaining control of final submission.\n- AI native 点：Puts the agent inside a narrow, high-friction vertical workflow and makes the two risk points blocking human checkpoints.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found apply.py, pipeline.py, browser, capture, review, tailor, server, tests, tools, pyproject, env example, and README workflow detail.\n- 可运行性判断：Medium-high from Python project structure and tests; no live job board, browser form, or LaTeX compile was run.\n- 建议动作：Study the checkpoint model and receipt capture, but avoid real accounts until platform rules and data handling are reviewed.\n\n### 6. [damc-dev/canon](https://github.com/damc-dev/canon)\n- 分类：Authority layer for coding-agent decisions\n- AI Native Product Score：85\n- 做什么：Local authority resolver that composes human-owned Markdown into effective agent context and resolves which organizational decisions win.\n- 面向谁：Teams using Claude Code or similar coding agents across overlapping rules, docs, memories, and decision records.\n- AI native 点：Solves a real agent context failure mode: retrieval can find text, but agents need scoped authority, supersession, and decision provenance.\n- 增长/活跃信号：Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found Claude plugin files, MCP config, commands, server, skills, scripts, tests, pyproject, and README authority model.\n- 可运行性判断：Medium-high from package/server/test structure; only README/root evidence was audited, no Claude Code integration was installed.\n- 建议动作：Compare against this repo’s own memory/AGENTS hierarchy on a small conflicting-rule fixture.\n\n### 7. [ThatGuyAstro/reality-check](https://github.com/ThatGuyAstro/reality-check)\n- 分类：Browser-reality audit skill for coding agents\n- AI Native Product Score：84\n- 做什么：Agent skill that predicts a first-time user experience from code, opens a real browser, and marks expectation gaps sentence by sentence.\n- 面向谁：Developers using coding agents to build web apps and needing a repeatable UX verification pass.\n- AI native 点：Turns subjective browser QA into an agent-addressable evidence workflow with personas, fixtures, templates, scripts, and install path.\n- 增长/活跃信号：Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found SKILL.md, commands, docs, fixtures, grade.py, personas, references, templates, install.sh, and README.\n- 可运行性判断：Medium from skill/scripts structure; no browser session was launched and no app was graded.\n- 建议动作：Run against a tiny Vite app and compare its browser findings with Playwright screenshot checks.\n\n### 8. [H-Mon/docuhand](https://github.com/H-Mon/docuhand)\n- 分类：Real Word/WPS document-control MCP\n- AI Native Product Score：83\n- 做什么：MCP server that drives Microsoft Word and WPS through Windows COM for legacy docs, open files, and print-fidelity PDF export.\n- 面向谁：Agents and document-heavy teams that need to manipulate real Office apps rather than idealized docx XML.\n- AI native 点：Gives agents a tool surface over the application users actually trust for layout and legacy compatibility, with WPS fallback as a practical edge.\n- 增长/活跃信号：Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found src, docs, examples, scripts, tests, pyproject, uv.lock, and README quickstart.\n- 可运行性判断：Medium from Python package and examples; Windows, Word/WPS, COM automation, and PDF export were not tested.\n- 建议动作：Evaluate on disposable documents and verify lock handling, layout fidelity, and crash recovery before production use.\n\n### 9. [ansaribilal14/jarvis](https://github.com/ansaribilal14/jarvis)\n- 分类：Local-first Android phone controller\n- AI Native Product Score：82\n- 做什么：Android agent loop using on-device LLMs, accessibility observation/action, voice, memory, and honest completion/blocked reporting.\n- 面向谁：Android power users and researchers exploring privacy-first phone automation without a PC or cloud dependency.\n- AI native 点：Frames mobile control as observe-plan-act-verify with semantic UI handles and local models, which is more agent-native than command shortcuts.\n- 增长/活跃信号：Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Android Gradle project, app folder, docs, third-party notices, release install notes, and agent-state files.\n- 可运行性判断：Medium from native Android project and release APK notes; no APK was installed and no accessibility automation was tested.\n- 建议动作：Watch for reproducible demos and safety boundaries around permissions, sensitive apps, and irreversible actions.\n\n### 10. [Kyokkei/fukidashi-mcp](https://github.com/Kyokkei/fukidashi-mcp)\n- 分类：Local manga scanlation MCP studio\n- AI Native Product Score：81\n- 做什么：Rust MCP server for offline manga/comic OCR, inpainting, translation, typesetting, and desktop QA editor for agent clients.\n- 面向谁：Comic translators and creative tooling builders who want local agent-operated scanlation pipelines.\n- AI native 点：Packages a multi-step creative production workflow as agent-callable local tools with OCR, image repair, text layout, and review surface.\n- 增长/活跃信号：Created and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found Cargo workspace, source, tests, assets, installer scripts, MCP example config, and README platform notes.\n- 可运行性判断：Medium from Rust project and installer evidence; OCR/inpainting models, desktop editor, and MCP client path were not run.\n- 建议动作：Try only on non-sensitive sample pages and inspect model downloads, license boundaries, and human QA flow.\n\n## Watchlist\n\n- [jifeng-2025/ai-agent-content-platform](https://github.com/jifeng-2025/ai-agent-content-platform) — Full-stack AI content creation platform，Score 79。Java/Vue/MySQL/Redis/Docker app for generating, editing, managing, and publishing illustrated content. 建议：Revisit after v0.1.0 or a real image-provider demo lands.\n- [gauravmishra-1404/rubberai](https://github.com/gauravmishra-1404/rubberai) — Coding-agent activity observability，Score 78。Go modular monolith with PostgreSQL and embedded Svelte dashboard for understanding coding activity across projects and agents. 建议：Watch for integrations with Codex/Claude/Cursor event logs.\n- [Reactive-Skills/reactive-skills](https://github.com/Reactive-Skills/reactive-skills) — Deterministic AI workflow runtime，Score 77。Hierarchical state-machine runtime and Agent Experience Interface for deterministic AI workflows. 建议：Compare examples against LangGraph-style state handling.\n- [longmiaoo/dsh-native-browser](https://github.com/longmiaoo/dsh-native-browser) — Visible browser runtime for DeepSeek Harness，Score 76。Chrome-first runtime for visible, steerable DSH agent browsing through extension and native messaging ideas. 建议：Track for concrete extension/runtime demos.\n- [1300Sarthak/fin](https://github.com/1300Sarthak/fin) — Local-first finance planner with agent interface，Score 75。Private SQLite personal finance planner available from browser, terminal, or user-owned AI agent. 建议：Watch for read-only agent modes and clear irreversible-action limits.\n- [vaish725/civicpulse-agent](https://github.com/vaish725/civicpulse-agent) — Local-government agenda monitoring agent，Score 74。Agent that monitors city council agendas, flags neighborhood-relevant items, and drafts comments only when decisions are real. 建议：Keep as a vertical-agent pattern and test on public sample agendas.\n- [olafurns7/family-mcp](https://github.com/olafurns7/family-mcp) — Read-only family data MCP servers，Score 73。Native binary MCP servers for parent-focused sports schedule and school-account data. 建议：Watch auth and privacy practices before using with real family data.\n\n## Skip Reasons\n\n- [Photonnovamill/AI-Multi-Agent-Windows-Download](https://github.com/Photonnovamill/AI-Multi-Agent-Windows-Download) — Description advertises pre-activated license keys/full-version installer language; skipped as unsafe and non-verifiable.\n- [precariatmods/agent-guidelines](https://github.com/precariatmods/agent-guidelines) — Educational examples for AI automation rather than a product, tool, or concrete user workflow.\n- [Reneknt/racb-ai-automation-portfolio](https://github.com/Reneknt/racb-ai-automation-portfolio) — Portfolio/evidence center framing; not enough runnable product surface for the radar.\n- [afreesky/vibe-coding](https://github.com/afreesky/vibe-coding) — Repository description indicates collected AI-generated code/docs, with no bounded product surface.\n- [qtjg/gitmancer](https://github.com/qtjg/gitmancer) — Powerful GitHub-account automation with commit/push/account management, but current safety and permission story is too broad for Top without hands-on sandbox validation.\n- [chaibi-mustapha/ContractorPilot](https://github.com/chaibi-mustapha/ContractorPilot) — Interesting contractor voice-agent demo, but autonomous supplier/subcontractor calling has telephony, consent, and business-risk boundaries that need clearer proof before promotion.\n- [jackhu24-ship-it/AutoCopilot-Voice-Agent](https://github.com/jackhu24-ship-it/AutoCopilot-Voice-Agent) — Safety-critical industrial fleet diagnostic voice copilot is compelling, but hackathon/demo claims require hardware, telemetry, and safety validation outside this run.\n- [ZeroDayEvil/ai-security-tool](https://github.com/ZeroDayEvil/ai-security-tool) — High star signal and broad security feature claims, but multi-protocol terminal plus autonomous scanner surface needs much deeper trust review before recommending.\n- [Hans010101/ai-dianjinshou](https://github.com/Hans010101/ai-dianjinshou) — Crypto intelligence and simulated trading workbench; financial/trading domain risk keeps it out of today’s product Top.\n- [b63431095-cmd/test03_AI_RAG](https://github.com/b63431095-cmd/test03_AI_RAG) — Thin/unclear RAG test repository with insufficient README and product evidence.\n\n## Data Window and Assumptions\n\n- Window: 2026-09-09T00:00:00Z to 2026-09-12T02:26:46Z.\n- Sources: Queried 10 GitHub Search API surfaces and deduplicated 285 repositories. Audited 33 shortlisted repositories with GitHub API repository metadata, root contents, and README excerpts. Selection prioritized runnable AI-native products with CLI, MCP, native app, browser, mobile, voice, workflow, or governance surfaces; thin prompt packs, code-coming-soon shells, platform-risk automation, benchmark-only repositories, and suspicious software-download listings were downgraded or skipped.\n- Assumptions: Scores are based on live GitHub Search API snapshots and selected GitHub API README/root audits saved under /tmp/radar_2026_09_12_api/ and /tmp/radar_2026_09_12_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, phone-tested, Office-tested, MCP-connected, credential-tested, provider-tested, security-tested, trading-tested, or deployed locally. Star and fork counts are raw GitHub API snapshots at collection time; because most projects are brand new, file structure, install path, tests/examples/docs, explicit human-control boundaries, and reversible operations weighed more than popularity. A few README fetches were retried after transient GitHub connection resets; missing runtime proof is reflected in runnability notes.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "FarazHayder/n8n-mcp-guard",
+      "url": "https://github.com/FarazHayder/n8n-mcp-guard",
+      "category": "Rollback-verified MCP guard for n8n agents",
+      "score": 91,
+      "summary": "MCP server that lets an agent create or change n8n workflows only after backup, version checks, and live readback verification.",
+      "audience": "Automation builders who want coding agents to edit n8n workflows without losing the ability to recover.",
+      "ai_native_angle": "Places a reversible guardrail directly in the agent tool path, turning workflow mutation into a checked transaction instead of blind MCP write access.",
+      "growth_signal": "Created and pushed 2026-09-12; GitHub API showed 2 stars. Root audit found package files, src, tests, CI, SECURITY.md, AGENTS.md, CLAUDE.md, and README setup notes.",
+      "runnability": "High from TypeScript package, tests, npm badge, env example, and explicit MCP workflow; no n8n instance or MCP client was connected.",
+      "recommended_action": "Trial against a disposable n8n instance and inspect backup restore, refusal paths, and readback mismatch behavior."
+    },
+    {
+      "rank": 2,
+      "full_name": "flashback7766/FlashAgent",
+      "url": "https://github.com/flashback7766/FlashAgent",
+      "category": "Local-first Rust coding agent",
+      "score": 89,
+      "summary": "Native Rust terminal coding agent for local models through LM Studio, Ollama, llama.cpp, and vLLM, with no Electron and no telemetry positioning.",
+      "audience": "Developers who want a lightweight local coding-agent loop using local or OpenAI-compatible model endpoints.",
+      "ai_native_angle": "Moves the coding agent runtime into a small native binary with local tool calling, install scripts, architecture docs, packaging, and model-provider flexibility.",
+      "growth_signal": "Created 2026-09-10 and pushed 2026-09-12; GitHub API showed 1 star. Root audit found Cargo workspace, crates, docs, install scripts, packaging, CHANGELOG, SECURITY.md, and architecture/context docs.",
+      "runnability": "High from Rust workspace and installer evidence; binary, local model connection, and tool execution were not run.",
+      "recommended_action": "Test with a tiny repo and local Ollama model, then compare latency and edit reliability against heavier coding-agent CLIs."
+    },
+    {
+      "rank": 3,
+      "full_name": "ECD5A/Tkach-Security",
+      "url": "https://github.com/ECD5A/Tkach-Security",
+      "category": "Fail-closed agent security boundary",
+      "score": 88,
+      "summary": "Rust security boundary for AI agents with deterministic authorization, provenance-aware flow, bounded gateway, CLI, HTTP, and MCP adapters.",
+      "audience": "Teams experimenting with agent tool access who need deny-by-default authorization and auditable data-flow constraints.",
+      "ai_native_angle": "Treats compromised model output as expected and puts policy, provenance, gateway limits, SDKs, fuzzing, and adapters around the agent.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 1 star. Root audit found Cargo workspace, Dockerfile, crates, SDK, examples, fuzz, tools, docs, SECURITY.md, and CI metadata.",
+      "runnability": "Medium-high from Rust/Docker/project structure; authorization semantics and MCP/HTTP adapters were not exercised.",
+      "recommended_action": "Keep high on the security watchlist and run only with synthetic secrets until fail-closed behavior is independently verified."
+    },
+    {
+      "rank": 4,
+      "full_name": "suhui-organization/pod",
+      "url": "https://github.com/suhui-organization/pod",
+      "category": "Least-privilege compiler for agent tool use",
+      "score": 87,
+      "summary": "Records real agent calls, compiles a least-privilege policy, enforces it, and keeps tamper-evident evidence.",
+      "audience": "Agent platform builders and security reviewers who want policy generated from observed behavior rather than hand-written guesswork.",
+      "ai_native_angle": "Closes the loop from observation to policy to enforcement to proof, matching the way long-running agents accumulate real permissions over time.",
+      "growth_signal": "Created 2026-09-09 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found apps, packages, cloud, deploy, docs, examples, PRODUCT.md, DESIGN.md, SECURITY.md, and CI.",
+      "runnability": "Medium-high from TypeScript workspace and docs; no agent run was recorded or enforced locally.",
+      "recommended_action": "Evaluate with a toy tool set and check whether compiled policies are understandable enough for human approval."
+    },
+    {
+      "rank": 5,
+      "full_name": "BHUVAN-RJ/Auto-Apply",
+      "url": "https://github.com/BHUVAN-RJ/Auto-Apply",
+      "category": "Human-gated job application agent",
+      "score": 86,
+      "summary": "Semi-autonomous pipeline that tailors a LaTeX resume to a posting, fills the application form, then stops before human submission.",
+      "audience": "Job seekers who want help with repetitive tailoring and form filling while retaining control of final submission.",
+      "ai_native_angle": "Puts the agent inside a narrow, high-friction vertical workflow and makes the two risk points blocking human checkpoints.",
+      "growth_signal": "Created 2026-09-10 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found apply.py, pipeline.py, browser, capture, review, tailor, server, tests, tools, pyproject, env example, and README workflow detail.",
+      "runnability": "Medium-high from Python project structure and tests; no live job board, browser form, or LaTeX compile was run.",
+      "recommended_action": "Study the checkpoint model and receipt capture, but avoid real accounts until platform rules and data handling are reviewed."
+    },
+    {
+      "rank": 6,
+      "full_name": "damc-dev/canon",
+      "url": "https://github.com/damc-dev/canon",
+      "category": "Authority layer for coding-agent decisions",
+      "score": 85,
+      "summary": "Local authority resolver that composes human-owned Markdown into effective agent context and resolves which organizational decisions win.",
+      "audience": "Teams using Claude Code or similar coding agents across overlapping rules, docs, memories, and decision records.",
+      "ai_native_angle": "Solves a real agent context failure mode: retrieval can find text, but agents need scoped authority, supersession, and decision provenance.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found Claude plugin files, MCP config, commands, server, skills, scripts, tests, pyproject, and README authority model.",
+      "runnability": "Medium-high from package/server/test structure; only README/root evidence was audited, no Claude Code integration was installed.",
+      "recommended_action": "Compare against this repo’s own memory/AGENTS hierarchy on a small conflicting-rule fixture."
+    },
+    {
+      "rank": 7,
+      "full_name": "ThatGuyAstro/reality-check",
+      "url": "https://github.com/ThatGuyAstro/reality-check",
+      "category": "Browser-reality audit skill for coding agents",
+      "score": 84,
+      "summary": "Agent skill that predicts a first-time user experience from code, opens a real browser, and marks expectation gaps sentence by sentence.",
+      "audience": "Developers using coding agents to build web apps and needing a repeatable UX verification pass.",
+      "ai_native_angle": "Turns subjective browser QA into an agent-addressable evidence workflow with personas, fixtures, templates, scripts, and install path.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found SKILL.md, commands, docs, fixtures, grade.py, personas, references, templates, install.sh, and README.",
+      "runnability": "Medium from skill/scripts structure; no browser session was launched and no app was graded.",
+      "recommended_action": "Run against a tiny Vite app and compare its browser findings with Playwright screenshot checks."
+    },
+    {
+      "rank": 8,
+      "full_name": "H-Mon/docuhand",
+      "url": "https://github.com/H-Mon/docuhand",
+      "category": "Real Word/WPS document-control MCP",
+      "score": 83,
+      "summary": "MCP server that drives Microsoft Word and WPS through Windows COM for legacy docs, open files, and print-fidelity PDF export.",
+      "audience": "Agents and document-heavy teams that need to manipulate real Office apps rather than idealized docx XML.",
+      "ai_native_angle": "Gives agents a tool surface over the application users actually trust for layout and legacy compatibility, with WPS fallback as a practical edge.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found src, docs, examples, scripts, tests, pyproject, uv.lock, and README quickstart.",
+      "runnability": "Medium from Python package and examples; Windows, Word/WPS, COM automation, and PDF export were not tested.",
+      "recommended_action": "Evaluate on disposable documents and verify lock handling, layout fidelity, and crash recovery before production use."
+    },
+    {
+      "rank": 9,
+      "full_name": "ansaribilal14/jarvis",
+      "url": "https://github.com/ansaribilal14/jarvis",
+      "category": "Local-first Android phone controller",
+      "score": 82,
+      "summary": "Android agent loop using on-device LLMs, accessibility observation/action, voice, memory, and honest completion/blocked reporting.",
+      "audience": "Android power users and researchers exploring privacy-first phone automation without a PC or cloud dependency.",
+      "ai_native_angle": "Frames mobile control as observe-plan-act-verify with semantic UI handles and local models, which is more agent-native than command shortcuts.",
+      "growth_signal": "Created and pushed 2026-09-11; GitHub API showed 0 stars. Root audit found Android Gradle project, app folder, docs, third-party notices, release install notes, and agent-state files.",
+      "runnability": "Medium from native Android project and release APK notes; no APK was installed and no accessibility automation was tested.",
+      "recommended_action": "Watch for reproducible demos and safety boundaries around permissions, sensitive apps, and irreversible actions."
+    },
+    {
+      "rank": 10,
+      "full_name": "Kyokkei/fukidashi-mcp",
+      "url": "https://github.com/Kyokkei/fukidashi-mcp",
+      "category": "Local manga scanlation MCP studio",
+      "score": 81,
+      "summary": "Rust MCP server for offline manga/comic OCR, inpainting, translation, typesetting, and desktop QA editor for agent clients.",
+      "audience": "Comic translators and creative tooling builders who want local agent-operated scanlation pipelines.",
+      "ai_native_angle": "Packages a multi-step creative production workflow as agent-callable local tools with OCR, image repair, text layout, and review surface.",
+      "growth_signal": "Created and pushed 2026-09-12; GitHub API showed 0 stars. Root audit found Cargo workspace, source, tests, assets, installer scripts, MCP example config, and README platform notes.",
+      "runnability": "Medium from Rust project and installer evidence; OCR/inpainting models, desktop editor, and MCP client path were not run.",
+      "recommended_action": "Try only on non-sensitive sample pages and inspect model downloads, license boundaries, and human QA flow."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "jifeng-2025/ai-agent-content-platform",
+      "url": "https://github.com/jifeng-2025/ai-agent-content-platform",
+      "category": "Full-stack AI content creation platform",
+      "score": 79,
+      "summary": "Java/Vue/MySQL/Redis/Docker app for generating, editing, managing, and publishing illustrated content.",
+      "audience": "Content teams evaluating self-hosted article/image generation workflows.",
+      "ai_native_angle": "Combines topic-to-outline-to-draft-to-image-to-review in one app surface.",
+      "growth_signal": "Created 2026-09-09 and pushed 2026-09-12; root audit found frontend, Java/go/python backends, Docker Compose, SQL, docs, artifacts, Stripe/VIP docs, and model configuration notes.",
+      "runnability": "Medium-high from Docker/full-stack shape; demo image output is explicitly placeholder and runtime was not launched.",
+      "recommended_action": "Revisit after v0.1.0 or a real image-provider demo lands."
+    },
+    {
+      "full_name": "gauravmishra-1404/rubberai",
+      "url": "https://github.com/gauravmishra-1404/rubberai",
+      "category": "Coding-agent activity observability",
+      "score": 78,
+      "summary": "Go modular monolith with PostgreSQL and embedded Svelte dashboard for understanding coding activity across projects and agents.",
+      "audience": "Developers or teams trying to audit agent activity across IDEs, languages, and projects.",
+      "ai_native_angle": "Treats agent work as telemetry that needs dashboards and history, an increasingly important operating layer.",
+      "growth_signal": "Created 2026-09-10 and pushed 2026-09-12; GitHub API showed 1 star. Search metadata plus audit files indicate Go/Svelte/PostgreSQL product framing.",
+      "runnability": "Medium; promising architecture signal, but no dashboard or ingestion path was run.",
+      "recommended_action": "Watch for integrations with Codex/Claude/Cursor event logs."
+    },
+    {
+      "full_name": "Reactive-Skills/reactive-skills",
+      "url": "https://github.com/Reactive-Skills/reactive-skills",
+      "category": "Deterministic AI workflow runtime",
+      "score": 77,
+      "summary": "Hierarchical state-machine runtime and Agent Experience Interface for deterministic AI workflows.",
+      "audience": "Agent workflow builders who need explicit state instead of free-form chains.",
+      "ai_native_angle": "Puts agent workflow behavior into deterministic state machines, a useful counterweight to opaque prompt logic.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; GitHub API showed 1 star.",
+      "runnability": "Medium; project looks relevant but needs deeper API/example validation before Top.",
+      "recommended_action": "Compare examples against LangGraph-style state handling."
+    },
+    {
+      "full_name": "longmiaoo/dsh-native-browser",
+      "url": "https://github.com/longmiaoo/dsh-native-browser",
+      "category": "Visible browser runtime for DeepSeek Harness",
+      "score": 76,
+      "summary": "Chrome-first runtime for visible, steerable DSH agent browsing through extension and native messaging ideas.",
+      "audience": "DeepSeek Harness users and browser-agent builders.",
+      "ai_native_angle": "Aims for existing signed-in Chrome sessions, semantic observation, reliable actions, visible handoff, and interruption.",
+      "growth_signal": "Created and pushed 2026-09-11; root audit found packages, protocol, docs, scripts, tests, workspace files, and security docs.",
+      "runnability": "Medium; README marks it pre-alpha and no browser runtime was launched.",
+      "recommended_action": "Track for concrete extension/runtime demos."
+    },
+    {
+      "full_name": "1300Sarthak/fin",
+      "url": "https://github.com/1300Sarthak/fin",
+      "category": "Local-first finance planner with agent interface",
+      "score": 75,
+      "summary": "Private SQLite personal finance planner available from browser, terminal, or user-owned AI agent.",
+      "audience": "Users wanting local financial planning without handing credentials to a hosted service.",
+      "ai_native_angle": "Interesting because finance data is local and agent control is optional, but domain safety raises the bar.",
+      "growth_signal": "Created and pushed 2026-09-11; root audit found Next/TypeScript app, CLI, docs, examples, drizzle, scripts, and env sample.",
+      "runnability": "Medium-high from app/CLI structure; no finance workflows or import paths were tested.",
+      "recommended_action": "Watch for read-only agent modes and clear irreversible-action limits."
+    },
+    {
+      "full_name": "vaish725/civicpulse-agent",
+      "url": "https://github.com/vaish725/civicpulse-agent",
+      "category": "Local-government agenda monitoring agent",
+      "score": 74,
+      "summary": "Agent that monitors city council agendas, flags neighborhood-relevant items, and drafts comments only when decisions are real.",
+      "audience": "Civic groups and residents tracking local policy decisions.",
+      "ai_native_angle": "A well-scoped vertical agent that turns dense agendas into actionable public participation.",
+      "growth_signal": "Created 2026-09-11 and pushed 2026-09-12; root audit found src, scripts, data, requirements, and README problem framing.",
+      "runnability": "Medium; hackathon-style project, no live agenda ingestion was run.",
+      "recommended_action": "Keep as a vertical-agent pattern and test on public sample agendas."
+    },
+    {
+      "full_name": "olafurns7/family-mcp",
+      "url": "https://github.com/olafurns7/family-mcp",
+      "category": "Read-only family data MCP servers",
+      "score": 73,
+      "summary": "Native binary MCP servers for parent-focused sports schedule and school-account data.",
+      "audience": "Parents who want assistants to read family logistics data from local tools.",
+      "ai_native_angle": "Small but concrete example of personal-life data connectors becoming MCP-native.",
+      "growth_signal": "Created and pushed 2026-09-12; root audit found packages, docs, tooling, Bun workspace, installers, and README checksum/version notes.",
+      "runnability": "Medium; read-only posture is good, but real service credentials were not tested.",
+      "recommended_action": "Watch auth and privacy practices before using with real family data."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Photonnovamill/AI-Multi-Agent-Windows-Download",
+      "url": "https://github.com/Photonnovamill/AI-Multi-Agent-Windows-Download",
+      "skip_reason": "Description advertises pre-activated license keys/full-version installer language; skipped as unsafe and non-verifiable."
+    },
+    {
+      "full_name": "precariatmods/agent-guidelines",
+      "url": "https://github.com/precariatmods/agent-guidelines",
+      "skip_reason": "Educational examples for AI automation rather than a product, tool, or concrete user workflow."
+    },
+    {
+      "full_name": "Reneknt/racb-ai-automation-portfolio",
+      "url": "https://github.com/Reneknt/racb-ai-automation-portfolio",
+      "skip_reason": "Portfolio/evidence center framing; not enough runnable product surface for the radar."
+    },
+    {
+      "full_name": "afreesky/vibe-coding",
+      "url": "https://github.com/afreesky/vibe-coding",
+      "skip_reason": "Repository description indicates collected AI-generated code/docs, with no bounded product surface."
+    },
+    {
+      "full_name": "qtjg/gitmancer",
+      "url": "https://github.com/qtjg/gitmancer",
+      "skip_reason": "Powerful GitHub-account automation with commit/push/account management, but current safety and permission story is too broad for Top without hands-on sandbox validation."
+    },
+    {
+      "full_name": "chaibi-mustapha/ContractorPilot",
+      "url": "https://github.com/chaibi-mustapha/ContractorPilot",
+      "skip_reason": "Interesting contractor voice-agent demo, but autonomous supplier/subcontractor calling has telephony, consent, and business-risk boundaries that need clearer proof before promotion."
+    },
+    {
+      "full_name": "jackhu24-ship-it/AutoCopilot-Voice-Agent",
+      "url": "https://github.com/jackhu24-ship-it/AutoCopilot-Voice-Agent",
+      "skip_reason": "Safety-critical industrial fleet diagnostic voice copilot is compelling, but hackathon/demo claims require hardware, telemetry, and safety validation outside this run."
+    },
+    {
+      "full_name": "ZeroDayEvil/ai-security-tool",
+      "url": "https://github.com/ZeroDayEvil/ai-security-tool",
+      "skip_reason": "High star signal and broad security feature claims, but multi-protocol terminal plus autonomous scanner surface needs much deeper trust review before recommending."
+    },
+    {
+      "full_name": "Hans010101/ai-dianjinshou",
+      "url": "https://github.com/Hans010101/ai-dianjinshou",
+      "skip_reason": "Crypto intelligence and simulated trading workbench; financial/trading domain risk keeps it out of today’s product Top."
+    },
+    {
+      "full_name": "b63431095-cmd/test03_AI_RAG",
+      "url": "https://github.com/b63431095-cmd/test03_AI_RAG",
+      "skip_reason": "Thin/unclear RAG test repository with insufficient README and product evidence."
+    }
+  ]
+}
