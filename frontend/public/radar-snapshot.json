@@ -1,14 +1,14 @@
 {
   "runs": [
     {
-      "id": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+      "id": "run:2026-09-13:2026-09-13T10:21:00+08:00",
       "runDate": "2026-09-13",
-      "generatedAt": "2026-09-13T20:45:00+08:00",
+      "generatedAt": "2026-09-13T10:21:00+08:00",
       "dataWindow": "GitHub Search API queries for AI agent, LLM app, RAG agent, MCP server, browser agent, code agent, voice agent, AI workflow, automation agent, and copilot agent repositories created from 2026-09-10 through 2026-09-13, plus selected pushed-since queries before GitHub unauthenticated search rate limiting. Raw successful search snapshots were saved under /tmp/radar_2026_09_13_api/; selected repository metadata, root-content, and README audits were saved under /tmp/radar_2026_09_13_readmes/.",
       "sourceSummary": "Queried 13 GitHub Search API surfaces: 10 created-window searches returned HTTP 200 and 3 pushed-window searches hit unauthenticated GitHub Search API 403 rate limiting. Deduplicated 278 repositories from successful results and audited 44 shortlisted repositories through GitHub repository/root/README API where available, with raw.githubusercontent.com README fallback after API rate limiting. Selection prioritized runnable AI-native products with browser, CLI, MCP, mobile, voice, workflow, governance, cost, readback, or human-approval surfaces; portfolio pages, training exercises, thin README-only apps, unsafe automation, and high-risk financial/security/telephony surfaces without enough verification were downgraded or skipped.",
       "trendObservations": "The strongest projects in today's window are operating layers around agents: voice workspaces that hand artifacts between coding agents, visual blueprint compilers for multiple harnesses, cost ledgers, readback verifiers, typed browser APIs, and context-continuity services. Product-shaped vertical agents are also getting more explicit about consent and approvals, especially in benefits renewal, procurement, and voice support. The weak side remains familiar: many repositories use agent language for personal profiles, tutorials, unsafe account automation, pentesting, messaging automation, or regulation/finance workflows without enough independent runtime and safety evidence.",
       "assumptions": "Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_13_api/ and /tmp/radar_2026_09_13_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, voice-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, benefits-tested, procurement-tested, hardware-tested, or deployed locally. Star and fork counts are raw GitHub/search snapshots at collection time. For repositories where GitHub API returned 403 during the audit, README evidence came from raw.githubusercontent.com when available and root-file evidence is marked weaker.",
-      "markdownReport": "# Daily AI Native Product Radar - 2026-09-13\n\n数据窗口：2026-09-10T00:00:00Z to 2026-09-13T12:45:00Z；GitHub Search API 查询 AI agent、LLM app、RAG agent、MCP server、browser agent、code agent、voice agent、AI workflow、automation agent、copilot agent 等主题，并对 44 个候选做 repository/root/README audit。\n\n信息来源：Queried 13 GitHub Search API surfaces: 10 created-window searches returned HTTP 200 and 3 pushed-window searches hit unauthenticated GitHub Search API 403 rate limiting. Deduplicated 278 repositories from successful results and audited 44 shortlisted repositories through GitHub repository/root/README API where available, with raw.githubusercontent.com README fallback after API rate limiting. Selection prioritized runnable AI-native products with browser, CLI, MCP, mobile, voice, workflow, governance, cost, readback, or human-approval surfaces; portfolio pages, training exercises, thin README-only apps, unsafe automation, and high-risk financial/security/telephony surfaces without enough verification were downgraded or skipped.\n\n关键假设：Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_13_api/ and /tmp/radar_2026_09_13_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, voice-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, benefits-tested, procurement-tested, hardware-tested, or deployed locally. Star and fork counts are raw GitHub/search snapshots at collection time. For repositories where GitHub API returned 403 during the audit, README evidence came from raw.githubusercontent.com when available and root-file evidence is marked weaker.\n\n## 今日趋势观察\n\nThe strongest projects in today's window are operating layers around agents: voice workspaces that hand artifacts between coding agents, visual blueprint compilers for multiple harnesses, cost ledgers, readback verifiers, typed browser APIs, and context-continuity services. Product-shaped vertical agents are also getting more explicit about consent and approvals, especially in benefits renewal, procurement, and voice support. The weak side remains familiar: many repositories use agent language for personal profiles, tutorials, unsafe account automation, pentesting, messaging automation, or regulation/finance workflows without enough independent runtime and safety evidence.\n\n## Top Projects\n\n### 1. [benikigai/agenttalkie](https://github.com/benikigai/agenttalkie)\n- 分类：Voice workspace for multi-agent work\n- AI Native Product Score：92\n- 做什么：Voice-first workspace that routes one conversation through Ambiguous document work, Exa research, Codex, Claude Code, live tool output, and playable artifact previews.\n- 面向谁：Builders juggling multiple agent tools who need one place to direct work, inspect progress, and hand artifacts between coding agents.\n- AI native 点：Treats voice, approvals, live logs, artifact hashes, previews, and cross-agent handoff as the primary product loop rather than a chat wrapper.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 0 stars across 3 matching queries. Root audit found Next/React app packages, tools, docs, assets, .mcp.json, env example, starter provenance, and hackathon submission material.\n- 可运行性判断：High from live demo/workspace links, monorepo structure, package lock, provider env notes, and recorded workflow claims; demo access code, providers, and hosted workspace were not tested.\n- 建议动作：Study the artifact handoff and proposed-action/readback model; trial only with disposable providers until access and data boundaries are reviewed.\n\n### 2. [dimsour/agent-blueprint-engine](https://github.com/dimsour/agent-blueprint-engine)\n- 分类：Visual compiler for agent systems\n- AI Native Product Score：91\n- 做什么：Browser IDE for designing agents, skills, workflows, iron laws, hooks, gates, references, and memory, then compiling them to Claude Code, Codex, Copilot, OpenCode, and Pi.\n- 面向谁：Teams standardizing agent harness behavior across several coding assistants and local project templates.\n- AI native 点：Makes agent operating instructions a deterministic, validated, portable artifact with compatibility reports instead of scattered Markdown memories.\n- 增长/活跃信号：Created and pushed 2026-09-13; search metadata showed 0 stars across 3 matching queries. Root audit found apps, packages, tooling, docs, CI config, env example, pnpm workspace, screenshots, and Vercel config.\n- 可运行性判断：High from browser-local architecture, screenshots, tutorial route, templates, validators, and package workspace; no local browser build or GitHub push relay was run.\n- 建议动作：Compare its compiled Codex output against this repository's AGENTS/skills hierarchy and inspect what intent is lost per harness.\n\n### 3. [magna-nz/tallybook](https://github.com/magna-nz/tallybook)\n- 分类：Cost ledger for coding agents\n- AI Native Product Score：89\n- 做什么：Go CLI, browser UI, and MCP server that prices local Claude Code and Codex transcripts and explains which model or plan would have been cheaper.\n- 面向谁：Developers and team leads who need cost observability across local coding-agent sessions.\n- AI native 点：Turns transcript folders into an agent-readable financial control plane, including MCP access and plain-English budget advice.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-13; GitHub API showed 5 stars. Root audit found Go modules, cmd/internal packages, Dockerfile, GoReleaser config, docs, CI badge, glama metadata, and install/use docs.\n- 可运行性判断：High from Go project structure, install commands, docs, CI/release badges, CLI/browser/MCP surfaces; no transcript pricing run was executed.\n- 建议动作：Run on a copied Codex/Claude transcript folder and verify redaction, model-price assumptions, and period filters before sharing reports.\n\n### 4. [zraisan/deputy](https://github.com/zraisan/deputy)\n- 分类：Typed browser API layer for agents\n- AI Native Product Score：88\n- 做什么：Browser-resident agent that turns ordinary web pages into typed tools for any MCP client, so another agent can call page actions instead of low-level clicking.\n- 面向谁：Browser-agent builders who want reliable page interaction without waiting for every site to expose WebMCP.\n- AI native 点：Synthesizes schemas from live pages, hands them to MCP clients, and keeps page interaction inside a browser-side agent boundary.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 1 star. Root audit found packages, site, docs, examples, PRODUCT/DESIGN/ARCHITECTURE docs, Bun lock, and demo video/still links.\n- 可运行性判断：Medium-high from demo, docs, package workspace, and examples; no extension/browser/MCP session was launched.\n- 建议动作：Test against benign public forms and compare typed-call reliability with Playwright and screenshot-driven browser agents.\n\n### 5. [Buer5460/open-enterprise-ai-platform](https://github.com/Buer5460/open-enterprise-ai-platform)\n- 分类：Enterprise AI app generation platform\n- AI Native Product Score：87\n- 做什么：Self-hosted platform for turning business requirements into AI-assisted enterprise applications with tenancy, identity, packages, connectors, workflows, and operations.\n- 面向谁：Enterprise builders evaluating app-generation platforms that keep generated systems inside an owned deployment boundary.\n- AI native 点：Frames generation as a lifecycle with package contracts, runtime validation, browser/API/container tests, administration, connectors, and security review gates.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 0 stars across 2 matching queries. Root audit found apps, packages, deploy, docs, fixtures, Dockerfile, docker-compose, pnpm workspace, SECURITY, ROADMAP, and rc notes.\n- 可运行性判断：Medium-high from full workspace and validation claims; no container stack, generated app, connector, or security review was exercised.\n- 建议动作：Watch the GA gate and run only in an isolated tenant with throwaway credentials.\n\n### 6. [artificer-ai/athanore](https://github.com/artificer-ai/athanore)\n- 分类：Code-defined agent workflow runtime\n- AI Native Product Score：86\n- 做什么：Python workflow runtime where async node functions route validated agent outputs, deterministic checks, human steps, and concurrent runs through a CLI/server/browser operator surface.\n- 面向谁：Agent workflow builders who want explicit routing code and persisted run state instead of prompt-only orchestration.\n- AI native 点：Keeps agents as value producers while ordinary code decides graph transitions, capacity limits, persistence, and human review.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit showed CI/docs/PyPI badges, Python 3.11+, SQLite/Postgres storage, ACP support, CLI commands, and browser SPA screenshots. API root audit was rate-limited.\n- 可运行性判断：Medium-high from install/serve/write-workflow docs and CI badges; current README notes PyPI still has an earlier MVP and no workflow was run.\n- 建议动作：Prototype a small lint-test-human workflow and inspect how failure policy and queue limits behave under concurrent runs.\n\n### 7. [joshduffy/readback](https://github.com/joshduffy/readback)\n- 分类：Claim verifier for coding-agent completion\n- AI Native Product Score：85\n- 做什么：Go CLI and installable agent instructions for verifying completion claims against GitHub, local files, checks, branches, HTTPS URLs, and deployments.\n- 面向谁：Teams that want coding agents to prove claims instead of reporting done from prose.\n- AI native 点：Defines a machine-readable claim fence that ignores prose and turns agent completion into verifiable evidence.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit described brew/curl/go install paths, checksum verification, doctor command, Codex/Claude/Cursor skill installation, and offline demo. API root audit was rate-limited.\n- 可运行性判断：Medium-high from concrete commands and local no-network demo; release/tap availability and provider checks were not verified.\n- 建议动作：Adopt the claim schema in one CI/deployment workflow and see whether agents produce useful, tight claims.\n\n### 8. [webDevShelly/snap-renewal-copilot](https://github.com/webDevShelly/snap-renewal-copilot)\n- 分类：Consent-first benefits renewal agent\n- AI Native Product Score：84\n- 做什么：Agent workflow for SNAP renewals using SMS/voice, Trigger.dev, Next.js, and OpenAI Agents SDK, focused on reminders, document prep, and hold-time assistance.\n- 面向谁：Households and service organizations trying to prevent benefits loss from missed renewal steps.\n- AI native 点：Good vertical-agent framing: proactive outreach, low-app burden, explicit consent, and human-sensitive workflow boundaries.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 1 star. Raw README audit found problem framing, quick start, demo script, Vonage SMS/Voice, Trigger.dev, and Agents SDK references. API root audit was rate-limited.\n- 可运行性判断：Medium from README and stack evidence; no real benefits account, phone call, SMS, or eligibility process was tested.\n- 建议动作：Evaluate only with mock data and scrutinize consent, retention, escalation, and legal/service boundaries.\n\n### 9. [deva-prakash-j/continuitydb](https://github.com/deva-prakash-j/continuitydb)\n- 分类：Local-first context continuity for coding agents\n- AI Native Product Score：83\n- 做什么：Provider-neutral local context service for Codex, Claude Code, Cursor, OpenCode, Copilot, and MCP clients, with Git-grounded citations and scoped context packs.\n- 面向谁：Developers who need agent memories and decisions to travel across sessions, repositories, branches, and model providers.\n- AI native 点：Separates durable engineering context from chat transcripts while preserving provenance for agent and human verification.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-12; search metadata showed 1 star. Raw README audit showed CI badge, release download path, adapters for five agents, setup verification, and architecture docs. API root audit was rate-limited.\n- 可运行性判断：Medium-high from binary/install/setup docs; no local agent adapter or context pack was generated.\n- 建议动作：Test on one repository with a conflicting-decision fixture and inspect how branch/path evidence is returned.\n\n### 10. [davidtkeane/rangerpuck](https://github.com/davidtkeane/rangerpuck)\n- 分类：Physical status display for agent work\n- AI Native Product Score：82\n- 做什么：ESP32 screen that shows agent states, with amber reserved for human-blocking approval and HTTP POST input from any agent.\n- 面向谁：People running parallel or remote agents who miss important blocked/approval states in hidden terminals.\n- AI native 点：Moves agent state out of the chat UI into a cheap ambient device with a crisp priority rule and expiring stale states.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit showed hardware target, AGENTS.md handoff, HTTP send script, explicit states, expiry policy, and Arduino build path. API root audit was rate-limited.\n- 可运行性判断：Medium from build and protocol docs; no ESP32 hardware, firmware build, or HTTP POST was tested.\n- 建议动作：Steal the state semantics even without the device: amber only for blocked human action, with expiry for everything else.\n\n## Watchlist\n\n- [MRsuperkosmos/yx-bridge](https://github.com/MRsuperkosmos/yx-bridge) — Browser extension plus MCP bridge，Score 80。Yandex/Chromium extension and local MCP server exposing 250+ tab, DOM, screenshot, DevTools, profile, and browser-control tools. 建议：Sandbox before use and review pause/password guarantees.\n- [Tacrine/GCMP-Model-Fallback-Chains](https://github.com/Tacrine/GCMP-Model-Fallback-Chains) — VS Code model fallback router，Score 79。Companion VS Code extension that chains GCMP-provided chat models so Copilot agent sessions can fail over across providers. 建议：Watch for failure-mode demos and secret-isolation review.\n- [AnvilBase/anvil-app](https://github.com/AnvilBase/anvil-app) — Private on-device iPhone assistant，Score 78。SwiftUI iPhone assistant using LiteRT-LM so chats and local model inference stay on device, with visible network use for model download and web search. 建议：Revisit after public app/dev-app feature split matures.\n- [bachellerieloic/hermes-voice-web](https://github.com/bachellerieloic/hermes-voice-web) — Browser voice gateway for Hermes Agent，Score 77。Plain JavaScript/Node gateway for interruptible streaming voice to a Hermes Agent from browser or phone. 建议：Watch latency and interruption behavior in real rooms.\n- [innotelinc/olympus](https://github.com/innotelinc/olympus) — Self-hosted issue-to-PR factory，Score 76。Repository-local automation platform that turns GitHub issues into gated, validated PRs with Archon workflows and browser Studio export. 建议：Track for small reproducible factory examples.\n- [noteflowai/robot-reel](https://github.com/noteflowai/robot-reel) — Physical AI replay lab，Score 75。GPU VLA stress tests, paired failure inspection, Blender films, MCP agents, and editable OpenUSD scenes for physical AI behavior review. 建议：Revisit with a controlled demo dataset.\n- [sjanney/sentry](https://github.com/sjanney/sentry) — Linux least-privilege sensor for agents，Score 74。Rust MVP for launch-time seccomp observation, redacted audit logs, capability probes, and policy contracts for AI-agent processes. 建议：Keep on security watchlist until enforcement path is complete.\n\n## Skip Reasons\n\n- [intikhab49/intikhab49](https://github.com/intikhab49/intikhab49) — Profile README/portfolio repository, not a runnable AI-native product despite matching multiple search terms.\n- [88lin/agentrouter-auto-signin](https://github.com/88lin/agentrouter-auto-signin) — Automated account sign-in/quota collection is platform-risk automation and not suitable for promotion without explicit permission and policy review.\n- [Xiayu-soilt/Turnsole-AgentForge](https://github.com/Xiayu-soilt/Turnsole-AgentForge) — Description is compelling, but audit found only a README at collection time, with insufficient runnable platform evidence.\n- [waffentragermath-code/AI_Monolith](https://github.com/waffentragermath-code/AI_Monolith) — Very broad Windows-control voice-agent claim with weak product, safety, and implementation evidence.\n- [khansameer421421/voiceflow-career-agent](https://github.com/khansameer421421/voiceflow-career-agent) — Voiceflow workflow export appears too narrow/opaque for radar Top without source, runtime, or safety evidence.\n- [Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode](https://github.com/Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode) — Training exercise repository rather than a product or reusable AI-native tool.\n- [itanmidnight-ux/fuzer-pentest-ai](https://github.com/itanmidnight-ux/fuzer-pentest-ai) — Autonomous pentesting/security surface needs much deeper trust, consent, and containment review before recommendation.\n- [py-kalki/Whatsup-Auto](https://github.com/py-kalki/Whatsup-Auto) — WhatsApp business automation can be useful, but messaging-platform and lead-CRM automation need clearer compliance and consent evidence.\n- [Tashima-Tarsh/procuregrid-ai](https://github.com/Tashima-Tarsh/procuregrid-ai) — Procurement orchestration has interesting approval-first framing, but payment/order execution risks are too broad without runtime and policy validation.\n- [maxrochefortshugar/titan](https://github.com/maxrochefortshugar/titan) — Technically interesting Apple Silicon inference stack, but it is infrastructure/benchmark-heavy and less product-shaped for this radar window.\n\n## Data Window and Assumptions\n\n- Window: 2026-09-10T00:00:00Z to 2026-09-13T12:45:00Z.\n- Sources: Queried 13 GitHub Search API surfaces: 10 created-window searches returned HTTP 200 and 3 pushed-window searches hit unauthenticated GitHub Search API 403 rate limiting. Deduplicated 278 repositories from successful results and audited 44 shortlisted repositories through GitHub repository/root/README API where available, with raw.githubusercontent.com README fallback after API rate limiting. Selection prioritized runnable AI-native products with browser, CLI, MCP, mobile, voice, workflow, governance, cost, readback, or human-approval surfaces; portfolio pages, training exercises, thin README-only apps, unsafe automation, and high-risk financial/security/telephony surfaces without enough verification were downgraded or skipped.\n- Assumptions: Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_13_api/ and /tmp/radar_2026_09_13_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, voice-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, benefits-tested, procurement-tested, hardware-tested, or deployed locally. Star and fork counts are raw GitHub/search snapshots at collection time. For repositories where GitHub API returned 403 during the audit, README evidence came from raw.githubusercontent.com when available and root-file evidence is marked weaker.\n",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-09-13\n\n数据窗口：2026-09-10T00:00:00Z to 2026-09-13T02:21:00Z；GitHub Search API 查询 AI agent、LLM app、RAG agent、MCP server、browser agent、code agent、voice agent、AI workflow、automation agent、copilot agent 等主题，并对 44 个候选做 repository/root/README audit。\n\n信息来源：Queried 13 GitHub Search API surfaces: 10 created-window searches returned HTTP 200 and 3 pushed-window searches hit unauthenticated GitHub Search API 403 rate limiting. Deduplicated 278 repositories from successful results and audited 44 shortlisted repositories through GitHub repository/root/README API where available, with raw.githubusercontent.com README fallback after API rate limiting. Selection prioritized runnable AI-native products with browser, CLI, MCP, mobile, voice, workflow, governance, cost, readback, or human-approval surfaces; portfolio pages, training exercises, thin README-only apps, unsafe automation, and high-risk financial/security/telephony surfaces without enough verification were downgraded or skipped.\n\n关键假设：Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_13_api/ and /tmp/radar_2026_09_13_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, voice-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, benefits-tested, procurement-tested, hardware-tested, or deployed locally. Star and fork counts are raw GitHub/search snapshots at collection time. For repositories where GitHub API returned 403 during the audit, README evidence came from raw.githubusercontent.com when available and root-file evidence is marked weaker.\n\n## 今日趋势观察\n\nThe strongest projects in today's window are operating layers around agents: voice workspaces that hand artifacts between coding agents, visual blueprint compilers for multiple harnesses, cost ledgers, readback verifiers, typed browser APIs, and context-continuity services. Product-shaped vertical agents are also getting more explicit about consent and approvals, especially in benefits renewal, procurement, and voice support. The weak side remains familiar: many repositories use agent language for personal profiles, tutorials, unsafe account automation, pentesting, messaging automation, or regulation/finance workflows without enough independent runtime and safety evidence.\n\n## Top Projects\n\n### 1. [benikigai/agenttalkie](https://github.com/benikigai/agenttalkie)\n- 分类：Voice workspace for multi-agent work\n- AI Native Product Score：92\n- 做什么：Voice-first workspace that routes one conversation through Ambiguous document work, Exa research, Codex, Claude Code, live tool output, and playable artifact previews.\n- 面向谁：Builders juggling multiple agent tools who need one place to direct work, inspect progress, and hand artifacts between coding agents.\n- AI native 点：Treats voice, approvals, live logs, artifact hashes, previews, and cross-agent handoff as the primary product loop rather than a chat wrapper.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 0 stars across 3 matching queries. Root audit found Next/React app packages, tools, docs, assets, .mcp.json, env example, starter provenance, and hackathon submission material.\n- 可运行性判断：High from live demo/workspace links, monorepo structure, package lock, provider env notes, and recorded workflow claims; demo access code, providers, and hosted workspace were not tested.\n- 建议动作：Study the artifact handoff and proposed-action/readback model; trial only with disposable providers until access and data boundaries are reviewed.\n\n### 2. [dimsour/agent-blueprint-engine](https://github.com/dimsour/agent-blueprint-engine)\n- 分类：Visual compiler for agent systems\n- AI Native Product Score：91\n- 做什么：Browser IDE for designing agents, skills, workflows, iron laws, hooks, gates, references, and memory, then compiling them to Claude Code, Codex, Copilot, OpenCode, and Pi.\n- 面向谁：Teams standardizing agent harness behavior across several coding assistants and local project templates.\n- AI native 点：Makes agent operating instructions a deterministic, validated, portable artifact with compatibility reports instead of scattered Markdown memories.\n- 增长/活跃信号：Created and pushed 2026-09-13; search metadata showed 0 stars across 3 matching queries. Root audit found apps, packages, tooling, docs, CI config, env example, pnpm workspace, screenshots, and Vercel config.\n- 可运行性判断：High from browser-local architecture, screenshots, tutorial route, templates, validators, and package workspace; no local browser build or GitHub push relay was run.\n- 建议动作：Compare its compiled Codex output against this repository's AGENTS/skills hierarchy and inspect what intent is lost per harness.\n\n### 3. [magna-nz/tallybook](https://github.com/magna-nz/tallybook)\n- 分类：Cost ledger for coding agents\n- AI Native Product Score：89\n- 做什么：Go CLI, browser UI, and MCP server that prices local Claude Code and Codex transcripts and explains which model or plan would have been cheaper.\n- 面向谁：Developers and team leads who need cost observability across local coding-agent sessions.\n- AI native 点：Turns transcript folders into an agent-readable financial control plane, including MCP access and plain-English budget advice.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-13; GitHub API showed 5 stars. Root audit found Go modules, cmd/internal packages, Dockerfile, GoReleaser config, docs, CI badge, glama metadata, and install/use docs.\n- 可运行性判断：High from Go project structure, install commands, docs, CI/release badges, CLI/browser/MCP surfaces; no transcript pricing run was executed.\n- 建议动作：Run on a copied Codex/Claude transcript folder and verify redaction, model-price assumptions, and period filters before sharing reports.\n\n### 4. [zraisan/deputy](https://github.com/zraisan/deputy)\n- 分类：Typed browser API layer for agents\n- AI Native Product Score：88\n- 做什么：Browser-resident agent that turns ordinary web pages into typed tools for any MCP client, so another agent can call page actions instead of low-level clicking.\n- 面向谁：Browser-agent builders who want reliable page interaction without waiting for every site to expose WebMCP.\n- AI native 点：Synthesizes schemas from live pages, hands them to MCP clients, and keeps page interaction inside a browser-side agent boundary.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 1 star. Root audit found packages, site, docs, examples, PRODUCT/DESIGN/ARCHITECTURE docs, Bun lock, and demo video/still links.\n- 可运行性判断：Medium-high from demo, docs, package workspace, and examples; no extension/browser/MCP session was launched.\n- 建议动作：Test against benign public forms and compare typed-call reliability with Playwright and screenshot-driven browser agents.\n\n### 5. [Buer5460/open-enterprise-ai-platform](https://github.com/Buer5460/open-enterprise-ai-platform)\n- 分类：Enterprise AI app generation platform\n- AI Native Product Score：87\n- 做什么：Self-hosted platform for turning business requirements into AI-assisted enterprise applications with tenancy, identity, packages, connectors, workflows, and operations.\n- 面向谁：Enterprise builders evaluating app-generation platforms that keep generated systems inside an owned deployment boundary.\n- AI native 点：Frames generation as a lifecycle with package contracts, runtime validation, browser/API/container tests, administration, connectors, and security review gates.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 0 stars across 2 matching queries. Root audit found apps, packages, deploy, docs, fixtures, Dockerfile, docker-compose, pnpm workspace, SECURITY, ROADMAP, and rc notes.\n- 可运行性判断：Medium-high from full workspace and validation claims; no container stack, generated app, connector, or security review was exercised.\n- 建议动作：Watch the GA gate and run only in an isolated tenant with throwaway credentials.\n\n### 6. [artificer-ai/athanore](https://github.com/artificer-ai/athanore)\n- 分类：Code-defined agent workflow runtime\n- AI Native Product Score：86\n- 做什么：Python workflow runtime where async node functions route validated agent outputs, deterministic checks, human steps, and concurrent runs through a CLI/server/browser operator surface.\n- 面向谁：Agent workflow builders who want explicit routing code and persisted run state instead of prompt-only orchestration.\n- AI native 点：Keeps agents as value producers while ordinary code decides graph transitions, capacity limits, persistence, and human review.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit showed CI/docs/PyPI badges, Python 3.11+, SQLite/Postgres storage, ACP support, CLI commands, and browser SPA screenshots. API root audit was rate-limited.\n- 可运行性判断：Medium-high from install/serve/write-workflow docs and CI badges; current README notes PyPI still has an earlier MVP and no workflow was run.\n- 建议动作：Prototype a small lint-test-human workflow and inspect how failure policy and queue limits behave under concurrent runs.\n\n### 7. [joshduffy/readback](https://github.com/joshduffy/readback)\n- 分类：Claim verifier for coding-agent completion\n- AI Native Product Score：85\n- 做什么：Go CLI and installable agent instructions for verifying completion claims against GitHub, local files, checks, branches, HTTPS URLs, and deployments.\n- 面向谁：Teams that want coding agents to prove claims instead of reporting done from prose.\n- AI native 点：Defines a machine-readable claim fence that ignores prose and turns agent completion into verifiable evidence.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit described brew/curl/go install paths, checksum verification, doctor command, Codex/Claude/Cursor skill installation, and offline demo. API root audit was rate-limited.\n- 可运行性判断：Medium-high from concrete commands and local no-network demo; release/tap availability and provider checks were not verified.\n- 建议动作：Adopt the claim schema in one CI/deployment workflow and see whether agents produce useful, tight claims.\n\n### 8. [webDevShelly/snap-renewal-copilot](https://github.com/webDevShelly/snap-renewal-copilot)\n- 分类：Consent-first benefits renewal agent\n- AI Native Product Score：84\n- 做什么：Agent workflow for SNAP renewals using SMS/voice, Trigger.dev, Next.js, and OpenAI Agents SDK, focused on reminders, document prep, and hold-time assistance.\n- 面向谁：Households and service organizations trying to prevent benefits loss from missed renewal steps.\n- AI native 点：Good vertical-agent framing: proactive outreach, low-app burden, explicit consent, and human-sensitive workflow boundaries.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; search metadata showed 1 star. Raw README audit found problem framing, quick start, demo script, Vonage SMS/Voice, Trigger.dev, and Agents SDK references. API root audit was rate-limited.\n- 可运行性判断：Medium from README and stack evidence; no real benefits account, phone call, SMS, or eligibility process was tested.\n- 建议动作：Evaluate only with mock data and scrutinize consent, retention, escalation, and legal/service boundaries.\n\n### 9. [deva-prakash-j/continuitydb](https://github.com/deva-prakash-j/continuitydb)\n- 分类：Local-first context continuity for coding agents\n- AI Native Product Score：83\n- 做什么：Provider-neutral local context service for Codex, Claude Code, Cursor, OpenCode, Copilot, and MCP clients, with Git-grounded citations and scoped context packs.\n- 面向谁：Developers who need agent memories and decisions to travel across sessions, repositories, branches, and model providers.\n- AI native 点：Separates durable engineering context from chat transcripts while preserving provenance for agent and human verification.\n- 增长/活跃信号：Created 2026-09-10 and pushed 2026-09-12; search metadata showed 1 star. Raw README audit showed CI badge, release download path, adapters for five agents, setup verification, and architecture docs. API root audit was rate-limited.\n- 可运行性判断：Medium-high from binary/install/setup docs; no local agent adapter or context pack was generated.\n- 建议动作：Test on one repository with a conflicting-decision fixture and inspect how branch/path evidence is returned.\n\n### 10. [davidtkeane/rangerpuck](https://github.com/davidtkeane/rangerpuck)\n- 分类：Physical status display for agent work\n- AI Native Product Score：82\n- 做什么：ESP32 screen that shows agent states, with amber reserved for human-blocking approval and HTTP POST input from any agent.\n- 面向谁：People running parallel or remote agents who miss important blocked/approval states in hidden terminals.\n- AI native 点：Moves agent state out of the chat UI into a cheap ambient device with a crisp priority rule and expiring stale states.\n- 增长/活跃信号：Created 2026-09-12 and pushed 2026-09-13; raw README audit showed hardware target, AGENTS.md handoff, HTTP send script, explicit states, expiry policy, and Arduino build path. API root audit was rate-limited.\n- 可运行性判断：Medium from build and protocol docs; no ESP32 hardware, firmware build, or HTTP POST was tested.\n- 建议动作：Steal the state semantics even without the device: amber only for blocked human action, with expiry for everything else.\n\n## Watchlist\n\n- [MRsuperkosmos/yx-bridge](https://github.com/MRsuperkosmos/yx-bridge) — Browser extension plus MCP bridge，Score 80。Yandex/Chromium extension and local MCP server exposing 250+ tab, DOM, screenshot, DevTools, profile, and browser-control tools. 建议：Sandbox before use and review pause/password guarantees.\n- [Tacrine/GCMP-Model-Fallback-Chains](https://github.com/Tacrine/GCMP-Model-Fallback-Chains) — VS Code model fallback router，Score 79。Companion VS Code extension that chains GCMP-provided chat models so Copilot agent sessions can fail over across providers. 建议：Watch for failure-mode demos and secret-isolation review.\n- [AnvilBase/anvil-app](https://github.com/AnvilBase/anvil-app) — Private on-device iPhone assistant，Score 78。SwiftUI iPhone assistant using LiteRT-LM so chats and local model inference stay on device, with visible network use for model download and web search. 建议：Revisit after public app/dev-app feature split matures.\n- [bachellerieloic/hermes-voice-web](https://github.com/bachellerieloic/hermes-voice-web) — Browser voice gateway for Hermes Agent，Score 77。Plain JavaScript/Node gateway for interruptible streaming voice to a Hermes Agent from browser or phone. 建议：Watch latency and interruption behavior in real rooms.\n- [innotelinc/olympus](https://github.com/innotelinc/olympus) — Self-hosted issue-to-PR factory，Score 76。Repository-local automation platform that turns GitHub issues into gated, validated PRs with Archon workflows and browser Studio export. 建议：Track for small reproducible factory examples.\n- [noteflowai/robot-reel](https://github.com/noteflowai/robot-reel) — Physical AI replay lab，Score 75。GPU VLA stress tests, paired failure inspection, Blender films, MCP agents, and editable OpenUSD scenes for physical AI behavior review. 建议：Revisit with a controlled demo dataset.\n- [sjanney/sentry](https://github.com/sjanney/sentry) — Linux least-privilege sensor for agents，Score 74。Rust MVP for launch-time seccomp observation, redacted audit logs, capability probes, and policy contracts for AI-agent processes. 建议：Keep on security watchlist until enforcement path is complete.\n\n## Skip Reasons\n\n- [intikhab49/intikhab49](https://github.com/intikhab49/intikhab49) — Profile README/portfolio repository, not a runnable AI-native product despite matching multiple search terms.\n- [88lin/agentrouter-auto-signin](https://github.com/88lin/agentrouter-auto-signin) — Automated account sign-in/quota collection is platform-risk automation and not suitable for promotion without explicit permission and policy review.\n- [Xiayu-soilt/Turnsole-AgentForge](https://github.com/Xiayu-soilt/Turnsole-AgentForge) — Description is compelling, but audit found only a README at collection time, with insufficient runnable platform evidence.\n- [waffentragermath-code/AI_Monolith](https://github.com/waffentragermath-code/AI_Monolith) — Very broad Windows-control voice-agent claim with weak product, safety, and implementation evidence.\n- [khansameer421421/voiceflow-career-agent](https://github.com/khansameer421421/voiceflow-career-agent) — Voiceflow workflow export appears too narrow/opaque for radar Top without source, runtime, or safety evidence.\n- [Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode](https://github.com/Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode) — Training exercise repository rather than a product or reusable AI-native tool.\n- [itanmidnight-ux/fuzer-pentest-ai](https://github.com/itanmidnight-ux/fuzer-pentest-ai) — Autonomous pentesting/security surface needs much deeper trust, consent, and containment review before recommendation.\n- [py-kalki/Whatsup-Auto](https://github.com/py-kalki/Whatsup-Auto) — WhatsApp business automation can be useful, but messaging-platform and lead-CRM automation need clearer compliance and consent evidence.\n- [Tashima-Tarsh/procuregrid-ai](https://github.com/Tashima-Tarsh/procuregrid-ai) — Procurement orchestration has interesting approval-first framing, but payment/order execution risks are too broad without runtime and policy validation.\n- [maxrochefortshugar/titan](https://github.com/maxrochefortshugar/titan) — Technically interesting Apple Silicon inference stack, but it is infrastructure/benchmark-heavy and less product-shaped for this radar window.\n\n## Data Window and Assumptions\n\n- Window: 2026-09-10T00:00:00Z to 2026-09-13T12:45:00Z.\n- Sources: Queried 13 GitHub Search API surfaces: 10 created-window searches returned HTTP 200 and 3 pushed-window searches hit unauthenticated GitHub Search API 403 rate limiting. Deduplicated 278 repositories from successful results and audited 44 shortlisted repositories through GitHub repository/root/README API where available, with raw.githubusercontent.com README fallback after API rate limiting. Selection prioritized runnable AI-native products with browser, CLI, MCP, mobile, voice, workflow, governance, cost, readback, or human-approval surfaces; portfolio pages, training exercises, thin README-only apps, unsafe automation, and high-risk financial/security/telephony surfaces without enough verification were downgraded or skipped.\n- Assumptions: Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_13_api/ and /tmp/radar_2026_09_13_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, voice-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, benefits-tested, procurement-tested, hardware-tested, or deployed locally. Star and fork counts are raw GitHub/search snapshots at collection time. For repositories where GitHub API returned 403 during the audit, README evidence came from raw.githubusercontent.com when available and root-file evidence is marked weaker.\n",
       "sourceFile": "2026-09-13.json",
       "entryCount": 27
     },
@@ -24008,10 +24008,10 @@
     ],
     "benikigai/agenttalkie": [
       {
-        "id": "benikigai-agenttalkie:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "benikigai-agenttalkie:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 1,
         "fullName": "benikigai/agenttalkie",
@@ -25065,10 +25065,10 @@
     ],
     "dimsour/agent-blueprint-engine": [
       {
-        "id": "dimsour-agent-blueprint-engine:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "dimsour-agent-blueprint-engine:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 2,
         "fullName": "dimsour/agent-blueprint-engine",
@@ -27619,10 +27619,10 @@
     ],
     "magna-nz/tallybook": [
       {
-        "id": "magna-nz-tallybook:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "magna-nz-tallybook:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 3,
         "fullName": "magna-nz/tallybook",
@@ -28252,10 +28252,10 @@
     ],
     "zraisan/deputy": [
       {
-        "id": "zraisan-deputy:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "zraisan-deputy:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 4,
         "fullName": "zraisan/deputy",
@@ -30467,10 +30467,10 @@
     ],
     "Buer5460/open-enterprise-ai-platform": [
       {
-        "id": "Buer5460-open-enterprise-ai-platform:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "Buer5460-open-enterprise-ai-platform:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 5,
         "fullName": "Buer5460/open-enterprise-ai-platform",
@@ -31615,10 +31615,10 @@
     ],
     "artificer-ai/athanore": [
       {
-        "id": "artificer-ai-athanore:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "artificer-ai-athanore:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 6,
         "fullName": "artificer-ai/athanore",
@@ -33073,10 +33073,10 @@
     ],
     "joshduffy/readback": [
       {
-        "id": "joshduffy-readback:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "joshduffy-readback:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 7,
         "fullName": "joshduffy/readback",
@@ -34184,10 +34184,10 @@
     ],
     "webDevShelly/snap-renewal-copilot": [
       {
-        "id": "webDevShelly-snap-renewal-copilot:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "webDevShelly-snap-renewal-copilot:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 8,
         "fullName": "webDevShelly/snap-renewal-copilot",
@@ -36327,10 +36327,10 @@
     ],
     "deva-prakash-j/continuitydb": [
       {
-        "id": "deva-prakash-j-continuitydb:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "deva-prakash-j-continuitydb:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 9,
         "fullName": "deva-prakash-j/continuitydb",
@@ -37832,10 +37832,10 @@
     ],
     "davidtkeane/rangerpuck": [
       {
-        "id": "davidtkeane-rangerpuck:2026-09-13T20:45:00+08:00:top:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "davidtkeane-rangerpuck:2026-09-13T10:21:00+08:00:top:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "top",
         "rank": 10,
         "fullName": "davidtkeane/rangerpuck",
@@ -40791,10 +40791,10 @@
     ],
     "MRsuperkosmos/yx-bridge": [
       {
-        "id": "MRsuperkosmos-yx-bridge:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "MRsuperkosmos-yx-bridge:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 1,
         "fullName": "MRsuperkosmos/yx-bridge",
@@ -42227,10 +42227,10 @@
     ],
     "Tacrine/GCMP-Model-Fallback-Chains": [
       {
-        "id": "Tacrine-GCMP-Model-Fallback-Chains:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "Tacrine-GCMP-Model-Fallback-Chains:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 2,
         "fullName": "Tacrine/GCMP-Model-Fallback-Chains",
@@ -43399,10 +43399,10 @@
     ],
     "AnvilBase/anvil-app": [
       {
-        "id": "AnvilBase-anvil-app:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "AnvilBase-anvil-app:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 3,
         "fullName": "AnvilBase/anvil-app",
@@ -45146,10 +45146,10 @@
     ],
     "bachellerieloic/hermes-voice-web": [
       {
-        "id": "bachellerieloic-hermes-voice-web:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "bachellerieloic-hermes-voice-web:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 4,
         "fullName": "bachellerieloic/hermes-voice-web",
@@ -46257,10 +46257,10 @@
     ],
     "innotelinc/olympus": [
       {
-        "id": "innotelinc-olympus:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "innotelinc-olympus:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 5,
         "fullName": "innotelinc/olympus",
@@ -47666,10 +47666,10 @@
     ],
     "noteflowai/robot-reel": [
       {
-        "id": "noteflowai-robot-reel:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "noteflowai-robot-reel:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 6,
         "fullName": "noteflowai/robot-reel",
@@ -49034,10 +49034,10 @@
     ],
     "sjanney/sentry": [
       {
-        "id": "sjanney-sentry:2026-09-13T20:45:00+08:00:watchlist:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "sjanney-sentry:2026-09-13T10:21:00+08:00:watchlist:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "watchlist",
         "rank": 7,
         "fullName": "sjanney/sentry",
@@ -58791,10 +58791,10 @@
     ],
     "88lin/agentrouter-auto-signin": [
       {
-        "id": "88lin-agentrouter-auto-signin:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "88lin-agentrouter-auto-signin:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "88lin/agentrouter-auto-signin",
@@ -58817,10 +58817,10 @@
     ],
     "intikhab49/intikhab49": [
       {
-        "id": "intikhab49-intikhab49:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "intikhab49-intikhab49:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "intikhab49/intikhab49",
@@ -58843,10 +58843,10 @@
     ],
     "itanmidnight-ux/fuzer-pentest-ai": [
       {
-        "id": "itanmidnight-ux-fuzer-pentest-ai:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "itanmidnight-ux-fuzer-pentest-ai:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "itanmidnight-ux/fuzer-pentest-ai",
@@ -58869,10 +58869,10 @@
     ],
     "khansameer421421/voiceflow-career-agent": [
       {
-        "id": "khansameer421421-voiceflow-career-agent:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "khansameer421421-voiceflow-career-agent:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "khansameer421421/voiceflow-career-agent",
@@ -58895,10 +58895,10 @@
     ],
     "maxrochefortshugar/titan": [
       {
-        "id": "maxrochefortshugar-titan:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "maxrochefortshugar-titan:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "maxrochefortshugar/titan",
@@ -58921,10 +58921,10 @@
     ],
     "Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode": [
       {
-        "id": "Praveen-Sathiyavathi-ZS0657-skills-build-applications-w-copilot-agent-mode:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "Praveen-Sathiyavathi-ZS0657-skills-build-applications-w-copilot-agent-mode:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "Praveen-Sathiyavathi-ZS0657/skills-build-applications-w-copilot-agent-mode",
@@ -58947,10 +58947,10 @@
     ],
     "py-kalki/Whatsup-Auto": [
       {
-        "id": "py-kalki-Whatsup-Auto:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "py-kalki-Whatsup-Auto:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "py-kalki/Whatsup-Auto",
@@ -58973,10 +58973,10 @@
     ],
     "Tashima-Tarsh/procuregrid-ai": [
       {
-        "id": "Tashima-Tarsh-procuregrid-ai:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "Tashima-Tarsh-procuregrid-ai:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "Tashima-Tarsh/procuregrid-ai",
@@ -58999,10 +58999,10 @@
     ],
     "waffentragermath-code/AI_Monolith": [
       {
-        "id": "waffentragermath-code-AI_Monolith:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "waffentragermath-code-AI_Monolith:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "waffentragermath-code/AI_Monolith",
@@ -59025,10 +59025,10 @@
     ],
     "Xiayu-soilt/Turnsole-AgentForge": [
       {
-        "id": "Xiayu-soilt-Turnsole-AgentForge:2026-09-13T20:45:00+08:00:skip:0",
-        "runId": "run:2026-09-13:2026-09-13T20:45:00+08:00",
+        "id": "Xiayu-soilt-Turnsole-AgentForge:2026-09-13T10:21:00+08:00:skip:0",
+        "runId": "run:2026-09-13:2026-09-13T10:21:00+08:00",
         "runDate": "2026-09-13",
-        "generatedAt": "2026-09-13T20:45:00+08:00",
+        "generatedAt": "2026-09-13T10:21:00+08:00",
         "section": "skip",
         "rank": null,
         "fullName": "Xiayu-soilt/Turnsole-AgentForge",
