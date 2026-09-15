@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-15",
+  "generated_at": "2026-09-15T11:55:00+08:00",
+  "data_window": "GitHub Search API queries for AI agent, LLM app, RAG agent, MCP server, browser agent, code agent, voice agent, AI workflow, automation agent, copilot agent, and recently pushed agent infrastructure repositories from 2026-09-12 through 2026-09-15. Raw search snapshots were saved under /tmp/radar_2026_09_15_api/; selected repository metadata, root-content, and README audits were saved under /tmp/radar_2026_09_15_readmes/.",
+  "source_summary": "Queried 8 GitHub Search API surfaces; all final downloads returned HTTP 200 after retrying three partial JSON transfers. Deduplicated 280 repositories and audited 32 shortlisted repositories through GitHub repository/root/README API, with raw.githubusercontent.com README fallback after unauthenticated GitHub API 403 rate limits. Selection prioritized runnable product surfaces, explicit agent workflows, local-first control, evidence/readback, governance, MCP/CLI/UI entrypoints, and documented install or demo paths.",
+  "trend_observations": "The strongest new signals are not generic chat apps: they are control surfaces around agent work. Local operator consoles, evidence-gated task boards, policy compilers, side-effect receipts, shared memory stores, and bounded workstation MCP servers are turning agent runs into auditable operations. Vertical products still matter when the workflow is concrete, but repos with account automation, free-provider claims, reverse-engineering, or regulatory/customer-contact actions need much stronger permission and safety evidence before promotion.",
+  "assumptions": "Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_15_api/ and /tmp/radar_2026_09_15_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, hardware-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, email-tested, benefits-tested, game-engine-tested, or deployed locally. Star/fork counts are raw GitHub Search metadata at collection time and are weak signals for very new repositories. Repositories already promoted on 2026-09-13 were not repeated in Top unless there was a materially new product signal.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-09-15\n\n数据窗口：2026-09-12T00:00:00Z to 2026-09-15T03:55:00Z；GitHub Search API 查询 AI agent、LLM app、RAG agent、MCP server、browser agent、code agent、voice agent、AI workflow、automation agent、copilot agent 与 pushed-since 活跃仓库，并对 32 个候选做 repository/root/README audit。\n\n信息来源：Queried 8 GitHub Search API surfaces; all final downloads returned HTTP 200 after retrying three partial JSON transfers. Deduplicated 280 repositories and audited 32 shortlisted repositories through GitHub repository/root/README API, with raw.githubusercontent.com README fallback after unauthenticated GitHub API 403 rate limits. Selection prioritized runnable product surfaces, explicit agent workflows, local-first control, evidence/readback, governance, MCP/CLI/UI entrypoints, and documented install or demo paths.\n\n关键假设：Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_15_api/ and /tmp/radar_2026_09_15_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, hardware-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, email-tested, benefits-tested, game-engine-tested, or deployed locally. Star/fork counts are raw GitHub Search metadata at collection time and are weak signals for very new repositories. Repositories already promoted on 2026-09-13 were not repeated in Top unless there was a materially new product signal.\n\n## 今日趋势观察\n\nThe strongest new signals are not generic chat apps: they are control surfaces around agent work. Local operator consoles, evidence-gated task boards, policy compilers, side-effect receipts, shared memory stores, and bounded workstation MCP servers are turning agent runs into auditable operations. Vertical products still matter when the workflow is concrete, but repos with account automation, free-provider claims, reverse-engineering, or regulatory/customer-contact actions need much stronger permission and safety evidence before promotion.\n\n## Top Projects\n\n### 1. [zdaniels/fathom](https://github.com/zdaniels/fathom)\n- 分类：Local AI agent runtime and gateway\n- AI Native Product Score：92\n- 做什么：MIT-licensed self-hosted AI agent with terminal UI, browser chat, local tools, scheduled tasks, optional shared memory, and experimental team/enterprise gateway APIs.\n- 面向谁：Developers and small teams who want a local agent runtime they can operate, schedule, and inspect without a hosted control plane.\n- AI native 点：Makes the agent itself an owned runtime with terminal, browser, tools, schedules, memory, policies, Docker, Helm, skills, and runner surfaces instead of a single chat client.\n- 增长/活跃信号：Created 2026-09-15 and pushed minutes later; search metadata showed 0 stars. Root audit found Go modules, cmd/internal/pkg/runner, apps, hub-web, examples, Dockerfile, docker-compose, Helm, install script, policy file, privacy/security docs, and skills.\n- 可运行性判断：High from Go project structure, install script, Docker/Helm packaging, examples, policy config, and docs; no model provider, local runner, browser chat, schedule, or gateway API was executed.\n- 建议动作：Run the personal mode in a disposable workspace and inspect policy enforcement, scheduled task storage, and memory boundaries before team use.\n\n### 2. [rrahul0904/agent-work-os](https://github.com/rrahul0904/agent-work-os)\n- 分类：Local control plane for coding agents\n- AI Native Product Score：91\n- 做什么：Local-first browser control plane for coding agents, with machine/session state, authenticated daemon connection, Codex CLI adapter, event normalization, echo adapter, UI, Docker, and tests.\n- 面向谁：Engineers running local coding agents who need a web operator surface for sessions, follow-ups, interrupts, status, and logs.\n- AI native 点：Treats agent work as machine/runtime/session operations with WebSocket events, adapters, heartbeats, interrupts, usage streams, and acceptance-tested control loops.\n- 增长/活跃信号：Created 2026-09-04 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found apps, packages, runtime, services, docs, Dockerfile, docker-compose, package.json, env example, and README claims for first vertical-slice acceptance tests.\n- 可运行性判断：High from explicit Node 22 control plane, browser UI, Codex adapter, deterministic echo adapter, Docker packaging, unit tests, and end-to-end acceptance notes; no daemon or real Codex session was launched.\n- 建议动作：Compare its session/event model with this radar automation workflow and test only against a toy repository.\n\n### 3. [rahilp/gatewright](https://github.com/rahilp/gatewright)\n- 分类：Evidence-gated task tracker for coding agents\n- AI Native Product Score：90\n- 做什么：File-first task tracker for coding agents with a zero-dependency CLI, git-tracked board, evidence-gated stages, GitHub Issues sync, unattended runs, and browser viewer.\n- 面向谁：Teams and solo builders who want agent tasks to move forward only when evidence is attached.\n- AI native 点：Makes agent progress a structured artifact: claim, phase, gate, evidence, brief, browser review, and GitHub sync are first-class instead of transcript leftovers.\n- 增长/活跃信号：Created 2026-09-13 and pushed 2026-09-15; search metadata showed 1 star. Root audit found .gatewright, adapters, bin, docs, lib, scripts, templates, tests, viewer, PRD/design/spec/tasks docs, and quickstart commands.\n- 可运行性判断：High from npm global install, `gw init/add/claim/move/brief/open` quickstart, zero-dependency positioning, tests, and viewer; no CLI or GitHub sync was run.\n- 建议动作：Trial on one existing maintenance task and require evidence paths for every state transition.\n\n### 4. [blackzig/zigguard](https://github.com/blackzig/zigguard)\n- 分类：Governance compiler for AI coding agents\n- AI Native Product Score：88\n- 做什么：Go CLI for defining engineering policies once, validating them, compiling them into AGENTS/CLAUDE-style instructions, and detecting policy drift across agent harnesses.\n- 面向谁：Teams using several coding agents that need one reviewable source of truth for allowed behavior, constraints, and generated instructions.\n- AI native 点：Turns agent governance into a deterministic policy artifact with schemas, manifests, adapters, rules, examples, and drift checks.\n- 增长/活跃信号：Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found cmd/internal, adapters, schemas, rules, docs, examples, action.yml, Makefile, Go modules, README, ROADMAP, SECURITY, and an example YAML policy.\n- 可运行性判断：Medium-high from working CLI status, validate/compile/check description, GitHub Action, schemas, and examples; no compile or drift check was run locally.\n- 建议动作：Use a small copy of this repo’s AGENTS/skills policy as a fixture and compare generated instructions across Codex and Claude.\n\n### 5. [Shruti-ch-git/technical-debt-agent](https://github.com/Shruti-ch-git/technical-debt-agent)\n- 分类：Propose-only PR review agent\n- AI Native Product Score：87\n- 做什么：Local governed multi-agent pipeline that classifies changed hunks as bug, vulnerability, or code smell and posts one aggregated GitHub PR comment with refactor suggestions.\n- 面向谁：Maintainers who want LLM-aided technical debt review while keeping CI non-blocking and code edits human-owned.\n- AI native 点：Combines DetectionAgent, RefactorAgent, knowledge transfer, GitHub PR bot, CLI/MCP entrypoints, fixtures, and evaluations around a propose-only safety boundary.\n- 增长/活跃信号：Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found .mcp.json, .claude, harness/agentloop/engine/entrypoints/evaluation/tests/reference/fixtures directories, docs, pyproject, requirements, env example, and README with CI badge.\n- 可运行性判断：Medium-high from Python package layout, PR bot description, CLI/MCP surface, fixtures, and tests; no GitHub Action, Qwen model, MCP call, or PR comment was executed.\n- 建议动作：Run against a synthetic PR and inspect false positives, vulnerability wording, and whether comments stay propose-only.\n\n### 6. [teochenglim/veda](https://github.com/teochenglim/veda)\n- 分类：Local shared memory for MCP agents\n- AI Native Product Score：86\n- 做什么：One Go binary and SQLite/FTS5 database for shared local memory across Claude, Cursor, Codex, and other MCP-capable agents, with async distillation and human review.\n- 面向谁：Developers who want portable agent memory without tying decisions and preferences to one model provider or chat transcript.\n- AI native 点：Separates raw turns, reviewed memories, MCP access, local SQLite storage, export/delete controls, and user-owned LLM distillation into a shared agent memory substrate.\n- 增长/活跃信号：Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found cmd/internal, DESIGN, RELEASE, VERSION, ROADMAP, Makefile, Go modules, GitHub config, and README architecture diagram.\n- 可运行性判断：Medium-high from Go binary structure and MCP-native README; no MCP registration, memory review loop, export, or distillation worker was run.\n- 建议动作：Test with non-sensitive notes and require visible review before any memory is promoted.\n\n### 7. [pseudomascot/agent-receipt](https://github.com/pseudomascot/agent-receipt)\n- 分类：Local side-effect receipt for agents\n- AI Native Product Score：85\n- 做什么：macOS local app that produces a daily statement of AI-agent side-effect actions, recording that keyboard/mouse/file/app/network events happened while avoiding key contents.\n- 面向谁：Users who let agents operate their machine and need a local audit statement of what changed or was touched.\n- AI native 点：Makes trust in computer-use agents concrete through a local-only receipt, schema, privacy boundary, setup app, examples, and tests.\n- 增长/活跃信号：Created 2026-09-14 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found Agent Receipt.app, Agent Receipt.command, Setup.command, src, tests, docs, examples, requirements, progress notes, and a macOS five-minute setup path.\n- 可运行性判断：Medium-high from double-click setup/run commands, app packaging, Python source, tests, and explicit privacy claims; no Accessibility/Input Monitoring permission or receipt generation was tested.\n- 建议动作：Read the event schema first, then test during a short disposable agent session to see whether receipts are useful without leaking content.\n\n### 8. [Tunglam0605/remote-workstation-mcp](https://github.com/Tunglam0605/remote-workstation-mcp)\n- 分类：Permissioned remote workstation MCP\n- AI Native Product Score：84\n- 做什么：Self-hosted MCP control plane for authorized agents to inspect/edit approved code, run builds/tests, supervise processes, inspect Git, discover tools, and use owner-approved SSH leases.\n- 面向谁：Developers who want ChatGPT, Codex, or other MCP clients to operate remote engineering workstations under explicit local gates.\n- AI native 点：Puts principal identity, policy, audit records, short-lived leases, disabled host-wide shell defaults, semantic code intelligence, and acceptance paths around remote agent control.\n- 增长/活跃信号：Created 2026-09-14 and pushed 2026-09-15; search metadata showed 1 star. Root audit found .agents, config, docs, plugins, scripts, src, tests, package.json, tsconfig, env example, and README security-sensitive beta notes.\n- 可运行性判断：Medium from clear package structure and acceptance-path README; no MCP server, tunnel, SSH lease, edit gate, or ChatGPT Web path was executed.\n- 建议动作：Evaluate only on a disposable host with full-control gates disabled until audit logs and lease identity are verified.\n\n### 9. [vuluu2k/sbuilder-mcp](https://github.com/vuluu2k/sbuilder-mcp)\n- 分类：MCP operator for Store Builder sites\n- AI Native Product Score：83\n- 做什么：MCP stdio server that lets an AI agent design Store Builder pages, fill real data, inspect screenshots, and publish, with install flows for Codex, Cursor, Claude, Windsurf, and VS Code.\n- 面向谁：Store Builder users and agent-tool developers who need AI to operate a site builder through tools rather than browser clicking.\n- AI native 点：Exposes site design, live data, screenshot feedback, publishing, client install, dry-run, refused unknown flags, and token/site scoping as agent-callable operations.\n- 增长/活跃信号：Created 2026-08-28 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found src, tests, docs, package-lock, Playwright/MCP config, AGENTS/CLAUDE instructions, screenshots, changelogs, and TypeScript configs.\n- 可运行性判断：Medium-high from `npx sbuilder-mcp install` flow, Codex client support, tests, screenshot artifacts, and docs; no Store Builder token, MCP client install, screenshot loop, or publish was tested.\n- 建议动作：Try with a throwaway site and verify screenshot readback before trusting publish tools.\n\n### 10. [hejiahao757-cell/GameDock](https://github.com/hejiahao757-cell/GameDock)\n- 分类：Evidence layer for AI-assisted game development\n- AI Native Product Score：82\n- 做什么：Local execution and evidence layer for ChatGPT and other agents working with game-development tools, currently proving two Unity tracer bullets with recorded failures, fixes, state, and camera PNGs.\n- 面向谁：Game developers who want agents to operate engines while returning verifiable artifacts inside ordinary chat.\n- AI native 点：Frames game-dev agent work as bounded local execution plus evidence: deterministic RED/GREEN fixtures, unchanged verifiers, runtime state, and captured PNGs.\n- 增长/活跃信号：Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Raw README fallback described Unity tracer bullets, local core reuse for ChatGPT/Codex/Claude, and evidence artifacts; API root audit was rate-limited.\n- 可运行性判断：Medium from detailed proof claims, but root contents were not available after API limit and no Unity project, tracer, screenshot, or verifier was run.\n- 建议动作：Re-audit root contents tomorrow, then run only the smallest Unity fixture before trusting game-engine operations.\n\n## Watchlist\n\n- [Unjuno/agent-interface](https://github.com/Unjuno/agent-interface) — Reactive computer-control runtime research，Score 80。Research-preview interface layer intended to make fixed-model computer-control agents faster and cheaper. 建议：Watch for downloadable release and benchmark artifacts before promotion.\n- [Webioinfo01/agentx-hub](https://github.com/Webioinfo01/agentx-hub) — Research-agent registry and review hub，Score 79。Community platform for discovering, comparing, and reviewing scientific research AI agents with verified-run evidence links. 建议：Promote if evidence review workflow survives a local build.\n- [VirginiaH233/zhihu-hackathon-icebreaker](https://github.com/VirginiaH233/zhihu-hackathon-icebreaker) — Persona-based social icebreaker agent，Score 78。Zhihu hackathon app that builds a public-profile persona, lets users chat with it, and outputs a grounded outreach card. 建议：Review privacy and impersonation boundaries before trying real profiles.\n- [Hokimisu/Promethee](https://github.com/Hokimisu/Promethee) — Persistent embodied AI companion prototype，Score 77。Local prototype for an avatar with body, memory, actions, and a persistent virtual world, currently centered on deterministic cinematic pilot fixtures. 建议：Keep as embodied-agent watchlist until deterministic fixture evidence is easy to replay.\n- [ai-slate/ai-slate-local-zh](https://github.com/ai-slate/ai-slate-local-zh) — Local multi-model operations console，Score 76。Chinese local model gateway and operations platform with provider management, routing, API keys, usage billing, audit, analytics, demo, and release downloads. 建议：Revisit after verifying release provenance and local data directory behavior.\n- [mikeybeck/faultline](https://github.com/mikeybeck/faultline) — Local error inbox for agent-visible debugging，Score 75。Desktop/TUI app that watches logs, command output, and browser page errors, groups duplicates, and jumps to file:line in an editor. 建议：Watch for MCP/export surface or direct agent integration.\n- [dsh-cc/dsh-cc](https://github.com/dsh-cc/dsh-cc) — DeepSeek Harness coding-agent environment，Score 74。Claude Code-style coding environment for DeepSeek Harness with TUI, MCP, memory, subagents, hooks, skills, worktrees, and deferred tool discovery. 建议：Compare with established terminal agents before promoting.\n\n## Skip Reasons\n\n- [Buer5460/open-enterprise-ai-platform](https://github.com/Buer5460/open-enterprise-ai-platform) — Strong project, but already promoted as a Top project on 2026-09-13; today it is treated as continued activity rather than repeated Top placement.\n- [CSOAI-ORG/awesome-agentic-ai-2026](https://github.com/CSOAI-ORG/awesome-agentic-ai-2026) — Awesome/list positioning and no README content available in fallback audit; not a runnable product surface.\n- [CSOAI-ORG/awesome-agent-protocols](https://github.com/CSOAI-ORG/awesome-agent-protocols) — Agent protocol list/directory rather than an app, CLI, API, MCP server, or agent workflow product.\n- [xuange520/WeChat-H5-DevTools](https://github.com/xuange520/WeChat-H5-DevTools) — Strong developer tool, but reverse-engineering/debug-hook surface around WeChat H5 requires careful permission review and is not primarily AI-native.\n- [LielZ/Pame](https://github.com/LielZ/Pame) — Polished Windows gaming shell, but not primarily an AI-native product despite matching browser/agent terms.\n- [Shandeepsugumar/spotifycares-support-agent](https://github.com/Shandeepsugumar/spotifycares-support-agent) — Take-home evaluation/RAG support-agent project with dataset analysis value, but weaker product surface and brand/customer-contact sensitivity.\n- [lbesecker195/AI-Agent-Email-List](https://github.com/lbesecker195/AI-Agent-Email-List) — Remote MCP email account creation is intriguing, but agent-created sending accounts, DKIM, warmup, and inbound mail need stronger abuse, consent, and compliance evidence.\n- [wuzhxxi/search-growth-os](https://github.com/wuzhxxi/search-growth-os) — Evidence-driven search-growth operating model, but current scope is more methodology/agent framework than a proven runnable AI-native product.\n- [leyi20041111-spec/llm-data-agent](https://github.com/leyi20041111-spec/llm-data-agent) — Useful local NL-to-pandas data agent, but this window favors agent operations/control products and the repository needs runtime verification.\n- [JavierEMendez/PersonalShowcase](https://github.com/JavierEMendez/PersonalShowcase) — Strong personal transaction-tool showcase, but not primarily an AI-native product for the radar taxonomy.\n\n类型级跳过原因：纯 prompt collection、awesome list、论文/benchmark-only、免费模型 SEO 壳、只有 README 没有可运行代码、平台账号/消息/金融/安全/逆向自动化缺少权限和安全证据的仓库，均降权或排除；这些类型原因不会写入 JSON skipped_projects 的伪造 repo。\n\n## 今日建议动作\n\n- 优先试跑 Fathom 或 Agent Work OS 的最小本地模式，观察 agent session、policy、schedule 和 event log 是否真实闭环。\n- 把 Gatewright / Readback / Agent Receipt / ZigGuard 放到同一张“agent evidence stack”对比表，区分任务证据、完成证据、行为收据和政策漂移。\n- 对 Remote Workstation MCP、email/benefits/customer-contact 类项目保持默认隔离：只用 disposable workspace、mock data 和短期凭证。\n- 明天继续追踪 GameDock、AgentX、Agent Interface，如果出现可复现 demo 或 release，再提高优先级。\n\n## Data Window and Assumptions\n\n- Window: 2026-09-12T00:00:00Z to 2026-09-15T03:55:00Z.\n- Sources: Queried 8 GitHub Search API surfaces; all final downloads returned HTTP 200 after retrying three partial JSON transfers. Deduplicated 280 repositories and audited 32 shortlisted repositories through GitHub repository/root/README API, with raw.githubusercontent.com README fallback after unauthenticated GitHub API 403 rate limits. Selection prioritized runnable product surfaces, explicit agent workflows, local-first control, evidence/readback, governance, MCP/CLI/UI entrypoints, and documented install or demo paths.\n- Assumptions: Scores are based on live GitHub Search API snapshots and selected GitHub API/raw README audits saved under /tmp/radar_2026_09_15_api/ and /tmp/radar_2026_09_15_readmes/. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, hardware-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, email-tested, benefits-tested, game-engine-tested, or deployed locally. Star/fork counts are raw GitHub Search metadata at collection time and are weak signals for very new repositories. Repositories already promoted on 2026-09-13 were not repeated in Top unless there was a materially new product signal.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "zdaniels/fathom",
+      "url": "https://github.com/zdaniels/fathom",
+      "category": "Local AI agent runtime and gateway",
+      "score": 92,
+      "summary": "MIT-licensed self-hosted AI agent with terminal UI, browser chat, local tools, scheduled tasks, optional shared memory, and experimental team/enterprise gateway APIs.",
+      "audience": "Developers and small teams who want a local agent runtime they can operate, schedule, and inspect without a hosted control plane.",
+      "ai_native_angle": "Makes the agent itself an owned runtime with terminal, browser, tools, schedules, memory, policies, Docker, Helm, skills, and runner surfaces instead of a single chat client.",
+      "growth_signal": "Created 2026-09-15 and pushed minutes later; search metadata showed 0 stars. Root audit found Go modules, cmd/internal/pkg/runner, apps, hub-web, examples, Dockerfile, docker-compose, Helm, install script, policy file, privacy/security docs, and skills.",
+      "runnability": "High from Go project structure, install script, Docker/Helm packaging, examples, policy config, and docs; no model provider, local runner, browser chat, schedule, or gateway API was executed.",
+      "recommended_action": "Run the personal mode in a disposable workspace and inspect policy enforcement, scheduled task storage, and memory boundaries before team use."
+    },
+    {
+      "rank": 2,
+      "full_name": "rrahul0904/agent-work-os",
+      "url": "https://github.com/rrahul0904/agent-work-os",
+      "category": "Local control plane for coding agents",
+      "score": 91,
+      "summary": "Local-first browser control plane for coding agents, with machine/session state, authenticated daemon connection, Codex CLI adapter, event normalization, echo adapter, UI, Docker, and tests.",
+      "audience": "Engineers running local coding agents who need a web operator surface for sessions, follow-ups, interrupts, status, and logs.",
+      "ai_native_angle": "Treats agent work as machine/runtime/session operations with WebSocket events, adapters, heartbeats, interrupts, usage streams, and acceptance-tested control loops.",
+      "growth_signal": "Created 2026-09-04 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found apps, packages, runtime, services, docs, Dockerfile, docker-compose, package.json, env example, and README claims for first vertical-slice acceptance tests.",
+      "runnability": "High from explicit Node 22 control plane, browser UI, Codex adapter, deterministic echo adapter, Docker packaging, unit tests, and end-to-end acceptance notes; no daemon or real Codex session was launched.",
+      "recommended_action": "Compare its session/event model with this radar automation workflow and test only against a toy repository."
+    },
+    {
+      "rank": 3,
+      "full_name": "rahilp/gatewright",
+      "url": "https://github.com/rahilp/gatewright",
+      "category": "Evidence-gated task tracker for coding agents",
+      "score": 90,
+      "summary": "File-first task tracker for coding agents with a zero-dependency CLI, git-tracked board, evidence-gated stages, GitHub Issues sync, unattended runs, and browser viewer.",
+      "audience": "Teams and solo builders who want agent tasks to move forward only when evidence is attached.",
+      "ai_native_angle": "Makes agent progress a structured artifact: claim, phase, gate, evidence, brief, browser review, and GitHub sync are first-class instead of transcript leftovers.",
+      "growth_signal": "Created 2026-09-13 and pushed 2026-09-15; search metadata showed 1 star. Root audit found .gatewright, adapters, bin, docs, lib, scripts, templates, tests, viewer, PRD/design/spec/tasks docs, and quickstart commands.",
+      "runnability": "High from npm global install, `gw init/add/claim/move/brief/open` quickstart, zero-dependency positioning, tests, and viewer; no CLI or GitHub sync was run.",
+      "recommended_action": "Trial on one existing maintenance task and require evidence paths for every state transition."
+    },
+    {
+      "rank": 4,
+      "full_name": "blackzig/zigguard",
+      "url": "https://github.com/blackzig/zigguard",
+      "category": "Governance compiler for AI coding agents",
+      "score": 88,
+      "summary": "Go CLI for defining engineering policies once, validating them, compiling them into AGENTS/CLAUDE-style instructions, and detecting policy drift across agent harnesses.",
+      "audience": "Teams using several coding agents that need one reviewable source of truth for allowed behavior, constraints, and generated instructions.",
+      "ai_native_angle": "Turns agent governance into a deterministic policy artifact with schemas, manifests, adapters, rules, examples, and drift checks.",
+      "growth_signal": "Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found cmd/internal, adapters, schemas, rules, docs, examples, action.yml, Makefile, Go modules, README, ROADMAP, SECURITY, and an example YAML policy.",
+      "runnability": "Medium-high from working CLI status, validate/compile/check description, GitHub Action, schemas, and examples; no compile or drift check was run locally.",
+      "recommended_action": "Use a small copy of this repo’s AGENTS/skills policy as a fixture and compare generated instructions across Codex and Claude."
+    },
+    {
+      "rank": 5,
+      "full_name": "Shruti-ch-git/technical-debt-agent",
+      "url": "https://github.com/Shruti-ch-git/technical-debt-agent",
+      "category": "Propose-only PR review agent",
+      "score": 87,
+      "summary": "Local governed multi-agent pipeline that classifies changed hunks as bug, vulnerability, or code smell and posts one aggregated GitHub PR comment with refactor suggestions.",
+      "audience": "Maintainers who want LLM-aided technical debt review while keeping CI non-blocking and code edits human-owned.",
+      "ai_native_angle": "Combines DetectionAgent, RefactorAgent, knowledge transfer, GitHub PR bot, CLI/MCP entrypoints, fixtures, and evaluations around a propose-only safety boundary.",
+      "growth_signal": "Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found .mcp.json, .claude, harness/agentloop/engine/entrypoints/evaluation/tests/reference/fixtures directories, docs, pyproject, requirements, env example, and README with CI badge.",
+      "runnability": "Medium-high from Python package layout, PR bot description, CLI/MCP surface, fixtures, and tests; no GitHub Action, Qwen model, MCP call, or PR comment was executed.",
+      "recommended_action": "Run against a synthetic PR and inspect false positives, vulnerability wording, and whether comments stay propose-only."
+    },
+    {
+      "rank": 6,
+      "full_name": "teochenglim/veda",
+      "url": "https://github.com/teochenglim/veda",
+      "category": "Local shared memory for MCP agents",
+      "score": 86,
+      "summary": "One Go binary and SQLite/FTS5 database for shared local memory across Claude, Cursor, Codex, and other MCP-capable agents, with async distillation and human review.",
+      "audience": "Developers who want portable agent memory without tying decisions and preferences to one model provider or chat transcript.",
+      "ai_native_angle": "Separates raw turns, reviewed memories, MCP access, local SQLite storage, export/delete controls, and user-owned LLM distillation into a shared agent memory substrate.",
+      "growth_signal": "Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found cmd/internal, DESIGN, RELEASE, VERSION, ROADMAP, Makefile, Go modules, GitHub config, and README architecture diagram.",
+      "runnability": "Medium-high from Go binary structure and MCP-native README; no MCP registration, memory review loop, export, or distillation worker was run.",
+      "recommended_action": "Test with non-sensitive notes and require visible review before any memory is promoted."
+    },
+    {
+      "rank": 7,
+      "full_name": "pseudomascot/agent-receipt",
+      "url": "https://github.com/pseudomascot/agent-receipt",
+      "category": "Local side-effect receipt for agents",
+      "score": 85,
+      "summary": "macOS local app that produces a daily statement of AI-agent side-effect actions, recording that keyboard/mouse/file/app/network events happened while avoiding key contents.",
+      "audience": "Users who let agents operate their machine and need a local audit statement of what changed or was touched.",
+      "ai_native_angle": "Makes trust in computer-use agents concrete through a local-only receipt, schema, privacy boundary, setup app, examples, and tests.",
+      "growth_signal": "Created 2026-09-14 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found Agent Receipt.app, Agent Receipt.command, Setup.command, src, tests, docs, examples, requirements, progress notes, and a macOS five-minute setup path.",
+      "runnability": "Medium-high from double-click setup/run commands, app packaging, Python source, tests, and explicit privacy claims; no Accessibility/Input Monitoring permission or receipt generation was tested.",
+      "recommended_action": "Read the event schema first, then test during a short disposable agent session to see whether receipts are useful without leaking content."
+    },
+    {
+      "rank": 8,
+      "full_name": "Tunglam0605/remote-workstation-mcp",
+      "url": "https://github.com/Tunglam0605/remote-workstation-mcp",
+      "category": "Permissioned remote workstation MCP",
+      "score": 84,
+      "summary": "Self-hosted MCP control plane for authorized agents to inspect/edit approved code, run builds/tests, supervise processes, inspect Git, discover tools, and use owner-approved SSH leases.",
+      "audience": "Developers who want ChatGPT, Codex, or other MCP clients to operate remote engineering workstations under explicit local gates.",
+      "ai_native_angle": "Puts principal identity, policy, audit records, short-lived leases, disabled host-wide shell defaults, semantic code intelligence, and acceptance paths around remote agent control.",
+      "growth_signal": "Created 2026-09-14 and pushed 2026-09-15; search metadata showed 1 star. Root audit found .agents, config, docs, plugins, scripts, src, tests, package.json, tsconfig, env example, and README security-sensitive beta notes.",
+      "runnability": "Medium from clear package structure and acceptance-path README; no MCP server, tunnel, SSH lease, edit gate, or ChatGPT Web path was executed.",
+      "recommended_action": "Evaluate only on a disposable host with full-control gates disabled until audit logs and lease identity are verified."
+    },
+    {
+      "rank": 9,
+      "full_name": "vuluu2k/sbuilder-mcp",
+      "url": "https://github.com/vuluu2k/sbuilder-mcp",
+      "category": "MCP operator for Store Builder sites",
+      "score": 83,
+      "summary": "MCP stdio server that lets an AI agent design Store Builder pages, fill real data, inspect screenshots, and publish, with install flows for Codex, Cursor, Claude, Windsurf, and VS Code.",
+      "audience": "Store Builder users and agent-tool developers who need AI to operate a site builder through tools rather than browser clicking.",
+      "ai_native_angle": "Exposes site design, live data, screenshot feedback, publishing, client install, dry-run, refused unknown flags, and token/site scoping as agent-callable operations.",
+      "growth_signal": "Created 2026-08-28 and pushed 2026-09-15; search metadata showed 0 stars. Root audit found src, tests, docs, package-lock, Playwright/MCP config, AGENTS/CLAUDE instructions, screenshots, changelogs, and TypeScript configs.",
+      "runnability": "Medium-high from `npx sbuilder-mcp install` flow, Codex client support, tests, screenshot artifacts, and docs; no Store Builder token, MCP client install, screenshot loop, or publish was tested.",
+      "recommended_action": "Try with a throwaway site and verify screenshot readback before trusting publish tools."
+    },
+    {
+      "rank": 10,
+      "full_name": "hejiahao757-cell/GameDock",
+      "url": "https://github.com/hejiahao757-cell/GameDock",
+      "category": "Evidence layer for AI-assisted game development",
+      "score": 82,
+      "summary": "Local execution and evidence layer for ChatGPT and other agents working with game-development tools, currently proving two Unity tracer bullets with recorded failures, fixes, state, and camera PNGs.",
+      "audience": "Game developers who want agents to operate engines while returning verifiable artifacts inside ordinary chat.",
+      "ai_native_angle": "Frames game-dev agent work as bounded local execution plus evidence: deterministic RED/GREEN fixtures, unchanged verifiers, runtime state, and captured PNGs.",
+      "growth_signal": "Created 2026-09-15 and pushed 2026-09-15; search metadata showed 0 stars. Raw README fallback described Unity tracer bullets, local core reuse for ChatGPT/Codex/Claude, and evidence artifacts; API root audit was rate-limited.",
+      "runnability": "Medium from detailed proof claims, but root contents were not available after API limit and no Unity project, tracer, screenshot, or verifier was run.",
+      "recommended_action": "Re-audit root contents tomorrow, then run only the smallest Unity fixture before trusting game-engine operations."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "Unjuno/agent-interface",
+      "url": "https://github.com/Unjuno/agent-interface",
+      "category": "Reactive computer-control runtime research",
+      "score": 80,
+      "summary": "Research-preview interface layer intended to make fixed-model computer-control agents faster and cheaper.",
+      "audience": "Computer-use and browser/desktop-agent researchers.",
+      "ai_native_angle": "Strong research framing, docs, release folder, runtime and site, but user-facing releases are intentionally deferred.",
+      "growth_signal": "Created 2026-09-12 and pushed 2026-09-15; root audit found docs, research, runtime, release, site, roadmap, security, and citation files.",
+      "runnability": "Medium; public release is not yet the primary path.",
+      "recommended_action": "Watch for downloadable release and benchmark artifacts before promotion."
+    },
+    {
+      "full_name": "Webioinfo01/agentx-hub",
+      "url": "https://github.com/Webioinfo01/agentx-hub",
+      "category": "Research-agent registry and review hub",
+      "score": 79,
+      "summary": "Community platform for discovering, comparing, and reviewing scientific research AI agents with verified-run evidence links.",
+      "audience": "Researchers selecting AI agents for literature, lab, medical, or science workflows.",
+      "ai_native_angle": "Verified run reviews and comparison are promising, though registry curation can drift into directory content.",
+      "growth_signal": "Created 2026-09-15; root audit found Next app, Prisma, data, skills, design studies, docs, tests, and package workspace.",
+      "runnability": "Medium-high from app structure and registry data; no app boot or live metrics readback was run.",
+      "recommended_action": "Promote if evidence review workflow survives a local build."
+    },
+    {
+      "full_name": "VirginiaH233/zhihu-hackathon-icebreaker",
+      "url": "https://github.com/VirginiaH233/zhihu-hackathon-icebreaker",
+      "category": "Persona-based social icebreaker agent",
+      "score": 78,
+      "summary": "Zhihu hackathon app that builds a public-profile persona, lets users chat with it, and outputs a grounded outreach card.",
+      "audience": "People who want low-friction introductions based on public writing and style.",
+      "ai_native_angle": "Concrete social-agent workflow with information isolation, persona simulation, output card, FastAPI app, assets, tests, and hosted demo.",
+      "growth_signal": "Created 2026-09-13 and pushed 2026-09-15; root audit found server.py, agent.py, prompts, assets, web, tests, Dockerfile, product/spec docs, and Railway demo link.",
+      "runnability": "Medium-high from hosted demo and FastAPI files; no profile ingestion, consent model, or hosted path was tested.",
+      "recommended_action": "Review privacy and impersonation boundaries before trying real profiles."
+    },
+    {
+      "full_name": "Hokimisu/Promethee",
+      "url": "https://github.com/Hokimisu/Promethee",
+      "category": "Persistent embodied AI companion prototype",
+      "score": 77,
+      "summary": "Local prototype for an avatar with body, memory, actions, and a persistent virtual world, currently centered on deterministic cinematic pilot fixtures.",
+      "audience": "Builders exploring embodied companions and inspectable virtual-world feedback loops.",
+      "ai_native_angle": "Interesting because the world returns what actually happened and memory is inspectable, but it remains early fixture-driven work.",
+      "growth_signal": "Created 2026-09-14 and pushed 2026-09-15; root audit found src, tests, docs, experiments, web, uv.lock, CI badge, and motion-validation notes.",
+      "runnability": "Medium; no local world, skeleton control, or motion validation was run.",
+      "recommended_action": "Keep as embodied-agent watchlist until deterministic fixture evidence is easy to replay."
+    },
+    {
+      "full_name": "ai-slate/ai-slate-local-zh",
+      "url": "https://github.com/ai-slate/ai-slate-local-zh",
+      "category": "Local multi-model operations console",
+      "score": 76,
+      "summary": "Chinese local model gateway and operations platform with provider management, routing, API keys, usage billing, audit, analytics, demo, and release downloads.",
+      "audience": "Teams managing many text/image/voice/video model providers and agent clients.",
+      "ai_native_angle": "Useful ops surface for Claude Code, Codex, OpenCode Agent access, but distribution is release/doc heavy in this repo.",
+      "growth_signal": "Created 2026-09-13 and pushed 2026-09-15; search metadata showed 1 star. Root audit found README, docs, release links, security/support docs, and demo credentials warning.",
+      "runnability": "Medium from demo/release evidence; no binary, demo login, or provider routing was tested.",
+      "recommended_action": "Revisit after verifying release provenance and local data directory behavior."
+    },
+    {
+      "full_name": "mikeybeck/faultline",
+      "url": "https://github.com/mikeybeck/faultline",
+      "category": "Local error inbox for agent-visible debugging",
+      "score": 75,
+      "summary": "Desktop/TUI app that watches logs, command output, and browser page errors, groups duplicates, and jumps to file:line in an editor.",
+      "audience": "Developers and agents needing a cleaner local error queue during iterative builds.",
+      "ai_native_angle": "Not purely AI, but it can become a useful agent-readable failure inbox around terminal/browser feedback.",
+      "growth_signal": "Created 2026-09-14 and pushed 2026-09-15; root audit found Go/Wails app, frontend, extension, tests, example config, build scripts, and README UI mock.",
+      "runnability": "Medium-high from app/test structure; no Wails app or browser extension was run.",
+      "recommended_action": "Watch for MCP/export surface or direct agent integration."
+    },
+    {
+      "full_name": "dsh-cc/dsh-cc",
+      "url": "https://github.com/dsh-cc/dsh-cc",
+      "category": "DeepSeek Harness coding-agent environment",
+      "score": 74,
+      "summary": "Claude Code-style coding environment for DeepSeek Harness with TUI, MCP, memory, subagents, hooks, skills, worktrees, and deferred tool discovery.",
+      "audience": "Developers who want Claude-style workflows over their own DeepSeek Harness deployment.",
+      "ai_native_angle": "Good agent-harness packaging, but it is less new than today’s fresh product surfaces.",
+      "growth_signal": "Created 2026-09-05 and pushed 2026-09-15; root audit found packages, pnpm workspace, docs, hooks, plugin files, tests, and bilingual README.",
+      "runnability": "Medium-high; no TUI, model strategy, or harness connection was tested.",
+      "recommended_action": "Compare with established terminal agents before promoting."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "Buer5460/open-enterprise-ai-platform",
+      "url": "https://github.com/Buer5460/open-enterprise-ai-platform",
+      "skip_reason": "Strong project, but already promoted as a Top project on 2026-09-13; today it is treated as continued activity rather than repeated Top placement."
+    },
+    {
+      "full_name": "CSOAI-ORG/awesome-agentic-ai-2026",
+      "url": "https://github.com/CSOAI-ORG/awesome-agentic-ai-2026",
+      "skip_reason": "Awesome/list positioning and no README content available in fallback audit; not a runnable product surface."
+    },
+    {
+      "full_name": "CSOAI-ORG/awesome-agent-protocols",
+      "url": "https://github.com/CSOAI-ORG/awesome-agent-protocols",
+      "skip_reason": "Agent protocol list/directory rather than an app, CLI, API, MCP server, or agent workflow product."
+    },
+    {
+      "full_name": "xuange520/WeChat-H5-DevTools",
+      "url": "https://github.com/xuange520/WeChat-H5-DevTools",
+      "skip_reason": "Strong developer tool, but reverse-engineering/debug-hook surface around WeChat H5 requires careful permission review and is not primarily AI-native."
+    },
+    {
+      "full_name": "LielZ/Pame",
+      "url": "https://github.com/LielZ/Pame",
+      "skip_reason": "Polished Windows gaming shell, but not primarily an AI-native product despite matching browser/agent terms."
+    },
+    {
+      "full_name": "Shandeepsugumar/spotifycares-support-agent",
+      "url": "https://github.com/Shandeepsugumar/spotifycares-support-agent",
+      "skip_reason": "Take-home evaluation/RAG support-agent project with dataset analysis value, but weaker product surface and brand/customer-contact sensitivity."
+    },
+    {
+      "full_name": "lbesecker195/AI-Agent-Email-List",
+      "url": "https://github.com/lbesecker195/AI-Agent-Email-List",
+      "skip_reason": "Remote MCP email account creation is intriguing, but agent-created sending accounts, DKIM, warmup, and inbound mail need stronger abuse, consent, and compliance evidence."
+    },
+    {
+      "full_name": "wuzhxxi/search-growth-os",
+      "url": "https://github.com/wuzhxxi/search-growth-os",
+      "skip_reason": "Evidence-driven search-growth operating model, but current scope is more methodology/agent framework than a proven runnable AI-native product."
+    },
+    {
+      "full_name": "leyi20041111-spec/llm-data-agent",
+      "url": "https://github.com/leyi20041111-spec/llm-data-agent",
+      "skip_reason": "Useful local NL-to-pandas data agent, but this window favors agent operations/control products and the repository needs runtime verification."
+    },
+    {
+      "full_name": "JavierEMendez/PersonalShowcase",
+      "url": "https://github.com/JavierEMendez/PersonalShowcase",
+      "skip_reason": "Strong personal transaction-tool showcase, but not primarily an AI-native product for the radar taxonomy."
+    }
+  ]
+}
