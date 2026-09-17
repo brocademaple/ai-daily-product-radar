@@ -1,7 +1,7 @@
 {
   "locale": "zh-CN",
   "sourceSnapshot": "radar-snapshot.json",
-  "generatedAt": "2026-09-15T05:40:11.018Z",
+  "generatedAt": "2026-09-17T06:56:52.784Z",
   "items": [
     {
       "source": "10 stars, created 2026-06-09 and pushed 2026-06-25; root includes crates, docs, skills, tests, Rust toolchain and bilingual README.",
@@ -708,6 +708,14 @@
       "count": 2
     },
     {
+      "source": "Acceptance infrastructure for agent commerce",
+      "zhCN": "Acceptance 基础设施面向智能体 commerce",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Account registration automation is outside the AI-native product target.",
       "zhCN": "Account registration automation is outside the AI 原生产品 target。",
       "fields": [
@@ -960,6 +968,14 @@
       "zhCN": "Adds a 运行时 layer between tools 和 model calls，preserving important error lines 和 structured facts while reducing prompt load。",
       "fields": [
         "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Adds a settings-page MCP server manager with screenshots and enable/disable/edit/restart flows.",
+      "zhCN": "Adds a settings-page MCP 服务器管理器具备 screenshots 和 enable/disable/edit/restart flows。",
+      "fields": [
+        "summary"
       ],
       "count": 2
     },
@@ -1582,6 +1598,14 @@
     {
       "source": "Agent developers thinking about permission delegation and accountable execution.",
       "zhCN": "Agent 开发者 thinking about permission delegation 和 accountable execution。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Agent developers who need local guardrails against hallucinated tool outputs, null-as-zero errors, or redacted values presented as facts.",
+      "zhCN": "Agent 开发者 who need 本地 guardrails 对比 hallucinated tool outputs，null-as-zero errors，或 redacted values presented as facts。",
       "fields": [
         "audience"
       ],
@@ -3084,6 +3108,14 @@
       "count": 2
     },
     {
+      "source": "Agent-deployed literature radar",
+      "zhCN": "技术类 / Agent-deployed literature radar",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Agent-driven design workbench",
       "zhCN": "Agent-driven design 工作台",
       "fields": [
@@ -4572,6 +4604,14 @@
       "count": 2
     },
     {
+      "source": "Ambitious local personal work agent, but broad scope and very fresh repo need proof of one tight workflow before Top placement.",
+      "zhCN": "Ambitious 本地 personal work 智能体，但 broad scope 和 very fresh repo need proof of one tight 工作流 before Top placement。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "An AI agent that turns daily phone clips into narrated, captioned vertical videos, sends drafts to Telegram for approval, then publishes to X and optionally LinkedIn.",
       "zhCN": "An AI 智能体 that turns daily phone clips into narrated，captioned vertical videos，sends drafts to Telegram 面向 approval，then publishes to X 和 optionally LinkedIn。",
       "fields": [
@@ -4864,6 +4904,14 @@
       "zhCN": "Apple Silicon MiniMax-H3/video-generation suite 和智能体 skill is hardware/model-specific 和基准测试-heavy；产品界面/入口 is less general 面向 today。",
       "fields": [
         "skipReason"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Apple Silicon-oriented sandbox for AI coding agents with chat stack, SBX lifecycle, permissions, MCP direction, and docs.",
+      "zhCN": "Apple Silicon-oriented 沙箱面向 AI coding 智能体具备 chat stack，SBX lifecycle，权限，MCP direction，和 docs。",
+      "fields": [
+        "summary"
       ],
       "count": 2
     },
@@ -5668,6 +5716,14 @@
       "count": 2
     },
     {
+      "source": "bioRxiv/journal monitor with staged LLM filter and Discord/Telegram digest follow-ups.",
+      "zhCN": "bioRxiv/journal monitor 具备 staged LLM filter 和 Discord/Telegram digest follow-ups。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Black-box recorder for AI-written code that links commits to prompts, read context, trust signals, drift detection and audit evidence.",
       "zhCN": "Black-box recorder 面向 AI-written code that links commits to prompts，read 上下文，trust signals，drift detection 和审计 evidence。",
       "fields": [
@@ -5728,6 +5784,14 @@
       "zhCN": "技术类 / Branchable Agent Memory",
       "fields": [
         "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Bridges agent commands to real touchscreen hardware through a control server, native app, and microcontroller input path.",
+      "zhCN": "Bridges 智能体 commands to real touchscreen hardware through a control server，native app，和 microcontroller input 路径。",
+      "fields": [
+        "aiNativeAngle"
       ],
       "count": 2
     },
@@ -6252,6 +6316,14 @@
       "count": 2
     },
     {
+      "source": "Browser-control MCP is relevant, but current root audit was thin compared with stronger browser/simulator control candidates.",
+      "zhCN": "Browser-control MCP is relevant，但当前 root 审计 was 薄 compared 具备 stronger 浏览器/simulator control candidates。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Browser-extension account hub for New API/Sub2API relay accounts, balances, usage, auto check-ins, one-click keys, pricing, health checks, and channel management.",
       "zhCN": "Browser-extension account hub 面向 New API/Sub2API relay accounts，balances，usage，auto check-ins，one-click keys，pricing，health checks，和 channel management。",
       "fields": [
@@ -6326,6 +6398,14 @@
     {
       "source": "Browser-resident agent that turns ordinary web pages into typed tools for any MCP client, so another agent can call page actions instead of low-level clicking.",
       "zhCN": "Browser-resident 智能体 that turns ordinary web pages into typed tools 面向 any MCP client，so another 智能体 can call page actions instead of low-level clicking。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Browser-runnable acceptance MVP where parties agree on done criteria, check delivery, and pay by compiled contract rules.",
+      "zhCN": "Browser-runnable acceptance MVP where parties agree on done criteria，check delivery，和 pay by compiled contract rules。",
       "fields": [
         "summary"
       ],
@@ -6438,6 +6518,22 @@
     {
       "source": "Builders experimenting with multi-agent workflows and reusable agent templates.",
       "zhCN": "构建者 experimenting 具备 multi-智能体工作流和 reusable 智能体 templates。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Builders experimenting with practical computer-use agents where per-step cost, typed action choices, and local macOS control matter.",
+      "zhCN": "构建者 experimenting 具备 practical computer-use 智能体 where per-step cost，typed action choices，和本地 macOS control matter。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Builders exploring agent marketplaces, milestone payments, or verifiable delivery contracts.",
+      "zhCN": "构建者 exploring 智能体 marketplaces，milestone payments，或 verifiable delivery contracts。",
       "fields": [
         "audience"
       ],
@@ -7458,6 +7554,14 @@
         "runnability"
       ],
       "count": 1
+    },
+    {
+      "source": "CLI-first, adapter-first framework that lets a stronger LLM act as the reasoning brain behind harnesses such as DeepSeek Harness, WorkBuddy, Codex, and Claude Code.",
+      "zhCN": "CLI-first，adapter-first 框架 that lets a stronger LLM act as the reasoning brain behind harnesses such as DeepSeek Harness，WorkBuddy，Codex，和 Claude Code。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
     },
     {
       "source": "CLI-oriented product surface with install docs and active repo structure.",
@@ -8564,6 +8668,14 @@
       "count": 3
     },
     {
+      "source": "Combines game-engine verbs, world diffs, persisted markdown skills, tools, notes, and post-run learning into an agentic gameplay loop.",
+      "zhCN": "Combines game-engine verbs，world diffs，persisted markdown skills，tools，notes，和 post-run learning into an 智能体式 gameplay loop。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Combines human login control, browser memory and agent operation in one workflow.",
       "zhCN": "Combines human login control，浏览器 memory 和智能体 operation in one 工作流。",
       "fields": [
@@ -8742,6 +8854,14 @@
     {
       "source": "Combines shared training/context with private user-agent interaction rather than one global chat transcript.",
       "zhCN": "Combines shared training/上下文具备 private user-智能体 interaction 而不是 one global chat transcript。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Combines source-cited research chat, PDF reader, local notes, and sandboxed agents.",
+      "zhCN": "Combines source-cited 研究 chat，PDF reader，本地 notes，和 sandboxed 智能体。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -9388,6 +9508,14 @@
       "count": 2
     },
     {
+      "source": "Computer-use researchers who need agents to drive real mobile hardware instead of simulators or browser mocks.",
+      "zhCN": "Computer-use 研究者 who need 智能体 to drive real mobile hardware instead of simulators 或浏览器 mocks。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Concept-heavy sovereign AI intake project with document-style README and limited visible product/runtime structure in this audit.",
       "zhCN": "Concept-heavy sovereign AI intake project 具备 document-style README 和 limited 可见 product/运行时 structure in this 审计。",
       "fields": [
@@ -9538,6 +9666,14 @@
         "aiNativeAngle"
       ],
       "count": 1
+    },
+    {
+      "source": "Connects chat, sandbox lifecycle, permissions, and MCP as a governance layer.",
+      "zhCN": "Connects chat，沙箱 lifecycle，权限，和 MCP as a governance layer。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
     },
     {
       "source": "Connects desktop tool execution, scheduled tasks, expert kits, MCP servers, and IM control into one product.",
@@ -9710,6 +9846,14 @@
     {
       "source": "Controlled adversarial web for measuring browser-agent prompt-injection failures with replay evidence.",
       "zhCN": "Controlled adversarial web 面向 measuring 浏览器-智能体 prompt-injection failures 具备 replay evidence。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Controls an iPad through native screen sharing plus a USB HID input device, with support notes for USB-C iPhones.",
+      "zhCN": "Controls an iPad through native screen sharing 加上 a USB HID input device，具备支持 notes 面向 USB-C iPhones。",
       "fields": [
         "summary"
       ],
@@ -13476,6 +13620,14 @@
       "count": 2
     },
     {
+      "source": "Created 2026-09-15 and pushed 2026-09-16. Root audit found .env.example, contracts, docs, fixtures, scripts, source, tests, Vite and Vitest configs, plus a published browser demo link.",
+      "zhCN": "创建于 2026-09-15 和更新于 2026-09-16. Root 审计 found .env.example，contracts，docs，fixtures，scripts，source，tests，Vite 和 Vitest configs，加上 a published 浏览器 demo link。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
       "source": "Created 2026-09-15 and pushed minutes later; search metadata showed 0 stars. Root audit found Go modules, cmd/internal/pkg/runner, apps, hub-web, examples, Dockerfile, docker-compose, Helm, install script, policy file, privacy/security docs, and skills.",
       "zhCN": "创建于 2026-09-15 和更新于 minutes later；search metadata showed 0 stars. Root 审计 found Go modules，cmd/internal/pkg/runner，apps，hub-web，examples，Dockerfile，docker-compose，Helm，安装 script，policy file，privacy/security docs，和 skills。",
       "fields": [
@@ -13484,8 +13636,136 @@
       "count": 2
     },
     {
+      "source": "Created 2026-09-15, pushed 2026-09-16, and showed 2 stars. Root audit found .claude-plugin, viewer, protocol, plugins, benchmarks, examples, packaging, src, tests, and server.json.",
+      "zhCN": "创建于 2026-09-15，更新于 2026-09-16，和 showed 2 stars. Root 审计 found .claude-plugin，viewer，protocol，plugins，benchmarks，examples，packaging，src，tests，和 server.json。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-15, pushed 2026-09-16, and showed 3 stars; root audit found action.yml, docs, eval, examples, lib, and specs.",
+      "zhCN": "创建于 2026-09-15，更新于 2026-09-16，和 showed 3 stars；root 审计 found action.yml，docs，eval，examples，lib，和 specs。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-15, pushed 2026-09-16, and showed 54 stars. Root audit found control_server, input_device, ipad_app, docs, package files, security notes, and README demo GIF.",
+      "zhCN": "创建于 2026-09-15，更新于 2026-09-16，和 showed 54 stars. Root 审计 found control_server，input_device，ipad_app，docs，package files，security notes，和 README demo GIF。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-15, pushed 2026-09-16; root audit found bin, dashboard, skills, src, systemd, and tests.",
+      "zhCN": "创建于 2026-09-15，更新于 2026-09-16；root 审计 found bin，仪表盘，skills，src，systemd，和 tests。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
       "source": "Created 2026-09-15; root audit found Next app, Prisma, data, skills, design studies, docs, tests, and package workspace.",
       "zhCN": "创建于 2026-09-15；root 审计 found Next app，Prisma，data，skills，design studies，docs，tests，和 package 工作空间。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16 and pushed 2026-09-16; root audit found agentwave.py, examples, templates, tests, and CI badge.",
+      "zhCN": "创建于 2026-09-16 和更新于 2026-09-16；root 审计 found agentwave.py，examples，templates，tests，和 CI badge。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16 and pushed 2026-09-16; root audit found apps, packages, scripts, sidecar, and package files.",
+      "zhCN": "创建于 2026-09-16 和更新于 2026-09-16；root 审计 found apps，packages，scripts，sidecar，和 package files。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16 and pushed 2026-09-17; root audit found SKILL.md, docs, templates, and bilingual README.",
+      "zhCN": "创建于 2026-09-16 和更新于 2026-09-17；root 审计 found SKILL.md，docs，templates，和 bilingual README。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16 and pushed minutes later; GitHub metadata showed 91 stars during audit. Root audit found .env.example, docs, tests, pyproject.toml, uv.lock, and typesafe_computer_use.",
+      "zhCN": "创建于 2026-09-16 和更新于 minutes later；GitHub metadata showed 91 stars during 审计. Root 审计 found .env.example，docs，tests，pyproject.toml，uv.lock，和 typesafe_computer_use。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 1 star. Root audit found examples, tests, package metadata, README in English/Spanish, and tool_evidence_guard.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 1 star. Root 审计 found examples，tests，package metadata，README in English/Spanish，和 tool_evidence_guard。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 17 stars. Root audit found Dockerfile, docker-compose, requirements, gateway, layers, mcp, orchestrator, pipelines, studio, examples, and tests.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 17 stars. Root 审计 found Dockerfile，docker-compose，requirements，gateway，layers，mcp，orchestrator，pipelines，studio，examples，和 tests。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 2 stars. Root audit found apps, packages, skills, examples, docs, tests, package files, and bilingual README.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 2 stars. Root 审计 found apps，packages，skills，examples，docs，tests，package files，和 bilingual README。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 30 stars. Root audit found agent, brain, mod, mod-steward, config, docs, and scripts.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 30 stars. Root 审计 found 智能体，brain，mod，mod-steward，config，docs，和 scripts。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 4 stars. Root audit found engine, skills-gallery, market, docs, bilingual README, CI, and launcher batch file.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 4 stars. Root 审计 found engine，skills-gallery，market，docs，bilingual README，CI，和 launcher batch file。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17, and showed 7 stars. Root audit found .env.example, docs, dashboard screenshot, package files, scripts, src, and TypeScript config.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17，和 showed 7 stars. Root 审计 found .env.example，docs，仪表盘 screenshot，package files，scripts，src，和 TypeScript config。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-16, pushed 2026-09-17; root audit found chat, config, deploy, docs, host, native, proxy, schemas, scripts, tests, and vendor.",
+      "zhCN": "创建于 2026-09-16，更新于 2026-09-17；root 审计 found chat，config，deploy，docs，host，native，proxy，schemas，scripts，tests，和 vendor。",
+      "fields": [
+        "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Created 2026-09-17 and pushed 2026-09-17; root audit found screenshots, lib, tests, package files, and preview HTML files.",
+      "zhCN": "创建于 2026-09-17 和更新于 2026-09-17；root 审计 found screenshots，lib，tests，package files，和 preview HTML files。",
       "fields": [
         "growthSignal"
       ],
@@ -14076,6 +14356,14 @@
       "count": 2
     },
     {
+      "source": "DeepSeek Harness MCP manager plugin",
+      "zhCN": "DeepSeek Harness MCP 管理器 plugin",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "DeepSeek Harness plugin collection for rich UI cards/forms and assistant launcher/subagent workflows.",
       "zhCN": "DeepSeek Harness plugin 集合面向 rich UI cards/forms 和 assistant launcher/subagent 工作流。",
       "fields": [
@@ -14102,6 +14390,14 @@
     {
       "source": "DeepSeek Harness users and browser-agent builders.",
       "zhCN": "DeepSeek Harness 用户和浏览器-智能体构建者。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "DeepSeek Harness users managing multiple MCP servers.",
+      "zhCN": "DeepSeek Harness 用户 managing multiple MCP servers。",
       "fields": [
         "audience"
       ],
@@ -14172,6 +14468,22 @@
       "count": 2
     },
     {
+      "source": "Defines an A2L protocol, adapters, apps, examples, skills, docs, and tests around model/harness collaboration.",
+      "zhCN": "Defines an A2L protocol，adapters，apps，examples，skills，docs，和 tests around model/harness collaboration。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Defines claim/evidence contracts as deterministic code so agent answers can be checked against actual tool returns.",
+      "zhCN": "Defines claim/evidence contracts as deterministic code so 智能体 answers can be checked 对比 actual tool returns。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Defines repeatable skills and process gates for agent work.",
       "zhCN": "Defines repeatable skills 和 process gates 面向智能体 work。",
       "fields": [
@@ -14192,6 +14504,14 @@
       "zhCN": "Delegated 智能体 authority",
       "fields": [
         "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Delegates bounded tasks from Claude Code to agy, opencode, and copilot CLIs with preflight checks and circuit breakers.",
+      "zhCN": "Delegates bounded tasks from Claude Code to agy，opencode，和 copilot CLIs 具备 preflight checks 和 circuit breakers。",
+      "fields": [
+        "summary"
       ],
       "count": 2
     },
@@ -14584,6 +14904,14 @@
       "zhCN": "Deterministic design-to-implementation pixel comparison system intended 面向 coding 智能体，具备浏览器 screenshots，diff scoring 和 report generation。",
       "fields": [
         "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Deterministic evidence contracts for tool-using agents",
+      "zhCN": "Deterministic evidence contracts 面向 tool-using 智能体",
+      "fields": [
+        "category"
       ],
       "count": 2
     },
@@ -15100,6 +15428,14 @@
       "count": 1
     },
     {
+      "source": "Developers experimenting with isolated coding-agent workstations.",
+      "zhCN": "开发者 experimenting 具备 isolated coding 智能体 workstations。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Developers experimenting with local coding agents on Android devices or mobile companion workflows.",
       "zhCN": "开发者 experimenting 具备本地 coding 智能体 on Android devices 或 mobile companion 工作流。",
       "fields": [
@@ -15556,6 +15892,14 @@
       "count": 2
     },
     {
+      "source": "Developers using multiple local coding-agent CLIs.",
+      "zhCN": "开发者 using multiple 本地 coding 智能体 CLIs。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Developers using paid CLI subscriptions who want visible multi-agent cross-checking.",
       "zhCN": "开发者 using paid CLI subscriptions who want 可见多智能体 cross-checking。",
       "fields": [
@@ -15782,6 +16126,14 @@
     {
       "source": "Developers who want a terminal shaped around agent multitasking.",
       "zhCN": "开发者 who want a 终端 shaped around 智能体 multitasking。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Developers who want agent memory to survive sessions and become reviewable infrastructure.",
+      "zhCN": "开发者 who want 智能体 memory to survive 会话和 become reviewable 基础设施。",
       "fields": [
         "audience"
       ],
@@ -16748,6 +17100,14 @@
       "count": 2
     },
     {
+      "source": "Electron workspace for notes, PDFs, citations, sandboxed task delegation, and Obsidian-compatible vault growth.",
+      "zhCN": "Electron 工作空间面向 notes，PDFs，citations，sandboxed task delegation，和 Obsidian-compatible vault 增长。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Electron/TypeScript desktop studio for smart chat, agents, assistants, and unified model access.",
       "zhCN": "Electron/TypeScript 桌面端 studio 面向 smart chat，智能体，assistants，和 unified model access。",
       "fields": [
@@ -17146,6 +17506,14 @@
         "audience"
       ],
       "count": 1
+    },
+    {
+      "source": "Engineers who want bounded LLM review passes with inspectable evidence selection rather than one huge prompt.",
+      "zhCN": "Engineers who want bounded LLM review passes 具备 inspectable evidence selection 而不是 one 巨大的 prompt。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
     },
     {
       "source": "Enterprise Agent Sandbox",
@@ -17788,6 +18156,14 @@
       "count": 2
     },
     {
+      "source": "Evidence-governance research repository rather than a clear runnable AI-native product.",
+      "zhCN": "Evidence-governance 研究仓库而不是 a clear runnable AI 原生产品。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Evidence, claims and conflict handling address long-term agent trust.",
       "zhCN": "Evidence，claims 和 conflict handling address long-term 智能体 trust。",
       "fields": [
@@ -18120,6 +18496,14 @@
       "zhCN": "Families 或 small groups exploring 自托管 assistants 具备 per-person memory privacy。",
       "fields": [
         "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Fans tasks into runner branches and PRs, merging only what CI proves.",
+      "zhCN": "Fans tasks into runner branches 和 PRs，merging only what CI proves。",
+      "fields": [
+        "summary"
       ],
       "count": 2
     },
@@ -18732,6 +19116,14 @@
       "count": 3
     },
     {
+      "source": "Game AI builders and agent-memory researchers looking for long-horizon embodied task loops with inspectable state.",
+      "zhCN": "Game AI 构建者和智能体-memory 研究者 looking 面向 long-horizon embodied task loops 具备 inspectable state。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Game Asset Generation MCP",
       "zhCN": "技术类 / Game Asset Generation MCP",
       "fields": [
@@ -18920,6 +19312,14 @@
       "zhCN": "GitHub Action 加上 pnpm 工作空间；no action execution 审计。",
       "fields": [
         "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "GitHub Actions fan-out for Claude Code",
+      "zhCN": "GitHub Actions fan-out 面向 Claude Code",
+      "fields": [
+        "category"
       ],
       "count": 2
     },
@@ -20788,6 +21188,14 @@
       "count": 2
     },
     {
+      "source": "Good browser instrumentation idea, but overlaps with prior browser-agent tooling and needs runtime proof of DOM/network evidence capture.",
+      "zhCN": "Good 浏览器 instrumentation idea，但 overlaps 具备 prior 浏览器-智能体 tooling 和需要运行时 proof of DOM/network evidence capture。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Good CLI signal with qmtcli capabilities/schema/examples/server commands, but it depends on a logged-in QMT client and was not run.",
       "zhCN": "Good CLI 信号具备 qmtcli capabilities/schema/examples/server commands，但 it depends on a logged-in QMT client 和 was not run。",
       "fields": [
@@ -21038,6 +21446,14 @@
     {
       "source": "Good vertical AI-workbench example; verify desktop/mobile build maturity.",
       "zhCN": "Good vertical AI-工作台 example；verify 桌面端/mobile 构建 maturity。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Good vertical product, but verify scheduler and source coverage before Top.",
+      "zhCN": "Good vertical product，但 verify scheduler 和 source coverage before Top。",
       "fields": [
         "recommendedAction"
       ],
@@ -21796,6 +22212,14 @@
       "count": 2
     },
     {
+      "source": "High from Python package, uv lockfile, CI badge, examples, tests, and MCP metadata; no simulator, viewer, or MCP client was run.",
+      "zhCN": "High from Python package，uv lockfile，CI badge，examples，tests，和 MCP metadata；no simulator，viewer，或 MCP client was run。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "High from README/root audit: Next.js app, npm run dev, Dockerfile, Vitest config, 64 claimed unit tests, and no external server requirement for the core local index.",
       "zhCN": "High from README/root 审计：Next.js app，npm run dev，Dockerfile，Vitest config，64 claimed unit tests，和 no external server requirement 面向 the core 本地 index。",
       "fields": [
@@ -21852,6 +22276,14 @@
       "count": 2
     },
     {
+      "source": "High from self-hosted packaging and multiple runtime surfaces; no memory ingestion, MCP client, Docker stack, or studio UI was run.",
+      "zhCN": "High from 自托管 packaging 和 multiple 运行时 surfaces；no memory ingestion，MCP client，Docker stack，或 studio UI was run。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "High from single-binary Go structure, install/preflight files, docs, and web UI folder; no tmux/Tailscale/phone session was launched.",
       "zhCN": "High from single-binary Go structure，安装/preflight files，docs，和 web UI folder；no tmux/Tailscale/phone session was launched。",
       "fields": [
@@ -21862,6 +22294,14 @@
     {
       "source": "High from TypeScript package, tests, npm badge, env example, and explicit MCP workflow; no n8n instance or MCP client was connected.",
       "zhCN": "High from TypeScript package，tests，npm badge，env example，和 explicit MCP 工作流；no n8n instance 或 MCP client was connected。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "High from zero-runtime-dependency positioning, tests, and examples; no verifier was run against live tool traces.",
+      "zhCN": "High from zero-运行时-dependency positioning，tests，和 examples；no verifier was run 对比 live tool traces。",
       "fields": [
         "runnability"
       ],
@@ -22352,6 +22792,14 @@
       "zhCN": "Important prior 信号，但 no new release-level change found in 本轮。",
       "fields": [
         "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Impressive desktop-agent runtime claims, but zero-star fresh repo with broad surfaces needs runnable proof before promotion.",
+      "zhCN": "Impressive 桌面端-智能体运行时 claims，但 zero-star fresh repo 具备 broad surfaces 需要 runnable proof before promotion。",
+      "fields": [
+        "skipReason"
       ],
       "count": 2
     },
@@ -22988,6 +23436,14 @@
       "count": 2
     },
     {
+      "source": "Interesting ML/game harness, but more research/game-engine stack than a clear AI-native product for this radar window.",
+      "zhCN": "Interesting ML/game harness，但 more 研究/game-engine stack than a clear AI 原生产品面向 this radar window。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Interesting OpenAPI-as-remote-CLI protocol sketch, but root audit found only AGENTS.md and README.md, so it lacks runnable product evidence.",
       "zhCN": "Interesting OpenAPI-as-remote-CLI protocol sketch，但 root 审计 found only AGENTS.md 和 README.md，so it lacks 可运行产品 evidence。",
       "fields": [
@@ -23056,6 +23512,14 @@
       "zhCN": "Introduces an explicit procurement/reuse checkpoint into the 智能体工作流，turning dependency choice 组织成一个 repeatable tool-backed habit。",
       "fields": [
         "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "iOS Simulator MCP control and viewer",
+      "zhCN": "iOS Simulator MCP control 和 viewer",
+      "fields": [
+        "category"
       ],
       "count": 2
     },
@@ -24212,6 +24676,14 @@
       "count": 2
     },
     {
+      "source": "Keep on watchlist until local install and policy claims can be tested.",
+      "zhCN": "保留 on watchlist until 本地安装和 policy claims can be tested。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Keep on watchlist; revisit when comparing memory layers.",
       "zhCN": "保留 on watchlist；revisit when 比较 memory layers。",
       "fields": [
@@ -24224,6 +24696,14 @@
       "zhCN": "保留 only if runnable examples 和 non-trivial 工作流 appear。",
       "fields": [
         "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Keep the human-confirmation model, then verify whether skills can be audited before installation.",
+      "zhCN": "保留 the human-confirmation model，then verify whether skills can be audited before 安装。",
+      "fields": [
+        "recommendedAction"
       ],
       "count": 2
     },
@@ -24262,6 +24742,14 @@
     {
       "source": "Keeps agents as value producers while ordinary code decides graph transitions, capacity limits, persistence, and human review.",
       "zhCN": "Keeps 智能体 as value producers while ordinary code decides graph transitions，capacity limits，persistence，和 human review。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Keeps model calls scoped inside a small Ruby script with cached replies and reviewable reports.",
+      "zhCN": "Keeps model calls scoped inside a small Ruby script 具备 cached replies 和 reviewable reports。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -24616,6 +25104,14 @@
       "zhCN": "Lightweight Git-backed permanent memory service 具备 MCP tools 面向 read/write/delete，本地 client skills 和自托管 deployment orientation。",
       "fields": [
         "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Lightweight issue triage script",
+      "zhCN": "Lightweight issue 分诊 script",
+      "fields": [
+        "category"
       ],
       "count": 2
     },
@@ -25388,6 +25884,14 @@
       "count": 2
     },
     {
+      "source": "Local human-gated AI agent workbench",
+      "zhCN": "Local human-gated AI 智能体工作台",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Local inference operators tuning model-serving stacks.",
       "zhCN": "Local inference 运维/运营人员 tuning model-serving stacks。",
       "fields": [
@@ -25452,6 +25956,14 @@
       "count": 2
     },
     {
+      "source": "Local LLM plays RimWorld through a mod-exposed HTTP engine and rewrites its own skills, tools, and playbook between colonies.",
+      "zhCN": "Local LLM plays RimWorld through a mod-exposed HTTP engine 和 rewrites its own skills，tools，和 playbook between colonies。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Local LLM Privacy Firewall",
       "zhCN": "技术类 / Local LLM Privacy Firewall",
       "fields": [
@@ -25476,8 +25988,24 @@
       "count": 2
     },
     {
+      "source": "Local macOS research workspace",
+      "zhCN": "Local macOS 研究工作空间",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Local manga scanlation MCP studio",
       "zhCN": "技术类 / Local manga scanlation MCP studio",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Local MCP delegation hub",
+      "zhCN": "技术类 / Local MCP delegation hub",
       "fields": [
         "category"
       ],
@@ -26708,6 +27236,14 @@
       "count": 2
     },
     {
+      "source": "Low-cost macOS computer-use runtime",
+      "zhCN": "Low-cost macOS computer-use 运行时",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Low-latency expressive voice output is a core interface layer for voice agents, not a secondary media export feature.",
       "zhCN": "Low-latency expressive voice output is a core interface layer 面向 voice 智能体，not a secondary media export feature。",
       "fields": [
@@ -26972,6 +27508,14 @@
       "count": 2
     },
     {
+      "source": "Maintainers who want parallel agent task execution under CI control.",
+      "zhCN": "Maintainers who want parallel 智能体 task execution under CI control。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Major baseline coding agent, not a new radar candidate; include only for comparisons.",
       "zhCN": "Major 基线 coding 智能体，not a new radar candidate；include only 面向 comparisons。",
       "fields": [
@@ -27116,6 +27660,14 @@
       "count": 2
     },
     {
+      "source": "Makes agent-to-agent delegation a local MCP server with preflight and event logs.",
+      "zhCN": "Makes 智能体-to-智能体 delegation a 本地 MCP 服务器具备 preflight 和 event logs。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Makes agents, artifacts, channels, browser testing, memory, approvals and provider routing the core workspace primitives instead of adding chat on top of files.",
       "zhCN": "Makes 智能体，artifacts，channels，浏览器 testing，memory，approvals 和 provider routing the core 工作空间 primitives instead of adding chat on top of files。",
       "fields": [
@@ -27150,6 +27702,14 @@
     {
       "source": "Makes approvals, replayable events, sandboxed execution and audit visibility core runtime primitives for agents.",
       "zhCN": "Makes approvals，replayable events，sandboxed execution 和审计 visibility core 运行时 primitives 面向智能体。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Makes architecture decisions, preferences, and prior work a shared memory product with MCP and studio surfaces rather than hidden chat history.",
+      "zhCN": "Makes architecture decisions，preferences，和 prior work a shared memory product 具备 MCP 和 studio surfaces 而不是 hidden chat history。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -28708,6 +29268,14 @@
       "count": 2
     },
     {
+      "source": "Medium from clear C#/agent/mod split and tested-model notes; no RimWorld install, mod bridge, vLLM model, or colony run was executed.",
+      "zhCN": "Medium from clear C#/智能体/mod split 和 tested-model notes；no RimWorld 安装，mod bridge，vLLM model，或 colony run was executed。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium from clear package structure and acceptance-path README; no MCP server, tunnel, SSH lease, edit gate, or ChatGPT Web path was executed.",
       "zhCN": "Medium from clear package structure 和 acceptance-路径 README；no MCP 服务器，tunnel，SSH lease，edit gate，或 ChatGPT Web 路径 was executed。",
       "fields": [
@@ -28740,6 +29308,14 @@
       "count": 2
     },
     {
+      "source": "Medium from docs/templates, but no scheduler or webhook was tested.",
+      "zhCN": "Medium from docs/templates，但 no scheduler 或 webhook was tested。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium from docs/tests and visible-browser design; platform login, captcha handling, messaging, and terms compliance were not tested.",
       "zhCN": "Medium from docs/tests 和可见-浏览器 design；平台 login，captcha handling，messaging，和 terms compliance were not tested。",
       "fields": [
@@ -28748,8 +29324,32 @@
       "count": 2
     },
     {
+      "source": "Medium from Electron/workspace structure; no app run or PDF import was tested.",
+      "zhCN": "Medium from Electron/工作空间 structure；no app run 或 PDF import was tested。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium from extensive docs and agent-host plugins; job-board scraping durability and private-data handling were not tested.",
       "zhCN": "Medium from extensive docs 和智能体-host plugins；job-board scraping durability 和 private-data handling were not tested。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium from extensive folders and local install docs; no sandbox was launched.",
+      "zhCN": "Medium from extensive folders 和本地安装 docs；no 沙箱 was launched。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium from launcher and engine structure; no Windows desktop run, agent action, or confirmation loop was tested.",
+      "zhCN": "Medium from launcher 和 engine structure；no Windows 桌面端 run，智能体 action，或 confirmation loop was tested。",
       "fields": [
         "runnability"
       ],
@@ -28828,8 +29428,24 @@
       "count": 2
     },
     {
+      "source": "Medium from screenshots and JS package structure; no DSH plugin install was tested.",
+      "zhCN": "Medium from screenshots 和 JS package structure；no DSH plugin 安装 was tested。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium from shell-based implementation and examples; no GitHub PR or CI integration was run.",
       "zhCN": "Medium from shell-based implementation 和 examples；no GitHub PR 或 CI integration was run。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium from single-file CLI plus examples/tests; no GitHub Actions dispatch was executed.",
+      "zhCN": "Medium from single-file CLI 加上 examples/tests；no GitHub Actions dispatch was executed。",
       "fields": [
         "runnability"
       ],
@@ -29076,6 +29692,14 @@
       "count": 2
     },
     {
+      "source": "Medium-high from npm package structure and dashboard; no CLI delegation was executed.",
+      "zhCN": "Medium-high from npm package structure 和仪表盘；no CLI delegation was executed。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium-high from npx quick start, Docker worker requirement, setup wizard, sample reports, and SARIF clues; exploit behavior and sandbox boundaries were not tested.",
       "zhCN": "Medium-high from npx quick start，Docker worker requirement，setup wizard，sample reports，和 SARIF clues；exploit behavior 和沙箱 boundaries were not tested。",
       "fields": [
@@ -29102,6 +29726,14 @@
     {
       "source": "Medium-high from package and docs evidence; no harness adapters or sandboxes were connected locally.",
       "zhCN": "Medium-high from package 和 docs evidence；no harness adapters 或 sandboxes were connected 本地。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium-high from package structure and dashboard artifact; no model key, diff review, full-codebase scan, or dashboard session was executed.",
+      "zhCN": "Medium-high from package structure 和仪表盘 artifact；no model key，diff review，full-codebase scan，或仪表盘 session was executed。",
       "fields": [
         "runnability"
       ],
@@ -29140,6 +29772,14 @@
       "count": 2
     },
     {
+      "source": "Medium-high from Python package layout, CI badge, tests, env example, and docs; no Accessibility permissions, OCR loop, TypeSafe model call, or clicking was executed.",
+      "zhCN": "Medium-high from Python package layout，CI badge，tests，env example，和 docs；no Accessibility 权限，OCR loop，TypeSafe model call，或 clicking was executed。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium-high from Python package layout, PR bot description, CLI/MCP surface, fixtures, and tests; no GitHub Action, Qwen model, MCP call, or PR comment was executed.",
       "zhCN": "Medium-high from Python package layout，PR bot description，CLI/MCP surface，fixtures，和 tests；no GitHub Action，Qwen model，MCP call，或 PR comment was executed。",
       "fields": [
@@ -29158,6 +29798,14 @@
     {
       "source": "Medium-high from repository shape and docs; local model, export, and desktop flows were not executed.",
       "zhCN": "Medium-high from 仓库 shape 和 docs；本地 model，export，和桌面端 flows were 未执行。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium-high from Ruby gem/action structure and eval fixtures; no triage run was executed.",
+      "zhCN": "Medium-high from Ruby gem/action structure 和 eval fixtures；no triage run was executed。",
       "fields": [
         "runnability"
       ],
@@ -29196,6 +29844,22 @@
       "count": 2
     },
     {
+      "source": "Medium-high from tests, contract fixtures, and browser demo claim; no Ethereum VM tab, contract, transaction, or payment flow was executed.",
+      "zhCN": "Medium-high from tests，contract fixtures，和浏览器 demo claim；no Ethereum VM tab，contract，transaction，或 payment flow was executed。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium-high from three-component architecture and hardware docs; no iPad app, USB HID device, screen stream, or AssistiveTouch path was tested.",
+      "zhCN": "Medium-high from three-component architecture 和 hardware docs；no iPad app，USB HID device，screen stream，或 AssistiveTouch 路径 was tested。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
       "source": "Medium-high from TypeScript package, tests, docs, and deploy config; Cloudflare runtime and auth scopes were not tested.",
       "zhCN": "Medium-high from TypeScript package，tests，docs，和 deploy config；Cloudflare 运行时和 auth scopes were not tested。",
       "fields": [
@@ -29214,6 +29878,14 @@
     {
       "source": "Medium-high from working CLI status, validate/compile/check description, GitHub Action, schemas, and examples; no compile or drift check was run locally.",
       "zhCN": "Medium-high from working CLI status，验证/compile/check description，GitHub Action，schemas，和 examples；no compile 或 drift check was run 本地。",
+      "fields": [
+        "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Medium-high from workspace structure and protocol docs; no harness adapter, model bridge, or Codex/Claude integration was run.",
+      "zhCN": "Medium-high from 工作空间 structure 和 protocol docs；no harness adapter，model bridge，或 Codex/Claude integration was run。",
       "fields": [
         "runnability"
       ],
@@ -29924,6 +30596,14 @@
       "count": 2
     },
     {
+      "source": "Mirrors and drives the iOS Simulator from Claude Code, CLI agents, or a browser, with live viewer, cursor tracking, token-efficient snapshots, and MCP automation.",
+      "zhCN": "Mirrors 和 drives the iOS Simulator from Claude Code，CLI 智能体，或 a 浏览器，具备 live viewer，cursor tracking，token-efficient snapshots，和 MCP automation。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "MIT self-hosted multi-tenant AI-agent orchestration platform with personas, skills/tools, delegation, RAG, semantic memory, marketplace, provider routing, FastAPI backend and Next.js frontend.",
       "zhCN": "MIT 自托管 multi-tenant AI-智能体 orchestration 平台具备 personas，skills/tools，delegation，RAG，semantic memory，marketplace，provider routing，FastAPI backend 和 Next.js frontend。",
       "fields": [
@@ -30008,6 +30688,14 @@
       "zhCN": "Mobile coding 智能体 companion",
       "fields": [
         "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Mobile developers who need agents to inspect and operate iOS Simulator flows with visual proof.",
+      "zhCN": "Mobile 开发者 who need 智能体 to 检查和 operate iOS Simulator flows 具备 visual proof。",
+      "fields": [
+        "audience"
       ],
       "count": 2
     },
@@ -32444,6 +33132,14 @@
       "count": 2
     },
     {
+      "source": "Open-source maintainers who want cheaper issue/discussion triage.",
+      "zhCN": "开源 maintainers who want cheaper issue/discussion triage。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Open-source metasearch backend, MCP server and AI search API for LLM agents with FastAPI, provider fallback, deduplication and structured JSON output.",
       "zhCN": "开源 metasearch backend，MCP 服务器和 AI search API 面向 LLM 智能体具备 FastAPI，provider fallback，deduplication 和 structured JSON output。",
       "fields": [
@@ -33068,6 +33764,14 @@
       "count": 2
     },
     {
+      "source": "Packages simulator UI state, cursor/action tracking, MCP protocol, viewer, benchmarks, examples, and tests as an agent control layer.",
+      "zhCN": "Packages simulator UI state，cursor/action tracking，MCP protocol，viewer，benchmarks，examples，和 tests as an 智能体 control layer。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Packages the coding-agent harness as a managed desktop runtime with compatibility radar and trusted plugin review rather than a loose CLI setup.",
       "zhCN": "Packages the coding 智能体 harness as a managed 桌面端运行时具备 compatibility radar 和 trusted plugin review 而不是 a loose CLI setup。",
       "fields": [
@@ -33436,6 +34140,14 @@
       "count": 2
     },
     {
+      "source": "Persistent memory layer for coding agents",
+      "zhCN": "Persistent memory layer 面向 coding 智能体",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Persistent workspace, unattended operation, agent memory, CLI/install scripts and project governance make agent continuity the core product.",
       "zhCN": "Persistent 工作空间，unattended operation，智能体 memory，CLI/安装 scripts 和 project governance make 智能体 continuity the core product。",
       "fields": [
@@ -33582,6 +34294,14 @@
     {
       "source": "Physical Device Agent Protocol / MCP Bridge",
       "zhCN": "技术类 / Physical Device Agent Protocol / MCP Bridge",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Physical iPad/iPhone computer-use bridge",
+      "zhCN": "技术类 / Physical iPad/iPhone computer-use bridge",
       "fields": [
         "category"
       ],
@@ -34334,6 +35054,14 @@
     {
       "source": "Power users who want AI help triaging and moderating Telegram while retaining explicit approvals.",
       "zhCN": "Power 用户 who want AI help triaging 和 moderating Telegram while retaining explicit approvals。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Power users who want to decouple best reasoning model from the agent harness they prefer operating.",
+      "zhCN": "Power 用户 who want to decouple best reasoning model from the 智能体 harness they prefer operating。",
       "fields": [
         "audience"
       ],
@@ -35140,8 +35868,32 @@
       "count": 2
     },
     {
+      "source": "Promote if eval fixtures show better signal than labels-only bots.",
+      "zhCN": "Promote if eval fixtures show better 信号 than labels-only bots。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Promote if evidence review workflow survives a local build.",
       "zhCN": "Promote if evidence review 工作流 survives a 本地构建。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Promote if the PDF/source citation and sandbox boundaries survive local run.",
+      "zhCN": "Promote if the PDF/source citation 和沙箱 boundaries survive 本地 run。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Promote only after a repeatable hardware checklist and a safety boundary for unintended taps.",
+      "zhCN": "Promote only after a repeatable hardware checklist 和 a safety boundary 面向 unintended taps。",
       "fields": [
         "recommendedAction"
       ],
@@ -35636,6 +36388,14 @@
       "count": 2
     },
     {
+      "source": "Pure-Python verifier that checks LLM tool results and exact scalar claims before agents claim success.",
+      "zhCN": "Pure-Python verifier that checks LLM tool results 和 exact scalar claims before 智能体 claim success。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Push-to-talk voice control for Claude Code running in tmux from phone, tablet or laptop, with PyPI package, TTS/STT requirements and remote execution positioning.",
       "zhCN": "Push-to-talk voice control 面向 Claude Code running in tmux from phone，tablet 或 laptop，具备 PyPI package，TTS/STT requirements 和 remote execution positioning。",
       "fields": [
@@ -35928,6 +36688,14 @@
       "zhCN": "Python CLI commands are documented，但 no repo index 或 memory trial was run。",
       "fields": [
         "runnability"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Python computer-use loop that OCRs the screen, classifies next actions with TypeSafe, and clicks on macOS while targeting roughly $0.0002 per step.",
+      "zhCN": "Python computer-use loop that OCRs the screen，classifies next actions 具备 TypeSafe，和 clicks on macOS while targeting roughly $0.0002 per step。",
+      "fields": [
+        "summary"
       ],
       "count": 2
     },
@@ -38204,6 +38972,14 @@
       "count": 2
     },
     {
+      "source": "Reasoning-brain bridge for agent harnesses",
+      "zhCN": "Reasoning-brain bridge 面向智能体 harnesses",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Recent AI topic visibility, but product boundaries remain unclear.",
       "zhCN": "Recent AI topic visibility，但 product boundaries remain unclear。",
       "fields": [
@@ -39132,6 +39908,14 @@
       "count": 1
     },
     {
+      "source": "Researchers and labs tracking literature updates.",
+      "zhCN": "Researchers 和 labs tracking literature updates。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Researchers and operators tracking fast-moving topics.",
       "zhCN": "Researchers 和运维/运营人员 tracking fast-moving topics。",
       "fields": [
@@ -39198,6 +39982,14 @@
     {
       "source": "Researchers selecting AI agents for literature, lab, medical, or science workflows.",
       "zhCN": "Researchers selecting AI 智能体面向 literature，lab，medical，或 science 工作流。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Researchers who want local-first document chat and task delegation.",
+      "zhCN": "Researchers who want 本地优先 document chat 和 task delegation。",
       "fields": [
         "audience"
       ],
@@ -39384,6 +40176,14 @@
       "zhCN": "技术类 / Review-first AI Content Knowledge Base",
       "fields": [
         "category"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Revisit after compatibility testing against current DSH builds.",
+      "zhCN": "Revisit after compatibility testing 对比当前 DSH builds。",
+      "fields": [
+        "recommendedAction"
       ],
       "count": 2
     },
@@ -39972,6 +40772,14 @@
       "count": 2
     },
     {
+      "source": "Run on a small synthetic diff with known defects and compare against existing lint/test findings.",
+      "zhCN": "Run on a small synthetic diff 具备 known defects 和对比 existing lint/test findings。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Run on a toy Linear/Plane board and inspect policy behavior before considering use on a real repo.",
       "zhCN": "Run on a toy Linear/Plane board 和检查 policy behavior before considering use on a real repo。",
       "fields": [
@@ -40038,6 +40846,14 @@
     {
       "source": "Run only against a toy vulnerable repo first; evaluate false positives, evidence quality and sandbox boundaries before using on private code.",
       "zhCN": "Run only 对比 a toy vulnerable repo first；evaluate false positives，evidence quality 和沙箱 boundaries before using on private code。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Run only in a disposable macOS desktop session and inspect action typing, permission prompts, and failure behavior before allowing real app control.",
+      "zhCN": "Run only in a disposable macOS 桌面端 session 和检查 action typing，permission prompts，和 failure behavior before allowing real app control。",
       "fields": [
         "recommendedAction"
       ],
@@ -40756,6 +41572,14 @@
       "count": 2
     },
     {
+      "source": "Sandboxed coding-agent policy gateway",
+      "zhCN": "Sandboxed coding 智能体 policy gateway",
+      "fields": [
+        "category"
+      ],
+      "count": 2
+    },
+    {
       "source": "Savings/discount guide for AI coding tools, not a productized AI-native runtime.",
       "zhCN": "Savings/discount 指南面向 AI coding tools，not a 产品化 AI 原生运行时。",
       "fields": [
@@ -40872,6 +41696,14 @@
       "zhCN": "Search API showed 更新于 2026-09-10 具备 71.8k stars 和 8.5k forks；rate limit blocked root 审计。",
       "fields": [
         "growthSignal"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Search match from broad AI query, but description/root signal looked like a roster/admin platform rather than an AI-native product.",
+      "zhCN": "Search match from broad AI query，但 description/root 信号 looked like a roster/admin 平台而不是 an AI 原生产品。",
+      "fields": [
+        "skipReason"
       ],
       "count": 2
     },
@@ -41548,6 +42380,14 @@
       "count": 2
     },
     {
+      "source": "Self-hosted cognitive memory layer for Cursor, Claude, VS Code, and coding agents, with gateway, MCP, orchestrator, pipelines, studio, examples, Docker, and tests.",
+      "zhCN": "自托管 cognitive memory layer 面向 Cursor，Claude，VS Code，和 coding 智能体，具备 gateway，MCP，orchestrator，pipelines，studio，examples，Docker，和 tests。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Self-hosted control plane for AI coding-agent sessions, showing running/waiting/finished/stuck states with chat, terminal, approvals, interrupts and history reopening.",
       "zhCN": "自托管控制平面面向 AI coding 智能体会话，showing running/waiting/finished/stuck states 具备 chat，终端，approvals，interrupts 和 history reopening。",
       "fields": [
@@ -41802,6 +42642,14 @@
         "category"
       ],
       "count": 1
+    },
+    {
+      "source": "Self-improving game-playing agent",
+      "zhCN": "Self-improving game-playing 智能体",
+      "fields": [
+        "category"
+      ],
+      "count": 2
     },
     {
       "source": "Semantic object graph layer that models enterprise data once and exposes it through SPL, REST, MCP and a React Web UI.",
@@ -42492,6 +43340,14 @@
       "count": 2
     },
     {
+      "source": "Small Ruby alternative to GitHub Agentic Workflows for issues and discussions with cached replies and scoped tools.",
+      "zhCN": "Small Ruby alternative to GitHub Agentic Workflows 面向 issues 和 discussions 具备 cached replies 和 scoped tools。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Small semantic-search API demo signal; not enough differentiated AI-native product surface for today.",
       "zhCN": "Small semantic-search API demo 信号；not enough differentiated AI 原生产品 surface 面向 today。",
       "fields": [
@@ -42718,6 +43574,14 @@
     {
       "source": "SQLite-backed guardrail and CLI for reconciling stuck AI-agent task states after restarts/timeouts, separating terminal state from delivery state and enforcing dry-run previews.",
       "zhCN": "SQLite-backed guardrail 和 CLI 面向 reconciling stuck AI-智能体 task states after restarts/timeouts，separating 终端 state from delivery state 和 enforcing dry-run previews。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Staged TypeSafe Jev code-review workflow that reviews diffs or whole codebases and displays focused results in a quiet local dashboard.",
+      "zhCN": "Staged TypeSafe Jev code-review 工作流 that reviews diffs 或 whole codebases 和 displays focused results in a quiet 本地仪表盘。",
       "fields": [
         "summary"
       ],
@@ -43324,6 +44188,14 @@
       "count": 2
     },
     {
+      "source": "Strong Windows/PowerDesigner MCP surface, but requires proprietary desktop software and COM environment verification not available in this run.",
+      "zhCN": "Strong Windows/PowerDesigner MCP surface，但需要 proprietary 桌面端 software 和 COM environment 验证 not available in 本轮。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Strong zero-code agent platform, but mature/high-star baseline; skipped to reserve Top slots for fresher 24-72h product surfaces.",
       "zhCN": "Strong zero-code 智能体平台，但成熟/high-star 基线；skipped to reserve Top slots 面向 fresher 24-72h product surfaces。",
       "fields": [
@@ -43352,6 +44224,14 @@
       "zhCN": "Structured file-editing layer 面向 AI 智能体 across JSON，YAML，TOML，Markdown 和 AST-aware operations 具备 dry-run 和 MCP 支持。",
       "fields": [
         "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Structured local code-review dashboard",
+      "zhCN": "Structured 本地 code-review 仪表盘",
+      "fields": [
+        "category"
       ],
       "count": 2
     },
@@ -45284,6 +46164,14 @@
       "count": 2
     },
     {
+      "source": "Test with a no-op harness adapter first and inspect handoff logs for prompt leakage or authority confusion.",
+      "zhCN": "测试具备 a no-op harness adapter first 和检查 handoff logs 面向 prompt leakage 或 authority confusion。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Test with a simple policy-bound browsing task.",
       "zhCN": "测试具备 a simple policy-bound browsing task。",
       "fields": [
@@ -45326,6 +46214,14 @@
     {
       "source": "Test with non-sensitive notes and verify citation quality, deletion controls and local/remote data boundaries.",
       "zhCN": "测试具备 non-sensitive notes 和 verify citation quality，deletion controls 和本地/remote data boundaries。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Test with synthetic project history and require human review before memory is re-injected into future agent sessions.",
+      "zhCN": "测试具备 synthetic project history 和 require human review before memory is re-injected into future 智能体会话。",
       "fields": [
         "recommendedAction"
       ],
@@ -46884,6 +47780,14 @@
       "count": 2
     },
     {
+      "source": "Treats supervision as part of the product: local execution, step confirmation, skills gallery, market, engine, docs, and a launcher batch file.",
+      "zhCN": "Treats supervision as part of the product：本地 execution，step confirmation，skills gallery，market，engine，docs，和 a launcher batch file。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Treats task/worktree/browser/IDE context as the unit of agent execution, making verification and steering part of the product surface.",
       "zhCN": "Treats task/worktree/浏览器/IDE 上下文 as the unit of 智能体 execution，making 验证和 steering part of the 产品界面/入口。",
       "fields": [
@@ -47548,6 +48452,14 @@
       "count": 2
     },
     {
+      "source": "Turns a literature monitoring workflow into an agent-deployed scheduler, digest, and chat follow-up loop.",
+      "zhCN": "Turns a literature monitoring 工作流 into an 智能体-deployed scheduler，digest，和 chat follow-up loop。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Turns a local folder of PDFs, code, notes, CSVs, screenshots, and images into an in-browser searchable workspace exposed to visiting agents through WebMCP tools.",
       "zhCN": "Turns a 本地 folder of PDFs，code，notes，CSVs，screenshots，和 images into an in-浏览器 searchable 工作空间 exposed to visiting 智能体 through WebMCP tools。",
       "fields": [
@@ -47598,6 +48510,14 @@
     {
       "source": "Turns agent collaboration into a shared local room with scripts and a skill surface.",
       "zhCN": "Turns 智能体 collaboration 组织成一个 shared 本地 room 具备 scripts 和 a skill surface。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Turns agent completed the work into rules, fixtures, tests, contracts, and browser-executed verification instead of trust in a transcript.",
+      "zhCN": "Turns 智能体 completed the work into rules，fixtures，tests，contracts，和浏览器-executed 验证 instead of trust in a transcript。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -47780,6 +48700,14 @@
       "count": 2
     },
     {
+      "source": "Turns GUI control into bounded typed decisions over OCR/screen state instead of generic free-form tool calls.",
+      "zhCN": "Turns GUI control into bounded typed decisions over OCR/screen state instead of generic free-form 工具调用。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Turns handwriting regions into model-addressable objects and returns answers as editable pen strokes, making the agent part of the native tablet interaction.",
       "zhCN": "Turns handwriting regions into model-addressable objects 和 returns answers as editable pen strokes，making the 智能体 part of the native tablet interaction。",
       "fields": [
@@ -47822,6 +48750,14 @@
     {
       "source": "Turns MCP from a collection of servers into a governed execution plane with auth, plugins, guardrails, tasks, credentials and metrics.",
       "zhCN": "Turns MCP from a 集合 of servers 组织成一个 governed execution plane 具备 auth，plugins，guardrails，tasks，credentials 和 metrics。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Turns MCP server administration into an in-harness UI plugin.",
+      "zhCN": "Turns MCP 服务器 administration into an in-harness UI plugin。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -48468,6 +49404,14 @@
       "count": 1
     },
     {
+      "source": "Use a toy iOS app and compare UI snapshot token cost against screenshot-only approaches.",
+      "zhCN": "使用 a toy iOS app 和比较 UI snapshot token cost 对比 screenshot-only approaches。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Use as a baseline browser-agent SDK and compare against Webwright/BrowserOperator style approaches.",
       "zhCN": "作为 a 基线浏览器-智能体 SDK 和对比 Webwright/BrowserOperator style approaches。",
       "fields": [
@@ -48542,6 +49486,14 @@
     {
       "source": "Use as a comparison baseline for agent-browser.",
       "zhCN": "作为 a comparison 基线面向智能体-浏览器。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Use as a conceptual reference for agent-delivery acceptance, but keep real payments out until dispute paths and identities are clearer.",
+      "zhCN": "作为 a conceptual reference 面向智能体-delivery acceptance，但 keep real payments out until dispute paths 和 identities are clearer。",
       "fields": [
         "recommendedAction"
       ],
@@ -49044,6 +49996,14 @@
       "count": 2
     },
     {
+      "source": "Useful consultant-in-a-box methodology, but more workflow/content system than directly runnable product surface.",
+      "zhCN": "Useful consultant-in-a-box methodology，但 more 工作流/content system than directly 可运行产品 surface。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
       "source": "Useful curated legal-AI map, but it is an awesome list/resource index rather than a runnable AI-native product.",
       "zhCN": "Useful curated legal-AI map，但 it is an awesome 列表/resource index 而不是 a runnable AI 原生产品。",
       "fields": [
@@ -49054,6 +50014,14 @@
     {
       "source": "Useful ecosystem index with strong stars/forks, but it is a curated list/site rather than a directly runnable AI-native product.",
       "zhCN": "Useful ecosystem index 具备强 stars/forks，但 it is a curated 列表/site 而不是 a directly runnable AI 原生产品。",
+      "fields": [
+        "skipReason"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Useful education-system MCP, but real Brightspace account access and school data permissions need stronger audit before promotion.",
+      "zhCN": "Useful education-system MCP，但 real Brightspace account access 和 school data 权限 need stronger 审计 before promotion。",
       "fields": [
         "skipReason"
       ],
@@ -49372,6 +50340,14 @@
       "count": 2
     },
     {
+      "source": "Users who want a visible, local operator agent rather than a cloud automation black box.",
+      "zhCN": "用户 who want a 可见，本地操作/运营智能体而不是 a cloud automation black box。",
+      "fields": [
+        "audience"
+      ],
+      "count": 2
+    },
+    {
       "source": "Users who want agent work to run through their own machine/browser with visible sessions instead of renting isolated cloud browsers.",
       "zhCN": "用户 who want 智能体 work to run through their own machine/浏览器具备可见会话 instead of renting isolated cloud browsers。",
       "fields": [
@@ -49500,6 +50476,14 @@
       "count": 2
     },
     {
+      "source": "Uses branches, PRs, and CI as the acceptance layer for delegated coding-agent work.",
+      "zhCN": "Uses branches，PRs，和 CI as the acceptance layer 面向 delegated coding 智能体 work。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
       "source": "Uses Claude/Codex/Cursor-style agents as the executor while the project supplies workflow, parsing, design spec, SVG-to-PPTX export, examples, and skill packaging.",
       "zhCN": "Uses Claude/Codex/Cursor-style 智能体 as the executor while the project supplies 工作流，parsing，design spec，SVG-to-PPTX export，examples，和 skill packaging。",
       "fields": [
@@ -49590,6 +50574,14 @@
     {
       "source": "Uses the recorded agent run itself as the test artifact, closing the loop from observability to regression prevention.",
       "zhCN": "Uses the recorded 智能体 run itself as the test artifact，closing the loop from observability to regression prevention。",
+      "fields": [
+        "aiNativeAngle"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Uses typed model judgments, risk matrix stages, evidence selection, and a local dashboard to make review reasoning easier to inspect.",
+      "zhCN": "Uses typed model judgments，risk matrix stages，evidence selection，和 a 本地仪表盘 to make review reasoning easier to 检查。",
       "fields": [
         "aiNativeAngle"
       ],
@@ -51292,6 +52284,14 @@
       "count": 2
     },
     {
+      "source": "Watch for auth, branch cleanup, and CI cost controls.",
+      "zhCN": "继续观察 auth，branch cleanup，和 CI cost controls。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Watch for auth/isolation design and test one local-only node before enabling multi-machine dispatch.",
       "zhCN": "继续观察 auth/isolation design 和 test one 本地-only node before enabling multi-machine dispatch。",
       "fields": [
@@ -51876,6 +52876,14 @@
       "count": 2
     },
     {
+      "source": "Watch for replayable benchmark colonies and failure logs before treating self-improvement claims as proven.",
+      "zhCN": "继续观察 replayable 基准测试 colonies 和 failure logs before treating self-improvement claims as proven。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
       "source": "Watch for reproducible demos and safety boundaries around permissions, sensitive apps, and irreversible actions.",
       "zhCN": "继续观察 reproducible demos 和 safety boundaries around 权限，sensitive apps，和 irreversible actions。",
       "fields": [
@@ -51966,6 +52974,14 @@
     {
       "source": "Watch for screenshots, Docker/devcontainer support, and complete one-command setup before deep evaluation.",
       "zhCN": "继续观察 screenshots，Docker/devcontainer 支持，和 complete one-command setup before deep evaluation。",
+      "fields": [
+        "recommendedAction"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Watch for security boundaries and append-only event log examples.",
+      "zhCN": "继续观察 security boundaries 和 append-only event log examples。",
       "fields": [
         "recommendedAction"
       ],
@@ -52652,6 +53668,14 @@
       "count": 2
     },
     {
+      "source": "Windows-first local AI agent workbench that can see and act on the user's computer, with every step requiring user confirmation.",
+      "zhCN": "Windows-first 本地 AI 智能体工作台 that can see 和 act on the user's computer，具备 every step requiring user confirmation。",
+      "fields": [
+        "summary"
+      ],
+      "count": 2
+    },
+    {
       "source": "Windows-first local AI-agent runtime and MCP gateway exposing 210+ tools for files, Git, process management, WSL, desktop/browser automation, observability and secure MCP tunnels.",
       "zhCN": "Windows-first 本地 AI-智能体运行时和 MCP gateway exposing 210+ tools 面向 files，Git，process management，WSL，桌面端/浏览器 automation，observability 和 secure MCP tunnels。",
       "fields": [
@@ -52672,6 +53696,14 @@
       "zhCN": "Windows/Linux computer-use layer 具备 CLI，REST API 和 MCP 服务器面向 driving native 桌面端 apps in the background 具备 act-then-verify semantics。",
       "fields": [
         "summary"
+      ],
+      "count": 2
+    },
+    {
+      "source": "Wire it to one existing automation output where scalar counts matter, such as snapshot importedRuns/projects/historyEntries.",
+      "zhCN": "技术类 / Wire it to one existing automation output where scalar counts matter，such as snapshot importedRuns/projects/historyEntries。",
+      "fields": [
+        "recommendedAction"
       ],
       "count": 2
     },

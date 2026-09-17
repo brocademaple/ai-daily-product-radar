@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-17",
+  "generated_at": "2026-09-17T12:54:59+08:00",
+  "data_window": "2026-09-15T00:00:00Z to 2026-09-17T04:55:00Z",
+  "source_summary": "Queried 20 GitHub Search API surfaces saved under /tmp/radar_2026_09_17_api/. Deduplicated the search responses into all_candidates.json and audited 25 shortlisted repositories through GitHub repository/root/README API saved under /tmp/radar_2026_09_17_readmes/. Selection prioritized runnable product surfaces, explicit agent workflows, local-first control, evidence/readback, MCP/CLI/UI entrypoints, hardware or browser control paths, and documented install/demo/test surfaces.",
+  "trend_observations": "The strongest new projects are moving below the chat layer into controlled execution: cheaper computer-use loops, physical iPad/iOS control, local cognitive memory, browser instrumentation, code-review dashboards, evidence contracts, and policy/sandbox gateways. The radar should keep separating agent can act from agent can prove what happened: several projects now ship screenshots, dashboards, tests, receipts, CI gates, or human checkpoints as product primitives rather than afterthoughts.",
+  "assumptions": "Scores are based on live GitHub Search API snapshots and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, mobile-tested, hardware-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, email-tested, education-system-tested, game-engine-tested, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and are weak signals for very new repositories. Mature repositories already covered by prior radar runs were not repeated in Top unless this window showed a materially new product signal.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-09-17\n\nTop 10 projects focus on controlled agent execution: low-cost macOS computer-use, physical iPad/iPhone control, self-improving game agents, persistent memory, human-gated local workbenches, iOS Simulator MCP control, structured code review, harness-to-LLM bridging, acceptance infrastructure, and deterministic tool-evidence checks. Watchlist tracks issue triage, DSH MCP management, MCP delegation, sandbox gateways, local research workspaces, literature monitoring, and GitHub Actions fan-out. No third-party repository was cloned or run; judgments are based on GitHub metadata plus repository/root/README audits saved under /tmp/radar_2026_09_17_api/ and /tmp/radar_2026_09_17_readmes/.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "awlevin/typesafe-computer-use",
+      "url": "https://github.com/awlevin/typesafe-computer-use",
+      "category": "Low-cost macOS computer-use runtime",
+      "score": 92,
+      "summary": "Python computer-use loop that OCRs the screen, classifies next actions with TypeSafe, and clicks on macOS while targeting roughly $0.0002 per step.",
+      "audience": "Builders experimenting with practical computer-use agents where per-step cost, typed action choices, and local macOS control matter.",
+      "ai_native_angle": "Turns GUI control into bounded typed decisions over OCR/screen state instead of generic free-form tool calls.",
+      "growth_signal": "Created 2026-09-16 and pushed minutes later; GitHub metadata showed 91 stars during audit. Root audit found .env.example, docs, tests, pyproject.toml, uv.lock, and typesafe_computer_use.",
+      "runnability": "Medium-high from Python package layout, CI badge, tests, env example, and docs; no Accessibility permissions, OCR loop, TypeSafe model call, or clicking was executed.",
+      "recommended_action": "Run only in a disposable macOS desktop session and inspect action typing, permission prompts, and failure behavior before allowing real app control."
+    },
+    {
+      "rank": 2,
+      "full_name": "jamiepinheiro/ipad_computer_use",
+      "url": "https://github.com/jamiepinheiro/ipad_computer_use",
+      "category": "Physical iPad/iPhone computer-use bridge",
+      "score": 91,
+      "summary": "Controls an iPad through native screen sharing plus a USB HID input device, with support notes for USB-C iPhones.",
+      "audience": "Computer-use researchers who need agents to drive real mobile hardware instead of simulators or browser mocks.",
+      "ai_native_angle": "Bridges agent commands to real touchscreen hardware through a control server, native app, and microcontroller input path.",
+      "growth_signal": "Created 2026-09-15, pushed 2026-09-16, and showed 54 stars. Root audit found control_server, input_device, ipad_app, docs, package files, security notes, and README demo GIF.",
+      "runnability": "Medium-high from three-component architecture and hardware docs; no iPad app, USB HID device, screen stream, or AssistiveTouch path was tested.",
+      "recommended_action": "Promote only after a repeatable hardware checklist and a safety boundary for unintended taps."
+    },
+    {
+      "rank": 3,
+      "full_name": "zorrobyte/rimagent",
+      "url": "https://github.com/zorrobyte/rimagent",
+      "category": "Self-improving game-playing agent",
+      "score": 89,
+      "summary": "Local LLM plays RimWorld through a mod-exposed HTTP engine and rewrites its own skills, tools, and playbook between colonies.",
+      "audience": "Game AI builders and agent-memory researchers looking for long-horizon embodied task loops with inspectable state.",
+      "ai_native_angle": "Combines game-engine verbs, world diffs, persisted markdown skills, tools, notes, and post-run learning into an agentic gameplay loop.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 30 stars. Root audit found agent, brain, mod, mod-steward, config, docs, and scripts.",
+      "runnability": "Medium from clear C#/agent/mod split and tested-model notes; no RimWorld install, mod bridge, vLLM model, or colony run was executed.",
+      "recommended_action": "Watch for replayable benchmark colonies and failure logs before treating self-improvement claims as proven."
+    },
+    {
+      "rank": 4,
+      "full_name": "friday-memory/friday",
+      "url": "https://github.com/friday-memory/friday",
+      "category": "Persistent memory layer for coding agents",
+      "score": 88,
+      "summary": "Self-hosted cognitive memory layer for Cursor, Claude, VS Code, and coding agents, with gateway, MCP, orchestrator, pipelines, studio, examples, Docker, and tests.",
+      "audience": "Developers who want agent memory to survive sessions and become reviewable infrastructure.",
+      "ai_native_angle": "Makes architecture decisions, preferences, and prior work a shared memory product with MCP and studio surfaces rather than hidden chat history.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 17 stars. Root audit found Dockerfile, docker-compose, requirements, gateway, layers, mcp, orchestrator, pipelines, studio, examples, and tests.",
+      "runnability": "High from self-hosted packaging and multiple runtime surfaces; no memory ingestion, MCP client, Docker stack, or studio UI was run.",
+      "recommended_action": "Test with synthetic project history and require human review before memory is re-injected into future agent sessions."
+    },
+    {
+      "rank": 5,
+      "full_name": "Sky-scrape/SkySheep",
+      "url": "https://github.com/Sky-scrape/SkySheep",
+      "category": "Local human-gated AI agent workbench",
+      "score": 87,
+      "summary": "Windows-first local AI agent workbench that can see and act on the user's computer, with every step requiring user confirmation.",
+      "audience": "Users who want a visible, local operator agent rather than a cloud automation black box.",
+      "ai_native_angle": "Treats supervision as part of the product: local execution, step confirmation, skills gallery, market, engine, docs, and a launcher batch file.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 4 stars. Root audit found engine, skills-gallery, market, docs, bilingual README, CI, and launcher batch file.",
+      "runnability": "Medium from launcher and engine structure; no Windows desktop run, agent action, or confirmation loop was tested.",
+      "recommended_action": "Keep the human-confirmation model, then verify whether skills can be audited before installation."
+    },
+    {
+      "rank": 6,
+      "full_name": "AndrewKochulab/sim-mirror",
+      "url": "https://github.com/AndrewKochulab/sim-mirror",
+      "category": "iOS Simulator MCP control and viewer",
+      "score": 86,
+      "summary": "Mirrors and drives the iOS Simulator from Claude Code, CLI agents, or a browser, with live viewer, cursor tracking, token-efficient snapshots, and MCP automation.",
+      "audience": "Mobile developers who need agents to inspect and operate iOS Simulator flows with visual proof.",
+      "ai_native_angle": "Packages simulator UI state, cursor/action tracking, MCP protocol, viewer, benchmarks, examples, and tests as an agent control layer.",
+      "growth_signal": "Created 2026-09-15, pushed 2026-09-16, and showed 2 stars. Root audit found .claude-plugin, viewer, protocol, plugins, benchmarks, examples, packaging, src, tests, and server.json.",
+      "runnability": "High from Python package, uv lockfile, CI badge, examples, tests, and MCP metadata; no simulator, viewer, or MCP client was run.",
+      "recommended_action": "Use a toy iOS app and compare UI snapshot token cost against screenshot-only approaches."
+    },
+    {
+      "rank": 7,
+      "full_name": "devagrawal09/jev-review",
+      "url": "https://github.com/devagrawal09/jev-review",
+      "category": "Structured local code-review dashboard",
+      "score": 85,
+      "summary": "Staged TypeSafe Jev code-review workflow that reviews diffs or whole codebases and displays focused results in a quiet local dashboard.",
+      "audience": "Engineers who want bounded LLM review passes with inspectable evidence selection rather than one huge prompt.",
+      "ai_native_angle": "Uses typed model judgments, risk matrix stages, evidence selection, and a local dashboard to make review reasoning easier to inspect.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 7 stars. Root audit found .env.example, docs, dashboard screenshot, package files, scripts, src, and TypeScript config.",
+      "runnability": "Medium-high from package structure and dashboard artifact; no model key, diff review, full-codebase scan, or dashboard session was executed.",
+      "recommended_action": "Run on a small synthetic diff with known defects and compare against existing lint/test findings."
+    },
+    {
+      "rank": 8,
+      "full_name": "nanhudev/agent2llm",
+      "url": "https://github.com/nanhudev/agent2llm",
+      "category": "Reasoning-brain bridge for agent harnesses",
+      "score": 84,
+      "summary": "CLI-first, adapter-first framework that lets a stronger LLM act as the reasoning brain behind harnesses such as DeepSeek Harness, WorkBuddy, Codex, and Claude Code.",
+      "audience": "Power users who want to decouple best reasoning model from the agent harness they prefer operating.",
+      "ai_native_angle": "Defines an A2L protocol, adapters, apps, examples, skills, docs, and tests around model/harness collaboration.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 2 stars. Root audit found apps, packages, skills, examples, docs, tests, package files, and bilingual README.",
+      "runnability": "Medium-high from workspace structure and protocol docs; no harness adapter, model bridge, or Codex/Claude integration was run.",
+      "recommended_action": "Test with a no-op harness adapter first and inspect handoff logs for prompt leakage or authority confusion."
+    },
+    {
+      "rank": 9,
+      "full_name": "MadhanJ05/Sterling",
+      "url": "https://github.com/MadhanJ05/Sterling",
+      "category": "Acceptance infrastructure for agent commerce",
+      "score": 83,
+      "summary": "Browser-runnable acceptance MVP where parties agree on done criteria, check delivery, and pay by compiled contract rules.",
+      "audience": "Builders exploring agent marketplaces, milestone payments, or verifiable delivery contracts.",
+      "ai_native_angle": "Turns agent completed the work into rules, fixtures, tests, contracts, and browser-executed verification instead of trust in a transcript.",
+      "growth_signal": "Created 2026-09-15 and pushed 2026-09-16. Root audit found .env.example, contracts, docs, fixtures, scripts, source, tests, Vite and Vitest configs, plus a published browser demo link.",
+      "runnability": "Medium-high from tests, contract fixtures, and browser demo claim; no Ethereum VM tab, contract, transaction, or payment flow was executed.",
+      "recommended_action": "Use as a conceptual reference for agent-delivery acceptance, but keep real payments out until dispute paths and identities are clearer."
+    },
+    {
+      "rank": 10,
+      "full_name": "amurlaniakea/tool-evidence-guard",
+      "url": "https://github.com/amurlaniakea/tool-evidence-guard",
+      "category": "Deterministic evidence contracts for tool-using agents",
+      "score": 82,
+      "summary": "Pure-Python verifier that checks LLM tool results and exact scalar claims before agents claim success.",
+      "audience": "Agent developers who need local guardrails against hallucinated tool outputs, null-as-zero errors, or redacted values presented as facts.",
+      "ai_native_angle": "Defines claim/evidence contracts as deterministic code so agent answers can be checked against actual tool returns.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17, and showed 1 star. Root audit found examples, tests, package metadata, README in English/Spanish, and tool_evidence_guard.",
+      "runnability": "High from zero-runtime-dependency positioning, tests, and examples; no verifier was run against live tool traces.",
+      "recommended_action": "Wire it to one existing automation output where scalar counts matter, such as snapshot importedRuns/projects/historyEntries."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "crmne/copilot-triage",
+      "url": "https://github.com/crmne/copilot-triage",
+      "category": "Lightweight issue triage script",
+      "score": 80,
+      "summary": "Small Ruby alternative to GitHub Agentic Workflows for issues and discussions with cached replies and scoped tools.",
+      "audience": "Open-source maintainers who want cheaper issue/discussion triage.",
+      "ai_native_angle": "Keeps model calls scoped inside a small Ruby script with cached replies and reviewable reports.",
+      "growth_signal": "Created 2026-09-15, pushed 2026-09-16, and showed 3 stars; root audit found action.yml, docs, eval, examples, lib, and specs.",
+      "runnability": "Medium-high from Ruby gem/action structure and eval fixtures; no triage run was executed.",
+      "recommended_action": "Promote if eval fixtures show better signal than labels-only bots."
+    },
+    {
+      "full_name": "appthin/dsh-mcp-manager-plus",
+      "url": "https://github.com/appthin/dsh-mcp-manager-plus",
+      "category": "DeepSeek Harness MCP manager plugin",
+      "score": 79,
+      "summary": "Adds a settings-page MCP server manager with screenshots and enable/disable/edit/restart flows.",
+      "audience": "DeepSeek Harness users managing multiple MCP servers.",
+      "ai_native_angle": "Turns MCP server administration into an in-harness UI plugin.",
+      "growth_signal": "Created 2026-09-17 and pushed 2026-09-17; root audit found screenshots, lib, tests, package files, and preview HTML files.",
+      "runnability": "Medium from screenshots and JS package structure; no DSH plugin install was tested.",
+      "recommended_action": "Revisit after compatibility testing against current DSH builds."
+    },
+    {
+      "full_name": "jalejandrov93/agent-hub",
+      "url": "https://github.com/jalejandrov93/agent-hub",
+      "category": "Local MCP delegation hub",
+      "score": 78,
+      "summary": "Delegates bounded tasks from Claude Code to agy, opencode, and copilot CLIs with preflight checks and circuit breakers.",
+      "audience": "Developers using multiple local coding-agent CLIs.",
+      "ai_native_angle": "Makes agent-to-agent delegation a local MCP server with preflight and event logs.",
+      "growth_signal": "Created 2026-09-15, pushed 2026-09-16; root audit found bin, dashboard, skills, src, systemd, and tests.",
+      "runnability": "Medium-high from npm package structure and dashboard; no CLI delegation was executed.",
+      "recommended_action": "Watch for security boundaries and append-only event log examples."
+    },
+    {
+      "full_name": "monaddle-too/warden",
+      "url": "https://github.com/monaddle-too/warden",
+      "category": "Sandboxed coding-agent policy gateway",
+      "score": 77,
+      "summary": "Apple Silicon-oriented sandbox for AI coding agents with chat stack, SBX lifecycle, permissions, MCP direction, and docs.",
+      "audience": "Developers experimenting with isolated coding-agent workstations.",
+      "ai_native_angle": "Connects chat, sandbox lifecycle, permissions, and MCP as a governance layer.",
+      "growth_signal": "Created 2026-09-16, pushed 2026-09-17; root audit found chat, config, deploy, docs, host, native, proxy, schemas, scripts, tests, and vendor.",
+      "runnability": "Medium from extensive folders and local install docs; no sandbox was launched.",
+      "recommended_action": "Keep on watchlist until local install and policy claims can be tested."
+    },
+    {
+      "full_name": "code-navdeep/MentalLab",
+      "url": "https://github.com/code-navdeep/MentalLab",
+      "category": "Local macOS research workspace",
+      "score": 76,
+      "summary": "Electron workspace for notes, PDFs, citations, sandboxed task delegation, and Obsidian-compatible vault growth.",
+      "audience": "Researchers who want local-first document chat and task delegation.",
+      "ai_native_angle": "Combines source-cited research chat, PDF reader, local notes, and sandboxed agents.",
+      "growth_signal": "Created 2026-09-16 and pushed 2026-09-16; root audit found apps, packages, scripts, sidecar, and package files.",
+      "runnability": "Medium from Electron/workspace structure; no app run or PDF import was tested.",
+      "recommended_action": "Promote if the PDF/source citation and sandbox boundaries survive local run."
+    },
+    {
+      "full_name": "Lihan-Zhong/literature-monitor-bot",
+      "url": "https://github.com/Lihan-Zhong/literature-monitor-bot",
+      "category": "Agent-deployed literature radar",
+      "score": 75,
+      "summary": "bioRxiv/journal monitor with staged LLM filter and Discord/Telegram digest follow-ups.",
+      "audience": "Researchers and labs tracking literature updates.",
+      "ai_native_angle": "Turns a literature monitoring workflow into an agent-deployed scheduler, digest, and chat follow-up loop.",
+      "growth_signal": "Created 2026-09-16 and pushed 2026-09-17; root audit found SKILL.md, docs, templates, and bilingual README.",
+      "runnability": "Medium from docs/templates, but no scheduler or webhook was tested.",
+      "recommended_action": "Good vertical product, but verify scheduler and source coverage before Top."
+    },
+    {
+      "full_name": "erfanhabibipanah/agentwave",
+      "url": "https://github.com/erfanhabibipanah/agentwave",
+      "category": "GitHub Actions fan-out for Claude Code",
+      "score": 74,
+      "summary": "Fans tasks into runner branches and PRs, merging only what CI proves.",
+      "audience": "Maintainers who want parallel agent task execution under CI control.",
+      "ai_native_angle": "Uses branches, PRs, and CI as the acceptance layer for delegated coding-agent work.",
+      "growth_signal": "Created 2026-09-16 and pushed 2026-09-16; root audit found agentwave.py, examples, templates, tests, and CI badge.",
+      "runnability": "Medium from single-file CLI plus examples/tests; no GitHub Actions dispatch was executed.",
+      "recommended_action": "Watch for auth, branch cleanup, and CI cost controls."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "AnonymousOnyx22/brightspace-d2l-mcp",
+      "url": "https://github.com/AnonymousOnyx22/brightspace-d2l-mcp",
+      "skip_reason": "Useful education-system MCP, but real Brightspace account access and school data permissions need stronger audit before promotion."
+    },
+    {
+      "full_name": "NovolineGast/powerdesigner-mcp",
+      "url": "https://github.com/NovolineGast/powerdesigner-mcp",
+      "skip_reason": "Strong Windows/PowerDesigner MCP surface, but requires proprietary desktop software and COM environment verification not available in this run."
+    },
+    {
+      "full_name": "gungunfebrianza/Web-Scout",
+      "url": "https://github.com/gungunfebrianza/Web-Scout",
+      "skip_reason": "Good browser instrumentation idea, but overlaps with prior browser-agent tooling and needs runtime proof of DOM/network evidence capture."
+    },
+    {
+      "full_name": "fongap/delta",
+      "url": "https://github.com/fongap/delta",
+      "skip_reason": "Ambitious local personal work agent, but broad scope and very fresh repo need proof of one tight workflow before Top placement."
+    },
+    {
+      "full_name": "killerboyyy777/Machine-Learning-mmo",
+      "url": "https://github.com/killerboyyy777/Machine-Learning-mmo",
+      "skip_reason": "Interesting ML/game harness, but more research/game-engine stack than a clear AI-native product for this radar window."
+    },
+    {
+      "full_name": "redmoon0x/Aether",
+      "url": "https://github.com/redmoon0x/Aether",
+      "skip_reason": "Browser-control MCP is relevant, but current root audit was thin compared with stronger browser/simulator control candidates."
+    },
+    {
+      "full_name": "Istiyaq-Khan/krypton",
+      "url": "https://github.com/Istiyaq-Khan/krypton",
+      "skip_reason": "Impressive desktop-agent runtime claims, but zero-star fresh repo with broad surfaces needs runnable proof before promotion."
+    },
+    {
+      "full_name": "August06exe/ai-landing-consultant",
+      "url": "https://github.com/August06exe/ai-landing-consultant",
+      "skip_reason": "Useful consultant-in-a-box methodology, but more workflow/content system than directly runnable product surface."
+    },
+    {
+      "full_name": "JASKSG9/Aqarions-Quantarion-AI",
+      "url": "https://github.com/JASKSG9/Aqarions-Quantarion-AI",
+      "skip_reason": "Evidence-governance research repository rather than a clear runnable AI-native product."
+    },
+    {
+      "full_name": "JAEL-AI/BGCA_Platform",
+      "url": "https://github.com/JAEL-AI/BGCA_Platform",
+      "skip_reason": "Search match from broad AI query, but description/root signal looked like a roster/admin platform rather than an AI-native product."
+    }
+  ]
+}
