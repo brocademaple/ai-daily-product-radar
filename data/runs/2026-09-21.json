@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-09-21",
+  "generated_at": "2026-09-21T12:38:20+08:00",
+  "data_window": "2026-09-18T00:00:00Z to 2026-09-21T04:38:20Z",
+  "source_summary": "Queried 10 GitHub Search API surfaces saved under /tmp/radar_2026_09_21_api/. Rebuilt the shortlist from created-since searches to avoid mature pushed-project noise, then audited 32 repositories through GitHub repository, root-content, and README API responses saved under /tmp/radar_2026_09_21_readmes/. Selection prioritized newly created product-shaped agent tools, coding-agent control planes, MCP/browser surfaces, reusable skills, local-first memory/context layers, installable CLIs, tests/examples/docs, and explicit verification or governance loops.",
+  "trend_observations": "The strongest signal is a move from generic agent frameworks toward governable agent operations: desktop/Web coding workbenches, Codex SDK verification loops, rule compliance plugins, Jev-style fast typed decisions, browser work handed to MCP servers, and skill/plugin marketplaces with observable evidence. New projects increasingly package the small decisions around agents - model routing, skill choice, memory filtering, command resolution, telemetry, and browser clicks - as separate inspectable products.",
+  "assumptions": "Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Very mature projects found only through pushed activity were skipped unless the current window contained a distinct new product signal.",
+  "markdown_report": "# Daily AI Native Product Radar - 2026-09-21\n\nData window: 2026-09-18T00:00:00Z to 2026-09-21T04:38:20Z. GitHub Search API covered created-since and active pushed AI-agent/MCP/browser/coding-agent queries, then the shortlist was filtered for product shape and audited through repository/root/README metadata.\n\nSource summary: Queried 10 GitHub Search API surfaces saved under /tmp/radar_2026_09_21_api/. Rebuilt the shortlist from created-since searches to avoid mature pushed-project noise, then audited 32 repositories through GitHub repository, root-content, and README API responses saved under /tmp/radar_2026_09_21_readmes/. Selection prioritized newly created product-shaped agent tools, coding-agent control planes, MCP/browser surfaces, reusable skills, local-first memory/context layers, installable CLIs, tests/examples/docs, and explicit verification or governance loops.\n\nKey assumptions: Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Very mature projects found only through pushed activity were skipped unless the current window contained a distinct new product signal.\n\n## Trend Observations\n\nThe strongest signal is a move from generic agent frameworks toward governable agent operations: desktop/Web coding workbenches, Codex SDK verification loops, rule compliance plugins, Jev-style fast typed decisions, browser work handed to MCP servers, and skill/plugin marketplaces with observable evidence. New projects increasingly package the small decisions around agents - model routing, skill choice, memory filtering, command resolution, telemetry, and browser clicks - as separate inspectable products.\n\n## Top Projects\n\n### 1. [zai-org/ZCode](https://github.com/zai-org/ZCode)\n- Category: Integrated AI coding workbench\n- AI Native Product Score: 92\n- What it does: AI programming workbench with desktop app, browser workspace, terminal agent, backend services, shared UI packages, CLI/runtime source, remote workspace support, and documented pnpm development flows.\n- Who it is for: Developers and teams who want a packaged coding-agent environment spanning desktop, web, and terminal workflows.\n- AI-native angle: Treats the coding agent as a full workbench product with CLI runtime, desktop shell, web surface, remote execution resources, architecture policy, and shared packages rather than a single terminal command.\n- Growth/activity signal: Created 2026-09-20, pushed 2026-09-21, and showed 1893 stars and 467 forks during audit. Root audit found apps, packages, harness, config, architecture-policy.yaml, scripts, public assets, README.en.md, and environment examples.\n- Runnability judgment: High from monorepo packaging, explicit Node/pnpm versions, desktop/web/CLI development commands, env examples, and bootstrap/build scripts; no app, remote workspace, or agent runtime was executed.\n- Recommended action: Track closely as a top coding-agent workbench launch; run a disposable repo through desktop, web, and CLI paths before trusting remote workspace flows.\n\n### 2. [indada/repopilot](https://github.com/indada/repopilot)\n- Category: Verification-driven Codex SDK worker\n- AI Native Product Score: 90\n- What it does: Self-hosted worker that turns GitHub Issues and PR feedback into bounded cycles of test generation, failure reproduction, repair proposals, independent verification, and reviewable reports using the OpenAI Codex SDK.\n- Who it is for: Open-source maintainers, small engineering teams, and QA/tooling developers who need inspectable AI repair proposals instead of unbounded autonomous merges.\n- AI-native angle: Puts Codex inside a controller that freezes tests, cites repository rules, compares base/head evidence, and publishes only bounded repair candidates for human review.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-20, and showed 153 stars. Root audit found Dockerfile.agent, docs, examples, tests, src, SECURITY.md, README.zh-CN.md, and repopilot.example.json.\n- Runnability judgment: High from package scripts, Docker agent file, examples, tests, security docs, and explicit OpenAI/GitHub integration docs; no worker, Codex SDK call, GitHub polling, or repair loop was run.\n- Recommended action: Use on a toy repository issue first and inspect whether generated tests remain frozen and independently reproducible.\n\n### 3. [coldteadotai/abide](https://github.com/coldteadotai/abide)\n- Category: Project-rule compliance layer for coding agents\n- AI Native Product Score: 88\n- What it does: Rule and skill package for making coding agents obey project-specific constraints, with Claude/Codex/OpenCode plugin and skill surfaces, benchmarks, docs, packages, and pnpm workspace structure.\n- Who it is for: Teams whose agent failures come from missed AGENTS.md rules, local conventions, protected paths, or undocumented project habits.\n- AI-native angle: Moves rule-following from hopeful prompt text into an installable, testable compliance layer that can be reused across agent hosts.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-20, and showed 197 stars. Root audit found .abide, .claude, AGENTS.md, CLAUDE.md, benchmarks, docs, packages, skills, package.json, and pnpm workspace files.\n- Runnability judgment: Medium-high from workspace structure, benchmarks, docs, and plugin/skill metadata; README read failed during audit and no agent integration was run.\n- Recommended action: Evaluate against a repo with known rule violations and measure whether it blocks or surfaces the violations before edit time.\n\n### 4. [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills)\n- Category: Fast typed-decision skills for agents\n- AI Native Product Score: 87\n- What it does: Jev-powered skills for model routing, memory filtering, transcript compaction, skill selection, triage, mailbox sorting, computer use, and browser use across Hermes, Claude Code, Codex, and similar skill-aware agents.\n- Who it is for: Agent power users and tool builders who need cheap, typed decisions around routing, retrieval, skill choice, and GUI/browser actions.\n- AI-native angle: Splits small yes/no, score, and choice judgments out of frontier-model turns and exposes them as reusable agent skills with dashboards, scripts, tests, evals, and docs.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-20, and showed 274 stars. Root audit found bin, docs, evals, hermes, jevkit, router-dashboard, scripts, skills, tests, install.py, and security docs.\n- Runnability judgment: Medium-high from one-command installer, dashboard demo, no-dependency Python claim, tests/evals, and explicit skill files; no Jev key, routing dashboard, or browser/computer-use decision loop was run.\n- Recommended action: Test only on low-risk routing and retrieval tasks first; compare cost/latency and wrong-choice rate against the host agent alone.\n\n### 5. [Oldcircle/geo-sleuth](https://github.com/Oldcircle/geo-sleuth)\n- Category: Evidence-backed geolocation agent skill\n- AI Native Product Score: 86\n- What it does: Agent skill that geolocates a photo using OpenStreetMap geometry, elevation skylines, satellite imagery, street-view evidence, Python scripts, examples, bilingual docs, and explicit confidence/error-radius outputs.\n- Who it is for: OSINT researchers, journalists, investigators, and agent builders who want visual geolocation workflows with auditable evidence files.\n- AI-native angle: Uses the model to judge among script-ranked evidence rather than free-guessing locations, and requires conclusions to point at commands and produced files.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-20, and showed 203 stars. Root audit found docs, examples, skills, bilingual README, CONTRIBUTING, GitHub workflow metadata, and an install path through skills.\n- Runnability judgment: Medium-high from SKILL.md-compatible package, quick-start install, examples, and script-based workflow; no photo, OSM/elevation query, street-view search, or evidence image generation was run.\n- Recommended action: Run with a permissibly shared test image and verify the evidence bundle, error radius, and source files before any sensitive OSINT use.\n\n### 6. [Guo-Yixin/coding-agent](https://github.com/Guo-Yixin/coding-agent)\n- Category: Local-first repository-aware coding agent\n- AI Native Product Score: 84\n- What it does: Local-first coding agent for repository-aware retrieval, planning, controlled execution, validation, patch delivery, PostgreSQL/SQLite persistence, eval infrastructure, OpenSandbox integration, and issue-writing skills.\n- Who it is for: Developers and teams experimenting with locally auditable coding-agent loops and recovery after worker restarts.\n- AI-native angle: Frames coding as a traceable loop from repo understanding to plan, patch, verification, audit events, eval reports, and git delivery.\n- Growth/activity signal: Created 2026-09-19, pushed 2026-09-20, and showed 57 stars. Root audit found .agents, .env.example, agent, assets, docs, evals, scripts, tests, ui, and pyproject.toml.\n- Runnability judgment: Medium-high from Python packaging, docs, evals, tests, env example, and migration/eval scripts; no model call, sandbox run, database migration, or patch delivery was executed.\n- Recommended action: Use fake eval mode first and check whether reports are sufficiently actionable before connecting a real sandbox or repository.\n\n### 7. [heymi/aldus-palace](https://github.com/heymi/aldus-palace)\n- Category: Local-first context and commitment layer\n- AI Native Product Score: 83\n- What it does: Trustworthy context layer that turns free text into typed commitments, decisions, and memories with evidence, stored in a user-owned SQLite file and exposed through MCP, HTTP, libraries, Docker, examples, evals, and docs.\n- Who it is for: AI product builders and individuals who want portable memory, commitments, and decisions without locking context inside one assistant app.\n- AI-native angle: Makes assistant memory and task capture inspectable, deletable, evidence-backed, and shared through MCP rather than opaque chat history.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-19, and showed 17 stars. Root audit found apps, packages, docs, eval, examples, Dockerfile, docker-compose.yml, SECURITY, GOVERNANCE, EVALUATION, and bilingual docs.\n- Runnability judgment: High from deterministic demo path, MCP package instructions, Docker assets, examples, eval docs, and security/governance material; no demo, MCP install, or capture pipeline was run.\n- Recommended action: Test with synthetic personal context and inspect delete/export/evidence behavior before adding real preferences or commitments.\n\n### 8. [INSANE0777/Awwards-mcp](https://github.com/INSANE0777/Awwards-mcp)\n- Category: Design-inspiration MCP for coding agents\n- AI Native Product Score: 82\n- What it does: MCP server that gives coding agents searchable Awwwards design references, screenshots, design DNA, palettes, live-site capture, page-structure analysis, motion recording, tests, assets, and install snippets for multiple clients.\n- Who it is for: Frontend builders and coding-agent users who need visual references inside agent workflows without manually browsing inspiration sites.\n- AI-native angle: Turns design taste and visual reference gathering into agent tools with inline screenshots, taxonomy, BM25 search, live capture, and structure analysis.\n- Growth/activity signal: Created 2026-09-18, pushed 2026-09-20, and showed 41 stars. Root audit found assets, showcase, skills, src, test, package files, SECURITY, CONTRIBUTING, and demo GIF references.\n- Runnability judgment: Medium-high from npm/MCP setup instructions, tests, package metadata, screenshots, and capture tools; no MCP server, live capture, or Awwwards index query was run.\n- Recommended action: Use on one local landing page redesign and compare agent output against the captured reference structure and screenshots.\n\n### 9. [using-system/otelyssey](https://github.com/using-system/otelyssey)\n- Category: OpenTelemetry plugin marketplace for agents\n- AI Native Product Score: 81\n- What it does: Repository-run marketplace of OpenTelemetry agent plugins in Agent Plugins format, with issue-based submission, automatic validation/listing, release following, marketplace pages, docs, tests, and multi-client install commands.\n- Who it is for: Teams building observability into coding-agent sessions, plugins, skills, and local development loops.\n- AI-native angle: Makes telemetry plugins discoverable and governed by the repository itself, so agent observability becomes an installable marketplace rather than scattered docs.\n- Growth/activity signal: Created 2026-09-19, pushed 2026-09-20, and showed 38 stars. Root audit found marketplace, docs, assets, scripts, tests, hermes-pack.yaml, marketplace.json, plugin metadata, and multiple agent plugin folders.\n- Runnability judgment: Medium-high from marketplace structure, install commands, tests, and submission workflow; no plugin installation, validation issue, release follower, or telemetry backend was run.\n- Recommended action: Watch as an observability substrate for agent marketplaces; test a single plugin submission flow before depending on auto-listing.\n\n### 10. [jiawei686/jev-ultrafast-mcp](https://github.com/jiawei686/jev-ultrafast-mcp)\n- Category: Server-side browser-goal MCP\n- AI Native Product Score: 80\n- What it does: MCP server where a decision model drives browser tasks server-side from URL, goal, and verification checks, exposing browser_goal, element tables, code-checked assertions, Chrome extension assets, examples, tests, scripts, and client installer.\n- Who it is for: Agent builders who want browser tasks handled as one bounded tool call rather than many expensive frontier-model turns.\n- AI-native angle: Hands full browser goals to a smaller decision loop with refusal on missing targets and explicit verification, reducing page context exposure to the host agent.\n- Growth/activity signal: Created 2026-09-19, pushed 2026-09-20, and showed 6 stars. Root audit found chrome-extension, docs, examples, tests, scripts, pyproject.toml, server.json, llms.txt, bilingual README, and CI badge references.\n- Runnability judgment: Medium-high from install.py, Python package, examples, tests, and verification-oriented README; no browser, MCP client, or page-driving loop was run.\n- Recommended action: Try on a no-login deterministic form and inspect trace, verification failure behavior, and Chrome permission boundaries.\n\n## Watchlist\n\n- [vinilana/jev-gateway](https://github.com/vinilana/jev-gateway) - Jev gateway for coding-agent tool reasoning, Score 79. TypeScript gateway that lets coding agents use Jev for tool-calling reasoning, with docs, tests, bin, src, scripts, and env example. Recommended action: Promote after a concrete demo shows how it prevents wrong tool calls or reduces latency.\n- [kishormorol/cli-faq-shortcuts](https://github.com/kishormorol/cli-faq-shortcuts) - Session-history shortcut skill, Score 78. Agent skill that mines repeated asks from Claude Code, Codex, and Cursor history and turns them into short commands. Recommended action: Test with synthetic transcripts to ensure private history is not over-collected.\n- [nassim-arifette/jevgrep](https://github.com/nassim-arifette/jevgrep) - Semantic code search for agents, Score 77. Jev-powered semantic code search via CLI or MCP with source excerpts and line numbers. Recommended action: Compare on a medium repo against ripgrep plus embedding search.\n- [skeptrunedev/jev-recruiter](https://github.com/skeptrunedev/jev-recruiter) - Evidence-reviewed recruiting browser agent, Score 76. Jev-powered LinkedIn recruiting agent that browses profiles, saves links, and reviews evidence against a hiring brief. Recommended action: Keep watchlisted until permissions, rate limits, and privacy boundaries are explicit.\n- [nahid-sparktales/agent-dispatcher](https://github.com/nahid-sparktales/agent-dispatcher) - Capability-aware agent role dispatcher, Score 75. Claude/Codex-oriented dispatcher with specialist roles, composable skills, MCP/tool routing, verification workflows, direct commands, adapters, evals, docs, and runtime checks. Recommended action: Promote only after a small benchmark shows dispatcher choices outperform manual role selection.\n- [harshwasan/jev-sentinel](https://github.com/harshwasan/jev-sentinel) - Prompt-injection and approval guard for Pi agents, Score 74. Pi coding-agent extension using Jev checks for tool calls, tool outputs, prompt injection, approvals, secret scrubbing, and task pinning. Recommended action: Watch for test fixtures showing blocked injections and secret scrubbing evidence.\n- [OthmaneBlial/FreeComputerUse](https://github.com/OthmaneBlial/FreeComputerUse) - DOM-first low-cost browser automation, Score 73. DOM-first browser automation with cheap AI planning, deterministic execution, website permissions, learned workflows, assets, docs, fixtures, lab, scripts, src, and tests. Recommended action: Keep watching; promote when permission model and deterministic replay are demonstrated on real sites.\n\n## Skip Reasons\n\n- [ThisTakou/UserAgent-list](https://github.com/ThisTakou/UserAgent-list) - Useful browser dataset, but it is primarily an automated user-agent database rather than an AI-native product surface.\n- [hirotomasato/yowes](https://github.com/hirotomasato/yowes) - Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear.\n- [kraayenjon/awesome-jev](https://github.com/kraayenjon/awesome-jev) - Curated list rather than a runnable product; useful as source discovery but not a Top/Watchlist product.\n- [Mayuqi-crypto/everything-search-skill](https://github.com/Mayuqi-crypto/everything-search-skill) - Narrow Windows Everything search skill with low product breadth; useful utility but less distinctive than broader agent workbench/control surfaces.\n- [kbhuw/jev-sift](https://github.com/kbhuw/jev-sift) - Interesting batch text classifier plugin/MCP, but current evidence reads more like a small utility than a full product workflow.\n- [tacticocc/Jevbridge](https://github.com/tacticocc/Jevbridge) - ACP/MCP adapter is relevant, but thin size and overlap with stronger Jev gateway/browser candidates kept it below Watchlist.\n- [ndrezn/ts-browser-agent](https://github.com/ndrezn/ts-browser-agent) - Fast browser-agent claim is relevant, but README/root evidence was less differentiated than jev-ultrafast-mcp and FreeComputerUse.\n- [samdotmak/jev-recall](https://github.com/samdotmak/jev-recall) - Memory filtering concept is useful, but the product surface overlaps with stronger context-layer and Jev-skill packages in this window.\n- [adhhamdev/modern-react-guidance](https://github.com/adhhamdev/modern-react-guidance) - Agent skill for React guidance, but primarily documentation/skill guidance rather than a product or workflow engine.\n- [alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill](https://github.com/alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill) - Tiny generated skill repository with very low file evidence; skipped to avoid promoting thin template-like artifacts.\n\nType-level skip reasons: mature projects found only through pushed activity, prompt collections, awesome lists, generated template repositories, training exercises, thin MCP wrappers, sensitive document generators, credential/browser tools without clear permission boundaries, and repositories with only README-level product claims were downgraded or excluded. These type-level reasons are not represented as fake GitHub repositories in JSON.\n\n## Today's Suggested Actions\n\n- Put ZCode, RepoPilot, and abide on one coding-agent governance track: workbench, verified repair loop, and rule compliance.\n- Treat Jev as today's recurring infrastructure theme: model routing, browser steps, code search, command resolution, and safety checks are becoming separate low-latency products.\n- Evaluate browser-control projects only on no-login deterministic pages first; provider credentials and logged-in browser state remain the main risk surface.\n- Keep local-first context products such as Aldus Palace separate from generic memory claims; delete/export/evidence behavior matters more than recall demos.\n\n## Data Window and Assumptions\n\n- Window: 2026-09-18T00:00:00Z to 2026-09-21T04:38:20Z.\n- Sources: GitHub Search API files under /tmp/radar_2026_09_21_api/ and repository/root/README audits under /tmp/radar_2026_09_21_readmes/.\n- Assumptions: Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Very mature projects found only through pushed activity were skipped unless the current window contained a distinct new product signal.\n",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "zai-org/ZCode",
+      "url": "https://github.com/zai-org/ZCode",
+      "category": "Integrated AI coding workbench",
+      "score": 92,
+      "summary": "AI programming workbench with desktop app, browser workspace, terminal agent, backend services, shared UI packages, CLI/runtime source, remote workspace support, and documented pnpm development flows.",
+      "audience": "Developers and teams who want a packaged coding-agent environment spanning desktop, web, and terminal workflows.",
+      "ai_native_angle": "Treats the coding agent as a full workbench product with CLI runtime, desktop shell, web surface, remote execution resources, architecture policy, and shared packages rather than a single terminal command.",
+      "growth_signal": "Created 2026-09-20, pushed 2026-09-21, and showed 1893 stars and 467 forks during audit. Root audit found apps, packages, harness, config, architecture-policy.yaml, scripts, public assets, README.en.md, and environment examples.",
+      "runnability": "High from monorepo packaging, explicit Node/pnpm versions, desktop/web/CLI development commands, env examples, and bootstrap/build scripts; no app, remote workspace, or agent runtime was executed.",
+      "recommended_action": "Track closely as a top coding-agent workbench launch; run a disposable repo through desktop, web, and CLI paths before trusting remote workspace flows."
+    },
+    {
+      "rank": 2,
+      "full_name": "indada/repopilot",
+      "url": "https://github.com/indada/repopilot",
+      "category": "Verification-driven Codex SDK worker",
+      "score": 90,
+      "summary": "Self-hosted worker that turns GitHub Issues and PR feedback into bounded cycles of test generation, failure reproduction, repair proposals, independent verification, and reviewable reports using the OpenAI Codex SDK.",
+      "audience": "Open-source maintainers, small engineering teams, and QA/tooling developers who need inspectable AI repair proposals instead of unbounded autonomous merges.",
+      "ai_native_angle": "Puts Codex inside a controller that freezes tests, cites repository rules, compares base/head evidence, and publishes only bounded repair candidates for human review.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 153 stars. Root audit found Dockerfile.agent, docs, examples, tests, src, SECURITY.md, README.zh-CN.md, and repopilot.example.json.",
+      "runnability": "High from package scripts, Docker agent file, examples, tests, security docs, and explicit OpenAI/GitHub integration docs; no worker, Codex SDK call, GitHub polling, or repair loop was run.",
+      "recommended_action": "Use on a toy repository issue first and inspect whether generated tests remain frozen and independently reproducible."
+    },
+    {
+      "rank": 3,
+      "full_name": "coldteadotai/abide",
+      "url": "https://github.com/coldteadotai/abide",
+      "category": "Project-rule compliance layer for coding agents",
+      "score": 88,
+      "summary": "Rule and skill package for making coding agents obey project-specific constraints, with Claude/Codex/OpenCode plugin and skill surfaces, benchmarks, docs, packages, and pnpm workspace structure.",
+      "audience": "Teams whose agent failures come from missed AGENTS.md rules, local conventions, protected paths, or undocumented project habits.",
+      "ai_native_angle": "Moves rule-following from hopeful prompt text into an installable, testable compliance layer that can be reused across agent hosts.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 197 stars. Root audit found .abide, .claude, AGENTS.md, CLAUDE.md, benchmarks, docs, packages, skills, package.json, and pnpm workspace files.",
+      "runnability": "Medium-high from workspace structure, benchmarks, docs, and plugin/skill metadata; README read failed during audit and no agent integration was run.",
+      "recommended_action": "Evaluate against a repo with known rule violations and measure whether it blocks or surfaces the violations before edit time."
+    },
+    {
+      "rank": 4,
+      "full_name": "kerpopule/hermes-jev-skills",
+      "url": "https://github.com/kerpopule/hermes-jev-skills",
+      "category": "Fast typed-decision skills for agents",
+      "score": 87,
+      "summary": "Jev-powered skills for model routing, memory filtering, transcript compaction, skill selection, triage, mailbox sorting, computer use, and browser use across Hermes, Claude Code, Codex, and similar skill-aware agents.",
+      "audience": "Agent power users and tool builders who need cheap, typed decisions around routing, retrieval, skill choice, and GUI/browser actions.",
+      "ai_native_angle": "Splits small yes/no, score, and choice judgments out of frontier-model turns and exposes them as reusable agent skills with dashboards, scripts, tests, evals, and docs.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 274 stars. Root audit found bin, docs, evals, hermes, jevkit, router-dashboard, scripts, skills, tests, install.py, and security docs.",
+      "runnability": "Medium-high from one-command installer, dashboard demo, no-dependency Python claim, tests/evals, and explicit skill files; no Jev key, routing dashboard, or browser/computer-use decision loop was run.",
+      "recommended_action": "Test only on low-risk routing and retrieval tasks first; compare cost/latency and wrong-choice rate against the host agent alone."
+    },
+    {
+      "rank": 5,
+      "full_name": "Oldcircle/geo-sleuth",
+      "url": "https://github.com/Oldcircle/geo-sleuth",
+      "category": "Evidence-backed geolocation agent skill",
+      "score": 86,
+      "summary": "Agent skill that geolocates a photo using OpenStreetMap geometry, elevation skylines, satellite imagery, street-view evidence, Python scripts, examples, bilingual docs, and explicit confidence/error-radius outputs.",
+      "audience": "OSINT researchers, journalists, investigators, and agent builders who want visual geolocation workflows with auditable evidence files.",
+      "ai_native_angle": "Uses the model to judge among script-ranked evidence rather than free-guessing locations, and requires conclusions to point at commands and produced files.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 203 stars. Root audit found docs, examples, skills, bilingual README, CONTRIBUTING, GitHub workflow metadata, and an install path through skills.",
+      "runnability": "Medium-high from SKILL.md-compatible package, quick-start install, examples, and script-based workflow; no photo, OSM/elevation query, street-view search, or evidence image generation was run.",
+      "recommended_action": "Run with a permissibly shared test image and verify the evidence bundle, error radius, and source files before any sensitive OSINT use."
+    },
+    {
+      "rank": 6,
+      "full_name": "Guo-Yixin/coding-agent",
+      "url": "https://github.com/Guo-Yixin/coding-agent",
+      "category": "Local-first repository-aware coding agent",
+      "score": 84,
+      "summary": "Local-first coding agent for repository-aware retrieval, planning, controlled execution, validation, patch delivery, PostgreSQL/SQLite persistence, eval infrastructure, OpenSandbox integration, and issue-writing skills.",
+      "audience": "Developers and teams experimenting with locally auditable coding-agent loops and recovery after worker restarts.",
+      "ai_native_angle": "Frames coding as a traceable loop from repo understanding to plan, patch, verification, audit events, eval reports, and git delivery.",
+      "growth_signal": "Created 2026-09-19, pushed 2026-09-20, and showed 57 stars. Root audit found .agents, .env.example, agent, assets, docs, evals, scripts, tests, ui, and pyproject.toml.",
+      "runnability": "Medium-high from Python packaging, docs, evals, tests, env example, and migration/eval scripts; no model call, sandbox run, database migration, or patch delivery was executed.",
+      "recommended_action": "Use fake eval mode first and check whether reports are sufficiently actionable before connecting a real sandbox or repository."
+    },
+    {
+      "rank": 7,
+      "full_name": "heymi/aldus-palace",
+      "url": "https://github.com/heymi/aldus-palace",
+      "category": "Local-first context and commitment layer",
+      "score": 83,
+      "summary": "Trustworthy context layer that turns free text into typed commitments, decisions, and memories with evidence, stored in a user-owned SQLite file and exposed through MCP, HTTP, libraries, Docker, examples, evals, and docs.",
+      "audience": "AI product builders and individuals who want portable memory, commitments, and decisions without locking context inside one assistant app.",
+      "ai_native_angle": "Makes assistant memory and task capture inspectable, deletable, evidence-backed, and shared through MCP rather than opaque chat history.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-19, and showed 17 stars. Root audit found apps, packages, docs, eval, examples, Dockerfile, docker-compose.yml, SECURITY, GOVERNANCE, EVALUATION, and bilingual docs.",
+      "runnability": "High from deterministic demo path, MCP package instructions, Docker assets, examples, eval docs, and security/governance material; no demo, MCP install, or capture pipeline was run.",
+      "recommended_action": "Test with synthetic personal context and inspect delete/export/evidence behavior before adding real preferences or commitments."
+    },
+    {
+      "rank": 8,
+      "full_name": "INSANE0777/Awwards-mcp",
+      "url": "https://github.com/INSANE0777/Awwards-mcp",
+      "category": "Design-inspiration MCP for coding agents",
+      "score": 82,
+      "summary": "MCP server that gives coding agents searchable Awwwards design references, screenshots, design DNA, palettes, live-site capture, page-structure analysis, motion recording, tests, assets, and install snippets for multiple clients.",
+      "audience": "Frontend builders and coding-agent users who need visual references inside agent workflows without manually browsing inspiration sites.",
+      "ai_native_angle": "Turns design taste and visual reference gathering into agent tools with inline screenshots, taxonomy, BM25 search, live capture, and structure analysis.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 41 stars. Root audit found assets, showcase, skills, src, test, package files, SECURITY, CONTRIBUTING, and demo GIF references.",
+      "runnability": "Medium-high from npm/MCP setup instructions, tests, package metadata, screenshots, and capture tools; no MCP server, live capture, or Awwwards index query was run.",
+      "recommended_action": "Use on one local landing page redesign and compare agent output against the captured reference structure and screenshots."
+    },
+    {
+      "rank": 9,
+      "full_name": "using-system/otelyssey",
+      "url": "https://github.com/using-system/otelyssey",
+      "category": "OpenTelemetry plugin marketplace for agents",
+      "score": 81,
+      "summary": "Repository-run marketplace of OpenTelemetry agent plugins in Agent Plugins format, with issue-based submission, automatic validation/listing, release following, marketplace pages, docs, tests, and multi-client install commands.",
+      "audience": "Teams building observability into coding-agent sessions, plugins, skills, and local development loops.",
+      "ai_native_angle": "Makes telemetry plugins discoverable and governed by the repository itself, so agent observability becomes an installable marketplace rather than scattered docs.",
+      "growth_signal": "Created 2026-09-19, pushed 2026-09-20, and showed 38 stars. Root audit found marketplace, docs, assets, scripts, tests, hermes-pack.yaml, marketplace.json, plugin metadata, and multiple agent plugin folders.",
+      "runnability": "Medium-high from marketplace structure, install commands, tests, and submission workflow; no plugin installation, validation issue, release follower, or telemetry backend was run.",
+      "recommended_action": "Watch as an observability substrate for agent marketplaces; test a single plugin submission flow before depending on auto-listing."
+    },
+    {
+      "rank": 10,
+      "full_name": "jiawei686/jev-ultrafast-mcp",
+      "url": "https://github.com/jiawei686/jev-ultrafast-mcp",
+      "category": "Server-side browser-goal MCP",
+      "score": 80,
+      "summary": "MCP server where a decision model drives browser tasks server-side from URL, goal, and verification checks, exposing browser_goal, element tables, code-checked assertions, Chrome extension assets, examples, tests, scripts, and client installer.",
+      "audience": "Agent builders who want browser tasks handled as one bounded tool call rather than many expensive frontier-model turns.",
+      "ai_native_angle": "Hands full browser goals to a smaller decision loop with refusal on missing targets and explicit verification, reducing page context exposure to the host agent.",
+      "growth_signal": "Created 2026-09-19, pushed 2026-09-20, and showed 6 stars. Root audit found chrome-extension, docs, examples, tests, scripts, pyproject.toml, server.json, llms.txt, bilingual README, and CI badge references.",
+      "runnability": "Medium-high from install.py, Python package, examples, tests, and verification-oriented README; no browser, MCP client, or page-driving loop was run.",
+      "recommended_action": "Try on a no-login deterministic form and inspect trace, verification failure behavior, and Chrome permission boundaries."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "vinilana/jev-gateway",
+      "url": "https://github.com/vinilana/jev-gateway",
+      "category": "Jev gateway for coding-agent tool reasoning",
+      "score": 79,
+      "summary": "TypeScript gateway that lets coding agents use Jev for tool-calling reasoning, with docs, tests, bin, src, scripts, and env example.",
+      "audience": "Coding-agent users experimenting with fast typed tool decisions.",
+      "ai_native_angle": "Moves small tool-choice judgments into a gateway that can sit between the agent and tools.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-20, and showed 73 stars; root audit found docs, src, test, bin, scripts, package metadata, and .env.example.",
+      "runnability": "Medium from package/test structure; no gateway or Jev request was run.",
+      "recommended_action": "Promote after a concrete demo shows how it prevents wrong tool calls or reduces latency."
+    },
+    {
+      "full_name": "kishormorol/cli-faq-shortcuts",
+      "url": "https://github.com/kishormorol/cli-faq-shortcuts",
+      "category": "Session-history shortcut skill",
+      "score": 78,
+      "summary": "Agent skill that mines repeated asks from Claude Code, Codex, and Cursor history and turns them into short commands.",
+      "audience": "Heavy agent users with repeated local workflows.",
+      "ai_native_angle": "Converts personal agent transcript patterns into reusable shortcuts rather than generic prompt snippets.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-19, and showed 69 stars; root audit found SKILL.md, demo.svg, scripts, tests, README, and GitHub workflow metadata.",
+      "runnability": "Medium from skill/script/test layout; no local history scan was run.",
+      "recommended_action": "Test with synthetic transcripts to ensure private history is not over-collected."
+    },
+    {
+      "full_name": "nassim-arifette/jevgrep",
+      "url": "https://github.com/nassim-arifette/jevgrep",
+      "category": "Semantic code search for agents",
+      "score": 77,
+      "summary": "Jev-powered semantic code search via CLI or MCP with source excerpts and line numbers.",
+      "audience": "Coding-agent builders who need behavior-level search across repositories.",
+      "ai_native_angle": "Uses typed semantic ranking for code navigation while preserving exact source evidence.",
+      "growth_signal": "Created 2026-09-20, pushed 2026-09-20, and showed 29 stars; root audit found demo, docs, experiments, scripts, src, tests, and TypeScript build config.",
+      "runnability": "Medium from CLI/MCP-oriented package and tests; no repository search was run.",
+      "recommended_action": "Compare on a medium repo against ripgrep plus embedding search."
+    },
+    {
+      "full_name": "skeptrunedev/jev-recruiter",
+      "url": "https://github.com/skeptrunedev/jev-recruiter",
+      "category": "Evidence-reviewed recruiting browser agent",
+      "score": 76,
+      "summary": "Jev-powered LinkedIn recruiting agent that browses profiles, saves links, and reviews evidence against a hiring brief.",
+      "audience": "Recruiters and sourcing teams exploring agent-assisted profile review.",
+      "ai_native_angle": "Frames recruiting as browse, evidence capture, and brief-matched review rather than unconstrained profile scraping.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-19, and showed 41 stars; root audit found docs, examples, tests, scripts, pyproject.toml, uv.lock, and env example.",
+      "runnability": "Medium from examples/tests; no LinkedIn browsing, credential use, or evidence review was run.",
+      "recommended_action": "Keep watchlisted until permissions, rate limits, and privacy boundaries are explicit."
+    },
+    {
+      "full_name": "nahid-sparktales/agent-dispatcher",
+      "url": "https://github.com/nahid-sparktales/agent-dispatcher",
+      "category": "Capability-aware agent role dispatcher",
+      "score": 75,
+      "summary": "Claude/Codex-oriented dispatcher with specialist roles, composable skills, MCP/tool routing, verification workflows, direct commands, adapters, evals, docs, and runtime checks.",
+      "audience": "Teams building role-specialized coding-agent workflows.",
+      "ai_native_angle": "Makes role selection and context packets an explicit dispatcher surface instead of ad hoc prompt selection.",
+      "growth_signal": "Created 2026-09-19, pushed 2026-09-21, and showed 40 stars; root audit found adapters, catalog, commands, decision, docs, evals, hooks, recipes, templates, tests, verification, and Codex install script.",
+      "runnability": "Medium-high from broad project structure; no dispatcher install or role command was run.",
+      "recommended_action": "Promote only after a small benchmark shows dispatcher choices outperform manual role selection."
+    },
+    {
+      "full_name": "harshwasan/jev-sentinel",
+      "url": "https://github.com/harshwasan/jev-sentinel",
+      "category": "Prompt-injection and approval guard for Pi agents",
+      "score": 74,
+      "summary": "Pi coding-agent extension using Jev checks for tool calls, tool outputs, prompt injection, approvals, secret scrubbing, and task pinning.",
+      "audience": "Agent users concerned with tool-output and approval safety.",
+      "ai_native_angle": "Turns safety checks around tool calls into typed, repeatable judgment gates.",
+      "growth_signal": "Created 2026-09-19, pushed 2026-09-20, and showed 8 stars; metadata points to TypeScript extension scope.",
+      "runnability": "Low-medium from limited audit evidence; no extension or safety scenario was run.",
+      "recommended_action": "Watch for test fixtures showing blocked injections and secret scrubbing evidence."
+    },
+    {
+      "full_name": "OthmaneBlial/FreeComputerUse",
+      "url": "https://github.com/OthmaneBlial/FreeComputerUse",
+      "category": "DOM-first low-cost browser automation",
+      "score": 73,
+      "summary": "DOM-first browser automation with cheap AI planning, deterministic execution, website permissions, learned workflows, assets, docs, fixtures, lab, scripts, src, and tests.",
+      "audience": "Builders who want browser automation with less model spend and stronger permission concepts.",
+      "ai_native_angle": "Separates planning from deterministic DOM execution and learned repeat workflows.",
+      "growth_signal": "Created 2026-09-18, pushed 2026-09-19, and showed 4 stars; root audit found docs, tests, fixtures, package metadata, SECURITY, lab, assets, and env example.",
+      "runnability": "Medium from test/docs structure; no browser automation was run.",
+      "recommended_action": "Keep watching; promote when permission model and deterministic replay are demonstrated on real sites."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "ThisTakou/UserAgent-list",
+      "url": "https://github.com/ThisTakou/UserAgent-list",
+      "skip_reason": "Useful browser dataset, but it is primarily an automated user-agent database rather than an AI-native product surface."
+    },
+    {
+      "full_name": "hirotomasato/yowes",
+      "url": "https://github.com/hirotomasato/yowes",
+      "skip_reason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear."
+    },
+    {
+      "full_name": "kraayenjon/awesome-jev",
+      "url": "https://github.com/kraayenjon/awesome-jev",
+      "skip_reason": "Curated list rather than a runnable product; useful as source discovery but not a Top/Watchlist product."
+    },
+    {
+      "full_name": "Mayuqi-crypto/everything-search-skill",
+      "url": "https://github.com/Mayuqi-crypto/everything-search-skill",
+      "skip_reason": "Narrow Windows Everything search skill with low product breadth; useful utility but less distinctive than broader agent workbench/control surfaces."
+    },
+    {
+      "full_name": "kbhuw/jev-sift",
+      "url": "https://github.com/kbhuw/jev-sift",
+      "skip_reason": "Interesting batch text classifier plugin/MCP, but current evidence reads more like a small utility than a full product workflow."
+    },
+    {
+      "full_name": "tacticocc/Jevbridge",
+      "url": "https://github.com/tacticocc/Jevbridge",
+      "skip_reason": "ACP/MCP adapter is relevant, but thin size and overlap with stronger Jev gateway/browser candidates kept it below Watchlist."
+    },
+    {
+      "full_name": "ndrezn/ts-browser-agent",
+      "url": "https://github.com/ndrezn/ts-browser-agent",
+      "skip_reason": "Fast browser-agent claim is relevant, but README/root evidence was less differentiated than jev-ultrafast-mcp and FreeComputerUse."
+    },
+    {
+      "full_name": "samdotmak/jev-recall",
+      "url": "https://github.com/samdotmak/jev-recall",
+      "skip_reason": "Memory filtering concept is useful, but the product surface overlaps with stronger context-layer and Jev-skill packages in this window."
+    },
+    {
+      "full_name": "adhhamdev/modern-react-guidance",
+      "url": "https://github.com/adhhamdev/modern-react-guidance",
+      "skip_reason": "Agent skill for React guidance, but primarily documentation/skill guidance rather than a product or workflow engine."
+    },
+    {
+      "full_name": "alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill",
+      "url": "https://github.com/alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill",
+      "skip_reason": "Tiny generated skill repository with very low file evidence; skipped to avoid promoting thin template-like artifacts."
+    }
+  ]
+}
