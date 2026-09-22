@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+      "runDate": "2026-09-22",
+      "generatedAt": "2026-09-22T11:20:00+08:00",
+      "dataWindow": "2026-09-19T00:00:00Z to 2026-09-22T03:00:00Z",
+      "sourceSummary": "Three GitHub Search API queries for newly created and recently pushed AI agent, MCP, browser, coding-agent, and workflow repositories produced 280 deduplicated candidates. Ten product-shaped repositories were audited through live repository metadata, root contents, and README responses saved under /tmp/radar_2026_09_22_api and /tmp/radar_2026_09_22_audit.",
+      "trendObservations": "A single typed-decision model wave is rapidly being productized into concrete user surfaces: mobile reply assistance, macOS accessibility control, local evals, and software-factory orchestration. The durable differentiator is operational evidence: tests, signed releases, isolated sandboxes, explicit verification, permission prompts, or request-redaction boundaries—not merely a fast decision API.",
+      "assumptions": "Scores use GitHub metadata and README/root-content evidence collected in this window. No third-party repository was cloned, installed, built, run, browser-tested, phone-tested, credential-tested, accessibility-permission-tested, model-connected, security-tested, or deployed locally. Star counts are point-in-time and should not be read as star deltas. Mature repositories surfaced by pushed activity were excluded unless their new product signal was distinct.",
+      "markdownReport": "data/runs/2026-09-22.md",
+      "sourceFile": "2026-09-22.json",
+      "entryCount": 21
+    },
+    {
       "id": "run:2026-09-21:2026-09-21T12:38:20+08:00",
       "runDate": "2026-09-21",
       "generatedAt": "2026-09-21T12:38:20+08:00",
@@ -1340,6 +1352,25 @@
       "skipReason": null
     },
     {
+      "fullName": "jev-chat/jev-chat-jarvis",
+      "url": "https://github.com/jev-chat/jev-chat-jarvis",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Mobile conversation copilot",
+      "summary": "Android overlay assistant that reads supported chat screens, scores intent and risk, proposes replies, and leaves sending to the user.",
+      "audience": "People who want on-device assistance while composing messages in WeChat, QQ, X, or Feishu.",
+      "aiNativeAngle": "Turns local screen context into ranked reply options and explicit user-controlled handoff rather than autonomous sending.",
+      "growthSignal": "Created 2026-09-21, pushed 2026-09-22, 1,383 stars at audit; Android app, docs, APK, Gradle project, tooling, and device-tested claims are documented.",
+      "runnability": "Medium-high from a complete Kotlin/Gradle app, APK, screenshots, docs, and stated real-device coverage; no APK or accessibility flow was run.",
+      "recommendedAction": "Test on a spare Android device with a non-sensitive chat account; audit screen collection, overlay, and accessibility boundaries first.",
+      "skipReason": null
+    },
+    {
       "fullName": "kitze/skillbox",
       "url": "https://github.com/kitze/skillbox",
       "firstSeenDate": "2026-09-18",
@@ -2328,6 +2359,25 @@
       "skipReason": null
     },
     {
+      "fullName": "shhivv/third-hand",
+      "url": "https://github.com/shhivv/third-hand",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 89,
+      "latestScore": 89,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Permissioned macOS computer-use assistant",
+      "summary": "Signed and notarized Apple Silicon menu-bar app that reads accessibility controls, acts on a focused app, and checks results with a stop shortcut.",
+      "audience": "macOS users who want bounded voice/text computer-use automation across accessible apps.",
+      "aiNativeAngle": "Combines a small decision model with the accessibility tree and visible stop control instead of opaque screenshot-only automation.",
+      "growthSignal": "Created and pushed 2026-09-19, 282 stars; root contains Swift sources, tests, resources, scripts, rebuild tooling, and a release install path.",
+      "runnability": "High from published notarized release, macOS requirements, Swift package, tests, and clear setup; no app, API key, or Accessibility permission was used.",
+      "recommendedAction": "Use a non-destructive test app first and inspect what the accessibility tree exposes before granting broad permission.",
+      "skipReason": null
+    },
+    {
       "fullName": "zorrobyte/rimagent",
       "url": "https://github.com/zorrobyte/rimagent",
       "firstSeenDate": "2026-09-17",
@@ -2667,6 +2717,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "mitkox/esf",
+      "url": "https://github.com/mitkox/esf",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Evidence-preserving software factory",
+      "summary": "Self-hosted coding-agent factory using Temporal and CubeSandbox microVMs to isolate work, verify changes, and retain patches plus execution evidence.",
+      "audience": "Engineering teams building governed autonomous implementation loops.",
+      "aiNativeAngle": "Makes agent delivery a durable workflow of task, sandbox, verification, patch, and evidence rather than a one-shot coding chat.",
+      "growthSignal": "Created 2026-09-19, pushed 2026-09-21, 86 stars; repo includes architecture/security docs, deploy assets, evals, examples, skills, tests, installer, and env example.",
+      "runnability": "Medium-high from Go project structure, installation material, CI, examples, evals, and deployment files; no Temporal, microVM, or agent loop was executed.",
+      "recommendedAction": "Start with a disposable repository and verify sandbox cleanup, evidence retention, and failure recovery before connecting production SCM.",
       "skipReason": null
     },
     {
@@ -3563,6 +3632,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Rizzo-AI-Academy/rizzo-flow",
+      "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 87,
+      "latestScore": 87,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local typed-decision runtime",
+      "summary": "Local Python runtime for typed probabilistic decisions from an LLM without generated tokens, with schemas, benchmarks, examples, tests, and locked dependencies.",
+      "audience": "Agent builders needing inexpensive local routing, scoring, or classification decisions.",
+      "aiNativeAngle": "Moves constrained choice and probability decisions into a local, inspectable product surface instead of consuming full generative turns.",
+      "growthSignal": "Created 2026-09-21, pushed 2026-09-21, 225 stars; repo has request/response schemas, benchmarks, results, docs, examples, tests, and uv lockfile.",
+      "runnability": "High on paper from Python packaging, schemas, benchmarks, examples, and tests; no local model or benchmark was run.",
+      "recommendedAction": "Benchmark one routing decision against the current agent and inspect calibration, latency, and error costs before adoption.",
+      "skipReason": null
+    },
+    {
       "fullName": "kerpopule/hermes-jev-skills",
       "url": "https://github.com/kerpopule/hermes-jev-skills",
       "firstSeenDate": "2026-09-21",
@@ -4206,6 +4294,25 @@
       "growthSignal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
       "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
       "recommendedAction": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails.",
+      "skipReason": null
+    },
+    {
+      "fullName": "savka777/jev-use",
+      "url": "https://github.com/savka777/jev-use",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Voice-first macOS computer-use",
+      "summary": "Swift macOS app that turns voice or typed goals into accessibility-tree actions, with a build script, tests, resources, and permission-oriented setup.",
+      "audience": "Mac users who want hands-free or typed control of visible desktop tasks.",
+      "aiNativeAngle": "Uses structured next-action selection over the local accessibility tree, keeping interaction grounded in the currently visible UI.",
+      "growthSignal": "Created 2026-09-19, pushed 2026-09-21, 85 stars; root includes Swift sources, tests, docs, scripts, build.sh, and Package.swift.",
+      "runnability": "Medium-high from one-command build, no-dependency claim, source/tests, and explicit OS/permission requirements; no build or accessibility action was executed.",
+      "recommendedAction": "Validate only reversible actions and audit keychain/API-key handling before enabling microphone or Accessibility access.",
       "skipReason": null
     },
     {
@@ -5064,6 +5171,25 @@
       "skipReason": null
     },
     {
+      "fullName": "ghuntley/preflight",
+      "url": "https://github.com/ghuntley/preflight",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local LLM secret-redaction proxy",
+      "summary": "Rust proxy that scans LLM requests and attachments locally for secrets before forwarding supported OpenAI-compatible traffic.",
+      "audience": "Teams and individuals routing coding-agent prompts that may contain source files, attachments, or credentials.",
+      "aiNativeAngle": "Treats model-bound data as an inspectable policy boundary with OCR, redaction/blocking, cache, structured logs, rules, examples, and tests.",
+      "growthSignal": "Created and pushed 2026-09-20, 64 stars; root includes contracts, rules, examples, benches, docs, Nix setup, Rust sources, tests, and vendor material.",
+      "runnability": "Medium-high from a focused Rust package, tests, examples, configuration, and concrete proxy diagram; no model endpoint, attachment, or redaction rule was tested.",
+      "recommendedAction": "Run against synthetic secrets and known-safe prompts, then evaluate false positives before placing it in a developer proxy path.",
+      "skipReason": null
+    },
+    {
       "fullName": "zeronezer/bidcraft",
       "url": "https://github.com/zeronezer/bidcraft",
       "firstSeenDate": "2026-09-18",
@@ -5650,6 +5776,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "openlayer-ai/jevals",
+      "url": "https://github.com/openlayer-ai/jevals",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "In-loop agent evals and guardrails",
+      "summary": "Python package for sending whole agent traces through inexpensive typed-decision evals and guardrails, supporting hosted and local decision backends.",
+      "audience": "Agent teams needing per-trace checks fast enough to keep inside their runtime loop.",
+      "aiNativeAngle": "Replaces a costly generative LLM judge with bounded decisions and makes evaluation an operational runtime component.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-22, 48 stars; repo contains examples, Python package metadata, security/contribution docs, source, tests, and uv lockfile.",
+      "runnability": "Medium-high from package install docs, examples, tests, and explicit backend choices; no trace or local/hosted decision backend was run.",
+      "recommendedAction": "Replay a labeled trace set and compare alert quality, latency, and cost with the current evaluator before inline enforcement.",
       "skipReason": null
     },
     {
@@ -6755,6 +6900,25 @@
       "skipReason": null
     },
     {
+      "fullName": "penso/herdr-gpui",
+      "url": "https://github.com/penso/herdr-gpui",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Native agent-activity workbench",
+      "summary": "Rust/GPUI macOS client for viewing local Herdr terminal sessions, workspaces, Git worktrees, and agent activity.",
+      "audience": "Developers supervising local coding-agent sessions and worktrees.",
+      "aiNativeAngle": "Makes agent work observable in a native desktop surface tied to a local daemon and real developer artifacts.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-22, 72 stars; repo offers CI, release/update docs, Homebrew material, crates, assets, security docs, and scripts.",
+      "runnability": "Medium-high from Rust workspace, release route, update docs, CI, and packaging assets; no daemon or macOS client was installed.",
+      "recommendedAction": "Watch for a stable daemon-client quickstart; test session visibility and local-data retention in a throwaway workspace.",
+      "skipReason": null
+    },
+    {
       "fullName": "heymi/aldus-palace",
       "url": "https://github.com/heymi/aldus-palace",
       "firstSeenDate": "2026-09-21",
@@ -7550,6 +7714,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "sno-ai/sno-station",
+      "url": "https://github.com/sno-ai/sno-station",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local multi-agent collaboration station",
+      "summary": "Local workstation for Claude Code and Codex collaboration with encrypted shared memory, messaging, handoffs, skills, and approval-gated nightly self-improvement.",
+      "audience": "Power users coordinating multiple coding-agent hosts on one machine.",
+      "aiNativeAngle": "Exposes cross-agent context and handoffs as locally owned, approval-gated operational primitives rather than hidden transcript copying.",
+      "growthSignal": "Created 2026-09-19, pushed 2026-09-22, 33 stars; root has apps, packages, docs, evals, tests, changelog, security material, and npm lockfile.",
+      "runnability": "Medium-high from monorepo, tests/evals, security docs, and explicit no-daemon/local-first framing; no installation, encryption, or cross-agent handoff was tested.",
+      "recommendedAction": "Audit encrypted-memory semantics and approval prompts with fake projects before exposing real agent session data.",
       "skipReason": null
     },
     {
@@ -9149,6 +9332,25 @@
       "skipReason": null
     },
     {
+      "fullName": "Haleclipse/CometixCode",
+      "url": "https://github.com/Haleclipse/CometixCode",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Rust terminal coding assistant",
+      "summary": "Unofficial Rust terminal reimplementation of a Claude Code-style coding assistant with bilingual docs, tests, and a justfile.",
+      "audience": "Developers exploring alternative terminal UX for coding-agent workflows.",
+      "aiNativeAngle": "Packages a familiar terminal-agent loop in a compiled, inspectable local client with tests and development tooling.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 462 stars; root includes Cargo workspace files, bilingual READMEs, source, tests, justfile, and AGPL-3.0 license.",
+      "runnability": "Medium from Rust project/test structure and documentation; no provider setup, build, or repository edit loop was run.",
+      "recommendedAction": "Treat as an experimental client; verify provider compatibility, data handling, and license fit before team use.",
+      "skipReason": null
+    },
+    {
       "fullName": "jiawei686/jev-ultrafast-mcp",
       "url": "https://github.com/jiawei686/jev-ultrafast-mcp",
       "firstSeenDate": "2026-09-21",
@@ -9906,6 +10108,25 @@
       "growthSignal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
       "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
       "recommendedAction": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。",
+      "skipReason": null
+    },
+    {
+      "fullName": "FluidInference/FluidUse",
+      "url": "https://github.com/FluidInference/FluidUse",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 79,
+      "latestScore": 79,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "On-device Apple Silicon form automation",
+      "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
+      "audience": "Teams testing private local form completion.",
+      "aiNativeAngle": "Binds an on-device model to deterministic accessibility actions.",
+      "growthSignal": "Created and pushed 2026-09-21 with 28 stars.",
+      "runnability": "Unverified beyond repository metadata.",
+      "recommendedAction": "Await audited privacy and failure-mode documentation.",
       "skipReason": null
     },
     {
@@ -11581,6 +11802,25 @@
       "skipReason": null
     },
     {
+      "fullName": "fstandhartinger/chat-seek-vscode",
+      "url": "https://github.com/fstandhartinger/chat-seek-vscode",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Cross-agent chat search",
+      "summary": "VS Code-local search over Claude Code, Codex, and OpenCode chats using reranking.",
+      "audience": "Developers mining prior agent sessions.",
+      "aiNativeAngle": "Makes cross-host agent history queryable in the editor.",
+      "growthSignal": "Created and pushed 2026-09-21 with 60 stars.",
+      "runnability": "Metadata-only audit.",
+      "recommendedAction": "Check local data boundaries and index deletion behavior.",
+      "skipReason": null
+    },
+    {
       "fullName": "nassim-arifette/jevgrep",
       "url": "https://github.com/nassim-arifette/jevgrep",
       "firstSeenDate": "2026-09-21",
@@ -12224,6 +12464,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "TiancongLx/open-mcp-gateway",
+      "url": "https://github.com/TiancongLx/open-mcp-gateway",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "MCP-to-OpenAPI gateway",
+      "summary": "TypeScript gateway targeting MCP interoperability with Open WebUI.",
+      "audience": "Teams exposing MCP tools to OpenAPI-oriented surfaces.",
+      "aiNativeAngle": "Makes agent tool capability portable across protocol boundaries.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 51 stars.",
+      "runnability": "Metadata-only audit.",
+      "recommendedAction": "Promote after auth and schema fidelity are demonstrated.",
       "skipReason": null
     },
     {
@@ -13044,6 +13303,25 @@
       "skipReason": null
     },
     {
+      "fullName": "lewismosciski/LMMOCK",
+      "url": "https://github.com/lewismosciski/LMMOCK",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Deterministic local LLM mock",
+      "summary": "Local mock provider for deterministic OpenAI and Anthropic-shaped responses.",
+      "audience": "Agent teams testing without paid model calls.",
+      "aiNativeAngle": "Separates agent integration tests from live stochastic provider behavior.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 15 stars.",
+      "runnability": "Metadata-only audit.",
+      "recommendedAction": "Watch for contract fixtures and failure simulation coverage.",
+      "skipReason": null
+    },
+    {
       "fullName": "nahid-sparktales/agent-dispatcher",
       "url": "https://github.com/nahid-sparktales/agent-dispatcher",
       "firstSeenDate": "2026-09-21",
@@ -13763,6 +14041,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "ismailperim/briefd",
+      "url": "https://github.com/ismailperim/briefd",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Token-budgeted agent context compiler",
+      "summary": "Self-hosted git-backed team knowledge bundles over MCP.",
+      "audience": "Teams controlling context size for coding agents.",
+      "aiNativeAngle": "Treats context delivery as a budgeted, inspectable compile step.",
+      "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 20 stars.",
+      "runnability": "Metadata-only audit.",
+      "recommendedAction": "Promote after retrieval provenance and stale-context controls are tested.",
       "skipReason": null
     },
     {
@@ -18820,6 +19117,120 @@
       "skipReason": null
     },
     {
+      "fullName": "fedorchenko-juli/job_search_tool",
+      "url": "https://github.com/fedorchenko-juli/job_search_tool",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Useful local utility but agent functionality is optional and product evidence is limited."
+    },
+    {
+      "fullName": "hirotomasato/yowes",
+      "url": "https://github.com/hirotomasato/yowes",
+      "firstSeenDate": "2026-09-21",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 2,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Document-generation use case needs stronger abuse controls before inclusion."
+    },
+    {
+      "fullName": "SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+      "url": "https://github.com/SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Likely unauthorized commercial-software distribution, not a product candidate."
+    },
+    {
+      "fullName": "v-modal/awesome-jev-tools",
+      "url": "https://github.com/v-modal/awesome-jev-tools",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Curated list, not a runnable product."
+    },
+    {
+      "fullName": "wuyoscar/jev-skill",
+      "url": "https://github.com/wuyoscar/jev-skill",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Workflow collection with insufficient distinct product surface."
+    },
+    {
+      "fullName": "yifanzhang-pro/KLPO",
+      "url": "https://github.com/yifanzhang-pro/KLPO",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-22",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Agent RL research project rather than end-user product tooling."
+    },
+    {
       "fullName": "adhhamdev/modern-react-guidance",
       "url": "https://github.com/adhhamdev/modern-react-guidance",
       "firstSeenDate": "2026-09-21",
@@ -18856,25 +19267,6 @@
       "runnability": null,
       "recommendedAction": null,
       "skipReason": "Tiny generated skill repository with very low file evidence; skipped to avoid promoting thin template-like artifacts."
-    },
-    {
-      "fullName": "hirotomasato/yowes",
-      "url": "https://github.com/hirotomasato/yowes",
-      "firstSeenDate": "2026-09-21",
-      "lastSeenDate": "2026-09-21",
-      "seenCount": 1,
-      "bestScore": null,
-      "latestScore": null,
-      "latestSection": "skip",
-      "boardStatus": "skip-low-signal",
-      "category": null,
-      "summary": null,
-      "audience": null,
-      "aiNativeAngle": null,
-      "growthSignal": null,
-      "runnability": null,
-      "recommendedAction": null,
-      "skipReason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear."
     },
     {
       "fullName": "kbhuw/jev-sift",
@@ -27246,6 +27638,40 @@
         }
       }
     ],
+    "jev-chat/jev-chat-jarvis": [
+      {
+        "id": "jev-chat-jev-chat-jarvis:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "jev-chat/jev-chat-jarvis",
+        "url": "https://github.com/jev-chat/jev-chat-jarvis",
+        "category": "Mobile conversation copilot",
+        "score": 91,
+        "summary": "Android overlay assistant that reads supported chat screens, scores intent and risk, proposes replies, and leaves sending to the user.",
+        "audience": "People who want on-device assistance while composing messages in WeChat, QQ, X, or Feishu.",
+        "aiNativeAngle": "Turns local screen context into ranked reply options and explicit user-controlled handoff rather than autonomous sending.",
+        "growthSignal": "Created 2026-09-21, pushed 2026-09-22, 1,383 stars at audit; Android app, docs, APK, Gradle project, tooling, and device-tested claims are documented.",
+        "runnability": "Medium-high from a complete Kotlin/Gradle app, APK, screenshots, docs, and stated real-device coverage; no APK or accessibility flow was run.",
+        "recommendedAction": "Test on a spare Android device with a non-sensitive chat account; audit screen collection, overlay, and accessibility boundaries first.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "jev-chat/jev-chat-jarvis",
+          "url": "https://github.com/jev-chat/jev-chat-jarvis",
+          "category": "Mobile conversation copilot",
+          "score": 91,
+          "summary": "Android overlay assistant that reads supported chat screens, scores intent and risk, proposes replies, and leaves sending to the user.",
+          "audience": "People who want on-device assistance while composing messages in WeChat, QQ, X, or Feishu.",
+          "ai_native_angle": "Turns local screen context into ranked reply options and explicit user-controlled handoff rather than autonomous sending.",
+          "growth_signal": "Created 2026-09-21, pushed 2026-09-22, 1,383 stars at audit; Android app, docs, APK, Gradle project, tooling, and device-tested claims are documented.",
+          "runnability": "Medium-high from a complete Kotlin/Gradle app, APK, screenshots, docs, and stated real-device coverage; no APK or accessibility flow was run.",
+          "recommended_action": "Test on a spare Android device with a non-sensitive chat account; audit screen collection, overlay, and accessibility boundaries first."
+        }
+      }
+    ],
     "kitze/skillbox": [
       {
         "id": "kitze-skillbox:2026-09-18T10:20:00+08:00:top:0",
@@ -30004,6 +30430,40 @@
         }
       }
     ],
+    "shhivv/third-hand": [
+      {
+        "id": "shhivv-third-hand:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "shhivv/third-hand",
+        "url": "https://github.com/shhivv/third-hand",
+        "category": "Permissioned macOS computer-use assistant",
+        "score": 89,
+        "summary": "Signed and notarized Apple Silicon menu-bar app that reads accessibility controls, acts on a focused app, and checks results with a stop shortcut.",
+        "audience": "macOS users who want bounded voice/text computer-use automation across accessible apps.",
+        "aiNativeAngle": "Combines a small decision model with the accessibility tree and visible stop control instead of opaque screenshot-only automation.",
+        "growthSignal": "Created and pushed 2026-09-19, 282 stars; root contains Swift sources, tests, resources, scripts, rebuild tooling, and a release install path.",
+        "runnability": "High from published notarized release, macOS requirements, Swift package, tests, and clear setup; no app, API key, or Accessibility permission was used.",
+        "recommendedAction": "Use a non-destructive test app first and inspect what the accessibility tree exposes before granting broad permission.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "shhivv/third-hand",
+          "url": "https://github.com/shhivv/third-hand",
+          "category": "Permissioned macOS computer-use assistant",
+          "score": 89,
+          "summary": "Signed and notarized Apple Silicon menu-bar app that reads accessibility controls, acts on a focused app, and checks results with a stop shortcut.",
+          "audience": "macOS users who want bounded voice/text computer-use automation across accessible apps.",
+          "ai_native_angle": "Combines a small decision model with the accessibility tree and visible stop control instead of opaque screenshot-only automation.",
+          "growth_signal": "Created and pushed 2026-09-19, 282 stars; root contains Swift sources, tests, resources, scripts, rebuild tooling, and a release install path.",
+          "runnability": "High from published notarized release, macOS requirements, Swift package, tests, and clear setup; no app, API key, or Accessibility permission was used.",
+          "recommended_action": "Use a non-destructive test app first and inspect what the accessibility tree exposes before granting broad permission."
+        }
+      }
+    ],
     "zorrobyte/rimagent": [
       {
         "id": "zorrobyte-rimagent:2026-09-17T12:54:59+08:00:top:0",
@@ -30668,6 +31128,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "mitkox/esf": [
+      {
+        "id": "mitkox-esf:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "mitkox/esf",
+        "url": "https://github.com/mitkox/esf",
+        "category": "Evidence-preserving software factory",
+        "score": 88,
+        "summary": "Self-hosted coding-agent factory using Temporal and CubeSandbox microVMs to isolate work, verify changes, and retain patches plus execution evidence.",
+        "audience": "Engineering teams building governed autonomous implementation loops.",
+        "aiNativeAngle": "Makes agent delivery a durable workflow of task, sandbox, verification, patch, and evidence rather than a one-shot coding chat.",
+        "growthSignal": "Created 2026-09-19, pushed 2026-09-21, 86 stars; repo includes architecture/security docs, deploy assets, evals, examples, skills, tests, installer, and env example.",
+        "runnability": "Medium-high from Go project structure, installation material, CI, examples, evals, and deployment files; no Temporal, microVM, or agent loop was executed.",
+        "recommendedAction": "Start with a disposable repository and verify sandbox cleanup, evidence retention, and failure recovery before connecting production SCM.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "mitkox/esf",
+          "url": "https://github.com/mitkox/esf",
+          "category": "Evidence-preserving software factory",
+          "score": 88,
+          "summary": "Self-hosted coding-agent factory using Temporal and CubeSandbox microVMs to isolate work, verify changes, and retain patches plus execution evidence.",
+          "audience": "Engineering teams building governed autonomous implementation loops.",
+          "ai_native_angle": "Makes agent delivery a durable workflow of task, sandbox, verification, patch, and evidence rather than a one-shot coding chat.",
+          "growth_signal": "Created 2026-09-19, pushed 2026-09-21, 86 stars; repo includes architecture/security docs, deploy assets, evals, examples, skills, tests, installer, and env example.",
+          "runnability": "Medium-high from Go project structure, installation material, CI, examples, evals, and deployment files; no Temporal, microVM, or agent loop was executed.",
+          "recommended_action": "Start with a disposable repository and verify sandbox cleanup, evidence retention, and failure recovery before connecting production SCM."
         }
       }
     ],
@@ -33022,6 +33516,40 @@
         }
       }
     ],
+    "Rizzo-AI-Academy/rizzo-flow": [
+      {
+        "id": "Rizzo-AI-Academy-rizzo-flow:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "Rizzo-AI-Academy/rizzo-flow",
+        "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
+        "category": "Local typed-decision runtime",
+        "score": 87,
+        "summary": "Local Python runtime for typed probabilistic decisions from an LLM without generated tokens, with schemas, benchmarks, examples, tests, and locked dependencies.",
+        "audience": "Agent builders needing inexpensive local routing, scoring, or classification decisions.",
+        "aiNativeAngle": "Moves constrained choice and probability decisions into a local, inspectable product surface instead of consuming full generative turns.",
+        "growthSignal": "Created 2026-09-21, pushed 2026-09-21, 225 stars; repo has request/response schemas, benchmarks, results, docs, examples, tests, and uv lockfile.",
+        "runnability": "High on paper from Python packaging, schemas, benchmarks, examples, and tests; no local model or benchmark was run.",
+        "recommendedAction": "Benchmark one routing decision against the current agent and inspect calibration, latency, and error costs before adoption.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "Rizzo-AI-Academy/rizzo-flow",
+          "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
+          "category": "Local typed-decision runtime",
+          "score": 87,
+          "summary": "Local Python runtime for typed probabilistic decisions from an LLM without generated tokens, with schemas, benchmarks, examples, tests, and locked dependencies.",
+          "audience": "Agent builders needing inexpensive local routing, scoring, or classification decisions.",
+          "ai_native_angle": "Moves constrained choice and probability decisions into a local, inspectable product surface instead of consuming full generative turns.",
+          "growth_signal": "Created 2026-09-21, pushed 2026-09-21, 225 stars; repo has request/response schemas, benchmarks, results, docs, examples, tests, and uv lockfile.",
+          "runnability": "High on paper from Python packaging, schemas, benchmarks, examples, and tests; no local model or benchmark was run.",
+          "recommended_action": "Benchmark one routing decision against the current agent and inspect calibration, latency, and error costs before adoption."
+        }
+      }
+    ],
     "kerpopule/hermes-jev-skills": [
       {
         "id": "kerpopule-hermes-jev-skills:2026-09-21T12:38:20+08:00:top:0",
@@ -34327,6 +34855,40 @@
           "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
           "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
           "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+        }
+      }
+    ],
+    "savka777/jev-use": [
+      {
+        "id": "savka777-jev-use:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "savka777/jev-use",
+        "url": "https://github.com/savka777/jev-use",
+        "category": "Voice-first macOS computer-use",
+        "score": 86,
+        "summary": "Swift macOS app that turns voice or typed goals into accessibility-tree actions, with a build script, tests, resources, and permission-oriented setup.",
+        "audience": "Mac users who want hands-free or typed control of visible desktop tasks.",
+        "aiNativeAngle": "Uses structured next-action selection over the local accessibility tree, keeping interaction grounded in the currently visible UI.",
+        "growthSignal": "Created 2026-09-19, pushed 2026-09-21, 85 stars; root includes Swift sources, tests, docs, scripts, build.sh, and Package.swift.",
+        "runnability": "Medium-high from one-command build, no-dependency claim, source/tests, and explicit OS/permission requirements; no build or accessibility action was executed.",
+        "recommendedAction": "Validate only reversible actions and audit keychain/API-key handling before enabling microphone or Accessibility access.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "savka777/jev-use",
+          "url": "https://github.com/savka777/jev-use",
+          "category": "Voice-first macOS computer-use",
+          "score": 86,
+          "summary": "Swift macOS app that turns voice or typed goals into accessibility-tree actions, with a build script, tests, resources, and permission-oriented setup.",
+          "audience": "Mac users who want hands-free or typed control of visible desktop tasks.",
+          "ai_native_angle": "Uses structured next-action selection over the local accessibility tree, keeping interaction grounded in the currently visible UI.",
+          "growth_signal": "Created 2026-09-19, pushed 2026-09-21, 85 stars; root includes Swift sources, tests, docs, scripts, build.sh, and Package.swift.",
+          "runnability": "Medium-high from one-command build, no-dependency claim, source/tests, and explicit OS/permission requirements; no build or accessibility action was executed.",
+          "recommended_action": "Validate only reversible actions and audit keychain/API-key handling before enabling microphone or Accessibility access."
         }
       }
     ],
@@ -35924,6 +36486,40 @@
         }
       }
     ],
+    "ghuntley/preflight": [
+      {
+        "id": "ghuntley-preflight:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "ghuntley/preflight",
+        "url": "https://github.com/ghuntley/preflight",
+        "category": "Local LLM secret-redaction proxy",
+        "score": 85,
+        "summary": "Rust proxy that scans LLM requests and attachments locally for secrets before forwarding supported OpenAI-compatible traffic.",
+        "audience": "Teams and individuals routing coding-agent prompts that may contain source files, attachments, or credentials.",
+        "aiNativeAngle": "Treats model-bound data as an inspectable policy boundary with OCR, redaction/blocking, cache, structured logs, rules, examples, and tests.",
+        "growthSignal": "Created and pushed 2026-09-20, 64 stars; root includes contracts, rules, examples, benches, docs, Nix setup, Rust sources, tests, and vendor material.",
+        "runnability": "Medium-high from a focused Rust package, tests, examples, configuration, and concrete proxy diagram; no model endpoint, attachment, or redaction rule was tested.",
+        "recommendedAction": "Run against synthetic secrets and known-safe prompts, then evaluate false positives before placing it in a developer proxy path.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "ghuntley/preflight",
+          "url": "https://github.com/ghuntley/preflight",
+          "category": "Local LLM secret-redaction proxy",
+          "score": 85,
+          "summary": "Rust proxy that scans LLM requests and attachments locally for secrets before forwarding supported OpenAI-compatible traffic.",
+          "audience": "Teams and individuals routing coding-agent prompts that may contain source files, attachments, or credentials.",
+          "ai_native_angle": "Treats model-bound data as an inspectable policy boundary with OCR, redaction/blocking, cache, structured logs, rules, examples, and tests.",
+          "growth_signal": "Created and pushed 2026-09-20, 64 stars; root includes contracts, rules, examples, benches, docs, Nix setup, Rust sources, tests, and vendor material.",
+          "runnability": "Medium-high from a focused Rust package, tests, examples, configuration, and concrete proxy diagram; no model endpoint, attachment, or redaction rule was tested.",
+          "recommended_action": "Run against synthetic secrets and known-safe prompts, then evaluate false positives before placing it in a developer proxy path."
+        }
+      }
+    ],
     "zeronezer/bidcraft": [
       {
         "id": "zeronezer-bidcraft:2026-09-18T10:20:00+08:00:top:0",
@@ -37134,6 +37730,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "openlayer-ai/jevals": [
+      {
+        "id": "openlayer-ai-jevals:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "openlayer-ai/jevals",
+        "url": "https://github.com/openlayer-ai/jevals",
+        "category": "In-loop agent evals and guardrails",
+        "score": 84,
+        "summary": "Python package for sending whole agent traces through inexpensive typed-decision evals and guardrails, supporting hosted and local decision backends.",
+        "audience": "Agent teams needing per-trace checks fast enough to keep inside their runtime loop.",
+        "aiNativeAngle": "Replaces a costly generative LLM judge with bounded decisions and makes evaluation an operational runtime component.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-22, 48 stars; repo contains examples, Python package metadata, security/contribution docs, source, tests, and uv lockfile.",
+        "runnability": "Medium-high from package install docs, examples, tests, and explicit backend choices; no trace or local/hosted decision backend was run.",
+        "recommendedAction": "Replay a labeled trace set and compare alert quality, latency, and cost with the current evaluator before inline enforcement.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "openlayer-ai/jevals",
+          "url": "https://github.com/openlayer-ai/jevals",
+          "category": "In-loop agent evals and guardrails",
+          "score": 84,
+          "summary": "Python package for sending whole agent traces through inexpensive typed-decision evals and guardrails, supporting hosted and local decision backends.",
+          "audience": "Agent teams needing per-trace checks fast enough to keep inside their runtime loop.",
+          "ai_native_angle": "Replaces a costly generative LLM judge with bounded decisions and makes evaluation an operational runtime component.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-22, 48 stars; repo contains examples, Python package metadata, security/contribution docs, source, tests, and uv lockfile.",
+          "runnability": "Medium-high from package install docs, examples, tests, and explicit backend choices; no trace or local/hosted decision backend was run.",
+          "recommended_action": "Replay a labeled trace set and compare alert quality, latency, and cost with the current evaluator before inline enforcement."
         }
       }
     ],
@@ -39416,6 +40046,40 @@
         }
       }
     ],
+    "penso/herdr-gpui": [
+      {
+        "id": "penso-herdr-gpui:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "penso/herdr-gpui",
+        "url": "https://github.com/penso/herdr-gpui",
+        "category": "Native agent-activity workbench",
+        "score": 83,
+        "summary": "Rust/GPUI macOS client for viewing local Herdr terminal sessions, workspaces, Git worktrees, and agent activity.",
+        "audience": "Developers supervising local coding-agent sessions and worktrees.",
+        "aiNativeAngle": "Makes agent work observable in a native desktop surface tied to a local daemon and real developer artifacts.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-22, 72 stars; repo offers CI, release/update docs, Homebrew material, crates, assets, security docs, and scripts.",
+        "runnability": "Medium-high from Rust workspace, release route, update docs, CI, and packaging assets; no daemon or macOS client was installed.",
+        "recommendedAction": "Watch for a stable daemon-client quickstart; test session visibility and local-data retention in a throwaway workspace.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "penso/herdr-gpui",
+          "url": "https://github.com/penso/herdr-gpui",
+          "category": "Native agent-activity workbench",
+          "score": 83,
+          "summary": "Rust/GPUI macOS client for viewing local Herdr terminal sessions, workspaces, Git worktrees, and agent activity.",
+          "audience": "Developers supervising local coding-agent sessions and worktrees.",
+          "ai_native_angle": "Makes agent work observable in a native desktop surface tied to a local daemon and real developer artifacts.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-22, 72 stars; repo offers CI, release/update docs, Homebrew material, crates, assets, security docs, and scripts.",
+          "runnability": "Medium-high from Rust workspace, release route, update docs, CI, and packaging assets; no daemon or macOS client was installed.",
+          "recommended_action": "Watch for a stable daemon-client quickstart; test session visibility and local-data retention in a throwaway workspace."
+        }
+      }
+    ],
     "heymi/aldus-palace": [
       {
         "id": "heymi-aldus-palace:2026-09-21T12:38:20+08:00:top:0",
@@ -41054,6 +41718,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "sno-ai/sno-station": [
+      {
+        "id": "sno-ai-sno-station:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "sno-ai/sno-station",
+        "url": "https://github.com/sno-ai/sno-station",
+        "category": "Local multi-agent collaboration station",
+        "score": 82,
+        "summary": "Local workstation for Claude Code and Codex collaboration with encrypted shared memory, messaging, handoffs, skills, and approval-gated nightly self-improvement.",
+        "audience": "Power users coordinating multiple coding-agent hosts on one machine.",
+        "aiNativeAngle": "Exposes cross-agent context and handoffs as locally owned, approval-gated operational primitives rather than hidden transcript copying.",
+        "growthSignal": "Created 2026-09-19, pushed 2026-09-22, 33 stars; root has apps, packages, docs, evals, tests, changelog, security material, and npm lockfile.",
+        "runnability": "Medium-high from monorepo, tests/evals, security docs, and explicit no-daemon/local-first framing; no installation, encryption, or cross-agent handoff was tested.",
+        "recommendedAction": "Audit encrypted-memory semantics and approval prompts with fake projects before exposing real agent session data.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "sno-ai/sno-station",
+          "url": "https://github.com/sno-ai/sno-station",
+          "category": "Local multi-agent collaboration station",
+          "score": 82,
+          "summary": "Local workstation for Claude Code and Codex collaboration with encrypted shared memory, messaging, handoffs, skills, and approval-gated nightly self-improvement.",
+          "audience": "Power users coordinating multiple coding-agent hosts on one machine.",
+          "ai_native_angle": "Exposes cross-agent context and handoffs as locally owned, approval-gated operational primitives rather than hidden transcript copying.",
+          "growth_signal": "Created 2026-09-19, pushed 2026-09-22, 33 stars; root has apps, packages, docs, evals, tests, changelog, security material, and npm lockfile.",
+          "runnability": "Medium-high from monorepo, tests/evals, security docs, and explicit no-daemon/local-first framing; no installation, encryption, or cross-agent handoff was tested.",
+          "recommended_action": "Audit encrypted-memory semantics and approval prompts with fake projects before exposing real agent session data."
         }
       }
     ],
@@ -44220,6 +44918,40 @@
         }
       }
     ],
+    "Haleclipse/CometixCode": [
+      {
+        "id": "Haleclipse-CometixCode:2026-09-22T11:20:00+08:00:top:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "Haleclipse/CometixCode",
+        "url": "https://github.com/Haleclipse/CometixCode",
+        "category": "Rust terminal coding assistant",
+        "score": 80,
+        "summary": "Unofficial Rust terminal reimplementation of a Claude Code-style coding assistant with bilingual docs, tests, and a justfile.",
+        "audience": "Developers exploring alternative terminal UX for coding-agent workflows.",
+        "aiNativeAngle": "Packages a familiar terminal-agent loop in a compiled, inspectable local client with tests and development tooling.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 462 stars; root includes Cargo workspace files, bilingual READMEs, source, tests, justfile, and AGPL-3.0 license.",
+        "runnability": "Medium from Rust project/test structure and documentation; no provider setup, build, or repository edit loop was run.",
+        "recommendedAction": "Treat as an experimental client; verify provider compatibility, data handling, and license fit before team use.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "Haleclipse/CometixCode",
+          "url": "https://github.com/Haleclipse/CometixCode",
+          "category": "Rust terminal coding assistant",
+          "score": 80,
+          "summary": "Unofficial Rust terminal reimplementation of a Claude Code-style coding assistant with bilingual docs, tests, and a justfile.",
+          "audience": "Developers exploring alternative terminal UX for coding-agent workflows.",
+          "ai_native_angle": "Packages a familiar terminal-agent loop in a compiled, inspectable local client with tests and development tooling.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-21, 462 stars; root includes Cargo workspace files, bilingual READMEs, source, tests, justfile, and AGPL-3.0 license.",
+          "runnability": "Medium from Rust project/test structure and documentation; no provider setup, build, or repository edit loop was run.",
+          "recommended_action": "Treat as an experimental client; verify provider compatibility, data handling, and license fit before team use."
+        }
+      }
+    ],
     "jiawei686/jev-ultrafast-mcp": [
       {
         "id": "jiawei686-jev-ultrafast-mcp:2026-09-21T12:38:20+08:00:top:0",
@@ -45786,6 +46518,39 @@
           "growth_signal": "仓库 Star ~257；提供 npx demo 一分钟体验与完整本地环境 quick start。",
           "runnability": "可直接 `npx dashclaw-demo` 启动 demo 并打开浏览器回放；也可 clone + npm run dev。",
           "recommended_action": "先跑 npx demo；若契合，用本地完整环境把一个真实 agent 接入 governance loop。"
+        }
+      }
+    ],
+    "FluidInference/FluidUse": [
+      {
+        "id": "FluidInference-FluidUse:2026-09-22T11:20:00+08:00:watchlist:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "FluidInference/FluidUse",
+        "url": "https://github.com/FluidInference/FluidUse",
+        "category": "On-device Apple Silicon form automation",
+        "score": 79,
+        "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
+        "audience": "Teams testing private local form completion.",
+        "aiNativeAngle": "Binds an on-device model to deterministic accessibility actions.",
+        "growthSignal": "Created and pushed 2026-09-21 with 28 stars.",
+        "runnability": "Unverified beyond repository metadata.",
+        "recommendedAction": "Await audited privacy and failure-mode documentation.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "FluidInference/FluidUse",
+          "url": "https://github.com/FluidInference/FluidUse",
+          "category": "On-device Apple Silicon form automation",
+          "score": 79,
+          "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
+          "audience": "Teams testing private local form completion.",
+          "ai_native_angle": "Binds an on-device model to deterministic accessibility actions.",
+          "growth_signal": "Created and pushed 2026-09-21 with 28 stars.",
+          "runnability": "Unverified beyond repository metadata.",
+          "recommended_action": "Await audited privacy and failure-mode documentation."
         }
       }
     ],
@@ -48972,6 +49737,39 @@
         }
       }
     ],
+    "fstandhartinger/chat-seek-vscode": [
+      {
+        "id": "fstandhartinger-chat-seek-vscode:2026-09-22T11:20:00+08:00:watchlist:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 2,
+        "fullName": "fstandhartinger/chat-seek-vscode",
+        "url": "https://github.com/fstandhartinger/chat-seek-vscode",
+        "category": "Cross-agent chat search",
+        "score": 77,
+        "summary": "VS Code-local search over Claude Code, Codex, and OpenCode chats using reranking.",
+        "audience": "Developers mining prior agent sessions.",
+        "aiNativeAngle": "Makes cross-host agent history queryable in the editor.",
+        "growthSignal": "Created and pushed 2026-09-21 with 60 stars.",
+        "runnability": "Metadata-only audit.",
+        "recommendedAction": "Check local data boundaries and index deletion behavior.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "fstandhartinger/chat-seek-vscode",
+          "url": "https://github.com/fstandhartinger/chat-seek-vscode",
+          "category": "Cross-agent chat search",
+          "score": 77,
+          "summary": "VS Code-local search over Claude Code, Codex, and OpenCode chats using reranking.",
+          "audience": "Developers mining prior agent sessions.",
+          "ai_native_angle": "Makes cross-host agent history queryable in the editor.",
+          "growth_signal": "Created and pushed 2026-09-21 with 60 stars.",
+          "runnability": "Metadata-only audit.",
+          "recommended_action": "Check local data boundaries and index deletion behavior."
+        }
+      }
+    ],
     "nassim-arifette/jevgrep": [
       {
         "id": "nassim-arifette-jevgrep:2026-09-21T12:38:20+08:00:watchlist:0",
@@ -50212,6 +51010,39 @@
           "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
           "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
           "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+        }
+      }
+    ],
+    "TiancongLx/open-mcp-gateway": [
+      {
+        "id": "TiancongLx-open-mcp-gateway:2026-09-22T11:20:00+08:00:watchlist:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "TiancongLx/open-mcp-gateway",
+        "url": "https://github.com/TiancongLx/open-mcp-gateway",
+        "category": "MCP-to-OpenAPI gateway",
+        "score": 76,
+        "summary": "TypeScript gateway targeting MCP interoperability with Open WebUI.",
+        "audience": "Teams exposing MCP tools to OpenAPI-oriented surfaces.",
+        "aiNativeAngle": "Makes agent tool capability portable across protocol boundaries.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 51 stars.",
+        "runnability": "Metadata-only audit.",
+        "recommendedAction": "Promote after auth and schema fidelity are demonstrated.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "TiancongLx/open-mcp-gateway",
+          "url": "https://github.com/TiancongLx/open-mcp-gateway",
+          "category": "MCP-to-OpenAPI gateway",
+          "score": 76,
+          "summary": "TypeScript gateway targeting MCP interoperability with Open WebUI.",
+          "audience": "Teams exposing MCP tools to OpenAPI-oriented surfaces.",
+          "ai_native_angle": "Makes agent tool capability portable across protocol boundaries.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-21, 51 stars.",
+          "runnability": "Metadata-only audit.",
+          "recommended_action": "Promote after auth and schema fidelity are demonstrated."
         }
       }
     ],
@@ -51756,6 +52587,39 @@
         }
       }
     ],
+    "lewismosciski/LMMOCK": [
+      {
+        "id": "lewismosciski-LMMOCK:2026-09-22T11:20:00+08:00:watchlist:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "lewismosciski/LMMOCK",
+        "url": "https://github.com/lewismosciski/LMMOCK",
+        "category": "Deterministic local LLM mock",
+        "score": 75,
+        "summary": "Local mock provider for deterministic OpenAI and Anthropic-shaped responses.",
+        "audience": "Agent teams testing without paid model calls.",
+        "aiNativeAngle": "Separates agent integration tests from live stochastic provider behavior.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 15 stars.",
+        "runnability": "Metadata-only audit.",
+        "recommendedAction": "Watch for contract fixtures and failure simulation coverage.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "lewismosciski/LMMOCK",
+          "url": "https://github.com/lewismosciski/LMMOCK",
+          "category": "Deterministic local LLM mock",
+          "score": 75,
+          "summary": "Local mock provider for deterministic OpenAI and Anthropic-shaped responses.",
+          "audience": "Agent teams testing without paid model calls.",
+          "ai_native_angle": "Separates agent integration tests from live stochastic provider behavior.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-21, 15 stars.",
+          "runnability": "Metadata-only audit.",
+          "recommended_action": "Watch for contract fixtures and failure simulation coverage."
+        }
+      }
+    ],
     "nahid-sparktales/agent-dispatcher": [
       {
         "id": "nahid-sparktales-agent-dispatcher:2026-09-21T12:38:20+08:00:watchlist:0",
@@ -53253,6 +54117,39 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "ismailperim/briefd": [
+      {
+        "id": "ismailperim-briefd:2026-09-22T11:20:00+08:00:watchlist:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "ismailperim/briefd",
+        "url": "https://github.com/ismailperim/briefd",
+        "category": "Token-budgeted agent context compiler",
+        "score": 74,
+        "summary": "Self-hosted git-backed team knowledge bundles over MCP.",
+        "audience": "Teams controlling context size for coding agents.",
+        "aiNativeAngle": "Treats context delivery as a budgeted, inspectable compile step.",
+        "growthSignal": "Created 2026-09-20, pushed 2026-09-21, 20 stars.",
+        "runnability": "Metadata-only audit.",
+        "recommendedAction": "Promote after retrieval provenance and stale-context controls are tested.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "ismailperim/briefd",
+          "url": "https://github.com/ismailperim/briefd",
+          "category": "Token-budgeted agent context compiler",
+          "score": 74,
+          "summary": "Self-hosted git-backed team knowledge bundles over MCP.",
+          "audience": "Teams controlling context size for coding agents.",
+          "ai_native_angle": "Treats context delivery as a budgeted, inspectable compile step.",
+          "growth_signal": "Created 2026-09-20, pushed 2026-09-21, 20 stars.",
+          "runnability": "Metadata-only audit.",
+          "recommended_action": "Promote after retrieval provenance and stale-context controls are tested."
         }
       }
     ],
@@ -63178,6 +64075,186 @@
         }
       }
     ],
+    "fedorchenko-juli/job_search_tool": [
+      {
+        "id": "fedorchenko-juli-job_search_tool:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "fedorchenko-juli/job_search_tool",
+        "url": "https://github.com/fedorchenko-juli/job_search_tool",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Useful local utility but agent functionality is optional and product evidence is limited.",
+        "rawJson": {
+          "full_name": "fedorchenko-juli/job_search_tool",
+          "url": "https://github.com/fedorchenko-juli/job_search_tool",
+          "skip_reason": "Useful local utility but agent functionality is optional and product evidence is limited."
+        }
+      }
+    ],
+    "hirotomasato/yowes": [
+      {
+        "id": "hirotomasato-yowes:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "hirotomasato/yowes",
+        "url": "https://github.com/hirotomasato/yowes",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Document-generation use case needs stronger abuse controls before inclusion.",
+        "rawJson": {
+          "full_name": "hirotomasato/yowes",
+          "url": "https://github.com/hirotomasato/yowes",
+          "skip_reason": "Document-generation use case needs stronger abuse controls before inclusion."
+        }
+      },
+      {
+        "id": "hirotomasato-yowes:2026-09-21T12:38:20+08:00:skip:1",
+        "runId": "run:2026-09-21:2026-09-21T12:38:20+08:00",
+        "runDate": "2026-09-21",
+        "generatedAt": "2026-09-21T12:38:20+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "hirotomasato/yowes",
+        "url": "https://github.com/hirotomasato/yowes",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear.",
+        "rawJson": {
+          "full_name": "hirotomasato/yowes",
+          "url": "https://github.com/hirotomasato/yowes",
+          "skip_reason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear."
+        }
+      }
+    ],
+    "SandstoneAir/boris-fx-bcc-plugin-premium-2026": [
+      {
+        "id": "SandstoneAir-boris-fx-bcc-plugin-premium-2026:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+        "url": "https://github.com/SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Likely unauthorized commercial-software distribution, not a product candidate.",
+        "rawJson": {
+          "full_name": "SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+          "url": "https://github.com/SandstoneAir/boris-fx-bcc-plugin-premium-2026",
+          "skip_reason": "Likely unauthorized commercial-software distribution, not a product candidate."
+        }
+      }
+    ],
+    "v-modal/awesome-jev-tools": [
+      {
+        "id": "v-modal-awesome-jev-tools:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "v-modal/awesome-jev-tools",
+        "url": "https://github.com/v-modal/awesome-jev-tools",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Curated list, not a runnable product.",
+        "rawJson": {
+          "full_name": "v-modal/awesome-jev-tools",
+          "url": "https://github.com/v-modal/awesome-jev-tools",
+          "skip_reason": "Curated list, not a runnable product."
+        }
+      }
+    ],
+    "wuyoscar/jev-skill": [
+      {
+        "id": "wuyoscar-jev-skill:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "wuyoscar/jev-skill",
+        "url": "https://github.com/wuyoscar/jev-skill",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Workflow collection with insufficient distinct product surface.",
+        "rawJson": {
+          "full_name": "wuyoscar/jev-skill",
+          "url": "https://github.com/wuyoscar/jev-skill",
+          "skip_reason": "Workflow collection with insufficient distinct product surface."
+        }
+      }
+    ],
+    "yifanzhang-pro/KLPO": [
+      {
+        "id": "yifanzhang-pro-KLPO:2026-09-22T11:20:00+08:00:skip:0",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "yifanzhang-pro/KLPO",
+        "url": "https://github.com/yifanzhang-pro/KLPO",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Agent RL research project rather than end-user product tooling.",
+        "rawJson": {
+          "full_name": "yifanzhang-pro/KLPO",
+          "url": "https://github.com/yifanzhang-pro/KLPO",
+          "skip_reason": "Agent RL research project rather than end-user product tooling."
+        }
+      }
+    ],
     "adhhamdev/modern-react-guidance": [
       {
         "id": "adhhamdev-modern-react-guidance:2026-09-21T12:38:20+08:00:skip:0",
@@ -63227,32 +64304,6 @@
           "full_name": "alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill",
           "url": "https://github.com/alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill",
           "skip_reason": "Tiny generated skill repository with very low file evidence; skipped to avoid promoting thin template-like artifacts."
-        }
-      }
-    ],
-    "hirotomasato/yowes": [
-      {
-        "id": "hirotomasato-yowes:2026-09-21T12:38:20+08:00:skip:0",
-        "runId": "run:2026-09-21:2026-09-21T12:38:20+08:00",
-        "runDate": "2026-09-21",
-        "generatedAt": "2026-09-21T12:38:20+08:00",
-        "section": "skip",
-        "rank": null,
-        "fullName": "hirotomasato/yowes",
-        "url": "https://github.com/hirotomasato/yowes",
-        "category": null,
-        "score": null,
-        "summary": null,
-        "audience": null,
-        "aiNativeAngle": null,
-        "growthSignal": null,
-        "runnability": null,
-        "recommendedAction": null,
-        "skipReason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear.",
-        "rawJson": {
-          "full_name": "hirotomasato/yowes",
-          "url": "https://github.com/hirotomasato/yowes",
-          "skip_reason": "Document-generation MCP touches sensitive realistic ID/license-like artifacts; excluded until safety, legitimacy, and consent boundaries are very clear."
         }
       }
     ],
