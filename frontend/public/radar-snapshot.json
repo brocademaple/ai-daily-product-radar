@@ -1,6 +1,18 @@
 {
   "runs": [
     {
+      "id": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+      "runDate": "2026-09-24",
+      "generatedAt": "2026-09-24T11:58:00+08:00",
+      "dataWindow": "2026-09-21T00:00:00Z to 2026-09-24T03:58:00Z",
+      "sourceSummary": "Queried 6 GitHub Search API surfaces saved under /tmp/radar_2026_09_24_api/. Deduplicated 72 repositories from created-since and pushed-since searches, then audited 42 shortlisted repositories through GitHub repository/root/README API saved under /tmp/radar_2026_09_24_readmes/. Selection prioritized product-shaped AI agent, computer-use, MCP, RAG, browser automation, documentation QA, and IDE assistant surfaces with runnable CLI/UI/API evidence, tests, examples, package metadata, Docker/config files, screenshots, or explicit safety boundaries.",
+      "trendObservations": "Today's strongest signal is the migration of AI-native tooling into local control surfaces: macOS accessibility computer-use, text-first desktop control, Visual Studio/Copilot orchestration, browser-test generation, and documentation drift repair. Jev/Laya-style typed decisions are becoming a reusable primitive for browser fields, test selection, and form filling, but the radar should keep separating complete workflow products from thin model demos. Vertical RAG continues to look credible when it ships evidence views, sanitized sample data, or concrete domain routing rather than another generic chat shell.",
+      "assumptions": "Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, Visual-Studio-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Mature projects found only through pushed activity and repositories with sensitive automation were downgraded unless this window showed a distinct, bounded product signal.",
+      "markdownReport": "# Daily AI Native Product Radar - 2026-09-24\n\n数据窗口：2026-09-21T00:00:00Z to 2026-09-24T03:58:00Z；GitHub Search API 查询最近创建或活跃更新的 AI agent、MCP、browser/computer-use、code-agent、RAG/LLM app、assistant、workflow automation 等方向，并对 42 个候选做 repository/root/README audit。\n\n信息来源：Queried 6 GitHub Search API surfaces saved under /tmp/radar_2026_09_24_api/. Deduplicated 72 repositories from created-since and pushed-since searches, then audited 42 shortlisted repositories through GitHub repository/root/README API saved under /tmp/radar_2026_09_24_readmes/. Selection prioritized product-shaped AI agent, computer-use, MCP, RAG, browser automation, documentation QA, and IDE assistant surfaces with runnable CLI/UI/API evidence, tests, examples, package metadata, Docker/config files, screenshots, or explicit safety boundaries.\n\n关键假设：Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, Visual-Studio-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Mature projects found only through pushed activity and repositories with sensitive automation were downgraded unless this window showed a distinct, bounded product signal.\n\n## 今日趋势观察\n\nToday's strongest signal is the migration of AI-native tooling into local control surfaces: macOS accessibility computer-use, text-first desktop control, Visual Studio/Copilot orchestration, browser-test generation, and documentation drift repair. Jev/Laya-style typed decisions are becoming a reusable primitive for browser fields, test selection, and form filling, but the radar should keep separating complete workflow products from thin model demos. Vertical RAG continues to look credible when it ships evidence views, sanitized sample data, or concrete domain routing rather than another generic chat shell.\n\n## Top Projects\n\n### 1. [FluidInference/FluidUse](https://github.com/FluidInference/FluidUse)\n- 分类：Local Apple-silicon computer use\n- AI Native Product Score：91\n- 做什么：Swift package for local computer-use on Apple silicon that reads macOS Accessibility forms, uses small on-device decision models, and types into real apps.\n- 面向谁：Developers building private local assistants that need fast form filling without sending screen or field data to a cloud model.\n- AI native 点：Moves computer-use from screenshot-heavy remote reasoning toward millisecond local typed decisions over accessibility state.\n- 增长/活跃信号：Pushed 2026-09-23 with 152 stars. Root audit found Package.swift, Sources, Tests, Tools, Documentation, Benchmarks, Media, and Core ML decision-model docs.\n- 可运行性判断：High from Swift package structure, tests, benchmarks, tools, media, and documentation; no macOS Accessibility session, model download, or form fill was executed.\n- 建议动作：Test only on disposable local forms first and inspect Accessibility permissions plus readback behavior before using real applications.\n\n### 2. [openqa-cn/jev-browser](https://github.com/openqa-cn/jev-browser)\n- 分类：Indexed browser automation skill\n- AI Native Product Score：89\n- 做什么：Standalone CodexQA skill that turns browser pages into multiple-choice control decisions, with Playwright action execution, cases, docs, examples, tests, and bilingual READMEs.\n- 面向谁：QA and coding-agent builders who want cheaper, more bounded browser checks after code changes.\n- AI native 点：Separates browser perception from action: Jev selects indexed controls while Playwright performs the operation and tests verify outcomes.\n- 增长/活跃信号：Pushed 2026-09-23 with 93 stars. Root audit found .env.example, SKILL.md, agents, bin, cases, docs, examples, knowledge, src, tests, and Vitest config.\n- 可运行性判断：Medium-high from package/tests/examples/cases; no Jev account, Playwright task, or CodexQA skill install was run.\n- 建议动作：Compare against screenshot-based browser QA on one deterministic page and track wrong-control rate, latency, and failure explanation quality.\n\n### 3. [anthonyli/laya-pilot](https://github.com/anthonyli/laya-pilot)\n- 分类：Browser-to-Excel test generation\n- AI Native Product Score：88\n- 做什么：Playwright automation tool that generates replayable Excel test cases from live browser pages or executes existing Excel cases using local Laya or compatible decision APIs.\n- 面向谁：QA teams that need agent-assisted test authoring but still want reviewable, spreadsheet-shaped artifacts.\n- AI native 点：Turns ambiguous browser exploration into replayable test cases and keeps assertion pass/fail tied to page state rather than model claims.\n- 增长/活跃信号：Pushed 2026-09-23 with 26 stars. Root audit found .env.example, config example, docs, examples, lib, runner, worker, public demo scripts, requirements, and tests.\n- 可运行性判断：Medium-high from demo scripts, package files, docs, examples, and tests; no browser page, Laya model, or Excel replay was executed.\n- 建议动作：Run the included demo server and inspect whether generated Excel cases are understandable enough for non-agent QA review.\n\n### 4. [pagebeam/pagebeam](https://github.com/pagebeam/pagebeam)\n- 分类：AI documentation drift repair\n- AI Native Product Score：87\n- 做什么：Open-source package and GitHub Action that checks documentation pages against the product they describe, reports confidence, and drafts pull requests with fixes.\n- 面向谁：Product and developer-documentation teams whose UI or API changes faster than docs.\n- AI native 点：Frames documentation as an agent-verifiable product surface with repository-native checks and repair PRs.\n- 增长/活跃信号：Pushed 2026-09-23 with 7 stars. Root audit found action.yml, examples, packages, package metadata, TypeScript configs, changelog, and docs-oriented README.\n- 可运行性判断：Medium-high from npm command surface and GitHub Action metadata; no app/docs repository, browser check, or PR draft was run.\n- 建议动作：Trial on a small docs page with a known stale UI claim and require human review on every proposed fix.\n\n### 5. [Sur-Cai/macos-computer-use-kit](https://github.com/Sur-Cai/macos-computer-use-kit)\n- 分类：AX-first macOS computer-use MCP\n- AI Native Product Score：86\n- 做什么：Python CLI, MCP server, skill, and plugin package for controlling macOS apps through accessibility-tree targeting, guarded inputs, and read-back verification.\n- 面向谁：Agent users on macOS who want local app control without cursor movement or screenshot-only coordinate guessing.\n- AI native 点：Packages accessibility-tree observations, semantic guards, and verification as reusable computer-use primitives for agents.\n- 增长/活跃信号：Pushed 2026-09-23 with 4 stars. Root audit found PyPI-style package metadata, install script, packages, plugins, skill, src, tests, tools, and bilingual README.\n- 可运行性判断：Medium-high from CLI/package/tests/plugin structure; no macOS permissions, MCP server, DeepSeek Harness plugin, or app action was run.\n- 建议动作：Evaluate with a harmless native app workflow and verify that destructive actions require explicit guarding and readback.\n\n### 6. [I-No-oNe/screenpeek](https://github.com/I-No-oNe/screenpeek)\n- 分类：Text-first desktop app control\n- AI Native Product Score：85\n- 做什么：Rust tool that scans desktop apps into short text lines through OCR and accessibility labels, then clicks, types, scrolls, and switches windows by name.\n- 面向谁：Agent and test authors who need fast desktop workflow control on Linux or Windows without screenshot-heavy loops.\n- AI native 点：Converts desktop state into compact agent-readable text and named actions, making GUI control closer to terminal command selection.\n- 增长/活跃信号：Pushed 2026-09-24 with 3 stars. Root audit found Cargo files, docs, frames, helpers, packaging, scripts, skill, src, tests, and installers.\n- 可运行性判断：Medium-high from Rust package, installers, docs, and tests; no OCR/accessibility scan or desktop click was executed.\n- 建议动作：Watch closely for MCP examples and run only against a disposable app until permission and focus-handling are proven.\n\n### 7. [lzc878776-beep/VSManager](https://github.com/lzc878776-beep/VSManager)\n- 分类：Visual Studio Copilot orchestration panel\n- AI Native Product Score：84\n- 做什么：WinForms tool for managing multiple Visual Studio instances, Copilot conversations, debug/build control, task queues, voice summaries, and web remote operations.\n- 面向谁：Windows developers coordinating Copilot work across several Visual Studio solutions.\n- AI native 点：Treats IDE instances and Copilot chats as an orchestrated multi-agent workbench with task dispatch, waiting, transcript sync, and status readback.\n- 增长/活跃信号：Pushed 2026-09-24 with 3 stars. Root audit found many C# source files, solution/project files, settings example, tests, chat/task/debug/remote modules, and detailed Chinese README.\n- 可运行性判断：Medium from complete C# project layout; no Visual Studio instance, Copilot pane, debug action, voice path, or web remote was tested.\n- 建议动作：Trial on a throwaway Visual Studio solution and confirm task queues never send instructions to the wrong project.\n\n### 8. [ManoloRemiddi/augmentor-agent](https://github.com/ManoloRemiddi/augmentor-agent)\n- 分类：Desktop and browser harness for local agents\n- AI Native Product Score：83\n- 做什么：Desktop and browser agent surfaces sharing a local prompt library, harness adapters, services, docs, release assets, packages, and tests, with DSH as the main target.\n- 面向谁：Users standardizing local agent desktop/browser workflows across harnesses such as DSH and Pi.\n- AI native 点：Moves agent prompts, harness adapters, and desktop/browser control into a versioned local product rather than loose launcher scripts.\n- 增长/活跃信号：Pushed 2026-09-23 with 6 stars. Root audit found apps, adapters, services, packages, docs, config, scripts, tests, security docs, and source-publication metadata.\n- 可运行性判断：Medium from broad app/service/test layout; no desktop app, browser harness, prompt library sync, or DSH/Pi integration was run.\n- 建议动作：Keep on watch and require a minimal install/run path plus license review before adopting in a shared workflow.\n\n### 9. [zhaoyijia-web/rag-knowledge-base](https://github.com/zhaoyijia-web/rag-knowledge-base)\n- 分类：Transparent enterprise RAG workbench\n- AI Native Product Score：82\n- 做什么：Chinese enterprise RAG knowledge base with hybrid retrieval, RRF fusion, Qwen reranking, DeepSeek evidence generation, frontend retrieval visualization, backend, docs, and tests.\n- 面向谁：Teams evaluating local document QA systems that need retrieval traceability and source-visible answers.\n- AI native 点：Makes the RAG chain inspectable by exposing retrieval results, scores, sources, latency, and reranking rather than hiding everything behind a chat box.\n- 增长/活跃信号：Pushed 2026-09-23 with 3 stars. Root audit found backend, frontend, rag, retrieval, docs/images, tests, pyproject, uv lock, and .env example.\n- 可运行性判断：Medium from full-stack/package/test layout and screenshots; no model, vector index, document ingest, or frontend run was executed.\n- 建议动作：Use synthetic documents first and judge whether source attribution survives adversarial or ambiguous questions.\n\n### 10. [jestr-ai/openmage-ai-suite](https://github.com/jestr-ai/openmage-ai-suite)\n- 分类：Magento/OpenMage AI suite with MCP\n- AI Native Product Score：81\n- 做什么：AI suite for OpenMage/Magento 1 with MCP server, admin copilot, storefront assistant, LLM discovery, tests, Packagist packaging, and module docs.\n- 面向谁：Operators maintaining older Magento/OpenMage stores who want AI assistance without abandoning the legacy stack.\n- AI native 点：Brings MCP and assistant workflows into a real legacy-commerce admin surface instead of a generic chatbot demo.\n- 增长/活跃信号：Pushed 2026-09-21 with 3 stars. Root audit found app, docs, tests, Composer metadata, modman packaging, dev files, CI badge, and detailed README.\n- 可运行性判断：Medium from PHP package/module structure and tests; no Magento/OpenMage instance, MCP server, storefront assistant, or admin copilot was run.\n- 建议动作：Evaluate only on a local demo store and verify permissions before connecting catalog, customer, or order data.\n\n## Watchlist\n\n- [mizchi/jev-test-filter](https://github.com/mizchi/jev-test-filter) — Jev-scored test selection，Score 80。Reads a git diff, scores every test against it with Jev, and emits runner-native filter arguments for Vitest, Jest, Playwright, cargo, Go, and more. 建议：Promote after measuring false negatives on a known change set.\n- [ChenneyZhuang/laya-browser-agent](https://github.com/ChenneyZhuang/laya-browser-agent) — Local Laya browser decisions，Score 79。Python project for local browser-agent decisions with Laya as an open-source System 1 model alternative to cloud Jev. 建议：Watch for benchmarks against Jev/browser-use and concrete failure recovery examples.\n- [TheAdaply/jev-apply](https://github.com/TheAdaply/jev-apply) — Memory-backed job-application form agent，Score 78。Playwright job-application skill where Jev selects saved facts for Greenhouse/Ashby fields, reads values back, and stops before submission by default. 建议：Keep sensitive: test only with fake profiles and require explicit submit controls.\n- [DaizeDong/grokbot-cdp](https://github.com/DaizeDong/grokbot-cdp) — Grok Bot CDP control bridge，Score 77。Python bridge for driving the cloud machine behind a Grok Bot through Chrome DevTools Protocol, with guards, examples, docs, tests, and bilingual READMEs. 建议：Watch only; provider policy and account safety need careful review before any real use.\n- [ShreyasDasari/evergif](https://github.com/ShreyasDasari/evergif) — Self-refreshing README demo media，Score 76。Agent-skill-backed Next.js project for keeping README demo GIFs current, with app, demo, examples, skills, tests, and GitHub Actions badges. 建议：Promote after a public project demonstrates a before/after stale demo fix.\n- [mithun50/ORCA](https://github.com/mithun50/ORCA) — Agentic marine intelligence platform，Score 75。Marine intelligence platform for Indian waters using natural-language queries, multi-RAG retrieval, n8n routing, evidence-backed answers, backend, frontend, docs, and tests. 建议：Keep in watchlist until live data reliability and domain-risk disclaimers are clearer.\n- [hojttaler/Resolvr](https://github.com/hojttaler/Resolvr) — Desktop GraphQL IDE with MCP，Score 74。Cross-platform desktop GraphQL client with persistent tabs, git-friendly collections, environments, flows as smoke tests, schema browser, and built-in MCP server. 建议：Watch for agent examples that prove MCP actions are permissioned and auditable.\n\n## Skip Reasons\n\n- [amitshekhariitbhu/ai-engineering-course](https://github.com/amitshekhariitbhu/ai-engineering-course) — High-star AI education repository, but course/content rather than a runnable AI-native product surface.\n- [bsmagalhaes/rendra-design-system](https://github.com/bsmagalhaes/rendra-design-system) — Well-structured design system/boilerplate, but not AI-native despite agent instruction files.\n- [Keeperorowner/zcode-oss-complete](https://github.com/Keeperorowner/zcode-oss-complete) — Relevant ZCode community completion fork, but appears derivative and sensitive around provider/runtime reconstruction; kept below Top until provenance and safe runtime use are clearer.\n- [AvenueSnowStep/ClaudePanel](https://github.com/AvenueSnowStep/ClaudePanel) — Strong star signal for a desktop Claude panel, but audited root/README showed a very thin Rust app surface with missing referenced preview assets and little workflow evidence.\n- [arthurfou/medical-regulation-rag](https://github.com/arthurfou/medical-regulation-rag) — Interesting medical RAG project, but notebook/research shaped and safety-sensitive, with less product surface than today’s transparent RAG workbench pick.\n- [jiazz197-cmyk/Project_NBHX_RAGbot](https://github.com/jiazz197-cmyk/Project_NBHX_RAGbot) — Enterprise RAG assistant is product-shaped, but heavily sanitized and lower fresh signal than the selected transparent RAG candidate.\n- [cnbillsomeday/wp10-aiagent](https://github.com/cnbillsomeday/wp10-aiagent) — Cloudflare Worker chat app with RAG and skills, but reads like a compact generic chat shell rather than a distinct agent product.\n- [mohab1426/Socratiq](https://github.com/mohab1426/Socratiq) — AI classroom concept is promising, but current signal overlaps education/demo SaaS and needs stronger proof of live coaching workflow.\n- [MasudAhmed28/RecruitAI](https://github.com/MasudAhmed28/RecruitAI) — Salesforce Agentforce/MCP recruitment demo is relevant but thin and platform-specific, with limited runnable evidence in the audited root.\n- [grigortodorov/rag-best-practices](https://github.com/grigortodorov/rag-best-practices) — Useful RAG toolkit/playbook, but more best-practices/library material than an end-user AI-native product.\n\nType-level skip reasons: pure courses, prompt collections, awesome lists, generated template repositories, design-system boilerplates, notebook-only research demos, thin single-file chat shells, unsafe account/browser/provider automation, and repositories whose only product evidence is a README headline were downgraded or excluded. These type-level reasons are not represented as fake GitHub repositories in JSON.\n\n## 今日建议动作\n\n- Put FluidUse, macos-computer-use-kit, and screenpeek into one local computer-use comparison focused on accessibility permissions, action verification, and failure recovery.\n- Treat Jev/Laya projects as decision primitives: compare browser-control, test-filtering, and job-application cases separately instead of adopting them as one category.\n- Trial pagebeam on a small stale-docs page because documentation drift repair is a lower-risk way to evaluate agent-generated PRs.\n- Keep Visual Studio and provider/CDP control projects isolated in disposable workspaces until project targeting, account safety, and audit logs are proven.\n\n## Data Window and Assumptions\n\n- Window: 2026-09-21T00:00:00Z to 2026-09-24T03:58:00Z.\n- Sources: Queried 6 GitHub Search API surfaces saved under `/tmp/radar_2026_09_24_api/`. Deduplicated 72 repositories from created-since and pushed-since searches, then audited 42 shortlisted repositories through GitHub repository/root/README API saved under `/tmp/radar_2026_09_24_readmes/`. Selection prioritized product-shaped AI agent, computer-use, MCP, RAG, browser automation, documentation QA, and IDE assistant surfaces with runnable CLI/UI/API evidence, tests, examples, package metadata, Docker/config files, screenshots, or explicit safety boundaries.\n- Assumptions: Scores are based on live GitHub Search API metadata and selected repository/root/README audits. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, Visual-Studio-tested, credential-tested, provider-tested, phone-tested, security-tested, MCP-connected, or deployed locally. Star/fork counts are raw GitHub metadata at collection time and can move quickly for new repositories. Mature projects found only through pushed activity and repositories with sensitive automation were downgraded unless this window showed a distinct, bounded product signal.\n",
+      "sourceFile": "2026-09-24.json",
+      "entryCount": 27
+    },
+    {
       "id": "run:2026-09-22:2026-09-22T11:20:00+08:00",
       "runDate": "2026-09-22",
       "generatedAt": "2026-09-22T11:20:00+08:00",
@@ -1352,6 +1364,25 @@
       "skipReason": null
     },
     {
+      "fullName": "FluidInference/FluidUse",
+      "url": "https://github.com/FluidInference/FluidUse",
+      "firstSeenDate": "2026-09-22",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 2,
+      "bestScore": 91,
+      "latestScore": 91,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Local Apple-silicon computer use",
+      "summary": "Swift package for local computer-use on Apple silicon that reads macOS Accessibility forms, uses small on-device decision models, and types into real apps.",
+      "audience": "Developers building private local assistants that need fast form filling without sending screen or field data to a cloud model.",
+      "aiNativeAngle": "Moves computer-use from screenshot-heavy remote reasoning toward millisecond local typed decisions over accessibility state.",
+      "growthSignal": "Pushed 2026-09-23 with 152 stars. Root audit found Package.swift, Sources, Tests, Tools, Documentation, Benchmarks, Media, and Core ML decision-model docs.",
+      "runnability": "High from Swift package structure, tests, benchmarks, tools, media, and documentation; no macOS Accessibility session, model download, or form fill was executed.",
+      "recommendedAction": "Test only on disposable local forms first and inspect Accessibility permissions plus readback behavior before using real applications.",
+      "skipReason": null
+    },
+    {
       "fullName": "jev-chat/jev-chat-jarvis",
       "url": "https://github.com/jev-chat/jev-chat-jarvis",
       "firstSeenDate": "2026-09-22",
@@ -2359,6 +2390,25 @@
       "skipReason": null
     },
     {
+      "fullName": "openqa-cn/jev-browser",
+      "url": "https://github.com/openqa-cn/jev-browser",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 89,
+      "latestScore": 89,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Indexed browser automation skill",
+      "summary": "Standalone CodexQA skill that turns browser pages into multiple-choice control decisions, with Playwright action execution, cases, docs, examples, tests, and bilingual READMEs.",
+      "audience": "QA and coding-agent builders who want cheaper, more bounded browser checks after code changes.",
+      "aiNativeAngle": "Separates browser perception from action: Jev selects indexed controls while Playwright performs the operation and tests verify outcomes.",
+      "growthSignal": "Pushed 2026-09-23 with 93 stars. Root audit found .env.example, SKILL.md, agents, bin, cases, docs, examples, knowledge, src, tests, and Vitest config.",
+      "runnability": "Medium-high from package/tests/examples/cases; no Jev account, Playwright task, or CodexQA skill install was run.",
+      "recommendedAction": "Compare against screenshot-based browser QA on one deterministic page and track wrong-control rate, latency, and failure explanation quality.",
+      "skipReason": null
+    },
+    {
       "fullName": "shhivv/third-hand",
       "url": "https://github.com/shhivv/third-hand",
       "firstSeenDate": "2026-09-22",
@@ -2717,6 +2767,25 @@
       "growthSignal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
       "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
       "recommendedAction": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。",
+      "skipReason": null
+    },
+    {
+      "fullName": "anthonyli/laya-pilot",
+      "url": "https://github.com/anthonyli/laya-pilot",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 88,
+      "latestScore": 88,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Browser-to-Excel test generation",
+      "summary": "Playwright automation tool that generates replayable Excel test cases from live browser pages or executes existing Excel cases using local Laya or compatible decision APIs.",
+      "audience": "QA teams that need agent-assisted test authoring but still want reviewable, spreadsheet-shaped artifacts.",
+      "aiNativeAngle": "Turns ambiguous browser exploration into replayable test cases and keeps assertion pass/fail tied to page state rather than model claims.",
+      "growthSignal": "Pushed 2026-09-23 with 26 stars. Root audit found .env.example, config example, docs, examples, lib, runner, worker, public demo scripts, requirements, and tests.",
+      "runnability": "Medium-high from demo scripts, package files, docs, examples, and tests; no browser page, Laya model, or Excel replay was executed.",
+      "recommendedAction": "Run the included demo server and inspect whether generated Excel cases are understandable enough for non-agent QA review.",
       "skipReason": null
     },
     {
@@ -3632,6 +3701,25 @@
       "skipReason": null
     },
     {
+      "fullName": "pagebeam/pagebeam",
+      "url": "https://github.com/pagebeam/pagebeam",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 87,
+      "latestScore": 87,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "AI documentation drift repair",
+      "summary": "Open-source package and GitHub Action that checks documentation pages against the product they describe, reports confidence, and drafts pull requests with fixes.",
+      "audience": "Product and developer-documentation teams whose UI or API changes faster than docs.",
+      "aiNativeAngle": "Frames documentation as an agent-verifiable product surface with repository-native checks and repair PRs.",
+      "growthSignal": "Pushed 2026-09-23 with 7 stars. Root audit found action.yml, examples, packages, package metadata, TypeScript configs, changelog, and docs-oriented README.",
+      "runnability": "Medium-high from npm command surface and GitHub Action metadata; no app/docs repository, browser check, or PR draft was run.",
+      "recommendedAction": "Trial on a small docs page with a known stale UI claim and require human review on every proposed fix.",
+      "skipReason": null
+    },
+    {
       "fullName": "Rizzo-AI-Academy/rizzo-flow",
       "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
       "firstSeenDate": "2026-09-22",
@@ -4294,6 +4382,25 @@
       "growthSignal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
       "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
       "recommendedAction": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails.",
+      "skipReason": null
+    },
+    {
+      "fullName": "Sur-Cai/macos-computer-use-kit",
+      "url": "https://github.com/Sur-Cai/macos-computer-use-kit",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 86,
+      "latestScore": 86,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "AX-first macOS computer-use MCP",
+      "summary": "Python CLI, MCP server, skill, and plugin package for controlling macOS apps through accessibility-tree targeting, guarded inputs, and read-back verification.",
+      "audience": "Agent users on macOS who want local app control without cursor movement or screenshot-only coordinate guessing.",
+      "aiNativeAngle": "Packages accessibility-tree observations, semantic guards, and verification as reusable computer-use primitives for agents.",
+      "growthSignal": "Pushed 2026-09-23 with 4 stars. Root audit found PyPI-style package metadata, install script, packages, plugins, skill, src, tests, tools, and bilingual README.",
+      "runnability": "Medium-high from CLI/package/tests/plugin structure; no macOS permissions, MCP server, DeepSeek Harness plugin, or app action was run.",
+      "recommendedAction": "Evaluate with a harmless native app workflow and verify that destructive actions require explicit guarding and readback.",
       "skipReason": null
     },
     {
@@ -5171,6 +5278,25 @@
       "skipReason": null
     },
     {
+      "fullName": "I-No-oNe/screenpeek",
+      "url": "https://github.com/I-No-oNe/screenpeek",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 85,
+      "latestScore": 85,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Text-first desktop app control",
+      "summary": "Rust tool that scans desktop apps into short text lines through OCR and accessibility labels, then clicks, types, scrolls, and switches windows by name.",
+      "audience": "Agent and test authors who need fast desktop workflow control on Linux or Windows without screenshot-heavy loops.",
+      "aiNativeAngle": "Converts desktop state into compact agent-readable text and named actions, making GUI control closer to terminal command selection.",
+      "growthSignal": "Pushed 2026-09-24 with 3 stars. Root audit found Cargo files, docs, frames, helpers, packaging, scripts, skill, src, tests, and installers.",
+      "runnability": "Medium-high from Rust package, installers, docs, and tests; no OCR/accessibility scan or desktop click was executed.",
+      "recommendedAction": "Watch closely for MCP examples and run only against a disposable app until permission and focus-handling are proven.",
+      "skipReason": null
+    },
+    {
       "fullName": "ghuntley/preflight",
       "url": "https://github.com/ghuntley/preflight",
       "firstSeenDate": "2026-09-22",
@@ -5776,6 +5902,25 @@
       "growthSignal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
       "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
       "recommendedAction": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims.",
+      "skipReason": null
+    },
+    {
+      "fullName": "lzc878776-beep/VSManager",
+      "url": "https://github.com/lzc878776-beep/VSManager",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 84,
+      "latestScore": 84,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Visual Studio Copilot orchestration panel",
+      "summary": "WinForms tool for managing multiple Visual Studio instances, Copilot conversations, debug/build control, task queues, voice summaries, and web remote operations.",
+      "audience": "Windows developers coordinating Copilot work across several Visual Studio solutions.",
+      "aiNativeAngle": "Treats IDE instances and Copilot chats as an orchestrated multi-agent workbench with task dispatch, waiting, transcript sync, and status readback.",
+      "growthSignal": "Pushed 2026-09-24 with 3 stars. Root audit found many C# source files, solution/project files, settings example, tests, chat/task/debug/remote modules, and detailed Chinese README.",
+      "runnability": "Medium from complete C# project layout; no Visual Studio instance, Copilot pane, debug action, voice path, or web remote was tested.",
+      "recommendedAction": "Trial on a throwaway Visual Studio solution and confirm task queues never send instructions to the wrong project.",
       "skipReason": null
     },
     {
@@ -6900,6 +7045,25 @@
       "skipReason": null
     },
     {
+      "fullName": "ManoloRemiddi/augmentor-agent",
+      "url": "https://github.com/ManoloRemiddi/augmentor-agent",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 83,
+      "latestScore": 83,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Desktop and browser harness for local agents",
+      "summary": "Desktop and browser agent surfaces sharing a local prompt library, harness adapters, services, docs, release assets, packages, and tests, with DSH as the main target.",
+      "audience": "Users standardizing local agent desktop/browser workflows across harnesses such as DSH and Pi.",
+      "aiNativeAngle": "Moves agent prompts, harness adapters, and desktop/browser control into a versioned local product rather than loose launcher scripts.",
+      "growthSignal": "Pushed 2026-09-23 with 6 stars. Root audit found apps, adapters, services, packages, docs, config, scripts, tests, security docs, and source-publication metadata.",
+      "runnability": "Medium from broad app/service/test layout; no desktop app, browser harness, prompt library sync, or DSH/Pi integration was run.",
+      "recommendedAction": "Keep on watch and require a minimal install/run path plus license review before adopting in a shared workflow.",
+      "skipReason": null
+    },
+    {
       "fullName": "penso/herdr-gpui",
       "url": "https://github.com/penso/herdr-gpui",
       "firstSeenDate": "2026-09-22",
@@ -7714,6 +7878,25 @@
       "growthSignal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
       "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
       "recommendedAction": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。",
+      "skipReason": null
+    },
+    {
+      "fullName": "zhaoyijia-web/rag-knowledge-base",
+      "url": "https://github.com/zhaoyijia-web/rag-knowledge-base",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 82,
+      "latestScore": 82,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Transparent enterprise RAG workbench",
+      "summary": "Chinese enterprise RAG knowledge base with hybrid retrieval, RRF fusion, Qwen reranking, DeepSeek evidence generation, frontend retrieval visualization, backend, docs, and tests.",
+      "audience": "Teams evaluating local document QA systems that need retrieval traceability and source-visible answers.",
+      "aiNativeAngle": "Makes the RAG chain inspectable by exposing retrieval results, scores, sources, latency, and reranking rather than hiding everything behind a chat box.",
+      "growthSignal": "Pushed 2026-09-23 with 3 stars. Root audit found backend, frontend, rag, retrieval, docs/images, tests, pyproject, uv lock, and .env example.",
+      "runnability": "Medium from full-stack/package/test layout and screenshots; no model, vector index, document ingest, or frontend run was executed.",
+      "recommendedAction": "Use synthetic documents first and judge whether source attribution survives adversarial or ambiguous questions.",
       "skipReason": null
     },
     {
@@ -8724,6 +8907,25 @@
       "skipReason": null
     },
     {
+      "fullName": "jestr-ai/openmage-ai-suite",
+      "url": "https://github.com/jestr-ai/openmage-ai-suite",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 81,
+      "latestScore": 81,
+      "latestSection": "top",
+      "boardStatus": "top-picks",
+      "category": "Magento/OpenMage AI suite with MCP",
+      "summary": "AI suite for OpenMage/Magento 1 with MCP server, admin copilot, storefront assistant, LLM discovery, tests, Packagist packaging, and module docs.",
+      "audience": "Operators maintaining older Magento/OpenMage stores who want AI assistance without abandoning the legacy stack.",
+      "aiNativeAngle": "Brings MCP and assistant workflows into a real legacy-commerce admin surface instead of a generic chatbot demo.",
+      "growthSignal": "Pushed 2026-09-21 with 3 stars. Root audit found app, docs, tests, Composer metadata, modman packaging, dev files, CI badge, and detailed README.",
+      "runnability": "Medium from PHP package/module structure and tests; no Magento/OpenMage instance, MCP server, storefront assistant, or admin copilot was run.",
+      "recommendedAction": "Evaluate only on a local demo store and verify permissions before connecting catalog, customer, or order data.",
+      "skipReason": null
+    },
+    {
       "fullName": "using-system/otelyssey",
       "url": "https://github.com/using-system/otelyssey",
       "firstSeenDate": "2026-09-21",
@@ -9329,6 +9531,25 @@
       "growthSignal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
       "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
       "recommendedAction": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。",
+      "skipReason": null
+    },
+    {
+      "fullName": "mizchi/jev-test-filter",
+      "url": "https://github.com/mizchi/jev-test-filter",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 80,
+      "latestScore": 80,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Jev-scored test selection",
+      "summary": "Reads a git diff, scores every test against it with Jev, and emits runner-native filter arguments for Vitest, Jest, Playwright, cargo, Go, and more.",
+      "audience": "Developers with large suites who want a model-assisted but still runner-native test filter.",
+      "aiNativeAngle": "Uses typed model judgments to choose tests without giving the model file access or control over execution.",
+      "growthSignal": "Pushed 2026-09-23 with 16 stars; root audit found plugin metadata, commands, docs, skills, src, tests, Taskfile, and package metadata.",
+      "runnability": "Medium-high from tests and runner-focused README; no Jev call or real diff run was executed.",
+      "recommendedAction": "Promote after measuring false negatives on a known change set.",
       "skipReason": null
     },
     {
@@ -10111,22 +10332,22 @@
       "skipReason": null
     },
     {
-      "fullName": "FluidInference/FluidUse",
-      "url": "https://github.com/FluidInference/FluidUse",
-      "firstSeenDate": "2026-09-22",
-      "lastSeenDate": "2026-09-22",
+      "fullName": "ChenneyZhuang/laya-browser-agent",
+      "url": "https://github.com/ChenneyZhuang/laya-browser-agent",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
       "seenCount": 1,
       "bestScore": 79,
       "latestScore": 79,
       "latestSection": "watchlist",
       "boardStatus": "watchlist",
-      "category": "On-device Apple Silicon form automation",
-      "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
-      "audience": "Teams testing private local form completion.",
-      "aiNativeAngle": "Binds an on-device model to deterministic accessibility actions.",
-      "growthSignal": "Created and pushed 2026-09-21 with 28 stars.",
-      "runnability": "Unverified beyond repository metadata.",
-      "recommendedAction": "Await audited privacy and failure-mode documentation.",
+      "category": "Local Laya browser decisions",
+      "summary": "Python project for local browser-agent decisions with Laya as an open-source System 1 model alternative to cloud Jev.",
+      "audience": "Browser-agent builders who want no cloud API key and no screenshot dependency.",
+      "aiNativeAngle": "Makes low-latency local decision models a pluggable browser-control layer.",
+      "growthSignal": "Pushed 2026-09-23 with 7 stars; root audit found examples, install_skills.py, localdecide, scripts, skills, tests, pyproject, CI badge, and multilingual READMEs.",
+      "runnability": "Medium from package/tests/examples; no Laya model or browser integration was run.",
+      "recommendedAction": "Watch for benchmarks against Jev/browser-use and concrete failure recovery examples.",
       "skipReason": null
     },
     {
@@ -10792,6 +11013,25 @@
       "growthSignal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
       "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
       "recommendedAction": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。",
+      "skipReason": null
+    },
+    {
+      "fullName": "TheAdaply/jev-apply",
+      "url": "https://github.com/TheAdaply/jev-apply",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 78,
+      "latestScore": 78,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Memory-backed job-application form agent",
+      "summary": "Playwright job-application skill where Jev selects saved facts for Greenhouse/Ashby fields, reads values back, and stops before submission by default.",
+      "audience": "Job seekers experimenting with supervised form assistance.",
+      "aiNativeAngle": "Separates fact selection from text generation and builds a human approval stop before real submission.",
+      "growthSignal": "Pushed 2026-09-24 with 2 stars; root audit found AGENTS.md, INSTALL, SKILL, bench, corpus, docs, eval, scripts, src, and package metadata.",
+      "runnability": "Medium from Playwright/skill/eval structure; no personal data, job form, or submission path was tested.",
+      "recommendedAction": "Keep sensitive: test only with fake profiles and require explicit submit controls.",
       "skipReason": null
     },
     {
@@ -11802,6 +12042,25 @@
       "skipReason": null
     },
     {
+      "fullName": "DaizeDong/grokbot-cdp",
+      "url": "https://github.com/DaizeDong/grokbot-cdp",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 77,
+      "latestScore": 77,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Grok Bot CDP control bridge",
+      "summary": "Python bridge for driving the cloud machine behind a Grok Bot through Chrome DevTools Protocol, with guards, examples, docs, tests, and bilingual READMEs.",
+      "audience": "Builders exploring automation around hosted computer-use agents.",
+      "aiNativeAngle": "Exposes a hosted agent browser as an inspectable CDP automation target with guard concepts.",
+      "growthSignal": "Pushed 2026-09-24 with 2 stars; root audit found docs, examples, guards, package code, tests, reference material, and roadmap.",
+      "runnability": "Medium from package/test/docs layout; no Grok Bot, CDP session, or hosted browser was touched.",
+      "recommendedAction": "Watch only; provider policy and account safety need careful review before any real use.",
+      "skipReason": null
+    },
+    {
       "fullName": "fstandhartinger/chat-seek-vscode",
       "url": "https://github.com/fstandhartinger/chat-seek-vscode",
       "firstSeenDate": "2026-09-22",
@@ -12464,6 +12723,25 @@
       "growthSignal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
       "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
       "recommendedAction": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。",
+      "skipReason": null
+    },
+    {
+      "fullName": "ShreyasDasari/evergif",
+      "url": "https://github.com/ShreyasDasari/evergif",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 76,
+      "latestScore": 76,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Self-refreshing README demo media",
+      "summary": "Agent-skill-backed Next.js project for keeping README demo GIFs current, with app, demo, examples, skills, tests, and GitHub Actions badges.",
+      "audience": "Open-source maintainers whose product demos go stale after UI changes.",
+      "aiNativeAngle": "Turns demo media maintenance into a repeatable agent skill and CI-style artifact workflow.",
+      "growthSignal": "Pushed 2026-09-23 with 2 stars; root audit found app, components, demo, examples, lib, skills, tests, and multiple agent-plugin metadata directories.",
+      "runnability": "Medium from app/tests/examples; no recording, render, or README update was run.",
+      "recommendedAction": "Promote after a public project demonstrates a before/after stale demo fix.",
       "skipReason": null
     },
     {
@@ -13303,6 +13581,25 @@
       "skipReason": null
     },
     {
+      "fullName": "mithun50/ORCA",
+      "url": "https://github.com/mithun50/ORCA",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 75,
+      "latestScore": 75,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Agentic marine intelligence platform",
+      "summary": "Marine intelligence platform for Indian waters using natural-language queries, multi-RAG retrieval, n8n routing, evidence-backed answers, backend, frontend, docs, and tests.",
+      "audience": "Marine operations or hackathon teams needing grounded environmental recommendations.",
+      "aiNativeAngle": "Combines intent routing, domain sources, and evidence-bearing responses into a vertical agent workflow.",
+      "growthSignal": "Pushed 2026-09-22 with 3 stars; root audit found backend, frontend, knowledge, n8n, docs, scripts, tests, .env example, and docker-compose.",
+      "runnability": "Medium from full-stack/Docker/test layout; no external data endpoint or recommendation flow was run.",
+      "recommendedAction": "Keep in watchlist until live data reliability and domain-risk disclaimers are clearer.",
+      "skipReason": null
+    },
+    {
       "fullName": "lewismosciski/LMMOCK",
       "url": "https://github.com/lewismosciski/LMMOCK",
       "firstSeenDate": "2026-09-22",
@@ -14041,6 +14338,25 @@
       "growthSignal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
       "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
       "recommendedAction": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。",
+      "skipReason": null
+    },
+    {
+      "fullName": "hojttaler/Resolvr",
+      "url": "https://github.com/hojttaler/Resolvr",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": 74,
+      "latestScore": 74,
+      "latestSection": "watchlist",
+      "boardStatus": "watchlist",
+      "category": "Desktop GraphQL IDE with MCP",
+      "summary": "Cross-platform desktop GraphQL client with persistent tabs, git-friendly collections, environments, flows as smoke tests, schema browser, and built-in MCP server.",
+      "audience": "API developers who want AI agents to inspect or exercise GraphQL workflows in a desktop IDE.",
+      "aiNativeAngle": "Adds an MCP surface to a concrete developer tool rather than building a generic API chat wrapper.",
+      "growthSignal": "Pushed 2026-09-23 with 3 stars; root audit found apps, packages, assets, docs, scripts, tools, monorepo metadata, security docs, and release badges.",
+      "runnability": "Medium from monorepo/release/docs structure; no desktop app, MCP server, or GraphQL endpoint was run.",
+      "recommendedAction": "Watch for agent examples that prove MCP actions are permissioned and auditable.",
       "skipReason": null
     },
     {
@@ -19115,6 +19431,196 @@
       "runnability": "Documentation/list repository rather than runnable software.",
       "recommendedAction": "Use only as an input source for future radar discovery.",
       "skipReason": null
+    },
+    {
+      "fullName": "amitshekhariitbhu/ai-engineering-course",
+      "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "High-star AI education repository, but course/content rather than a runnable AI-native product surface."
+    },
+    {
+      "fullName": "arthurfou/medical-regulation-rag",
+      "url": "https://github.com/arthurfou/medical-regulation-rag",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Interesting medical RAG project, but notebook/research shaped and safety-sensitive, with less product surface than today’s transparent RAG workbench pick."
+    },
+    {
+      "fullName": "AvenueSnowStep/ClaudePanel",
+      "url": "https://github.com/AvenueSnowStep/ClaudePanel",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Strong star signal for a desktop Claude panel, but audited root/README showed a very thin Rust app surface with missing referenced preview assets and little workflow evidence."
+    },
+    {
+      "fullName": "bsmagalhaes/rendra-design-system",
+      "url": "https://github.com/bsmagalhaes/rendra-design-system",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Well-structured design system/boilerplate, but not AI-native despite agent instruction files."
+    },
+    {
+      "fullName": "cnbillsomeday/wp10-aiagent",
+      "url": "https://github.com/cnbillsomeday/wp10-aiagent",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Cloudflare Worker chat app with RAG and skills, but reads like a compact generic chat shell rather than a distinct agent product."
+    },
+    {
+      "fullName": "grigortodorov/rag-best-practices",
+      "url": "https://github.com/grigortodorov/rag-best-practices",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Useful RAG toolkit/playbook, but more best-practices/library material than an end-user AI-native product."
+    },
+    {
+      "fullName": "jiazz197-cmyk/Project_NBHX_RAGbot",
+      "url": "https://github.com/jiazz197-cmyk/Project_NBHX_RAGbot",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Enterprise RAG assistant is product-shaped, but heavily sanitized and lower fresh signal than the selected transparent RAG candidate."
+    },
+    {
+      "fullName": "Keeperorowner/zcode-oss-complete",
+      "url": "https://github.com/Keeperorowner/zcode-oss-complete",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Relevant ZCode community completion fork, but appears derivative and sensitive around provider/runtime reconstruction; kept below Top until provenance and safe runtime use are clearer."
+    },
+    {
+      "fullName": "MasudAhmed28/RecruitAI",
+      "url": "https://github.com/MasudAhmed28/RecruitAI",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "Salesforce Agentforce/MCP recruitment demo is relevant but thin and platform-specific, with limited runnable evidence in the audited root."
+    },
+    {
+      "fullName": "mohab1426/Socratiq",
+      "url": "https://github.com/mohab1426/Socratiq",
+      "firstSeenDate": "2026-09-24",
+      "lastSeenDate": "2026-09-24",
+      "seenCount": 1,
+      "bestScore": null,
+      "latestScore": null,
+      "latestSection": "skip",
+      "boardStatus": "skip-low-signal",
+      "category": null,
+      "summary": null,
+      "audience": null,
+      "aiNativeAngle": null,
+      "growthSignal": null,
+      "runnability": null,
+      "recommendedAction": null,
+      "skipReason": "AI classroom concept is promising, but current signal overlaps education/demo SaaS and needs stronger proof of live coaching workflow."
     },
     {
       "fullName": "fedorchenko-juli/job_search_tool",
@@ -27638,6 +28144,71 @@
         }
       }
     ],
+    "FluidInference/FluidUse": [
+      {
+        "id": "FluidInference-FluidUse:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 1,
+        "fullName": "FluidInference/FluidUse",
+        "url": "https://github.com/FluidInference/FluidUse",
+        "category": "Local Apple-silicon computer use",
+        "score": 91,
+        "summary": "Swift package for local computer-use on Apple silicon that reads macOS Accessibility forms, uses small on-device decision models, and types into real apps.",
+        "audience": "Developers building private local assistants that need fast form filling without sending screen or field data to a cloud model.",
+        "aiNativeAngle": "Moves computer-use from screenshot-heavy remote reasoning toward millisecond local typed decisions over accessibility state.",
+        "growthSignal": "Pushed 2026-09-23 with 152 stars. Root audit found Package.swift, Sources, Tests, Tools, Documentation, Benchmarks, Media, and Core ML decision-model docs.",
+        "runnability": "High from Swift package structure, tests, benchmarks, tools, media, and documentation; no macOS Accessibility session, model download, or form fill was executed.",
+        "recommendedAction": "Test only on disposable local forms first and inspect Accessibility permissions plus readback behavior before using real applications.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 1,
+          "full_name": "FluidInference/FluidUse",
+          "url": "https://github.com/FluidInference/FluidUse",
+          "category": "Local Apple-silicon computer use",
+          "score": 91,
+          "summary": "Swift package for local computer-use on Apple silicon that reads macOS Accessibility forms, uses small on-device decision models, and types into real apps.",
+          "audience": "Developers building private local assistants that need fast form filling without sending screen or field data to a cloud model.",
+          "ai_native_angle": "Moves computer-use from screenshot-heavy remote reasoning toward millisecond local typed decisions over accessibility state.",
+          "growth_signal": "Pushed 2026-09-23 with 152 stars. Root audit found Package.swift, Sources, Tests, Tools, Documentation, Benchmarks, Media, and Core ML decision-model docs.",
+          "runnability": "High from Swift package structure, tests, benchmarks, tools, media, and documentation; no macOS Accessibility session, model download, or form fill was executed.",
+          "recommended_action": "Test only on disposable local forms first and inspect Accessibility permissions plus readback behavior before using real applications."
+        }
+      },
+      {
+        "id": "FluidInference-FluidUse:2026-09-22T11:20:00+08:00:watchlist:1",
+        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
+        "runDate": "2026-09-22",
+        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "FluidInference/FluidUse",
+        "url": "https://github.com/FluidInference/FluidUse",
+        "category": "On-device Apple Silicon form automation",
+        "score": 79,
+        "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
+        "audience": "Teams testing private local form completion.",
+        "aiNativeAngle": "Binds an on-device model to deterministic accessibility actions.",
+        "growthSignal": "Created and pushed 2026-09-21 with 28 stars.",
+        "runnability": "Unverified beyond repository metadata.",
+        "recommendedAction": "Await audited privacy and failure-mode documentation.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "FluidInference/FluidUse",
+          "url": "https://github.com/FluidInference/FluidUse",
+          "category": "On-device Apple Silicon form automation",
+          "score": 79,
+          "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
+          "audience": "Teams testing private local form completion.",
+          "ai_native_angle": "Binds an on-device model to deterministic accessibility actions.",
+          "growth_signal": "Created and pushed 2026-09-21 with 28 stars.",
+          "runnability": "Unverified beyond repository metadata.",
+          "recommended_action": "Await audited privacy and failure-mode documentation."
+        }
+      }
+    ],
     "jev-chat/jev-chat-jarvis": [
       {
         "id": "jev-chat-jev-chat-jarvis:2026-09-22T11:20:00+08:00:top:0",
@@ -30430,6 +31001,40 @@
         }
       }
     ],
+    "openqa-cn/jev-browser": [
+      {
+        "id": "openqa-cn-jev-browser:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 2,
+        "fullName": "openqa-cn/jev-browser",
+        "url": "https://github.com/openqa-cn/jev-browser",
+        "category": "Indexed browser automation skill",
+        "score": 89,
+        "summary": "Standalone CodexQA skill that turns browser pages into multiple-choice control decisions, with Playwright action execution, cases, docs, examples, tests, and bilingual READMEs.",
+        "audience": "QA and coding-agent builders who want cheaper, more bounded browser checks after code changes.",
+        "aiNativeAngle": "Separates browser perception from action: Jev selects indexed controls while Playwright performs the operation and tests verify outcomes.",
+        "growthSignal": "Pushed 2026-09-23 with 93 stars. Root audit found .env.example, SKILL.md, agents, bin, cases, docs, examples, knowledge, src, tests, and Vitest config.",
+        "runnability": "Medium-high from package/tests/examples/cases; no Jev account, Playwright task, or CodexQA skill install was run.",
+        "recommendedAction": "Compare against screenshot-based browser QA on one deterministic page and track wrong-control rate, latency, and failure explanation quality.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 2,
+          "full_name": "openqa-cn/jev-browser",
+          "url": "https://github.com/openqa-cn/jev-browser",
+          "category": "Indexed browser automation skill",
+          "score": 89,
+          "summary": "Standalone CodexQA skill that turns browser pages into multiple-choice control decisions, with Playwright action execution, cases, docs, examples, tests, and bilingual READMEs.",
+          "audience": "QA and coding-agent builders who want cheaper, more bounded browser checks after code changes.",
+          "ai_native_angle": "Separates browser perception from action: Jev selects indexed controls while Playwright performs the operation and tests verify outcomes.",
+          "growth_signal": "Pushed 2026-09-23 with 93 stars. Root audit found .env.example, SKILL.md, agents, bin, cases, docs, examples, knowledge, src, tests, and Vitest config.",
+          "runnability": "Medium-high from package/tests/examples/cases; no Jev account, Playwright task, or CodexQA skill install was run.",
+          "recommended_action": "Compare against screenshot-based browser QA on one deterministic page and track wrong-control rate, latency, and failure explanation quality."
+        }
+      }
+    ],
     "shhivv/third-hand": [
       {
         "id": "shhivv-third-hand:2026-09-22T11:20:00+08:00:top:0",
@@ -31128,6 +31733,40 @@
           "growth_signal": "GitHub 页面显示约 36.6k stars、3.6k forks、640 commits、38 issues、22 PRs；README 新闻区显示 2026-04 中旬仍在持续合并 harness。",
           "runnability": "README 提供 CLI-Hub、demos、tests、`npx skills add HKUDS/CLI-Anything --skill <skill-name>` 形式安装；仓库含大量 agent-harness 与 skills。",
           "recommended_action": "放入“agent tool surface”横评；优先验证 2-3 个真实软件 harness 是否稳定可复现。"
+        }
+      }
+    ],
+    "anthonyli/laya-pilot": [
+      {
+        "id": "anthonyli-laya-pilot:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 3,
+        "fullName": "anthonyli/laya-pilot",
+        "url": "https://github.com/anthonyli/laya-pilot",
+        "category": "Browser-to-Excel test generation",
+        "score": 88,
+        "summary": "Playwright automation tool that generates replayable Excel test cases from live browser pages or executes existing Excel cases using local Laya or compatible decision APIs.",
+        "audience": "QA teams that need agent-assisted test authoring but still want reviewable, spreadsheet-shaped artifacts.",
+        "aiNativeAngle": "Turns ambiguous browser exploration into replayable test cases and keeps assertion pass/fail tied to page state rather than model claims.",
+        "growthSignal": "Pushed 2026-09-23 with 26 stars. Root audit found .env.example, config example, docs, examples, lib, runner, worker, public demo scripts, requirements, and tests.",
+        "runnability": "Medium-high from demo scripts, package files, docs, examples, and tests; no browser page, Laya model, or Excel replay was executed.",
+        "recommendedAction": "Run the included demo server and inspect whether generated Excel cases are understandable enough for non-agent QA review.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 3,
+          "full_name": "anthonyli/laya-pilot",
+          "url": "https://github.com/anthonyli/laya-pilot",
+          "category": "Browser-to-Excel test generation",
+          "score": 88,
+          "summary": "Playwright automation tool that generates replayable Excel test cases from live browser pages or executes existing Excel cases using local Laya or compatible decision APIs.",
+          "audience": "QA teams that need agent-assisted test authoring but still want reviewable, spreadsheet-shaped artifacts.",
+          "ai_native_angle": "Turns ambiguous browser exploration into replayable test cases and keeps assertion pass/fail tied to page state rather than model claims.",
+          "growth_signal": "Pushed 2026-09-23 with 26 stars. Root audit found .env.example, config example, docs, examples, lib, runner, worker, public demo scripts, requirements, and tests.",
+          "runnability": "Medium-high from demo scripts, package files, docs, examples, and tests; no browser page, Laya model, or Excel replay was executed.",
+          "recommended_action": "Run the included demo server and inspect whether generated Excel cases are understandable enough for non-agent QA review."
         }
       }
     ],
@@ -33516,6 +34155,40 @@
         }
       }
     ],
+    "pagebeam/pagebeam": [
+      {
+        "id": "pagebeam-pagebeam:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 4,
+        "fullName": "pagebeam/pagebeam",
+        "url": "https://github.com/pagebeam/pagebeam",
+        "category": "AI documentation drift repair",
+        "score": 87,
+        "summary": "Open-source package and GitHub Action that checks documentation pages against the product they describe, reports confidence, and drafts pull requests with fixes.",
+        "audience": "Product and developer-documentation teams whose UI or API changes faster than docs.",
+        "aiNativeAngle": "Frames documentation as an agent-verifiable product surface with repository-native checks and repair PRs.",
+        "growthSignal": "Pushed 2026-09-23 with 7 stars. Root audit found action.yml, examples, packages, package metadata, TypeScript configs, changelog, and docs-oriented README.",
+        "runnability": "Medium-high from npm command surface and GitHub Action metadata; no app/docs repository, browser check, or PR draft was run.",
+        "recommendedAction": "Trial on a small docs page with a known stale UI claim and require human review on every proposed fix.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 4,
+          "full_name": "pagebeam/pagebeam",
+          "url": "https://github.com/pagebeam/pagebeam",
+          "category": "AI documentation drift repair",
+          "score": 87,
+          "summary": "Open-source package and GitHub Action that checks documentation pages against the product they describe, reports confidence, and drafts pull requests with fixes.",
+          "audience": "Product and developer-documentation teams whose UI or API changes faster than docs.",
+          "ai_native_angle": "Frames documentation as an agent-verifiable product surface with repository-native checks and repair PRs.",
+          "growth_signal": "Pushed 2026-09-23 with 7 stars. Root audit found action.yml, examples, packages, package metadata, TypeScript configs, changelog, and docs-oriented README.",
+          "runnability": "Medium-high from npm command surface and GitHub Action metadata; no app/docs repository, browser check, or PR draft was run.",
+          "recommended_action": "Trial on a small docs page with a known stale UI claim and require human review on every proposed fix."
+        }
+      }
+    ],
     "Rizzo-AI-Academy/rizzo-flow": [
       {
         "id": "Rizzo-AI-Academy-rizzo-flow:2026-09-22T11:20:00+08:00:top:0",
@@ -34855,6 +35528,40 @@
           "growth_signal": "GitHub page snapshot showed about 8.9k stars, 1.8k forks, 213 commits; README News listed 2026-05-27 and 2026-05-26 feature updates.",
           "runnability": "Supports pip install vibe-trading-ai, vibe-trading serve, vibe-trading-mcp, Docker, Web UI, CLI, demos, and examples.",
           "recommended_action": "Evaluate only in sandbox mode; verify data source reliability, backtest reproducibility, and financial-risk guardrails."
+        }
+      }
+    ],
+    "Sur-Cai/macos-computer-use-kit": [
+      {
+        "id": "Sur-Cai-macos-computer-use-kit:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 5,
+        "fullName": "Sur-Cai/macos-computer-use-kit",
+        "url": "https://github.com/Sur-Cai/macos-computer-use-kit",
+        "category": "AX-first macOS computer-use MCP",
+        "score": 86,
+        "summary": "Python CLI, MCP server, skill, and plugin package for controlling macOS apps through accessibility-tree targeting, guarded inputs, and read-back verification.",
+        "audience": "Agent users on macOS who want local app control without cursor movement or screenshot-only coordinate guessing.",
+        "aiNativeAngle": "Packages accessibility-tree observations, semantic guards, and verification as reusable computer-use primitives for agents.",
+        "growthSignal": "Pushed 2026-09-23 with 4 stars. Root audit found PyPI-style package metadata, install script, packages, plugins, skill, src, tests, tools, and bilingual README.",
+        "runnability": "Medium-high from CLI/package/tests/plugin structure; no macOS permissions, MCP server, DeepSeek Harness plugin, or app action was run.",
+        "recommendedAction": "Evaluate with a harmless native app workflow and verify that destructive actions require explicit guarding and readback.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 5,
+          "full_name": "Sur-Cai/macos-computer-use-kit",
+          "url": "https://github.com/Sur-Cai/macos-computer-use-kit",
+          "category": "AX-first macOS computer-use MCP",
+          "score": 86,
+          "summary": "Python CLI, MCP server, skill, and plugin package for controlling macOS apps through accessibility-tree targeting, guarded inputs, and read-back verification.",
+          "audience": "Agent users on macOS who want local app control without cursor movement or screenshot-only coordinate guessing.",
+          "ai_native_angle": "Packages accessibility-tree observations, semantic guards, and verification as reusable computer-use primitives for agents.",
+          "growth_signal": "Pushed 2026-09-23 with 4 stars. Root audit found PyPI-style package metadata, install script, packages, plugins, skill, src, tests, tools, and bilingual README.",
+          "runnability": "Medium-high from CLI/package/tests/plugin structure; no macOS permissions, MCP server, DeepSeek Harness plugin, or app action was run.",
+          "recommended_action": "Evaluate with a harmless native app workflow and verify that destructive actions require explicit guarding and readback."
         }
       }
     ],
@@ -36486,6 +37193,40 @@
         }
       }
     ],
+    "I-No-oNe/screenpeek": [
+      {
+        "id": "I-No-oNe-screenpeek:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 6,
+        "fullName": "I-No-oNe/screenpeek",
+        "url": "https://github.com/I-No-oNe/screenpeek",
+        "category": "Text-first desktop app control",
+        "score": 85,
+        "summary": "Rust tool that scans desktop apps into short text lines through OCR and accessibility labels, then clicks, types, scrolls, and switches windows by name.",
+        "audience": "Agent and test authors who need fast desktop workflow control on Linux or Windows without screenshot-heavy loops.",
+        "aiNativeAngle": "Converts desktop state into compact agent-readable text and named actions, making GUI control closer to terminal command selection.",
+        "growthSignal": "Pushed 2026-09-24 with 3 stars. Root audit found Cargo files, docs, frames, helpers, packaging, scripts, skill, src, tests, and installers.",
+        "runnability": "Medium-high from Rust package, installers, docs, and tests; no OCR/accessibility scan or desktop click was executed.",
+        "recommendedAction": "Watch closely for MCP examples and run only against a disposable app until permission and focus-handling are proven.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 6,
+          "full_name": "I-No-oNe/screenpeek",
+          "url": "https://github.com/I-No-oNe/screenpeek",
+          "category": "Text-first desktop app control",
+          "score": 85,
+          "summary": "Rust tool that scans desktop apps into short text lines through OCR and accessibility labels, then clicks, types, scrolls, and switches windows by name.",
+          "audience": "Agent and test authors who need fast desktop workflow control on Linux or Windows without screenshot-heavy loops.",
+          "ai_native_angle": "Converts desktop state into compact agent-readable text and named actions, making GUI control closer to terminal command selection.",
+          "growth_signal": "Pushed 2026-09-24 with 3 stars. Root audit found Cargo files, docs, frames, helpers, packaging, scripts, skill, src, tests, and installers.",
+          "runnability": "Medium-high from Rust package, installers, docs, and tests; no OCR/accessibility scan or desktop click was executed.",
+          "recommended_action": "Watch closely for MCP examples and run only against a disposable app until permission and focus-handling are proven."
+        }
+      }
+    ],
     "ghuntley/preflight": [
       {
         "id": "ghuntley-preflight:2026-09-22T11:20:00+08:00:top:0",
@@ -37730,6 +38471,40 @@
           "growth_signal": "Created 2026-05-18; GitHub API showed 9 stars and pushed_at 2026-05-19T17:19:53Z; README has demo gif and screenshots.",
           "runnability": "README includes node setup.mjs, Docker compose, pnpm dev, localhost UI, agent/source/chat flow, docs, screenshots, and roadmap.",
           "recommended_action": "Try with a real document folder; inspect citation quality, file exclusions, and local-default privacy claims."
+        }
+      }
+    ],
+    "lzc878776-beep/VSManager": [
+      {
+        "id": "lzc878776-beep-VSManager:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 7,
+        "fullName": "lzc878776-beep/VSManager",
+        "url": "https://github.com/lzc878776-beep/VSManager",
+        "category": "Visual Studio Copilot orchestration panel",
+        "score": 84,
+        "summary": "WinForms tool for managing multiple Visual Studio instances, Copilot conversations, debug/build control, task queues, voice summaries, and web remote operations.",
+        "audience": "Windows developers coordinating Copilot work across several Visual Studio solutions.",
+        "aiNativeAngle": "Treats IDE instances and Copilot chats as an orchestrated multi-agent workbench with task dispatch, waiting, transcript sync, and status readback.",
+        "growthSignal": "Pushed 2026-09-24 with 3 stars. Root audit found many C# source files, solution/project files, settings example, tests, chat/task/debug/remote modules, and detailed Chinese README.",
+        "runnability": "Medium from complete C# project layout; no Visual Studio instance, Copilot pane, debug action, voice path, or web remote was tested.",
+        "recommendedAction": "Trial on a throwaway Visual Studio solution and confirm task queues never send instructions to the wrong project.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 7,
+          "full_name": "lzc878776-beep/VSManager",
+          "url": "https://github.com/lzc878776-beep/VSManager",
+          "category": "Visual Studio Copilot orchestration panel",
+          "score": 84,
+          "summary": "WinForms tool for managing multiple Visual Studio instances, Copilot conversations, debug/build control, task queues, voice summaries, and web remote operations.",
+          "audience": "Windows developers coordinating Copilot work across several Visual Studio solutions.",
+          "ai_native_angle": "Treats IDE instances and Copilot chats as an orchestrated multi-agent workbench with task dispatch, waiting, transcript sync, and status readback.",
+          "growth_signal": "Pushed 2026-09-24 with 3 stars. Root audit found many C# source files, solution/project files, settings example, tests, chat/task/debug/remote modules, and detailed Chinese README.",
+          "runnability": "Medium from complete C# project layout; no Visual Studio instance, Copilot pane, debug action, voice path, or web remote was tested.",
+          "recommended_action": "Trial on a throwaway Visual Studio solution and confirm task queues never send instructions to the wrong project."
         }
       }
     ],
@@ -40046,6 +40821,40 @@
         }
       }
     ],
+    "ManoloRemiddi/augmentor-agent": [
+      {
+        "id": "ManoloRemiddi-augmentor-agent:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 8,
+        "fullName": "ManoloRemiddi/augmentor-agent",
+        "url": "https://github.com/ManoloRemiddi/augmentor-agent",
+        "category": "Desktop and browser harness for local agents",
+        "score": 83,
+        "summary": "Desktop and browser agent surfaces sharing a local prompt library, harness adapters, services, docs, release assets, packages, and tests, with DSH as the main target.",
+        "audience": "Users standardizing local agent desktop/browser workflows across harnesses such as DSH and Pi.",
+        "aiNativeAngle": "Moves agent prompts, harness adapters, and desktop/browser control into a versioned local product rather than loose launcher scripts.",
+        "growthSignal": "Pushed 2026-09-23 with 6 stars. Root audit found apps, adapters, services, packages, docs, config, scripts, tests, security docs, and source-publication metadata.",
+        "runnability": "Medium from broad app/service/test layout; no desktop app, browser harness, prompt library sync, or DSH/Pi integration was run.",
+        "recommendedAction": "Keep on watch and require a minimal install/run path plus license review before adopting in a shared workflow.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 8,
+          "full_name": "ManoloRemiddi/augmentor-agent",
+          "url": "https://github.com/ManoloRemiddi/augmentor-agent",
+          "category": "Desktop and browser harness for local agents",
+          "score": 83,
+          "summary": "Desktop and browser agent surfaces sharing a local prompt library, harness adapters, services, docs, release assets, packages, and tests, with DSH as the main target.",
+          "audience": "Users standardizing local agent desktop/browser workflows across harnesses such as DSH and Pi.",
+          "ai_native_angle": "Moves agent prompts, harness adapters, and desktop/browser control into a versioned local product rather than loose launcher scripts.",
+          "growth_signal": "Pushed 2026-09-23 with 6 stars. Root audit found apps, adapters, services, packages, docs, config, scripts, tests, security docs, and source-publication metadata.",
+          "runnability": "Medium from broad app/service/test layout; no desktop app, browser harness, prompt library sync, or DSH/Pi integration was run.",
+          "recommended_action": "Keep on watch and require a minimal install/run path plus license review before adopting in a shared workflow."
+        }
+      }
+    ],
     "penso/herdr-gpui": [
       {
         "id": "penso-herdr-gpui:2026-09-22T11:20:00+08:00:top:0",
@@ -41718,6 +42527,40 @@
           "growth_signal": "README 有 Quick Start（npm 全局安装 + skrun deploy）和 dashboard 介绍；Release v0.7.0 标注 May 12, 2026；Star ~170。",
           "runnability": "npm install -g 后可本地启动并通过 curl 调用；dashboard 位于 /dashboard。",
           "recommended_action": "找一个现有 skill 试着 skrun init/deploy；评估 auth/BYOK 与可观测性数据结构。"
+        }
+      }
+    ],
+    "zhaoyijia-web/rag-knowledge-base": [
+      {
+        "id": "zhaoyijia-web-rag-knowledge-base:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 9,
+        "fullName": "zhaoyijia-web/rag-knowledge-base",
+        "url": "https://github.com/zhaoyijia-web/rag-knowledge-base",
+        "category": "Transparent enterprise RAG workbench",
+        "score": 82,
+        "summary": "Chinese enterprise RAG knowledge base with hybrid retrieval, RRF fusion, Qwen reranking, DeepSeek evidence generation, frontend retrieval visualization, backend, docs, and tests.",
+        "audience": "Teams evaluating local document QA systems that need retrieval traceability and source-visible answers.",
+        "aiNativeAngle": "Makes the RAG chain inspectable by exposing retrieval results, scores, sources, latency, and reranking rather than hiding everything behind a chat box.",
+        "growthSignal": "Pushed 2026-09-23 with 3 stars. Root audit found backend, frontend, rag, retrieval, docs/images, tests, pyproject, uv lock, and .env example.",
+        "runnability": "Medium from full-stack/package/test layout and screenshots; no model, vector index, document ingest, or frontend run was executed.",
+        "recommendedAction": "Use synthetic documents first and judge whether source attribution survives adversarial or ambiguous questions.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 9,
+          "full_name": "zhaoyijia-web/rag-knowledge-base",
+          "url": "https://github.com/zhaoyijia-web/rag-knowledge-base",
+          "category": "Transparent enterprise RAG workbench",
+          "score": 82,
+          "summary": "Chinese enterprise RAG knowledge base with hybrid retrieval, RRF fusion, Qwen reranking, DeepSeek evidence generation, frontend retrieval visualization, backend, docs, and tests.",
+          "audience": "Teams evaluating local document QA systems that need retrieval traceability and source-visible answers.",
+          "ai_native_angle": "Makes the RAG chain inspectable by exposing retrieval results, scores, sources, latency, and reranking rather than hiding everything behind a chat box.",
+          "growth_signal": "Pushed 2026-09-23 with 3 stars. Root audit found backend, frontend, rag, retrieval, docs/images, tests, pyproject, uv lock, and .env example.",
+          "runnability": "Medium from full-stack/package/test layout and screenshots; no model, vector index, document ingest, or frontend run was executed.",
+          "recommended_action": "Use synthetic documents first and judge whether source attribution survives adversarial or ambiguous questions."
         }
       }
     ],
@@ -43768,6 +44611,40 @@
         }
       }
     ],
+    "jestr-ai/openmage-ai-suite": [
+      {
+        "id": "jestr-ai-openmage-ai-suite:2026-09-24T11:58:00+08:00:top:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "top",
+        "rank": 10,
+        "fullName": "jestr-ai/openmage-ai-suite",
+        "url": "https://github.com/jestr-ai/openmage-ai-suite",
+        "category": "Magento/OpenMage AI suite with MCP",
+        "score": 81,
+        "summary": "AI suite for OpenMage/Magento 1 with MCP server, admin copilot, storefront assistant, LLM discovery, tests, Packagist packaging, and module docs.",
+        "audience": "Operators maintaining older Magento/OpenMage stores who want AI assistance without abandoning the legacy stack.",
+        "aiNativeAngle": "Brings MCP and assistant workflows into a real legacy-commerce admin surface instead of a generic chatbot demo.",
+        "growthSignal": "Pushed 2026-09-21 with 3 stars. Root audit found app, docs, tests, Composer metadata, modman packaging, dev files, CI badge, and detailed README.",
+        "runnability": "Medium from PHP package/module structure and tests; no Magento/OpenMage instance, MCP server, storefront assistant, or admin copilot was run.",
+        "recommendedAction": "Evaluate only on a local demo store and verify permissions before connecting catalog, customer, or order data.",
+        "skipReason": null,
+        "rawJson": {
+          "rank": 10,
+          "full_name": "jestr-ai/openmage-ai-suite",
+          "url": "https://github.com/jestr-ai/openmage-ai-suite",
+          "category": "Magento/OpenMage AI suite with MCP",
+          "score": 81,
+          "summary": "AI suite for OpenMage/Magento 1 with MCP server, admin copilot, storefront assistant, LLM discovery, tests, Packagist packaging, and module docs.",
+          "audience": "Operators maintaining older Magento/OpenMage stores who want AI assistance without abandoning the legacy stack.",
+          "ai_native_angle": "Brings MCP and assistant workflows into a real legacy-commerce admin surface instead of a generic chatbot demo.",
+          "growth_signal": "Pushed 2026-09-21 with 3 stars. Root audit found app, docs, tests, Composer metadata, modman packaging, dev files, CI badge, and detailed README.",
+          "runnability": "Medium from PHP package/module structure and tests; no Magento/OpenMage instance, MCP server, storefront assistant, or admin copilot was run.",
+          "recommended_action": "Evaluate only on a local demo store and verify permissions before connecting catalog, customer, or order data."
+        }
+      }
+    ],
     "using-system/otelyssey": [
       {
         "id": "using-system-otelyssey:2026-09-21T12:38:20+08:00:top:0",
@@ -44915,6 +45792,39 @@
           "growth_signal": "Webwright、browser-use、Skyvern、Playwright MCP 之外仍有新 browser-agent core 出现。",
           "runnability": "核心库形态明确，需审计 examples、模型配置、浏览器依赖和失败处理。",
           "recommended_action": "放入 browser-agent benchmark，用同一表单/后台任务测成功率。"
+        }
+      }
+    ],
+    "mizchi/jev-test-filter": [
+      {
+        "id": "mizchi-jev-test-filter:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 1,
+        "fullName": "mizchi/jev-test-filter",
+        "url": "https://github.com/mizchi/jev-test-filter",
+        "category": "Jev-scored test selection",
+        "score": 80,
+        "summary": "Reads a git diff, scores every test against it with Jev, and emits runner-native filter arguments for Vitest, Jest, Playwright, cargo, Go, and more.",
+        "audience": "Developers with large suites who want a model-assisted but still runner-native test filter.",
+        "aiNativeAngle": "Uses typed model judgments to choose tests without giving the model file access or control over execution.",
+        "growthSignal": "Pushed 2026-09-23 with 16 stars; root audit found plugin metadata, commands, docs, skills, src, tests, Taskfile, and package metadata.",
+        "runnability": "Medium-high from tests and runner-focused README; no Jev call or real diff run was executed.",
+        "recommendedAction": "Promote after measuring false negatives on a known change set.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "mizchi/jev-test-filter",
+          "url": "https://github.com/mizchi/jev-test-filter",
+          "category": "Jev-scored test selection",
+          "score": 80,
+          "summary": "Reads a git diff, scores every test against it with Jev, and emits runner-native filter arguments for Vitest, Jest, Playwright, cargo, Go, and more.",
+          "audience": "Developers with large suites who want a model-assisted but still runner-native test filter.",
+          "ai_native_angle": "Uses typed model judgments to choose tests without giving the model file access or control over execution.",
+          "growth_signal": "Pushed 2026-09-23 with 16 stars; root audit found plugin metadata, commands, docs, skills, src, tests, Taskfile, and package metadata.",
+          "runnability": "Medium-high from tests and runner-focused README; no Jev call or real diff run was executed.",
+          "recommended_action": "Promote after measuring false negatives on a known change set."
         }
       }
     ],
@@ -46521,36 +47431,36 @@
         }
       }
     ],
-    "FluidInference/FluidUse": [
+    "ChenneyZhuang/laya-browser-agent": [
       {
-        "id": "FluidInference-FluidUse:2026-09-22T11:20:00+08:00:watchlist:0",
-        "runId": "run:2026-09-22:2026-09-22T11:20:00+08:00",
-        "runDate": "2026-09-22",
-        "generatedAt": "2026-09-22T11:20:00+08:00",
+        "id": "ChenneyZhuang-laya-browser-agent:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
         "section": "watchlist",
-        "rank": 1,
-        "fullName": "FluidInference/FluidUse",
-        "url": "https://github.com/FluidInference/FluidUse",
-        "category": "On-device Apple Silicon form automation",
+        "rank": 2,
+        "fullName": "ChenneyZhuang/laya-browser-agent",
+        "url": "https://github.com/ChenneyZhuang/laya-browser-agent",
+        "category": "Local Laya browser decisions",
         "score": 79,
-        "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
-        "audience": "Teams testing private local form completion.",
-        "aiNativeAngle": "Binds an on-device model to deterministic accessibility actions.",
-        "growthSignal": "Created and pushed 2026-09-21 with 28 stars.",
-        "runnability": "Unverified beyond repository metadata.",
-        "recommendedAction": "Await audited privacy and failure-mode documentation.",
+        "summary": "Python project for local browser-agent decisions with Laya as an open-source System 1 model alternative to cloud Jev.",
+        "audience": "Browser-agent builders who want no cloud API key and no screenshot dependency.",
+        "aiNativeAngle": "Makes low-latency local decision models a pluggable browser-control layer.",
+        "growthSignal": "Pushed 2026-09-23 with 7 stars; root audit found examples, install_skills.py, localdecide, scripts, skills, tests, pyproject, CI badge, and multilingual READMEs.",
+        "runnability": "Medium from package/tests/examples; no Laya model or browser integration was run.",
+        "recommendedAction": "Watch for benchmarks against Jev/browser-use and concrete failure recovery examples.",
         "skipReason": null,
         "rawJson": {
-          "full_name": "FluidInference/FluidUse",
-          "url": "https://github.com/FluidInference/FluidUse",
-          "category": "On-device Apple Silicon form automation",
+          "full_name": "ChenneyZhuang/laya-browser-agent",
+          "url": "https://github.com/ChenneyZhuang/laya-browser-agent",
+          "category": "Local Laya browser decisions",
           "score": 79,
-          "summary": "Local macOS Accessibility-based form automation for a specialized computer-use model.",
-          "audience": "Teams testing private local form completion.",
-          "ai_native_angle": "Binds an on-device model to deterministic accessibility actions.",
-          "growth_signal": "Created and pushed 2026-09-21 with 28 stars.",
-          "runnability": "Unverified beyond repository metadata.",
-          "recommended_action": "Await audited privacy and failure-mode documentation."
+          "summary": "Python project for local browser-agent decisions with Laya as an open-source System 1 model alternative to cloud Jev.",
+          "audience": "Browser-agent builders who want no cloud API key and no screenshot dependency.",
+          "ai_native_angle": "Makes low-latency local decision models a pluggable browser-control layer.",
+          "growth_signal": "Pushed 2026-09-23 with 7 stars; root audit found examples, install_skills.py, localdecide, scripts, skills, tests, pyproject, CI badge, and multilingual READMEs.",
+          "runnability": "Medium from package/tests/examples; no Laya model or browser integration was run.",
+          "recommended_action": "Watch for benchmarks against Jev/browser-use and concrete failure recovery examples."
         }
       }
     ],
@@ -47855,6 +48765,39 @@
           "growth_signal": "GitHub 页面显示约 111 commits、21 issues、2 PRs；stars 低但产品形态和风险主题贴近当前 MCP 安全缺口。",
           "runnability": "README 提供 GitHub Action、`pip install agent-audit-kit`、`agent-audit-kit scan .`、pre-commit hook 和 vulnerable examples。",
           "recommended_action": "进入安全 watch+试跑；先扫描一个真实 MCP/agent repo，验证误报率和规则覆盖。"
+        }
+      }
+    ],
+    "TheAdaply/jev-apply": [
+      {
+        "id": "TheAdaply-jev-apply:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 3,
+        "fullName": "TheAdaply/jev-apply",
+        "url": "https://github.com/TheAdaply/jev-apply",
+        "category": "Memory-backed job-application form agent",
+        "score": 78,
+        "summary": "Playwright job-application skill where Jev selects saved facts for Greenhouse/Ashby fields, reads values back, and stops before submission by default.",
+        "audience": "Job seekers experimenting with supervised form assistance.",
+        "aiNativeAngle": "Separates fact selection from text generation and builds a human approval stop before real submission.",
+        "growthSignal": "Pushed 2026-09-24 with 2 stars; root audit found AGENTS.md, INSTALL, SKILL, bench, corpus, docs, eval, scripts, src, and package metadata.",
+        "runnability": "Medium from Playwright/skill/eval structure; no personal data, job form, or submission path was tested.",
+        "recommendedAction": "Keep sensitive: test only with fake profiles and require explicit submit controls.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "TheAdaply/jev-apply",
+          "url": "https://github.com/TheAdaply/jev-apply",
+          "category": "Memory-backed job-application form agent",
+          "score": 78,
+          "summary": "Playwright job-application skill where Jev selects saved facts for Greenhouse/Ashby fields, reads values back, and stops before submission by default.",
+          "audience": "Job seekers experimenting with supervised form assistance.",
+          "ai_native_angle": "Separates fact selection from text generation and builds a human approval stop before real submission.",
+          "growth_signal": "Pushed 2026-09-24 with 2 stars; root audit found AGENTS.md, INSTALL, SKILL, bench, corpus, docs, eval, scripts, src, and package metadata.",
+          "runnability": "Medium from Playwright/skill/eval structure; no personal data, job form, or submission path was tested.",
+          "recommended_action": "Keep sensitive: test only with fake profiles and require explicit submit controls."
         }
       }
     ],
@@ -49737,6 +50680,39 @@
         }
       }
     ],
+    "DaizeDong/grokbot-cdp": [
+      {
+        "id": "DaizeDong-grokbot-cdp:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 4,
+        "fullName": "DaizeDong/grokbot-cdp",
+        "url": "https://github.com/DaizeDong/grokbot-cdp",
+        "category": "Grok Bot CDP control bridge",
+        "score": 77,
+        "summary": "Python bridge for driving the cloud machine behind a Grok Bot through Chrome DevTools Protocol, with guards, examples, docs, tests, and bilingual READMEs.",
+        "audience": "Builders exploring automation around hosted computer-use agents.",
+        "aiNativeAngle": "Exposes a hosted agent browser as an inspectable CDP automation target with guard concepts.",
+        "growthSignal": "Pushed 2026-09-24 with 2 stars; root audit found docs, examples, guards, package code, tests, reference material, and roadmap.",
+        "runnability": "Medium from package/test/docs layout; no Grok Bot, CDP session, or hosted browser was touched.",
+        "recommendedAction": "Watch only; provider policy and account safety need careful review before any real use.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "DaizeDong/grokbot-cdp",
+          "url": "https://github.com/DaizeDong/grokbot-cdp",
+          "category": "Grok Bot CDP control bridge",
+          "score": 77,
+          "summary": "Python bridge for driving the cloud machine behind a Grok Bot through Chrome DevTools Protocol, with guards, examples, docs, tests, and bilingual READMEs.",
+          "audience": "Builders exploring automation around hosted computer-use agents.",
+          "ai_native_angle": "Exposes a hosted agent browser as an inspectable CDP automation target with guard concepts.",
+          "growth_signal": "Pushed 2026-09-24 with 2 stars; root audit found docs, examples, guards, package code, tests, reference material, and roadmap.",
+          "runnability": "Medium from package/test/docs layout; no Grok Bot, CDP session, or hosted browser was touched.",
+          "recommended_action": "Watch only; provider policy and account safety need careful review before any real use."
+        }
+      }
+    ],
     "fstandhartinger/chat-seek-vscode": [
       {
         "id": "fstandhartinger-chat-seek-vscode:2026-09-22T11:20:00+08:00:watchlist:0",
@@ -51010,6 +51986,39 @@
           "growth_signal": "仓库 Star ~8.9k；README 提供 30 秒 npx 启动与 demo；并给出各宿主的 MCP 配置块。",
           "runnability": "npx 启动 server 与 demo，打开本地 viewer 端口观察记忆构建。",
           "recommended_action": "先跑 npx demo；如果效果好，接入你常用的一个 agent 宿主做一周试用。"
+        }
+      }
+    ],
+    "ShreyasDasari/evergif": [
+      {
+        "id": "ShreyasDasari-evergif:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 5,
+        "fullName": "ShreyasDasari/evergif",
+        "url": "https://github.com/ShreyasDasari/evergif",
+        "category": "Self-refreshing README demo media",
+        "score": 76,
+        "summary": "Agent-skill-backed Next.js project for keeping README demo GIFs current, with app, demo, examples, skills, tests, and GitHub Actions badges.",
+        "audience": "Open-source maintainers whose product demos go stale after UI changes.",
+        "aiNativeAngle": "Turns demo media maintenance into a repeatable agent skill and CI-style artifact workflow.",
+        "growthSignal": "Pushed 2026-09-23 with 2 stars; root audit found app, components, demo, examples, lib, skills, tests, and multiple agent-plugin metadata directories.",
+        "runnability": "Medium from app/tests/examples; no recording, render, or README update was run.",
+        "recommendedAction": "Promote after a public project demonstrates a before/after stale demo fix.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "ShreyasDasari/evergif",
+          "url": "https://github.com/ShreyasDasari/evergif",
+          "category": "Self-refreshing README demo media",
+          "score": 76,
+          "summary": "Agent-skill-backed Next.js project for keeping README demo GIFs current, with app, demo, examples, skills, tests, and GitHub Actions badges.",
+          "audience": "Open-source maintainers whose product demos go stale after UI changes.",
+          "ai_native_angle": "Turns demo media maintenance into a repeatable agent skill and CI-style artifact workflow.",
+          "growth_signal": "Pushed 2026-09-23 with 2 stars; root audit found app, components, demo, examples, lib, skills, tests, and multiple agent-plugin metadata directories.",
+          "runnability": "Medium from app/tests/examples; no recording, render, or README update was run.",
+          "recommended_action": "Promote after a public project demonstrates a before/after stale demo fix."
         }
       }
     ],
@@ -52587,6 +53596,39 @@
         }
       }
     ],
+    "mithun50/ORCA": [
+      {
+        "id": "mithun50-ORCA:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 6,
+        "fullName": "mithun50/ORCA",
+        "url": "https://github.com/mithun50/ORCA",
+        "category": "Agentic marine intelligence platform",
+        "score": 75,
+        "summary": "Marine intelligence platform for Indian waters using natural-language queries, multi-RAG retrieval, n8n routing, evidence-backed answers, backend, frontend, docs, and tests.",
+        "audience": "Marine operations or hackathon teams needing grounded environmental recommendations.",
+        "aiNativeAngle": "Combines intent routing, domain sources, and evidence-bearing responses into a vertical agent workflow.",
+        "growthSignal": "Pushed 2026-09-22 with 3 stars; root audit found backend, frontend, knowledge, n8n, docs, scripts, tests, .env example, and docker-compose.",
+        "runnability": "Medium from full-stack/Docker/test layout; no external data endpoint or recommendation flow was run.",
+        "recommendedAction": "Keep in watchlist until live data reliability and domain-risk disclaimers are clearer.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "mithun50/ORCA",
+          "url": "https://github.com/mithun50/ORCA",
+          "category": "Agentic marine intelligence platform",
+          "score": 75,
+          "summary": "Marine intelligence platform for Indian waters using natural-language queries, multi-RAG retrieval, n8n routing, evidence-backed answers, backend, frontend, docs, and tests.",
+          "audience": "Marine operations or hackathon teams needing grounded environmental recommendations.",
+          "ai_native_angle": "Combines intent routing, domain sources, and evidence-bearing responses into a vertical agent workflow.",
+          "growth_signal": "Pushed 2026-09-22 with 3 stars; root audit found backend, frontend, knowledge, n8n, docs, scripts, tests, .env example, and docker-compose.",
+          "runnability": "Medium from full-stack/Docker/test layout; no external data endpoint or recommendation flow was run.",
+          "recommended_action": "Keep in watchlist until live data reliability and domain-risk disclaimers are clearer."
+        }
+      }
+    ],
     "lewismosciski/LMMOCK": [
       {
         "id": "lewismosciski-LMMOCK:2026-09-22T11:20:00+08:00:watchlist:0",
@@ -54117,6 +55159,39 @@
           "growth_signal": "GitHub 页面显示约 26.4k stars、5k forks、59 commits、95 issues、38 PRs。",
           "runnability": "README 提供 clone/install/env setup，仓库含 Next app、components、hooks、create package、env example。",
           "recommended_action": "作为 AI app builder 方向样本；重点验证生成质量、可维护性和 Firecrawl API 依赖成本。"
+        }
+      }
+    ],
+    "hojttaler/Resolvr": [
+      {
+        "id": "hojttaler-Resolvr:2026-09-24T11:58:00+08:00:watchlist:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "watchlist",
+        "rank": 7,
+        "fullName": "hojttaler/Resolvr",
+        "url": "https://github.com/hojttaler/Resolvr",
+        "category": "Desktop GraphQL IDE with MCP",
+        "score": 74,
+        "summary": "Cross-platform desktop GraphQL client with persistent tabs, git-friendly collections, environments, flows as smoke tests, schema browser, and built-in MCP server.",
+        "audience": "API developers who want AI agents to inspect or exercise GraphQL workflows in a desktop IDE.",
+        "aiNativeAngle": "Adds an MCP surface to a concrete developer tool rather than building a generic API chat wrapper.",
+        "growthSignal": "Pushed 2026-09-23 with 3 stars; root audit found apps, packages, assets, docs, scripts, tools, monorepo metadata, security docs, and release badges.",
+        "runnability": "Medium from monorepo/release/docs structure; no desktop app, MCP server, or GraphQL endpoint was run.",
+        "recommendedAction": "Watch for agent examples that prove MCP actions are permissioned and auditable.",
+        "skipReason": null,
+        "rawJson": {
+          "full_name": "hojttaler/Resolvr",
+          "url": "https://github.com/hojttaler/Resolvr",
+          "category": "Desktop GraphQL IDE with MCP",
+          "score": 74,
+          "summary": "Cross-platform desktop GraphQL client with persistent tabs, git-friendly collections, environments, flows as smoke tests, schema browser, and built-in MCP server.",
+          "audience": "API developers who want AI agents to inspect or exercise GraphQL workflows in a desktop IDE.",
+          "ai_native_angle": "Adds an MCP surface to a concrete developer tool rather than building a generic API chat wrapper.",
+          "growth_signal": "Pushed 2026-09-23 with 3 stars; root audit found apps, packages, assets, docs, scripts, tools, monorepo metadata, security docs, and release badges.",
+          "runnability": "Medium from monorepo/release/docs structure; no desktop app, MCP server, or GraphQL endpoint was run.",
+          "recommended_action": "Watch for agent examples that prove MCP actions are permissioned and auditable."
         }
       }
     ],
@@ -64072,6 +65147,266 @@
           "full_name": "eltociear/awesome-molt-ecosystem",
           "url": "https://github.com/eltociear/awesome-molt-ecosystem",
           "skip_reason": "Awesome/list and ecosystem research repository; useful intelligence source, but not runnable product software."
+        }
+      }
+    ],
+    "amitshekhariitbhu/ai-engineering-course": [
+      {
+        "id": "amitshekhariitbhu-ai-engineering-course:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "amitshekhariitbhu/ai-engineering-course",
+        "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "High-star AI education repository, but course/content rather than a runnable AI-native product surface.",
+        "rawJson": {
+          "full_name": "amitshekhariitbhu/ai-engineering-course",
+          "url": "https://github.com/amitshekhariitbhu/ai-engineering-course",
+          "skip_reason": "High-star AI education repository, but course/content rather than a runnable AI-native product surface."
+        }
+      }
+    ],
+    "arthurfou/medical-regulation-rag": [
+      {
+        "id": "arthurfou-medical-regulation-rag:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "arthurfou/medical-regulation-rag",
+        "url": "https://github.com/arthurfou/medical-regulation-rag",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Interesting medical RAG project, but notebook/research shaped and safety-sensitive, with less product surface than today’s transparent RAG workbench pick.",
+        "rawJson": {
+          "full_name": "arthurfou/medical-regulation-rag",
+          "url": "https://github.com/arthurfou/medical-regulation-rag",
+          "skip_reason": "Interesting medical RAG project, but notebook/research shaped and safety-sensitive, with less product surface than today’s transparent RAG workbench pick."
+        }
+      }
+    ],
+    "AvenueSnowStep/ClaudePanel": [
+      {
+        "id": "AvenueSnowStep-ClaudePanel:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "AvenueSnowStep/ClaudePanel",
+        "url": "https://github.com/AvenueSnowStep/ClaudePanel",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Strong star signal for a desktop Claude panel, but audited root/README showed a very thin Rust app surface with missing referenced preview assets and little workflow evidence.",
+        "rawJson": {
+          "full_name": "AvenueSnowStep/ClaudePanel",
+          "url": "https://github.com/AvenueSnowStep/ClaudePanel",
+          "skip_reason": "Strong star signal for a desktop Claude panel, but audited root/README showed a very thin Rust app surface with missing referenced preview assets and little workflow evidence."
+        }
+      }
+    ],
+    "bsmagalhaes/rendra-design-system": [
+      {
+        "id": "bsmagalhaes-rendra-design-system:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "bsmagalhaes/rendra-design-system",
+        "url": "https://github.com/bsmagalhaes/rendra-design-system",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Well-structured design system/boilerplate, but not AI-native despite agent instruction files.",
+        "rawJson": {
+          "full_name": "bsmagalhaes/rendra-design-system",
+          "url": "https://github.com/bsmagalhaes/rendra-design-system",
+          "skip_reason": "Well-structured design system/boilerplate, but not AI-native despite agent instruction files."
+        }
+      }
+    ],
+    "cnbillsomeday/wp10-aiagent": [
+      {
+        "id": "cnbillsomeday-wp10-aiagent:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "cnbillsomeday/wp10-aiagent",
+        "url": "https://github.com/cnbillsomeday/wp10-aiagent",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Cloudflare Worker chat app with RAG and skills, but reads like a compact generic chat shell rather than a distinct agent product.",
+        "rawJson": {
+          "full_name": "cnbillsomeday/wp10-aiagent",
+          "url": "https://github.com/cnbillsomeday/wp10-aiagent",
+          "skip_reason": "Cloudflare Worker chat app with RAG and skills, but reads like a compact generic chat shell rather than a distinct agent product."
+        }
+      }
+    ],
+    "grigortodorov/rag-best-practices": [
+      {
+        "id": "grigortodorov-rag-best-practices:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "grigortodorov/rag-best-practices",
+        "url": "https://github.com/grigortodorov/rag-best-practices",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Useful RAG toolkit/playbook, but more best-practices/library material than an end-user AI-native product.",
+        "rawJson": {
+          "full_name": "grigortodorov/rag-best-practices",
+          "url": "https://github.com/grigortodorov/rag-best-practices",
+          "skip_reason": "Useful RAG toolkit/playbook, but more best-practices/library material than an end-user AI-native product."
+        }
+      }
+    ],
+    "jiazz197-cmyk/Project_NBHX_RAGbot": [
+      {
+        "id": "jiazz197-cmyk-Project_NBHX_RAGbot:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "jiazz197-cmyk/Project_NBHX_RAGbot",
+        "url": "https://github.com/jiazz197-cmyk/Project_NBHX_RAGbot",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Enterprise RAG assistant is product-shaped, but heavily sanitized and lower fresh signal than the selected transparent RAG candidate.",
+        "rawJson": {
+          "full_name": "jiazz197-cmyk/Project_NBHX_RAGbot",
+          "url": "https://github.com/jiazz197-cmyk/Project_NBHX_RAGbot",
+          "skip_reason": "Enterprise RAG assistant is product-shaped, but heavily sanitized and lower fresh signal than the selected transparent RAG candidate."
+        }
+      }
+    ],
+    "Keeperorowner/zcode-oss-complete": [
+      {
+        "id": "Keeperorowner-zcode-oss-complete:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "Keeperorowner/zcode-oss-complete",
+        "url": "https://github.com/Keeperorowner/zcode-oss-complete",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Relevant ZCode community completion fork, but appears derivative and sensitive around provider/runtime reconstruction; kept below Top until provenance and safe runtime use are clearer.",
+        "rawJson": {
+          "full_name": "Keeperorowner/zcode-oss-complete",
+          "url": "https://github.com/Keeperorowner/zcode-oss-complete",
+          "skip_reason": "Relevant ZCode community completion fork, but appears derivative and sensitive around provider/runtime reconstruction; kept below Top until provenance and safe runtime use are clearer."
+        }
+      }
+    ],
+    "MasudAhmed28/RecruitAI": [
+      {
+        "id": "MasudAhmed28-RecruitAI:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "MasudAhmed28/RecruitAI",
+        "url": "https://github.com/MasudAhmed28/RecruitAI",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "Salesforce Agentforce/MCP recruitment demo is relevant but thin and platform-specific, with limited runnable evidence in the audited root.",
+        "rawJson": {
+          "full_name": "MasudAhmed28/RecruitAI",
+          "url": "https://github.com/MasudAhmed28/RecruitAI",
+          "skip_reason": "Salesforce Agentforce/MCP recruitment demo is relevant but thin and platform-specific, with limited runnable evidence in the audited root."
+        }
+      }
+    ],
+    "mohab1426/Socratiq": [
+      {
+        "id": "mohab1426-Socratiq:2026-09-24T11:58:00+08:00:skip:0",
+        "runId": "run:2026-09-24:2026-09-24T11:58:00+08:00",
+        "runDate": "2026-09-24",
+        "generatedAt": "2026-09-24T11:58:00+08:00",
+        "section": "skip",
+        "rank": null,
+        "fullName": "mohab1426/Socratiq",
+        "url": "https://github.com/mohab1426/Socratiq",
+        "category": null,
+        "score": null,
+        "summary": null,
+        "audience": null,
+        "aiNativeAngle": null,
+        "growthSignal": null,
+        "runnability": null,
+        "recommendedAction": null,
+        "skipReason": "AI classroom concept is promising, but current signal overlaps education/demo SaaS and needs stronger proof of live coaching workflow.",
+        "rawJson": {
+          "full_name": "mohab1426/Socratiq",
+          "url": "https://github.com/mohab1426/Socratiq",
+          "skip_reason": "AI classroom concept is promising, but current signal overlaps education/demo SaaS and needs stronger proof of live coaching workflow."
         }
       }
     ],
