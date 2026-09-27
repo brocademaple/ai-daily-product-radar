@@ -1,3 +1,20 @@
+# Yuque retry note - 2026-09-27 Daily Radar
+
+Target repo: brocademaple/fww6dt
+Suggested title: 2026-09-27 Daily Radar
+Suggested slug: daily-ai-native-product-radar-2026-09-27
+Format: markdown
+Visibility: private/default unless changed intentionally
+
+Status: Not archived in this run because yuque_search returned Too Many Requests before create/update. Do not blindly create a duplicate; search/list first after rate limit resets.
+
+Retry outline:
+1. Search or list docs in brocademaple/fww6dt for slug/title daily-ai-native-product-radar-2026-09-27.
+2. If present, update that doc with the markdown report below.
+3. If absent, create a new doc with title 2026-09-27 Daily Radar and slug daily-ai-native-product-radar-2026-09-27.
+
+---
+
 # Daily AI Native Product Radar - 2026-09-27
 
 数据窗口：2026-09-24T00:00:00Z to 2026-09-27T22:38:35+08:00。GitHub Search API 查询最近创建或活跃更新的 AI agent、MCP、computer-use、browser automation、code agent、workflow、RAG/LLM app、assistant、copilot 等方向，并对候选仓库做 repository/root/README audit。
@@ -150,3 +167,4 @@ Type-level skip reasons：纯课程、awesome list、prompt/skill collections、
 - Sources: 7 GitHub Search API responses under `/tmp/radar_2026_09_27_api/`; selected repository/root/README audits under `/tmp/radar_2026_09_27_readmes/`.
 - Limitation: unauthenticated GitHub API returned 403 rate limit during the second half of repository audit. Top projects use complete evidence where available; watchlist includes a few search-metadata-only items called out conservatively.
 - Assumptions: no third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, or deployed locally.
+
