@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-10-02",
+  "generated_at": "2026-10-02T18:40:00+08:00",
+  "data_window": "2026-09-29T00:00:00Z to 2026-10-02T18:40:00+08:00",
+  "source_summary": "Queried 6 GitHub Search API surfaces saved under /tmp/radar_2026_10_02_api/ for recently created and recently pushed AI agent, MCP, computer-use, browser automation, coding-agent, RAG/workflow, email, and spreadsheet-agent repositories. Shortlisted repository metadata, root contents, and README audits were saved under /tmp/radar_2026_10_02_readmes/. GitHub unauthenticated API later returned 403 rate limit, so Top projects primarily use complete audits while a few Watchlist entries are search-metadata-only.",
+  "trend_observations": "Agent execution substrate continues to split into durable personal-agent brains, desktop/background agents, governed MCP/LLM gateways, multi-agent terminal workspaces, shared coding-agent memory, and narrow office-object MCP surfaces. The strongest candidates make tool calls, permissions, review, audit logs, rollback, long-term state, or local files into explicit product objects instead of only adding another prompt or skill collection. Email and spreadsheet tools are becoming serious agent product surfaces because they convert risky everyday objects into reviewable CLI/MCP contracts.",
+  "assumptions": "Scores use GitHub metadata, repository descriptions/topics, root-content and README evidence, install/test/CI/security/download/example signals, created_at/pushed_at timing, and product-surface clarity. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, Windows-tested, mobile-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, or deployed locally. Star counts and pushed_at values are point-in-time metadata from the discovery window and can change quickly. GitHub API rate limiting prevented full audits for some late shortlist candidates; those are called out conservatively.",
+  "markdown_report": "See data/runs/2026-10-02.md for the complete human-readable report. Top themes: personal-agent scale, open desktop dots, MCP/LLM governance, multi-agent terminal workspaces, cross-agent memory, Excel/email MCP surfaces, and VM-isolated coding-agent queues.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "AgentForEach/AgentForEach",
+      "url": "https://github.com/AgentForEach/AgentForEach",
+      "category": "serverless personal-agent brain",
+      "score": 92,
+      "summary": "Open-source brain for giving every app user a personal agent with memory, schedules, tools, approvals, chat surfaces, and a scale-to-zero Azure architecture.",
+      "audience": "SaaS, consumer app, and agent-platform teams that want one long-lived agent per user.",
+      "ai_native_angle": "Turns per-user agents into a serverless runtime with memory, approvals, reminders, browser sandboxing, and chat handoff instead of always-on user VMs.",
+      "growth_signal": "Created 2026-09-29 and pushed 2026-10-02 with about 6 stars. Root audit found docs, examples, gateway, infra, SECURITY, ROADMAP, CI/release/test badges, quickstart, and browser docs.",
+      "runnability": "High from quickstart, examples, tests, infra, and docs evidence; no Azure stack, browser sandbox, or messaging channel was deployed.",
+      "recommended_action": "Deploy the sample web chat trial stack and validate approval cards, reminders, memory isolation, and browser handoff boundaries."
+    },
+    {
+      "rank": 2,
+      "full_name": "composio-community/open-dot",
+      "url": "https://github.com/composio-community/open-dot",
+      "category": "open-source personal AI dots",
+      "score": 91,
+      "summary": "Open-source Mac desktop personal-agent app with user-owned model keys, Composio triggers, E2B/Docker/local workspaces, and background execution.",
+      "audience": "Individuals and teams exploring personal background agents with their own keys and auditable local desktop code.",
+      "ai_native_angle": "Packages background triggers, personal context, code execution workspaces, and desktop persistence into a self-hostable personal-agent surface.",
+      "growth_signal": "Created 2026-09-29 and pushed 2026-09-30 with about 404 stars. Root audit found Electron, Next, build scripts, env example, desktop build command, and Chrome/Playwright dev instructions.",
+      "runnability": "Medium-high from desktop/source/build docs; no DMG build, desktop launch, Composio trigger, or agent workspace run was performed.",
+      "recommended_action": "Run one low-risk trigger in an empty Composio project with disposable accounts and inspect key storage, background behavior, and cleanup controls."
+    },
+    {
+      "rank": 3,
+      "full_name": "Tuskira/ai-agent-gateway",
+      "url": "https://github.com/Tuskira/ai-agent-gateway",
+      "category": "agent MCP/LLM governance gateway",
+      "score": 90,
+      "summary": "Open-source gateway in front of MCP tool servers and LLM models for credentials, agent profiles, scoped tool access, logging, console, and API.",
+      "audience": "Security, platform, and agent teams integrating MCP tools and multi-model traffic.",
+      "ai_native_angle": "Makes agent tool calls and model traffic governable through a gateway layer with scopes, hidden credentials, and per-agent audit logs.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-01 with about 38 stars. Root audit found cmd/internal/pkg/web/website, configs, deploy, examples, Dockerfile, Makefile, SECURITY, CODEOWNERS, and CI/release badges.",
+      "runnability": "High from Go app, Docker quickstart, examples, web console, and security docs; no Docker compose stack, sample MCP server, or live vendor provider was run.",
+      "recommended_action": "Run the quickstart with a mock MCP server and inspect tool-scope denial, credential hiding, and audit-log quality."
+    },
+    {
+      "rank": 4,
+      "full_name": "yicheng47/runner",
+      "url": "https://github.com/yicheng47/runner",
+      "category": "multi-agent terminal desktop workspace",
+      "score": 89,
+      "summary": "Native desktop app where Claude Code, Codex, Copilot CLI, pi, and other terminal agents collaborate on one mission while keeping real TUIs.",
+      "audience": "Developers and teams coordinating multiple coding agents with review and role separation.",
+      "ai_native_angle": "Turns several terminal agents into a role-based mission workspace with shared feed, lead/user decisions, real terminal preservation, CLI control, and MCP/skills management.",
+      "growth_signal": "Pushed 2026-10-02 with about 183 stars. Root audit found Rust workspace, crates, packaging, docs, examples, tests, assets, and signed macOS/Windows download docs.",
+      "runnability": "High from native release surface, examples, docs, and tests; no desktop app or real Codex/Claude/Copilot mission was run.",
+      "recommended_action": "Test a coder/reviewer mission on disposable repos and verify TUI fidelity, cancellation, shared feed, and permission prompts."
+    },
+    {
+      "rank": 5,
+      "full_name": "AVIDS2/memorix",
+      "url": "https://github.com/AVIDS2/memorix",
+      "category": "cross-agent project memory",
+      "score": 88,
+      "summary": "Local-first shared memory layer for coding agents via MCP, hooks, CLI, SDK, Git memory, reasoning memory, and orchestration.",
+      "audience": "Developer teams that switch between agents, IDEs, and sessions and need project context to survive handoffs.",
+      "ai_native_angle": "Moves project memory out of chat history and into a searchable, shared, Git-scoped context layer for agents.",
+      "growth_signal": "Pushed 2026-10-02 with about 824 stars. Root audit found Dockerfile, compose, docs, examples, plugins, tests, server.json, memorix.example.yml, and official MCP registry badge.",
+      "runnability": "High from MCP/package/docs/tests/examples evidence; no MCP server, project memory, or cross-agent handoff was tested.",
+      "recommended_action": "Connect it to a medium repo and see whether new sessions retrieve prior architecture decisions, commit facts, and pending work."
+    },
+    {
+      "rank": 6,
+      "full_name": "pixelsmasher13/gridpath",
+      "url": "https://github.com/pixelsmasher13/gridpath",
+      "category": "Excel editing MCP and desktop app",
+      "score": 87,
+      "summary": "MCP server and desktop app for editing real .xlsx files through spreadsheet-native tools with local review pages and app diff panels.",
+      "audience": "Users who want Claude, Codex, or Cursor to edit spreadsheets and financial models without brittle script generation.",
+      "ai_native_angle": "Turns spreadsheet editing into a reviewable MCP contract with describe/find/write/review tools, local files, and cell-level diffs.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-01 with about 4 stars. Root audit found Rust/Tauri, packages, docs, eval, marketing review image, MCP command, and desktop download link.",
+      "runnability": "Medium-high from MCP/desktop/docs/review evidence; no gridpath MCP server, workbook edit, or diff accept/reject flow was run.",
+      "recommended_action": "Use a non-sensitive workbook to test review-required mode and whether cell-level diffs are trustworthy enough for finance work."
+    },
+    {
+      "rank": 7,
+      "full_name": "NimbleBrainInc/nimblebrain",
+      "url": "https://github.com/NimbleBrainInc/nimblebrain",
+      "category": "self-hosted MCP apps and scheduled agents",
+      "score": 86,
+      "summary": "Self-hosted platform for MCP Apps and agent automations with sidebar UI, live agent-UI sync, scheduled runs, delegation, and aggregated MCP server output.",
+      "audience": "Teams that want MCP tools, interactive UI, scheduled runs, and prompt composition in one self-hosted agent host.",
+      "ai_native_angle": "Promotes MCP apps from tool lists into UI-backed, scheduled, skill-driven agent workflows that can also expose aggregated tools to external MCP clients.",
+      "growth_signal": "Pushed 2026-10-02 with about 24 stars. Root audit found Docker/compose, GHCR image docs, web, src/packages, test, docs, SECURITY, ADR, and quickstart.",
+      "runnability": "High from Docker quickstart, container images, web/API paths, and docs; no container or MCP connector was started.",
+      "recommended_action": "Run one low-permission connector with local dev identity and validate cron runs, UI state sync, and external MCP consumption."
+    },
+    {
+      "rank": 8,
+      "full_name": "AdamFrisby/CodeyBox",
+      "url": "https://github.com/AdamFrisby/CodeyBox",
+      "category": "VM-isolated coding-agent task queue",
+      "score": 85,
+      "summary": "Runs CLI coding agents against a task queue inside isolated VMs, checks output through configurable auditors, and merges through git.",
+      "audience": "Engineering teams that want to pool provider subscriptions and put coding-agent output behind audit and isolation gates.",
+      "ai_native_angle": "Combines task queues, quota routing, VM isolation, agent CLIs, auditor gates, suggestions, stream API, and merge control into one coding-agent operations surface.",
+      "growth_signal": "Pushed 2026-10-02 with about 7 stars. Root audit found .NET solution, src/tests, plugins, samples, docs, screenshots, install/build scripts, and gitleaks config.",
+      "runnability": "Medium-high from solution/tests/docs/screenshots/security tooling; no VM, task queue, auditor, or agent CLI was run.",
+      "recommended_action": "Run a read-only audit task against a toy repo and inspect VM network policy, merge gate behavior, and provider fallback records."
+    },
+    {
+      "rank": 9,
+      "full_name": "arjunkshah12345-hash/openpages",
+      "url": "https://github.com/arjunkshah12345-hash/openpages",
+      "category": "AI workspace with compressed context",
+      "score": 84,
+      "summary": "Open-source Spaces/Pages/agents/MCP workspace using SuperCompress for query-aware context compression, cited answers, agent mode, version history, and self-hosting.",
+      "audience": "Individuals and teams exposing knowledge pages, files, agent activity, and compressed workspace context to coding agents.",
+      "ai_native_angle": "Treats context compression as the economic layer for agent workspaces and preserves user/agent/MCP attribution plus restore history.",
+      "growth_signal": "Created 2026-09-30 and pushed 2026-10-01 with about 47 stars. Root audit found Next app, mcp, Dockerfile, docker-compose, ARCHITECTURE, AGENTS, videos, and public assets.",
+      "runnability": "Medium-high from self-host docs, app, and MCP structure; no Next app, SuperCompress flow, or MCP write/restore was run.",
+      "recommended_action": "Import a small Space and test cited answers, agent-created pages, MCP attribution, and version restore."
+    },
+    {
+      "rank": 10,
+      "full_name": "leeguooooo/mail-use",
+      "url": "https://github.com/leeguooooo/mail-use",
+      "category": "email CLI/MCP for agents",
+      "score": 83,
+      "summary": "Email CLI/MCP for Gmail, QQ, 163, and generic IMAP/SMTP with read/search/send/triage, JSON contracts, persistent daemon, and install script.",
+      "audience": "Personal automation, support, and operations workflows that need agents to work with email safely.",
+      "ai_native_angle": "Packages inbox access into a stable CLI/MCP contract with provider-specific behavior, daemon performance, privacy docs, and provenance-aware install.",
+      "growth_signal": "Pushed 2026-10-02 with about 43 stars. Root audit found docs, examples, packages, packaging, skills, PRIVACY, install.sh, CLI JSON contract, and MCP config docs.",
+      "runnability": "Medium-high from CLI/MCP/docs/package evidence; no real mailbox, OAuth/IMAP credential, or send test was performed.",
+      "recommended_action": "Use only a test mailbox to validate search/send dry-run or review flows, log redaction, and provider-specific search behavior."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "takara-ai/miru-code",
+      "url": "https://github.com/takara-ai/miru-code",
+      "category": "hybrid code search MCP for agents",
+      "score": 82,
+      "summary": "Hybrid code search for AI coding agents with MCP search/find_related/locate/expand and plugin support for Claude Code, Codex, Cursor, and Copilot.",
+      "audience": "Coding-agent users in large repositories.",
+      "ai_native_angle": "Replaces grep-first exploration with meaning-based chunks and dedicated MCP tools.",
+      "growth_signal": "Pushed 2026-10-02 with about 11 stars. Root audit found docs, examples, tests, plugins, server.json, SECURITY, and multiple plugin manifests.",
+      "runnability": "High on static evidence; no index or agent integration was run.",
+      "recommended_action": "Benchmark against grep on the same repository questions for token use and recall."
+    },
+    {
+      "full_name": "kenryu42/cc-safety-net",
+      "url": "https://github.com/kenryu42/cc-safety-net",
+      "category": "coding-agent pre-execution guard",
+      "score": 81,
+      "summary": "Pre-execution guard for AI coding agents that blocks destructive commands and secret access across many coding CLIs.",
+      "audience": "Developers and platform teams using coding agents on real worktrees.",
+      "ai_native_angle": "Adds a safety check before tool execution, parsing dangerous command intent across agent CLIs.",
+      "growth_signal": "Pushed 2026-10-02 with about 1,570 stars. Root audit found plugins, hooks, docs, tests, evals, dist, skills, SECURITY, and multi-agent support docs.",
+      "runnability": "High static maturity but older repository; no guard was installed or exercised.",
+      "recommended_action": "Evaluate as a baseline safety layer for Codex/Claude/Cursor workflows."
+    },
+    {
+      "full_name": "strands-labs/strands-decider",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "category": "fast decision model for agent workflows",
+      "score": 80,
+      "summary": "Small decision model and CLI/server for choice, rating, and calibrated confidence in agentic workflows.",
+      "audience": "Agent developers who need cheap fast routing or uncertainty-aware decisions.",
+      "ai_native_angle": "Adds a system-one decision layer before expensive LLM calls or human confirmations.",
+      "growth_signal": "Created 2026-09-29 and pushed 2026-10-01 with about 114 stars. Root audit found configs, data, docs, evaluation, examples, pyproject, research, src, tests, and security docs.",
+      "runnability": "Medium-high as a model/component; no model CLI/server was run.",
+      "recommended_action": "Test on approval/routing decisions where calibrated confidence affects whether to ask a human."
+    },
+    {
+      "full_name": "dork-labs/dorkos",
+      "url": "https://github.com/dork-labs/dorkos",
+      "category": "self-hosted multi-agent session hub",
+      "score": 79,
+      "summary": "One place for Claude Code, Codex, and OpenCode sessions with approvals, scheduling, self-hosting, MCP, and Obsidian direction.",
+      "audience": "Power users running several coding agents locally or on schedules.",
+      "ai_native_angle": "Centralizes agent sessions, approvals, schedules, and persistent project context.",
+      "growth_signal": "Pushed 2026-10-02 with about 10 stars. Search/root evidence shows self-hosted multi-agent operations, cron, MCP, and coding-agent session hub positioning.",
+      "runnability": "Medium from static evidence; no full runtime audit was completed.",
+      "recommended_action": "Revisit after a full README/root audit and small local session test."
+    },
+    {
+      "full_name": "greeves89/AI-Employee",
+      "url": "https://github.com/greeves89/AI-Employee",
+      "category": "governed multi-agent platform",
+      "score": 78,
+      "summary": "Self-hosted multi-agent platform with isolated Docker containers, governance, approval matrix, memory, workflows, and chat/voice integrations.",
+      "audience": "Teams that need traceable internal agents under their own server and policy boundaries.",
+      "ai_native_angle": "Makes specialized agents into governed, isolated, auditable employees with approval rules and integrations.",
+      "growth_signal": "Pushed 2026-10-02 with about 16 stars. Root audit found agent, orchestrator, frontend, monitoring, docs, docker-compose variants, SECURITY, and marketplace skills.",
+      "runnability": "Medium-high static evidence but deployment and license surface need review; no stack was started.",
+      "recommended_action": "Assess deployment complexity and license fit before any runtime test."
+    },
+    {
+      "full_name": "VORNEX-01/JARVIS-VORNEX",
+      "url": "https://github.com/VORNEX-01/JARVIS-VORNEX",
+      "category": "voice-first Windows desktop assistant",
+      "score": 77,
+      "summary": "Voice-first Windows assistant described as working inside real apps safely.",
+      "audience": "Windows users exploring voice-controlled desktop agents.",
+      "ai_native_angle": "Combines voice interface with app-level desktop actions.",
+      "growth_signal": "Created 2026-09-29 and pushed 2026-09-30 with about 12 stars from search metadata.",
+      "runnability": "Unknown; README/root audit was blocked by GitHub API rate limit.",
+      "recommended_action": "Complete README/root audit before considering a Windows VM test."
+    },
+    {
+      "full_name": "mrveiss/AutoBot-AI",
+      "url": "https://github.com/mrveiss/AutoBot-AI",
+      "category": "self-hosted voice/browser/computer-control platform",
+      "score": 76,
+      "summary": "Search metadata describes self-hosted agentic AI with voice, vision-driven browser/computer control, visual workflows, approvals, RBAC, and knowledge graph.",
+      "audience": "Teams exploring self-hosted computer-use agents with workflow governance.",
+      "ai_native_angle": "Potentially combines multimodal computer control, approvals, RBAC, and knowledge graph in one self-hosted surface.",
+      "growth_signal": "Pushed 2026-10-02 with about 13 stars from search metadata.",
+      "runnability": "Unknown; README/root audit was blocked by GitHub API rate limit.",
+      "recommended_action": "Audit implementation depth, permission boundaries, and workflow examples before promoting."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "feder-cr/dots",
+      "url": "https://github.com/feder-cr/dots",
+      "skip_reason": "Browser agent positioning emphasizes not getting blocked, which raises platform-evasion risk; skipped as a positive product candidate."
+    },
+    {
+      "full_name": "nanaism/yomiyasu",
+      "url": "https://github.com/nanaism/yomiyasu",
+      "skip_reason": "Japanese rewriting Agent Skill; useful but primarily a skill/prompt package rather than a full product surface."
+    },
+    {
+      "full_name": "gongnyang/awesome-ai-motion",
+      "url": "https://github.com/gongnyang/awesome-ai-motion",
+      "skip_reason": "Motion techniques and recipes collection, closer to an awesome/resource list."
+    },
+    {
+      "full_name": "zack-the-worker/fomo-cc",
+      "url": "https://github.com/zack-the-worker/fomo-cc",
+      "skip_reason": "Narrow Agent Skill rather than a standalone runnable product."
+    },
+    {
+      "full_name": "d4ncboz/museai",
+      "url": "https://github.com/d4ncboz/museai",
+      "skip_reason": "OpenAI-compatible API gateway/bridge for another personal agent surface; product workflow signal is weaker."
+    },
+    {
+      "full_name": "VoltEmperorChaos/ai-agent-for-pc",
+      "url": "https://github.com/VoltEmperorChaos/ai-agent-for-pc",
+      "skip_reason": "README claims a single-exe Windows agent, but root surface is thin and lacks enough implementation/download/test evidence."
+    },
+    {
+      "full_name": "gpt4free/g4f.dev",
+      "url": "https://github.com/gpt4free/g4f.dev",
+      "skip_reason": "Free endpoint/provider aggregation has compliance and stability risk and is not a focused AI-native product workflow."
+    },
+    {
+      "full_name": "deepset-ai/haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "skip_reason": "Mature RAG/agent framework; current signal is normal ongoing activity rather than a new product discovery."
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "skip_reason": "Mature platform daily activity; not a fresh project for this discovery window."
+    },
+    {
+      "full_name": "michielhdoteth/awesome-ai-agent-tools",
+      "url": "https://github.com/michielhdoteth/awesome-ai-agent-tools",
+      "skip_reason": "Large component/skills/tools catalog; installable but not a single independent product candidate."
+    }
+  ]
+}
