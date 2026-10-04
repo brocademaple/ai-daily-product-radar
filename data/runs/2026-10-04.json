@@ -1,0 +1,279 @@
+{
+  "run_date": "2026-10-04",
+  "generated_at": "2026-10-04T10:20:00+08:00",
+  "data_window": "2026-10-02T00:00:00Z to 2026-10-04T10:20:00+08:00",
+  "source_summary": "Queried 4 GitHub Search API surfaces saved under /tmp/radar_2026_10_04_api/ for recently created or pushed repositories around AI agents, MCP, LLM apps, browser/computer-use, code agents, workflow, RAG, assistant, copilot, memory, and skills. Deduplicated more than 140 visible candidates from the returned pages. Repository/readme audit first used GitHub repository/readme APIs, then switched to raw.githubusercontent.com README fetches after unauthenticated GitHub API returned 403 rate limits; selected raw READMEs were saved under /tmp/radar_2026_10_04_readmes/. No third-party repository was cloned.",
+  "trend_observations": "Today the strongest AI-native product signal is agent operations becoming visible and stateful: multi-agent teams, cross-agent model routers, local memory stores, token/context middleware, visual artifact canvases, remote sandboxes, approval cards, and bug queues that agents can claim. The product frontier is less about another chatbot shell and more about durable surfaces around agency: roles, permissions, receipts, context ownership, schedules, and human review points.",
+  "assumptions": "Scores are based on GitHub Search metadata, raw README evidence, root-content evidence where available, stars/forks/created_at/pushed_at, install/release/demo/docs/test/security signals, and clarity of user workflow. GitHub unauthenticated repo/readme API hit 403 during shortlist audit, so later candidates use search metadata plus raw README evidence rather than full root-content API evidence. No third-party repository was cloned, installed, built, run, browser-tested, desktop-tested, mobile-tested, MCP-connected, credential-tested, provider-tested, security-tested, payment-tested, or deployed locally. Star counts and pushed_at values are point-in-time snapshots from the discovery window.",
+  "markdown_report": "See data/runs/2026-10-04.md for the complete human-readable report. Top themes: persistent multi-agent teams, cross-agent model routing, self-hosted agent runtimes, portable local memory, token/context middleware, agent-native media creation, visual artifact canvases, remote coding pods, agent-ready bug queues, and scheduled approval-gated personal agents.",
+  "top_projects": [
+    {
+      "rank": 1,
+      "full_name": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "category": "persistent multi-agent coding team",
+      "score": 93,
+      "summary": "Open-source CLI/TUI system for defining Claude Code, Codex, and Pi agent teams in YAML, then running persistent owner/checker seats against a repository.",
+      "audience": "Developers and small teams coordinating multiple coding agents inside real repositories.",
+      "ai_native_angle": "Turns separate terminal agents into a named, stateful team with roles, shared context, queues, dashboards, provider hooks, and review flow.",
+      "growth_signal": "Pushed 2026-10-04 with about 4,697 stars. Search metadata plus raw README show npm CLI, tmux/Codex/Claude setup, TUI GIF, first-project rigs, dry-run setup, trust/permission documentation, security/community files, and release/npm badges.",
+      "runnability": "High from npm package, guided first-use path, CLI/TUI commands, docs, and explicit machine-change disclosure; not installed or run locally.",
+      "recommended_action": "Run `rig setup --dry-run` in a disposable repo, then test one owner/checker change and inspect queue, review artifact, and permission writes."
+    },
+    {
+      "rank": 2,
+      "full_name": "yetone/magpie",
+      "url": "https://github.com/yetone/magpie",
+      "category": "cross-agent model router and menu bar app",
+      "score": 91,
+      "summary": "Menu bar, TUI, CLI, and local gateway for choosing which model each local AI agent uses across Codex, Claude Code, Gemini CLI, Copilot, and more.",
+      "audience": "Power users who run several agent CLIs and want one place to manage model/provider routing.",
+      "ai_native_angle": "Makes model choice a live operating surface across agents, including profiles, provider reuse, and OpenAI/Anthropic-compatible local gateway routing.",
+      "growth_signal": "Created 2026-09-23 and pushed 2026-10-04 with about 4,474 stars. Raw README shows menu bar UX, small binary, TUI, CLI, profiles, gateway, and multi-provider/agent support.",
+      "runnability": "High from release-oriented README, CLI/TUI/app surfaces, and concrete commands; no local gateway or agent config was run.",
+      "recommended_action": "Install in a throwaway user profile and verify Codex/Claude model switching, profile rollback, and provider credential isolation."
+    },
+    {
+      "rank": 3,
+      "full_name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "category": "self-hosted personal AI agent framework",
+      "score": 90,
+      "summary": "Ultra-light Python personal AI agent framework with WebUI, terminal/chat app surfaces, tools, memory, MCP, model routing, multi-agent delegation, scheduled automation, and OpenAI-compatible API.",
+      "audience": "Builders who want a lightweight self-hosted agent runtime rather than a hosted automation platform.",
+      "ai_native_angle": "Combines memory, MCP, automation, routing, multi-agent delegation, and multiple user surfaces into a compact agent runtime.",
+      "growth_signal": "Pushed 2026-10-04 with about 48,763 stars. Raw README shows multilingual docs, WebUI/CLI/chat app positioning, CI badge, quickstart/deployment docs, provider configuration, memory, tools, and OpenAI-compatible API claims.",
+      "runnability": "High from docs, CI, install/deployment paths, and multiple runtime surfaces; not installed, deployed, or connected to providers.",
+      "recommended_action": "Run the local quickstart with a test provider key and inspect memory persistence, MCP tool permissioning, scheduled task behavior, and API compatibility."
+    },
+    {
+      "rank": 4,
+      "full_name": "kitfunso/hippo-memory",
+      "url": "https://github.com/kitfunso/hippo-memory",
+      "category": "outcome-aware memory for coding agents",
+      "score": 89,
+      "summary": "Local SQLite and Markdown memory layer for coding agents that can mark facts wrong, supersede old facts, recall via BM25/MCP, and wire into Claude Code, Codex, Cursor, OpenCode, OpenClaw, and Pi.",
+      "audience": "Developers who need portable project memory across agent tools without handing every note to a hosted service.",
+      "ai_native_angle": "Treats memory as mutable evidence with wrong/superseded ranking, provenance, hooks, and cross-agent recall rather than static notes.",
+      "growth_signal": "Pushed 2026-10-04 with about 770 stars. README shows npm package, CI, benchmark receipts, zero runtime deps, MCP server, Codex hooks, Markdown mirrors, importers, daily job, and security/data notes.",
+      "runnability": "High from package, CLI commands, documented hooks, tests/benchmarks, and local storage model; no hooks, MCP server, or recall benchmark was run.",
+      "recommended_action": "Initialize in a toy repo and test wrong-memory demotion, supersede flow, Codex hook trust, and Markdown mirror review."
+    },
+    {
+      "rank": 5,
+      "full_name": "DFKHelper/token-goat",
+      "url": "https://github.com/DFKHelper/token-goat",
+      "category": "agent context cost and safety middleware",
+      "score": 87,
+      "summary": "Tool-output and file-read middleware for many AI coding tools that reduces repeated context, narrows file reads, compresses screenshots, filters logs, and injects compact manifests.",
+      "audience": "Heavy users of Claude Code, Codex, Gemini CLI, Copilot, Cursor, Aider, Cline, and similar agent tools who pay for repeated context.",
+      "ai_native_angle": "Optimizes the agent work loop itself by intercepting reads, build logs, screenshots, large documents, compact events, MCP calls, and prompt-injection surfaces.",
+      "growth_signal": "Pushed 2026-10-04 with about 131 stars. README shows npm install, multi-agent support list, stats command, CI/npm badges, compact/cache/MCP hooks, and many rule categories.",
+      "runnability": "Medium-high from package and extensive README evidence; no installation, stats readback, or prompt-injection test was run.",
+      "recommended_action": "Test on one disposable Codex/Claude project and compare token/output volume before and after, especially for repeated file reads and failed test logs."
+    },
+    {
+      "rank": 6,
+      "full_name": "Remocn/remocn-studio",
+      "url": "https://github.com/Remocn/remocn-studio",
+      "category": "agent-native video editor",
+      "score": 86,
+      "summary": "macOS app where a coding agent creates editable motion-design videos as code, with release/download surface and build-from-source documentation.",
+      "audience": "Creators and product teams who want AI video generation to remain editable and inspectable instead of one-shot rendered media.",
+      "ai_native_angle": "Uses a coding agent as the video authoring engine, turning video generation into a code/project pipeline that can be edited, versioned, and rebuilt.",
+      "growth_signal": "Created 2026-10-01 with about 111 stars. Raw README shows macOS app positioning, latest release link, pipeline explanation, build-from-source path, and agent-authored motion design framing.",
+      "runnability": "Medium-high from release/app surface and source docs; no macOS app, rendering pipeline, or AI provider configuration was run.",
+      "recommended_action": "Run a tiny text-change video project and verify whether the generated code is understandable, editable, and reproducible."
+    },
+    {
+      "rank": 7,
+      "full_name": "telepath-computer/television",
+      "url": "https://github.com/telepath-computer/television",
+      "category": "visual artifact GUI for personal agents",
+      "score": 85,
+      "summary": "GUI and server/skills bundle that gives personal agents a persistent visual space for documents, data, visualizations, live pages, and interactive artifacts.",
+      "audience": "Users who want agents to collaborate through visible, persistent artifacts rather than only chat text.",
+      "ai_native_angle": "Defines an agent-facing artifact canvas where agents can create and mutate visual objects over time, backed by a server, client app, and skills bundle.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-03 with about 108 stars. README shows demo image, macOS download, browser interface path, server/skill/client architecture, and Codex/Claude/Hermes/Pi compatibility.",
+      "runnability": "Medium-high from download/demo/setup evidence; no server, skills bundle, or visual artifact workflow was run.",
+      "recommended_action": "Connect a disposable agent session and ask it to create a small interactive artifact, then inspect persistence and edit loop."
+    },
+    {
+      "rank": 8,
+      "full_name": "pi-pod/pipod",
+      "url": "https://github.com/pi-pod/pipod",
+      "category": "self-hosted remote sandboxes for coding agents",
+      "score": 84,
+      "summary": "CLI and self-hosted server for running pi coding-agent sessions in remote sandboxes, attachable from terminal or phone.",
+      "audience": "Developers who want coding-agent sessions off their laptop but still under their own server control.",
+      "ai_native_angle": "Makes coding-agent execution a server-managed pod lifecycle with authentication, sandbox gateway, CLI attach, and mobile/remote access.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-04 with about 67 stars. README shows CLI, selfhost compose project, server-owned pod lifecycle, Zitadel identity, npm package, and upgrade/install commands.",
+      "runnability": "Medium-high from self-host and npm CLI evidence; no server, sandbox, auth, or remote attach flow was run.",
+      "recommended_action": "Deploy on a throwaway Linux VM and verify pod cleanup, auth boundaries, log visibility, and phone attach behavior."
+    },
+    {
+      "rank": 9,
+      "full_name": "cyu60/shipcue",
+      "url": "https://github.com/cyu60/shipcue",
+      "category": "bug-report queue for coding agents",
+      "score": 83,
+      "summary": "Drop-in app report button backed by Postgres where users file bug/feature reports and coding agents claim one queued item over MCP with context and idempotency.",
+      "audience": "Founders, internal-tool teams, hackathon teams, and beta products using coding agents to handle product feedback.",
+      "ai_native_angle": "Turns in-app reports into an agent-ready queue with screenshots, browser/page state, report priority, MCP claiming, prompt copy, and PR closure loop.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-03 with about 9 stars. README shows tests badge, MCP-ready badge, Postgres self-hosting, React button, server handler, schema.sql, idempotency, video/context capture, and agent-token API.",
+      "runnability": "High from install/server/schema/examples and test evidence despite low stars; no app integration or MCP claim flow was run.",
+      "recommended_action": "Mount it in a toy Next.js app with local Postgres and test one screenshot report through an MCP claim and closure."
+    },
+    {
+      "rank": 10,
+      "full_name": "pennant-dev/pennant",
+      "url": "https://github.com/pennant-dev/pennant",
+      "category": "scheduled macOS agent with approval cards",
+      "score": 82,
+      "summary": "Open-source macOS AI agent with iPhone companion, scheduled jobs, skills, run report cards, approvals before publishing/sending/deleting/spending, browser/app actions, memory, and usage accounting.",
+      "audience": "Mac users who want recurring personal or coding work delegated to an agent with human approval gates.",
+      "ai_native_angle": "Packages scheduled autonomous work, approval cards, memory, browser/app actions, skills, cost tracking, and PR-opening into a native personal agent product.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-03 with about 9 stars. README shows release/download, screenshots, demo seed host, scheduling, approvals, coding runs, browser extension, memory, usage, and skills folders.",
+      "runnability": "Medium-high from native product screenshots and release surface; no app, iPhone companion, browser extension, or approval card was tested.",
+      "recommended_action": "Run the seeded demo host and verify approval-card replay, schedule controls, memory provenance, and cost accounting before granting real app/browser access."
+    }
+  ],
+  "watchlist": [
+    {
+      "full_name": "flaviocopes/factorylog",
+      "url": "https://github.com/flaviocopes/factorylog",
+      "category": "coding-agent activity timeline",
+      "score": 81,
+      "summary": "Mac timeline for seeing what coding agents did each day/week and where time went by project.",
+      "audience": "Developers supervising multiple local coding-agent sessions.",
+      "ai_native_angle": "Turns agent activity into a user-facing timeline and accountability surface.",
+      "growth_signal": "Created 2026-10-01 and pushed 2026-10-03 with about 55 stars; raw README shows Swift app framing and daily/weekly timeline positioning.",
+      "runnability": "Medium from README/product evidence; no macOS app was run.",
+      "recommended_action": "Watch for permission model, log ingestion source, and privacy controls before installing."
+    },
+    {
+      "full_name": "hamzafer/claude-code-mods",
+      "url": "https://github.com/hamzafer/claude-code-mods",
+      "category": "live Claude Code observability plugins",
+      "score": 80,
+      "summary": "Claude Code mods that show live agents, tool calls, file reads/writes, code maps, usage, context weather, replay, markdown previews, and safety gates.",
+      "audience": "Claude Code users who want better visibility and control during agent sessions.",
+      "ai_native_angle": "Adds live observability and guardrails directly inside the coding-agent UI loop.",
+      "growth_signal": "Created 2026-10-02 and pushed 2026-10-04 with about 49 stars. README shows marketplace install, mission-control GIF, multiple mods, permissions, and docs.",
+      "runnability": "High for Claude Code users; not evaluated because this radar runs in Codex and did not install Claude plugins.",
+      "recommended_action": "Try mission-control on a tiny repo and compare whether file/tool visibility reduces review time."
+    },
+    {
+      "full_name": "vedantdhande04/tweetytweets",
+      "url": "https://github.com/vedantdhande04/tweetytweets",
+      "category": "autonomous social publishing pipeline",
+      "score": 79,
+      "summary": "Agent-driven X/Twitter posting pipeline that researches sources, writes posts, publishes through real Chrome, and verifies screenshots/readback.",
+      "audience": "Solo creators and marketers willing to run a browser-based agent on their own account.",
+      "ai_native_angle": "Makes evidence-backed social posting a closed loop: source opening, planning, browser publish, profile polling, screenshot, and vision readback.",
+      "growth_signal": "Created 2026-10-01 with about 48 stars. README shows risk notes, requirements, setup, Chrome profile login, publish/verify loop, and cron gating.",
+      "runnability": "Medium due to real-account and browser-automation risk; no Chrome profile or social account was connected.",
+      "recommended_action": "Only test on a throwaway account; inspect rate limits, consent gates, and verification failure handling."
+    },
+    {
+      "full_name": "artemnovichkov/xcode-mods",
+      "url": "https://github.com/artemnovichkov/xcode-mods",
+      "category": "Xcode MCP panes inside Claude Code",
+      "score": 78,
+      "summary": "Claude Code plugin for Xcode build, run, tests, console, and SwiftUI preview panes powered by Xcode headless MCP.",
+      "audience": "iOS/macOS developers who want agent-visible Xcode state without leaving the coding-agent interface.",
+      "ai_native_angle": "Brings IDE/runtime feedback, issues, previews, and console streams into the agent conversation loop.",
+      "growth_signal": "Created 2026-10-02 with about 12 stars. README shows setup commands, Xcode MCP requirements, toolbar band, panes, shortcuts, screenshots, and troubleshooting.",
+      "runnability": "High if Xcode 27/MCP is available; not run on this project.",
+      "recommended_action": "Test on a small SwiftUI sample and verify previews, failed-test reruns, and permission prompts."
+    },
+    {
+      "full_name": "FidelisMM/shipstores",
+      "url": "https://github.com/FidelisMM/shipstores",
+      "category": "mobile app-store MCP automation",
+      "score": 77,
+      "summary": "MCP server for App Store Connect, Google Play Console, and Expo EAS, including listings, screenshots, privacy labels, review submission, and replies.",
+      "audience": "Mobile teams that want agents to handle release console chores after code is ready.",
+      "ai_native_angle": "Extends coding agents from app creation into store submission and review operations with explicit tool boundaries.",
+      "growth_signal": "Created 2026-10-01 with about 14 stars. README shows demo GIF, PyPI/uvx quickstart, store_doctor, credential checks, tool scope, and console-automation caveats.",
+      "runnability": "Medium because it needs real store credentials and can publish; no credentials or console browser were connected.",
+      "recommended_action": "Run `store_doctor` only with throwaway/sandbox credentials and audit which tools can submit or mutate listings."
+    },
+    {
+      "full_name": "ManfredCh/Lyapunov",
+      "url": "https://github.com/ManfredCh/Lyapunov",
+      "category": "LLM-first robotics and 3D simulation workspace",
+      "score": 76,
+      "summary": "Desktop framework for robotics/3D creators where chat, code, files, 3D viewer, physics, robots, and cameras share one agent workspace.",
+      "audience": "Robotics developers, simulation teams, and 3D creators exploring agentic simulation workbenches.",
+      "ai_native_angle": "Places LLM agents inside a 3D-native robotics workspace rather than treating robotics as only code generation.",
+      "growth_signal": "Created 2026-10-02 and pushed 2026-10-03 with about 13 stars. README shows install script, Linux alpha release, MuJoCo runtime prep, DSH/Cordis plugin architecture, robot/camera docs, and release notes.",
+      "runnability": "Medium-high from release/install docs; no Linux alpha, physics runtime, or 3D scene was run.",
+      "recommended_action": "Try the alpha on a disposable Linux desktop and verify native tools, simulation reproducibility, and CUA limitations."
+    },
+    {
+      "full_name": "MothCyan/PerfAgent-Unity",
+      "url": "https://github.com/MothCyan/PerfAgent-Unity",
+      "category": "Unity performance profiling agent",
+      "score": 75,
+      "summary": "Unity Editor performance agent that captures profiler frames, produces rule-based evidence chains, creates fix plans, and optionally exposes MCP tools.",
+      "audience": "Unity developers who want agent-assisted performance diagnosis inside the editor.",
+      "ai_native_angle": "Connects profiler evidence, editor UI, fix planning, and optional MCP control into an agent-readable diagnosis loop.",
+      "growth_signal": "Created 2026-10-03 with about 9 stars. README shows Unity menu path, package layout, no-third-party-dependency claim, MCP bridge package, and tool list documentation.",
+      "runnability": "Medium from compact README evidence; no Unity project was opened.",
+      "recommended_action": "Run on a small Unity scene and compare findings with raw Profiler data before trusting fix plans."
+    }
+  ],
+  "skipped_projects": [
+    {
+      "full_name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "skip_reason": "Very high stars and useful agent skill, but the evidence reads as a skill/diagram artifact generator rather than a broader product surface for this run."
+    },
+    {
+      "full_name": "QingYunA/answer-me-with-html",
+      "url": "https://github.com/QingYunA/answer-me-with-html",
+      "skip_reason": "Strong new agent skill and demo, but primarily a skill/template workflow; kept out of Top to prioritize products with app/CLI/service surfaces."
+    },
+    {
+      "full_name": "BootLoops-ai/skills",
+      "url": "https://github.com/BootLoops-ai/skills",
+      "skip_reason": "Plain Markdown skill protocols for quantitative work; valuable infrastructure but not a runnable product candidate."
+    },
+    {
+      "full_name": "zzzz7788990213-ops/EvoVLM",
+      "url": "https://github.com/zzzz7788990213-ops/EvoVLM",
+      "skip_reason": "Research/model-inference program repository; not enough user-facing product surface for this radar."
+    },
+    {
+      "full_name": "KODAMA-TECHNOLOGY/Chat_UI",
+      "url": "https://github.com/KODAMA-TECHNOLOGY/Chat_UI",
+      "skip_reason": "Small LLM chat UI wrapper with limited product differentiation and implementation evidence from metadata."
+    },
+    {
+      "full_name": "LTZY-ACU/LTZY-API",
+      "url": "https://github.com/LTZY-ACU/LTZY-API",
+      "skip_reason": "OpenAI-compatible LLM gateway with billing/routing, but this run prioritizes agent-native user workflows over generic API gateways."
+    },
+    {
+      "full_name": "GupshupSuperAgent/mcp",
+      "url": "https://github.com/GupshupSuperAgent/mcp",
+      "skip_reason": "Useful hosted MCP docs for messaging campaigns, but README says there is nothing to install/run locally; treated as vendor endpoint documentation."
+    },
+    {
+      "full_name": "nuglifeleo/Sentry",
+      "url": "https://github.com/nuglifeleo/Sentry",
+      "skip_reason": "Agent failure-recovery research direction; static metadata did not show enough runnable product packaging."
+    },
+    {
+      "full_name": "trevaintdead/ai-game-modding-guides",
+      "url": "https://github.com/trevaintdead/ai-game-modding-guides",
+      "skip_reason": "Guide/tutorial content rather than a product or runnable AI-native app."
+    },
+    {
+      "full_name": "perkel666/MegaCapybara",
+      "url": "https://github.com/perkel666/MegaCapybara",
+      "skip_reason": "Inference-engine benchmark/claim around one model/GPU setup; not an AI-native product workflow candidate."
+    }
+  ]
+}
